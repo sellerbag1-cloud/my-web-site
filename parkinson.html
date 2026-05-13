@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 치매·파킨슨 클리닉 — 정밀 감별 진단</title>
+<meta name="description" content="신경외과 전문의가 진료하는 치매·파킨슨 정밀 감별 클리닉. MRI·MRA·인지 검사 당일 결과. 가역성 치매·본태성 진전 감별. 화성·동탄·오산·평택 지역.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-bg: #fafaf8;
+  --color-bg-alt: #f3f1ec;
+  --color-bg-section: #ffffff;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --color-text-light: #8a8a8a;
+  --color-border: #e5e3de;
+  --color-primary: #1e3a5f;
+  --color-primary-soft: #4a6885;
+  --color-accent: #8b2331;
+  --color-gold: #a0824a;
+  --color-success: #2d5a3d;
+  --font-serif: 'Noto Serif KR', 'Times New Roman', serif;
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans); font-weight: 400; font-size: 16px;
+  line-height: 1.75; color: var(--color-text); background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.96); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border); padding: 14px 0;
+}
+.topbar-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.brand {
+  font-family: var(--font-serif); font-weight: 600; font-size: 19px;
+  letter-spacing: -0.01em; color: var(--color-primary);
+}
+.brand-sub {
+  font-size: 12px; color: var(--color-text-light); font-weight: 400;
+  margin-left: 6px; letter-spacing: 0.05em;
+}
+.cta-button {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 22px; background: var(--color-primary); color: #fff;
+  font-size: 14px; font-weight: 500; text-decoration: none;
+  border-radius: 2px; letter-spacing: 0.02em; transition: background .2s;
+}
+.cta-button:hover { background: #142a48; }
+
+.hero { padding: 100px 32px 80px; max-width: 1200px; margin: 0 auto; }
+.hero-eyebrow {
+  display: inline-block; font-size: 12px; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--color-gold); margin-bottom: 24px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--color-gold);
+}
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.2; font-weight: 400; color: var(--color-primary);
+  margin-bottom: 28px; letter-spacing: -0.02em;
+}
+.hero-title em { font-style: italic; color: var(--color-accent); }
+.hero-desc {
+  font-size: 18px; line-height: 1.85; color: var(--color-text-muted);
+  max-width: 760px; margin-bottom: 40px;
+}
+.hero-quote {
+  border-left: 3px solid var(--color-accent); padding: 16px 24px;
+  margin: 32px 0; background: rgba(139,35,49,.03);
+  font-family: var(--font-serif); font-size: 20px;
+  color: var(--color-primary); line-height: 1.6; max-width: 760px;
+}
+
+/* 본원 진료 범위 박스 */
+.scope-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  margin: 40px 0; max-width: 1000px;
+}
+.scope-card {
+  padding: 28px; border: 1px solid var(--color-border);
+}
+.scope-card.in {
+  background: #f0f7ed; border-left: 4px solid var(--color-success);
+}
+.scope-card.out {
+  background: var(--color-bg-section); border-left: 4px solid var(--color-text-light);
+}
+.scope-eyebrow {
+  font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+  font-weight: 600; margin-bottom: 8px;
+}
+.scope-card.in .scope-eyebrow { color: var(--color-success); }
+.scope-card.out .scope-eyebrow { color: var(--color-text-light); }
+.scope-title {
+  font-family: var(--font-serif); font-size: 20px; font-weight: 500;
+  color: var(--color-text); margin-bottom: 16px;
+}
+.scope-list {
+  list-style: none; font-size: 14px; line-height: 1.9;
+}
+.scope-list li {
+  padding: 4px 0 4px 24px; position: relative; color: var(--color-text-muted);
+}
+.scope-card.in .scope-list li::before {
+  content: '✓'; position: absolute; left: 0; color: var(--color-success); font-weight: 600;
+}
+.scope-card.out .scope-list li::before {
+  content: '→'; position: absolute; left: 0; color: var(--color-text-light);
+}
+
+.section-nav {
+  background: var(--color-bg-alt); padding: 32px;
+  border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);
+}
+.section-nav-inner { max-width: 1200px; margin: 0 auto; }
+.section-nav-title {
+  font-family: var(--font-serif); font-size: 14px; color: var(--color-text-light);
+  text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 16px;
+}
+.section-nav-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px;
+}
+.section-nav-grid a {
+  font-size: 14px; padding: 8px 12px; color: var(--color-text);
+  text-decoration: none; border-left: 2px solid transparent; transition: all .2s;
+}
+.section-nav-grid a:hover {
+  border-left-color: var(--color-accent); background: rgba(255,255,255,.7);
+  color: var(--color-primary);
+}
+.section-nav-grid a.signature { color: var(--color-accent); font-weight: 500; }
+.section-nav-grid a.signature::before { content: '★ '; font-size: 11px; }
+
+.landing-section {
+  padding: 100px 32px; max-width: 1100px; margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+}
+.landing-section.signature {
+  background: linear-gradient(180deg, var(--color-bg) 0%, rgba(160,130,74,.04) 100%);
+  position: relative;
+}
+.landing-section.signature::before {
+  content: '시그니처'; position: absolute; top: 60px; right: 32px;
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold); font-weight: 500;
+}
+
+.landing-eyebrow {
+  font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--color-gold); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.landing-eyebrow::after {
+  content: ''; flex: 1; height: 1px; background: var(--color-border); max-width: 60px;
+}
+
+.landing-title {
+  font-family: var(--font-serif); font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.25; font-weight: 500; color: var(--color-primary);
+  margin-bottom: 24px; letter-spacing: -0.015em;
+}
+.landing-title strong { font-weight: 600; color: var(--color-accent); font-style: italic; }
+
+.landing-lead {
+  font-size: 17px; line-height: 1.85; color: var(--color-text-muted);
+  margin-bottom: 40px; max-width: 800px;
+}
+
+.landing-section h3 {
+  font-family: var(--font-serif); font-size: 22px; font-weight: 500;
+  color: var(--color-primary); margin: 48px 0 16px; letter-spacing: -0.01em;
+}
+
+.landing-section p {
+  font-size: 16px; line-height: 1.85; color: var(--color-text);
+  margin-bottom: 16px; max-width: 800px;
+}
+
+.symptom-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px; margin: 32px 0;
+}
+.symptom-card {
+  padding: 24px; background: var(--color-bg-section);
+  border: 1px solid var(--color-border); border-left: 3px solid var(--color-primary);
+}
+.symptom-card.gold { border-left-color: var(--color-gold); }
+.symptom-card-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.symptom-card-desc {
+  font-size: 14px; line-height: 1.7; color: var(--color-text-muted);
+}
+
+.compare-table {
+  width: 100%; border-collapse: collapse; margin: 32px 0;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.compare-table th, .compare-table td {
+  padding: 14px 20px; text-align: left; font-size: 14px;
+  border-bottom: 1px solid var(--color-border); vertical-align: top;
+}
+.compare-table th {
+  background: var(--color-primary); color: #fff;
+  font-weight: 500; letter-spacing: 0.02em;
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table tbody tr:hover { background: var(--color-bg-alt); }
+.compare-table .label { font-weight: 500; color: var(--color-primary); width: 30%; }
+
+.highlight-box {
+  background: var(--color-primary); color: #fff; padding: 40px;
+  margin: 40px 0; position: relative;
+}
+.highlight-box::before {
+  content: '"'; position: absolute; top: 8px; left: 24px;
+  font-family: var(--font-serif); font-size: 80px;
+  color: rgba(255,255,255,.2); line-height: 1;
+}
+.highlight-box-content { position: relative; z-index: 1; padding-left: 40px; }
+.highlight-box p {
+  color: #fff; font-family: var(--font-serif); font-size: 19px;
+  line-height: 1.7; margin: 0; max-width: none;
+}
+.highlight-box-caption {
+  font-size: 12px; letter-spacing: 0.2em; color: rgba(255,255,255,.6);
+  text-transform: uppercase; margin-top: 16px;
+}
+
+.warning-box {
+  background: #fef4f4; border-left: 4px solid var(--color-accent);
+  padding: 24px 28px; margin: 32px 0;
+}
+.warning-box-title {
+  font-weight: 600; color: var(--color-accent); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.warning-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+
+.info-box {
+  background: #f0f4fa; border-left: 4px solid var(--color-primary);
+  padding: 24px 28px; margin: 32px 0;
+}
+.info-box-title {
+  font-weight: 600; color: var(--color-primary); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.info-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+
+.checklist {
+  list-style: none; margin: 24px 0; padding: 24px 32px;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.checklist li {
+  padding: 10px 0 10px 32px; position: relative;
+  font-size: 15px; line-height: 1.6; border-bottom: 1px solid var(--color-border);
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '□'; position: absolute; left: 0; top: 10px;
+  color: var(--color-primary); font-size: 18px; font-weight: 500;
+}
+
+.steps {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0; margin: 32px 0; border: 1px solid var(--color-border);
+}
+.step {
+  padding: 28px 24px; border-right: 1px solid var(--color-border);
+  background: var(--color-bg-section); position: relative;
+}
+.step:last-child { border-right: none; }
+.step-num {
+  font-family: var(--font-serif); font-size: 13px; letter-spacing: 0.3em;
+  color: var(--color-gold); margin-bottom: 12px;
+}
+.step-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.step-desc { font-size: 13px; line-height: 1.6; color: var(--color-text-muted); }
+
+.doctor-card {
+  display: grid; grid-template-columns: 1fr 2fr; gap: 40px;
+  padding: 40px; background: var(--color-bg-alt);
+  margin: 48px 0; align-items: center;
+}
+.doctor-credentials { font-family: var(--font-serif); }
+.doctor-name {
+  font-size: 28px; font-weight: 500; color: var(--color-primary); margin-bottom: 4px;
+}
+.doctor-role {
+  font-size: 14px; color: var(--color-text-muted);
+  letter-spacing: 0.05em; margin-bottom: 24px;
+}
+.doctor-credentials ul {
+  list-style: none; font-family: var(--font-sans);
+  font-size: 14px; line-height: 1.9; color: var(--color-text);
+}
+.doctor-credentials li { padding-left: 16px; position: relative; }
+.doctor-credentials li::before {
+  content: '—'; position: absolute; left: 0; color: var(--color-gold);
+}
+
+.cta-section { background: var(--color-primary); padding: 80px 32px; text-align: center; }
+.cta-inner { max-width: 800px; margin: 0 auto; color: #fff; }
+.cta-eyebrow {
+  font-size: 12px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 16px; text-transform: uppercase;
+}
+.cta-title {
+  font-family: var(--font-serif); font-size: 36px; font-weight: 400;
+  margin-bottom: 16px; line-height: 1.3;
+}
+.cta-desc {
+  font-size: 16px; color: rgba(255,255,255,.85);
+  margin-bottom: 36px; line-height: 1.8;
+}
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-btn-primary {
+  display: inline-block; padding: 16px 40px; background: #fff;
+  color: var(--color-primary); font-weight: 500; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-primary:hover { background: var(--color-gold); color: #fff; }
+.cta-btn-secondary {
+  display: inline-block; padding: 16px 40px; background: transparent;
+  color: #fff; border: 1px solid rgba(255,255,255,.4);
+  font-weight: 400; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-secondary:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+
+footer { background: #0f1f33; color: rgba(255,255,255,.65); padding: 60px 32px 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+.footer-brand-name {
+  font-family: var(--font-serif); font-size: 22px;
+  font-weight: 500; color: #fff; margin-bottom: 12px;
+}
+.footer-brand-desc {
+  font-size: 13px; line-height: 1.8;
+  color: rgba(255,255,255,.55); max-width: 400px;
+}
+.footer-section h4 {
+  font-family: var(--font-serif); font-size: 14px; color: #fff;
+  margin-bottom: 16px; letter-spacing: 0.05em;
+}
+.footer-section ul { list-style: none; font-size: 13px; line-height: 2; }
+.footer-section a { color: rgba(255,255,255,.65); text-decoration: none; transition: color .2s; }
+.footer-section a:hover { color: var(--color-gold); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px;
+  font-size: 12px; color: rgba(255,255,255,.45); text-align: center; line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .hero { padding: 60px 24px 40px; }
+  .landing-section { padding: 60px 24px; }
+  .topbar-inner { padding: 0 20px; }
+  .doctor-card { grid-template-columns: 1fr; gap: 24px; padding: 28px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cta-section { padding: 60px 24px; }
+  .cta-title { font-size: 28px; }
+  .hero-quote { font-size: 17px; }
+  .landing-section.signature::before { display: none; }
+  .scope-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div>
+      <span class="brand">희망찬병원 치매·파킨슨 클리닉</span>
+      <span class="brand-sub">HOPECHAN COGNITIVE & MOVEMENT CLINIC</span>
+    </div>
+    <a href="#예약" class="cta-button">진료 예약</a>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-eyebrow">신경외과 치매·파킨슨 감별 진료 · 14-3</div>
+  <h1 class="hero-title">
+    치매·파킨슨처럼 보이지만,<br><em>다른 병일 수 있습니다.</em>
+  </h1>
+  <p class="hero-desc">
+    걸음이 느려지고 깜빡함이 심해진 환자분 중 일부는 치매가 아니라 정상압 수두증·만성 경막하출혈 같은
+    수술로 호전이 가능한 가역성 인지장애를 가지고 계십니다. 손 떨림 환자분 중 일부는 파킨슨이 아니라
+    본태성 진전·약물성 진전입니다. 본원은 신경외과 전문의가 MRI·MRA·인지 검사를 한 자리에서 시행해
+    당일 결과를 안내하는 정밀 감별 클리닉입니다.
+  </p>
+  <div class="hero-quote">
+    "치매·파킨슨 진단 전에, 다른 병을 먼저 살펴봅니다. 가역성 치매는 일찍 발견할수록 호전 가능성이 큽니다."<br>
+    <span style="font-size: 14px; color: var(--color-text-muted); font-family: var(--font-sans); font-style: normal;">
+      — 김진균 원장, 신경외과 전문의
+    </span>
+  </div>
+
+  <!-- 본원 진료 범위 명시 -->
+  <div class="scope-grid">
+    <div class="scope-card in">
+      <div class="scope-eyebrow">✓ 본원 적극 진료</div>
+      <div class="scope-title">감별·검진·정기 외래</div>
+      <ul class="scope-list">
+        <li>치매·파킨슨 의심 환자 MRI·MRA·CT 정밀 감별 (당일 결과)</li>
+        <li>정상압 수두증·만성 경막하출혈 등 가역성 인지장애 감별</li>
+        <li>혈관성 치매·뇌백질변화 환자 정기 외래</li>
+        <li>본태성 진전·약물성 파킨슨 등 운동장애 감별</li>
+        <li>40~70대 가족력 환자 사전 검진</li>
+        <li>경도인지장애(MCI) 정기 추적 진료</li>
+      </ul>
+    </div>
+    <div class="scope-card out">
+      <div class="scope-eyebrow">→ 진단 확정 후 연계</div>
+      <div class="scope-title">신경과·치매안심센터</div>
+      <ul class="scope-list">
+        <li>알츠하이머 약물 장기 관리는 신경과로 연계</li>
+        <li>파킨슨병 레보도파 등 약물 처방·조절은 신경과로 연계</li>
+        <li>치매 등급 신청·복지 지원은 치매안심센터 안내</li>
+        <li>장기요양 등급 신청은 국민건강보험공단 안내</li>
+        <li>본원에서 받은 영상·소견서 신경과에 함께 전달</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <div class="section-nav-title">진료 안내 · 9개 영역</div>
+    <div class="section-nav-grid">
+      <a href="#치매_결정">치매 진료·정밀 감별</a>
+      <a href="#치매_증상">치매 의심 증상·자가진단</a>
+      <a href="#치매_가역성" class="signature">치료되는 치매 (가역성)</a>
+      <a href="#치매_혈관성" class="signature">혈관성 치매·뇌백질변화</a>
+      <a href="#치매_감별">치매 감별 진단</a>
+      <a href="#파킨슨_결정">파킨슨 진료·정밀 감별</a>
+      <a href="#파킨슨_증상">파킨슨 의심 증상</a>
+      <a href="#파킨슨_감별" class="signature">손 떨림이 모두 파킨슨은 아닙니다</a>
+      <a href="#검진_치매파킨슨" class="signature">치매·파킨슨 종합 검진</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- 랜딩 1: 치매_결정 -->
+<!-- ============================================================== -->
+<section id="치매_결정" class="landing-section">
+  <div class="landing-eyebrow">랜딩 1 · 치매 진료</div>
+  <h2 class="landing-title">치매, <strong>정밀 감별 진단</strong>부터 시작합니다</h2>
+  <p class="landing-lead">
+    부모님이 자꾸 같은 말을 반복하시고, 가스 불을 잊으시고, 길을 헤매신다면 치매를 의심하시는 것이 자연스럽습니다.
+    그러나 치매처럼 보이는 증상이 사실은 정상압 수두증·만성 경막하출혈·우울증·갑상선 저하증 등
+    "치료되는 다른 병"인 경우도 적지 않습니다. 본원은 신경외과 전문의가 MRI·MRA·인지 검사를 한 자리에서
+    시행해 정밀 감별 진단을 내리는 클리닉입니다.
+  </p>
+
+  <h3>본원 치매 진료 범위</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">정밀 영상 검사</div>
+      <div class="symptom-card-desc">뇌 MRI·MRA·CT 본원 시행, 당일 결과. 뇌 위축·해마 위축·뇌백질변화 평가.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">인지 검사</div>
+      <div class="symptom-card-desc">MMSE 등 표준 인지 검사로 인지 기능 평가.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">가역성 치매 감별</div>
+      <div class="symptom-card-desc">정상압 수두증·만성 경막하출혈 등 수술로 호전 가능한 인지장애 신경외과 감별.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">경도인지장애 추적</div>
+      <div class="symptom-card-desc">MCI 환자 정기 외래·인지 평가·MRI 추적으로 진행 모니터링.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">혈관성 치매 관리</div>
+      <div class="symptom-card-desc">뇌백질변화·미세 뇌경색 환자 위험 인자 관리·정기 외래.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">가족력 검진</div>
+      <div class="symptom-card-desc">치매 가족력 보유 40~60대 환자 사전 검진·정기 관리.</div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <div class="info-box-title">알츠하이머 약물 관리는 신경과로 연계</div>
+    <div class="info-box-desc">
+      본원에서 알츠하이머 치매로 진단된 경우, 도네페질·메만틴 등의 장기 약물 관리는 인근 신경과 또는
+      치매안심센터로 신속히 연계해 드립니다. 본원에서 시행한 영상 자료·인지 검사 결과·진료 소견서를
+      함께 전달하여 진료의 연속성이 끊기지 않도록 합니다.
+    </div>
+  </div>
+
+  <h3>본원 진료가 적합한 환자</h3>
+  <ul class="checklist">
+    <li>부모님 깜빡함이 심해져 치매가 걱정되는 자녀분</li>
+    <li>"치매인지 노화인지" 정확히 알고 싶으신 환자분</li>
+    <li>걸음이 느려지고 깜빡함·요실금이 동반된 환자분 (정상압 수두증 의심)</li>
+    <li>낙상 후 갑자기 인지 저하가 생긴 환자분 (만성 경막하출혈 의심)</li>
+    <li>검진 MRI에서 뇌백질변화·미세 뇌경색이 발견된 환자분</li>
+    <li>치매 가족력이 있어 사전 검진을 받고 싶으신 분</li>
+    <li>다른 병원에서 치매 진단을 받았으나 2차 의견을 원하시는 분</li>
+  </ul>
+</section>
+
+<!-- ============================================================== -->
+<!-- 랜딩 2: 치매_증상 -->
+<!-- ============================================================== -->
+<section id="치매_증상" class="landing-section">
+  <div class="landing-eyebrow">랜딩 2 · 치매 의심 증상</div>
+  <h2 class="landing-title">부모님 변화, <strong>치매 신호</strong>일 수 있습니다</h2>
+  <p class="landing-lead">
+    치매는 갑자기 시작되지 않습니다. 초기에는 "나이가 들어서 그런가 보다" 넘기기 쉬운 작은 변화로 시작됩니다.
+    가족이 먼저 알아채는 변화가 많으므로, 부모님과 시간을 보내실 때 다음 변화들이 있는지 살펴보시기 바랍니다.
+  </p>
+
+  <h3>기억력 변화</h3>
+  <ul class="checklist">
+    <li>같은 말·같은 질문을 자꾸 반복하심</li>
+    <li>방금 한 말·방금 일어난 일을 기억 못하심</li>
+    <li>약 드셨는지·식사하셨는지 기억 못하심</li>
+    <li>가스불·수도·문 잠금을 자꾸 잊으심</li>
+    <li>오늘 날짜·요일·계절을 헷갈리심</li>
+    <li>약속을 자꾸 잊거나 펑크 내심</li>
+    <li>사람 이름·물건 이름이 잘 떠오르지 않으심</li>
+  </ul>
+
+  <h3>일상 어려움</h3>
+  <ul class="checklist">
+    <li>요리하시다 냄비를 자주 태우심</li>
+    <li>리모컨·세탁기·핸드폰 사용을 어려워하심</li>
+    <li>돈 계산·은행 일·카드 비밀번호를 어려워하심</li>
+    <li>익숙한 길에서 길을 잃거나 헤매심</li>
+    <li>운전 중 가던 곳을 잊거나 잘못 가심</li>
+    <li>옷을 안 갈아입거나 같은 옷을 계속 입으심</li>
+  </ul>
+
+  <h3>성격·감정 변화</h3>
+  <ul class="checklist">
+    <li>안 하시던 욕을 하거나 화를 자주 내심</li>
+    <li>의심이 많아지심 (도둑 들었다·돈 훔쳤다 등)</li>
+    <li>며느리·배우자를 의심하심</li>
+    <li>취미를 안 하시고 사람 만나기 싫어하심</li>
+    <li>의욕이 없어지심·우울해 보이심</li>
+    <li>밤에 안 주무시고 돌아다니심·낮밤이 바뀌심</li>
+  </ul>
+
+  <div class="info-box">
+    <div class="info-box-title">자가진단은 진단이 아닙니다 — 정밀 검사가 필요합니다</div>
+    <div class="info-box-desc">
+      자가진단표(MMSE 등)는 치매 위험도를 가늠하는 도구일 뿐, 진단을 대신할 수 없습니다.
+      위 변화가 보이시면 본원 정밀 검사로 치매인지·노화성 건망증인지·경도인지장애인지·가역성 치매인지를
+      정확히 감별받으시기 바랍니다.
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- 랜딩 3: 치매_가역성 ★ 시그니처 -->
+<!-- ============================================================== -->
+<section id="치매_가역성" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 3 · 가역성 치매 (시그니처)</div>
+  <h2 class="landing-title"><strong>치료되는 치매</strong>가 있습니다</h2>
+  <p class="landing-lead">
+    모든 치매가 진행성 만성 질환은 아닙니다. 정상압 수두증·만성 경막하출혈·갑상선 저하증·비타민 결핍 등의
+    원인으로 인한 인지 저하는 적절한 진단과 치료로 호전이 가능합니다. 이러한 가역성 인지장애 중 본원
+    신경외과가 강점을 가지는 영역이 정상압 수두증과 만성 경막하출혈입니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"치매 진단을 받기 전에, 치료되는 다른 병을 먼저 살펴보아야 합니다. 일찍 발견할수록 호전 가능성이 큽니다."</p>
+      <div class="highlight-box-caption">— 본원 가역성 치매 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>정상압 수두증 — "치매·보행장애·요실금" 3대 증상</h3>
+  <p>
+    정상압 수두증(NPH, Normal Pressure Hydrocephalus)은 뇌척수액 순환이 잘 되지 않아 뇌실이 확장되면서
+    인지·보행·배뇨 기능이 함께 떨어지는 질환입니다. 알츠하이머 치매와 비슷해 보이지만, 션트(shunt) 수술
+    이후 상당수 환자에서 보행과 인지가 호전됩니다.
+  </p>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">인지 저하</div>
+      <div class="symptom-card-desc">깜빡함·집중력 저하·느린 사고 — 알츠하이머와 비슷하나 회복 가능성 있음.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">보행 장애</div>
+      <div class="symptom-card-desc">발이 바닥에 붙은 듯 안 떨어짐, 걸음폭이 좁아짐, 자석 같은 발걸음.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">요실금</div>
+      <div class="symptom-card-desc">갑자기 소변 실수가 시작되거나, 소변 횟수가 늘고 못 참으심.</div>
+    </div>
+  </div>
+
+  <h3>만성 경막하출혈 — "낙상 후 인지 저하"</h3>
+  <p>
+    만성 경막하출혈(CSDH, Chronic Subdural Hematoma)은 머리를 부딪힌 후 수 주~수 개월에 걸쳐 천천히
+    뇌 위에 혈종이 고이는 질환입니다. 노인 환자에서 흔하며, 본인은 부딪힌 기억이 없는 경우도 많습니다.
+    인지 저하·두통·한쪽 마비 등으로 나타나며, 수술적 배액으로 빠른 호전이 가능합니다.
+  </p>
+  <div class="warning-box">
+    <div class="warning-box-title">노인 + 낙상 후 + 갑작스러운 인지 저하</div>
+    <div class="warning-box-desc">
+      노인 환자분이 최근 수 주~수 개월 사이에 머리를 부딪힌 적이 있으시거나, 항응고제·항혈전제를 복용 중이시거나,
+      낙상 이력이 있으신데 갑자기 깜빡함·졸림·한쪽 힘 빠짐이 시작되었다면 만성 경막하출혈을 의심해
+      신속히 본원 또는 가까운 의료기관에서 뇌 CT·MRI 검사를 받으시기 바랍니다.
+    </div>
+  </div>
+
+  <h3>기타 치료되는 인지 저하 원인</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>원인</th><th>특징</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="label">비타민 B12 결핍</td><td>빈혈·신경 증상 동반. 보충으로 호전.</td></tr>
+      <tr><td class="label">갑상선 기능 저하증</td><td>피로·체중 증가·추위·서맥 동반. 호르몬 치료로 호전.</td></tr>
+      <tr><td class="label">우울증 (가성 치매)</td><td>의욕 저하·집중력 저하·기억력 호소. 우울증 치료로 호전.</td></tr>
+      <tr><td class="label">약물 부작용</td><td>수면제·항콜린성 약물·일부 진통제. 약물 조정으로 호전.</td></tr>
+      <tr><td class="label">알코올성 인지 저하</td><td>지속적 음주력. 금주·영양 보충으로 호전.</td></tr>
+      <tr><td class="label">섬망</td><td>입원·감염 후 갑작스러운 발생. 원인 치료로 회복.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>본원 가역성 치매 감별 진료 절차</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">상세 문진</div>
+      <div class="step-desc">증상 시작 시점·진행 양상·낙상·복용 약 등 종합 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">영상 검사</div>
+      <div class="step-desc">뇌 MRI·CT로 뇌실 확장·경막하출혈·뇌위축 확인 (당일 결과)</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">인지 검사</div>
+      <div class="step-desc">MMSE 등 표준 인지 검사·신경학적 진찰</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">감별 진단</div>
+      <div class="step-desc">알츠하이머 치매 vs 가역성 인지장애 종합 판단</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">진료 방향</div>
+      <div class="step-desc">가역성이면 신경외과 진료, 알츠하이머면 신경과 연계</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- 랜딩 4: 치매_혈관성 ★ 시그니처 — 14-2 시너지 -->
+<!-- ============================================================== -->
+<section id="치매_혈관성" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 4 · 혈관성 치매 (시그니처 · 14-2 시너지)</div>
+  <h2 class="landing-title">뇌 MRI에 점이 보이신다면, <strong>인지 검사</strong>도 함께</h2>
+  <p class="landing-lead">
+    검진 뇌 MRI에서 "뇌백질변화·미세 뇌경색"이 발견되어 잠 못 이루시는 분이 많습니다.
+    이러한 변화는 혈관성 치매의 위험 신호일 수 있으며, 적극적인 위험 인자 관리로 진행을 늦출 수 있습니다.
+    본원은 뇌혈관 클리닉(14-2)과 함께 뇌백질변화 환자의 인지 평가·정기 추적을 진료합니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"뇌백질변화는 모르고 지나가는 작은 뇌졸중의 흔적입니다. 일찍 발견하면 위험 인자를 관리해 혈관성 치매로의 진행을 늦출 수 있습니다."</p>
+      <div class="highlight-box-caption">— 본원 혈관성 치매 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>혈관성 치매란</h3>
+  <p>
+    혈관성 치매는 뇌혈관 질환(뇌졸중·미세 뇌경색·뇌백질변화 등)으로 인해 인지 기능이 떨어지는 치매입니다.
+    한 번의 큰 뇌졸중 후에 발생할 수도 있고, 여러 번의 미세 뇌경색이 누적되어 천천히 진행할 수도 있습니다.
+    알츠하이머 치매와 함께 가장 흔한 치매 유형이며, 알츠하이머와 혼합되는 경우도 많습니다.
+  </p>
+
+  <h3>혈관성 치매의 특징</h3>
+  <ul class="checklist">
+    <li>계단식 진행 — 갑자기 나빠졌다 멈췄다, 또 갑자기 나빠지는 양상</li>
+    <li>한쪽 마비·언어 장애 등 신경학적 증상이 동반될 수 있음</li>
+    <li>걸음 장애·요실금·감정 조절 어려움이 인지 저하와 함께 나타날 수 있음</li>
+    <li>고혈압·당뇨·고지혈증·심방세동·흡연 등 위험 인자가 있는 환자에서 흔함</li>
+    <li>뇌졸중·뇌경색 가족력이 있는 환자에서 흔함</li>
+  </ul>
+
+  <h3>뇌백질변화(WMH)란</h3>
+  <p>
+    뇌백질변화(White Matter Hyperintensity)는 뇌 MRI에서 흰 점·점·반점으로 보이는 변화입니다.
+    소혈관 질환의 흔적이며, 환자 본인이 모르는 사이에 발생한 작은 뇌경색의 누적이 원인인 경우가 많습니다.
+    40대 이후로 흔하게 발견되며, 양이 많을수록 향후 인지 저하·혈관성 치매·뇌졸중 위험이 높아집니다.
+  </p>
+
+  <div class="info-box">
+    <div class="info-box-title">검진 MRI에서 뇌백질변화가 발견되셨다면</div>
+    <div class="info-box-desc">
+      뇌백질변화 자체로는 증상이 없는 경우가 많지만, 발견된 시점에서 위험 인자 관리를 시작하는 것이 의미가 있습니다.
+      본원에서는 영상의 양과 위치를 정밀 평가하고, 인지 검사·위험 인자 관리·정기 추적으로 혈관성 치매로의
+      진행을 늦추는 진료를 제공합니다. 14-2 뇌혈관 클리닉과 함께 진료가 이어집니다.
+    </div>
+  </div>
+
+  <h3>본원 혈관성 치매 진료 방식</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>진료 항목</th><th>내용</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="label">정밀 영상 평가</td><td>뇌 MRI·MRA로 뇌백질변화 양·뇌혈관 협착·미세 출혈 평가</td></tr>
+      <tr><td class="label">인지 평가</td><td>MMSE 등 표준 인지 검사로 현재 인지 기능 측정</td></tr>
+      <tr><td class="label">위험 인자 관리</td><td>혈압·당뇨·콜레스테롤·심방세동 정기 검사·약물 진료</td></tr>
+      <tr><td class="label">예방 약물</td><td>아스피린·클로피도그렐·스타틴 등 환자별 처방</td></tr>
+      <tr><td class="label">정기 추적</td><td>6개월~1년 간격 MRI·인지 검사로 진행 모니터링</td></tr>
+      <tr><td class="label">생활 가이드</td><td>운동·식이·금연·스트레스 관리 진료</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============================================================== -->
+<!-- 랜딩 5: 치매_감별 -->
+<!-- ============================================================== -->
+<section id="치매_감별" class="landing-section">
+  <div class="landing-eyebrow">랜딩 5 · 치매 감별 진단</div>
+  <h2 class="landing-title">치매와 헷갈리는 <strong>다른 인지 변화</strong>들</h2>
+  <p class="landing-lead">
+    치매 같지만 치매가 아닌 경우도 많습니다. 노화성 건망증·경도인지장애·우울증·섬망 등은 적절한 진단과
+    관리로 진행을 늦추거나 회복할 수 있습니다. 본원은 이러한 감별 진단을 정확히 내려 환자분의 진료 방향을 정합니다.
+  </p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>구분</th>
+        <th>특징</th>
+        <th>치매와 다른 점</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">노화성 건망증</td>
+        <td>이름·물건명 잠시 안 떠오름</td>
+        <td>나중에 다시 떠오름. 일상생활 가능. 본인이 잊은 걸 알아챔.</td>
+      </tr>
+      <tr>
+        <td class="label">경도인지장애 (MCI)</td>
+        <td>객관적 인지 저하는 있으나 일상 가능</td>
+        <td>치매로 진행 가능. 정기 추적 필요. 일부는 호전.</td>
+      </tr>
+      <tr>
+        <td class="label">우울증 (가성 치매)</td>
+        <td>의욕 저하·집중력 저하·기억력 호소</td>
+        <td>본인이 적극적으로 호소. 우울증 치료로 호전.</td>
+      </tr>
+      <tr>
+        <td class="label">섬망</td>
+        <td>의식·집중력 변동, 입원·감염 후 발생</td>
+        <td>급성, 변동성, 원인 치료로 회복.</td>
+      </tr>
+      <tr>
+        <td class="label">갑상선 저하증</td>
+        <td>피로·집중력 저하·체중 증가</td>
+        <td>혈액 검사로 진단. 호르몬 치료로 호전.</td>
+      </tr>
+      <tr>
+        <td class="label">정상압 수두증</td>
+        <td>인지·보행·요실금 3대 증상</td>
+        <td>수술로 호전 가능. (랜딩 3 참조)</td>
+      </tr>
+      <tr>
+        <td class="label">만성 경막하출혈</td>
+        <td>낙상 후 인지 저하·두통</td>
+        <td>수술로 호전 가능. (랜딩 3 참조)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    이런 감별은 환자분이 스스로 판단하기 어렵습니다. 깜빡함·이상행동이 보이시면 우선 본원 또는 가까운
+    의료기관에서 정밀 진단을 받으십시오. 본원에서는 영상 검사·인지 검사·신경학적 진찰을 한 자리에서
+    시행하여 당일 감별 진단을 안내해 드립니다.
+  </p>
+</section>
+
+<!-- ============================================================== -->
+<!-- 랜딩 6: 파킨슨_결정 -->
+<!-- ============================================================== -->
+<section id="파킨슨_결정" class="landing-section">
+  <div class="landing-eyebrow">랜딩 6 · 파킨슨 진료</div>
+  <h2 class="landing-title">파킨슨, <strong>정밀 감별 진단</strong>부터 시작합니다</h2>
+  <p class="landing-lead">
+    손이 떨리고 동작이 느려지고 표정이 굳어가신 부모님을 보시며 파킨슨을 의심하시는 보호자분이 많습니다.
+    그러나 손 떨림 환자분 중 절반 가까이는 파킨슨병이 아니라 본태성 진전·약물성 진전·갑상선 항진 등의
+    다른 원인입니다. 본원은 정밀 감별 진단으로 환자분의 진료 방향을 정확히 안내합니다.
+  </p>
+
+  <h3>본원 파킨슨 진료 범위</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">정밀 영상 검사</div>
+      <div class="symptom-card-desc">뇌 MRI·MRA로 혈관성 파킨슨·정상압 수두증·뇌종양 등 다른 원인 감별.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">신경학적 진찰</div>
+      <div class="symptom-card-desc">떨림 양상·강직·운동 완서·자세 불안정 종합 평가.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">감별 진단</div>
+      <div class="symptom-card-desc">파킨슨병 vs 본태성 진전 vs 약물성 vs 혈관성 파킨슨 감별.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">복용 약물 검토</div>
+      <div class="symptom-card-desc">위장약·항정신병약 등 약물성 파킨슨 유발 약 검토.</div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <div class="info-box-title">레보도파 약물 관리는 신경과로 연계</div>
+    <div class="info-box-desc">
+      본원에서 파킨슨병으로 진단된 경우, 레보도파·도파민 작용제 등의 장기 약물 관리는 인근 신경과 또는
+      대학병원 운동장애 클리닉으로 신속히 연계해 드립니다. 본원에서 시행한 영상·진료 소견서를 함께 전달해
+      진료의 연속성이 끊기지 않도록 합니다. 파킨슨 약물은 환자별 미세 조정이 중요하므로 운동장애 전문의의
+      장기 관리를 권장합니다.
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- 랜딩 7: 파킨슨_증상 -->
+<!-- ============================================================== -->
+<section id="파킨슨_증상" class="landing-section">
+  <div class="landing-eyebrow">랜딩 7 · 파킨슨 의심 증상</div>
+  <h2 class="landing-title">파킨슨 의심 — <strong>4대 운동 증상</strong></h2>
+  <p class="landing-lead">
+    파킨슨병은 뇌 안의 흑질에서 도파민을 만드는 신경세포가 점점 줄어드는 질환입니다. 도파민이 부족해지면
+    움직임이 매끄럽지 않게 되며, 다음 4가지 운동 증상이 천천히 나타납니다. 한쪽에서 먼저 시작되는
+    경우가 많은 것이 특징입니다.
+  </p>
+
+  <h3>4대 운동 증상</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">① 안정 시 떨림 (진전)</div>
+      <div class="symptom-card-desc">가만히 쉬고 있을 때 한쪽 손·발이 미세하게 떨림. "환약 굴리는 듯한" 양상이 전형적.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">② 강직</div>
+      <div class="symptom-card-desc">관절이 굳고 움직임이 둔해짐. 단추 잠그기·옷 입기가 어려워짐.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">③ 운동 완서</div>
+      <div class="symptom-card-desc">동작 전체가 느려지고 작아짐. 글씨가 작아짐(소필증), 보폭이 좁아짐.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">④ 자세 불안정</div>
+      <div class="symptom-card-desc">균형 잡기가 어렵고, 잘 넘어지심. 뒤로 쏠리시거나 휘청거리심.</div>
+    </div>
+  </div>
+
+  <h3>비운동 증상 (보호자가 먼저 알아채는 변화)</h3>
+  <ul class="checklist">
+    <li>표정이 굳어지심·얼굴이 무표정해지심</li>
+    <li>말소리가 작아지고 발음이 흐려지심</li>
+    <li>걸으실 때 팔을 안 흔드시거나 발을 끌고 걸으심</li>
+    <li>잠꼬대가 심해지심·꿈에서 발길질을 하심 (REM 수면 행동장애)</li>
+    <li>냄새를 잘 못 맡으심</li>
+    <li>변비가 심해지심</li>
+    <li>일어설 때 어지러우심 (기립성 어지럼)</li>
+    <li>땀이 많이 나거나 침을 흘리심</li>
+    <li>우울감·의욕 저하가 동반되심</li>
+  </ul>
+
+  <div class="info-box">
+    <div class="info-box-title">파킨슨 ≠ 치매</div>
+    <div class="info-box-desc">
+      많은 환자분이 "파킨슨에 걸리면 치매도 같이 온다"고 두려워하십니다. 파킨슨병의 핵심은 운동 증상이며,
+      모든 파킨슨 환자가 치매로 진행하지는 않습니다. 일부 환자에서 후기에 인지 저하가 동반될 수 있으나,
+      이는 별개의 평가가 필요합니다. 두려움 속에서 진단을 미루지 마시고 정밀 감별을 받으십시오.
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- 랜딩 8: 파킨슨_감별 ★ 시그니처 -->
+<!-- ============================================================== -->
+<section id="파킨슨_감별" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 8 · 파킨슨 감별 진단 (시그니처)</div>
+  <h2 class="landing-title"><strong>손 떨림이 모두 파킨슨</strong>은 아닙니다</h2>
+  <p class="landing-lead">
+    손이 떨려서 파킨슨을 걱정하며 본원을 찾으신 환자분 중 절반 가까이는 파킨슨병이 아니라
+    본태성 진전·약물성 진전·갑상선 항진 등 다른 원인입니다. 정밀 감별 진단으로 정확한 원인을 찾는 것이
+    환자분의 불안을 줄이는 첫 단계입니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"손 떨림은 흔한 증상이지만, 원인은 다양합니다. 정밀 감별 후에 적절한 진료 방향을 결정합니다."</p>
+      <div class="highlight-box-caption">— 본원 파킨슨 감별 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>손 떨림의 종류</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>구분</th><th>특징</th><th>대표 원인</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">안정 시 진전</td>
+        <td>가만히 있을 때 떨림. 움직이면 줄어듦.</td>
+        <td>파킨슨병 (한쪽에서 시작 흔함)</td>
+      </tr>
+      <tr>
+        <td class="label">자세 시 진전</td>
+        <td>팔을 들어 자세를 유지할 때 떨림.</td>
+        <td>본태성 진전, 갑상선 항진, 약물</td>
+      </tr>
+      <tr>
+        <td class="label">활동 시 진전</td>
+        <td>무언가를 잡거나 동작할 때 떨림.</td>
+        <td>본태성 진전, 소뇌 문제</td>
+      </tr>
+      <tr>
+        <td class="label">의도성 진전</td>
+        <td>목표에 가까이 갈수록 심해짐.</td>
+        <td>소뇌 질환</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>본태성 진전 (가장 흔한 떨림 원인)</h3>
+  <p>
+    본태성 진전은 가장 흔한 운동장애로, 일반 인구에서 흔히 발견됩니다. 손을 들어 무엇을 잡으려고 할 때나
+    글씨를 쓰실 때 떨림이 두드러집니다. 가족력이 흔하며, 술을 마시면 일시적으로 떨림이 줄어드는 것이 특징입니다.
+    파킨슨병과 달리 동작이 느려지거나 표정이 굳어지지 않으며, 다른 신경학적 이상이 동반되지 않습니다.
+    필요시 약물 진료로 떨림을 줄일 수 있습니다.
+  </p>
+
+  <h3>약물성 파킨슨 — 약을 끊으면 호전</h3>
+  <p>
+    위장약(메토클로프라미드)·항정신병약·일부 어지럼증 약 등이 도파민 작용을 차단해 파킨슨 양상을 유발할 수 있습니다.
+    노인 환자에서 흔하며, 원인 약을 끊으면 수 주~수 개월에 걸쳐 호전됩니다. 본원에서는 환자분의 복용 약 전체를
+    검토해 약물성 파킨슨 가능성을 평가합니다.
+  </p>
+  <div class="warning-box">
+    <div class="warning-box-title">자주 원인이 되는 약물</div>
+    <div class="warning-box-desc">
+      메토클로프라미드(맥페란), 레보설피리드, 할로페리돌·리스페리돈·올란자핀 등 항정신병약,
+      일부 어지럼증 약·항우울제 — 본원 진료 시 복용 중인 약 전체를 가져오시면 도움이 됩니다.
+    </div>
+  </div>
+
+  <h3>혈관성 파킨슨증후군</h3>
+  <p>
+    뇌백질변화·여러 번의 미세 뇌경색이 누적되어 파킨슨 양상이 나타나는 경우입니다. 보행 장애가 두드러지고
+    상체보다 하체 증상이 심한 것이 특징입니다. 본원 MRI 검사로 파킨슨병과 감별이 가능하며,
+    뇌혈관 위험 인자 관리가 핵심입니다.
+  </p>
+
+  <h3>본원 파킨슨 감별 진료 절차</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">상세 문진</div>
+      <div class="step-desc">떨림 양상·시작 시점·가족력·복용 약 종합 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">신경학적 진찰</div>
+      <div class="step-desc">떨림 종류·강직·운동 완서·자세 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">영상 검사</div>
+      <div class="step-desc">뇌 MRI·MRA로 혈관성·정상압 수두증 감별</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">감별 진단</div>
+      <div class="step-desc">파킨슨병 vs 다른 원인 종합 판단</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">진료 방향</div>
+      <div class="step-desc">파킨슨병이면 신경과 연계, 다른 원인이면 본원 진료</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- 랜딩 9: 검진_치매파킨슨 ★ 시그니처 — 본원 최강 -->
+<!-- ============================================================== -->
+<section id="검진_치매파킨슨" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 9 · 치매·파킨슨 종합 검진 (본원 최강 차별화)</div>
+  <h2 class="landing-title">MRI·MRA·인지 검사, <strong>당일 결과</strong>로 확인</h2>
+  <p class="landing-lead">
+    "검사받고 결과 보러 또 오라"는 큰 병원의 번거로움. 본원은 치매·파킨슨 의심 환자분의 뇌 MRI·MRA·CT,
+    인지 검사, 신경학적 진찰을 한 자리에서 시행하고 신경외과 전문의가 당일 판독해 드립니다. 검사받으신
+    그날 결과를 들으시고, 필요한 후속 진료까지 한 번에 이어집니다. 가족력 보유 40~70대 환자분, 부모님을
+    모시고 오시는 보호자분께 가장 부담 없는 검진 환경입니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"큰 병원 가지 않으셔도 됩니다. 본원 영상 검사는 검사 → 판독 → 진료까지 한 자리에서 이어집니다. 부모님을 두 번 모시고 다니실 필요가 없습니다."</p>
+      <div class="highlight-box-caption">— 본원 치매·파킨슨 검진 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 검진 워크플로우</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">예약·접수</div>
+      <div class="step-desc">전화 또는 온라인 예약, 보호자 동반 가능</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">사전 문진</div>
+      <div class="step-desc">증상·가족력·복용 약·낙상 이력 등 종합 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">영상·인지 검사</div>
+      <div class="step-desc">뇌 MRI·MRA·CT + MMSE 등 인지 검사 본원 시행</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">당일 판독</div>
+      <div class="step-desc">신경외과 전문의 판독, 당일 결과 안내</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">후속 진료</div>
+      <div class="step-desc">감별 결과에 따라 본원 진료 / 신경과 연계</div>
+    </div>
+  </div>
+
+  <h3>이런 분께 권장합니다</h3>
+  <ul class="checklist">
+    <li>부모님·배우자에게 치매·파킨슨 의심 증상이 있어 정확한 감별을 원하시는 보호자분</li>
+    <li>걸음이 느려지고 깜빡함·요실금이 함께 시작된 환자분 (정상압 수두증 의심)</li>
+    <li>낙상 후 갑자기 인지 변화가 생긴 노인 환자분 (만성 경막하출혈 의심)</li>
+    <li>손 떨림으로 파킨슨이 걱정되시지만 진단을 미루셨던 환자분</li>
+    <li>치매·파킨슨 가족력으로 사전 검진을 받고 싶으신 40~70대</li>
+    <li>건강검진 뇌 MRI에서 뇌백질변화·미세 뇌경색이 발견된 환자분</li>
+    <li>다른 병원에서 치매·파킨슨 진단을 받았으나 2차 의견을 원하시는 분</li>
+    <li>본인이 깜빡함·동작 느림이 심해져 불안하신 분</li>
+  </ul>
+
+  <h3>검진에 포함되는 항목</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>검사</th><th>무엇을 보나</th><th>본원 워크플로우</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">뇌 MRI</td>
+        <td>뇌 위축·해마 위축·뇌백질변화·뇌실 확장·만성 경막하출혈·뇌종양</td>
+        <td>본원 시행 · 당일 판독</td>
+      </tr>
+      <tr>
+        <td class="label">뇌 MRA</td>
+        <td>뇌혈관 협착·뇌동맥류·혈관 기형 (혈관성 치매 위험 평가)</td>
+        <td>본원 시행 · 당일 판독</td>
+      </tr>
+      <tr>
+        <td class="label">뇌 CT</td>
+        <td>급성 출혈·골절 (필요시)</td>
+        <td>본원 시행 · 즉시 판독</td>
+      </tr>
+      <tr>
+        <td class="label">인지 검사</td>
+        <td>MMSE 등 표준 인지 기능 평가</td>
+        <td>본원 시행 · 당일 안내</td>
+      </tr>
+      <tr>
+        <td class="label">신경학적 진찰</td>
+        <td>떨림·강직·운동 완서·자세·반사 평가</td>
+        <td>신경외과 전문의 진찰</td>
+      </tr>
+      <tr>
+        <td class="label">위험 인자 평가</td>
+        <td>혈압·혈당·콜레스테롤·심전도 (필요시)</td>
+        <td>본원 시행 · 종합 평가</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>보호자분께 자주 드리는 말씀</h3>
+  <p>
+    부모님이 검사를 거부하실 때 가족 입장에서 무척 곤란하실 것입니다. 본원에서는 "치매 검사"라는 표현보다
+    "건강검진"이라는 표현으로 안내드리며, 검사 시간을 짧게 구성해 환자분 부담을 줄입니다. 보호자분이
+    동반하셔서 함께 결과를 들으실 수 있으며, 향후 진료 방향에 대한 상담도 함께 이루어집니다.
+    혼자 모든 걸 감당하지 마시고 본원 진료실에서 함께 의논해 주십시오.
+  </p>
+
+  <div class="info-box">
+    <div class="info-box-title">검진 후 진료 방향</div>
+    <div class="info-box-desc">
+      검진 결과에 따라 (1) 가역성 인지장애·혈관성 치매·경도인지장애·본태성 진전·약물성 파킨슨 등은 본원에서
+      직접 진료, (2) 알츠하이머 치매·파킨슨병 등 장기 약물 관리가 필요한 경우는 인근 신경과·치매안심센터로
+      신속 연계해 드립니다. 본원에서 받은 영상·소견서를 함께 전달해 진료의 연속성이 끊기지 않도록 합니다.
+    </div>
+  </div>
+</section>
+
+<!-- Doctor Card -->
+<section style="padding: 80px 32px; max-width: 1100px; margin: 0 auto;">
+  <div class="doctor-card">
+    <div>
+      <div style="font-family: var(--font-serif); font-size: 13px; color: var(--color-gold); letter-spacing: 0.2em; margin-bottom: 12px;">DIRECTOR</div>
+      <div class="doctor-name">김진균 원장</div>
+      <div class="doctor-role">희망찬병원 치매·파킨슨 클리닉</div>
+    </div>
+    <div class="doctor-credentials">
+      <ul>
+        <li>신경외과 전문의</li>
+        <li>희망찬병원 원장</li>
+        <li>유튜브 채널 "털보의사" 운영 — 신경외과 환자 교육</li>
+        <li>치매·파킨슨·MRI/MRA 환자 교육 콘텐츠 다수</li>
+        <li>화성·동탄·오산·평택 지역 신경외과 진료 거점</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="예약" class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">진료 예약</div>
+    <h2 class="cta-title">큰 병원 가지 않으셔도 됩니다</h2>
+    <p class="cta-desc">
+      신경외과 전문의 김진균 원장이 진료합니다. 치매·파킨슨 정밀 감별·가역성 인지장애 진단·가족력 검진 —
+      MRI·MRA·인지 검사를 한 자리에서 시행해 당일 결과로 안내합니다. 진단 후 약물 관리는 신경과·치매안심센터로 연계.
+    </p>
+    <div class="cta-buttons">
+      <a href="tel:1600-3415" class="cta-btn-primary">전화 예약 —1600-3415</a>
+      <a href="#" class="cta-btn-secondary">온라인 예약 문의</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">희망찬병원 치매·파킨슨 클리닉</div>
+        <div class="footer-brand-desc">
+          신경외과 전문의가 진료하는 치매·파킨슨 정밀 감별 클리닉입니다. 화성·동탄·오산·평택·수원·용인·병점 지역
+          환자분을 진료합니다. 뇌 MRI·MRA·CT·인지 검사 당일 결과, 가역성 인지장애(정상압 수두증·만성 경막하출혈) 감별,
+          본태성 진전·약물성 파킨슨 감별 진료. 진단 후 약물 관리는 신경과·치매안심센터 연계.
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>진료 영역</h4>
+        <ul>
+          <li><a href="#치매_결정">치매 정밀 감별</a></li>
+          <li><a href="#치매_가역성">치료되는 치매</a></li>
+          <li><a href="#치매_혈관성">혈관성 치매</a></li>
+          <li><a href="#파킨슨_감별">파킨슨 감별</a></li>
+          <li><a href="#검진_치매파킨슨">치매·파킨슨 검진</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>오시는 길</h4>
+        <ul>
+          <li>[주소 — 경기도 화성시 병점구 병점중앙로 174]</li>
+          <li>전화 — 1600-3415</li>
+          <li>진료 시간 — 09:00~18:00</li>
+          <li>토요일 진료 — 09:00~13:00 [점심시간 없음]</li>
+          <li>점심 시간 — 12:30~13:30</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      ⓒ 희망찬병원 · 사업자등록번호 [기입] · 의료기관 신고번호 [기입]<br>
+      본 페이지는 의료법 56조에 따른 의료광고이며, 진료의 결과는 환자 개별 상태에 따라 다를 수 있습니다.<br>
+      본원은 알츠하이머 치매·파킨슨병의 장기 약물 관리를 직접 시행하지 않으며, 진단 확정 후 인근 신경과 또는
+      치매안심센터로 신속 연계해 드립니다.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
