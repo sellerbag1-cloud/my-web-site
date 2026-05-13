@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 언어장애 외래 진료 — "1분 만에 사라졌으니 괜찮겠지" 가장 위험한 함정 | 동탄·화성권</title>
+<meta name="description" content="언어장애·실어증·일과성 뇌허혈(TIA) 정밀 진료. 응급실 후 외래 추적 + TIA 정밀 검사 + 가족력 검진 / FAST 신호 시 즉시 119 / 김진균 원장 직접 진료 / 동탄·화성·평택권.">
+<meta name="keywords" content="언어장애, 실어증, 구음장애, 말 안 나옴, 발음 어눌, TIA, 일과성 뇌허혈, 미니 뇌졸중, 뇌졸중, FAST, 골든타임, 응급실 후 외래, 뇌혈관 검진, MRA, 뇌졸중 가족력, 동탄 뇌졸중, 화성 뇌졸중, 희망찬병원, 김진균, 털보의사">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  /* 14-4-2 언어장애 색상 시스템 — 14-4-1 계승 + 언어장애 특화 4색 */
+  --hc-deep: #0E4A6E;
+  --hc-mid: #1A6B96;
+  --hc-light: #4A9FCB;
+  --hc-gold: #C89B2F;
+  --hc-gold-light: #E5C575;
+  --hc-warning: #B8351C;        /* ★ 응급·TIA 함정 (적갈) */
+  --hc-warning-bg: #FBEEEA;
+  --hc-warning-deep: #8E2614;   /* ★ TIA 함정 강조 (짙은 적갈) */
+  --hc-warning-soft: #DD8870;
+  --hc-followup: #4B5A8A;       /* ★ 응급실 후 외래 영입 (차분한 청보라) */
+  --hc-followup-bg: #EEF0F7;
+  --hc-safe: #4B7A3E;            /* ★ 가족력 검진 (안전 초록) */
+  --hc-safe-bg: #ECF3E8;
+  --hc-warm: #F8F3E9;
+  --hc-cream: #FCF8F2;
+  --hc-charcoal: #2A3744;
+  --hc-slate: #4D5C6E;
+  --hc-gray: #8C97A3;
+  --hc-line: #E5DDC8;
+  --hc-white: #FFFFFF;
+  
+  --font-display: 'Noto Serif KR', serif;
+  --font-body: 'Pretendard', -apple-system, sans-serif;
+  
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  
+  --shadow-sm: 0 2px 8px rgba(14, 74, 110, 0.06);
+  --shadow-md: 0 8px 24px rgba(14, 74, 110, 0.10);
+  --shadow-lg: 0 16px 48px rgba(14, 74, 110, 0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--hc-cream);
+  color: var(--hc-charcoal);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+img { max-width: 100%; display: block; }
+
+/* 미니 헤더 */
+.mini-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(252, 248, 242, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--hc-line);
+  padding: 0.875rem 0;
+}
+.mini-header__inner {
+  max-width: 1200px; margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex; justify-content: space-between;
+  align-items: center; gap: 1rem;
+}
+.mini-header__brand {
+  font-family: var(--font-display);
+  font-weight: 700; font-size: 1.1rem;
+  color: var(--hc-deep);
+  letter-spacing: -0.01em;
+}
+.mini-header__brand-sub {
+  font-family: var(--font-body);
+  font-weight: 500; font-size: 0.78rem;
+  color: var(--hc-gold);
+  margin-left: 0.5rem;
+  letter-spacing: 0.05em;
+}
+.mini-header__cta { display: flex; gap: 0.75rem; align-items: center; }
+
+.btn {
+  display: inline-flex; align-items: center;
+  gap: 0.45rem; padding: 0.625rem 1.125rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600; font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none; cursor: pointer;
+}
+.btn--primary { background: var(--hc-deep); color: var(--hc-white); box-shadow: var(--shadow-sm); }
+.btn--primary:hover { background: var(--hc-mid); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.btn--gold { background: var(--hc-gold); color: var(--hc-white); }
+.btn--gold:hover { background: #B0851F; }
+.btn--warning { background: var(--hc-warning); color: var(--hc-white); }
+.btn--warning:hover { background: #962A14; }
+.btn--outline { background: transparent; color: var(--hc-deep); border: 1.5px solid var(--hc-deep); }
+.btn--outline:hover { background: var(--hc-deep); color: var(--hc-white); }
+.btn--large { padding: 1rem 2rem; font-size: 1.05rem; }
+
+/* 히어로 */
+.hero {
+  background: linear-gradient(135deg, var(--hc-warm) 0%, var(--hc-cream) 100%);
+  padding: 5rem 1.5rem 4rem;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ""; position: absolute;
+  top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(184, 53, 28, 0.06) 0%, transparent 70%);
+  border-radius: 50%; pointer-events: none;
+}
+.hero__inner { max-width: 1100px; margin: 0 auto; position: relative; }
+.hero__eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600; font-size: 0.85rem;
+  color: var(--hc-warning);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.4rem 0;
+  border-bottom: 2px solid var(--hc-warning);
+  margin-bottom: 2rem;
+}
+.hero__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 4.8vw, 3rem);
+  line-height: 1.25;
+  color: var(--hc-deep);
+  letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+}
+.hero__title em {
+  font-style: normal;
+  color: var(--hc-warning-deep);
+  border-bottom: 4px solid var(--hc-warning-soft);
+  padding-bottom: 0.1rem;
+}
+.hero__lede {
+  font-size: 1.15rem;
+  color: var(--hc-slate);
+  font-weight: 400;
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+  line-height: 1.65;
+}
+.hero__cta-group {
+  display: flex; gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.hero__signal {
+  display: inline-flex; align-items: center;
+  gap: 0.6rem; font-size: 0.92rem;
+  color: var(--hc-slate); font-weight: 500;
+  padding: 0.6rem 1rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--hc-line);
+  box-shadow: var(--shadow-sm);
+}
+.hero__signal-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--hc-warning);
+}
+
+/* 섹션 공통 */
+section { padding: 5rem 1.5rem; }
+.section__inner { max-width: 1100px; margin: 0 auto; }
+.section__head { margin-bottom: 3rem; }
+.section__eyebrow {
+  font-family: var(--font-body);
+  font-weight: 700; font-size: 0.78rem;
+  color: var(--hc-gold);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.section__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  line-height: 1.3;
+  color: var(--hc-deep);
+  letter-spacing: -0.02em;
+  max-width: 800px;
+}
+.section__title em { font-style: normal; color: var(--hc-gold); }
+.section__lede {
+  font-size: 1.05rem;
+  color: var(--hc-slate);
+  margin-top: 1rem;
+  max-width: 720px;
+  line-height: 1.65;
+}
+
+/* ★★★ TIA 함정 섹션 (짙은 적갈) */
+.tia-trap {
+  background: linear-gradient(135deg, var(--hc-warning-bg) 0%, var(--hc-cream) 100%);
+}
+.tia-trap .section__eyebrow { color: var(--hc-warning); }
+.tia-trap .section__title em { color: var(--hc-warning-deep); }
+
+.tia-flip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+@media (max-width: 700px) { .tia-flip { grid-template-columns: 1fr; } }
+.tia-card {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  background: var(--hc-white);
+  border-top: 4px solid var(--hc-gray);
+}
+.tia-card--wrong {
+  border-top-color: var(--hc-warning);
+  background: linear-gradient(180deg, rgba(184, 53, 28, 0.04) 0%, var(--hc-white) 60%);
+}
+.tia-card--right {
+  border-top-color: var(--hc-deep);
+}
+.tia-card__tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700; font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+.tia-card--wrong .tia-card__tag {
+  background: rgba(184, 53, 28, 0.10);
+  color: var(--hc-warning);
+}
+.tia-card--right .tia-card__tag {
+  background: rgba(14, 74, 110, 0.10);
+  color: var(--hc-deep);
+}
+.tia-card__head {
+  font-family: var(--font-display);
+  font-weight: 700; font-size: 1.2rem;
+  color: var(--hc-deep);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+.tia-card__body {
+  font-size: 0.98rem;
+  color: var(--hc-slate);
+  line-height: 1.7;
+}
+.tia-card__body strong { color: var(--hc-warning-deep); font-weight: 700; }
+
+.tia-stat {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: var(--hc-warning-deep);
+  color: var(--hc-white);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+.tia-stat__head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+.tia-stat__numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  .tia-stat__numbers { grid-template-columns: 1fr; }
+}
+.tia-stat__num {
+  padding: 1rem 0;
+}
+.tia-stat__big {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  color: var(--hc-gold-light);
+}
+.tia-stat__label {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* FAST 응급 신호 */
+.fast { background: var(--hc-white); }
+.fast .section__eyebrow { color: var(--hc-warning); }
+.fast .section__title em { color: var(--hc-warning); }
+
+.fast-banner {
+  background: var(--hc-warning);
+  color: var(--hc-white);
+  padding: 2rem 2.5rem;
+  border-radius: var(--radius-lg);
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+.fast-banner__head {
+  font-family: var(--font-display);
+  font-weight: 700; font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+.fast-banner__sub {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.fast-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+@media (max-width: 800px) { .fast-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 500px) { .fast-grid { grid-template-columns: 1fr; } }
+
+.fast-card {
+  padding: 2rem 1.5rem;
+  background: var(--hc-cream);
+  border-radius: var(--radius-lg);
+  border-top: 4px solid var(--hc-warning);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.fast-card--key {
+  border-top-color: var(--hc-warning-deep);
+  background: linear-gradient(180deg, rgba(184, 53, 28, 0.06) 0%, var(--hc-cream) 60%);
+}
+.fast-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.fast-card__letter {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 3.5rem;
+  color: var(--hc-warning);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.fast-card--key .fast-card__letter { color: var(--hc-warning-deep); }
+.fast-card__english {
+  font-size: 0.85rem;
+  color: var(--hc-gray);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+.fast-card__korean {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--hc-deep);
+  margin-bottom: 1rem;
+}
+.fast-card__test {
+  font-size: 0.88rem;
+  color: var(--hc-charcoal);
+  line-height: 1.5;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--hc-line);
+}
+
+/* 골든타임 */
+.golden { background: var(--hc-warm); }
+.golden .section__eyebrow { color: var(--hc-warning); }
+.golden .section__title em { color: var(--hc-warning); }
+
+.golden-quote {
+  margin-top: 2rem;
+  padding: 2rem 2.5rem;
+  background: var(--hc-white);
+  border-left: 6px solid var(--hc-warning);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--hc-deep);
+  line-height: 1.65;
+  box-shadow: var(--shadow-sm);
+}
+.golden-quote strong { color: var(--hc-warning); }
+
+.golden-times {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+@media (max-width: 700px) { .golden-times { grid-template-columns: 1fr; } }
+.golden-time-card {
+  padding: 2rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  border-top: 4px solid var(--hc-warning);
+  box-shadow: var(--shadow-sm);
+}
+.golden-time-card__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.5rem;
+}
+.golden-time-card__time {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--hc-warning);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.golden-time-card__desc {
+  font-size: 0.95rem;
+  color: var(--hc-slate);
+  line-height: 1.65;
+}
+
+.golden-warn {
+  margin-top: 2.5rem;
+  padding: 1.5rem 2rem;
+  background: var(--hc-warning);
+  color: var(--hc-white);
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.65;
+}
+
+/* ★★ 응급실 후 외래 (★ 본원 영입 핵심 — 차분한 청보라) */
+.followup {
+  background: linear-gradient(135deg, var(--hc-followup-bg) 0%, var(--hc-cream) 100%);
+}
+.followup .section__eyebrow { color: var(--hc-followup); }
+.followup .section__title em { color: var(--hc-followup); }
+
+.followup-block {
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-top: 2.5rem;
+  border-left: 6px solid var(--hc-followup);
+  box-shadow: var(--shadow-sm);
+}
+.followup-case {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed var(--hc-line);
+}
+.followup-case:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.followup-case__tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.85rem;
+  background: rgba(75, 90, 138, 0.10);
+  color: var(--hc-followup);
+  border-radius: 100px;
+  margin-bottom: 0.85rem;
+}
+.followup-case__head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--hc-deep);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+.followup-case__body {
+  font-size: 1rem;
+  color: var(--hc-slate);
+  line-height: 1.7;
+}
+.followup-case__body strong { color: var(--hc-followup); font-weight: 700; }
+
+/* ★ 가족력 (안전 초록) */
+.family {
+  background: var(--hc-safe-bg);
+}
+.family .section__eyebrow { color: var(--hc-safe); }
+.family .section__title em { color: var(--hc-safe); }
+
+.family-quote {
+  margin-top: 2rem;
+  padding: 2rem 2.5rem;
+  background: var(--hc-white);
+  border-left: 6px solid var(--hc-safe);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--hc-deep);
+  line-height: 1.55;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+.family-quote strong { color: var(--hc-safe); }
+
+.family-section {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--hc-safe);
+  box-shadow: var(--shadow-sm);
+}
+.family-section__head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.01em;
+}
+.family-section__body {
+  font-size: 0.98rem;
+  color: var(--hc-slate);
+  line-height: 1.7;
+}
+.family-section__body strong { color: var(--hc-safe); font-weight: 700; }
+
+.family-steps {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.85rem;
+}
+.family-step {
+  padding: 1.25rem;
+  background: var(--hc-cream);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--hc-safe);
+}
+.family-step__num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--hc-safe);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.family-step__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+.family-step__desc {
+  font-size: 0.85rem;
+  color: var(--hc-slate);
+  line-height: 1.5;
+}
+
+/* 편두통 vs 뇌졸중 감별 */
+.migraine { background: var(--hc-warm); }
+.compare-table {
+  margin-top: 2.5rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.compare-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr 1.8fr;
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid var(--hc-line);
+  gap: 1rem;
+  align-items: center;
+}
+.compare-row:last-child { border-bottom: none; }
+.compare-row--head {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.compare-row--head .compare-stroke { color: var(--hc-warning-soft); }
+.compare-row__attr {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--hc-deep);
+  font-size: 0.95rem;
+}
+.compare-row__migraine {
+  padding: 0.7rem 1rem;
+  font-size: 0.92rem;
+  color: var(--hc-slate);
+  line-height: 1.5;
+}
+.compare-row__stroke {
+  background: linear-gradient(90deg, rgba(184, 53, 28, 0.08) 0%, rgba(184, 53, 28, 0.02) 100%);
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--hc-warning);
+  font-size: 0.92rem;
+  color: var(--hc-charcoal);
+  line-height: 1.5;
+  font-weight: 600;
+}
+@media (max-width: 700px) {
+  .compare-row { grid-template-columns: 1fr; gap: 0.4rem; padding: 1rem 1.25rem; }
+  .compare-row--head { display: none; }
+  .compare-row__attr::before { content: "▸ "; color: var(--hc-gold); }
+  .compare-row__migraine::before { content: "편두통 전조: "; font-weight: 700; color: var(--hc-deep); }
+  .compare-row__stroke::before { content: "★ 뇌졸중: "; font-weight: 700; color: var(--hc-warning); }
+}
+
+/* 환자 신호 */
+.signals { background: var(--hc-white); }
+.signals-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.signal-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1rem 1.25rem;
+  background: var(--hc-cream);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--hc-gold);
+  transition: all 0.2s ease;
+}
+.signal-row:hover { transform: translateX(2px); }
+.signal-row--tia {
+  background: linear-gradient(90deg, rgba(184, 53, 28, 0.06) 0%, var(--hc-cream) 60%);
+  border-left-color: var(--hc-warning);
+}
+.signal-row--tia .signal-row__check { color: var(--hc-warning); }
+.signal-row--followup {
+  background: linear-gradient(90deg, rgba(75, 90, 138, 0.06) 0%, var(--hc-cream) 60%);
+  border-left-color: var(--hc-followup);
+}
+.signal-row--followup .signal-row__check { color: var(--hc-followup); }
+.signal-row--family {
+  background: linear-gradient(90deg, rgba(75, 122, 62, 0.06) 0%, var(--hc-cream) 60%);
+  border-left-color: var(--hc-safe);
+}
+.signal-row--family .signal-row__check { color: var(--hc-safe); }
+.signal-row__check {
+  font-family: var(--font-display);
+  font-weight: 900;
+  color: var(--hc-gold);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.signal-row__text {
+  font-size: 0.95rem;
+  color: var(--hc-charcoal);
+  line-height: 1.55;
+}
+
+/* 진료 흐름 */
+.flow { background: var(--hc-warm); }
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.flow-step {
+  background: var(--hc-white);
+  padding: 1.5rem 1.25rem;
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+.flow-step:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.flow-step__num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.25rem;
+  color: var(--hc-gold);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+.flow-step__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.45rem;
+  letter-spacing: -0.01em;
+}
+.flow-step__text {
+  font-size: 0.85rem;
+  color: var(--hc-slate);
+  line-height: 1.5;
+}
+
+/* 5단계 진료 */
+.treatment { background: var(--hc-cream); }
+.treatment-table {
+  margin-top: 2rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.treatment-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 1.5fr;
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid var(--hc-line);
+  gap: 1rem;
+  align-items: center;
+}
+.treatment-row:last-child { border-bottom: none; }
+.treatment-row--head {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.treatment-row--emergency {
+  background: linear-gradient(90deg, rgba(184, 53, 28, 0.08) 0%, rgba(184, 53, 28, 0.01) 100%);
+  border-left: 4px solid var(--hc-warning);
+}
+.treatment-row--tia {
+  background: linear-gradient(90deg, rgba(184, 53, 28, 0.05) 0%, rgba(184, 53, 28, 0.01) 100%);
+  border-left: 4px solid var(--hc-warning-deep);
+}
+.treatment-row--followup {
+  background: linear-gradient(90deg, rgba(75, 90, 138, 0.06) 0%, rgba(75, 90, 138, 0.01) 100%);
+  border-left: 4px solid var(--hc-followup);
+}
+.treatment-row--family {
+  background: linear-gradient(90deg, rgba(75, 122, 62, 0.06) 0%, rgba(75, 122, 62, 0.01) 100%);
+  border-left: 4px solid var(--hc-safe);
+}
+.treatment-row__stage {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--hc-deep);
+  font-size: 0.9rem;
+}
+.treatment-row--emergency .treatment-row__stage { color: var(--hc-warning); }
+.treatment-row--tia .treatment-row__stage { color: var(--hc-warning-deep); }
+.treatment-row--followup .treatment-row__stage { color: var(--hc-followup); }
+.treatment-row--family .treatment-row__stage { color: var(--hc-safe); }
+.treatment-row__name { font-weight: 600; font-size: 0.98rem; color: var(--hc-charcoal); }
+.treatment-row__desc { font-size: 0.9rem; color: var(--hc-slate); line-height: 1.55; }
+@media (max-width: 700px) {
+  .treatment-row { grid-template-columns: 1fr; gap: 0.3rem; padding: 1rem 1.25rem; }
+  .treatment-row--head { display: none; }
+  .treatment-row__name::before { content: "▸ "; color: var(--hc-gold); }
+}
+
+/* 자가진단 */
+.selfcheck { background: var(--hc-white); }
+.selfcheck-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-top: 2rem;
+}
+.selfcheck-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px dashed var(--hc-line);
+}
+.selfcheck-item__box {
+  width: 22px; height: 22px;
+  border: 2px solid var(--hc-deep);
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.selfcheck-item__text {
+  font-size: 0.98rem;
+  color: var(--hc-charcoal);
+  line-height: 1.55;
+}
+.selfcheck__alert {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(184, 53, 28, 0.06);
+  border-left: 4px solid var(--hc-warning);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  color: var(--hc-charcoal);
+}
+.selfcheck__alert strong { color: var(--hc-warning); font-weight: 700; }
+@media (max-width: 700px) { .selfcheck-grid { grid-template-columns: 1fr; } }
+
+/* FAQ */
+.faq { background: var(--hc-warm); }
+.faq-list {
+  margin-top: 2rem;
+  border-top: 1px solid var(--hc-line);
+}
+.faq-item { border-bottom: 1px solid var(--hc-line); }
+.faq-item__q {
+  display: block;
+  padding: 1.5rem 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: var(--hc-deep);
+  cursor: pointer;
+  position: relative;
+  padding-right: 2.5rem;
+  letter-spacing: -0.01em;
+  list-style: none;
+}
+.faq-item__q::-webkit-details-marker { display: none; }
+.faq-item__q::after {
+  content: "+";
+  position: absolute;
+  right: 0.5rem; top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--hc-gold);
+  transition: transform 0.3s ease;
+}
+.faq-item[open] .faq-item__q::after { content: "−"; }
+.faq-item__a {
+  padding: 0 0 1.5rem 0;
+  font-size: 0.98rem;
+  color: var(--hc-slate);
+  line-height: 1.75;
+}
+
+/* 안전 안내 */
+.disclaimer {
+  background: var(--hc-cream);
+  padding: 3rem 1.5rem;
+}
+.disclaimer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background: rgba(200, 155, 47, 0.08);
+  border-left: 4px solid var(--hc-gold);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--hc-slate);
+  line-height: 1.7;
+}
+
+/* 위치/연락처 */
+.contact {
+  background: linear-gradient(135deg, var(--hc-charcoal) 0%, var(--hc-deep) 100%);
+  color: var(--hc-warm);
+}
+.contact .section__eyebrow { color: var(--hc-gold-light); }
+.contact .section__title { color: var(--hc-white); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.contact-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(200, 155, 47, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+}
+.contact-card__label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: var(--hc-gold-light);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.contact-card__value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--hc-white);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+.contact-card__sub {
+  font-size: 0.92rem;
+  color: rgba(248, 243, 233, 0.7);
+  line-height: 1.55;
+}
+
+footer {
+  background: var(--hc-charcoal);
+  color: rgba(248, 243, 233, 0.6);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+footer strong { color: var(--hc-gold-light); }
+
+@media (max-width: 700px) {
+  section { padding: 3.5rem 1.25rem; }
+  .hero { padding: 3rem 1.25rem 2.5rem; }
+  .tia-card, .followup-block, .family-section { padding: 1.5rem; }
+  .mini-header__brand-sub { display: none; }
+  .hero__cta-group .btn { flex: 1; justify-content: center; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero__title, .hero__lede, .hero__cta-group, .hero__signal {
+  animation: fadeUp 0.7s ease backwards;
+}
+.hero__title { animation-delay: 0.1s; }
+.hero__lede { animation-delay: 0.25s; }
+.hero__cta-group { animation-delay: 0.4s; }
+.hero__signal { animation-delay: 0.55s; }
+</style>
+</head>
+<body>
+
+<!-- 미니 헤더 -->
+<header class="mini-header">
+  <div class="mini-header__inner">
+    <div>
+      <span class="mini-header__brand">희망찬병원</span>
+      <span class="mini-header__brand-sub">언어장애 · TIA 외래 진료</span>
+    </div>
+    <div class="mini-header__cta">
+      <a href="tel:031-XXX-XXXX" class="btn btn--outline">📞 전화 상담</a>
+      <a href="#contact" class="btn btn--primary">진료 예약</a>
+    </div>
+  </div>
+</header>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="hero__inner">
+    <span class="hero__eyebrow">14-4-2 언어장애 (실어증·구음장애·TIA)</span>
+    <h1 class="hero__title">
+      "1분 만에 사라졌으니 괜찮겠지" —<br>
+      <em>가장 위험한 함정</em>입니다
+    </h1>
+    <p class="hero__lede">
+      갑자기 말이 안 나왔다가 몇 분 만에 다시 풀린 경험이 있으셨나요. <strong>일과성 뇌허혈 발작(TIA)</strong>일 가능성이 있으며, 환자의 약 10~15%가 90일 이내, 그중 절반은 첫 48시간 안에 본격적인 뇌졸중으로 진행됩니다. 응급실에서 "이상 없음" 받으셨더라도 본원 외래에서 MRI·MRA 정밀 추적 진료가 가능합니다. 김진균 원장이 직접 진료합니다.
+    </p>
+    <div class="hero__cta-group">
+      <a href="#contact" class="btn btn--primary btn--large">📞 외래 예약·상담</a>
+      <a href="#selfcheck" class="btn btn--gold btn--large">📋 FAST 자가진단 (1분)</a>
+      <a href="#fast" class="btn btn--warning btn--large">★ 응급 시 즉시 119</a>
+    </div>
+    <div class="hero__signal">
+      <span class="hero__signal-dot"></span>
+      동탄·화성·평택·수원·오산권 / 평일·토 진료 / 김진균 원장 직접 진료
+    </div>
+  </div>
+</section>
+
+<!-- ★★★ TIA 함정 섹션 -->
+<section class="tia-trap">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★★★ 본원 핵심 영업 메시지</div>
+      <h2 class="section__title">
+        "잠시 사라진 증상"이<br>
+        <em>가장 위험합니다</em>
+      </h2>
+      <p class="section__lede">
+        많은 분이 "몇 분 만에 풀렸으니 괜찮겠지"라고 안심하시지만, 의학적으로는 정반대입니다. TIA(일과성 뇌허혈 발작)는 본격 뇌졸중의 강력한 예고편입니다.
+      </p>
+    </div>
+    
+    <div class="tia-flip">
+      <div class="tia-card tia-card--wrong">
+        <span class="tia-card__tag">잘못된 안심</span>
+        <h3 class="tia-card__head">
+          "몇 분 만에 말이 다시 나왔으니<br>
+          피곤해서 그랬나 보다"
+        </h3>
+        <p class="tia-card__body">
+          환자분들이 가장 흔히 하시는 자가 판단입니다. "어차피 좋아졌으니까", "병원 가도 어차피 정상으로 나오니까"라며 진료를 미루시지만, <strong>이 자가 판단이 가장 위험한 결정</strong>이 됩니다.
+        </p>
+      </div>
+      
+      <div class="tia-card tia-card--right">
+        <span class="tia-card__tag">의학적 사실</span>
+        <h3 class="tia-card__head">
+          뇌혈관이 일시적으로 막혔다가<br>
+          다시 뚫린 것입니다
+        </h3>
+        <p class="tia-card__body">
+          이 증상은 <strong>일과성 뇌허혈 발작(TIA, Transient Ischemic Attack)</strong>일 가능성이 큽니다. 뇌혈관이 잠시 막혔다가 다시 뚫리면서 증상이 사라진 것이며, <strong>본격 뇌졸중의 강력한 예고편</strong>입니다.
+        </p>
+      </div>
+    </div>
+    
+    <div class="tia-stat">
+      <div class="tia-stat__head">TIA를 겪은 환자의 본격 뇌졸중 진행률</div>
+      <div class="tia-stat__numbers">
+        <div class="tia-stat__num">
+          <div class="tia-stat__big">10~15%</div>
+          <div class="tia-stat__label">90일 이내<br>본격 뇌졸중 진행</div>
+        </div>
+        <div class="tia-stat__num">
+          <div class="tia-stat__big">절반</div>
+          <div class="tia-stat__label">첫 48시간 안에<br>진짜 뇌졸중 발생</div>
+        </div>
+        <div class="tia-stat__num">
+          <div class="tia-stat__big">2~3일</div>
+          <div class="tia-stat__label">가장 위험한<br>골든타임 기간</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAST 응급 신호 -->
+<section class="fast" id="fast">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 1분이면 뇌졸중을 가려냅니다</div>
+      <h2 class="section__title">
+        FAST 검사 —<br>
+        한 가지라도 해당되면 <em>즉시 119</em>
+      </h2>
+      <p class="section__lede">
+        갑자기 말이 안 나오는 증상은 뇌졸중의 가장 강력한 1순위 신호입니다. FAST 4가지 중 하나라도 해당되면 단 1분도 지체하지 마시고 119에 신고하셔야 합니다.
+      </p>
+    </div>
+    
+    <div class="fast-banner">
+      <div class="fast-banner__head">⚠ FAST 한 가지라도 = 즉시 119</div>
+      <div class="fast-banner__sub">단 1분도 지체 X / 직접 운전·택시 금지 / 골든타임 4시간 30분</div>
+    </div>
+    
+    <div class="fast-grid">
+      <div class="fast-card">
+        <div class="fast-card__letter">F</div>
+        <div class="fast-card__english">FACE</div>
+        <div class="fast-card__korean">얼굴</div>
+        <div class="fast-card__test">미소 지을 때<br>한쪽 입꼬리가 처지는가?</div>
+      </div>
+      <div class="fast-card">
+        <div class="fast-card__letter">A</div>
+        <div class="fast-card__english">ARMS</div>
+        <div class="fast-card__korean">팔</div>
+        <div class="fast-card__test">두 팔 들었을 때<br>한쪽이 툭 떨어지는가?</div>
+      </div>
+      <div class="fast-card fast-card--key">
+        <div class="fast-card__letter">S</div>
+        <div class="fast-card__english">SPEECH</div>
+        <div class="fast-card__korean">말 (★ 1순위)</div>
+        <div class="fast-card__test">발음이 어눌하거나<br>단어가 떠오르지 않는가?</div>
+      </div>
+      <div class="fast-card">
+        <div class="fast-card__letter">T</div>
+        <div class="fast-card__english">TIME</div>
+        <div class="fast-card__korean">시간</div>
+        <div class="fast-card__test">한 가지라도 해당 시<br>★ 즉시 119</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 골든타임 -->
+<section class="golden">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 골든타임 — 시간이 운명을 가릅니다</div>
+      <h2 class="section__title">
+        "마지막 멀쩡했던 시각"이<br>
+        <em>골든타임의 기준</em>입니다
+      </h2>
+    </div>
+    
+    <div class="golden-quote">
+      증상 시작 시각은 "증상이 처음 나타난 시각"이 아니라 <strong>"환자가 멀쩡했던 마지막 시각"</strong>으로 계산됩니다.<br>
+      자고 일어났더니 마비가 있다면, <strong>잠들기 직전이 "마지막 멀쩡했던 시각"</strong>이 되어 골든타임이 이미 8시간 이상 지나간 셈입니다.
+    </div>
+    
+    <div class="golden-times">
+      <div class="golden-time-card">
+        <div class="golden-time-card__name">혈전용해제 (tPA)</div>
+        <div class="golden-time-card__time">4시간 30분</div>
+        <div class="golden-time-card__desc">
+          막힌 혈관을 녹이는 약을 정맥으로 주입. 증상 시작이 명확하고 출혈 위험이 없는 환자만 가능. 시간이 빠를수록 회복 가능 케이스 증가.
+        </div>
+      </div>
+      <div class="golden-time-card">
+        <div class="golden-time-card__name">혈관내 시술 (혈전 제거술)</div>
+        <div class="golden-time-card__time">6시간 (최대 24시간)</div>
+        <div class="golden-time-card__desc">
+          굵은 혈관이 막힌 경우, 사타구니 혈관에서 도관을 넣어 막힌 혈전을 직접 빼냄. 영상 검사로 "살릴 뇌"가 남아있다고 확인되면 24시간까지 시도 가능.
+        </div>
+      </div>
+    </div>
+    
+    <div class="golden-warn">
+      ⚠ 의심 시 단 1분도 지체하지 마시고 119 — 직접 운전·택시 절대 금지
+    </div>
+  </div>
+</section>
+
+<!-- ★★ 응급실 후 외래 -->
+<section class="followup">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★★ 본원 영업 핵심 — 응급실 후 외래</div>
+      <h2 class="section__title">
+        응급실 후 <em>외래 추적 진료</em>가<br>
+        진짜 시작입니다
+      </h2>
+      <p class="section__lede">
+        응급실은 즉각적인 응급 상황을 배제하는 곳입니다. 그러나 진짜 위험은 응급실에서 "이상 없음" 받은 후에도 사라지지 않습니다. 본원은 응급실 후 추적 진료의 메인 영역입니다.
+      </p>
+    </div>
+    
+    <div class="followup-block">
+      <div class="followup-case">
+        <span class="followup-case__tag">CASE 1 / 가장 흔한 케이스</span>
+        <h3 class="followup-case__head">응급실에서 "이상 없음" 받으셨다면</h3>
+        <p class="followup-case__body">
+          응급실은 즉각적인 응급 상황(뇌출혈·심한 뇌졸중)을 배제하는 곳입니다. 그러나 <strong>TIA 같은 "잠시 사라진" 위험 신호는 추적 검사로만 확인</strong>할 수 있습니다. 본원 외래에서 MRI·MRA·뇌혈관 조영·심전도를 통한 정밀 추적 진료가 가능합니다.
+        </p>
+      </div>
+      
+      <div class="followup-case">
+        <span class="followup-case__tag">CASE 2 / 뇌졸중 후 추적</span>
+        <h3 class="followup-case__head">뇌졸중 입원·퇴원 후 추적 진료</h3>
+        <p class="followup-case__body">
+          뇌졸중 후 재발 예방·재활·약물 관리는 평생 이어지는 진료입니다. 본원 신경외과 외래에서 <strong>약물 조정, 위험 인자 관리, 영상 추적, 재활 가이드</strong>를 통합 제공합니다.
+        </p>
+      </div>
+      
+      <div class="followup-case">
+        <span class="followup-case__tag">CASE 3 / TIA 경험 후</span>
+        <h3 class="followup-case__head">TIA 의심 증상 후 정밀 검사</h3>
+        <p class="followup-case__body">
+          "잠깐 말이 안 나왔다가 풀렸다", "잠깐 마비 후 풀렸다" 같은 TIA 의심 증상이 있으셨다면 본원 외래에서 <strong>즉시 MRI·MRA·심전도(24시간 홀터 포함) 정밀 검사</strong>가 가능합니다. 2-3일이 가장 위험한 골든타임이므로 미루지 마시길 권장합니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ★ 가족력 검진 -->
+<section class="family">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 가족력 — 운명이 아닌 우위</div>
+      <h2 class="section__title">
+        부모님 뇌졸중,<br>
+        <em>저도 위험한가요</em>?
+      </h2>
+      <p class="section__lede">
+        부모님이 뇌졸중을 겪으신 분들이 가장 자주 물으시는 질문입니다. 가족력이 있는 분은 위험이 1.5~2배 높지만, 미리 알 수 있다는 점에서는 큰 우위입니다.
+      </p>
+    </div>
+    
+    <div class="family-quote">
+      가족력은 본인을 더 두렵게 만드는 정보가 아니라<br>
+      <strong>더 일찍, 더 정확하게 관리할 수 있는 "우위"</strong>가 됩니다
+    </div>
+    
+    <div class="family-section">
+      <div class="family-section__head">[1] 위험은 1.5~2배 — 그러나 운명은 아닙니다</div>
+      <div class="family-section__body">
+        부모님 한 분이 뇌졸중을 겪으신 경우 자녀의 뇌졸중 위험은 일반인보다 <strong>약 1.5~2배 높습니다.</strong> 두 분 모두라면 그보다 더 올라갑니다. 그러나 가족력이 있는 분이 "바꿀 수 있는 위험 인자"를 잘 관리하면, <strong>가족력이 없지만 방치한 사람보다 오히려 뇌졸중 위험이 낮아집니다.</strong>
+      </div>
+    </div>
+    
+    <div class="family-section">
+      <div class="family-section__head">[2] 본원 5단계 점검 (★ 가족력 있는 분 권장)</div>
+      <div class="family-steps">
+        <div class="family-step">
+          <div class="family-step__num">1</div>
+          <div class="family-step__title">40세부터 매년</div>
+          <div class="family-step__desc">혈압·공복 혈당·콜레스테롤(LDL)·체중·허리둘레 측정</div>
+        </div>
+        <div class="family-step">
+          <div class="family-step__num">2</div>
+          <div class="family-step__title">심장 박동 점검</div>
+          <div class="family-step__desc">심방세동은 뇌경색의 흔한 원인 — 1년 1회 심전도</div>
+        </div>
+        <div class="family-step">
+          <div class="family-step__num">3</div>
+          <div class="family-step__title">뇌혈관 검사</div>
+          <div class="family-step__desc">50세 이후 한 번은 MRA로 동맥류·협착 여부 확인 권장</div>
+        </div>
+        <div class="family-step">
+          <div class="family-step__num">4</div>
+          <div class="family-step__title">절대 금연</div>
+          <div class="family-step__desc">흡연자 뇌졸중 위험 2배 이상 — 가족력 있으면 효과 더 큼</div>
+        </div>
+        <div class="family-step">
+          <div class="family-step__num">5</div>
+          <div class="family-step__title">유산소 + 식단</div>
+          <div class="family-step__desc">주 5회 30분 유산소 + 지중해식 식단</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 편두통 vs 뇌졸중 감별 -->
+<section class="migraine">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 두통 동반 환자 감별 진료</div>
+      <h2 class="section__title">
+        편두통 언어 전조 vs 뇌졸중 —<br>
+        <em>자가 판단은 위험</em>합니다
+      </h2>
+      <p class="section__lede">
+        두통과 함께 갑자기 단어가 안 떠오르거나 말이 어눌해지는 증상은 편두통의 언어 전조일 수도 있고, 뇌졸중 신호일 수도 있습니다. 두 가지는 본원에서 정밀 감별이 가능합니다.
+      </p>
+    </div>
+    
+    <div class="compare-table">
+      <div class="compare-row compare-row--head">
+        <div>비교 항목</div>
+        <div>편두통 언어 전조</div>
+        <div class="compare-stroke">★ 뇌졸중</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-row__attr">진행 속도</div>
+        <div class="compare-row__migraine">5~30분에 걸쳐 서서히</div>
+        <div class="compare-row__stroke">★ 갑자기 발생</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-row__attr">지속 시간</div>
+        <div class="compare-row__migraine">수십 분 내 회복</div>
+        <div class="compare-row__stroke">★ 사라지지 않거나 악화</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-row__attr">연령</div>
+        <div class="compare-row__migraine">주로 젊을 때부터</div>
+        <div class="compare-row__stroke">★ 50세 이상 처음 시작</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-row__attr">마비 동반</div>
+        <div class="compare-row__migraine">거의 없음</div>
+        <div class="compare-row__stroke">★ 안면·팔다리 마비 동반</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-row__attr">이전 편두통 병력</div>
+        <div class="compare-row__migraine">있음</div>
+        <div class="compare-row__stroke">★ 없거나 새로운 양상</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 환자 신호 -->
+<section class="signals">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 이런 분들이 본원 진료받으시면 좋습니다</div>
+      <h2 class="section__title">
+        다음 중 한 가지라도 해당되신다면<br>
+        본원 외래 진료를 권장합니다
+      </h2>
+    </div>
+    
+    <div class="signals-list">
+      <div class="signal-row signal-row--tia">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★★ 잠깐 말이 안 나왔다가 다시 풀린 경험이 있으신 분 (★ TIA 가능성)</span>
+      </div>
+      <div class="signal-row signal-row--tia">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★★ 잠깐 마비가 왔다가 풀렸던 경험이 있으신 분 (★ TIA 가능성)</span>
+      </div>
+      <div class="signal-row signal-row--followup">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★★ 응급실 다녀왔는데 "이상 없음" 받으셨지만 불안하신 분</span>
+      </div>
+      <div class="signal-row signal-row--followup">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★★ 응급실에서 TIA 진단받고 외래 추적이 필요하신 분</span>
+      </div>
+      <div class="signal-row signal-row--followup">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 뇌졸중 입원·퇴원 후 외래 추적이 필요하신 분</span>
+      </div>
+      <div class="signal-row signal-row--family">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 부모님이 뇌졸중을 겪으셨고 본인 검진이 필요하신 분 (★ 가족력)</span>
+      </div>
+      <div class="signal-row signal-row--family">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">40세 이상, 한 번도 뇌혈관 검사(MRA)를 받지 않으신 분</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">고혈압·당뇨·고지혈증·심방세동 있으시고 뇌혈관 검진이 필요하신 분</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 두통 + 말 어눌·단어 안 떠올라 동반 (편두통 전조 vs 뇌졸중 감별)</span>
+      </div>
+      <div class="signal-row signal-row--tia">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 어지럼 + 말 어눌 동반 (★ 14-4-1 응급 6신호 ①)</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">실어증·구음장애 재활이 필요하신 분</span>
+      </div>
+      <div class="signal-row signal-row--family">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">건강검진에서 뇌동맥류 발견 후 추적 진료가 필요하신 분</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 본원 진료 흐름 -->
+<section class="flow">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 본원 외래 진료 흐름</div>
+      <h2 class="section__title">5단계 정밀 진료</h2>
+      <p class="section__lede">
+        본원은 응급실 후 외래·TIA·가족력 검진 환자에게 5단계 표준 절차를 따라 정밀 추적 진료를 진행합니다.
+      </p>
+    </div>
+    
+    <div class="flow-grid">
+      <div class="flow-step">
+        <div class="flow-step__num">01</div>
+        <div class="flow-step__title">정밀 문진</div>
+        <div class="flow-step__text">증상 패턴·지속 시간·동반 증상·가족력·기저질환</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">02</div>
+        <div class="flow-step__title">신경학적 검사</div>
+        <div class="flow-step__text">FAST·인지 기능·뇌신경 검사</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">03</div>
+        <div class="flow-step__title">영상·기능</div>
+        <div class="flow-step__text">MRI·MRA·뇌혈관 조영·경동맥 초음파·심전도</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">04</div>
+        <div class="flow-step__title">진단·위험 평가</div>
+        <div class="flow-step__text">뇌졸중·TIA·편두통 전조 감별 / 가족력 위험 평가</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">05</div>
+        <div class="flow-step__title">맞춤 진료</div>
+        <div class="flow-step__text">★ 응급 인계 / 외래 추적 / 약물 / 재활 가이드</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5단계 진료 -->
+<section class="treatment">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 단계별 본원 진료</div>
+      <h2 class="section__title">
+        환자 상태에 따른<br>
+        <em>5가지 진료 영역</em>
+      </h2>
+    </div>
+    
+    <div class="treatment-table">
+      <div class="treatment-row treatment-row--head">
+        <div>단계</div>
+        <div>진료법</div>
+        <div>본원 진료</div>
+      </div>
+      <div class="treatment-row treatment-row--emergency">
+        <div class="treatment-row__stage">[1] ★ 응급 의심</div>
+        <div class="treatment-row__name">119 → 응급실 → 영상 검사</div>
+        <div class="treatment-row__desc">★ 응급실 인계 / 골든타임 4시간 30분</div>
+      </div>
+      <div class="treatment-row treatment-row--tia">
+        <div class="treatment-row__stage">[2] ★★ TIA 진단</div>
+        <div class="treatment-row__name">MRI·MRA + 항혈소판제 + 위험 인자 관리</div>
+        <div class="treatment-row__desc">★★ 본원 외래 정밀 검사 + 약물</div>
+      </div>
+      <div class="treatment-row treatment-row--followup">
+        <div class="treatment-row__stage">[3] ★ 응급실 후 외래</div>
+        <div class="treatment-row__name">MRI·MRA 추적 + 위험 인자 관리</div>
+        <div class="treatment-row__desc">★★ 본원 외래 정기 추적</div>
+      </div>
+      <div class="treatment-row">
+        <div class="treatment-row__stage">[4] 뇌졸중 후 재활</div>
+        <div class="treatment-row__name">재활 + 약물 + 재발 예방</div>
+        <div class="treatment-row__desc">외래 추적 + 재활 가이드</div>
+      </div>
+      <div class="treatment-row treatment-row--family">
+        <div class="treatment-row__stage">[5] ★ 가족력 검진</div>
+        <div class="treatment-row__name">MRA + 5단계 점검 + 정기 추적</div>
+        <div class="treatment-row__desc">★ 본원 검진 진료</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAST 자가진단 -->
+<section class="selfcheck" id="selfcheck">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ FAST 자가진단 (1분)</div>
+      <h2 class="section__title">
+        다음 중 해당되는 항목이 많을수록<br>
+        <em>본원 외래 진료</em>가 필요합니다
+      </h2>
+      <p class="section__lede">
+        ★ 표시 항목 중 1-4번(FAST)은 응급 신호이므로 즉시 119, 5-6번(TIA 의심)은 본원 외래 즉시 권장, 나머지는 정기 진료 권장.
+      </p>
+    </div>
+    
+    <div class="selfcheck-grid">
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ F: 미소 지을 때 한쪽 입꼬리가 처진다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ A: 두 팔을 들었을 때 한쪽이 툭 떨어진다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ S: 발음이 어눌하거나 단어가 안 떠오른다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ T: 위 셋 중 하나라도 해당 → 즉시 119</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ 잠깐 말 안 나왔다가 다시 풀린 경험 (TIA 가능)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ 잠깐 마비 후 풀린 경험 (TIA 가능)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">응급실 다녀왔는데 "이상 없음" 받았지만 불안하다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">뇌졸중 입원·퇴원 후 추적 진료가 필요하다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">부모님·형제자매 중 뇌졸중 환자가 있다 (가족력)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">고혈압·당뇨·고지혈증·심방세동이 있다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">흡연자이거나 과음한다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">40세 이상, 한 번도 뇌혈관 검사(MRA)를 받지 않았다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">두통 + 말 어눌함이 함께 온다 (편두통 전조 vs 뇌졸중)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">어지럼 + 말 어눌함이 함께 온다 (14-4-1 응급 6신호 ①)</div></div>
+    </div>
+    
+    <div class="selfcheck__alert">
+      <strong>★ ★ 표시 항목 1-4번(FAST)은 응급 신호이므로 즉시 119</strong>에 신고하시고, <strong>5-6번(TIA 의심)은 본원 외래에 즉시 권장</strong>합니다. 나머지 항목 3개 이상 해당 시 본원 정기 외래 진료를 권장합니다.
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 자주 묻는 질문</div>
+      <h2 class="section__title">10개 FAQ</h2>
+    </div>
+    
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-item__q">Q1. "잠깐 말이 안 나왔다가 다시 풀린 경험" 정말 위험한가요?</summary>
+        <div class="faq-item__a">네, 매우 위험합니다. 일과성 뇌허혈 발작(TIA) 가능성이 있으며, TIA를 겪은 환자의 약 10~15%가 90일 이내, 그중 절반은 첫 48시간 안에 본격적인 뇌졸중으로 진행됩니다. 증상이 사라졌더라도 반드시 본원 외래에서 MRI·MRA 정밀 검사를 받으시길 권장합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q2. 응급실 다녀왔는데 "이상 없음" 받았어요. 본원 진료가 필요한가요?</summary>
+        <div class="faq-item__a">필요할 수 있습니다. 응급실은 즉각적인 응급 상황(뇌출혈·심한 뇌졸중)을 배제하는 곳입니다. TIA 같은 "잠시 사라진" 위험 신호는 추적 검사로만 확인 가능합니다. 본원 외래에서 MRI·MRA·심전도 정밀 추적 진료가 가능합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q3. 갑자기 말이 안 나오면 무조건 뇌졸중인가요?</summary>
+        <div class="faq-item__a">갑자기 말이 안 나오는 증상은 뇌졸중의 1순위 신호(FAST의 S)이지만, 편두통 언어 전조·기능성 언어장애 등 다른 원인도 있을 수 있습니다. 다만 자가 판단은 매우 위험하므로 즉시 119에 신고하시거나 응급실로 가시는 것이 안전합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q4. 본원에서 뇌졸중 응급 수술을 하나요?</summary>
+        <div class="faq-item__a">응급 뇌졸중 수술은 응급실·종합병원에서 시행됩니다. 본원은 응급 신호가 의심되면 즉시 119 인계를 도와드리며, 응급 진료 후 외래 추적 진료·MRI·MRA·재활 가이드·예방 진료를 담당합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q5. "마지막 멀쩡했던 시각"이 왜 중요한가요?</summary>
+        <div class="faq-item__a">뇌졸중 골든타임은 "증상이 처음 나타난 시각"이 아니라 "환자가 멀쩡했던 마지막 시각"으로 계산됩니다. 자고 일어났더니 마비가 있다면, 잠들기 직전이 "마지막 멀쩡했던 시각"이 되어 골든타임이 이미 8시간 이상 지나간 셈입니다. 따라서 증상 발견 즉시 119에 신고해야 합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q6. 부모님이 뇌졸중이셨는데 저도 위험한가요?</summary>
+        <div class="faq-item__a">위험은 있지만 운명은 아닙니다. 부모님 한 분 뇌졸중 시 자녀 위험 1.5~2배입니다. 다만 "바꿀 수 있는 위험 인자"(고혈압·당뇨·고지혈증·심방세동·흡연·비만·음주·운동 부족)를 잘 관리하면, 가족력 없지만 방치한 사람보다 오히려 위험이 낮아집니다. 본원에서 5단계 점검·MRA 검진을 도와드립니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q7. 40대인데 뇌혈관 검사(MRA)를 받아야 하나요?</summary>
+        <div class="faq-item__a">가족력·고혈압·당뇨·흡연·심방세동 등 위험 인자가 있으시면 40대부터 권장됩니다. 위험 인자가 없으셔도 50세 이후 한 번은 MRA로 동맥류·협착 여부를 확인하시길 권장합니다. 환자별 결과는 진료 후 안내됩니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q8. 두통과 함께 말이 안 나오는 건 편두통인가요?</summary>
+        <div class="faq-item__a">편두통의 언어 전조일 수도 있고 뇌졸중일 수도 있습니다. 5~30분 서서히 시작되어 수십 분 내 회복되면 편두통 전조 가능, 갑자기 시작되어 사라지지 않거나 마비 동반 시 뇌졸중 가능성이 큽니다. 50세 이상 처음 겪으시거나 1시간 이상 지속·마비 동반 시 즉시 응급실 권장. 본원에서 정밀 감별 진료가 가능합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q9. TIA 약은 평생 먹어야 하나요?</summary>
+        <div class="faq-item__a">TIA 이후 일반적으로 평생 약물 권장입니다. 항혈소판제·항응고제·혈압약·콜레스테롤약 등 환자별로 처방됩니다. 본원 외래에서 정기 추적·약물 조정·위험 인자 관리를 함께 진행합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q10. 비용은 얼마나 되나요?</summary>
+        <div class="faq-item__a">건강보험 적용 진료입니다. MRI·MRA·뇌혈관 조영·심전도 등은 환자별로 비용이 다르며, 실손보험 청구 가능 케이스입니다. 진료 시 정확한 비용을 안내해 드립니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 안전 안내 -->
+<section class="disclaimer">
+  <div class="disclaimer__inner">
+    ★ 본 페이지의 모든 진료·검사 안내는 일반적인 의학 정보이며, 환자별 적용 가능성과 결과는 진료 후 의료진이 결정합니다. TIA 환자 모두가 본격 뇌졸중으로 진행하는 것은 아니며, 통계는 일반적인 의학 자료를 인용한 것입니다. MRA 검진이 모든 분에게 필수적인 것은 아니며, 가족력·위험 인자 평가 후 권장됩니다. "응급 신호 = 뇌졸중"은 본원의 의학적 평가이며, 모든 환자가 반드시 뇌졸중이라는 단정이 아닙니다. 본 페이지는 의료법 제56조에 따른 의료광고 사전심의 대상이며, 등록 전 심의를 받아 게시합니다.
+  </div>
+</section>
+
+<!-- 위치·연락처 -->
+<section class="contact" id="contact">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 예약·위치·진료 시간</div>
+      <h2 class="section__title">희망찬병원으로 오세요</h2>
+      <p class="section__lede" style="color: rgba(248, 243, 233, 0.85);">
+        동탄·화성·평택·수원·오산·용인·안성권에서 응급실 후 외래 추적·TIA 정밀 검사·가족력 검진을 받으실 수 있습니다. 김진균 원장이 직접 진료합니다.
+      </p>
+    </div>
+    
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card__label">예약·상담</div>
+        <div class="contact-card__value">1600-3415</div>
+        <div class="contact-card__sub">평일·토 진료 시간 내 / 진료 전 예약 권장</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__label">위치</div>
+        <div class="contact-card__value">동탄 희망찬병원</div>
+        <div class="contact-card__sub">경기도 화성시 병점구 병점중앙로 174<br>지하철·버스 접근 가능</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__label">진료 시간</div>
+        <div class="contact-card__value">평일 09:00 ~ 18:00<br><span style="font-size: 1rem;">토 09:00 ~ 13:00</span></div>
+        <div class="contact-card__sub">일요일·공휴일 휴진 / 토요일 점심시간 진료 없음</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 풋터 -->
+<footer>
+  <p><strong>희망찬병원</strong> · 김진균 원장 직접 진료 · 동탄·화성·평택권 신경외과·수부·어깨 진료</p>
+  <p style="margin-top: 0.5rem;">유튜브 채널 "털보의사" / 본 페이지는 의료광고 사전심의 등록 후 게시됩니다</p>
+</footer>
+
+</body>
+</html>
