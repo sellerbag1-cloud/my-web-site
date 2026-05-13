@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>허리디스크 (요추 추간판 탈출증) | 희망찬병원 — "수술하지 마라" 책의 함정</title>
+<meta name="description" content="허리디스크 — 경증은 비수술, 중증은 수술이 필요합니다. 핵심은 내 디스크 상태. 본원 미세현미경 수술 + 응급 수술(마미·족하수) + 협착증·전방전위증 동반 평가 / 신경외과 전문의 김진균 원장 / 동탄·화성·평택권 희망찬병원">
+<meta name="keywords" content="허리디스크, 요추 디스크, 요추 추간판 탈출증, 디스크 수술, 미세현미경 수술, 마미증후군, 족하수, 응급 수술, 디스크 협착증, 동탄 디스크, 김진균">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+/* ============================================================
+   13-2 요추 디스크 — 짙은 청자색(Sapphire) + 골드 + 진청 (6번째 색)
+   13-F 진청 · 13-S 청록 · 13-L 진보라 · 13-5 와인 · 13-3 짙은 청록과 구분
+   Color: #2C5282 (짙은 청자색), #1A365D (다크), #B8941F (골드),
+          #3B5C8F (액센트), #FAF7F3 (크림), #131825 (다크)
+============================================================ */
+:root {
+    --c-sapphire: #2C5282;
+    --c-sapphire-deep: #1A365D;
+    --c-sapphire-light: #3B5C8F;
+    --c-sapphire-soft: #E0E7F1;
+    --c-gold: #B8941F;
+    --c-gold-light: #D4AB35;
+    --c-rose: #C53030;
+    --c-cream: #FAF7F3;
+    --c-cream-warm: #F2EBE0;
+    --c-dark: #131825;
+    --c-text: #2A2530;
+    --c-text-soft: #4A4456;
+    --c-text-muted: #6B6276;
+    --c-border: #DCD3C5;
+
+    --serif: 'Noto Serif KR', serif;
+    --sans: 'Pretendard', -apple-system, sans-serif;
+
+    --shadow-1: 0 1px 3px rgba(44,82,130,0.08), 0 1px 2px rgba(44,82,130,0.06);
+    --shadow-2: 0 4px 16px rgba(44,82,130,0.12), 0 2px 8px rgba(44,82,130,0.08);
+    --shadow-3: 0 16px 48px rgba(44,82,130,0.20), 0 8px 24px rgba(44,82,130,0.12);
+    --shadow-gold: 0 8px 24px rgba(184,148,31,0.22);
+    --shadow-rose: 0 8px 24px rgba(197,48,48,0.22);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: var(--sans);
+    color: var(--c-text);
+    background: var(--c-cream);
+    line-height: 1.75;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* TOP BAR — 응급 알림 강조 */
+.topbar {
+    background: var(--c-rose);
+    color: white;
+    padding: 9px 0;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+}
+.topbar strong { color: #FFE0E0; font-weight: 700; }
+
+.header {
+    background: rgba(250,247,243,0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--c-border);
+    position: sticky; top: 0; z-index: 100;
+    padding: 14px 0;
+}
+.header-inner {
+    max-width: 1180px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.logo {
+    font-family: var(--serif);
+    font-size: 22px; font-weight: 700;
+    color: var(--c-sapphire-deep);
+    letter-spacing: -0.025em;
+    display: flex; align-items: center; gap: 11px;
+}
+.logo-mark {
+    width: 38px; height: 38px;
+    background: linear-gradient(135deg, var(--c-sapphire) 0%, var(--c-sapphire-deep) 100%);
+    color: var(--c-cream);
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 10px;
+    font-family: var(--serif);
+    font-size: 17px; font-weight: 700;
+    box-shadow: var(--shadow-1);
+}
+.logo-sub { font-size: 11px; color: var(--c-text-muted); letter-spacing: 0.05em; margin-top: 2px; font-family: var(--sans); }
+.header-cta {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--c-gold);
+    color: white;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-weight: 700; font-size: 14px;
+    text-decoration: none;
+    box-shadow: var(--shadow-gold);
+    transition: all .2s;
+}
+.header-cta:hover { background: #9C7E1A; transform: translateY(-1px); }
+
+/* HERO */
+.hero {
+    background:
+        radial-gradient(ellipse at top right, rgba(44,82,130,0.10), transparent 50%),
+        radial-gradient(ellipse at bottom left, rgba(184,148,31,0.10), transparent 60%),
+        linear-gradient(180deg, var(--c-cream) 0%, var(--c-cream-warm) 100%);
+    padding: 100px 24px 80px;
+    position: relative; overflow: hidden;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -10%; right: -8%;
+    width: 480px; height: 480px;
+    background: radial-gradient(circle, rgba(44,82,130,0.08), transparent 70%);
+    border-radius: 50%;
+}
+.hero-inner { max-width: 1180px; margin: 0 auto; position: relative; z-index: 2; }
+.hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(44,82,130,0.10);
+    color: var(--c-sapphire-deep);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 13px; font-weight: 600;
+    margin-bottom: 28px;
+    border: 1px solid rgba(44,82,130,0.22);
+}
+.hero-tag::before {
+    content: ''; width: 7px; height: 7px;
+    background: var(--c-gold); border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(184,148,31,0.25);
+}
+.hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--c-sapphire-deep);
+    letter-spacing: -0.035em;
+    margin-bottom: 28px;
+    max-width: 920px;
+}
+.hero h1 .accent {
+    color: var(--c-gold);
+    position: relative;
+    display: inline-block;
+}
+.hero h1 .accent::after {
+    content: '';
+    position: absolute;
+    bottom: 6px; left: 0; right: 0; height: 10px;
+    background: rgba(184,148,31,0.20);
+    z-index: -1;
+}
+.hero h1 .quote {
+    font-style: italic;
+    color: var(--c-text-soft);
+    font-weight: 500;
+}
+.hero-sub {
+    font-size: clamp(16px, 1.7vw, 19px);
+    color: var(--c-text-soft);
+    max-width: 820px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+.hero-sub strong { color: var(--c-sapphire-deep); font-weight: 700; }
+.hero-sub .em { color: var(--c-rose); font-weight: 700; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-primary {
+    background: var(--c-gold);
+    color: white;
+    padding: 17px 36px;
+    border-radius: 8px;
+    font-weight: 700; font-size: 16px;
+    text-decoration: none;
+    box-shadow: var(--shadow-gold);
+    transition: all .25s;
+    display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-primary:hover { background: #9C7E1A; transform: translateY(-2px); box-shadow: 0 16px 50px rgba(184,148,31,0.32); }
+.btn-emergency {
+    background: var(--c-rose);
+    color: white;
+    padding: 17px 36px;
+    border-radius: 8px;
+    font-weight: 700; font-size: 16px;
+    text-decoration: none;
+    box-shadow: var(--shadow-rose);
+    transition: all .25s;
+    display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-emergency:hover { background: #9C2828; transform: translateY(-2px); }
+.btn-secondary {
+    background: white;
+    color: var(--c-sapphire-deep);
+    padding: 17px 32px;
+    border-radius: 8px;
+    font-weight: 600; font-size: 16px;
+    text-decoration: none;
+    border: 1.5px solid var(--c-sapphire);
+    transition: all .2s;
+    display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-secondary:hover { background: var(--c-sapphire); color: white; }
+
+.hero-stats {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 28px;
+    padding-top: 48px;
+    border-top: 1px solid var(--c-border);
+}
+.stat { text-align: left; }
+.stat-num {
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--c-sapphire-deep);
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+.stat-num .small { font-size: 22px; color: var(--c-gold); }
+.stat-num .rose { color: var(--c-rose); }
+.stat-label { font-size: 13px; color: var(--c-text-muted); margin-top: 10px; letter-spacing: 0.02em; line-height: 1.5; }
+
+section { padding: 100px 24px; }
+.section-inner { max-width: 1180px; margin: 0 auto; }
+.section-tag {
+    font-family: var(--serif);
+    color: var(--c-gold);
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 12px;
+}
+.section-tag::before {
+    content: ''; width: 36px; height: 1px; background: var(--c-gold);
+}
+.section-title {
+    font-family: var(--serif);
+    font-size: clamp(28px, 3.6vw, 44px);
+    font-weight: 700;
+    color: var(--c-sapphire-deep);
+    letter-spacing: -0.03em;
+    line-height: 1.28;
+    margin-bottom: 24px;
+}
+.section-lead {
+    font-size: 17px;
+    color: var(--c-text-soft);
+    max-width: 820px;
+    margin-bottom: 56px;
+    line-height: 1.85;
+}
+
+/* SECTION 01: ★ "수술하지 마라" 책의 함정 (★ 13-2 차별점 핵심) */
+.book { background: var(--c-dark); color: var(--c-cream); }
+.book .section-tag { color: var(--c-gold-light); }
+.book .section-tag::before { background: var(--c-gold-light); }
+.book .section-title { color: white; }
+.book .section-lead { color: rgba(250,247,243,0.85); }
+
+.book-hero {
+    background: rgba(255,255,255,0.04);
+    border: 2px solid var(--c-gold);
+    border-radius: 20px;
+    padding: 44px 40px;
+    margin-bottom: 48px;
+    position: relative;
+}
+.book-hero::before {
+    content: '"';
+    position: absolute;
+    top: -20px; left: 32px;
+    width: 56px; height: 56px;
+    background: var(--c-gold);
+    color: var(--c-dark);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 42px; font-weight: 700;
+    line-height: 0.5;
+    padding-top: 12px;
+    box-shadow: 0 8px 24px rgba(184,148,31,0.40);
+}
+.book-hero h3 {
+    font-family: var(--serif);
+    font-size: 26px;
+    color: var(--c-gold-light);
+    margin-bottom: 16px;
+    margin-top: 16px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.book-hero p {
+    color: rgba(250,247,243,0.92);
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 12px;
+}
+.book-hero p:last-child { margin-bottom: 0; }
+.book-hero strong { color: white; font-weight: 700; }
+.book-hero em { color: var(--c-gold-light); font-style: italic; font-weight: 600; }
+
+.book-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.book-fact {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(184,148,31,0.25);
+    border-radius: 16px;
+    padding: 32px 28px;
+    transition: all .3s;
+}
+.book-fact:hover {
+    background: rgba(255,255,255,0.10);
+    border-color: var(--c-gold-light);
+    transform: translateY(-4px);
+}
+.book-fact-num {
+    font-family: var(--serif);
+    font-size: 12.5px;
+    color: var(--c-gold-light);
+    letter-spacing: 0.22em;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.book-fact h4 {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: white;
+    margin-bottom: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.book-fact p { font-size: 14.5px; color: rgba(250,247,243,0.85); line-height: 1.75; }
+.book-fact p strong { color: var(--c-gold-light); font-weight: 700; }
+@media (max-width: 968px) { .book-facts { grid-template-columns: 1fr; } }
+
+/* SECTION 02: 디스크가 뭔가요 */
+.what { background: white; }
+.what-banner {
+    background: linear-gradient(135deg, var(--c-sapphire) 0%, var(--c-sapphire-deep) 100%);
+    border-radius: 20px;
+    padding: 44px 40px;
+    color: var(--c-cream);
+    box-shadow: var(--shadow-3);
+    margin-bottom: 48px;
+}
+.what-banner h3 {
+    font-family: var(--serif);
+    font-size: 24px;
+    color: var(--c-gold-light);
+    margin-bottom: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.what-banner p {
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 12px;
+    max-width: 820px;
+}
+.what-banner p:last-child { margin-bottom: 0; }
+.what-banner strong { color: white; font-weight: 700; }
+
+.what-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+.what-pillar {
+    background: white;
+    padding: 32px 26px;
+    border-radius: 14px;
+    border-left: 4px solid var(--c-sapphire);
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+}
+.what-pillar:hover { transform: translateX(4px); box-shadow: var(--shadow-3); border-left-color: var(--c-gold); }
+.what-pillar-tag {
+    font-family: var(--serif);
+    font-size: 12px;
+    color: var(--c-gold);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.what-pillar h4 {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--c-sapphire-deep);
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.what-pillar p { font-size: 14px; color: var(--c-text-soft); line-height: 1.7; }
+
+/* SECTION 03: 방사통 증상 */
+.symptoms { background: var(--c-cream-warm); }
+.symptoms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+.symptom-card {
+    background: white;
+    padding: 30px 26px;
+    border-radius: 14px;
+    border-top: 3px solid var(--c-sapphire-light);
+    box-shadow: var(--shadow-1);
+    transition: all .25s;
+}
+.symptom-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); }
+.symptom-icon {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--c-sapphire) 0%, var(--c-sapphire-deep) 100%);
+    color: white;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 18px; font-weight: 700;
+    margin-bottom: 16px;
+}
+.symptom-card h5 {
+    font-family: var(--serif);
+    font-size: 16.5px;
+    color: var(--c-sapphire-deep);
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.symptom-card p { font-size: 14px; color: var(--c-text-soft); line-height: 1.7; }
+.symptom-card p strong { color: var(--c-sapphire); font-weight: 700; }
+
+/* SECTION 04: ★ 응급 수술 위험 신호 */
+.emergency {
+    background: linear-gradient(135deg, #FFF5F5 0%, #FFEBEB 100%);
+}
+.emergency-banner {
+    background: var(--c-rose);
+    color: white;
+    border-radius: 20px;
+    padding: 44px 40px;
+    box-shadow: var(--shadow-rose);
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.emergency-banner::before {
+    content: '!';
+    position: absolute;
+    top: -30px; right: -20px;
+    font-family: var(--serif);
+    font-size: 280px;
+    color: rgba(255,255,255,0.06);
+    font-weight: 900;
+    line-height: 1;
+}
+.emergency-banner h3 {
+    font-family: var(--serif);
+    font-size: 28px;
+    color: white;
+    margin-bottom: 16px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    position: relative; z-index: 2;
+}
+.emergency-banner p {
+    color: rgba(255,255,255,0.95);
+    font-size: 16.5px;
+    line-height: 1.85;
+    margin-bottom: 12px;
+    max-width: 800px;
+    position: relative; z-index: 2;
+}
+.emergency-banner p:last-child { margin-bottom: 0; }
+.emergency-banner strong { color: #FFE0E0; font-weight: 700; }
+
+.emergency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+.emergency-card {
+    background: white;
+    padding: 32px 28px;
+    border-radius: 14px;
+    border-left: 5px solid var(--c-rose);
+    box-shadow: var(--shadow-2);
+    transition: all .25s;
+}
+.emergency-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-3); }
+.emergency-num {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--c-rose);
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.emergency-card h4 {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: var(--c-rose);
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.emergency-card p { font-size: 14.5px; color: var(--c-text); line-height: 1.7; }
+.emergency-card p strong { color: var(--c-rose); font-weight: 700; }
+
+/* SECTION 05: 디스크 vs 협착증 감별 */
+.compare { background: white; }
+.compare-table {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--c-border);
+}
+.compare-table table { width: 100%; border-collapse: collapse; }
+.compare-table thead {
+    background: linear-gradient(135deg, var(--c-sapphire-deep) 0%, var(--c-sapphire) 100%);
+    color: white;
+}
+.compare-table th {
+    padding: 18px 22px;
+    text-align: left;
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+.compare-table td {
+    padding: 16px 22px;
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--c-text);
+    border-bottom: 1px solid var(--c-border);
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table tbody tr:hover { background: var(--c-cream-warm); }
+.compare-table .col-label {
+    font-family: var(--serif);
+    font-weight: 700;
+    color: var(--c-sapphire-deep);
+    font-size: 14.5px;
+}
+.compare-table .disc { color: var(--c-sapphire-deep); font-weight: 600; }
+.compare-table .stenosis { color: var(--c-gold); font-weight: 600; }
+
+/* SECTION 06: 진단 흐름 */
+.flow { background: var(--c-cream-warm); }
+.flow-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    position: relative;
+}
+.flow-step {
+    text-align: center;
+    padding: 32px 16px;
+    position: relative;
+}
+.flow-step::after {
+    content: '';
+    position: absolute;
+    top: 56px; right: -8px;
+    width: 16px; height: 2px;
+    background: var(--c-sapphire-light);
+}
+.flow-step:last-child::after { display: none; }
+.flow-num {
+    font-family: var(--serif);
+    width: 56px; height: 56px;
+    background: linear-gradient(135deg, var(--c-sapphire) 0%, var(--c-sapphire-deep) 100%);
+    color: var(--c-cream);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; font-weight: 700;
+    margin: 0 auto 22px;
+    box-shadow: var(--shadow-2);
+}
+.flow-step h5 {
+    font-family: var(--serif);
+    font-size: 15.5px;
+    color: var(--c-sapphire-deep);
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.flow-step p { font-size: 13px; color: var(--c-text-soft); line-height: 1.6; }
+@media (max-width: 968px) {
+    .flow-steps { grid-template-columns: repeat(2, 1fr); }
+    .flow-step::after { display: none; }
+}
+
+/* SECTION 07: 단계별 치료 (★ 책 따개 핵심) */
+.treatment { background: white; }
+.treat-table {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--c-border);
+}
+.treat-table table { width: 100%; border-collapse: collapse; }
+.treat-table thead {
+    background: linear-gradient(135deg, var(--c-sapphire-deep) 0%, var(--c-sapphire) 100%);
+    color: white;
+}
+.treat-table th {
+    padding: 18px 22px;
+    text-align: left;
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+.treat-table td {
+    padding: 18px 22px;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--c-text);
+    border-bottom: 1px solid var(--c-border);
+}
+.treat-table tbody tr:last-child td { border-bottom: none; }
+.treat-table tbody tr:hover { background: var(--c-cream-warm); }
+.treat-table .col-status {
+    font-family: var(--serif);
+    font-weight: 700;
+    color: var(--c-sapphire-deep);
+    font-size: 15.5px;
+    letter-spacing: -0.01em;
+}
+.treat-table .highlight { background: rgba(184,148,31,0.08); }
+.treat-table .highlight .col-status { color: var(--c-gold); }
+.treat-table .emergency-row { background: rgba(197,48,48,0.05); }
+.treat-table .emergency-row .col-status { color: var(--c-rose); }
+
+/* SECTION 08: 수술 6가지 */
+.surgery-need { background: var(--c-cream-warm); }
+.surgery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-bottom: 36px;
+}
+.surgery-card {
+    background: white;
+    padding: 30px 26px;
+    border-radius: 14px;
+    border-top: 4px solid var(--c-sapphire);
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+}
+.surgery-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); border-top-color: var(--c-gold); }
+.surgery-num {
+    font-family: var(--serif);
+    font-size: 14px;
+    color: var(--c-gold);
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.surgery-card h4 {
+    font-family: var(--serif);
+    font-size: 16.5px;
+    color: var(--c-sapphire-deep);
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.surgery-card p { font-size: 14px; color: var(--c-text-soft); line-height: 1.7; }
+.surgery-quote {
+    background: linear-gradient(135deg, var(--c-sapphire-deep) 0%, var(--c-sapphire) 100%);
+    color: var(--c-cream);
+    border-radius: 14px;
+    padding: 32px 36px;
+    font-family: var(--serif);
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.65;
+    text-align: center;
+    box-shadow: var(--shadow-3);
+}
+.surgery-quote strong { color: var(--c-gold-light); font-style: normal; font-weight: 700; }
+
+/* SECTION 09: 미세현미경 수술 (★ 본원 차별점) */
+.method {
+    background: linear-gradient(135deg, var(--c-cream) 0%, var(--c-cream-warm) 100%);
+}
+.method-hero {
+    background: white;
+    border-radius: 20px;
+    padding: 48px 44px;
+    box-shadow: var(--shadow-2);
+    border-left: 6px solid var(--c-gold);
+    margin-bottom: 40px;
+}
+.method-hero h3 {
+    font-family: var(--serif);
+    font-size: 26px;
+    color: var(--c-sapphire-deep);
+    margin-bottom: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.method-hero h3 .em { color: var(--c-gold); }
+.method-hero p {
+    color: var(--c-text);
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 14px;
+}
+.method-hero p:last-child { margin-bottom: 0; }
+.method-hero strong { color: var(--c-sapphire-deep); font-weight: 700; }
+.method-compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.method-box {
+    background: white;
+    border-radius: 16px;
+    padding: 36px 32px;
+    box-shadow: var(--shadow-2);
+}
+.method-box.preferred { border-top: 5px solid var(--c-gold); }
+.method-box.limited { border-top: 5px solid var(--c-text-muted); }
+.method-box-label {
+    font-family: var(--serif);
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.method-box.preferred .method-box-label { color: var(--c-gold); }
+.method-box.limited .method-box-label { color: var(--c-text-muted); }
+.method-box h4 {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--c-sapphire-deep);
+    margin-bottom: 14px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.method-box p { font-size: 14.5px; color: var(--c-text-soft); line-height: 1.7; margin-bottom: 12px; }
+.method-box strong { color: var(--c-sapphire-deep); font-weight: 700; }
+.method-list {
+    list-style: none;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--c-border);
+}
+.method-list li {
+    padding: 8px 0 8px 22px;
+    position: relative;
+    font-size: 13.5px;
+    color: var(--c-text);
+    line-height: 1.6;
+}
+.method-box.preferred .method-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0; top: 8px;
+    color: var(--c-gold);
+    font-weight: 700;
+}
+.method-box.limited .method-list li::before {
+    content: '·';
+    position: absolute;
+    left: 4px; top: 4px;
+    color: var(--c-text-muted);
+    font-weight: 700;
+    font-size: 20px;
+}
+@media (max-width: 768px) { .method-compare { grid-template-columns: 1fr; } }
+
+/* SECTION 10: 회복 */
+.recovery { background: white; }
+.recovery-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0;
+    box-shadow: var(--shadow-2);
+    border-radius: 14px;
+    overflow: hidden;
+}
+.recovery-stage {
+    background: white;
+    padding: 28px 22px;
+    border-top: 4px solid var(--c-sapphire);
+    border-right: 1px solid var(--c-border);
+    transition: all .25s;
+}
+.recovery-stage:last-child { border-right: none; }
+.recovery-stage:hover { background: var(--c-cream-warm); }
+.recovery-time {
+    font-family: var(--serif);
+    font-size: 15px;
+    color: var(--c-gold);
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+}
+.recovery-content { font-size: 13.5px; color: var(--c-text); line-height: 1.6; }
+
+/* SECTION 11: 본원 차별점 — 5각형 완성 */
+.diff {
+    background: linear-gradient(135deg, var(--c-cream) 0%, var(--c-cream-warm) 100%);
+}
+.diff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+.diff-card {
+    background: white;
+    padding: 32px 28px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+    border-top: 3px solid var(--c-sapphire);
+}
+.diff-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-3); border-top-color: var(--c-gold); }
+.diff-icon {
+    width: 50px; height: 50px;
+    background: linear-gradient(135deg, var(--c-sapphire) 0%, var(--c-sapphire-deep) 100%);
+    color: white;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 20px; font-weight: 700;
+    margin-bottom: 18px;
+}
+.diff-card h5 {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--c-sapphire-deep);
+    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.diff-card p { font-size: 14.5px; color: var(--c-text-soft); line-height: 1.75; }
+.diff-card p strong { color: var(--c-text); font-weight: 700; }
+
+/* SECTION 12: FAQ */
+.faq { background: var(--c-cream-warm); }
+.faq-list { margin-top: 32px; }
+.faq-item {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: all .25s;
+    border: 1px solid var(--c-border);
+}
+.faq-item:hover { box-shadow: var(--shadow-2); border-color: var(--c-sapphire-light); }
+.faq-q {
+    padding: 22px 28px;
+    cursor: pointer;
+    font-family: var(--serif);
+    font-weight: 700;
+    color: var(--c-sapphire-deep);
+    font-size: 16.5px;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 16px;
+    line-height: 1.5;
+    user-select: none;
+    list-style: none;
+}
+.faq-q::-webkit-details-marker { display: none; }
+.faq-q::after {
+    content: '+';
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--c-gold);
+    transition: transform .25s;
+    flex-shrink: 0;
+    font-family: var(--sans);
+}
+.faq-item[open] .faq-q::after { transform: rotate(45deg); }
+.faq-a {
+    padding: 0 28px 24px;
+    color: var(--c-text);
+    font-size: 15px;
+    line-height: 1.9;
+}
+.faq-a strong { color: var(--c-sapphire-deep); font-weight: 700; }
+
+/* CTA FINAL */
+.cta-final {
+    background: linear-gradient(135deg, var(--c-sapphire) 0%, var(--c-sapphire-deep) 100%);
+    color: var(--c-cream);
+    text-align: center;
+    padding: 120px 24px;
+    position: relative; overflow: hidden;
+}
+.cta-final::before {
+    content: '';
+    position: absolute;
+    top: -10%; left: -5%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(184,148,31,0.20), transparent 70%);
+    border-radius: 50%;
+}
+.cta-final::after {
+    content: '';
+    position: absolute;
+    bottom: -20%; right: -10%;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(59,92,143,0.20), transparent 70%);
+    border-radius: 50%;
+}
+.cta-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 2; }
+.cta-quote {
+    font-family: var(--serif);
+    font-size: clamp(26px, 3.5vw, 40px);
+    font-weight: 600;
+    line-height: 1.45;
+    color: white;
+    margin-bottom: 24px;
+    letter-spacing: -0.025em;
+}
+.cta-quote .em { color: var(--c-gold-light); }
+.cta-text {
+    font-size: 17px;
+    color: rgba(250,247,243,0.92);
+    max-width: 620px; margin: 0 auto 48px;
+    line-height: 1.8;
+}
+.cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cta-buttons .btn-primary {
+    background: var(--c-gold);
+    box-shadow: 0 12px 40px rgba(184,148,31,0.40);
+}
+.cta-buttons .btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: rgba(255,255,255,0.45);
+}
+.cta-buttons .btn-secondary:hover {
+    background: white;
+    color: var(--c-sapphire-deep);
+}
+
+.footer {
+    background: #0E121C;
+    color: rgba(250,247,243,0.75);
+    padding: 56px 24px 36px;
+}
+.footer-inner {
+    max-width: 1180px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 56px;
+}
+.footer h6 {
+    font-family: var(--serif);
+    color: var(--c-gold-light);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+}
+.footer-brand .logo { color: white; margin-bottom: 14px; font-size: 21px; }
+.footer-brand .logo-mark { background: var(--c-gold); color: white; }
+.footer-brand p { font-size: 13.5px; line-height: 1.75; color: rgba(250,247,243,0.65); }
+.footer-info p { font-size: 13.5px; line-height: 1.95; }
+.footer-info p strong { color: var(--c-cream); font-weight: 500; }
+.footer-bottom {
+    max-width: 1180px;
+    margin: 48px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid rgba(250,247,243,0.10);
+    text-align: center;
+    font-size: 12px;
+    color: rgba(250,247,243,0.50);
+    line-height: 1.75;
+}
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 36px; }
+    section { padding: 70px 20px; }
+    .hero { padding: 70px 20px 56px; }
+    .book-hero, .what-banner, .emergency-banner, .method-hero { padding: 36px 24px; }
+}
+
+.placeholder {
+    background: linear-gradient(135deg, #FFF3D6, #FFE2A0);
+    color: #6B4D00;
+    padding: 1px 8px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-weight: 600;
+    font-family: var(--sans);
+    border: 1px dashed var(--c-gold);
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    ⚠️ <strong>마미증후군·족하수는 48시간 내 응급 수술</strong>이 필요합니다 · 즉시 본원 전화 <span class="placeholder">전화번호</span>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <div class="logo-mark">희</div>
+            <div>
+                <div>희망찬병원</div>
+                <div class="logo-sub">LUMBAR DISC · 허리디스크 정직 진료</div>
+            </div>
+        </div>
+        <a href="tel:placeholder" class="header-cta">
+            📞 진료 예약 · <span class="placeholder">1600-3415</span>
+        </a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <h1>
+            <span class="quote">"수술하지 마라"</span> 책의 함정 —<br>
+            <span class="accent">경증과 중증은 다릅니다</span>
+        </h1>
+        <p class="hero-sub">
+            허리디스크 환자의 대부분은 비수술 치료로 좋아집니다. 하지만 일부는 <span class="em">즉시 수술이 필요한 응급 상태</span>(마미증후군·족하수)일 수 있고, 일부는 비수술 6-12주 후에도 회복 안 되는 중증일 수 있습니다.<br>
+            <strong>"내 디스크가 경증인지 중증인지"가 핵심</strong>이며, 본원에서 정확히 평가합니다. 미세현미경 수술 + 협착증·전방전위증 동반 평가. 신경외과 전문의 김진균 원장 직접 진료.
+        </p>
+        <div class="hero-cta">
+            <a href="tel:placeholder" class="btn-emergency">🚨 응급 환자 즉시 전화</a>
+            <a href="tel:placeholder" class="btn-primary">📞 진료 예약 · 상담</a>
+            <a href="#book" class="btn-secondary">"수술하지 마라" 책의 함정 →</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-num">90<span class="small">%</span></div>
+                <div class="stat-label">L4-5·L5-S1 발생<br>(가장 흔한 부위)</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num rose">48<span class="small">시간</span></div>
+                <div class="stat-label">마미증후군 응급 수술<br>(즉시 본원 연락)</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">85~90<span class="small">%</span></div>
+                <div class="stat-label">수술 후 방사통 호전<br>(다리 통증)</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">10<span class="small">배</span></div>
+                <div class="stat-label">현미경 확대 시야<br>(신경 안전 우선)</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 01: ★ "수술하지 마라" 책의 함정 (★ 13-2 차별점) -->
+<section class="book" id="book">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 01 · 책의 함정 — 본원 정직 영업</div>
+        <h2 class="section-title">"수술하지 마라" — 통계의 함정</h2>
+        <p class="section-lead">
+            "척추 디스크 절대로 수술하지 마라"는 책이 베스트셀러가 된 적이 있습니다. <strong>본원은 환자분께 진실을 안내드립니다.</strong> 경증 환자에게는 비수술 치료가 적합하지만, 중증 환자에게는 적기 수술이 필수입니다.
+        </p>
+        <div class="book-hero">
+            <h3>"98% 수술 안 한다"는 말의 진짜 의미</h3>
+            <p><em>"디스크 환자의 98%는 수술이 필요 없다"</em>는 흔한 주장이 있습니다. 통계상 맞는 말이지만 함정이 있습니다.</p>
+            <p>'디스크 환자'에는 <strong>아주 경미한 사람부터 당장 응급 수술이 필요한 사람까지 모두 포함</strong>됩니다. 경미한 환자까지 합치면 수술 필요 없는 비율이 높아 보이는 것은 당연합니다.</p>
+            <p><strong>충치에 비유해 봅시다.</strong> "대부분의 충치는 뽑지 않아도 된다" — 맞는 말입니다. 하지만 내 충치가 어떤 상태인지가 중요하지, 대부분의 충치가 어떤지는 중요하지 않습니다.</p>
+            <p>핵심은 <em>'대부분의 환자가 어떻게 되는가'</em>가 아니라, <strong><em>'나의 상태는 어떤가, 나에게 맞는 치료는 무엇인가'</em></strong>입니다.</p>
+        </div>
+        <div class="book-facts">
+            <div class="book-fact">
+                <div class="book-fact-num">FACT 01</div>
+                <h4>통계는 평균일 뿐</h4>
+                <p>"98% 수술 안 한다"는 통계에는 <strong>경증 환자가 다수 포함</strong>됩니다. 내 디스크가 그 통계의 어느 쪽인지는 별개입니다.</p>
+            </div>
+            <div class="book-fact">
+                <div class="book-fact-num">FACT 02</div>
+                <h4>응급 환자도 포함된 통계</h4>
+                <p>같은 통계에 <strong>마미증후군·족하수 같은 응급 수술 환자</strong>도 포함됩니다. 이런 환자는 절대 수술을 미루면 안 됩니다.</p>
+            </div>
+            <div class="book-fact">
+                <div class="book-fact-num">FACT 03</div>
+                <h4>병의 경중에 맞는 치료</h4>
+                <p><strong>경증은 비수술, 중증은 수술</strong>이 상식입니다. "절대 수술하지 마라"는 "소금이 해롭다고 무조건 먹지 말라"와 같은 논리입니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 02: 디스크가 뭔가요 -->
+<section class="what">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 02 · 정확한 의학</div>
+        <h2 class="section-title">디스크가 튀어나와 신경을 누르는 병</h2>
+        <div class="what-banner">
+            <h3>L4-5·L5-S1에서 90% 발생 — 가장 흔한 척추 질환</h3>
+            <p>요추 추간판 탈출증(허리디스크)은 척추뼈 사이의 디스크가 튀어나와 신경을 압박하는 질환입니다. 디스크는 척추뼈 사이에서 충격을 흡수하는 쿠션 역할을 합니다.</p>
+            <p><strong>L4-5(4번-5번 허리뼈 사이)와 L5-S1(5번 허리뼈-엉치뼈)에서 전체의 90%</strong>가 발생합니다. 체중 부담이 가장 크고 움직임이 가장 큰 부위이기 때문입니다.</p>
+            <p>30-50대에 가장 많이 발생하며, 디스크 종류는 <strong>돌출(Protrusion) → 탈출(Extrusion) → 부골편(Sequestration)</strong> 순으로 진행됩니다.</p>
+        </div>
+        <div class="what-pillars">
+            <div class="what-pillar">
+                <div class="what-pillar-tag">단계 01</div>
+                <h4>돌출 (Protrusion)</h4>
+                <p>디스크가 불룩 튀어나왔지만 <strong>섬유륜이 아직 찢어지지 않은 상태</strong>. 가장 흔한 초기 형태.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">단계 02</div>
+                <h4>탈출 (Extrusion)</h4>
+                <p>섬유륜이 찢어져 <strong>수핵이 밖으로 빠져나온 상태</strong>. 신경 압박이 더 심함.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">단계 03</div>
+                <h4>부골편 (Sequestration)</h4>
+                <p>탈출한 디스크 조각이 <strong>원래 위치에서 떨어져 이동한 상태</strong>. 위아래로 이동 가능.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">부위 04</div>
+                <h4>L4-5 · L5-S1</h4>
+                <p><strong>전체의 90% 발생</strong>. 체중과 움직임이 가장 큰 부위 — 30-50대에 가장 많이 발생.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 03: 방사통 증상 -->
+<section class="symptoms">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 03 · 특징적 증상</div>
+        <h2 class="section-title">방사통 — 허리에서 다리로 뻗는 통증</h2>
+        <p class="section-lead">
+            허리디스크의 가장 특징적인 증상은 <strong>방사통</strong>입니다. 허리에서 시작해 엉덩이·허벅지·종아리·발까지 뻗어나가는 날카로운 통증. 다음 증상에 해당하면 본원에서 정밀 검사를 받으세요.
+        </p>
+        <div class="symptoms-grid">
+            <div class="symptom-card">
+                <div class="symptom-icon">01</div>
+                <h5>★ 허리에서 다리로</h5>
+                <p>허리에서 시작해 <strong>엉덩이·허벅지·종아리·발까지 뻗는 통증</strong>. 한쪽 다리에 날카로운 통증이 전형적.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">02</div>
+                <h5>★ 기침·재채기 시 악화</h5>
+                <p>기침이나 재채기를 할 때 <strong>다리로 뻗는 통증이 급격히 악화</strong>. 디스크의 전형적 신호.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">03</div>
+                <h5>★ 앉으면 더 아픔</h5>
+                <p>앉으면 디스크 압력이 <strong>서 있을 때보다 40% 증가</strong>. 앉으면 악화, 서거나 걸으면 나아짐.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">04</div>
+                <h5>L4-5 디스크</h5>
+                <p>엉덩이 → 허벅지 바깥쪽 → 종아리 바깥쪽 → 발등. <strong>발목 위로 못 올림</strong> (족하수 위험).</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">05</div>
+                <h5>L5-S1 디스크</h5>
+                <p>엉덩이 → 허벅지 뒤쪽 → 종아리 뒤쪽 → 발바닥. <strong>까치발 들기 어려움</strong>.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">06</div>
+                <h5>갑작스러운 발병</h5>
+                <p>대부분 <strong>갑자기 발생</strong>. 어느 날 갑자기 허리가 아프면서 다리로 통증이 뻗는 것이 전형적.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 04: ★ 응급 수술 위험 신호 -->
+<section class="emergency">
+    <div class="section-inner">
+        <div class="section-tag" style="color: var(--c-rose);">SECTION 04 · 응급 수술 위험 신호</div>
+        <h2 class="section-title" style="color: var(--c-rose);">즉시 본원 내원이 필요한 위험 신호</h2>
+        <p class="section-lead">
+            다음 증상이 있으면 <strong>지금 즉시 본원에 전화</strong>하세요. <strong>48시간 내 응급 수술</strong>이 필요할 수 있습니다.
+        </p>
+        <div class="emergency-banner">
+            <h3>"시간이 곧 신경입니다"</h3>
+            <p>신경이 오래 눌려 있으면 <strong>비가역적(되돌릴 수 없는) 손상</strong>이 진행됩니다. 신경 세포는 한 번 죽으면 재생이 매우 제한적입니다.</p>
+            <p>특히 <strong>마미증후군은 48시간 내 응급 수술이 필요</strong>하며, 늦으면 방광·직장 기능을 영구적으로 잃을 수 있습니다.</p>
+            <p>응급 환자는 24시간 본원에 전화하세요. <strong>지체하면 평생 후회할 수 있습니다.</strong></p>
+        </div>
+        <div class="emergency-grid">
+            <div class="emergency-card">
+                <div class="emergency-num">⚠ EMERGENCY 01</div>
+                <h4>마미증후군</h4>
+                <p><strong>소변 안 나옴·지림 / 변 지림 / 회음부 감각 저하 / 성기능 장애</strong> — <strong>48시간 내 응급 수술 필요</strong>. 늦으면 영구적 배뇨·배변 장애.</p>
+            </div>
+            <div class="emergency-card">
+                <div class="emergency-num">⚠ EMERGENCY 02</div>
+                <h4>족하수 (발 처짐)</h4>
+                <p><strong>발 안 올라감 / 발 끌림 / 슬리퍼 자주 벗겨짐</strong> — 영구 마비 전 즉시 본원 수술 평가. 신경 손상 진행 신호.</p>
+            </div>
+            <div class="emergency-card">
+                <div class="emergency-num">⚠ EMERGENCY 03</div>
+                <h4>다리 마비</h4>
+                <p><strong>갑자기 다리 힘 없음 / 발 마비</strong> — 즉시 본원 응급 평가. 24시간 가능. 신경 손상 빠르게 진행 가능.</p>
+            </div>
+            <div class="emergency-card">
+                <div class="emergency-num">⚠ EMERGENCY 04</div>
+                <h4>급격한 근력 약화</h4>
+                <p><strong>다리 힘이 빠르게 빠짐 / 걷기 어려움</strong> — 즉시 수술 고려. 본원 정밀 평가 필요.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 05: 디스크 vs 협착증 감별 -->
+<section class="compare">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 05 · 디스크 vs 협착증</div>
+        <h2 class="section-title">정확한 감별 — 두 질환 함께 있는 경우 흔함</h2>
+        <p class="section-lead">
+            허리디스크와 척추관 협착증은 자주 혼동됩니다. 본원에서 MRI로 정확히 감별합니다. <strong>두 질환이 함께 있는 경우도 매우 흔하므로 동반 평가가 결정적</strong>입니다.
+        </p>
+        <div class="compare-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 22%;">항목</th>
+                        <th style="width: 39%;">허리디스크</th>
+                        <th style="width: 39%;">척추관 협착증</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-label">발병 양상</td>
+                        <td class="disc">갑자기 발생</td>
+                        <td class="stenosis">서서히 진행</td>
+                    </tr>
+                    <tr>
+                        <td class="col-label">통증 양상</td>
+                        <td class="disc">날카로운 한쪽 다리 통증</td>
+                        <td class="stenosis">둔하고 무거운 양쪽 다리</td>
+                    </tr>
+                    <tr>
+                        <td class="col-label">앉으면</td>
+                        <td class="disc">더 아픔</td>
+                        <td class="stenosis">좋아짐</td>
+                    </tr>
+                    <tr>
+                        <td class="col-label">걸으면</td>
+                        <td class="disc">좋아짐</td>
+                        <td class="stenosis">더 아픔</td>
+                    </tr>
+                    <tr>
+                        <td class="col-label">기침/재채기</td>
+                        <td class="disc">다리 통증 악화</td>
+                        <td class="stenosis">영향 없음</td>
+                    </tr>
+                    <tr>
+                        <td class="col-label">발병 연령</td>
+                        <td class="disc">30-50대</td>
+                        <td class="stenosis">50대 이후</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 06: 진단 흐름 -->
+<section class="flow">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 06 · 본원 진료 흐름</div>
+        <h2 class="section-title">본원 진료 흐름 5단계</h2>
+        <p class="section-lead">
+            본원은 디스크 단계 평가 + 협착증·전방전위증 동반 평가를 5단계로 진행합니다.
+        </p>
+        <div class="flow-steps">
+            <div class="flow-step">
+                <div class="flow-num">01</div>
+                <h5>정밀 문진</h5>
+                <p>통증 시작 · 다리 증상 · 자세 변화 · 응급 신호 확인</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">02</div>
+                <h5>신체 검사</h5>
+                <p>신경 검사 · 근력 평가 · 하지 직거상 검사</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">03</div>
+                <h5>영상 검사</h5>
+                <p>★ MRI (핵심) · X-ray · CT — 본원 즉시</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">04</div>
+                <h5>★ 단계 평가</h5>
+                <p>경증/중증/응급 + 동반 질환 평가</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">05</div>
+                <h5>맞춤 치료</h5>
+                <p>비수술 · 미세현미경 수술 · 유합술</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 07: 단계별 치료 (★ 책 따개 핵심) -->
+<section class="treatment">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 07 · 단계별 치료 — 책 따개 핵심</div>
+        <h2 class="section-title">"경증은 비수술, 중증은 수술" — 단계별 맞춤</h2>
+        <p class="section-lead">
+            허리디스크 치료의 핵심은 단계 평가입니다. 본원은 환자별로 정확히 평가합니다. <strong>"수술하지 마라"는 일반론이 아닌, 내 디스크 상태에 맞는 치료가 답</strong>입니다.
+        </p>
+        <div class="treat-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">환자 상태</th>
+                        <th style="width: 30%;">치료 방향</th>
+                        <th>본원 안내</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-status">경증 디스크</td>
+                        <td>약물 + 물리치료 + 코어 운동</td>
+                        <td>6-12주 비수술 치료</td>
+                    </tr>
+                    <tr>
+                        <td class="col-status">중등도 통증</td>
+                        <td>신경차단술 + 비수술</td>
+                        <td>통증 조절 + 추적</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 비수술 6-12주 효과 없음</td>
+                        <td>★ 수술 검토</td>
+                        <td><strong>본원 영업 핵심 영입</strong></td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 신경 손상 진행</td>
+                        <td>즉시 수술 평가</td>
+                        <td>근력 약화·감각 저하 진행 시</td>
+                    </tr>
+                    <tr class="emergency-row">
+                        <td class="col-status">⚠ 마미증후군·족하수</td>
+                        <td>48시간 응급 수술</td>
+                        <td><strong>본원 응급 대응 — 즉시 전화</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="col-status">디스크 단독</td>
+                        <td>★ 미세현미경 디스크 절제술</td>
+                        <td>본원 표준 수술</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">디스크 + 협착증</td>
+                        <td>★ 동시 수술</td>
+                        <td>13-3 시너지 — 본원 통합 진료</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">디스크 + 불안정성</td>
+                        <td>★ 디스크 제거 + 유합술</td>
+                        <td>13-F·13-5 시너지</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 08: 수술 6가지 -->
+<section class="surgery-need">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 08 · 수술 적응증</div>
+        <h2 class="section-title">수술이 필요한 6가지 경우</h2>
+        <p class="section-lead">
+            허리디스크 수술은 비수술 한계 시 적기에 결정합니다. 본원에서 평가하는 6가지 상황입니다.
+        </p>
+        <div class="surgery-grid">
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 01</div>
+                <h4>마미증후군</h4>
+                <p><strong>48시간 내 응급 수술 필요</strong>. 대소변 장애·회음부 감각 저하 시 즉시 본원.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 02</div>
+                <h4>족하수·진행성 근력 약화</h4>
+                <p>영구 마비 위험 시 즉시 수술. 발 안 올라감·다리 힘 빠짐 진행.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 03</div>
+                <h4>급격한 신경 손상 진행</h4>
+                <p>감각 저하·근력 약화 빠르게 진행 — <strong>회복 가능한 시기에 수술</strong>.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 04</div>
+                <h4>비수술 6-12주 효과 없음</h4>
+                <p>약·주사·물리치료 충분히 시도했는데도 심한 통증 지속 — 일상 불가능.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 05</div>
+                <h4>야간 통증으로 수면 불가</h4>
+                <p>밤에도 다리 통증이 심해 잠 못 자는 상태 지속 — 삶의 질 심각.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 06</div>
+                <h4>디스크 + 불안정성</h4>
+                <p>전방전위증·심한 불안정성 동반 — <strong>감압 + 유합술 필요</strong>.</p>
+            </div>
+        </div>
+        <div class="surgery-quote">
+            "수술은 최후의 수단이 아닙니다.<br><strong>적절한 시기에 하는 수술이 최적의 치료입니다.</strong>"
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 09: 미세현미경 수술 (★ 본원 차별점) -->
+<section class="method">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 09 · 본원 수술 방법</div>
+        <h2 class="section-title">미세현미경 디스크 절제술 — 본원 표준</h2>
+        <p class="section-lead">
+            본원은 <strong>현미경 미세수술(Microdiscectomy)</strong>을 디스크 수술의 표준으로 합니다. 신경 안전이 절개 크기보다 우선이기 때문입니다.
+        </p>
+        <div class="method-hero">
+            <h3>"<span class="em">신경 안전</span>이 절개 크기보다 우선입니다"</h3>
+            <p>척추 수술에서 가장 중요한 것은 신경을 안전하게 보호하는 것입니다. <strong>현미경은 10배 이상 확대</strong>하여 신경 주변의 미세한 혈관까지 식별할 수 있어, 신경 손상 위험을 최소화합니다.</p>
+            <p>현미경 수술 절개는 4-5cm로 내시경보다 큽니다. 하지만 이 절개를 통해 <strong>충분한 시야 확보 + 신경 안전 보호 + 완전한 디스크 제거</strong>가 가능합니다.</p>
+            <p><strong>평생 반신마비의 위험과 몇 cm의 흉터 — 무엇이 더 중요한지는 자명합니다.</strong></p>
+        </div>
+        <div class="method-compare">
+            <div class="method-box preferred">
+                <div class="method-box-label">★ 본원 표준 · 신경 안전 우선</div>
+                <h4>미세현미경 디스크 절제술<br>(Microdiscectomy)</h4>
+                <p><strong>10배 이상 확대 시야</strong>로 신경 주변 미세 혈관까지 식별. 신경 손상 위험 최소화.</p>
+                <ul class="method-list">
+                    <li>10배 확대 시야</li>
+                    <li>완전한 디스크 제거 가능</li>
+                    <li>신경 안전 최우선</li>
+                    <li>★ 본원 김진균 원장 다년 경험</li>
+                    <li>4-5cm 절개 (신경 안전이 우선)</li>
+                    <li>골드 스탠다드</li>
+                </ul>
+            </div>
+            <div class="method-box limited">
+                <div class="method-box-label">제한적 적용 · 시야 한계</div>
+                <h4>내시경 수술<br>(Endoscopic Discectomy)</h4>
+                <p>절개가 작다는 장점이 있지만 <strong>시야가 제한적</strong>입니다. 시야가 좁으면 신경 주변 상황 파악이 어렵습니다.</p>
+                <ul class="method-list">
+                    <li>작은 절개</li>
+                    <li>흉터 작음</li>
+                    <li>시야 제한 — 구조적 한계</li>
+                    <li>디스크 불완전 제거 위험</li>
+                    <li>술기와 관계없이 신경 손상 위험 더 높음</li>
+                    <li>일부 환자에게만 적용 가능</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 10: 회복 -->
+<section class="recovery">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 10 · 회복</div>
+        <h2 class="section-title">수술 후 회복 과정</h2>
+        <p class="section-lead">
+            많은 환자가 <strong>수술 직후부터 다리 방사통이 극적으로 호전</strong>됩니다. 단계적 회복 안내입니다.
+        </p>
+        <div class="recovery-timeline">
+            <div class="recovery-stage">
+                <div class="recovery-time">당일~1일</div>
+                <div class="recovery-content">★ 다리 방사통 극적 호전 / 보행 시작</div>
+            </div>
+            <div class="recovery-stage">
+                <div class="recovery-time">1~2주</div>
+                <div class="recovery-content">일상 보행 가능 / 가벼운 활동</div>
+            </div>
+            <div class="recovery-stage">
+                <div class="recovery-time">5~7일</div>
+                <div class="recovery-content">대부분 퇴원</div>
+            </div>
+            <div class="recovery-stage">
+                <div class="recovery-time">4~6주</div>
+                <div class="recovery-content">★ 사무직 직장 복귀 가능</div>
+            </div>
+            <div class="recovery-stage">
+                <div class="recovery-time">3개월</div>
+                <div class="recovery-content">대부분 일상 활동 정상 복귀</div>
+            </div>
+            <div class="recovery-stage">
+                <div class="recovery-time">6~12개월</div>
+                <div class="recovery-content">근력·감각 회복 마무리</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 11: 본원 차별점 8가지 (★ 5각형 완성) -->
+<section class="diff">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 11 · 본원 차별점 — 5각형 완성</div>
+        <h2 class="section-title">왜 희망찬병원인가</h2>
+        <p class="section-lead">
+            본원 척추 영업 5각형(13-F·13-L·13-5·13-3·13-2) 완성 — 13-2는 본원 최대 영역. 정직 영업 + 수술 적극 영업 하이브리드.
+        </p>
+        <div class="diff-grid">
+            <div class="diff-card">
+                <div class="diff-icon">01</div>
+                <h5>신경외과 전문의<br>직접 진료</h5>
+                <p>김진균 원장이 디스크 환자를 처음부터 끝까지 직접 진료합니다. <strong>다년 척추 수술 경험</strong>.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">02</div>
+                <h5>★ 정직 영업<br>책 따개</h5>
+                <p>"수술하지 마라" 책의 함정 안내. <strong>경증 vs 중증 구분 — 내 디스크 상태에 맞는 치료</strong>가 핵심.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">03</div>
+                <h5>★ 미세현미경 수술<br>본원 표준</h5>
+                <p><strong>신경 안전 우선 — 10배 확대 시야</strong>. 골드 스탠다드 수술. 본원 표준.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">04</div>
+                <h5>★ 응급 수술 대응<br>48시간</h5>
+                <p><strong>마미증후군·족하수 응급 수술</strong>. 24시간 본원 전화 대응. 즉시 평가.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">05</div>
+                <h5>★ 동반 평가<br>5각형 통합</h5>
+                <p><strong>디스크 + 협착증 + 전방전위증 + 분리증 동시 평가</strong>. 본원 5각형 통합 진료.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">06</div>
+                <h5>★ 비수술 한계 영입<br>적기 수술</h5>
+                <p>다른 의료기관에서 비수술 6-12주 효과 없는 환자 적극 영입. <strong>수술 적기 정밀 평가</strong>.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">07</div>
+                <h5>★ 80대도 안전한 수술<br>다년 경험</h5>
+                <p>본원 16번 내과와 협진해 동반 질환 평가 후 안전 결정. <strong>고령 디스크 수술 경험</strong>.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">08</div>
+                <h5>★ 본원 5각형<br>척추 통합 진료</h5>
+                <p>13-F 유합술 · 13-L 분리증 · 13-5 전방전위증 · 13-3 협착증 · 13-2 디스크. <strong>양방향 통합 진료</strong>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 12: FAQ -->
+<section class="faq">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 12 · 자주 묻는 질문</div>
+        <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
+        <p class="section-lead">
+            허리디스크에 대해 환자분들이 자주 묻는 15가지 질문을 정리했습니다.
+        </p>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary class="faq-q">Q1. "수술하지 마라" 책을 봤는데, 정말 수술하지 말아야 하나요?</summary>
+                <div class="faq-a">
+                    책의 함정을 이해해야 합니다. <strong>"디스크 환자의 98%는 수술 필요 없다"는 통계에는 경미한 환자부터 응급 환자까지 모두 포함</strong>되어 있습니다. "대부분의 충치는 뽑지 않아도 된다"는 말과 같습니다. <strong>핵심은 "내 디스크 상태가 어떤가"</strong>입니다. 경증은 비수술, 중증은 수술이 필요합니다. 본원에서 정확히 평가합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q2. 디스크는 수술해도 재발한다는데 사실인가요?</summary>
+                <div class="faq-a">
+                    현미경 수술 후 같은 부위 재탈출은 <strong>약 5%</strong>입니다. 95%는 재발 없이 좋은 결과를 유지합니다. 수술 후 코어 근육 운동으로 재발을 예방할 수 있습니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q3. 디스크는 자연 흡수된다는데 그냥 기다리면 되나요?</summary>
+                <div class="faq-a">
+                    자연 흡수가 가능한 것은 맞습니다. 하지만 흡수되는 동안 신경이 심하게 눌리면 <strong>영구적 손상이 발생할 수 있습니다</strong>. 자연 흡수를 기다릴지 수술할지는 <strong>신경 압박의 심각도</strong>에 따라 판단합니다. 본원에서 정밀 평가합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q4. 응급 수술이 필요한 경우는 언제인가요?</summary>
+                <div class="faq-a">
+                    <strong>마미증후군(소변·대변 장애, 회음부 감각 저하)</strong> 또는 <strong>족하수(발 못 올림, 발 끌림)</strong>이 있으면 <strong>48시간 내 응급 수술</strong>이 필요합니다. 늦으면 영구 마비가 될 수 있습니다. 즉시 본원에 전화하세요.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q5. 현미경 수술과 내시경 수술 중 어느 것이 좋나요?</summary>
+                <div class="faq-a">
+                    <strong>신경 안전 측면에서 현미경 수술이 우월합니다</strong>. 내시경은 절개가 작지만 시야가 좁아 신경 손상 위험이 더 높습니다. 현미경은 10배 확대 시야로 신경을 안전하게 보호하면서 디스크를 완전히 제거합니다. 본원은 미세현미경 수술을 표준으로 합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q6. 비수술 6주 받았는데 효과가 없어요. 수술해야 하나요?</summary>
+                <div class="faq-a">
+                    비수술 치료 6-12주 후 효과가 없다면 <strong>수술 재평가가 필요합니다</strong>. 신경 손상이 진행되기 전에 본원에서 정밀 평가 후 수술 적기를 결정합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q7. 디스크와 협착증이 같이 있다고 들었어요.</summary>
+                <div class="faq-a">
+                    매우 흔한 경우입니다. 본원은 <strong>동반 평가로 정확히 진단</strong>하고, <strong>현미경 수술로 두 가지를 동시에 치료</strong>할 수 있습니다. 13-3 협착증 영역과 양방향 통합 진료입니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q8. 디스크 + 전방전위증인데 어떻게 하나요?</summary>
+                <div class="faq-a">
+                    디스크 제거와 함께 <strong>척추 유합술이 필요</strong>합니다. 본원 13-F 유합술 · 13-5 전방전위증 영역과 통합 진료로 적기 수술을 결정합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q9. 80대인데 디스크 수술이 가능한가요?</summary>
+                <div class="faq-a">
+                    본원은 <strong>80대 척추 수술 경험</strong>이 다년간 있습니다. 본원 16번 내과와 협진해 동반 질환을 평가한 후 안전한 수술을 결정합니다. 단, 모든 환자가 수술 가능한 것은 아니며 의료진이 환자별로 판단합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q10. MRI에 디스크가 있다는데 증상이 없어요. 치료해야 하나요?</summary>
+                <div class="faq-a">
+                    디스크 탈출이 있어도 신경을 심하게 누르지 않으면 증상이 없을 수 있습니다. <strong>증상이 없으면 치료가 필요하지 않습니다</strong>. 정기 추적만으로 충분합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q11. 수술하면 허리가 굳나요?</summary>
+                <div class="faq-a">
+                    단순 디스크 제거 수술은 허리가 굳지 않습니다. 1-2분절 유합술이 필요한 경우(불안정성 동반)에도 일상에 거의 영향을 주지 않습니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q12. 수술 후 언제 일상 복귀하나요?</summary>
+                <div class="faq-a">
+                    입원 5-7일, <strong>사무직 직장 복귀 4-6주</strong>, 육체 노동 3개월 후 점진적 복귀. 환자별 차이가 있어 의료진과 상의합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q13. 디스크 수술 후 운동은 언제부터?</summary>
+                <div class="faq-a">
+                    가벼운 걷기는 수술 다음 날부터 가능합니다. 수영·자전거 등 유산소 운동은 4-6주 후, 근력 운동은 3개월 이후부터 단계적으로 시작합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q14. 디스크 환자가 피해야 할 것은?</summary>
+                <div class="faq-a">
+                    <strong>무거운 물건 들기·허리 비틀기·오래 앉기</strong>를 피하세요. 앉을 때는 30분에 한 번 일어서서 움직이세요. 걷기·수영·맥켄지 운동이 권장됩니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q15. 비용·실비 청구는 어떻게 되나요?</summary>
+                <div class="faq-a">
+                    건강보험이 적용됩니다. 본원에서 진단서·소견서·세부내역서를 발급해 실손보험 청구가 가능합니다. <strong>산재 환자는 산재 진단서 발급</strong>도 가능합니다.
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+    <div class="cta-inner">
+        <p class="cta-quote">
+            "수술하지 마라"는 일반론.<br>
+            <span class="em">내 디스크에 맞는 치료가 답</span>입니다.
+        </p>
+        <p class="cta-text">
+            경증은 비수술, 중증은 수술 — 본원이 정확히 평가합니다.<br>
+            응급 환자는 24시간 본원 전화 / 미세현미경 수술 + 동반 평가<br>
+            신경외과 전문의 김진균 원장 직접 진료 · 동탄·화성·평택권 희망찬병원
+        </p>
+        <div class="cta-buttons">
+            <a href="tel:placeholder" class="btn-emergency">🚨 응급 즉시 전화</a>
+            <a href="tel:placeholder" class="btn-primary">📞 진료 예약 · <span class="placeholder">1600-3415</span></a>
+            <a href="https://map.placeholder" class="btn-secondary">📍 길찾기 · <span class="placeholder">위치</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo">
+                <div class="logo-mark">희</div>
+                <div>희망찬병원</div>
+            </div>
+            <p>척추 신경외과 · 신경외과 전문의 김진균 원장 직접 진료. 동탄·화성·평택권 종합 병원. 허리디스크 정직 진단 (책 따개 + 동반 평가) / 미세현미경 디스크 절제술 / 80대도 안전한 수술 다년 경험.</p>
+        </div>
+        <div class="footer-info">
+            <h6>진료 안내</h6>
+            <p>
+                <strong>주소:</strong> <span class="placeholder">경기도 화성시 병점중앙로 174</span><br>
+                <strong>전화:</strong> <span class="placeholder">1600-3415</span><br>
+                <strong>진료시간:</strong> <span class="placeholder">평일 09:00~18:00 / 토 09:00~13:00</span><br>
+                <strong>휴진:</strong> <span class="placeholder">일요일·공휴일</span>
+            </p>
+        </div>
+        <div class="footer-info">
+            <h6>의료진</h6>
+            <p>
+                <strong>대표원장 김진균</strong><br>
+                <span class="placeholder">신경외과 전문의</span><br>
+                <strong>유튜브:</strong> 털보의사<br>
+                <strong>전문 분야:</strong> 척추 신경외과<br>
+                · 허리디스크 정직 진단<br>
+                · 미세현미경 디스크 절제술<br>
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        본 페이지는 의료 정보 제공 목적이며, 진료는 전문의의 직접 검사와 판단이 필요합니다.<br>
+        의료광고심의필 · 허리디스크 진단·치료는 환자별 정밀 검사 후 의료진과 충분한 상담을 거쳐 결정됩니다.<br>
+        © 희망찬병원 · 2026
+    </div>
+</footer>
+
+</body>
+</html>
