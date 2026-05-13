@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 어지럼증 진료 — 강도와 위험도는 비례하지 않습니다 | 동탄·화성권</title>
+<meta name="description" content="어지럼증 정밀 진료. 본원 시그니처 이석정복술(Epley) 직접 시행 / 어지럼의 강도와 위험도는 비례하지 않습니다 / 응급 6신호 = 즉시 119 / 노인 낙상 예방 / 김진균 원장 직접 진료 / 동탄·화성·평택권.">
+<meta name="keywords" content="어지럼증, 어지러움, 이석증, BPPV, 이석정복술, Epley, 메니에르, 전정신경염, 회전성 어지럼, 누우면 빙빙, 일어나면 어지럼, 어지럼 응급, 어지럼 뇌졸중, 노인 어지럼, 낙상, MRI, MRA, Dix-Hallpike, 동탄 어지럼, 화성 어지럼, 희망찬병원, 김진균, 털보의사">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  /* 14-4-1 어지럼증 색상 시스템 — 청록·골드 계승 + 어지럼증 특화 3색 */
+  --hc-deep: #0E4A6E;
+  --hc-mid: #1A6B96;
+  --hc-light: #4A9FCB;
+  --hc-gold: #C89B2F;
+  --hc-gold-light: #E5C575;
+  --hc-warning: #B8351C;        /* ★ 응급 6신호 (적갈) */
+  --hc-warning-bg: #FBEEEA;
+  --hc-warning-soft: #DD8870;
+  --hc-insight: #4B5A8A;        /* ★ 강도-위험도 통념 깨는 차분한 청보라 */
+  --hc-insight-bg: #EEF0F7;
+  --hc-safe: #4B7A3E;             /* ★ 노인·안전 초록 */
+  --hc-safe-bg: #ECF3E8;
+  --hc-warm: #F8F3E9;
+  --hc-cream: #FCF8F2;
+  --hc-charcoal: #2A3744;
+  --hc-slate: #4D5C6E;
+  --hc-gray: #8C97A3;
+  --hc-line: #E5DDC8;
+  --hc-white: #FFFFFF;
+  
+  --font-display: 'Noto Serif KR', serif;
+  --font-body: 'Pretendard', -apple-system, sans-serif;
+  
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  
+  --shadow-sm: 0 2px 8px rgba(14, 74, 110, 0.06);
+  --shadow-md: 0 8px 24px rgba(14, 74, 110, 0.10);
+  --shadow-lg: 0 16px 48px rgba(14, 74, 110, 0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--hc-cream);
+  color: var(--hc-charcoal);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+img { max-width: 100%; display: block; }
+
+/* ============ 미니 헤더 ============ */
+.mini-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(252, 248, 242, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--hc-line);
+  padding: 0.875rem 0;
+}
+.mini-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.mini-header__brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--hc-deep);
+  letter-spacing: -0.01em;
+}
+.mini-header__brand-sub {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--hc-gold);
+  margin-left: 0.5rem;
+  letter-spacing: 0.05em;
+}
+.mini-header__cta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.625rem 1.125rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn--primary {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+  box-shadow: var(--shadow-sm);
+}
+.btn--primary:hover {
+  background: var(--hc-mid);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+.btn--gold {
+  background: var(--hc-gold);
+  color: var(--hc-white);
+}
+.btn--gold:hover { background: #B0851F; }
+.btn--warning {
+  background: var(--hc-warning);
+  color: var(--hc-white);
+}
+.btn--warning:hover { background: #962A14; }
+.btn--outline {
+  background: transparent;
+  color: var(--hc-deep);
+  border: 1.5px solid var(--hc-deep);
+}
+.btn--outline:hover {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+}
+.btn--large {
+  padding: 1rem 2rem;
+  font-size: 1.05rem;
+}
+
+/* ============ 히어로 ============ */
+.hero {
+  background: linear-gradient(135deg, var(--hc-warm) 0%, var(--hc-cream) 100%);
+  padding: 5rem 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200, 155, 47, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.hero__eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--hc-gold);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.4rem 0;
+  border-bottom: 2px solid var(--hc-gold);
+  margin-bottom: 2rem;
+}
+.hero__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.25;
+  color: var(--hc-deep);
+  letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+}
+.hero__title em {
+  font-style: normal;
+  color: var(--hc-insight);
+  border-bottom: 4px solid var(--hc-gold-light);
+  padding-bottom: 0.1rem;
+}
+.hero__lede {
+  font-size: 1.15rem;
+  color: var(--hc-slate);
+  font-weight: 400;
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+  line-height: 1.65;
+}
+.hero__cta-group {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.hero__signal {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  color: var(--hc-slate);
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--hc-line);
+  box-shadow: var(--shadow-sm);
+}
+.hero__signal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--hc-gold);
+}
+
+/* ============ 섹션 공통 ============ */
+section { padding: 5rem 1.5rem; }
+.section__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.section__head {
+  margin-bottom: 3rem;
+}
+.section__eyebrow {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: var(--hc-gold);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.section__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  line-height: 1.3;
+  color: var(--hc-deep);
+  letter-spacing: -0.02em;
+  max-width: 800px;
+}
+.section__title em {
+  font-style: normal;
+  color: var(--hc-gold);
+}
+.section__lede {
+  font-size: 1.05rem;
+  color: var(--hc-slate);
+  margin-top: 1rem;
+  max-width: 720px;
+  line-height: 1.65;
+}
+
+/* ============ ★★★ 강도-위험도 통념 깨기 (insight 청보라) ============ */
+.insight {
+  background: linear-gradient(135deg, var(--hc-insight-bg) 0%, var(--hc-cream) 100%);
+}
+.insight .section__eyebrow { color: var(--hc-insight); }
+.insight .section__title em { color: var(--hc-insight); }
+
+.insight-flip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+@media (max-width: 700px) {
+  .insight-flip { grid-template-columns: 1fr; }
+}
+.insight-card {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  background: var(--hc-white);
+  border-top: 4px solid var(--hc-gray);
+}
+.insight-card--wrong {
+  border-top-color: var(--hc-warning);
+}
+.insight-card--right {
+  border-top-color: var(--hc-insight);
+  background: linear-gradient(180deg, rgba(75, 90, 138, 0.04) 0%, var(--hc-white) 60%);
+}
+.insight-card__tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+.insight-card--wrong .insight-card__tag {
+  background: rgba(184, 53, 28, 0.10);
+  color: var(--hc-warning);
+}
+.insight-card--right .insight-card__tag {
+  background: rgba(75, 90, 138, 0.10);
+  color: var(--hc-insight);
+}
+.insight-card__head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--hc-deep);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+.insight-card__body {
+  font-size: 0.98rem;
+  color: var(--hc-slate);
+  line-height: 1.7;
+}
+.insight-card__body strong { color: var(--hc-insight); font-weight: 700; }
+.insight-card--wrong .insight-card__body strong { color: var(--hc-warning); }
+
+.insight-quote {
+  margin-top: 3rem;
+  padding: 2rem 2.5rem;
+  background: var(--hc-white);
+  border-left: 6px solid var(--hc-insight);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--hc-deep);
+  line-height: 1.65;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+.insight-quote strong { color: var(--hc-insight); }
+
+/* ============ 귀·뇌·심장 분류 ============ */
+.types { background: var(--hc-white); }
+
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+@media (max-width: 800px) {
+  .types-grid { grid-template-columns: 1fr; }
+}
+.type-card {
+  padding: 2rem;
+  background: var(--hc-cream);
+  border-radius: var(--radius-lg);
+  border-top: 4px solid var(--hc-gold);
+  transition: all 0.3s ease;
+}
+.type-card:hover {
+  background: var(--hc-warm);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.type-card--ear {
+  border-top-color: var(--hc-gold);
+}
+.type-card--brain {
+  border-top-color: var(--hc-warning);
+  background: linear-gradient(180deg, rgba(184, 53, 28, 0.04) 0%, var(--hc-cream) 60%);
+}
+.type-card--heart {
+  border-top-color: var(--hc-mid);
+}
+.type-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.type-card__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.5rem;
+}
+.type-card__subname {
+  font-size: 0.85rem;
+  color: var(--hc-gray);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+.type-card__feature {
+  font-size: 0.85rem;
+  color: var(--hc-charcoal);
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.type-card__feature strong {
+  flex-shrink: 0;
+  color: var(--hc-deep);
+  font-weight: 700;
+  min-width: 55px;
+}
+.type-card--ear .type-card__feature strong { color: var(--hc-gold); }
+.type-card--brain .type-card__feature strong { color: var(--hc-warning); }
+.type-card--heart .type-card__feature strong { color: var(--hc-mid); }
+.type-card__risk {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+.type-card--ear .type-card__risk { color: var(--hc-gold); }
+.type-card--brain .type-card__risk { color: var(--hc-warning); }
+.type-card--heart .type-card__risk { color: var(--hc-mid); }
+
+/* ============ ★★ 응급 6신호 (적갈 강조) ============ */
+.emergency {
+  background: linear-gradient(135deg, var(--hc-warning-bg) 0%, var(--hc-cream) 100%);
+}
+.emergency .section__eyebrow { color: var(--hc-warning); }
+.emergency .section__title em { color: var(--hc-warning); }
+
+.emergency-banner {
+  background: var(--hc-warning);
+  color: var(--hc-white);
+  padding: 2rem 2.5rem;
+  border-radius: var(--radius-lg);
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+.emergency-banner__head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+.emergency-banner__sub {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+@media (max-width: 700px) {
+  .signal-grid { grid-template-columns: 1fr; }
+}
+.signal-card {
+  padding: 1.75rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  border-left: 5px solid var(--hc-warning);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+.signal-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+}
+.signal-card__head {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+.signal-card__num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.75rem;
+  color: var(--hc-warning);
+  line-height: 1;
+}
+.signal-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--hc-deep);
+  letter-spacing: -0.01em;
+}
+.signal-card__symptom {
+  font-size: 0.95rem;
+  color: var(--hc-charcoal);
+  line-height: 1.65;
+  margin-bottom: 0.85rem;
+}
+.signal-card__meaning {
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--hc-line);
+  font-size: 0.85rem;
+  color: var(--hc-warning);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.emergency-note {
+  margin-top: 2.5rem;
+  padding: 1.5rem 2rem;
+  background: var(--hc-white);
+  border-left: 4px solid var(--hc-safe);
+  border-radius: var(--radius-sm);
+  font-size: 0.98rem;
+  color: var(--hc-charcoal);
+  line-height: 1.75;
+  box-shadow: var(--shadow-sm);
+}
+.emergency-note strong { color: var(--hc-safe); font-weight: 700; }
+
+/* ============ ★★ 시그니처 — 이석정복술 (어두운 청 + 골드) ============ */
+.signature {
+  background: linear-gradient(135deg, var(--hc-deep) 0%, var(--hc-charcoal) 100%);
+  color: var(--hc-warm);
+  position: relative;
+  overflow: hidden;
+}
+.signature::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(200, 155, 47, 0.10) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.signature .section__eyebrow { color: var(--hc-gold-light); }
+.signature .section__title { color: var(--hc-white); }
+.signature .section__title em { color: var(--hc-gold); }
+.signature .section__lede { color: rgba(248, 243, 233, 0.85); }
+
+.sig-hero {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: rgba(200, 155, 47, 0.08);
+  border: 1px solid rgba(200, 155, 47, 0.3);
+  border-radius: var(--radius-lg);
+}
+.sig-hero__label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--hc-gold-light);
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+}
+.sig-hero__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--hc-white);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+.sig-hero__english {
+  font-size: 0.95rem;
+  color: var(--hc-gold-light);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+.sig-hero__desc {
+  font-size: 1.05rem;
+  color: rgba(248, 243, 233, 0.9);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+.sig-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.sig-feature {
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 3px solid var(--hc-gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.sig-feature__label {
+  font-size: 0.75rem;
+  color: var(--hc-gold-light);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+.sig-feature__value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--hc-white);
+  line-height: 1.4;
+}
+
+.sig-symptoms {
+  margin-top: 2.5rem;
+  padding: 1.75rem 2rem;
+  background: rgba(248, 243, 233, 0.06);
+  border-radius: var(--radius-lg);
+}
+.sig-symptoms__head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--hc-gold-light);
+  margin-bottom: 1rem;
+}
+.sig-symptoms__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.6rem;
+  list-style: none;
+}
+.sig-symptoms__list li {
+  font-size: 0.92rem;
+  color: rgba(248, 243, 233, 0.9);
+  line-height: 1.55;
+  padding-left: 1rem;
+  position: relative;
+}
+.sig-symptoms__list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--hc-gold);
+  font-weight: 700;
+}
+
+.signature__note {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(248, 243, 233, 0.08);
+  border-left: 3px solid var(--hc-gold-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: rgba(248, 243, 233, 0.9);
+  line-height: 1.65;
+}
+
+/* ============ 진료 흐름 ============ */
+.flow { background: var(--hc-cream); }
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.flow-step {
+  background: var(--hc-white);
+  padding: 1.5rem 1.25rem;
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+.flow-step:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.flow-step__num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.25rem;
+  color: var(--hc-gold);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+.flow-step__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.45rem;
+  letter-spacing: -0.01em;
+}
+.flow-step__text {
+  font-size: 0.85rem;
+  color: var(--hc-slate);
+  line-height: 1.5;
+}
+
+/* ============ 원인별 치료 ============ */
+.treatment { background: var(--hc-warm); }
+.treatment-table {
+  margin-top: 2rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.treatment-row {
+  display: grid;
+  grid-template-columns: 130px 1fr 1.5fr;
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid var(--hc-line);
+  gap: 1rem;
+  align-items: center;
+}
+.treatment-row:last-child { border-bottom: none; }
+.treatment-row--head {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.treatment-row--signature {
+  background: linear-gradient(90deg, rgba(200, 155, 47, 0.10) 0%, rgba(200, 155, 47, 0.02) 100%);
+  border-left: 4px solid var(--hc-gold);
+}
+.treatment-row--emergency {
+  background: linear-gradient(90deg, rgba(184, 53, 28, 0.06) 0%, rgba(184, 53, 28, 0.01) 100%);
+  border-left: 4px solid var(--hc-warning);
+}
+.treatment-row__stage {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--hc-deep);
+  font-size: 0.9rem;
+}
+.treatment-row--signature .treatment-row__stage { color: var(--hc-gold); }
+.treatment-row--emergency .treatment-row__stage { color: var(--hc-warning); }
+.treatment-row__name {
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: var(--hc-charcoal);
+}
+.treatment-row__desc {
+  font-size: 0.9rem;
+  color: var(--hc-slate);
+  line-height: 1.55;
+}
+@media (max-width: 700px) {
+  .treatment-row { grid-template-columns: 1fr; gap: 0.3rem; padding: 1rem 1.25rem; }
+  .treatment-row--head { display: none; }
+  .treatment-row__name::before { content: "▸ "; color: var(--hc-gold); }
+}
+
+/* ============ ★ 노인 어지럼 (안전 초록) ============ */
+.elderly {
+  background: var(--hc-safe-bg);
+}
+.elderly .section__eyebrow { color: var(--hc-safe); }
+.elderly .section__title em { color: var(--hc-safe); }
+
+.elderly-block {
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-top: 2.5rem;
+  border-left: 6px solid var(--hc-safe);
+  box-shadow: var(--shadow-sm);
+}
+
+.elderly-stat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+  border-top: 1px dashed var(--hc-line);
+  border-bottom: 1px dashed var(--hc-line);
+}
+@media (max-width: 600px) {
+  .elderly-stat { grid-template-columns: 1fr; gap: 1rem; }
+}
+.elderly-stat__item {
+  text-align: center;
+}
+.elderly-stat__num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--hc-safe);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+.elderly-stat__label {
+  font-size: 0.95rem;
+  color: var(--hc-slate);
+  font-weight: 500;
+}
+
+.elderly-section {
+  margin-top: 2rem;
+}
+.elderly-section__head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.01em;
+}
+.elderly-section__body {
+  font-size: 0.98rem;
+  color: var(--hc-slate);
+  line-height: 1.7;
+}
+.elderly-section__body strong { color: var(--hc-safe); font-weight: 700; }
+
+.elderly-meds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.elderly-med {
+  padding: 0.85rem 1rem;
+  background: var(--hc-cream);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--hc-safe);
+  font-size: 0.88rem;
+  color: var(--hc-charcoal);
+  line-height: 1.5;
+}
+.elderly-med strong {
+  color: var(--hc-safe);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+/* ============ 환자 신호 ============ */
+.signals { background: var(--hc-white); }
+.signals-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.signal-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1rem 1.25rem;
+  background: var(--hc-cream);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--hc-gold);
+  transition: all 0.2s ease;
+}
+.signal-row:hover {
+  border-left-color: var(--hc-insight);
+  transform: translateX(2px);
+}
+.signal-row__check {
+  font-family: var(--font-display);
+  font-weight: 900;
+  color: var(--hc-gold);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.signal-row--sig {
+  background: linear-gradient(90deg, rgba(200, 155, 47, 0.08) 0%, var(--hc-cream) 60%);
+  border-left-color: var(--hc-gold);
+}
+.signal-row--emergency {
+  background: linear-gradient(90deg, rgba(184, 53, 28, 0.06) 0%, var(--hc-cream) 60%);
+  border-left-color: var(--hc-warning);
+}
+.signal-row--emergency .signal-row__check { color: var(--hc-warning); }
+.signal-row--elderly {
+  background: linear-gradient(90deg, rgba(75, 122, 62, 0.06) 0%, var(--hc-cream) 60%);
+  border-left-color: var(--hc-safe);
+}
+.signal-row--elderly .signal-row__check { color: var(--hc-safe); }
+.signal-row__text {
+  font-size: 0.95rem;
+  color: var(--hc-charcoal);
+  line-height: 1.55;
+}
+
+/* ============ 자가진단 ============ */
+.selfcheck { background: var(--hc-warm); }
+.selfcheck-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-top: 2rem;
+}
+.selfcheck-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px dashed var(--hc-line);
+}
+.selfcheck-item__box {
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--hc-deep);
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.selfcheck-item__text {
+  font-size: 0.98rem;
+  color: var(--hc-charcoal);
+  line-height: 1.55;
+}
+.selfcheck__alert {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(184, 53, 28, 0.06);
+  border-left: 4px solid var(--hc-warning);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  color: var(--hc-charcoal);
+}
+.selfcheck__alert strong { color: var(--hc-warning); font-weight: 700; }
+@media (max-width: 700px) {
+  .selfcheck-grid { grid-template-columns: 1fr; }
+}
+
+/* ============ FAQ ============ */
+.faq { background: var(--hc-white); }
+.faq-list {
+  margin-top: 2rem;
+  border-top: 1px solid var(--hc-line);
+}
+.faq-item { border-bottom: 1px solid var(--hc-line); }
+.faq-item__q {
+  display: block;
+  padding: 1.5rem 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: var(--hc-deep);
+  cursor: pointer;
+  position: relative;
+  padding-right: 2.5rem;
+  letter-spacing: -0.01em;
+  list-style: none;
+}
+.faq-item__q::-webkit-details-marker { display: none; }
+.faq-item__q::after {
+  content: "+";
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--hc-gold);
+  transition: transform 0.3s ease;
+}
+.faq-item[open] .faq-item__q::after { content: "−"; }
+.faq-item__a {
+  padding: 0 0 1.5rem 0;
+  font-size: 0.98rem;
+  color: var(--hc-slate);
+  line-height: 1.75;
+}
+
+/* ============ 안전 안내 ============ */
+.disclaimer {
+  background: var(--hc-cream);
+  padding: 3rem 1.5rem;
+}
+.disclaimer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background: rgba(200, 155, 47, 0.08);
+  border-left: 4px solid var(--hc-gold);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--hc-slate);
+  line-height: 1.7;
+}
+
+/* ============ 위치/연락처 ============ */
+.contact {
+  background: linear-gradient(135deg, var(--hc-charcoal) 0%, var(--hc-deep) 100%);
+  color: var(--hc-warm);
+}
+.contact .section__eyebrow { color: var(--hc-gold-light); }
+.contact .section__title { color: var(--hc-white); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.contact-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(200, 155, 47, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+}
+.contact-card__label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: var(--hc-gold-light);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.contact-card__value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--hc-white);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+.contact-card__sub {
+  font-size: 0.92rem;
+  color: rgba(248, 243, 233, 0.7);
+  line-height: 1.55;
+}
+
+/* ============ 풋터 ============ */
+footer {
+  background: var(--hc-charcoal);
+  color: rgba(248, 243, 233, 0.6);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+footer strong { color: var(--hc-gold-light); }
+
+/* ============ 모바일 반응형 ============ */
+@media (max-width: 700px) {
+  section { padding: 3.5rem 1.25rem; }
+  .hero { padding: 3rem 1.25rem 2.5rem; }
+  .sig-hero, .elderly-block { padding: 1.5rem; }
+  .insight-card { padding: 1.5rem; }
+  .mini-header__brand-sub { display: none; }
+  .hero__cta-group .btn { flex: 1; justify-content: center; }
+}
+
+/* ============ 등장 애니메이션 ============ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero__title, .hero__lede, .hero__cta-group, .hero__signal {
+  animation: fadeUp 0.7s ease backwards;
+}
+.hero__title { animation-delay: 0.1s; }
+.hero__lede { animation-delay: 0.25s; }
+.hero__cta-group { animation-delay: 0.4s; }
+.hero__signal { animation-delay: 0.55s; }
+</style>
+</head>
+<body>
+
+<!-- 미니 헤더 -->
+<header class="mini-header">
+  <div class="mini-header__inner">
+    <div>
+      <span class="mini-header__brand">희망찬병원</span>
+      <span class="mini-header__brand-sub">어지럼증 · 이석정복술 진료</span>
+    </div>
+    <div class="mini-header__cta">
+      <a href="tel:031-XXX-XXXX" class="btn btn--outline">📞 전화 상담</a>
+      <a href="#contact" class="btn btn--primary">진료 예약</a>
+    </div>
+  </div>
+</header>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="hero__inner">
+    <span class="hero__eyebrow">14-4-1 어지럼증 (Dizziness · Vertigo)</span>
+    <h1 class="hero__title">
+      어지럼증, <em>강도와 위험도</em>는<br>
+      비례하지 않습니다
+    </h1>
+    <p class="hero__lede">
+      심하게 빙빙 도는 어지럼이 더 안전할 수도 있고, 약한 어지럼이 더 위험할 수도 있습니다. 어지럼의 원인은 귀·뇌·심장으로 완전히 다르며, 정확한 감별이 첫걸음입니다. <strong>본원은 이석증 환자에게 이석정복술(Epley)을 직접 시행하며, 응급 신호 동반 시 즉시 정밀 검사가 가능합니다.</strong> 김진균 원장이 직접 진료합니다.
+    </p>
+    <div class="hero__cta-group">
+      <a href="#contact" class="btn btn--primary btn--large">📞 진료 예약·상담</a>
+      <a href="#selfcheck" class="btn btn--gold btn--large">📋 자가진단 (3분)</a>
+      <a href="#emergency" class="btn btn--warning btn--large">★ 응급 6신호 (즉시 119)</a>
+    </div>
+    <div class="hero__signal">
+      <span class="hero__signal-dot"></span>
+      동탄·화성·평택·수원·오산권 / 평일·토 진료 / 김진균 원장 직접 진료
+    </div>
+  </div>
+</section>
+
+<!-- ★★★ 강도-위험도 통념 깨기 -->
+<section class="insight">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★★★ 본원 핵심 메시지</div>
+      <h2 class="section__title">
+        "심하면 큰 병"이라는<br>
+        <em>통념을 다시 생각</em>해보세요
+      </h2>
+      <p class="section__lede">
+        많은 분이 "빙빙 도는 심한 어지럼"을 무서워하고 "가벼운 어지럼"은 대수롭지 않게 넘기십니다. 사실은 그 반대일 수 있습니다.
+      </p>
+    </div>
+    
+    <div class="insight-flip">
+      <div class="insight-card insight-card--wrong">
+        <span class="insight-card__tag">잘못된 통념</span>
+        <h3 class="insight-card__head">
+          "심하게 빙빙 도는 건 큰 병이고,<br>
+          살짝 어지러운 건 별것 아니다"
+        </h3>
+        <p class="insight-card__body">
+          환자분들이 가장 흔히 하시는 오해입니다. "강도가 셀수록 위험하다"는 직관은 이해되지만, 어지럼의 경우 <strong>맞지 않는 경우가 많습니다.</strong>
+        </p>
+      </div>
+      
+      <div class="insight-card insight-card--right">
+        <span class="insight-card__tag">의학적 사실</span>
+        <h3 class="insight-card__head">
+          어지럼의 강도와 위험도는<br>
+          비례하지 않습니다
+        </h3>
+        <p class="insight-card__body">
+          이석증은 세상이 빙빙 도는 매우 심한 어지럼을 일으키지만 <strong>위험한 병이 아닙니다.</strong> 반대로 약한 어지럼이 <strong>뇌졸중의 신호</strong>일 수 있습니다. 핵심은 "얼마나 심한가"가 아니라 <strong>"어떻게 어지러운가, 무엇이 동반되는가"</strong>입니다.
+        </p>
+      </div>
+    </div>
+    
+    <div class="insight-quote">
+      어지럼의 핵심은 <strong>강도</strong>가 아니라<br>
+      <strong>패턴과 동반 증상</strong>입니다
+    </div>
+  </div>
+</section>
+
+<!-- 귀·뇌·심장 분류 -->
+<section class="types">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 어지럼의 3가지 원인</div>
+      <h2 class="section__title">
+        귀 · 뇌 · 심장 —<br>
+        <em>치료가 완전히 다릅니다</em>
+      </h2>
+      <p class="section__lede">
+        어지럼은 어느 기관에서 오는지에 따라 치료법이 완전히 달라집니다. 본원은 한 번의 진료로 세 가지 원인을 모두 감별할 수 있습니다.
+      </p>
+    </div>
+    
+    <div class="types-grid">
+      <!-- 귀 -->
+      <div class="type-card type-card--ear">
+        <div class="type-card__icon">👂</div>
+        <div class="type-card__name">귀 (말초성)</div>
+        <div class="type-card__subname">Peripheral Vertigo</div>
+        <div class="type-card__feature"><strong>유형</strong><span>회전성 (빙빙 도는)</span></div>
+        <div class="type-card__feature"><strong>강도</strong><span>심함</span></div>
+        <div class="type-card__feature"><strong>청력</strong><span>있을 수 있음</span></div>
+        <div class="type-card__feature"><strong>신경</strong><span>없음</span></div>
+        <div class="type-card__feature"><strong>질환</strong><span>★ 이석증·메니에르·전정신경염</span></div>
+        <div class="type-card__risk">대부분 양성</div>
+      </div>
+      
+      <!-- 뇌 -->
+      <div class="type-card type-card--brain">
+        <div class="type-card__icon">🧠</div>
+        <div class="type-card__name">뇌 (중추성)</div>
+        <div class="type-card__subname">Central Vertigo</div>
+        <div class="type-card__feature"><strong>유형</strong><span>불균형·비틀거림</span></div>
+        <div class="type-card__feature"><strong>강도</strong><span>약하거나 중간</span></div>
+        <div class="type-card__feature"><strong>청력</strong><span>드묾</span></div>
+        <div class="type-card__feature"><strong>신경</strong><span>★ 마비·언어장애·복시</span></div>
+        <div class="type-card__feature"><strong>질환</strong><span>★ 뇌졸중·뇌출혈·TIA</span></div>
+        <div class="type-card__risk">★ 생명 위협 가능</div>
+      </div>
+      
+      <!-- 심장 -->
+      <div class="type-card type-card--heart">
+        <div class="type-card__icon">❤️</div>
+        <div class="type-card__name">심장</div>
+        <div class="type-card__subname">Cardiac Dizziness</div>
+        <div class="type-card__feature"><strong>유형</strong><span>핑 도는·아찔함</span></div>
+        <div class="type-card__feature"><strong>강도</strong><span>갑자기 심함</span></div>
+        <div class="type-card__feature"><strong>청력</strong><span>없음</span></div>
+        <div class="type-card__feature"><strong>신경</strong><span>없음</span></div>
+        <div class="type-card__feature"><strong>질환</strong><span>기립성·부정맥·판막</span></div>
+        <div class="type-card__risk">실신 시 위험</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ★★ 응급 6신호 -->
+<section class="emergency" id="emergency">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★★ 즉시 119 응급 신호</div>
+      <h2 class="section__title">
+        어지럼 + 다음 6가지 중 하나라도<br>
+        <em>즉시 119</em>에 신고하세요
+      </h2>
+      <p class="section__lede">
+        어지럼 자체는 대부분 위험하지 않지만, 다음 6가지 중 하나라도 동반되면 뇌졸중·뇌출혈 응급 가능성이 있습니다. 골든타임 4.5시간 이내 응급실 도착이 회복을 좌우합니다.
+      </p>
+    </div>
+    
+    <div class="emergency-banner">
+      <div class="emergency-banner__head">⚠ 어지럼 + 6신호 = 즉시 119</div>
+      <div class="emergency-banner__sub">골든타임 4.5시간 / 본원 응급 후 외래 진료 가능</div>
+    </div>
+    
+    <div class="signal-grid">
+      <div class="signal-card">
+        <div class="signal-card__head">
+          <div class="signal-card__num">①</div>
+          <div class="signal-card__title">언어장애</div>
+        </div>
+        <div class="signal-card__symptom">말이 어눌해지거나, 발음이 이상하거나, 단어를 못 떠올림</div>
+        <div class="signal-card__meaning">▸ 뇌졸중 응급 신호 (FAST 중 S)</div>
+      </div>
+      
+      <div class="signal-card">
+        <div class="signal-card__head">
+          <div class="signal-card__num">②</div>
+          <div class="signal-card__title">의식저하</div>
+        </div>
+        <div class="signal-card__symptom">정신이 흐려지거나, 실신·기절한 적이 있음</div>
+        <div class="signal-card__meaning">▸ 뇌·심장 응급 신호</div>
+      </div>
+      
+      <div class="signal-card">
+        <div class="signal-card__head">
+          <div class="signal-card__num">③</div>
+          <div class="signal-card__title">팔다리 마비</div>
+        </div>
+        <div class="signal-card__symptom">팔·다리에 힘이 빠지거나, 한쪽 마비, 손발 저림</div>
+        <div class="signal-card__meaning">▸ 뇌졸중 응급 신호 (FAST 중 A)</div>
+      </div>
+      
+      <div class="signal-card">
+        <div class="signal-card__head">
+          <div class="signal-card__num">④</div>
+          <div class="signal-card__title">얼굴마비</div>
+        </div>
+        <div class="signal-card__symptom">한쪽 얼굴이 처지거나, 입꼬리가 처짐</div>
+        <div class="signal-card__meaning">▸ 뇌졸중 응급 신호 (FAST 중 F)</div>
+      </div>
+      
+      <div class="signal-card">
+        <div class="signal-card__head">
+          <div class="signal-card__num">⑤</div>
+          <div class="signal-card__title">이명·난청</div>
+        </div>
+        <div class="signal-card__symptom">갑자기 한쪽 안 들림, 이명, 청력 저하 동반</div>
+        <div class="signal-card__meaning">▸ 돌발성 난청 또는 메니에르</div>
+      </div>
+      
+      <div class="signal-card">
+        <div class="signal-card__head">
+          <div class="signal-card__num">⑥</div>
+          <div class="signal-card__title">복시</div>
+        </div>
+        <div class="signal-card__symptom">사물이 두 개로 보임, 시야 흐림·좁아짐</div>
+        <div class="signal-card__meaning">▸ 뇌신경·뇌혈관 응급</div>
+      </div>
+    </div>
+    
+    <div class="emergency-note">
+      <strong>응급실 다녀온 후에도 어지럼이 지속되거나 원인이 명확하지 않으시면 본원 외래 진료가 가능합니다.</strong> 본원은 MRI·MRA로 정밀 추적 진료를 도와드립니다. 응급 상황에서는 "마지막으로 멀쩡했던 시각"을 기억하시는 것이 응급실 진료에 매우 중요합니다.
+    </div>
+  </div>
+</section>
+
+<!-- ★★ 시그니처 — 이석정복술 -->
+<section class="signature" id="signature">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★★ 본원 시그니처 시술</div>
+      <h2 class="section__title">
+        이석증, 본원 <em>이석정복술</em>로<br>
+        대부분 1-2회 호전 가능 케이스
+      </h2>
+      <p class="section__lede">
+        누우면·일어나면·고개 돌리면 빙빙 도는 어지럼은 이석증일 가능성이 높습니다. 환자 입장에서는 매우 심한 어지럼이지만 의학적으로는 안전한 질환이며, 본원의 도수 시술로 대부분 호전 가능합니다.
+      </p>
+    </div>
+    
+    <div class="sig-hero">
+      <div class="sig-hero__label">★ SIGNATURE PROCEDURE</div>
+      <div class="sig-hero__name">이석정복술</div>
+      <div class="sig-hero__english">Epley maneuver — Canalith Repositioning Procedure</div>
+      <p class="sig-hero__desc">
+        본원에서 직접 시행하는 도수 시술입니다. 의료진이 환자 머리 위치를 일정한 순서로 변경하여, 잘못된 위치(반고리관)로 빠진 이석을 제자리로 되돌립니다. <strong>약물 없이 시행되며, 대부분 1-2회 시행으로 호전 가능 케이스입니다.</strong> 환자별 결과는 다를 수 있으며, 재발 시 추가 시행 가능합니다.
+      </p>
+      
+      <div class="sig-features">
+        <div class="sig-feature">
+          <div class="sig-feature__label">방법</div>
+          <div class="sig-feature__value">약물 없는<br>도수 시술</div>
+        </div>
+        <div class="sig-feature">
+          <div class="sig-feature__label">횟수</div>
+          <div class="sig-feature__value">대부분 1-2회<br>호전 케이스</div>
+        </div>
+        <div class="sig-feature">
+          <div class="sig-feature__label">진단</div>
+          <div class="sig-feature__value">Dix-Hallpike<br>당일 검사</div>
+        </div>
+        <div class="sig-feature">
+          <div class="sig-feature__label">시행</div>
+          <div class="sig-feature__value">김진균 원장<br>직접 시행</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sig-symptoms">
+      <div class="sig-symptoms__head">이석증 특징 — 다음 중 해당되면 가능성 높음</div>
+      <ul class="sig-symptoms__list">
+        <li>누울 때 갑자기 빙빙 도는 어지럼</li>
+        <li>일어날 때·뒤척일 때 어지럼</li>
+        <li>고개 돌리거나 천장 볼 때 어지럼</li>
+        <li>베개 베면·세수할 때 어지럼</li>
+        <li>미용실에서 머리 감을 때 어지럼</li>
+        <li>어지럼이 수초~1분 후 멈춤</li>
+        <li>가만히 있으면 어지럼 사라짐</li>
+        <li>심한 구역·구토 동반 가능</li>
+      </ul>
+    </div>
+    
+    <div class="signature__note">
+      ★ 이석정복술은 신체 검사(Dix-Hallpike)로 이석증이 진단된 환자에게 시행합니다. 모든 어지럼 환자가 이석정복술 대상은 아니며, 환자별로 적용 가능성과 결과가 다를 수 있습니다. 진료 후 의료진이 적합한 치료를 결정합니다. 재발 가능성이 있으므로 정기 추적 진료를 권장합니다.
+    </div>
+  </div>
+</section>
+
+<!-- 본원 진료 흐름 -->
+<section class="flow">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 본원 진료 흐름</div>
+      <h2 class="section__title">5단계 정밀 진료</h2>
+      <p class="section__lede">
+        본원은 어지럼 환자에게 5단계 표준 절차를 따라 정확한 원인을 진단하고 맞춤 치료를 결정합니다.
+      </p>
+    </div>
+    
+    <div class="flow-grid">
+      <div class="flow-step">
+        <div class="flow-step__num">01</div>
+        <div class="flow-step__title">정밀 문진</div>
+        <div class="flow-step__text">어지럼 유형·기간·동반 증상·기저질환 평가</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">02</div>
+        <div class="flow-step__title">신체 검사</div>
+        <div class="flow-step__text">Dix-Hallpike (이석증) / HINTS (중추성 감별)</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">03</div>
+        <div class="flow-step__title">영상·기능</div>
+        <div class="flow-step__text">MRI·MRA·청력·전정기능·심전도 (필요 시)</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">04</div>
+        <div class="flow-step__title">원인 진단</div>
+        <div class="flow-step__text">귀·뇌·심장 중 어느 기관 문제인지 결정</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">05</div>
+        <div class="flow-step__title">맞춤 치료</div>
+        <div class="flow-step__text">★ 이석정복술·약물·재활·응급실 인계</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 원인별 치료 -->
+<section class="treatment">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 원인별 치료</div>
+      <h2 class="section__title">
+        진단된 원인에 따른<br>
+        <em>5단계 맞춤 치료</em>
+      </h2>
+    </div>
+    
+    <div class="treatment-table">
+      <div class="treatment-row treatment-row--head">
+        <div>원인</div>
+        <div>치료법</div>
+        <div>본원 진료</div>
+      </div>
+      <div class="treatment-row treatment-row--signature">
+        <div class="treatment-row__stage">[1] ★ 이석증</div>
+        <div class="treatment-row__name">이석정복술 (Epley maneuver)</div>
+        <div class="treatment-row__desc">본원 직접 시행 / 대부분 1-2회 호전 가능 케이스</div>
+      </div>
+      <div class="treatment-row">
+        <div class="treatment-row__stage">[2] 메니에르</div>
+        <div class="treatment-row__name">저염식·이뇨제·약물</div>
+        <div class="treatment-row__desc">단계별 약물 관리 / 생활 가이드 / 본원 정밀 진료</div>
+      </div>
+      <div class="treatment-row">
+        <div class="treatment-row__stage">[3] 전정신경염</div>
+        <div class="treatment-row__name">급성기 약물 + 전정재활운동</div>
+        <div class="treatment-row__desc">약물 + 재활 가이드 / 본원 외래 추적</div>
+      </div>
+      <div class="treatment-row">
+        <div class="treatment-row__stage">[4] 기립성·심장성</div>
+        <div class="treatment-row__name">생활 가이드·약물·심전도</div>
+        <div class="treatment-row__desc">정밀 진료 / 필요 시 내과 협진</div>
+      </div>
+      <div class="treatment-row treatment-row--emergency">
+        <div class="treatment-row__stage">[5] ★ 뇌졸중 의심</div>
+        <div class="treatment-row__name">응급실 인계 → 골든타임 4.5시간</div>
+        <div class="treatment-row__desc">★ 즉시 119 / 본원 응급 후 외래 추적 진료</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ★ 노인 어지럼 -->
+<section class="elderly">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 노인 어지럼</div>
+      <h2 class="section__title">
+        "나이 탓"이 아닙니다 —<br>
+        <em>낙상 위험</em>을 줄이는 정밀 진료
+      </h2>
+      <p class="section__lede">
+        많은 어르신과 가족분들이 "나이 들면 당연한 것"으로 여기시지만, 노인 어지럼은 그냥 두면 낙상 → 골절 → 장기 입원 → 건강 악화로 이어질 수 있는 중요한 신호입니다.
+      </p>
+    </div>
+    
+    <div class="elderly-block">
+      <div class="elderly-stat">
+        <div class="elderly-stat__item">
+          <div class="elderly-stat__num">30%</div>
+          <div class="elderly-stat__label">65세 이상 어지럼 경험</div>
+        </div>
+        <div class="elderly-stat__item">
+          <div class="elderly-stat__num">50%</div>
+          <div class="elderly-stat__label">85세 이상 어지럼 경험</div>
+        </div>
+      </div>
+      
+      <div class="elderly-section">
+        <div class="elderly-section__head">[1] 다중 원인 — 한 가지로 해결되지 않습니다</div>
+        <p class="elderly-section__body">
+          노인 어지럼은 한 가지 원인이 아니라 여러 원인이 겹쳐서 발생합니다 — <strong>전정기능 저하 + 시력 저하 + 말초신경병증 + 근력 저하 + 약물 부작용.</strong> 한 가지만 치료해서는 해결이 어렵습니다.
+        </p>
+      </div>
+      
+      <div class="elderly-section">
+        <div class="elderly-section__head">[2] 약물 부작용 — 가장 흔한 원인</div>
+        <p class="elderly-section__body">
+          노인 환자분이 복용 중인 약물이 어지럼을 유발할 수 있습니다. 본원은 복용 약물을 함께 점검합니다.
+        </p>
+        <div class="elderly-meds">
+          <div class="elderly-med">
+            <strong>혈압약</strong>
+            혈압 과도 하강 / 기립성 저혈압
+          </div>
+          <div class="elderly-med">
+            <strong>진정제·수면제</strong>
+            중추신경 억제
+          </div>
+          <div class="elderly-med">
+            <strong>항우울제</strong>
+            기립성 저혈압·진정 작용
+          </div>
+          <div class="elderly-med">
+            <strong>당뇨약</strong>
+            저혈당으로 어지럼
+          </div>
+          <div class="elderly-med">
+            <strong>이뇨제</strong>
+            탈수·전해질 불균형
+          </div>
+        </div>
+      </div>
+      
+      <div class="elderly-section">
+        <div class="elderly-section__head">[3] 본원 통합 진료</div>
+        <p class="elderly-section__body">
+          본원은 어지럼 원인 진단뿐 아니라 <strong>복용 중인 약물 점검</strong>과 <strong>낙상 위험 평가</strong>를 함께 진행합니다. 어지럼으로 낙상하면 압박골절·고관절 골절로 이어질 수 있어, 본원 척추·정형 진료와 연계해 통합 관리합니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 환자 신호 -->
+<section class="signals">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 이런 분들이 진료받으시면 좋습니다</div>
+      <h2 class="section__title">
+        다음 중 한 가지라도 해당되신다면<br>
+        본원 정밀 진료를 권장합니다
+      </h2>
+    </div>
+    
+    <div class="signals-list">
+      <div class="signal-row signal-row--sig">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 누울 때·일어날 때·고개 돌릴 때 빙빙 도는 어지럼 (이석증 가능성)</span>
+      </div>
+      <div class="signal-row signal-row--sig">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">베개에 머리 댈 때·세수할 때·미용실에서 어지럼</span>
+      </div>
+      <div class="signal-row signal-row--emergency">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 어지럼 + 응급 6신호 동반 (★ 즉시 119, 본원 후속 진료)</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">어지럼 + 청력 저하 + 이명 (메니에르 가능성)</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">갑자기 시작된 심한 어지럼이 며칠 지속됨 (전정신경염 가능성)</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">일어날 때 핑 도는 느낌·눈앞이 캄캄 (기립성 저혈압 가능성)</span>
+      </div>
+      <div class="signal-row signal-row--elderly">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 노인 어지럼 — 부모님이 자주 어지럽다고 호소</span>
+      </div>
+      <div class="signal-row signal-row--elderly">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 노인 어지럼 + 약물 부작용 의심 (혈압약·수면제·항우울제)</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">어지럼이 3개월 이상 지속되거나 자주 재발</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">응급실 다녀왔는데 "이상 없음" 받았지만 어지럼 지속</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 뒷목 통증 + 어지럼 (경추성 어지럼 가능성)</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">교통사고·낙상 후 어지럼 시작 (외상 후 어지럼)</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">운전기사·승무원 등 직업적 어지럼 위험군</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">MRI·MRA 정밀 검사가 필요하신 경우</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 자가진단 -->
+<section class="selfcheck" id="selfcheck">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 자가진단 (3분)</div>
+      <h2 class="section__title">
+        다음 중 해당되는 항목이 많을수록<br>
+        <em>본원 진료</em>가 필요합니다
+      </h2>
+      <p class="section__lede">
+        진료 시 참고용 체크리스트입니다. ★ 표시 항목(응급 6신호)이 있으시면 즉시 119에 신고하세요.
+      </p>
+    </div>
+    
+    <div class="selfcheck-grid">
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">누우거나 일어날 때 갑자기 빙빙 도는 어지럼이 있다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">머리 위치 바꿀 때(고개 돌리기·천장 보기) 어지럼 시작</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">어지럼이 수초~1분 정도 지속되고 가만히 있으면 멈춤</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">어지럼 + 이명·청력 저하 동반 (메니에르 가능성)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">갑자기 심한 어지럼이 며칠 지속됨 (전정신경염)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">일어날 때 핑 도는 느낌·눈앞이 캄캄 (기립성)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">어지럼 + 두근거림·실신 (심장성)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ 어지럼 + 말 어눌함·발음 이상 (응급 ①)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ 어지럼 + 한쪽 팔다리 마비·힘 빠짐 (응급 ③)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ 어지럼 + 한쪽 얼굴 처짐·입꼬리 처짐 (응급 ④)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ 어지럼 + 사물이 두 개로 보임·시야 흐림 (응급 ⑥)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ 어지럼 + 의식 흐려짐·실신 (응급 ②)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ 어지럼 + 갑자기 한쪽 안 들림 (응급 ⑤)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">노인 환자 + 어지럼 자주 발생 (낙상 위험 평가)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">응급실 다녀왔는데 "이상 없음" + 어지럼 지속</div></div>
+    </div>
+    
+    <div class="selfcheck__alert">
+      <strong>★ 표시 항목(응급 6신호)이 있으시면 즉시 119에 신고</strong>하시고, 일반 항목이 3개 이상 해당되시면 본원 외래 진료를 권장합니다. 본원은 Dix-Hallpike·HINTS 검사와 MRI·MRA 정밀 검사를 한 번에 도와드립니다.
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 자주 묻는 질문</div>
+      <h2 class="section__title">10개 FAQ</h2>
+    </div>
+    
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-item__q">Q1. 어지럼이 심하면 위험한 병인가요?</summary>
+        <div class="faq-item__a">어지럼의 강도와 위험도는 비례하지 않습니다. 이석증은 세상이 빙빙 도는 매우 심한 어지럼을 일으키지만 위험한 병이 아닙니다. 반대로 약한 어지럼이 뇌졸중의 신호일 수 있습니다. "얼마나 심한가"가 아니라 "어떻게 어지러운가, 무엇이 동반되는가"가 핵심입니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q2. 본원에서 이석정복술(Epley)을 직접 시행하나요?</summary>
+        <div class="faq-item__a">네, 본원에서 직접 시행합니다. 의료진이 환자 머리 위치를 일정한 순서로 변경하여 잘못 빠진 이석을 제자리로 되돌리는 도수 시술입니다. 약물 없이 시행되며, 대부분 1-2회 시행으로 호전 가능 케이스입니다. 환자별 결과는 다를 수 있습니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q3. 이석증은 왜 생기나요?</summary>
+        <div class="faq-item__a">전정기관 안의 작은 돌(이석)이 제자리를 벗어나 반고리관으로 들어가서 발생합니다. 머리를 부딪히거나, 노화, 내이 질환 등이 원인이지만, 정확한 원인을 모르는 경우도 많습니다. 한 번 발생하면 재발 가능성이 있습니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q4. 어지럼이 있으면 MRI를 꼭 찍어야 하나요?</summary>
+        <div class="faq-item__a">모든 어지럼에 MRI가 필요하지는 않습니다. 이석증은 신체 검사(Dix-Hallpike)만으로 진단 가능합니다. 하지만 중추성(뇌) 어지럼이 의심되거나, 응급 6신호 동반, 약물·운동 치료에 반응이 없으면 MRI 검사를 권장합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q5. 어지럼증 어떤 과를 가야 하나요?</summary>
+        <div class="faq-item__a">원인에 따라 다릅니다. 회전성 어지럼·청력 문제는 이비인후과, 마비·언어장애 동반은 신경과·신경외과·응급실, 두근거림·실신 동반은 심장내과입니다. 본원은 신경외과로서 이석증·메니에르·전정신경염·뇌혈관 평가를 한 번에 진행할 수 있으며, 필요 시 심장내과·이비인후과 협진을 도와드립니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q6. 어지럼약을 오래 먹어도 되나요?</summary>
+        <div class="faq-item__a">급성기 어지럼을 억제하는 약(전정억제제)은 단기간만 사용해야 합니다. 장기 복용하면 뇌의 보상 작용을 방해해서 오히려 회복이 늦어질 수 있습니다. 본원에서는 환자별 단계에 맞는 약물 진료를 권장합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q7. 전정재활운동은 어떻게 하나요?</summary>
+        <div class="faq-item__a">눈 운동·머리 운동·균형 운동 등을 전문가 지도 하에 시작합니다. 처음에는 어지러울 수 있지만 꾸준히 하면 뇌가 적응하면서 어지럼이 줄어듭니다. 본원에서는 환자별 가이드를 제공합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q8. 노인 어지럼은 정말 "나이 탓"이 아닌가요?</summary>
+        <div class="faq-item__a">아닙니다. 노인 어지럼도 원인을 찾아 치료해야 합니다. 다중 감각 결손·약물 부작용·전정기능 저하 등 여러 원인이 겹쳐 발생하며, 낙상으로 골절되면 장기 입원과 건강 악화로 이어집니다. 본원은 척추·정형 진료와 함께 통합 관리합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q9. 응급실 다녀왔는데 "이상 없음" 받았지만 어지럼이 지속됩니다.</summary>
+        <div class="faq-item__a">응급실에서 즉각적인 응급 상황(뇌출혈·심한 뇌졸중)이 배제되어도 어지럼의 원인이 명확하지 않을 수 있습니다. 본원 외래에서 정밀 추적 진료(MRI·MRA·전정기능 검사 등) 가능합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q10. 비용은 얼마나 되나요?</summary>
+        <div class="faq-item__a">건강보험 적용 진료입니다. 이석정복술·MRI·MRA·청력검사 등은 환자별로 비용이 다르며, 실손보험 청구 가능 케이스입니다. 진료 시 정확한 비용을 안내해 드립니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 안전 안내 -->
+<section class="disclaimer">
+  <div class="disclaimer__inner">
+    ★ 본 페이지의 모든 시술·치료 안내는 일반적인 의학 정보이며, 환자별 적용 가능성과 결과는 진료 후 의료진이 결정합니다. 이석정복술이 모든 어지럼 환자에게 적용되는 것은 아니며, 회복 기간과 결과는 환자별로 다를 수 있습니다. "응급 6신호 = 뇌졸중"은 본원의 의학적 평가이며, 모든 환자가 반드시 뇌졸중이라는 단정이 아닙니다. 본 페이지는 의료법 제56조에 따른 의료광고 사전심의 대상이며, 등록 전 심의를 받아 게시합니다.
+  </div>
+</section>
+
+<!-- 위치/연락처 -->
+<section class="contact" id="contact">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 예약·위치·진료 시간</div>
+      <h2 class="section__title">희망찬병원으로 오세요</h2>
+      <p class="section__lede" style="color: rgba(248, 243, 233, 0.85);">
+        동탄·화성·평택·수원·오산·용인·안성권에서 어지럼증 정밀 진료를 받으실 수 있습니다. 김진균 원장이 직접 진료합니다.
+      </p>
+    </div>
+    
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card__label">예약·상담</div>
+        <div class="contact-card__value">1600-3415</div>
+        <div class="contact-card__sub">평일·토 진료 시간 내 / 진료 전 예약 권장</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__label">위치</div>
+        <div class="contact-card__value">동탄 희망찬병원</div>
+        <div class="contact-card__sub">경기도 화성시 병점구 병정중앙로 174<br>지하철·버스 접근 가능</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__label">진료 시간</div>
+        <div class="contact-card__value">평일 09:00 ~ 18:00<br><span style="font-size: 1rem;">토 09:00 ~ 13:00</span></div>
+        <div class="contact-card__sub">일요일·공휴일 휴진 / 토요일 점심시간 진료 없음</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 풋터 -->
+<footer>
+  <p><strong>희망찬병원</strong> · 김진균 원장 직접 진료 · 동탄·화성·평택권 신경외과·수부·어깨 진료</p>
+  <p style="margin-top: 0.5rem;">유튜브 채널 "털보의사" / 본 페이지는 의료광고 사전심의 등록 후 게시됩니다</p>
+</footer>
+
+</body>
+</html>
