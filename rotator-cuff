@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 회전근개 진료 — 밤에 어깨 아파 잠 못 주무신다면 | 동탄·화성권</title>
+<meta name="description" content="회전근개 파열 정밀 진료. 매듭법이 다른 관절경 봉합술 / 꼼꼼한 견봉성형술 / Mini Open Surgery / 끊어진 힘줄은 주사로 다시 붙지 않습니다 / 김진균 원장 직접 진료 / 동탄·화성·평택권.">
+<meta name="keywords" content="회전근개, 회전근개 파열, 회전근개 봉합술, 어깨 야간통증, 매듭법, 견봉성형술, Mini Open Surgery, 줄기세포 PRP, 동탄 회전근개, 화성 회전근개, 희망찬병원, 김진균, 털보의사">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  /* 12-1 회전근개 색상 시스템 — 11번 손 통합 톤 계승 + 어깨 특화 */
+  --hc-deep: #0E4A6E;        /* 메인 진청 (어깨의 깊이감) */
+  --hc-mid: #1A6B96;          /* 중간 청 */
+  --hc-light: #4A9FCB;        /* 밝은 청 */
+  --hc-gold: #C89B2F;          /* 골드 (★ 시그니처 강조) */
+  --hc-gold-light: #E5C575;    /* 옅은 골드 */
+  --hc-coral: #C25B4B;          /* 코랄 (★ 주사오해·경고 메시지) */
+  --hc-coral-soft: #E89788;     /* 부드러운 코랄 */
+  --hc-warm: #F8F3E9;            /* 따뜻한 베이지 (배경) */
+  --hc-cream: #FCF8F2;          /* 크림 */
+  --hc-charcoal: #2A3744;       /* 차콜 (텍스트) */
+  --hc-slate: #4D5C6E;         /* 슬레이트 */
+  --hc-gray: #8C97A3;           /* 그레이 */
+  --hc-line: #E5DDC8;            /* 라인 (베이지 톤) */
+  --hc-white: #FFFFFF;
+  
+  --font-display: 'Noto Serif KR', serif;
+  --font-body: 'Pretendard', -apple-system, sans-serif;
+  
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  
+  --shadow-sm: 0 2px 8px rgba(14, 74, 110, 0.06);
+  --shadow-md: 0 8px 24px rgba(14, 74, 110, 0.10);
+  --shadow-lg: 0 16px 48px rgba(14, 74, 110, 0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--hc-cream);
+  color: var(--hc-charcoal);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ============ 미니 헤더 ============ */
+.mini-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(252, 248, 242, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--hc-line);
+  padding: 0.875rem 0;
+}
+
+.mini-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mini-header__brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--hc-deep);
+  letter-spacing: -0.01em;
+}
+
+.mini-header__brand-sub {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--hc-gold);
+  margin-left: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.mini-header__cta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.625rem 1.125rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+  box-shadow: var(--shadow-sm);
+}
+.btn--primary:hover {
+  background: var(--hc-mid);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--gold {
+  background: var(--hc-gold);
+  color: var(--hc-white);
+}
+.btn--gold:hover {
+  background: #B0851F;
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--hc-deep);
+  border: 1.5px solid var(--hc-deep);
+}
+.btn--outline:hover {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+}
+
+.btn--large {
+  padding: 1rem 2rem;
+  font-size: 1.05rem;
+}
+
+/* ============ 히어로 ============ */
+.hero {
+  background: linear-gradient(135deg, var(--hc-warm) 0%, var(--hc-cream) 100%);
+  padding: 5rem 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200, 155, 47, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero__eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--hc-gold);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.4rem 0;
+  border-bottom: 2px solid var(--hc-gold);
+  margin-bottom: 2rem;
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.25;
+  color: var(--hc-deep);
+  letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+}
+
+.hero__title em {
+  font-style: normal;
+  color: var(--hc-coral);
+  border-bottom: 4px solid var(--hc-gold-light);
+  padding-bottom: 0.1rem;
+}
+
+.hero__lede {
+  font-size: 1.15rem;
+  color: var(--hc-slate);
+  font-weight: 400;
+  max-width: 680px;
+  margin-bottom: 2.5rem;
+  line-height: 1.65;
+}
+
+.hero__cta-group {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.hero__signal {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  color: var(--hc-slate);
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--hc-line);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero__signal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--hc-gold);
+}
+
+/* ============ 섹션 공통 ============ */
+section { padding: 5rem 1.5rem; }
+
+.section__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section__head {
+  margin-bottom: 3rem;
+}
+
+.section__eyebrow {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: var(--hc-gold);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.section__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  line-height: 1.3;
+  color: var(--hc-deep);
+  letter-spacing: -0.02em;
+  max-width: 800px;
+}
+
+.section__title em {
+  font-style: normal;
+  color: var(--hc-coral);
+}
+
+.section__lede {
+  font-size: 1.05rem;
+  color: var(--hc-slate);
+  margin-top: 1rem;
+  max-width: 720px;
+  line-height: 1.65;
+}
+
+/* ============ 야간통증 핫후킹 섹션 ============ */
+.symptom-hook {
+  background: var(--hc-white);
+}
+
+.symptom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.symptom-card {
+  background: var(--hc-cream);
+  border-left: 4px solid var(--hc-gold);
+  padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  transition: all 0.3s ease;
+}
+
+.symptom-card:hover {
+  background: var(--hc-warm);
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+}
+
+.symptom-card__icon {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--hc-gold);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.symptom-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.symptom-card__text {
+  font-size: 0.92rem;
+  color: var(--hc-slate);
+  line-height: 1.6;
+}
+
+/* ============ 시그니처 시술 3종 (★ 어두운 배경) ============ */
+.signature {
+  background: linear-gradient(135deg, var(--hc-deep) 0%, var(--hc-charcoal) 100%);
+  color: var(--hc-warm);
+  position: relative;
+  overflow: hidden;
+}
+
+.signature::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(200, 155, 47, 0.10) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.signature .section__eyebrow {
+  color: var(--hc-gold-light);
+}
+
+.signature .section__title {
+  color: var(--hc-white);
+}
+
+.signature .section__title em {
+  color: var(--hc-gold);
+}
+
+.signature .section__lede {
+  color: rgba(248, 243, 233, 0.85);
+}
+
+.signature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.sig-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(200, 155, 47, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.sig-card:hover {
+  background: rgba(200, 155, 47, 0.08);
+  border-color: var(--hc-gold);
+  transform: translateY(-4px);
+}
+
+.sig-card__num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--hc-gold);
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+}
+
+.sig-card__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--hc-white);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.sig-card__desc {
+  font-size: 0.95rem;
+  color: rgba(248, 243, 233, 0.85);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.sig-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.sig-tag {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--hc-gold-light);
+  padding: 0.3rem 0.7rem;
+  border: 1px solid rgba(200, 155, 47, 0.4);
+  border-radius: 999px;
+}
+
+.signature__note {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(248, 243, 233, 0.08);
+  border-left: 3px solid var(--hc-gold-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: rgba(248, 243, 233, 0.9);
+  line-height: 1.65;
+  position: relative;
+}
+
+/* ============ 주사오해 영업 섹션 (★ 가장 중요) ============ */
+.injection {
+  background: var(--hc-cream);
+}
+
+.injection__title em {
+  color: var(--hc-coral);
+}
+
+.injection-block {
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-top: 2.5rem;
+  border-left: 6px solid var(--hc-coral);
+  box-shadow: var(--shadow-sm);
+}
+
+.injection-claim {
+  margin-bottom: 2rem;
+}
+
+.injection-claim:last-child {
+  margin-bottom: 0;
+}
+
+.injection-claim__label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--hc-coral);
+  background: rgba(194, 91, 75, 0.08);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.85rem;
+}
+
+.injection-claim__head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--hc-deep);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.injection-claim__body {
+  font-size: 1rem;
+  color: var(--hc-slate);
+  line-height: 1.7;
+}
+
+/* ============ 진단 자가체크 ============ */
+.selfcheck {
+  background: var(--hc-warm);
+}
+
+.selfcheck-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.selfcheck-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px dashed var(--hc-line);
+}
+
+.selfcheck-item__box {
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--hc-deep);
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.selfcheck-item__text {
+  font-size: 0.98rem;
+  color: var(--hc-charcoal);
+  line-height: 1.55;
+}
+
+.selfcheck__alert {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(194, 91, 75, 0.08);
+  border-left: 4px solid var(--hc-coral);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  color: var(--hc-charcoal);
+}
+
+.selfcheck__alert strong {
+  color: var(--hc-coral);
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .selfcheck-grid { grid-template-columns: 1fr; }
+}
+
+/* ============ 진료 흐름 5단계 ============ */
+.flow {
+  background: var(--hc-white);
+}
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.flow-step {
+  background: var(--hc-cream);
+  padding: 1.5rem 1.25rem;
+  border-radius: var(--radius-md);
+  text-align: left;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.flow-step:hover {
+  background: var(--hc-warm);
+  transform: translateY(-2px);
+}
+
+.flow-step__num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.25rem;
+  color: var(--hc-gold);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.flow-step__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.45rem;
+  letter-spacing: -0.01em;
+}
+
+.flow-step__text {
+  font-size: 0.85rem;
+  color: var(--hc-slate);
+  line-height: 1.5;
+}
+
+/* ============ 치료 단계 테이블 ============ */
+.treatment {
+  background: var(--hc-cream);
+}
+
+.treatment-table {
+  margin-top: 2rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.treatment-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 1.5fr;
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid var(--hc-line);
+  gap: 1rem;
+  align-items: center;
+}
+
+.treatment-row:last-child { border-bottom: none; }
+
+.treatment-row--head {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+}
+
+.treatment-row--signature {
+  background: linear-gradient(90deg, rgba(200, 155, 47, 0.08) 0%, rgba(200, 155, 47, 0.02) 100%);
+  border-left: 4px solid var(--hc-gold);
+}
+
+.treatment-row__stage {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--hc-deep);
+}
+
+.treatment-row--signature .treatment-row__stage {
+  color: var(--hc-gold);
+}
+
+.treatment-row__name {
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: var(--hc-charcoal);
+}
+
+.treatment-row__desc {
+  font-size: 0.92rem;
+  color: var(--hc-slate);
+  line-height: 1.55;
+}
+
+@media (max-width: 700px) {
+  .treatment-row { grid-template-columns: 1fr; gap: 0.3rem; padding: 1rem 1.25rem; }
+  .treatment-row--head { display: none; }
+  .treatment-row__name::before { content: "▸ "; color: var(--hc-gold); }
+}
+
+/* ============ 환자 신호 (이런 분들) ============ */
+.signals {
+  background: var(--hc-warm);
+}
+
+.signals-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.signal-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1rem 1.25rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--hc-gold);
+  transition: all 0.2s ease;
+}
+
+.signal-row:hover {
+  border-left-color: var(--hc-coral);
+  transform: translateX(2px);
+}
+
+.signal-row__check {
+  font-family: var(--font-display);
+  font-weight: 900;
+  color: var(--hc-gold);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.signal-row--key {
+  background: linear-gradient(90deg, rgba(194, 91, 75, 0.06) 0%, var(--hc-white) 60%);
+  border-left-color: var(--hc-coral);
+}
+
+.signal-row--key .signal-row__check {
+  color: var(--hc-coral);
+}
+
+.signal-row__text {
+  font-size: 0.95rem;
+  color: var(--hc-charcoal);
+  line-height: 1.55;
+}
+
+/* ============ FAQ ============ */
+.faq {
+  background: var(--hc-white);
+}
+
+.faq-list {
+  margin-top: 2rem;
+  border-top: 1px solid var(--hc-line);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--hc-line);
+}
+
+.faq-item__q {
+  display: block;
+  padding: 1.5rem 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: var(--hc-deep);
+  cursor: pointer;
+  position: relative;
+  padding-right: 2.5rem;
+  letter-spacing: -0.01em;
+  list-style: none;
+}
+
+.faq-item__q::-webkit-details-marker { display: none; }
+
+.faq-item__q::after {
+  content: "+";
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--hc-gold);
+  transition: transform 0.3s ease;
+}
+
+.faq-item[open] .faq-item__q::after {
+  content: "−";
+}
+
+.faq-item__a {
+  padding: 0 0 1.5rem 0;
+  font-size: 0.98rem;
+  color: var(--hc-slate);
+  line-height: 1.75;
+}
+
+/* ============ 안전 안내 ============ */
+.disclaimer {
+  background: var(--hc-warm);
+  padding: 3rem 1.5rem;
+}
+
+.disclaimer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background: rgba(200, 155, 47, 0.08);
+  border-left: 4px solid var(--hc-gold);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--hc-slate);
+  line-height: 1.7;
+}
+
+/* ============ 위치/연락처 ============ */
+.contact {
+  background: linear-gradient(135deg, var(--hc-charcoal) 0%, var(--hc-deep) 100%);
+  color: var(--hc-warm);
+}
+
+.contact .section__eyebrow { color: var(--hc-gold-light); }
+.contact .section__title { color: var(--hc-white); }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(200, 155, 47, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+}
+
+.contact-card__label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: var(--hc-gold-light);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.contact-card__value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--hc-white);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card__sub {
+  font-size: 0.92rem;
+  color: rgba(248, 243, 233, 0.7);
+  line-height: 1.55;
+}
+
+/* ============ 풋터 ============ */
+footer {
+  background: var(--hc-charcoal);
+  color: rgba(248, 243, 233, 0.6);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+footer strong { color: var(--hc-gold-light); }
+
+/* ============ 모바일 반응형 ============ */
+@media (max-width: 700px) {
+  section { padding: 3.5rem 1.25rem; }
+  .hero { padding: 3rem 1.25rem 2.5rem; }
+  .injection-block { padding: 1.5rem; }
+  .mini-header__brand-sub { display: none; }
+  .hero__cta-group .btn { flex: 1; justify-content: center; }
+}
+
+/* ============ 등장 애니메이션 ============ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero__title, .hero__lede, .hero__cta-group, .hero__signal {
+  animation: fadeUp 0.7s ease backwards;
+}
+
+.hero__title { animation-delay: 0.1s; }
+.hero__lede { animation-delay: 0.25s; }
+.hero__cta-group { animation-delay: 0.4s; }
+.hero__signal { animation-delay: 0.55s; }
+</style>
+</head>
+<body>
+
+<!-- ============ 미니 헤더 ============ -->
+<header class="mini-header">
+  <div class="mini-header__inner">
+    <div>
+      <span class="mini-header__brand">희망찬병원</span>
+      <span class="mini-header__brand-sub">어깨 · 회전근개 진료</span>
+    </div>
+    <div class="mini-header__cta">
+      <a href="tel:031-XXX-XXXX" class="btn btn--outline">📞 전화 상담</a>
+      <a href="#contact" class="btn btn--primary">진료 예약</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 히어로 ============ -->
+<section class="hero">
+  <div class="hero__inner">
+    <span class="hero__eyebrow">12-1 회전근개 파열</span>
+    <h1 class="hero__title">
+      밤에 어깨 아파 <em>잠 못 주무신다면</em><br>
+      회전근개 파열 가능성을 확인하세요
+    </h1>
+    <p class="hero__lede">
+      옆으로 누우면 어깨가 더 아프고, 팔이 머리 위로 안 올라가고, 머리 감기·속옷 채우기가 어려우신가요. 회전근개 파열의 첫 신호일 수 있습니다. <strong>본원은 매듭법이 다른 관절경 봉합술 · 꼼꼼한 견봉성형술 · Mini Open Surgery 시술이 가능합니다.</strong> 김진균 원장이 직접 진료합니다.
+    </p>
+    <div class="hero__cta-group">
+      <a href="#contact" class="btn btn--primary btn--large">📞 진료 예약·상담</a>
+      <a href="#selfcheck" class="btn btn--gold btn--large">📋 자가진단 (3분)</a>
+      <a href="#signature" class="btn btn--outline btn--large">★ 시그니처 시술 보기</a>
+    </div>
+    <div class="hero__signal">
+      <span class="hero__signal-dot"></span>
+      동탄·화성·평택·수원·오산권 / 평일·토 진료 / 김진균 원장 직접 진료
+    </div>
+  </div>
+</section>
+
+<!-- ============ 야간통증 핫후킹 (4가지 신호) ============ -->
+<section class="symptom-hook">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 회전근개 첫 신호 4가지</div>
+      <h2 class="section__title">
+        이 중 하나라도 해당되시면<br>
+        <em>회전근개 파열</em> 가능성을 평가받으세요
+      </h2>
+      <p class="section__lede">
+        회전근개 파열은 어깨 검색의 가장 큰 비중을 차지하지만, 환자분들이 "오십견"이나 "단순 어깨 결림"으로 오해하는 경우가 많습니다. 본원 진료실에서 가장 흔하게 듣는 4가지 환자 표현입니다.
+      </p>
+    </div>
+    <div class="symptom-grid">
+      <div class="symptom-card">
+        <div class="symptom-card__icon">01</div>
+        <div class="symptom-card__title">밤에 어깨 아파 잠을 못 자요</div>
+        <div class="symptom-card__text">옆으로 누우면 더 아프고, 새벽에 어깨 통증으로 깹니다. 회전근개 파열의 가장 흔한 첫 신호입니다.</div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-card__icon">02</div>
+        <div class="symptom-card__title">팔이 안 올라가요</div>
+        <div class="symptom-card__text">머리 감기·속옷 채우기·뒷주머니에 손이 안 가시면 회전근개 손상 가능성이 있습니다.</div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-card__icon">03</div>
+        <div class="symptom-card__title">팔에 힘이 없어요</div>
+        <div class="symptom-card__text">물건을 자주 떨어뜨리거나, 팔을 들고 있다가 갑자기 툭 떨어지면 힘줄 파열을 의심해야 합니다.</div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-card__icon">04</div>
+        <div class="symptom-card__title">갑자기 다친 후 팔을 못 들어요</div>
+        <div class="symptom-card__text">운동 중·낙상 후·무거운 물건을 든 후 갑자기 어깨 통증이 시작됐다면 급성 회전근개 파열일 수 있습니다.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 시그니처 시술 3종 (★ 어두운 배경) ============ -->
+<section class="signature" id="signature">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 본원 시그니처 시술</div>
+      <h2 class="section__title">
+        같은 회전근개 봉합도<br>
+        <em>매듭과 견봉과 기구가</em> 결과를 좌우합니다
+      </h2>
+      <p class="section__lede">
+        회전근개 봉합은 단순히 "꿰매는" 수술이 아닙니다. 봉합 강도, 견봉 감압의 철저함, 그리고 광범위 파열에 대응할 수 있는 기구가 환자 회복을 좌우합니다. 본원은 회전근개에 다음 세 가지 시술을 시행합니다.
+      </p>
+    </div>
+    
+    <div class="signature-grid">
+      <div class="sig-card">
+        <div class="sig-card__num">01 SIGNATURE</div>
+        <div class="sig-card__name">매듭법이 다른<br>관절경 봉합술</div>
+        <div class="sig-card__desc">
+          본원 고유 매듭 방식으로 시행하는 관절경 봉합술입니다. 봉합 강도와 재파열률 측면에서 본원이 다년간 중요하게 평가해 온 기법입니다.
+        </div>
+        <div class="sig-card__tags">
+          <span class="sig-tag">관절경</span>
+          <span class="sig-tag">매듭 기법</span>
+          <span class="sig-tag">재파열률 낮추기</span>
+        </div>
+      </div>
+      
+      <div class="sig-card">
+        <div class="sig-card__num">02 SIGNATURE</div>
+        <div class="sig-card__name">꼼꼼한<br>견봉성형술</div>
+        <div class="sig-card__desc">
+          회전근개 봉합과 동반 시행하는 견봉골극 제거·감압입니다. 단순한 견봉성형이 아닌 철저한 감압을 본원이 강조합니다.
+        </div>
+        <div class="sig-card__tags">
+          <span class="sig-tag">동반 시행</span>
+          <span class="sig-tag">철저한 감압</span>
+          <span class="sig-tag">충돌 동반 환자</span>
+        </div>
+      </div>
+      
+      <div class="sig-card">
+        <div class="sig-card__num">03 SIGNATURE</div>
+        <div class="sig-card__name">Mini Open Surgery<br>(특수 기구)</div>
+        <div class="sig-card__desc">
+          광범위 파열·재파열·복잡한 케이스에 특수 기구를 사용하는 시술입니다. 단순 관절경으로 해결되지 않는 케이스, 다른 의료기관에서 "봉합 어렵다"고 들으신 환자분께도 적용 가능합니다.
+        </div>
+        <div class="sig-card__tags">
+          <span class="sig-tag">광범위 파열</span>
+          <span class="sig-tag">재파열</span>
+          <span class="sig-tag">재수술 케이스</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="signature__note">
+      ★ 단, 모든 환자에게 동일 시술이 적용되는 것은 아닙니다. 환자 상태와 파열 양상에 따라 적합한 방법이 다르며, 환자별 회복도 다를 수 있습니다. 정확한 결정은 MRI·초음파 정밀 진료 후 의료진이 안내합니다.
+    </div>
+  </div>
+</section>
+
+<!-- ============ 주사오해 영업 섹션 (★★★ 가장 중요) ============ -->
+<section class="injection">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 줄기세포·PRP·프롤로 알아보시는 분께</div>
+      <h2 class="section__title injection__title">
+        통증이 사라졌다고 <em>다 나은 것이 아닙니다</em>
+      </h2>
+      <p class="section__lede">
+        "수술 없이 줄기세포 한 방이면 회전근개가 회복된다"는 광고를 보고 검색하시는 분이 많습니다. 진료실에서 가장 자주 받는 질문이라 본원이 의학적 사실을 정리해 드립니다.
+      </p>
+    </div>
+    
+    <div class="injection-block">
+      <div class="injection-claim">
+        <span class="injection-claim__label">[1] 의학적 사실</span>
+        <h3 class="injection-claim__head">통증 완화와 구조 복원은 다릅니다</h3>
+        <p class="injection-claim__body">
+          줄기세포·PRP·콜라겐·프롤로 주사는 염증 반응을 조절하고 통증을 줄이는 데는 일정 부분 도움이 될 수 있습니다. 하지만 <strong>뼈에서 이미 떨어져 나간 회전근개 힘줄을 원래대로 다시 이어준다는 명확한 의학적 근거는 부족합니다.</strong> 끊어진 밧줄에 좋은 약을 발라도 스스로 다시 엮이지 않는 것과 같은 이치입니다.
+        </p>
+      </div>
+      
+      <div class="injection-claim">
+        <span class="injection-claim__label">[2] 가장 위험한 착각</span>
+        <h3 class="injection-claim__head">통증이 사라짐 ≠ 힘줄이 붙은 것</h3>
+        <p class="injection-claim__body">
+          주사 후 통증이 줄어들면 환자분들은 "이제 다 나았다"고 안심하시기 쉽습니다. 하지만 통증은 염증이 가라앉아 일시적으로 사라진 것일 뿐, MRI로 확인하면 파열은 그대로인 경우가 대부분입니다. 이때 어깨를 무리하게 쓰시면 <strong>파열 범위가 두 배 이상 더 벌어지는</strong> 케이스가 본원 진료실에 흔합니다.
+        </p>
+      </div>
+      
+      <div class="injection-claim">
+        <span class="injection-claim__label">[3] 골든타임 경고</span>
+        <h3 class="injection-claim__head">시기를 놓치면 수술도 어려워집니다</h3>
+        <p class="injection-claim__body">
+          주사 치료에 의지해 시간이 지나면 끊어진 힘줄이 뼈에서 점점 멀어지고(건 퇴축), 사용하지 않은 근육은 지방으로 변합니다(지방변성). <strong>이 변화는 비가역적이라</strong> 나중에 봉합 수술을 해도 근력이 회복되지 않거나, 최악의 경우 거대 인공관절 치환술까지 받아야 할 수 있습니다.
+        </p>
+      </div>
+      
+      <div class="injection-claim">
+        <span class="injection-claim__label">[4] 본원 권장</span>
+        <h3 class="injection-claim__head">MRI 정밀 검사로 현재 상태부터 확인하세요</h3>
+        <p class="injection-claim__body">
+          MRI 정밀 검사로 파열 위치·크기·지방변성 진행 상태를 정확히 평가한 뒤, 환자 상태별로 비수술·관절경 봉합·Mini Open 중 적합한 방법을 결정합니다. 줄기세포·PRP는 봉합 수술의 보조 요법으로 검토할 수 있으나, <strong>단독 치료로는 권장하지 않습니다.</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 환자 신호 (이런 분들이 진료받으시면) ============ -->
+<section class="signals">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 이런 분들이 진료받으시면 좋습니다</div>
+      <h2 class="section__title">
+        다음 중 한 가지라도 해당되신다면<br>
+        본원 정밀 진료를 권장합니다
+      </h2>
+    </div>
+    
+    <div class="signals-list">
+      <div class="signal-row signal-row--key">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">밤에 어깨가 아파 잠을 못 주무시는 경우 (옆으로 누우면 더 아픔)</span>
+      </div>
+      <div class="signal-row signal-row--key">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">팔이 머리 위로 안 올라가 머리 감기·속옷 채우기·뒷주머니에 손이 안 가는 경우</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">어깨에 힘이 없어 물건을 자주 떨어뜨리거나, 팔을 들고 있다가 갑자기 툭 떨어지는 경우</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">어깨에서 "뚝" 소리·우두둑 소리·사각거림이 들리는 경우</span>
+      </div>
+      <div class="signal-row signal-row--key">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 줄기세포·PRP·프롤로 주사를 맞았는데 효과가 적거나 재발한 경우</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">운동 중·낙상 후·무거운 물건을 든 후 갑자기 팔을 못 드는 경우 (급성 외상)</span>
+      </div>
+      <div class="signal-row signal-row--key">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 다른 의료기관에서 "파열이 커서 봉합 어렵다"고 들으신 경우 (Mini Open 영입)</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">다른 의료기관에서 봉합 수술 후 재파열되어 재수술 고민 중인 경우</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">통증은 일시적으로 줄었지만 어깨 기능은 회복되지 않은 경우</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">오십견·충돌증후군·목디스크인지 헷갈리는 어깨 통증이 있으신 경우</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">주부·운동인·농부·미용사 등 어깨 부담이 큰 직업이신 경우</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">MRI·초음파 정밀 검사가 필요하신 경우 (당일 검사 가능 케이스 안내)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 진료 흐름 5단계 ============ -->
+<section class="flow">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 본원 진료 흐름</div>
+      <h2 class="section__title">5단계 정밀 진료</h2>
+      <p class="section__lede">
+        회전근개 파열은 환자 상태·파열 크기·지방변성 진행 정도에 따라 적합한 치료가 달라집니다. 본원은 모든 환자에게 다음 5단계를 거쳐 맞춤 치료를 결정합니다.
+      </p>
+    </div>
+    
+    <div class="flow-grid">
+      <div class="flow-step">
+        <div class="flow-step__num">01</div>
+        <div class="flow-step__title">정밀 문진</div>
+        <div class="flow-step__text">증상 단계·기간·생활 패턴·이전 치료 이력 평가</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">02</div>
+        <div class="flow-step__title">신체 검사</div>
+        <div class="flow-step__text">드롭암·엠프티캔·잡스 테스트 / 운동 범위 평가</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">03</div>
+        <div class="flow-step__title">영상 검사</div>
+        <div class="flow-step__text">초음파·MRI / 파열 위치·크기·지방변성 평가</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">04</div>
+        <div class="flow-step__title">단계 평가</div>
+        <div class="flow-step__text">비수술·봉합·Mini Open 적합성 결정</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">05</div>
+        <div class="flow-step__title">맞춤 치료</div>
+        <div class="flow-step__text">환자 상태별 시술·수술·재활 진행</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 치료 단계 ============ -->
+<section class="treatment">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 치료 단계</div>
+      <h2 class="section__title">
+        환자 상태에 따른<br>
+        <em>단계별 맞춤 치료</em>
+      </h2>
+      <p class="section__lede">
+        본원은 환자에게 일률적으로 같은 치료를 적용하지 않습니다. 다음 6단계 중 적합한 단계를 진료 후 결정합니다.
+      </p>
+    </div>
+    
+    <div class="treatment-table">
+      <div class="treatment-row treatment-row--head">
+        <div>단계</div>
+        <div>치료법</div>
+        <div>적용 케이스</div>
+      </div>
+      <div class="treatment-row">
+        <div class="treatment-row__stage">[1] 보존</div>
+        <div class="treatment-row__name">약물·물리치료·체외충격파·자세 교정</div>
+        <div class="treatment-row__desc">작은 부분 파열 / 고령 저활동 환자 / 통증 경미 케이스</div>
+      </div>
+      <div class="treatment-row">
+        <div class="treatment-row__stage">[2] 주사</div>
+        <div class="treatment-row__name">스테로이드 주사 (단기 통증 조절용)</div>
+        <div class="treatment-row__desc">급성 염증 / 봉합 결심 전 / 보존 치료 보조</div>
+      </div>
+      <div class="treatment-row treatment-row--signature">
+        <div class="treatment-row__stage">[3] ★ 시그니처 1</div>
+        <div class="treatment-row__name">매듭법 관절경 봉합술</div>
+        <div class="treatment-row__desc">본원 시그니처 — 매듭 방식 차별화 / 회전근개 부분~중간 파열 / 봉합 가능 케이스</div>
+      </div>
+      <div class="treatment-row treatment-row--signature">
+        <div class="treatment-row__stage">[4] ★ 시그니처 2</div>
+        <div class="treatment-row__name">꼼꼼한 견봉성형 동반</div>
+        <div class="treatment-row__desc">회전근개 봉합 + 견봉골극 제거·감압 동시 / 충돌 동반 / 재발 방지</div>
+      </div>
+      <div class="treatment-row treatment-row--signature">
+        <div class="treatment-row__stage">[5] ★ 시그니처 3</div>
+        <div class="treatment-row__name">Mini Open Surgery</div>
+        <div class="treatment-row__desc">특수 기구 사용 / 광범위 파열 / 재파열 / 다른 병원 봉합 거절 케이스 영입</div>
+      </div>
+      <div class="treatment-row">
+        <div class="treatment-row__stage">[6] 인공관절</div>
+        <div class="treatment-row__name">역행성 인공관절 치환술</div>
+        <div class="treatment-row__desc">거대 파열 + 지방변성 + 관절병증 진행 환자 (★ 골든타임 놓친 후)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 자가진단 ============ -->
+<section class="selfcheck" id="selfcheck">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 자가진단 (3분)</div>
+      <h2 class="section__title">
+        다음 중 해당되는 항목이 많을수록<br>
+        <em>회전근개 파열</em> 가능성이 높습니다
+      </h2>
+      <p class="section__lede">
+        진료 시 참고용 체크리스트입니다. 정확한 진단은 의료진의 진료와 영상 검사가 필요합니다.
+      </p>
+    </div>
+    
+    <div class="selfcheck-grid">
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">밤에 어깨 아파 잠을 못 주무신다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">옆으로 누우면 어깨가 더 아프다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">팔이 머리 위로 잘 올라가지 않는다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">머리 감기·속옷 채우기·뒷주머니에 손이 잘 안 간다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">팔에 힘이 없고 물건을 자주 떨어뜨린다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">팔을 들어 올리다가 갑자기 툭 떨어진다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">어깨에서 "뚝" 소리·우두둑 소리·사각거림이 있다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">갑자기 다친 후·운동 중·낙상 후 어깨 통증이 시작됐다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">6개월 이상 어깨 통증이 지속됐다 (만성)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">진통제·주사를 맞아도 다시 아프다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">팔을 옆으로 들어 올렸다 천천히 내릴 때 90도 부근에서 갑자기 "툭" 떨어진다 (드롭암 테스트)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">줄기세포·PRP·프롤로 주사를 맞았는데 효과가 적거나 재발했다</div></div>
+    </div>
+    
+    <div class="selfcheck__alert">
+      <strong>3개 이상 해당되시면</strong> 회전근개 파열 가능성이 높아 본원 진료를 권장합니다. 특히 야간통증과 팔 못 올림이 함께 있으시면 빠른 정밀 진료가 필요합니다.
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 자주 묻는 질문</div>
+      <h2 class="section__title">12개 FAQ</h2>
+    </div>
+    
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-item__q">Q1. 회전근개 파열은 무조건 수술해야 하나요?</summary>
+        <div class="faq-item__a">아닙니다. 파열의 크기, 환자의 나이, 활동 수준에 따라 다릅니다. 작은 부분 파열·고령·저활동 환자는 비수술 치료로 관리되는 케이스도 많습니다. 단, 완전 파열·기능 저하·심한 야간 통증이 6개월 이상 지속되면 봉합 수술이 강력히 권장됩니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q2. 본원의 "매듭법이 다른 관절경 봉합술"이 일반 봉합과 어떻게 다른가요?</summary>
+        <div class="faq-item__a">관절경 봉합은 어디서나 가능하지만, 봉합 강도와 재파열률은 매듭 방식에 따라 차이가 있습니다. 본원은 봉합 강도를 높이고 재파열률을 낮추기 위한 매듭 방식을 다년간 시행해 왔습니다. 모든 환자에게 동일 결과를 보장할 수는 없으나, 매듭 방식이 결과에 미치는 영향은 본원이 중요하게 평가하는 부분입니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q3. Mini Open Surgery는 어떤 환자에게 필요한가요?</summary>
+        <div class="faq-item__a">관절경 봉합만으로 어려운 경우 — 광범위 파열(3cm 초과), 재파열, 다른 의료기관에서 "봉합이 어렵다"고 들으신 케이스에 검토합니다. 특수 기구를 사용해 큰 절개 없이 시행하지만, 환자별로 적합성은 정밀 진료 후 결정합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q4. 줄기세포·PRP·프롤로 주사로 회전근개가 회복되나요?</summary>
+        <div class="faq-item__a">통증과 염증 완화에는 일정 부분 도움이 될 수 있으나, 뼈에서 떨어져 나간 회전근개 힘줄을 원래대로 다시 이어준다는 명확한 의학적 근거는 부족합니다. 통증이 줄어들었다고 힘줄이 붙은 것이 아니므로, MRI 정밀 검사로 현재 상태를 확인하는 것이 우선입니다. 본원은 줄기세포·PRP를 봉합 수술의 보조 요법으로 검토하지만, 단독 치료로는 권장하지 않습니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q5. 회전근개 파열은 저절로 낫나요?</summary>
+        <div class="faq-item__a">끊어진 힘줄이 스스로 다시 뼈에 붙는 자연 치유 가능성은 낮습니다. 시간이 지날수록 파열 범위가 커지고, 사용하지 않은 근육은 지방으로 변할 수 있습니다(지방변성). 이 변화는 비가역적이라 골든타임을 놓치면 봉합이 어려워질 수 있습니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q6. 수술 후 회복은 얼마나 걸리나요?</summary>
+        <div class="faq-item__a">환자별로 다르지만 일반적으로 보조기 착용 6주·재활 운동 시작 6-8주·일상 복귀 3-4개월·스포츠 복귀 6개월 이상이 권장됩니다. 단, 파열 크기·나이·재활 충실도에 따라 회복 기간은 달라집니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q7. 고령(70대 이상)도 봉합 수술 가능한가요?</summary>
+        <div class="faq-item__a">나이 자체보다는 환자의 일상 활동 수준, 심장·당뇨 등 기저질환 상태가 더 중요합니다. 활동성이 높고 기능 회복 의지가 강하면 80대도 봉합 수술 가능한 경우가 있습니다. 진료 시 종합 평가합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q8. 어깨 통증이 회전근개 파열인지 오십견인지 어떻게 구분하나요?</summary>
+        <div class="faq-item__a">두 질환은 증상이 비슷하지만 치료가 다릅니다. 회전근개 파열은 "근력 약화"가 핵심(팔을 들어 올리는 힘이 떨어짐), 오십견은 "운동 범위 제한"이 핵심(타인이 도와줘도 팔이 안 올라감)입니다. 정확한 감별은 진료와 MRI 검사가 필요합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q9. 수술 후 재파열 가능성은 어떻게 되나요?</summary>
+        <div class="faq-item__a">어떤 봉합도 재파열 가능성을 0%로 만들 수는 없습니다. 본원은 재파열률을 낮추기 위한 매듭 방식을 시행하지만, 재파열 위험은 파열 크기·나이·근육 상태·재활 충실도에 따라 다릅니다. 진료 시 환자별 위험도를 안내합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q10. 어깨 MRI 검사 비용은 얼마인가요?</summary>
+        <div class="faq-item__a">건강보험 적용 여부에 따라 다릅니다. 회전근개 파열이 의심되는 임상 소견이 있으면 보험 적용이 가능한 경우가 많습니다. 진료 후 정확한 비용을 안내해 드립니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q11. 수술 입원 기간은 얼마나 되나요?</summary>
+        <div class="faq-item__a">일반적으로 1-2일 입원합니다. 단, 환자 상태·동반 질환·수술 범위에 따라 달라질 수 있습니다. 본원에서는 외래 수술이 가능한 케이스도 있어 진료 시 안내합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q12. 시술 전 후기·실제 경험을 보고 싶어요.</summary>
+        <div class="faq-item__a">의료광고법상 본원 페이지에서는 환자 후기를 직접 게시하지 않습니다. 다만 본원 김진균 원장의 유튜브 채널 "털보의사"에서 다양한 진료·시술 경험을 의학적 관점에서 안내하고 있습니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 안전 안내 ============ -->
+<section class="disclaimer">
+  <div class="disclaimer__inner">
+    ★ 본 페이지의 모든 시술·치료 안내는 일반적인 의학 정보이며, 환자별 적용 가능성과 결과는 진료 후 의료진이 결정합니다. 시그니처 시술(매듭법·견봉성형술·Mini Open Surgery)이 모든 환자에게 적용되는 것은 아니며, 회복 기간과 결과는 환자별로 다를 수 있습니다. 줄기세포·PRP에 대한 안내는 본원의 의학적 평가이며, 다른 의료기관의 진료를 부정하는 의도가 아닙니다. 본 페이지는 의료법 제56조에 따른 의료광고 사전심의 대상이며, 등록 전 심의를 받아 게시합니다.
+  </div>
+</section>
+
+<!-- ============ 위치/연락처 ============ -->
+<section class="contact" id="contact">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 예약·위치·진료 시간</div>
+      <h2 class="section__title">희망찬병원으로 오세요</h2>
+      <p class="section__lede" style="color: rgba(248, 243, 233, 0.85);">
+        동탄·화성·평택·수원·오산·용인·안성권에서 회전근개 진료를 받으실 수 있습니다. 김진균 원장이 직접 진료합니다.
+      </p>
+    </div>
+    
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card__label">예약·상담</div>
+        <div class="contact-card__value">1600-3415</div>
+        <div class="contact-card__sub">평일·토 진료 시간 내 / 진료 전 예약 권장</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__label">위치</div>
+        <div class="contact-card__value">동탄 희망찬병원</div>
+        <div class="contact-card__sub">경기도 화성시 병점구 병점중앙로 174<br>지하철·버스 접근 가능</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__label">진료 시간</div>
+        <div class="contact-card__value">평일 09:00 ~ 18:00<br><span style="font-size: 1rem;">토 09:00 ~ 13:00</span></div>
+        <div class="contact-card__sub">일요일·공휴일 휴진 / 토요일 점심시간 진료 없음</div>
+      </div>
+    </div>
+  </div>
+</section>
