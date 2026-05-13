@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 오십견 진료 — 칼 없이 굳은 어깨를 풀어드립니다 | 동탄·화성권</title>
+<meta name="description" content="오십견(동결견·유착성 관절낭염) 정밀 진료. 본원 시그니처 관절수동술(MUA) / 풍선확장술이라는 거창한 이름보다 정확한 진단·재활이 핵심 / 김진균 원장 직접 진료 / 동탄·화성·평택권.">
+<meta name="keywords" content="오십견, 동결견, 유착성 관절낭염, 관절수동술, MUA, 풍선확장술, 관절낭 팽창술, 어깨 야간통증, 팔이 안 올라가, 당뇨 오십견, 갑상선 오십견, 동탄 오십견, 화성 오십견, 희망찬병원, 김진균, 털보의사">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  /* 12-2 오십견 색상 시스템 — 12-1 회전근개 청록·골드 계승 + 정직진료 주황 */
+  --hc-deep: #0E4A6E;        /* 메인 진청 */
+  --hc-mid: #1A6B96;          /* 중간 청 */
+  --hc-light: #4A9FCB;        /* 밝은 청 */
+  --hc-gold: #C89B2F;          /* 골드 (★ 시그니처 강조) */
+  --hc-gold-light: #E5C575;    /* 옅은 골드 */
+  --hc-frank: #C25700;          /* ★ 정직 진료 주황 (풍선확장 영업 전용) */
+  --hc-frank-soft: #E8915C;     /* 부드러운 주황 */
+  --hc-frank-bg: #FCEEDF;       /* 주황 배경 */
+  --hc-warning: #B8351C;        /* ★ 30~50% 영구장애 경고 (진한 적갈) */
+  --hc-warning-soft: #DD8870;   /* 부드러운 경고 */
+  --hc-warm: #F8F3E9;            /* 따뜻한 베이지 */
+  --hc-cream: #FCF8F2;          /* 크림 */
+  --hc-charcoal: #2A3744;       /* 차콜 */
+  --hc-slate: #4D5C6E;         /* 슬레이트 */
+  --hc-gray: #8C97A3;           /* 그레이 */
+  --hc-line: #E5DDC8;            /* 라인 */
+  --hc-white: #FFFFFF;
+  
+  --font-display: 'Noto Serif KR', serif;
+  --font-body: 'Pretendard', -apple-system, sans-serif;
+  
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  
+  --shadow-sm: 0 2px 8px rgba(14, 74, 110, 0.06);
+  --shadow-md: 0 8px 24px rgba(14, 74, 110, 0.10);
+  --shadow-lg: 0 16px 48px rgba(14, 74, 110, 0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--hc-cream);
+  color: var(--hc-charcoal);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+img { max-width: 100%; display: block; }
+
+/* ============ 미니 헤더 ============ */
+.mini-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(252, 248, 242, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--hc-line);
+  padding: 0.875rem 0;
+}
+.mini-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.mini-header__brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--hc-deep);
+  letter-spacing: -0.01em;
+}
+.mini-header__brand-sub {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--hc-gold);
+  margin-left: 0.5rem;
+  letter-spacing: 0.05em;
+}
+.mini-header__cta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.625rem 1.125rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn--primary {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+  box-shadow: var(--shadow-sm);
+}
+.btn--primary:hover {
+  background: var(--hc-mid);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+.btn--gold {
+  background: var(--hc-gold);
+  color: var(--hc-white);
+}
+.btn--gold:hover { background: #B0851F; }
+.btn--frank {
+  background: var(--hc-frank);
+  color: var(--hc-white);
+}
+.btn--frank:hover { background: #A04700; }
+.btn--outline {
+  background: transparent;
+  color: var(--hc-deep);
+  border: 1.5px solid var(--hc-deep);
+}
+.btn--outline:hover {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+}
+.btn--large {
+  padding: 1rem 2rem;
+  font-size: 1.05rem;
+}
+
+/* ============ 히어로 ============ */
+.hero {
+  background: linear-gradient(135deg, var(--hc-warm) 0%, var(--hc-cream) 100%);
+  padding: 5rem 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200, 155, 47, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.hero__eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--hc-gold);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.4rem 0;
+  border-bottom: 2px solid var(--hc-gold);
+  margin-bottom: 2rem;
+}
+.hero__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.25;
+  color: var(--hc-deep);
+  letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+}
+.hero__title em {
+  font-style: normal;
+  color: var(--hc-gold);
+  border-bottom: 4px solid var(--hc-gold-light);
+  padding-bottom: 0.1rem;
+}
+.hero__lede {
+  font-size: 1.15rem;
+  color: var(--hc-slate);
+  font-weight: 400;
+  max-width: 680px;
+  margin-bottom: 2.5rem;
+  line-height: 1.65;
+}
+.hero__cta-group {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.hero__signal {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  color: var(--hc-slate);
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--hc-line);
+  box-shadow: var(--shadow-sm);
+}
+.hero__signal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--hc-gold);
+}
+
+/* ============ 섹션 공통 ============ */
+section { padding: 5rem 1.5rem; }
+.section__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.section__head {
+  margin-bottom: 3rem;
+}
+.section__eyebrow {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: var(--hc-gold);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.section__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  line-height: 1.3;
+  color: var(--hc-deep);
+  letter-spacing: -0.02em;
+  max-width: 800px;
+}
+.section__title em {
+  font-style: normal;
+  color: var(--hc-gold);
+}
+.section__lede {
+  font-size: 1.05rem;
+  color: var(--hc-slate);
+  margin-top: 1rem;
+  max-width: 720px;
+  line-height: 1.65;
+}
+
+/* ============ 야간통증 핫후킹 섹션 ============ */
+.symptom-hook { background: var(--hc-white); }
+.symptom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+.symptom-card {
+  background: var(--hc-cream);
+  border-left: 4px solid var(--hc-gold);
+  padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  transition: all 0.3s ease;
+}
+.symptom-card:hover {
+  background: var(--hc-warm);
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+}
+.symptom-card__icon {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--hc-gold);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+.symptom-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+.symptom-card__text {
+  font-size: 0.92rem;
+  color: var(--hc-slate);
+  line-height: 1.6;
+}
+
+/* ============ 시그니처 시술 — 관절수동술 (어두운 청 배경) ============ */
+.signature {
+  background: linear-gradient(135deg, var(--hc-deep) 0%, var(--hc-charcoal) 100%);
+  color: var(--hc-warm);
+  position: relative;
+  overflow: hidden;
+}
+.signature::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(200, 155, 47, 0.10) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.signature .section__eyebrow { color: var(--hc-gold-light); }
+.signature .section__title { color: var(--hc-white); }
+.signature .section__title em { color: var(--hc-gold); }
+.signature .section__lede { color: rgba(248, 243, 233, 0.85); }
+
+.mua-hero {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: rgba(200, 155, 47, 0.08);
+  border: 1px solid rgba(200, 155, 47, 0.3);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+.mua-hero__label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--hc-gold-light);
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+}
+.mua-hero__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--hc-white);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+.mua-hero__english {
+  font-size: 0.95rem;
+  color: var(--hc-gold-light);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+.mua-hero__desc {
+  font-size: 1.05rem;
+  color: rgba(248, 243, 233, 0.9);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+.mua-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.mua-feature {
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 3px solid var(--hc-gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.mua-feature__label {
+  font-size: 0.75rem;
+  color: var(--hc-gold-light);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+.mua-feature__value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--hc-white);
+  line-height: 1.4;
+}
+
+.signature__note {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(248, 243, 233, 0.08);
+  border-left: 3px solid var(--hc-gold-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: rgba(248, 243, 233, 0.9);
+  line-height: 1.65;
+}
+
+/* ============ 풍선확장술 정직 진료 영업 (★ 핵심 차별화) ============ */
+.frank {
+  background: var(--hc-frank-bg);
+}
+.frank .section__eyebrow { color: var(--hc-frank); }
+.frank .section__title { color: var(--hc-deep); }
+.frank .section__title em { color: var(--hc-frank); }
+
+.frank-block {
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-top: 2.5rem;
+  border-left: 6px solid var(--hc-frank);
+  box-shadow: var(--shadow-sm);
+}
+.frank-claim {
+  margin-bottom: 2rem;
+}
+.frank-claim:last-child { margin-bottom: 0; }
+.frank-claim__label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--hc-frank);
+  background: rgba(194, 87, 0, 0.08);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.85rem;
+}
+.frank-claim__head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--hc-deep);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+.frank-claim__body {
+  font-size: 1rem;
+  color: var(--hc-slate);
+  line-height: 1.7;
+}
+
+/* MUA vs 풍선확장술 비교 테이블 */
+.compare-table {
+  margin-top: 2.5rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.compare-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr 1.8fr;
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1px solid var(--hc-line);
+  gap: 1rem;
+  align-items: center;
+}
+.compare-row:last-child { border-bottom: none; }
+.compare-row--head {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.compare-row--head .compare-mua { color: var(--hc-gold-light); }
+.compare-row--head .compare-balloon { color: var(--hc-frank-soft); }
+.compare-row__attr {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--hc-deep);
+  font-size: 0.95rem;
+}
+.compare-row__mua {
+  background: linear-gradient(90deg, rgba(200, 155, 47, 0.08) 0%, rgba(200, 155, 47, 0.02) 100%);
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--hc-gold);
+  font-size: 0.92rem;
+  color: var(--hc-charcoal);
+  line-height: 1.5;
+}
+.compare-row__balloon {
+  background: linear-gradient(90deg, rgba(194, 87, 0, 0.05) 0%, rgba(194, 87, 0, 0.01) 100%);
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--hc-frank-soft);
+  font-size: 0.92rem;
+  color: var(--hc-charcoal);
+  line-height: 1.5;
+}
+@media (max-width: 700px) {
+  .compare-row { grid-template-columns: 1fr; gap: 0.4rem; padding: 1rem 1.25rem; }
+  .compare-row--head { display: none; }
+  .compare-row__attr::before { content: "▸ "; color: var(--hc-gold); }
+  .compare-row__mua::before { content: "본원 (관절수동술): "; font-weight: 700; color: var(--hc-deep); }
+  .compare-row__balloon::before { content: "풍선확장술: "; font-weight: 700; color: var(--hc-frank); }
+}
+
+/* ============ 30~50% 영구장애 경고 ============ */
+.warning {
+  background: linear-gradient(135deg, rgba(184, 53, 28, 0.04) 0%, var(--hc-warm) 100%);
+}
+.warning .section__eyebrow { color: var(--hc-warning); }
+.warning .section__title em { color: var(--hc-warning); }
+
+.warning-stat {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding: 2.5rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  border-left: 6px solid var(--hc-warning);
+  box-shadow: var(--shadow-sm);
+  align-items: center;
+}
+.warning-stat__num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(3rem, 8vw, 5rem);
+  color: var(--hc-warning);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+.warning-stat__body {
+  font-size: 1.05rem;
+  color: var(--hc-charcoal);
+  line-height: 1.75;
+}
+.warning-stat__body strong {
+  color: var(--hc-warning);
+  font-weight: 700;
+}
+@media (max-width: 700px) {
+  .warning-stat { grid-template-columns: 1fr; padding: 1.75rem; gap: 1rem; text-align: center; }
+}
+
+.warning-3stages {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+.warning-stage {
+  background: var(--hc-white);
+  padding: 1.5rem 1.25rem;
+  border-radius: var(--radius-md);
+  border-top: 3px solid var(--hc-gold);
+}
+.warning-stage--key {
+  border-top-color: var(--hc-warning);
+  background: linear-gradient(180deg, rgba(184, 53, 28, 0.04) 0%, var(--hc-white) 60%);
+}
+.warning-stage__num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--hc-gold);
+  letter-spacing: 0.15em;
+  margin-bottom: 0.4rem;
+}
+.warning-stage--key .warning-stage__num { color: var(--hc-warning); }
+.warning-stage__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.4rem;
+}
+.warning-stage__period {
+  font-size: 0.85rem;
+  color: var(--hc-slate);
+  margin-bottom: 0.6rem;
+}
+.warning-stage__desc {
+  font-size: 0.88rem;
+  color: var(--hc-charcoal);
+  line-height: 1.55;
+}
+@media (max-width: 700px) {
+  .warning-3stages { grid-template-columns: 1fr; }
+}
+
+/* ============ 동반질환 (당뇨·갑상선) ============ */
+.comorbidity { background: var(--hc-white); }
+.comorbidity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.como-card {
+  background: var(--hc-cream);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border-top: 4px solid var(--hc-gold);
+  transition: all 0.3s ease;
+}
+.como-card:hover {
+  background: var(--hc-warm);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.como-card--key {
+  border-top-color: var(--hc-warning);
+}
+.como-card__multiplier {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--hc-gold);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.como-card--key .como-card__multiplier { color: var(--hc-warning); }
+.como-card__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.75rem;
+}
+.como-card__desc {
+  font-size: 0.92rem;
+  color: var(--hc-slate);
+  line-height: 1.65;
+}
+
+/* ============ 환자 신호 ============ */
+.signals { background: var(--hc-warm); }
+.signals-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.signal-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1rem 1.25rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--hc-gold);
+  transition: all 0.2s ease;
+}
+.signal-row:hover {
+  border-left-color: var(--hc-frank);
+  transform: translateX(2px);
+}
+.signal-row__check {
+  font-family: var(--font-display);
+  font-weight: 900;
+  color: var(--hc-gold);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.signal-row--key {
+  background: linear-gradient(90deg, rgba(194, 87, 0, 0.06) 0%, var(--hc-white) 60%);
+  border-left-color: var(--hc-frank);
+}
+.signal-row--key .signal-row__check { color: var(--hc-frank); }
+.signal-row__text {
+  font-size: 0.95rem;
+  color: var(--hc-charcoal);
+  line-height: 1.55;
+}
+
+/* ============ 진료 흐름 ============ */
+.flow { background: var(--hc-white); }
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.flow-step {
+  background: var(--hc-cream);
+  padding: 1.5rem 1.25rem;
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+.flow-step:hover {
+  background: var(--hc-warm);
+  transform: translateY(-2px);
+}
+.flow-step__num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.25rem;
+  color: var(--hc-gold);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+.flow-step__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--hc-deep);
+  margin-bottom: 0.45rem;
+  letter-spacing: -0.01em;
+}
+.flow-step__text {
+  font-size: 0.85rem;
+  color: var(--hc-slate);
+  line-height: 1.5;
+}
+
+/* ============ 치료 단계 테이블 ============ */
+.treatment { background: var(--hc-cream); }
+.treatment-table {
+  margin-top: 2rem;
+  background: var(--hc-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.treatment-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 1.5fr;
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid var(--hc-line);
+  gap: 1rem;
+  align-items: center;
+}
+.treatment-row:last-child { border-bottom: none; }
+.treatment-row--head {
+  background: var(--hc-deep);
+  color: var(--hc-white);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.treatment-row--signature {
+  background: linear-gradient(90deg, rgba(200, 155, 47, 0.10) 0%, rgba(200, 155, 47, 0.02) 100%);
+  border-left: 4px solid var(--hc-gold);
+}
+.treatment-row__stage {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--hc-deep);
+  font-size: 0.9rem;
+}
+.treatment-row--signature .treatment-row__stage { color: var(--hc-gold); }
+.treatment-row__name {
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: var(--hc-charcoal);
+}
+.treatment-row__desc {
+  font-size: 0.9rem;
+  color: var(--hc-slate);
+  line-height: 1.55;
+}
+@media (max-width: 700px) {
+  .treatment-row { grid-template-columns: 1fr; gap: 0.3rem; padding: 1rem 1.25rem; }
+  .treatment-row--head { display: none; }
+  .treatment-row__name::before { content: "▸ "; color: var(--hc-gold); }
+}
+
+/* ============ 자가진단 ============ */
+.selfcheck { background: var(--hc-warm); }
+.selfcheck-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-top: 2rem;
+}
+.selfcheck-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px dashed var(--hc-line);
+}
+.selfcheck-item__box {
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--hc-deep);
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.selfcheck-item__text {
+  font-size: 0.98rem;
+  color: var(--hc-charcoal);
+  line-height: 1.55;
+}
+.selfcheck__alert {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(194, 87, 0, 0.06);
+  border-left: 4px solid var(--hc-frank);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  color: var(--hc-charcoal);
+}
+.selfcheck__alert strong { color: var(--hc-frank); font-weight: 700; }
+@media (max-width: 700px) {
+  .selfcheck-grid { grid-template-columns: 1fr; }
+}
+
+/* ============ FAQ ============ */
+.faq { background: var(--hc-white); }
+.faq-list {
+  margin-top: 2rem;
+  border-top: 1px solid var(--hc-line);
+}
+.faq-item { border-bottom: 1px solid var(--hc-line); }
+.faq-item__q {
+  display: block;
+  padding: 1.5rem 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: var(--hc-deep);
+  cursor: pointer;
+  position: relative;
+  padding-right: 2.5rem;
+  letter-spacing: -0.01em;
+  list-style: none;
+}
+.faq-item__q::-webkit-details-marker { display: none; }
+.faq-item__q::after {
+  content: "+";
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--hc-gold);
+  transition: transform 0.3s ease;
+}
+.faq-item[open] .faq-item__q::after { content: "−"; }
+.faq-item__a {
+  padding: 0 0 1.5rem 0;
+  font-size: 0.98rem;
+  color: var(--hc-slate);
+  line-height: 1.75;
+}
+
+/* ============ 안전 안내 ============ */
+.disclaimer {
+  background: var(--hc-warm);
+  padding: 3rem 1.5rem;
+}
+.disclaimer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background: rgba(200, 155, 47, 0.08);
+  border-left: 4px solid var(--hc-gold);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--hc-slate);
+  line-height: 1.7;
+}
+
+/* ============ 위치/연락처 ============ */
+.contact {
+  background: linear-gradient(135deg, var(--hc-charcoal) 0%, var(--hc-deep) 100%);
+  color: var(--hc-warm);
+}
+.contact .section__eyebrow { color: var(--hc-gold-light); }
+.contact .section__title { color: var(--hc-white); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.contact-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(200, 155, 47, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+}
+.contact-card__label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: var(--hc-gold-light);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.contact-card__value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--hc-white);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+.contact-card__sub {
+  font-size: 0.92rem;
+  color: rgba(248, 243, 233, 0.7);
+  line-height: 1.55;
+}
+
+/* ============ 풋터 ============ */
+footer {
+  background: var(--hc-charcoal);
+  color: rgba(248, 243, 233, 0.6);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+footer strong { color: var(--hc-gold-light); }
+
+/* ============ 모바일 반응형 ============ */
+@media (max-width: 700px) {
+  section { padding: 3.5rem 1.25rem; }
+  .hero { padding: 3rem 1.25rem 2.5rem; }
+  .frank-block, .mua-hero { padding: 1.5rem; }
+  .mini-header__brand-sub { display: none; }
+  .hero__cta-group .btn { flex: 1; justify-content: center; }
+}
+
+/* ============ 등장 애니메이션 ============ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero__title, .hero__lede, .hero__cta-group, .hero__signal {
+  animation: fadeUp 0.7s ease backwards;
+}
+.hero__title { animation-delay: 0.1s; }
+.hero__lede { animation-delay: 0.25s; }
+.hero__cta-group { animation-delay: 0.4s; }
+.hero__signal { animation-delay: 0.55s; }
+</style>
+</head>
+<body>
+
+<!-- ============ 미니 헤더 ============ -->
+<header class="mini-header">
+  <div class="mini-header__inner">
+    <div>
+      <span class="mini-header__brand">희망찬병원</span>
+      <span class="mini-header__brand-sub">오십견 · 관절수동술 진료</span>
+    </div>
+    <div class="mini-header__cta">
+      <a href="tel:031-XXX-XXXX" class="btn btn--outline">📞 전화 상담</a>
+      <a href="#contact" class="btn btn--primary">진료 예약</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 히어로 ============ -->
+<section class="hero">
+  <div class="hero__inner">
+    <span class="hero__eyebrow">12-2 오십견 (동결견·유착성 관절낭염)</span>
+    <h1 class="hero__title">
+      <em>칼 없이</em> 굳은 어깨를<br>
+      풀어드립니다
+    </h1>
+    <p class="hero__lede">
+      밤에 어깨 아파 잠 못 주무시고, 팔이 모든 방향으로 안 올라가고, 의사가 잡고 들어도 안 움직이신가요. 오십견(동결견)의 동결기 신호일 수 있습니다. <strong>본원은 마취 하에 굳은 관절을 풀어주는 시그니처 시술 "관절수동술(MUA)"이 가능합니다.</strong> 김진균 원장이 직접 진료합니다.
+    </p>
+    <div class="hero__cta-group">
+      <a href="#contact" class="btn btn--primary btn--large">📞 진료 예약·상담</a>
+      <a href="#selfcheck" class="btn btn--gold btn--large">📋 자가진단 (3분)</a>
+      <a href="#frank" class="btn btn--frank btn--large">★ 풍선확장술 알아보시는 분</a>
+    </div>
+    <div class="hero__signal">
+      <span class="hero__signal-dot"></span>
+      동탄·화성·평택·수원·오산권 / 평일·토 진료 / 김진균 원장 직접 진료
+    </div>
+  </div>
+</section>
+
+<!-- ============ 야간통증 핫후킹 ============ -->
+<section class="symptom-hook">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 오십견 핵심 신호 4가지</div>
+      <h2 class="section__title">
+        이 중 하나라도 해당되시면<br>
+        <em>오십견 정밀 진료</em>를 받아보세요
+      </h2>
+      <p class="section__lede">
+        오십견은 어깨가 굳어 일상이 어려운 질환입니다. 환자분들이 "회전근개 파열"이나 "단순 어깨 결림"으로 오해하기 쉽습니다. 본원 진료실에서 가장 흔하게 듣는 4가지 신호입니다.
+      </p>
+    </div>
+    <div class="symptom-grid">
+      <div class="symptom-card">
+        <div class="symptom-card__icon">01</div>
+        <div class="symptom-card__title">밤에 어깨 아파 잠을 못 자요</div>
+        <div class="symptom-card__text">어떤 자세로 누워도 아프고, 새벽에 통증으로 깹니다. 오십견 동통기의 가장 흔한 신호입니다.</div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-card__icon">02</div>
+        <div class="symptom-card__title">팔이 모든 방향으로 안 가요</div>
+        <div class="symptom-card__text">앞·옆·뒤 모든 방향이 제한됩니다. 회전근개 파열은 한 방향만 약해지지만 오십견은 전 방향 굳음이 핵심입니다.</div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-card__icon">03</div>
+        <div class="symptom-card__title">의사가 들어도 안 올라가요</div>
+        <div class="symptom-card__text">★ 회전근개와 핵심 감별. 오십견은 능동·수동 운동 모두 제한됩니다. 본인뿐 아니라 타인이 도와줘도 안 됩니다.</div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-card__icon">04</div>
+        <div class="symptom-card__title">머리 감기·뒷지퍼 어려워요</div>
+        <div class="symptom-card__text">머리 감기, 뒷지퍼 올리기, 속옷 채우기, 운전 시 뒤 보기가 점점 어려워집니다.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 시그니처 시술 — 관절수동술 MUA ============ -->
+<section class="signature" id="signature">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★★ 본원 시그니처 시술</div>
+      <h2 class="section__title">
+        <em>칼 없이, 마취 하에,</em><br>
+        굳은 어깨를 풀어드립니다
+      </h2>
+      <p class="section__lede">
+        보존 치료(약물·주사·물리치료)를 3~6개월 받으셨는데도 어깨가 풀리지 않으시나요. 본원은 보존 치료와 관절경 수술 사이에 있는 효과적인 비수술 시술 "관절수동술(MUA)"을 시행합니다.
+      </p>
+    </div>
+    
+    <div class="mua-hero">
+      <div class="mua-hero__label">★ SIGNATURE PROCEDURE</div>
+      <div class="mua-hero__name">관절수동술 (MUA)</div>
+      <div class="mua-hero__english">Manipulation Under Anesthesia</div>
+      <p class="mua-hero__desc">
+        마취 상태에서 의사가 굳은 어깨를 조심스럽게 움직여 유착된 관절낭을 떼어내는 시술입니다. 피부를 절개하지 않고, 칼을 사용하지 않으며, 관절경 같은 기구를 관절 안에 넣지도 않습니다. 마취로 근육이 완전히 이완된 상태에서 시행하므로 통증 없이 안전하게 시행할 수 있습니다.
+      </p>
+      
+      <div class="mua-features">
+        <div class="mua-feature">
+          <div class="mua-feature__label">방법</div>
+          <div class="mua-feature__value">절개 없는<br>비수술 시술</div>
+        </div>
+        <div class="mua-feature">
+          <div class="mua-feature__label">시간</div>
+          <div class="mua-feature__value">시술 10~20분<br>당일 퇴원 가능</div>
+        </div>
+        <div class="mua-feature">
+          <div class="mua-feature__label">효과 시점</div>
+          <div class="mua-feature__value">시술 직후<br>가동범위 개선 가능</div>
+        </div>
+        <div class="mua-feature">
+          <div class="mua-feature__label">재활</div>
+          <div class="mua-feature__value">시술 다음 날부터<br>운동 시작</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="signature__note">
+      ★ 시술의 성공은 50%가 의사의 기술, 50%가 환자의 재활에 달려 있습니다. 시술 후 적극적인 운동이 없으면 다시 굳을 수 있습니다. 단, 매우 드물지만 시술 중 골절(고령·골다공증)·회전근개 손상 가능성이 있어 시술 전 정밀 평가가 필수입니다. 환자별로 적합성과 결과는 다를 수 있으며, 진료 후 의료진이 결정합니다.
+    </div>
+  </div>
+</section>
+
+<!-- ============ ★★ 풍선확장술 정직 진료 영업 섹션 ============ -->
+<section class="frank" id="frank">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★★ "풍선확장술" 알아보시는 분께</div>
+      <h2 class="section__title">
+        거창한 이름보다<br>
+        <em>정확한 진단·관절수동술·재활</em>이 핵심입니다
+      </h2>
+      <p class="section__lede">
+        "풍선확장술 하면 굳은 어깨가 풀린다"는 광고를 보고 검색하시는 분이 많습니다. 진료실에서 자주 받는 질문이라 본원이 의학적 사실을 정리해 드립니다.
+      </p>
+    </div>
+    
+    <div class="frank-block">
+      <div class="frank-claim">
+        <span class="frank-claim__label">[1] 의학적 사실</span>
+        <h3 class="frank-claim__head">"풍선확장술"은 정식 의학용어가 아닙니다</h3>
+        <p class="frank-claim__body">
+          정식 명칭은 <strong>관절낭 팽창술(Hydrodilatation) / 관절강 확장술 / 수압 팽창술</strong>입니다. 환자분들이 "풍선처럼 굳은 관절을 늘린다"고 이해하셔서 부르는 표현입니다. 실제로 풍선 카테터를 넣는 시술은 아니며, 관절강에 생리식염수+국소마취제+스테로이드를 주입해 관절막을 늘리는 시술입니다.
+        </p>
+      </div>
+      
+      <div class="frank-claim">
+        <span class="frank-claim__label">[2] 시술의 본질</span>
+        <h3 class="frank-claim__head">"관절에 물 넣고 스트레칭"입니다</h3>
+        <p class="frank-claim__body">
+          혈관 스텐트나 풍선카테터처럼 "특수 풍선 장비"·"첨단 기구"가 들어가는 개념이 아닙니다. 액체를 주입해 압력을 가하면서 굳은 관절막을 늘리는 것이 본질입니다. <strong>"풍선"이라는 이름은 환자 이해를 돕는 표현이지 정식 의학용어가 아닙니다.</strong>
+        </p>
+      </div>
+      
+      <div class="frank-claim">
+        <span class="frank-claim__label">[3] 효과의 한계</span>
+        <h3 class="frank-claim__head">효과 차이가 압도적이지 않습니다</h3>
+        <p class="frank-claim__body">
+          논문들을 보면 <strong>스테로이드 주사·관절낭 팽창술·운동치료 간 효과 차이가 압도적이지 않은 경우가 많습니다.</strong> 장기 추적하면 시간이 지나면서 결국 좋아지는 비율이 비슷하다는 연구도 있습니다. 통증이 너무 심해 운동 자체가 안 되는 환자에서 재활 진입을 도와주는 보조 역할이 의미 있는 경우는 있습니다.
+        </p>
+      </div>
+      
+      <div class="frank-claim">
+        <span class="frank-claim__label">[4] 본원 권장</span>
+        <h3 class="frank-claim__head">정확한 진단·관절수동술·재활이 핵심</h3>
+        <p class="frank-claim__body">
+          오십견의 핵심 치료는 결국 <strong>운동·재활</strong>입니다. 어떤 시술을 받든 시술 후 운동을 안 하면 다시 굳습니다. 본원은 정확한 진단(회전근개 파열·석회성 건염·경추 문제 감별)으로 시작해, 보존 치료가 실패한 환자에게 <strong>관절수동술(MUA)</strong>을 시행하고, 재활을 함께 가이드합니다.
+        </p>
+      </div>
+    </div>
+    
+    <!-- MUA vs 풍선확장 비교 -->
+    <div style="margin-top: 3rem;">
+      <h3 style="font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; color: var(--hc-deep); text-align: center; margin-bottom: 2rem;">
+        관절수동술(MUA) vs 관절낭 팽창술("풍선확장술")
+      </h3>
+      <div class="compare-table">
+        <div class="compare-row compare-row--head">
+          <div>비교 항목</div>
+          <div class="compare-mua">★ 관절수동술 (MUA)</div>
+          <div class="compare-balloon">관절낭 팽창술 ("풍선확장술")</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-row__attr">정식 명칭</div>
+          <div class="compare-row__mua">Manipulation Under Anesthesia (MUA)</div>
+          <div class="compare-row__balloon">Hydrodilatation / 관절낭 팽창술</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-row__attr">방법</div>
+          <div class="compare-row__mua">마취 후 의사가 직접 굳은 관절 풀기</div>
+          <div class="compare-row__balloon">관절강에 식염수+국소마취+스테로이드 주입</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-row__attr">절개·기구</div>
+          <div class="compare-row__mua">절개 없음 / 기구 없음</div>
+          <div class="compare-row__balloon">절개 없음 / 주사 바늘 사용</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-row__attr">효과 시점</div>
+          <div class="compare-row__mua">시술 직후 가동범위 개선 가능</div>
+          <div class="compare-row__balloon">수일~수주에 걸쳐 점진적</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-row__attr">적용 환자</div>
+          <div class="compare-row__mua">보존 3~6개월 실패 / 동결기 심한 구축</div>
+          <div class="compare-row__balloon">통증 심해 운동 자체 안 되는 초·중기</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-row__attr">재활 필요성</div>
+          <div class="compare-row__mua">★ 시술 후 재활 필수</div>
+          <div class="compare-row__balloon">★ 시술 후 재활 필수</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 30~50% 영구장애 경고 ============ -->
+<section class="warning">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 골든타임 경고</div>
+      <h2 class="section__title">
+        오십견은 <em>시간이 약</em>이 아닙니다
+      </h2>
+      <p class="section__lede">
+        많은 분이 "오십견은 시간 지나면 저절로 낫는다"고 알고 계시지만, 이것은 가장 위험한 오해입니다.
+      </p>
+    </div>
+    
+    <div class="warning-stat">
+      <div class="warning-stat__num">30~50%</div>
+      <div class="warning-stat__body">
+        치료 없이 방치하면 <strong>30~50%의 환자에서 관절 가동 범위가 영구적으로 제한되는 장애</strong>가 남습니다. 시간이 지나면 통증은 줄어들 수 있지만, 움직임 제한은 평생 갈 수 있습니다. 팔을 완전히 올리지 못하거나 뒤로 젖히는 동작이 안 되는 상태로 굳어버릴 수 있습니다.
+      </div>
+    </div>
+    
+    <h3 style="font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; color: var(--hc-deep); text-align: center; margin-top: 3rem; margin-bottom: 1.5rem;">
+      오십견 3단계 진행 — ★ 동결기가 관절수동술 적기
+    </h3>
+    
+    <div class="warning-3stages">
+      <div class="warning-stage">
+        <div class="warning-stage__num">1단계</div>
+        <div class="warning-stage__name">동통기 (Freezing)</div>
+        <div class="warning-stage__period">4~9개월</div>
+        <div class="warning-stage__desc">통증이 주된 증상. 야간통증 심함. 어깨가 점점 굳기 시작하지만 운동·약물·주사로 호전 가능한 시기.</div>
+      </div>
+      <div class="warning-stage warning-stage--key">
+        <div class="warning-stage__num">2단계 ★</div>
+        <div class="warning-stage__name">동결기 (Frozen)</div>
+        <div class="warning-stage__period">4~12개월</div>
+        <div class="warning-stage__desc">통증 감소했지만 어깨 심하게 굳음. 일상 동작 제한. <strong>★ 관절수동술 적기.</strong> "통증이 줄었다고 다 나은 것이 아닙니다."</div>
+      </div>
+      <div class="warning-stage">
+        <div class="warning-stage__num">3단계</div>
+        <div class="warning-stage__name">해동기 (Thawing)</div>
+        <div class="warning-stage__period">6~24개월</div>
+        <div class="warning-stage__desc">서서히 풀림. 단, 30~50%에서 영구 제한이 남을 수 있음. 재활 운동으로 가동범위 회복 진행.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 동반질환 (당뇨·갑상선) ============ -->
+<section class="comorbidity">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 동반 질환 환자분께</div>
+      <h2 class="section__title">
+        당뇨·갑상선 환자분은<br>
+        <em>오십견 위험이 더 높습니다</em>
+      </h2>
+      <p class="section__lede">
+        오십견은 특별한 원인 없이도 발생하지만, 특정 질환이 있는 분들은 발병 위험이 크게 높아집니다. 진료실에서 자주 확인하는 핵심 위험 요인 4가지입니다.
+      </p>
+    </div>
+    
+    <div class="comorbidity-grid">
+      <div class="como-card como-card--key">
+        <div class="como-card__multiplier">5×</div>
+        <div class="como-card__name">당뇨병</div>
+        <div class="como-card__desc">
+          오십견의 가장 중요한 위험 요인. 당뇨 환자는 발병률이 일반인의 <strong>5배 이상</strong>이며, 치료도 더디고 재발 가능성도 높습니다. 어깨 치료와 함께 혈당 관리를 반드시 병행해야 합니다.
+        </div>
+      </div>
+      <div class="como-card">
+        <div class="como-card__multiplier">↑</div>
+        <div class="como-card__name">갑상선 질환</div>
+        <div class="como-card__desc">
+          갑상선기능항진증과 저하증 모두 오십견 발생 위험을 높입니다. 호르몬 수치 관리와 어깨 진료를 함께 받아야 합니다.
+        </div>
+      </div>
+      <div class="como-card">
+        <div class="como-card__multiplier">↑</div>
+        <div class="como-card__name">수술 후·외상 후</div>
+        <div class="como-card__desc">
+          깁스, 어깨·유방 수술 후, 골절 후 어깨를 오래 못 쓰면 이차성 오십견이 발생할 수 있습니다. 뇌졸중·편마비 후에도 흔합니다.
+        </div>
+      </div>
+      <div class="como-card">
+        <div class="como-card__multiplier">20~30%</div>
+        <div class="como-card__name">반대쪽 어깨</div>
+        <div class="como-card__desc">
+          오십견 환자의 <strong>20~30%는 반대쪽 어깨에도 오십견</strong>이 생깁니다. 한쪽이 굳으셨다면 반대쪽도 주의해야 합니다.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 환자 신호 ============ -->
+<section class="signals">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 이런 분들이 진료받으시면 좋습니다</div>
+      <h2 class="section__title">
+        다음 중 한 가지라도 해당되신다면<br>
+        본원 정밀 진료를 권장합니다
+      </h2>
+    </div>
+    
+    <div class="signals-list">
+      <div class="signal-row signal-row--key">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">밤에 어깨 아파 잠을 못 주무시는 경우 (어떤 자세로 누워도 아픔)</span>
+      </div>
+      <div class="signal-row signal-row--key">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">팔이 모든 방향(앞·옆·뒤)으로 안 올라가는 경우</span>
+      </div>
+      <div class="signal-row signal-row--key">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 의사가 잡고 들어도 어깨가 안 올라가는 경우 (회전근개와 핵심 감별)</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">머리 감기·뒷지퍼 올리기·속옷 채우기가 어려운 경우</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">운전 시 핸들 돌리기·뒤 보기가 어려운 경우</span>
+      </div>
+      <div class="signal-row signal-row--key">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 풍선확장술·관절낭 팽창술 받으셨는데 다시 굳거나 호전이 적은 경우</span>
+      </div>
+      <div class="signal-row signal-row--key">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 보존 치료(약·주사·물리치료) 3~6개월 받았는데 호전이 없는 경우</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">운동만으로 풀리지 않는 1년 이상 만성 오십견</span>
+      </div>
+      <div class="signal-row signal-row--key">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">★ 당뇨 환자 (오십견 발병률 5배 / 치료 더디고 재발 위험)</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">갑상선 환자 (오십견 발병 위험 증가)</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">유방암·골절·뇌졸중 수술 후 어깨가 굳은 경우</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">한쪽 오십견을 앓고 반대쪽도 굳어지기 시작한 경우</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">오십견·회전근개·석회·충돌증후군인지 헷갈리는 어깨 통증</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-row__check">▸</span>
+        <span class="signal-row__text">MRI·X-ray 정밀 검사가 필요하신 경우 (당일 검사 가능 케이스)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 진료 흐름 ============ -->
+<section class="flow">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 본원 진료 흐름</div>
+      <h2 class="section__title">5단계 정밀 진료</h2>
+      <p class="section__lede">
+        오십견은 회전근개·석회·충돌증후군 등 다른 어깨 질환과 증상이 비슷해 정확한 감별이 핵심입니다. 본원은 모든 환자에게 5단계를 거쳐 맞춤 치료를 결정합니다.
+      </p>
+    </div>
+    
+    <div class="flow-grid">
+      <div class="flow-step">
+        <div class="flow-step__num">01</div>
+        <div class="flow-step__title">정밀 문진</div>
+        <div class="flow-step__text">증상 단계·기간·기저질환(당뇨·갑상선) 평가</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">02</div>
+        <div class="flow-step__title">신체 검사</div>
+        <div class="flow-step__text">능동·수동 운동 범위 평가 / 회전근개 감별</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">03</div>
+        <div class="flow-step__title">영상 검사</div>
+        <div class="flow-step__text">X-ray (석회·관절염 배제) / MRI (회전근개 감별)</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">04</div>
+        <div class="flow-step__title">단계 평가</div>
+        <div class="flow-step__text">동통기·동결기·해동기 결정 / 치료 결정</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step__num">05</div>
+        <div class="flow-step__title">맞춤 치료</div>
+        <div class="flow-step__text">보존·관절수동술·관절경 / 재활 가이드</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 치료 단계 ============ -->
+<section class="treatment">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 치료 단계</div>
+      <h2 class="section__title">
+        환자 상태에 따른<br>
+        <em>단계별 맞춤 치료</em>
+      </h2>
+      <p class="section__lede">
+        본원은 환자에게 일률적으로 같은 치료를 적용하지 않습니다. 다음 5단계 중 적합한 단계를 진료 후 결정합니다.
+      </p>
+    </div>
+    
+    <div class="treatment-table">
+      <div class="treatment-row treatment-row--head">
+        <div>단계</div>
+        <div>치료법</div>
+        <div>적용 케이스</div>
+      </div>
+      <div class="treatment-row">
+        <div class="treatment-row__stage">[1] 보존</div>
+        <div class="treatment-row__name">약물·물리치료·자가 운동·자세 교정</div>
+        <div class="treatment-row__desc">초기 동통기 / 가벼운 가동범위 제한</div>
+      </div>
+      <div class="treatment-row">
+        <div class="treatment-row__stage">[2] 주사</div>
+        <div class="treatment-row__name">스테로이드 주사 / 신경차단술</div>
+        <div class="treatment-row__desc">통증 심해 운동 자체 안 되는 환자 / 보존 보조</div>
+      </div>
+      <div class="treatment-row">
+        <div class="treatment-row__stage">[3] 관절낭 팽창술</div>
+        <div class="treatment-row__name">관절강에 액체 주입해 관절막 늘리기</div>
+        <div class="treatment-row__desc">초·중기 환자 / 재활 진입 보조 (★ 단독 치료로는 한계)</div>
+      </div>
+      <div class="treatment-row treatment-row--signature">
+        <div class="treatment-row__stage">[4] ★★ 시그니처</div>
+        <div class="treatment-row__name">관절수동술 (MUA)</div>
+        <div class="treatment-row__desc">본원 시그니처 — 마취 하 굳은 관절 풀기 (비수술) / 보존 3~6개월 실패 / 동결기 심한 구축</div>
+      </div>
+      <div class="treatment-row">
+        <div class="treatment-row__stage">[5] 관절경</div>
+        <div class="treatment-row__name">관절경 유착 박리술</div>
+        <div class="treatment-row__desc">MUA 실패 / 매우 심한 구축 / 재발 환자</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 자가진단 ============ -->
+<section class="selfcheck" id="selfcheck">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 자가진단 (3분)</div>
+      <h2 class="section__title">
+        다음 중 해당되는 항목이 많을수록<br>
+        <em>오십견 가능성</em>이 높습니다
+      </h2>
+      <p class="section__lede">
+        진료 시 참고용 체크리스트입니다. 정확한 진단은 의료진의 진료와 영상 검사가 필요합니다.
+      </p>
+    </div>
+    
+    <div class="selfcheck-grid">
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">밤에 어깨 아파 잠을 못 주무신다 (어떤 자세로 누워도 아픔)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">팔이 앞·옆·뒤 모든 방향으로 안 올라간다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">머리 감기·옷 입기·뒷지퍼 올리기가 어렵다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">운전할 때 핸들 돌리기·뒤 보기가 어렵다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ 의사가 잡고 들어도 팔이 안 올라간다 (회전근개와 핵심 감별)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">보존 치료(약·주사·물리치료) 3~6개월 받았는데 호전이 없다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">1년 이상 오십견이 안 풀린다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">풍선확장술·관절낭 팽창술 받았는데 다시 굳거나 호전이 적다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">당뇨가 있다 (★ 발병률 5배)</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">갑상선 질환이 있다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">유방암·골절·뇌졸중 수술 후 어깨가 굳었다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">깁스 후·어깨를 오래 못 쓴 후 어깨가 굳었다</div></div>
+      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">한쪽 오십견을 앓았는데 반대쪽도 굳어지기 시작했다</div></div>
+    </div>
+    
+    <div class="selfcheck__alert">
+      <strong>3개 이상 해당되시면</strong> 오십견 가능성이 높아 본원 정밀 진료를 권장합니다. 특히 ★ 표시 항목(의사가 들어도 안 됨·풍선확장 효과 적음·당뇨·보존 3~6개월 실패)이 있으시면 관절수동술 평가가 필요할 수 있습니다.
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 자주 묻는 질문</div>
+      <h2 class="section__title">12개 FAQ</h2>
+    </div>
+    
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-item__q">Q1. 오십견은 저절로 낫나요?</summary>
+        <div class="faq-item__a">치료 없이 방치하면 30~50%의 환자에서 관절 가동 범위가 영구적으로 제한되는 장애가 남습니다. 시간이 지나면 통증은 줄어들 수 있지만, 움직임 제한은 평생 갈 수 있습니다. 적절한 시기의 치료가 중요합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q2. "풍선확장술"이 정말 효과적인가요?</summary>
+        <div class="faq-item__a">정식 명칭은 "관절낭 팽창술 (Hydrodilatation)"입니다. 관절강에 액체를 주입해 관절막을 늘리는 시술로, 일부 환자에게 통증과 운동 보조 효과가 있습니다. 다만 "새로운 첨단 시술"이라기보다는 "관절강에 액체를 주입하는 비교적 단순한 시술"입니다. 본원은 풍선확장술보다는 정확한 진단·관절수동술·재활을 권장합니다. 환자별 적합성은 진료 후 결정됩니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q3. 관절수동술(MUA)이 일반 운동·도수치료와 어떻게 다른가요?</summary>
+        <div class="faq-item__a">관절수동술은 마취 하에 시행하는 비수술 시술입니다. 깨어 있는 상태에서는 통증·근육 수축으로 충분히 풀 수 없는 굳은 관절을, 마취로 근육을 이완시킨 상태에서 의사가 직접 풀어주는 시술입니다. 일반 도수치료보다 풀어주는 범위가 훨씬 깊습니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q4. 관절수동술은 안전한가요?</summary>
+        <div class="faq-item__a">어떤 시술도 합병증을 0%로 만들 수는 없습니다. 매우 드물지만 시술 중 골절(고령·골다공증 환자)·회전근개 손상·신경 손상 가능성이 있어, 사전 X-ray·MRI로 평가하고 시술 경험이 충분한 의료진에게 받는 것이 중요합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q5. 관절수동술 후 바로 일상으로 돌아갈 수 있나요?</summary>
+        <div class="faq-item__a">당일 퇴원이 가능한 케이스가 많지만, 회복은 환자별로 다릅니다. 시술 다음 날부터 재활 운동을 시작하며, 본격적인 일상 복귀는 의료진의 안내에 따라 단계적으로 진행합니다. 시술 후 재활이 결과를 좌우합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q6. 관절수동술 후 다시 굳을 수도 있나요?</summary>
+        <div class="faq-item__a">네, 재활 운동을 하지 않으면 다시 굳을 수 있습니다. 시술의 성공은 50%가 의사의 기술, 50%가 환자의 재활에 달려 있습니다. 시술 후 적극적인 운동이 필수입니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q7. 당뇨 환자도 관절수동술 가능한가요?</summary>
+        <div class="faq-item__a">네, 가능한 경우가 많습니다. 단 당뇨 환자는 오십견 발병률이 5배이고, 치료가 더디며 재발 가능성이 높습니다. 시술 전 혈당 조절이 중요하며, 어깨와 혈당을 함께 관리해야 합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q8. 오십견과 회전근개 파열은 어떻게 구분하나요?</summary>
+        <div class="faq-item__a">오십견은 능동·수동 운동 모두 제한됩니다 (의사가 잡고 들어도 안 올라감). 회전근개 파열은 본인이 들기 어렵지만 의사가 잡고 들면 올라가는 경우가 있습니다 (근력 약화가 핵심). MRI로 정확하게 구별할 수 있습니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q9. 반대쪽 어깨에도 오십견이 생길 수 있나요?</summary>
+        <div class="faq-item__a">네. 20~30% 환자에서 반대쪽에도 발생합니다. 동시에 나타나기도 하고, 수개월~수년 뒤에 생기기도 합니다. 반대쪽 어깨가 뻣뻣해지면 바로 진료를 받으시길 권장합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q10. 운동만으로 오십견을 풀 수 있나요?</summary>
+        <div class="faq-item__a">초기 동통기 환자는 약물과 운동 조합으로 호전되는 경우가 많습니다. 하지만 동결기에 접어들어 심하게 굳은 경우, 운동만으로는 한계가 있고 관절수동술이나 관절경이 필요합니다. 단계 평가 후 결정합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q11. 관절수동술 비용은 얼마인가요?</summary>
+        <div class="faq-item__a">건강보험 적용 여부에 따라 다릅니다. 진료 후 정확한 비용을 안내해 드립니다. 실손보험 청구용 진단서·소견서 발급 가능합니다.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary class="faq-item__q">Q12. 시술 후기·실제 경험을 보고 싶어요.</summary>
+        <div class="faq-item__a">의료광고법상 본원 페이지에서는 환자 후기를 직접 게시하지 않습니다. 다만 본원 김진균 원장의 유튜브 채널 "털보의사"에서 다양한 진료·시술 경험을 의학적 관점에서 안내하고 있습니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 안전 안내 ============ -->
+<section class="disclaimer">
+  <div class="disclaimer__inner">
+    ★ 본 페이지의 모든 시술·치료 안내는 일반적인 의학 정보이며, 환자별 적용 가능성과 결과는 진료 후 의료진이 결정합니다. 관절수동술이 모든 환자에게 적용되는 것은 아니며, 회복 기간과 결과는 환자별로 다를 수 있습니다. "풍선확장술(관절낭 팽창술)"에 대한 안내는 본원의 의학적 평가이며, 다른 의료기관의 진료를 부정하는 의도가 아닙니다. 본 페이지는 의료법 제56조에 따른 의료광고 사전심의 대상이며, 등록 전 심의를 받아 게시합니다.
+  </div>
+</section>
+
+<!-- ============ 위치/연락처 ============ -->
+<section class="contact" id="contact">
+  <div class="section__inner">
+    <div class="section__head">
+      <div class="section__eyebrow">★ 예약·위치·진료 시간</div>
+      <h2 class="section__title">희망찬병원으로 오세요</h2>
+      <p class="section__lede" style="color: rgba(248, 243, 233, 0.85);">
+        동탄·화성·평택·수원·오산·용인·안성권에서 오십견 정밀 진료를 받으실 수 있습니다. 김진균 원장이 직접 진료합니다.</p>
+    </div>
+    
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card__label">예약·상담</div>
+        <div class="contact-card__value">1600-3415</div>
+        <div class="contact-card__sub">평일·토 진료 시간 내 / 진료 전 예약 권장</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__label">위치</div>
+        <div class="contact-card__value">동탄 희망찬병원</div>
+        <div class="contact-card__sub">경기도 화성시 병점구 병점중앙로 174<br>지하철·버스 접근 가능</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__label">진료 시간</div>
+        <div class="contact-card__value">평일 09:00 ~ 18:00<br><span style="font-size: 1rem;">토 09:00 ~ 13:00</span></div>
+        <div class="contact-card__sub">일요일·공휴일 휴진 / 토요일 점심시간 진료 없음</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 풋터 ============ -->
+<footer>
+  <p><strong>희망찬병원</strong> · 김진균 원장 직접 진료 · 동탄·화성·평택권 수부·어깨 진료</p>
+  <p style="margin-top: 0.5rem;">유튜브 채널 "털보의사" / 본 페이지는 의료광고 사전심의 등록 후 게시됩니다</p>
+</footer>
+
+</body>
+</html>
