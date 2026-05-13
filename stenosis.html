@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>척추관 협착증 (Spinal Stenosis) | 희망찬병원 — 풍선으로는 안 넓어집니다</title>
+<meta name="description" content="척추관 협착증 — 단단한 뼈와 인대로 둘러싸인 척추관은 풍선으로 안 넓어집니다. 시술 후 MRI 변화 없음. 본원 정직한 진단 + 단계별 진료(비수술부터 유합술까지) + 협착증·전방전위증·디스크 동반 평가 / 신경외과 전문의 김진균 원장 / 동탄·화성·평택권 희망찬병원">
+<meta name="keywords" content="척추관협착증, 협착증, spinal stenosis, 풍선시술, 신경성 파행, 협착증 수술, 80대 협착증, 부모님 협착증, 협착증 전방전위증, 동탄 협착증, 김진균">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+/* ============================================================
+   13-3 척추관 협착증 — 짙은 청록 + 골드 + 진청 (5번째 색)
+   13-F 진청 · 13-S 청록(밝음) · 13-L 진보라 · 13-5 와인과 구분
+   Color: #1A535C (짙은 청록), #0F3D45 (다크), #B8941F (골드),
+          #2D6A78 (액센트), #FAF6F0 (크림), #15101A (다크)
+============================================================ */
+:root {
+    --c-teal: #1A535C;
+    --c-teal-deep: #0F3D45;
+    --c-teal-light: #2D6A78;
+    --c-teal-mint: #4ECDC4;
+    --c-gold: #B8941F;
+    --c-gold-light: #D4AB35;
+    --c-warm: #E07856;
+    --c-cream: #FAF6F0;
+    --c-cream-warm: #F2EAE0;
+    --c-dark: #15101A;
+    --c-text: #2A2530;
+    --c-text-soft: #4A4250;
+    --c-text-muted: #6B5D70;
+    --c-border: #DCD5CC;
+
+    --serif: 'Noto Serif KR', serif;
+    --sans: 'Pretendard', -apple-system, sans-serif;
+
+    --shadow-1: 0 1px 3px rgba(26,83,92,0.08), 0 1px 2px rgba(26,83,92,0.06);
+    --shadow-2: 0 4px 16px rgba(26,83,92,0.12), 0 2px 8px rgba(26,83,92,0.08);
+    --shadow-3: 0 16px 48px rgba(26,83,92,0.20), 0 8px 24px rgba(26,83,92,0.12);
+    --shadow-gold: 0 8px 24px rgba(184,148,31,0.22);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: var(--sans);
+    color: var(--c-text);
+    background: var(--c-cream);
+    line-height: 1.75;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+.topbar {
+    background: var(--c-teal-deep);
+    color: var(--c-cream);
+    padding: 9px 0;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.topbar strong { color: var(--c-gold-light); font-weight: 600; }
+
+.header {
+    background: rgba(250,246,240,0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--c-border);
+    position: sticky; top: 0; z-index: 100;
+    padding: 14px 0;
+}
+.header-inner {
+    max-width: 1180px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.logo {
+    font-family: var(--serif);
+    font-size: 22px; font-weight: 700;
+    color: var(--c-teal-deep);
+    letter-spacing: -0.025em;
+    display: flex; align-items: center; gap: 11px;
+}
+.logo-mark {
+    width: 38px; height: 38px;
+    background: linear-gradient(135deg, var(--c-teal) 0%, var(--c-teal-deep) 100%);
+    color: var(--c-cream);
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 10px;
+    font-family: var(--serif);
+    font-size: 17px; font-weight: 700;
+    box-shadow: var(--shadow-1);
+}
+.logo-sub { font-size: 11px; color: var(--c-text-muted); letter-spacing: 0.05em; margin-top: 2px; font-family: var(--sans); }
+.header-cta {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--c-gold);
+    color: white;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-weight: 700; font-size: 14px;
+    text-decoration: none;
+    box-shadow: var(--shadow-gold);
+    transition: all .2s;
+}
+.header-cta:hover { background: #9C7E1A; transform: translateY(-1px); }
+
+.hero {
+    background:
+        radial-gradient(ellipse at top right, rgba(26,83,92,0.10), transparent 50%),
+        radial-gradient(ellipse at bottom left, rgba(184,148,31,0.10), transparent 60%),
+        linear-gradient(180deg, var(--c-cream) 0%, var(--c-cream-warm) 100%);
+    padding: 100px 24px 80px;
+    position: relative; overflow: hidden;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -10%; right: -8%;
+    width: 480px; height: 480px;
+    background: radial-gradient(circle, rgba(26,83,92,0.08), transparent 70%);
+    border-radius: 50%;
+}
+.hero-inner { max-width: 1180px; margin: 0 auto; position: relative; z-index: 2; }
+.hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(26,83,92,0.10);
+    color: var(--c-teal-deep);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 13px; font-weight: 600;
+    margin-bottom: 28px;
+    border: 1px solid rgba(26,83,92,0.22);
+}
+.hero-tag::before {
+    content: ''; width: 7px; height: 7px;
+    background: var(--c-gold); border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(184,148,31,0.25);
+}
+.hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(34px, 5.2vw, 60px);
+    font-weight: 800;
+    line-height: 1.18;
+    color: var(--c-teal-deep);
+    letter-spacing: -0.035em;
+    margin-bottom: 28px;
+    max-width: 920px;
+}
+.hero h1 .accent {
+    color: var(--c-gold);
+    position: relative;
+    display: inline-block;
+}
+.hero h1 .accent::after {
+    content: '';
+    position: absolute;
+    bottom: 6px; left: 0; right: 0; height: 10px;
+    background: rgba(78,205,196,0.30);
+    z-index: -1;
+}
+.hero-sub {
+    font-size: clamp(16px, 1.7vw, 19px);
+    color: var(--c-text-soft);
+    max-width: 820px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+.hero-sub strong { color: var(--c-teal-deep); font-weight: 700; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-primary {
+    background: var(--c-gold);
+    color: white;
+    padding: 17px 36px;
+    border-radius: 8px;
+    font-weight: 700; font-size: 16px;
+    text-decoration: none;
+    box-shadow: var(--shadow-gold);
+    transition: all .25s;
+    display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-primary:hover { background: #9C7E1A; transform: translateY(-2px); box-shadow: 0 16px 50px rgba(184,148,31,0.32); }
+.btn-secondary {
+    background: white;
+    color: var(--c-teal-deep);
+    padding: 17px 32px;
+    border-radius: 8px;
+    font-weight: 600; font-size: 16px;
+    text-decoration: none;
+    border: 1.5px solid var(--c-teal);
+    transition: all .2s;
+    display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-secondary:hover { background: var(--c-teal); color: white; }
+
+.hero-stats {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 28px;
+    padding-top: 48px;
+    border-top: 1px solid var(--c-border);
+}
+.stat { text-align: left; }
+.stat-num {
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--c-teal-deep);
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+.stat-num .small { font-size: 22px; color: var(--c-gold); }
+.stat-label { font-size: 13px; color: var(--c-text-muted); margin-top: 10px; letter-spacing: 0.02em; line-height: 1.5; }
+
+section { padding: 100px 24px; }
+.section-inner { max-width: 1180px; margin: 0 auto; }
+.section-tag {
+    font-family: var(--serif);
+    color: var(--c-gold);
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 12px;
+}
+.section-tag::before {
+    content: ''; width: 36px; height: 1px; background: var(--c-gold);
+}
+.section-title {
+    font-family: var(--serif);
+    font-size: clamp(28px, 3.6vw, 44px);
+    font-weight: 700;
+    color: var(--c-teal-deep);
+    letter-spacing: -0.03em;
+    line-height: 1.28;
+    margin-bottom: 24px;
+}
+.section-lead {
+    font-size: 17px;
+    color: var(--c-text-soft);
+    max-width: 820px;
+    margin-bottom: 56px;
+    line-height: 1.85;
+}
+
+/* SECTION 01: 협착증이 뭔가요 */
+.what { background: white; }
+.what-banner {
+    background: linear-gradient(135deg, var(--c-teal-deep) 0%, var(--c-teal) 100%);
+    border-radius: 20px;
+    padding: 48px 44px;
+    color: var(--c-cream);
+    box-shadow: var(--shadow-3);
+    margin-bottom: 56px;
+    position: relative; overflow: hidden;
+}
+.what-banner::before {
+    content: 'Σ';
+    position: absolute;
+    top: -40px; right: -20px;
+    font-family: var(--serif);
+    font-size: 300px;
+    color: rgba(255,255,255,0.04);
+    font-weight: 900;
+    line-height: 1;
+}
+.what-banner h3 {
+    font-family: var(--serif);
+    font-size: 28px;
+    color: var(--c-gold-light);
+    margin-bottom: 18px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    position: relative; z-index: 2;
+}
+.what-banner p {
+    font-size: 16.5px;
+    line-height: 1.85;
+    margin-bottom: 14px;
+    max-width: 800px;
+    position: relative; z-index: 2;
+}
+.what-banner p:last-child { margin-bottom: 0; }
+.what-banner strong { color: white; font-weight: 700; }
+
+.what-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+.what-pillar {
+    background: white;
+    padding: 32px 26px;
+    border-radius: 14px;
+    border-left: 4px solid var(--c-teal);
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+}
+.what-pillar:hover { transform: translateX(4px); box-shadow: var(--shadow-3); border-left-color: var(--c-gold); }
+.what-pillar-tag {
+    font-family: var(--serif);
+    font-size: 12px;
+    color: var(--c-gold);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.what-pillar h4 {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: var(--c-teal-deep);
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.what-pillar p { font-size: 14.5px; color: var(--c-text-soft); line-height: 1.75; }
+
+/* SECTION 02: ★ 풍선시술의 진실 (★ 13-3 차별점 핵심) */
+.balloon { background: var(--c-dark); color: var(--c-cream); }
+.balloon .section-tag { color: var(--c-gold-light); }
+.balloon .section-tag::before { background: var(--c-gold-light); }
+.balloon .section-title { color: white; }
+.balloon .section-lead { color: rgba(250,246,240,0.85); }
+
+.balloon-hero {
+    background: rgba(255,255,255,0.04);
+    border: 2px solid var(--c-warm);
+    border-radius: 20px;
+    padding: 44px 40px;
+    margin-bottom: 48px;
+    position: relative;
+}
+.balloon-hero::before {
+    content: '!';
+    position: absolute;
+    top: -28px; left: 40px;
+    width: 56px; height: 56px;
+    background: var(--c-warm);
+    color: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 28px; font-weight: 700;
+    box-shadow: 0 8px 24px rgba(224,120,86,0.40);
+}
+.balloon-hero h3 {
+    font-family: var(--serif);
+    font-size: 26px;
+    color: var(--c-gold-light);
+    margin-bottom: 16px;
+    margin-top: 16px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.balloon-hero p {
+    color: rgba(250,246,240,0.92);
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 12px;
+}
+.balloon-hero p:last-child { margin-bottom: 0; }
+.balloon-hero strong { color: white; font-weight: 700; }
+
+.balloon-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.balloon-fact {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(184,148,31,0.25);
+    border-radius: 16px;
+    padding: 32px 28px;
+    transition: all .3s;
+}
+.balloon-fact:hover {
+    background: rgba(255,255,255,0.10);
+    border-color: var(--c-gold-light);
+    transform: translateY(-4px);
+}
+.balloon-fact-num {
+    font-family: var(--serif);
+    font-size: 12.5px;
+    color: var(--c-gold-light);
+    letter-spacing: 0.22em;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.balloon-fact h4 {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: white;
+    margin-bottom: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.balloon-fact p { font-size: 14.5px; color: rgba(250,246,240,0.85); line-height: 1.75; }
+.balloon-fact p strong { color: var(--c-gold-light); font-weight: 700; }
+@media (max-width: 968px) { .balloon-facts { grid-template-columns: 1fr; } }
+
+/* SECTION 03: 신경성 파행 */
+.symptoms { background: white; }
+.symptoms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+.symptom-card {
+    background: white;
+    padding: 30px 26px;
+    border-radius: 14px;
+    border-top: 3px solid var(--c-teal-light);
+    box-shadow: var(--shadow-1);
+    transition: all .25s;
+}
+.symptom-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); }
+.symptom-icon {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--c-teal) 0%, var(--c-teal-deep) 100%);
+    color: white;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 18px; font-weight: 700;
+    margin-bottom: 16px;
+}
+.symptom-card h5 {
+    font-family: var(--serif);
+    font-size: 16.5px;
+    color: var(--c-teal-deep);
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.symptom-card p { font-size: 14px; color: var(--c-text-soft); line-height: 1.7; }
+.symptom-card p strong { color: var(--c-teal); font-weight: 700; }
+
+/* SECTION 04: 디스크 감별 (비교표) */
+.compare { background: var(--c-cream-warm); }
+.compare-table {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--c-border);
+}
+.compare-table table { width: 100%; border-collapse: collapse; }
+.compare-table thead {
+    background: linear-gradient(135deg, var(--c-teal-deep) 0%, var(--c-teal) 100%);
+    color: white;
+}
+.compare-table th {
+    padding: 18px 22px;
+    text-align: left;
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+.compare-table th:first-child { background: var(--c-teal-deep); }
+.compare-table td {
+    padding: 16px 22px;
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--c-text);
+    border-bottom: 1px solid var(--c-border);
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table tbody tr:hover { background: var(--c-cream-warm); }
+.compare-table .col-label {
+    font-family: var(--serif);
+    font-weight: 700;
+    color: var(--c-teal-deep);
+    font-size: 14.5px;
+}
+.compare-table .stenosis { color: var(--c-teal-deep); font-weight: 600; }
+.compare-table .disc { color: var(--c-warm); font-weight: 600; }
+
+/* SECTION 05: 협착증 + 전방전위증 (★ 13-5 시너지) */
+.combo {
+    background: linear-gradient(135deg, var(--c-cream) 0%, var(--c-cream-warm) 100%);
+}
+.combo-banner {
+    background: white;
+    border-radius: 20px;
+    padding: 48px 44px;
+    box-shadow: var(--shadow-2);
+    border-left: 6px solid var(--c-gold);
+    margin-bottom: 40px;
+}
+.combo-banner h3 {
+    font-family: var(--serif);
+    font-size: 26px;
+    color: var(--c-teal-deep);
+    margin-bottom: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.combo-banner h3 .em { color: var(--c-gold); }
+.combo-banner p {
+    color: var(--c-text);
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 12px;
+}
+.combo-banner p:last-child { margin-bottom: 0; }
+.combo-banner strong { color: var(--c-teal-deep); font-weight: 700; }
+.combo-formula {
+    background: var(--c-cream-warm);
+    border-radius: 14px;
+    padding: 28px;
+    text-align: center;
+    font-family: var(--serif);
+    font-size: 19px;
+    color: var(--c-teal-deep);
+    line-height: 1.7;
+    font-weight: 600;
+}
+.combo-formula .plus { color: var(--c-gold); font-weight: 700; padding: 0 8px; }
+.combo-formula .result { color: var(--c-warm); font-weight: 700; }
+
+/* SECTION 06: 진단 흐름 5단계 */
+.flow { background: white; }
+.flow-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    position: relative;
+}
+.flow-step {
+    text-align: center;
+    padding: 32px 16px;
+    position: relative;
+}
+.flow-step::after {
+    content: '';
+    position: absolute;
+    top: 56px; right: -8px;
+    width: 16px; height: 2px;
+    background: var(--c-teal-light);
+}
+.flow-step:last-child::after { display: none; }
+.flow-num {
+    font-family: var(--serif);
+    width: 56px; height: 56px;
+    background: linear-gradient(135deg, var(--c-teal) 0%, var(--c-teal-deep) 100%);
+    color: var(--c-cream);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; font-weight: 700;
+    margin: 0 auto 22px;
+    box-shadow: var(--shadow-2);
+}
+.flow-step h5 {
+    font-family: var(--serif);
+    font-size: 15.5px;
+    color: var(--c-teal-deep);
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.flow-step p { font-size: 13px; color: var(--c-text-soft); line-height: 1.6; }
+@media (max-width: 968px) {
+    .flow-steps { grid-template-columns: repeat(2, 1fr); }
+    .flow-step::after { display: none; }
+}
+
+/* SECTION 07: 단계별 치료 */
+.treatment { background: var(--c-cream-warm); }
+.treat-table {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--c-border);
+}
+.treat-table table { width: 100%; border-collapse: collapse; }
+.treat-table thead {
+    background: linear-gradient(135deg, var(--c-teal-deep) 0%, var(--c-teal) 100%);
+    color: white;
+}
+.treat-table th {
+    padding: 18px 22px;
+    text-align: left;
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+.treat-table td {
+    padding: 18px 22px;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--c-text);
+    border-bottom: 1px solid var(--c-border);
+}
+.treat-table tbody tr:last-child td { border-bottom: none; }
+.treat-table tbody tr:hover { background: var(--c-cream-warm); }
+.treat-table .col-status {
+    font-family: var(--serif);
+    font-weight: 700;
+    color: var(--c-teal-deep);
+    font-size: 15.5px;
+    letter-spacing: -0.01em;
+}
+.treat-table .highlight { background: rgba(184,148,31,0.08); }
+.treat-table .highlight .col-status { color: var(--c-gold); }
+
+/* SECTION 08: 수술 5가지 */
+.surgery-need { background: white; }
+.surgery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-bottom: 36px;
+}
+.surgery-card {
+    background: white;
+    padding: 30px 26px;
+    border-radius: 14px;
+    border-top: 4px solid var(--c-teal);
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+}
+.surgery-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); border-top-color: var(--c-gold); }
+.surgery-num {
+    font-family: var(--serif);
+    font-size: 14px;
+    color: var(--c-gold);
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.surgery-card h4 {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--c-teal-deep);
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.surgery-card p { font-size: 14px; color: var(--c-text-soft); line-height: 1.7; }
+.surgery-quote {
+    background: linear-gradient(135deg, var(--c-teal-deep) 0%, var(--c-teal) 100%);
+    color: var(--c-cream);
+    border-radius: 14px;
+    padding: 32px 36px;
+    font-family: var(--serif);
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.65;
+    text-align: center;
+    box-shadow: var(--shadow-3);
+}
+.surgery-quote strong { color: var(--c-gold-light); font-style: normal; font-weight: 700; }
+
+/* SECTION 09: 세 가지 수술 방법 */
+.methods { background: var(--c-cream); }
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.method-card {
+    background: white;
+    padding: 38px 32px;
+    border-radius: 18px;
+    box-shadow: var(--shadow-2);
+    border-top: 5px solid var(--c-teal);
+    transition: all .3s;
+}
+.method-card.bess { border-top-color: var(--c-teal-mint); }
+.method-card.fusion { border-top-color: var(--c-gold); }
+.method-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-3); }
+.method-tag {
+    font-family: var(--serif);
+    font-size: 12.5px;
+    color: var(--c-gold);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+.method-card h3 {
+    font-family: var(--serif);
+    font-size: 20px;
+    color: var(--c-teal-deep);
+    margin-bottom: 14px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.method-card > p { font-size: 14.5px; color: var(--c-text); line-height: 1.8; margin-bottom: 14px; }
+.method-card > p strong { color: var(--c-teal-deep); font-weight: 700; }
+.method-list {
+    list-style: none;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--c-border);
+}
+.method-list li {
+    padding: 8px 0 8px 22px;
+    position: relative;
+    font-size: 13.5px;
+    color: var(--c-text);
+    line-height: 1.6;
+}
+.method-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0; top: 8px;
+    color: var(--c-teal);
+    font-weight: 700;
+}
+.method-card.bess .method-list li::before { color: var(--c-teal-mint); }
+.method-card.fusion .method-list li::before { color: var(--c-gold); }
+@media (max-width: 968px) { .methods-grid { grid-template-columns: 1fr; } }
+
+/* SECTION 10: 본원 차별점 */
+.diff {
+    background: linear-gradient(135deg, var(--c-cream) 0%, var(--c-cream-warm) 100%);
+}
+.diff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+.diff-card {
+    background: white;
+    padding: 32px 28px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+    border-top: 3px solid var(--c-teal);
+}
+.diff-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-3); border-top-color: var(--c-gold); }
+.diff-icon {
+    width: 50px; height: 50px;
+    background: linear-gradient(135deg, var(--c-teal) 0%, var(--c-teal-deep) 100%);
+    color: white;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 20px; font-weight: 700;
+    margin-bottom: 18px;
+}
+.diff-card h5 {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--c-teal-deep);
+    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.diff-card p { font-size: 14.5px; color: var(--c-text-soft); line-height: 1.75; }
+.diff-card p strong { color: var(--c-text); font-weight: 700; }
+
+/* SECTION 11: FAQ */
+.faq { background: var(--c-cream-warm); }
+.faq-list { margin-top: 32px; }
+.faq-item {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: all .25s;
+    border: 1px solid var(--c-border);
+}
+.faq-item:hover { box-shadow: var(--shadow-2); border-color: var(--c-teal-light); }
+.faq-q {
+    padding: 22px 28px;
+    cursor: pointer;
+    font-family: var(--serif);
+    font-weight: 700;
+    color: var(--c-teal-deep);
+    font-size: 16.5px;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 16px;
+    line-height: 1.5;
+    user-select: none;
+    list-style: none;
+}
+.faq-q::-webkit-details-marker { display: none; }
+.faq-q::after {
+    content: '+';
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--c-gold);
+    transition: transform .25s;
+    flex-shrink: 0;
+    font-family: var(--sans);
+}
+.faq-item[open] .faq-q::after { transform: rotate(45deg); }
+.faq-a {
+    padding: 0 28px 24px;
+    color: var(--c-text);
+    font-size: 15px;
+    line-height: 1.9;
+}
+.faq-a strong { color: var(--c-teal-deep); font-weight: 700; }
+
+/* CTA FINAL */
+.cta-final {
+    background: linear-gradient(135deg, var(--c-teal) 0%, var(--c-teal-deep) 100%);
+    color: var(--c-cream);
+    text-align: center;
+    padding: 120px 24px;
+    position: relative; overflow: hidden;
+}
+.cta-final::before {
+    content: '';
+    position: absolute;
+    top: -10%; left: -5%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(184,148,31,0.18), transparent 70%);
+    border-radius: 50%;
+}
+.cta-final::after {
+    content: '';
+    position: absolute;
+    bottom: -20%; right: -10%;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(78,205,196,0.15), transparent 70%);
+    border-radius: 50%;
+}
+.cta-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 2; }
+.cta-quote {
+    font-family: var(--serif);
+    font-size: clamp(26px, 3.5vw, 40px);
+    font-weight: 600;
+    line-height: 1.45;
+    color: white;
+    margin-bottom: 24px;
+    letter-spacing: -0.025em;
+}
+.cta-quote .em { color: var(--c-gold-light); }
+.cta-text {
+    font-size: 17px;
+    color: rgba(250,246,240,0.92);
+    max-width: 620px; margin: 0 auto 48px;
+    line-height: 1.8;
+}
+.cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cta-buttons .btn-primary {
+    background: var(--c-gold);
+    box-shadow: 0 12px 40px rgba(184,148,31,0.40);
+}
+.cta-buttons .btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: rgba(255,255,255,0.45);
+}
+.cta-buttons .btn-secondary:hover {
+    background: white;
+    color: var(--c-teal-deep);
+}
+
+.footer {
+    background: #0A1518;
+    color: rgba(250,246,240,0.75);
+    padding: 56px 24px 36px;
+}
+.footer-inner {
+    max-width: 1180px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 56px;
+}
+.footer h6 {
+    font-family: var(--serif);
+    color: var(--c-gold-light);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+}
+.footer-brand .logo { color: white; margin-bottom: 14px; font-size: 21px; }
+.footer-brand .logo-mark { background: var(--c-gold); color: white; }
+.footer-brand p { font-size: 13.5px; line-height: 1.75; color: rgba(250,246,240,0.65); }
+.footer-info p { font-size: 13.5px; line-height: 1.95; }
+.footer-info p strong { color: var(--c-cream); font-weight: 500; }
+.footer-bottom {
+    max-width: 1180px;
+    margin: 48px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid rgba(250,246,240,0.10);
+    text-align: center;
+    font-size: 12px;
+    color: rgba(250,246,240,0.50);
+    line-height: 1.75;
+}
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 36px; }
+    section { padding: 70px 20px; }
+    .hero { padding: 70px 20px 56px; }
+    .balloon-hero, .combo-banner { padding: 36px 24px; }
+}
+
+.placeholder {
+    background: linear-gradient(135deg, #FFF3D6, #FFE2A0);
+    color: #6B4D00;
+    padding: 1px 8px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-weight: 600;
+    font-family: var(--sans);
+    border: 1px dashed var(--c-gold);
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    풍선시술 받았는데 똑같으세요? <strong>척추관은 풍선으로 안 넓어집니다</strong> · 신경외과 전문의 김진균 원장
+</div>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <div class="logo-mark">희</div>
+            <div>
+                <div>희망찬병원</div>
+                <div class="logo-sub">SPINAL STENOSIS · 척추관 협착증 정직 진료</div>
+            </div>
+        </div>
+        <a href="tel:placeholder" class="header-cta">
+            📞 진료 예약 · <span class="1600-3415">1600-3415</span>
+        </a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <h1>
+            척추관이 진짜로 좁아진 곳<br>
+            <span class="accent">풍선으로는 안 넓어집니다</span>
+        </h1>
+        <p class="hero-sub">
+            척추관은 <strong>단단한 뼈와 두꺼운 인대로 둘러싸인 견고한 구조</strong>입니다. 풍선 정도의 힘으로 넓어지는 약한 조직이 아닙니다. <strong>시술 후 MRI/CT에서 척추관 변화가 확인되지 않습니다.</strong><br>
+            본원에서 정직한 진단을 받으세요. 단계별 진료(비수술부터 유합술까지) + 협착증·전방전위증·디스크 동반 평가. 신경외과 전문의 김진균 원장 직접 진료. 80대도 안전한 협착증 수술 다년 경험.
+        </p>
+        <div class="hero-cta">
+            <a href="tel:1600-3415" class="btn-primary">📞 진료 예약 · 상담</a>
+            <a href="#balloon" class="btn-secondary">풍선시술의 진실 →</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-num">1<span class="small">위</span></div>
+                <div class="stat-label">고령자 허리 수술<br>가장 흔한 원인</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">12<span class="small">%</span></div>
+                <div class="stat-label">앞으로 굽히면<br>척추관 크기 증가</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">80<span class="small">대 안전</span></div>
+                <div class="stat-label">고령자 수술 다년 경험<br>16번 내과 협진</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">80<span class="small">%+</span></div>
+                <div class="stat-label">수술 후 만족도<br>(중등도 이상 환자)</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 01: 협착증이 뭔가요 -->
+<section class="what">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 01 · 정확한 의학</div>
+        <h2 class="section-title">신경이 지나가는 통로가 좁아진 병</h2>
+        <div class="what-banner">
+            <h3>고령자 허리 수술의 가장 흔한 원인입니다</h3>
+            <p>척추관 협착증(spinal stenosis)은 척추 신경이 지나가는 통로(척추관)가 좁아져 신경을 압박하는 질환입니다. <strong>고령자에서 허리 수술이 필요한 가장 흔한 원인</strong>이며, 나이가 들수록 발생률이 높아집니다.</p>
+            <p>척추관은 척추뼈 뒤쪽에 있는 견고한 터널입니다. 나이가 들면서 황색인대 비후, 후관절 비대, 디스크 퇴행, 골극 형성, 전방전위증 등 <strong>여러 구조물이 동시에 변화</strong>하면서 이 터널이 좁아집니다.</p>
+            <p>본원은 <strong>"풍선으로 넓혀드립니다"</strong>라는 광고에 속지 않도록 정직한 정보를 제공합니다.</p>
+        </div>
+        <div class="what-pillars">
+            <div class="what-pillar">
+                <div class="what-pillar-tag">구조 01</div>
+                <h4>황색인대 비후</h4>
+                <p>척추 뒤쪽 인대가 정상의 <strong>2-3배까지 두꺼워져</strong> 척추관을 뒤에서 압박합니다. 협착증의 가장 흔한 원인.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">구조 02</div>
+                <h4>후관절 비대</h4>
+                <p>척추 뒤쪽 관절이 퇴행하며 비대해져 척추관을 옆에서 좁힙니다.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">구조 03</div>
+                <h4>디스크 퇴행</h4>
+                <p>디스크가 수분을 잃고 납작해지면서 불룩 튀어나와 척추관을 앞에서 압박합니다.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">구조 04</div>
+                <h4>전방전위증 동반</h4>
+                <p>위쪽 척추뼈가 앞으로 밀려나가면 척추관이 더 좁아지고 <strong>불안정성</strong>이 동반됩니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 02: ★ 풍선시술의 진실 (★ 13-3 차별점) -->
+<section class="balloon" id="balloon">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 02 · 풍선시술의 진실 — 본원 정직 영업</div>
+        <h2 class="section-title">"풍선으로 척추관 넓혀드립니다" — 진실은?</h2>
+        <p class="section-lead">
+            "풍선으로 척추관을 넓혀드립니다"라는 광고를 보셨을 수 있습니다. <strong>본원은 환자분께 진실을 안내드립니다.</strong> 척추관은 풍선 정도의 힘으로는 넓어지지 않는 견고한 구조이며, 시술 후 영상 검사에서 척추관 확장이 확인되지 않습니다.
+        </p>
+        <div class="balloon-hero">
+            <h3>척추관은 풍선으로 넓어지지 않습니다</h3>
+            <p>척추관은 <strong>단단한 뼈와 두꺼운 인대로 둘러싸인 견고한 구조</strong>입니다. 풍선시술이라는 비수술 시술에서 사용하는 풍선 정도의 압력으로 넓어질 수 있는 약한 조직이 아닙니다.</p>
+            <p><strong>시술 후 MRI나 CT를 찍어보면 척추관이 실제로 넓어지지 않습니다.</strong> 일시적인 통증 완화는 함께 주입되는 약물(스테로이드)의 효과이며, 풍선의 효과가 아닙니다.</p>
+            <p>결국 풍선시술은 풍선이 없는 신경성형술과 비슷하며, 넓히는 효과는 의학적으로 입증되지 않았습니다.</p>
+        </div>
+        <div class="balloon-facts">
+            <div class="balloon-fact">
+                <div class="balloon-fact-num">FACT 01</div>
+                <h4>척추관은 견고한 구조</h4>
+                <p>단단한 뼈와 두꺼운 인대로 둘러싸여 있어 <strong>풍선 정도의 압력으로 넓어지지 않습니다</strong>. 의학적 사실입니다.</p>
+            </div>
+            <div class="balloon-fact">
+                <div class="balloon-fact-num">FACT 02</div>
+                <h4>시술 후 영상 변화 없음</h4>
+                <p>시술 후 MRI/CT에서 <strong>척추관 확장이 확인되지 않습니다</strong>. 좁아진 구조는 그대로 남아 있습니다.</p>
+            </div>
+            <div class="balloon-fact">
+                <div class="balloon-fact-num">FACT 03</div>
+                <h4>약물 효과 ≠ 풍선 효과</h4>
+                <p>일시적 통증 완화는 함께 주입되는 <strong>약물(스테로이드)의 효과</strong>입니다. 풍선이 넓혀서 좋아지는 것이 아닙니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 03: 신경성 파행 -->
+<section class="symptoms">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 03 · 특징적 증상</div>
+        <h2 class="section-title">신경성 파행 — 협착증의 가장 특징적 증상</h2>
+        <p class="section-lead">
+            협착증의 가장 특징적인 증상은 <strong>신경성 파행(neurogenic claudication)</strong>입니다. 걸으면 다리가 무겁고 저리다가 앉아서 쉬면 좋아지는 패턴입니다. 다음 증상에 해당하면 본원에서 정밀 검사를 받으세요.
+        </p>
+        <div class="symptoms-grid">
+            <div class="symptom-card">
+                <div class="symptom-icon">01</div>
+                <h5>★ 걸으면 다리 저림</h5>
+                <p>걸으면 다리가 무겁고 저리고 아프다가 <strong>쉬면 좋아지는</strong> 반복 패턴. 시간이 갈수록 보행 거리가 줄어듭니다.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">02</div>
+                <h5>★ 앉으면 좋아짐</h5>
+                <p>앉아서 쉬면 다리 증상이 좋아집니다. <strong>앞으로 굽힌 자세가 편함</strong> — 척추관 크기가 약 12% 증가하기 때문.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">03</div>
+                <h5>★ 쇼핑카트 징후</h5>
+                <p>쇼핑카트를 밀 때처럼 앞으로 굽힌 자세에서 편합니다. <strong>'쇼핑카트 징후(shopping cart sign)'</strong>라고 불리는 협착증의 전형적 패턴.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">04</div>
+                <h5>★ 자전거는 괜찮음</h5>
+                <p>걷기는 힘들어도 <strong>자전거 타기는 괜찮은 경우</strong>가 많습니다. 굽힌 자세 + 다리 운동이 가능하기 때문. 혈관성 파행과 구분되는 특징.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">05</div>
+                <h5>뒤로 젖히면 아픔</h5>
+                <p>허리를 뒤로 젖히면 증상이 악화됩니다. <strong>척추관 크기가 약 20% 감소</strong>하기 때문.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">06</div>
+                <h5>보행 거리 감소</h5>
+                <p>처음에는 30분 걸을 수 있다가 점점 짧아져 <strong>100미터를 못 걷고 쉬어야 하는 단계</strong>까지 진행될 수 있습니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 04: 디스크 감별 -->
+<section class="compare">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 04 · 디스크 감별</div>
+        <h2 class="section-title">협착증인지 디스크인지 — 정확 감별</h2>
+        <p class="section-lead">
+            협착증과 디스크 탈출증은 자주 혼동됩니다. 본원에서 MRI로 정확히 감별합니다. <strong>두 질환이 함께 있는 경우도 흔하므로 동반 평가가 결정적</strong>입니다.
+        </p>
+        <div class="compare-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 22%;">항목</th>
+                        <th style="width: 39%;">척추관 협착증</th>
+                        <th style="width: 39%;">디스크 탈출증</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-label">발병 양상</td>
+                        <td class="stenosis">서서히 진행 (수개월~수년)</td>
+                        <td class="disc">갑자기 발생 (수일~수주)</td>
+                    </tr>
+                    <tr>
+                        <td class="col-label">통증 양상</td>
+                        <td class="stenosis">둔하고 무거운 다리 증상</td>
+                        <td class="disc">날카로운 한쪽 다리 통증</td>
+                    </tr>
+                    <tr>
+                        <td class="col-label">한쪽 vs 양쪽</td>
+                        <td class="stenosis">양쪽 다리 흔함</td>
+                        <td class="disc">한쪽 다리</td>
+                    </tr>
+                    <tr>
+                        <td class="col-label">앉으면</td>
+                        <td class="stenosis">좋아짐</td>
+                        <td class="disc">더 아픔</td>
+                    </tr>
+                    <tr>
+                        <td class="col-label">보행</td>
+                        <td class="stenosis">점점 줄어듦 (신경성 파행)</td>
+                        <td class="disc">통증 지속</td>
+                    </tr>
+                    <tr>
+                        <td class="col-label">발병 연령</td>
+                        <td class="stenosis">50대 이후</td>
+                        <td class="disc">모든 연령</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 05: 협착증 + 전방전위증 (★ 13-5 시너지) -->
+<section class="combo">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 05 · 동반 평가 — 본원 차별점</div>
+        <h2 class="section-title">협착증 + 전방전위증 동반 — 흔한 조합</h2>
+        <p class="section-lead">
+            특히 <strong>퇴행성 환자에서 협착증과 전방전위증이 함께 있는 경우가 매우 흔합니다</strong>. 본원은 두 질환을 동시에 평가합니다.
+        </p>
+        <div class="combo-banner">
+            <h3>"광범위 감압만으로 <span class="em">부족</span>한 경우가 있습니다"</h3>
+            <p>50대 이후 여성에서 <strong>퇴행성 협착증 + 퇴행성 전방전위증</strong> 동반은 매우 흔한 조합입니다. 전방전위증이 척추관을 더 좁히고, 척추가 불안정하기 때문에 광범위 감압만으로는 부족한 경우가 많습니다.</p>
+            <p>이런 경우 <strong>광범위 감압 + 척추 유합술</strong>이 필요할 수 있습니다. 본원은 김진균 원장의 다년 척추 유합술 경험으로 환자별 최적 수술을 결정합니다.</p>
+        </div>
+        <div class="combo-formula">
+            <strong>퇴행성 협착증</strong> <span class="plus">+</span> <strong>전방전위증</strong> <span class="plus">→</span> <span class="result">광범위 감압 + 유합술</span>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 06: 진단 흐름 -->
+<section class="flow">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 06 · 본원 진료 흐름</div>
+        <h2 class="section-title">본원 진료 흐름 5단계</h2>
+        <p class="section-lead">
+            본원은 협착증을 정확히 진단하고 동반 질환까지 평가합니다.
+        </p>
+        <div class="flow-steps">
+            <div class="flow-step">
+                <div class="flow-num">01</div>
+                <h5>정밀 문진</h5>
+                <p>보행 거리 · 다리 증상 · 자세 변화 · 동반 질환</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">02</div>
+                <h5>신체 검사</h5>
+                <p>신경 검사 · 근력 평가 · 보행 평가 · 혈관성 파행 감별</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">03</div>
+                <h5>영상 검사</h5>
+                <p>★ 굴곡·신전 X-ray · CT · MRI — 본원 즉시</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">04</div>
+                <h5>★ 동반 평가</h5>
+                <p>협착증 + 전방전위증 + 디스크 동시 평가</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">05</div>
+                <h5>맞춤 치료</h5>
+                <p>비수술 · 감압술 · 유합술 · 환자별 맞춤</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 07: 단계별 치료 -->
+<section class="treatment">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 07 · 단계별 치료</div>
+        <h2 class="section-title">환자별 단계적 치료 방향</h2>
+        <p class="section-lead">
+            협착증 치료는 단계에 따라 결정됩니다. 본원에서 환자별로 평가합니다. <strong>비수술 치료의 한계와 적기 수술의 중요성</strong>을 정직하게 안내합니다.
+        </p>
+        <div class="treat-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">환자 상태</th>
+                        <th style="width: 30%;">치료 방향</th>
+                        <th>본원 안내</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-status">경미한 협착증</td>
+                        <td>약물 + 물리치료 + 굽히기 운동</td>
+                        <td>통증 관리 + 정기 추적</td>
+                    </tr>
+                    <tr>
+                        <td class="col-status">중등도 협착증</td>
+                        <td>신경차단술 + 비수술</td>
+                        <td>★ 단, 풍선시술은 권장하지 않음</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 비수술 6개월 효과 없음</td>
+                        <td>★ 수술 검토</td>
+                        <td><strong>본원 영업 핵심 영입</strong></td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 신경 증상 진행</td>
+                        <td>즉시 수술 평가</td>
+                        <td>다리 마비 · 근력 약화 · 대소변 이상</td>
+                    </tr>
+                    <tr>
+                        <td class="col-status">협착증 단독</td>
+                        <td>미세 감압술 / BESS</td>
+                        <td>본원 최소침습 수술</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 협착증+불안정성</td>
+                        <td>★ 광범위 감압 + 유합술</td>
+                        <td>★ 13-F 시너지 — 본원 다년 경험</td>
+                    </tr>
+                    <tr>
+                        <td class="col-status">80대 고령자</td>
+                        <td>본원 16번 내과 협진 후 안전 결정</td>
+                        <td>동반 질환 평가 우선</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 08: 수술 5가지 -->
+<section class="surgery-need">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 08 · 수술 적응증</div>
+        <h2 class="section-title">수술이 필요한 5가지 경우</h2>
+        <p class="section-lead">
+            협착증 수술은 비수술 한계 시 적기에 결정합니다. 본원에서 평가하는 5가지 상황입니다.
+        </p>
+        <div class="surgery-grid">
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 01</div>
+                <h4>비수술 6개월 이상 효과 없음</h4>
+                <p>약·주사·물리치료·시술 충분히 시도했는데도 통증 지속 — 일상 힘듦.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 02</div>
+                <h4>신경 손상 진행</h4>
+                <p>다리 근력 약화·감각 저하·대소변 이상 — <strong>즉시 수술 평가 필요</strong>.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 03</div>
+                <h4>보행 거리 100m 이하</h4>
+                <p>걷기 한계로 일상생활이 어려운 경우.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 04</div>
+                <h4>협착증 + 전방전위증</h4>
+                <p>퇴행성 환자에서 흔함. <strong>광범위 감압 + 유합술 필요한 경우</strong>.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 05</div>
+                <h4>협착증 + 디스크 탈출</h4>
+                <p>신경 압박이 심한 동반 환자.</p>
+            </div>
+        </div>
+        <div class="surgery-quote">
+            "<strong>신경 손상이 진행된 후에는 수술해도 회복이 어렵습니다.</strong><br>본원에서 적기 평가 후 결정합니다."
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 09: 세 가지 수술 방법 -->
+<section class="methods">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 09 · 수술 방법</div>
+        <h2 class="section-title">본원 세 가지 수술 방법</h2>
+        <p class="section-lead">
+            본원은 환자 상태에 따라 최적의 수술 방법을 선택합니다. 모든 환자에게 같은 방법을 적용하지 않습니다.
+        </p>
+        <div class="methods-grid">
+            <div class="method-card">
+                <div class="method-tag">최소침습 · 단독 협착</div>
+                <h3>미세 감압술<br>(Microscopic)</h3>
+                <p><strong>현미경으로 정밀하게</strong> 좁아진 부위만 넓힙니다. 협착증 단독 환자에게 적합한 표준 수술 방법입니다.</p>
+                <ul class="method-list">
+                    <li>현미경 정밀 시야</li>
+                    <li>회복 빠름</li>
+                    <li>협착증 단독에 적합</li>
+                    <li>본원 표준 수술</li>
+                </ul>
+            </div>
+            <div class="method-card bess">
+                <div class="method-tag">최소침습 · 내시경</div>
+                <h3>BESS<br>양방향 척추 내시경</h3>
+                <p>두 개의 작은 구멍으로 내시경 수술. <strong>최소침습 — 회복 빠름</strong>. 단독 협착증에 효과적인 케이스가 있습니다.</p>
+                <ul class="method-list">
+                    <li>두 구멍 내시경 접근</li>
+                    <li>흉터가 작음</li>
+                    <li>회복 빠름</li>
+                    <li>본원 진료 시 적용 가능 여부 평가</li>
+                </ul>
+            </div>
+            <div class="method-card fusion">
+                <div class="method-tag">★ 13-F 시너지 · 불안정성 동반</div>
+                <h3>광범위 감압<br>+ 유합술</h3>
+                <p>협착증 + 전방전위증·불안정성 동반 시 필요한 수술. <strong>페디클 스크류 + 막대 + 케이지 + 뼈이식</strong>으로 신경 압박 해소 + 척추 고정.</p>
+                <ul class="method-list">
+                    <li>전방전위증 동반에 필수</li>
+                    <li>불안정성 환자 적합</li>
+                    <li>1-2분절 유합 일상 거의 정상</li>
+                    <li>★ 본원 김진균 원장 다년 경험</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 10: 본원 차별점 -->
+<section class="diff">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 10 · 본원 차별점</div>
+        <h2 class="section-title">왜 희망찬병원인가</h2>
+        <p class="section-lead">
+            본원 척추 영업 사각형(13-F·13-L·13-5·13-3) 핵심 영역. 정직 영업 + 수술 적극 영업 하이브리드.
+        </p>
+        <div class="diff-grid">
+            <div class="diff-card">
+                <div class="diff-icon">01</div>
+                <h5>신경외과 전문의<br>직접 진료</h5>
+                <p>김진균 원장이 협착증 환자를 처음부터 끝까지 직접 진료합니다. <strong>다년 척추 수술 경험</strong>.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">02</div>
+                <h5>★ 정직 영업<br>풍선시술 따개</h5>
+                <p>본원은 <strong>의학적으로 입증된 치료만</strong> 권합니다. 풍선시술·신경성형술의 척추관 확장 효과는 입증되지 않았습니다.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">03</div>
+                <h5>★ 동반 평가<br>협착증+전위증+디스크</h5>
+                <p>본원의 가장 큰 차별점. <strong>협착증 + 전방전위증 + 디스크 동시 평가</strong>로 복잡한 통증의 정확한 원인 진단.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">04</div>
+                <h5>★ 비수술 한계 영입<br>적기 수술</h5>
+                <p>다른 의료기관에서 비수술 치료 6개월~1년 받았는데 효과가 없는 환자를 적극 영입. <strong>수술 적기 정밀 평가</strong>.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">05</div>
+                <h5>★ 80대도 안전한 수술<br>다년 경험</h5>
+                <p>본원 16번 내과와 협진해 동반 질환 평가 후 안전 결정. <strong>고령자 협착증 수술 다년 경험</strong>.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">06</div>
+                <h5>★ 가족 동반 상담<br>부모님 환영</h5>
+                <p>부모님 협착증 환자 자녀와 함께 결정. <strong>보호자 동반 상담 환영</strong>. 본원에서 충분한 설명.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">07</div>
+                <h5>★ 다양한 수술 방법<br>환자별 맞춤</h5>
+                <p><strong>미세 감압술 · BESS · 광범위 감압 + 유합술</strong>. 환자별로 최적 방법 선택. 모든 환자에게 같은 방법 적용 안 함.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">08</div>
+                <h5>★ 본원 사각형<br>척추 영업 핵심</h5>
+                <p>13-F 유합술 · 13-L 분리증 · 13-5 전방전위증과 함께 본원 척추 영업의 핵심 사각형. <strong>양방향 통합 진료</strong>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 11: FAQ -->
+<section class="faq">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 11 · 자주 묻는 질문</div>
+        <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
+        <p class="section-lead">
+            척추관 협착증에 대해 환자분들이 자주 묻는 15가지 질문을 정리했습니다.
+        </p>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary class="faq-q">Q1. 풍선시술 받으면 척추관이 정말 넓어지나요?</summary>
+                <div class="faq-a">
+                    <strong>아닙니다.</strong> 척추관은 단단한 뼈와 두꺼운 인대로 둘러싸인 견고한 구조로, 풍선 정도의 힘으로는 넓어지지 않습니다. <strong>시술 후 MRI/CT에서 척추관 확장이 확인되지 않습니다.</strong> 일시적인 통증 완화는 함께 주입되는 약물(스테로이드) 효과입니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q2. 그럼 비수술 치료는 효과가 없나요?</summary>
+                <div class="faq-a">
+                    경미한 초기 단계에서는 약물·물리치료·굽히기 운동·신경차단술이 통증 관리에 도움이 됩니다. 단, <strong>좁아진 척추관 구조를 넓히지는 못합니다</strong>. 비수술 치료는 '증상 관리'이지 '완치'가 아닙니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q3. 비수술 6개월 받았는데 효과가 없어요. 수술해야 하나요?</summary>
+                <div class="faq-a">
+                    비수술 치료 6개월~1년 후 효과가 없다면 <strong>수술 재평가가 필요합니다</strong>. 본원에서 정밀 영상 검사 + 동반 질환 평가 후 수술 적기를 결정합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q4. 80대인데 협착증 수술이 가능한가요?</summary>
+                <div class="faq-a">
+                    본원은 <strong>80대 협착증 수술 다년 경험</strong>이 있습니다. 본원 16번 내과와 협진해 동반 질환을 평가한 후 안전한 수술을 결정합니다. 단, 모든 환자가 수술 가능한 것은 아니며 의료진이 환자별로 판단합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q5. 어머니가 걷기 힘드신데 협착증인가요?</summary>
+                <div class="faq-a">
+                    50대 이후 여성에서 보행 거리가 줄어들고 다리 저림이 있으면 협착증을 의심합니다. <strong>퇴행성 전방전위증 동반도 흔합니다</strong>. 본원에서 동반 평가 + 보호자 동반 상담으로 진단합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q6. 협착증인지 디스크인지 어떻게 구분하나요?</summary>
+                <div class="faq-a">
+                    협착증은 서서히 진행되고 양쪽 다리에 둔한 증상, 디스크는 갑자기 발생하고 한쪽 다리에 날카로운 통증이 특징입니다. <strong>두 질환이 함께 있는 경우도 흔하므로</strong> 본원에서 MRI로 정확히 감별합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q7. 신경성 파행과 혈관성 파행은 어떻게 다른가요?</summary>
+                <div class="faq-a">
+                    <strong>서 있기만 해도 아프면 신경성, 안 아프면 혈관성</strong>입니다. 또한 협착증은 자전거 타기가 괜찮지만 혈관성 파행은 그렇지 않습니다. 본원에서 정확히 감별합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q8. 협착증과 전방전위증이 함께 있다고 들었어요.</summary>
+                <div class="faq-a">
+                    퇴행성 협착증 환자, 특히 50대+ 여성에서 흔한 조합입니다. <strong>광범위 감압만으로 부족하고 유합술이 필요한 경우 많습니다</strong>. 본원 동반 평가로 정확히 진단합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q9. 협착증 수술하면 허리가 굳나요?</summary>
+                <div class="faq-a">
+                    <strong>감압술만 하는 경우는 허리가 굳지 않습니다.</strong> 유합술이 필요한 경우(불안정성·전방전위증 동반)에도 1-2분절 유합은 일상에 거의 영향을 주지 않습니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q10. BESS(양방향 척추 내시경)는 어떤 수술인가요?</summary>
+                <div class="faq-a">
+                    두 개의 작은 구멍으로 내시경을 통해 수술하는 최소침습 방법입니다. <strong>회복이 빠르고 흉터가 작아</strong> 단독 협착증 환자에게 적합한 경우가 있습니다. 본원에서 환자별로 평가합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q11. 수술 후 회복은 얼마나 걸리나요?</summary>
+                <div class="faq-a">
+                    입원 5-7일, <strong>사무직 직장 복귀 4-6주</strong>, 육체 노동 3-6개월 후 점진적 복귀. 환자별 차이가 있어 의료진과 상의합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q12. 협착증 환자가 피해야 할 것은?</summary>
+                <div class="faq-a">
+                    <strong>허리를 뒤로 젖히는 동작·오래 서있기·무거운 물건 들기</strong>를 피하세요. 걷기는 통증이 있으면 짧게 자주 쉬며 합니다. <strong>굽히는 자세·자전거·수영</strong>이 권장됩니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q13. 협착증은 유전인가요?</summary>
+                <div class="faq-a">
+                    직접적인 유전 질환은 아니지만, 척추 구조의 유전적 요인이 발병 위험에 영향을 줍니다. 주된 원인은 노화입니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q14. 협착증 약을 평생 먹어야 하나요?</summary>
+                <div class="faq-a">
+                    증상 관리를 위한 약물은 통증이 있을 때 사용합니다. 통증이 가벼우면 약을 줄이거나 중단할 수 있습니다. <strong>장기 복용은 부작용 위험</strong>이 있으므로 본원에서 정기 평가합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q15. 비용·실비 청구는 어떻게 되나요?</summary>
+                <div class="faq-a">
+                    건강보험이 적용됩니다. 본원에서 진단서·소견서·세부내역서를 발급해 실손보험 청구가 가능합니다. <strong>산재 환자는 산재 진단서 발급</strong>도 가능합니다.
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+    <div class="cta-inner">
+        <p class="cta-quote">
+            "<span class="em">풍선으로는 안 넓어집니다.</span><br>
+            본원에서 <span class="em">정직한 진단</span>부터 받으세요."
+        </p>
+        <p class="cta-text">
+            풍선시술 받았는데 똑같으세요? 비수술 6개월 효과 없으셨나요?<br>
+            본원 협착증·전방전위증·디스크 동반 평가 + 단계별 진료<br>
+            신경외과 전문의 김진균 원장 직접 진료 · 동탄·화성·평택권 희망찬병원
+        </p>
+        <div class="cta-buttons">
+            <a href="tel:1600-3415" class="btn-primary">📞 진료 예약 · <span class="1600-3415">1600-3415</span></a>
+            <a href="https://map.placeholder" class="btn-secondary">📍 길찾기 · <span class="https://naver.me/FJbWBEVA">위치</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo">
+                <div class="logo-mark">희</div>
+                <div>희망찬병원</div>
+            </div>
+            <p>척추 신경외과 · 신경외과 전문의 김진균 원장 직접 진료. 동탄·화성·평택권 종합 병원. 척추관 협착증 정직 진단 (풍선시술 따개 + 동반 평가) / 단계별 진료 (비수술부터 유합술까지) / 80대 협착증 수술 다년 경험.</p>
+        </div>
+        <div class="footer-info">
+            <h6>진료 안내</h6>
+            <p>
+                <strong>주소:</strong> <span class="placeholder">경기도 화성시 병점중앙로 174</span><br>
+                <strong>전화:</strong> <span class="placeholder">1600-3415</span><br>
+                <strong>진료시간:</strong> <span class="placeholder">평일 09:00~18:00 / 토 09:00~13:00</span><br>
+                <strong>휴진:</strong> <span class="placeholder">일요일·공휴일</span>
+            </p>
+        </div>
+        <div class="footer-info">
+            <h6>의료진</h6>
+            <p>
+                <strong>대표원장 김진균</strong><br>
+                <span class="placeholder">신경외과 전문의</span><br>
+                <strong>유튜브:</strong> 털보의사<br>
+                <strong>전문 분야:</strong> 척추 신경외과<br>
+                · 척추관 협착증 정직 진단<br>
+                · 미세 감압술 · BESS · 유합술<br>
+                · 80대 협착증 수술 다년 경험
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        본 페이지는 의료 정보 제공 목적이며, 진료는 전문의의 직접 검사와 판단이 필요합니다.<br>
+        의료광고심의필 · 척추관 협착증 진단·치료는 환자별 정밀 검사 후 의료진과 충분한 상담을 거쳐 결정됩니다.<br>
+        © 희망찬병원 · 2026
+    </div>
+</footer>
+
+</body>
+</html>
