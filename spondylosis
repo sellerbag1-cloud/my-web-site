@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>척추 전방전위증 (Spondylolisthesis) | 희망찬병원 — 미루면 더 큰 수술</title>
+<meta name="description" content="척추가 앞으로 밀려난 상태 — 미루면 더 큰 수술. 1분절로 끝낼 시점의 수술이 3분절을 유합해야 하는 때보다 좋은 결과. 본원 Meyerding 단계 평가 + 협부형/퇴행성 구분 + 협착증 동반 평가 / 신경외과 전문의 김진균 원장 / 동탄·화성·평택권 희망찬병원">
+<meta name="keywords" content="전방전위증, 척추 전방전위증, spondylolisthesis, 척추 미끄러짐, 협부형 전방전위증, 퇴행성 전방전위증, 전방전위증 수술, 전방전위증 유합술, 어머니 척추 수술, 동탄 전방전위증, 김진균">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+/* ============================================================
+   13-5 전방전위증 — 짙은 와인색 + 골드 + 진청 (4번째 색상)
+   13-F 진청 · 13-S 청록 · 13-L 진보라와 구분
+   Color: #9B2C2C (와인), #742828 (다크 와인), #B8941F (골드),
+          #1E3A5F (진청 액센트), #FAF6F2 (크림), #1A0F0F (다크)
+============================================================ */
+:root {
+    --c-wine: #9B2C2C;
+    --c-wine-deep: #742828;
+    --c-wine-light: #C53030;
+    --c-gold: #B8941F;
+    --c-gold-light: #D4AB35;
+    --c-navy: #1E3A5F;
+    --c-navy-light: #2D4A78;
+    --c-cream: #FAF6F2;
+    --c-cream-warm: #F5EBE4;
+    --c-dark: #1A0F0F;
+    --c-text: #2B1F1F;
+    --c-text-soft: #4A3838;
+    --c-text-muted: #6B5555;
+    --c-border: #E0CFC4;
+
+    --serif: 'Noto Serif KR', serif;
+    --sans: 'Pretendard', -apple-system, sans-serif;
+
+    --shadow-1: 0 1px 3px rgba(155,44,44,0.08), 0 1px 2px rgba(155,44,44,0.06);
+    --shadow-2: 0 4px 16px rgba(155,44,44,0.12), 0 2px 8px rgba(155,44,44,0.08);
+    --shadow-3: 0 16px 48px rgba(155,44,44,0.20), 0 8px 24px rgba(155,44,44,0.12);
+    --shadow-gold: 0 8px 24px rgba(184,148,31,0.22);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: var(--sans);
+    color: var(--c-text);
+    background: var(--c-cream);
+    line-height: 1.75;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* TOP BAR */
+.topbar {
+    background: var(--c-wine-deep);
+    color: var(--c-cream);
+    padding: 9px 0;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.topbar strong { color: var(--c-gold-light); font-weight: 600; }
+
+/* HEADER */
+.header {
+    background: rgba(250,246,242,0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--c-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 0;
+}
+.header-inner {
+    max-width: 1180px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.logo {
+    font-family: var(--serif);
+    font-size: 22px; font-weight: 700;
+    color: var(--c-wine-deep);
+    letter-spacing: -0.025em;
+    display: flex; align-items: center; gap: 11px;
+}
+.logo-mark {
+    width: 38px; height: 38px;
+    background: linear-gradient(135deg, var(--c-wine) 0%, var(--c-wine-deep) 100%);
+    color: var(--c-cream);
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 10px;
+    font-family: var(--serif);
+    font-size: 17px; font-weight: 700;
+    box-shadow: var(--shadow-1);
+}
+.logo-sub { font-size: 11px; color: var(--c-text-muted); letter-spacing: 0.05em; margin-top: 2px; font-family: var(--sans); }
+.header-cta {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--c-gold);
+    color: white;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: var(--shadow-gold);
+    transition: all .2s;
+}
+.header-cta:hover { background: #9C7E1A; transform: translateY(-1px); }
+
+/* HERO */
+.hero {
+    background:
+        radial-gradient(ellipse at top right, rgba(197,48,48,0.10), transparent 50%),
+        radial-gradient(ellipse at bottom left, rgba(184,148,31,0.10), transparent 60%),
+        linear-gradient(180deg, var(--c-cream) 0%, var(--c-cream-warm) 100%);
+    padding: 100px 24px 80px;
+    position: relative;
+    overflow: hidden;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -10%; right: -8%;
+    width: 480px; height: 480px;
+    background: radial-gradient(circle, rgba(155,44,44,0.08), transparent 70%);
+    border-radius: 50%;
+}
+.hero-inner { max-width: 1180px; margin: 0 auto; position: relative; z-index: 2; }
+.hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(155,44,44,0.10);
+    color: var(--c-wine-deep);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 13px; font-weight: 600;
+    margin-bottom: 28px;
+    border: 1px solid rgba(155,44,44,0.22);
+}
+.hero-tag::before {
+    content: ''; width: 7px; height: 7px;
+    background: var(--c-gold); border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(184,148,31,0.25);
+}
+.hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(34px, 5.2vw, 60px);
+    font-weight: 800;
+    line-height: 1.18;
+    color: var(--c-wine-deep);
+    letter-spacing: -0.035em;
+    margin-bottom: 28px;
+    max-width: 920px;
+}
+.hero h1 .accent {
+    color: var(--c-gold);
+    position: relative;
+    display: inline-block;
+}
+.hero h1 .accent::after {
+    content: '';
+    position: absolute;
+    bottom: 6px; left: 0; right: 0; height: 10px;
+    background: rgba(197,48,48,0.18);
+    z-index: -1;
+}
+.hero-sub {
+    font-size: clamp(16px, 1.7vw, 19px);
+    color: var(--c-text-soft);
+    max-width: 820px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+.hero-sub strong { color: var(--c-wine-deep); font-weight: 700; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-primary {
+    background: var(--c-gold);
+    color: white;
+    padding: 17px 36px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: var(--shadow-gold);
+    transition: all .25s;
+    display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-primary:hover { background: #9C7E1A; transform: translateY(-2px); box-shadow: 0 16px 50px rgba(184,148,31,0.32); }
+.btn-secondary {
+    background: white;
+    color: var(--c-wine-deep);
+    padding: 17px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1.5px solid var(--c-wine);
+    transition: all .2s;
+    display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-secondary:hover { background: var(--c-wine); color: white; }
+
+.hero-stats {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 28px;
+    padding-top: 48px;
+    border-top: 1px solid var(--c-border);
+}
+.stat { text-align: left; }
+.stat-num {
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--c-wine-deep);
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+.stat-num .small { font-size: 22px; color: var(--c-gold); }
+.stat-label { font-size: 13px; color: var(--c-text-muted); margin-top: 10px; letter-spacing: 0.02em; line-height: 1.5; }
+
+/* SECTION COMMON */
+section { padding: 100px 24px; }
+.section-inner { max-width: 1180px; margin: 0 auto; }
+.section-tag {
+    font-family: var(--serif);
+    color: var(--c-gold);
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 12px;
+}
+.section-tag::before {
+    content: ''; width: 36px; height: 1px; background: var(--c-gold);
+}
+.section-title {
+    font-family: var(--serif);
+    font-size: clamp(28px, 3.6vw, 44px);
+    font-weight: 700;
+    color: var(--c-wine-deep);
+    letter-spacing: -0.03em;
+    line-height: 1.28;
+    margin-bottom: 24px;
+}
+.section-lead {
+    font-size: 17px;
+    color: var(--c-text-soft);
+    max-width: 820px;
+    margin-bottom: 56px;
+    line-height: 1.85;
+}
+
+/* SECTION 01: 분리증이 뭔가요 */
+.what { background: white; }
+.what-banner {
+    background: linear-gradient(135deg, var(--c-wine) 0%, var(--c-wine-deep) 100%);
+    border-radius: 20px;
+    padding: 48px 44px;
+    color: var(--c-cream);
+    box-shadow: var(--shadow-3);
+    margin-bottom: 56px;
+    position: relative;
+    overflow: hidden;
+}
+.what-banner::before {
+    content: '!';
+    position: absolute;
+    top: -30px; right: -10px;
+    font-family: var(--serif);
+    font-size: 280px;
+    color: rgba(255,255,255,0.05);
+    font-weight: 900;
+    line-height: 1;
+}
+.what-banner h3 {
+    font-family: var(--serif);
+    font-size: 28px;
+    color: var(--c-gold-light);
+    margin-bottom: 18px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    position: relative; z-index: 2;
+}
+.what-banner p {
+    font-size: 16.5px;
+    line-height: 1.85;
+    margin-bottom: 14px;
+    max-width: 800px;
+    position: relative; z-index: 2;
+}
+.what-banner p:last-child { margin-bottom: 0; }
+.what-banner strong { color: white; font-weight: 700; }
+
+.what-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+.what-pillar {
+    background: white;
+    padding: 32px 26px;
+    border-radius: 14px;
+    border-left: 4px solid var(--c-wine);
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+}
+.what-pillar:hover { transform: translateX(4px); box-shadow: var(--shadow-3); border-left-color: var(--c-gold); }
+.what-pillar-tag {
+    font-family: var(--serif);
+    font-size: 12px;
+    color: var(--c-gold);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.what-pillar h4 {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: var(--c-wine-deep);
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.what-pillar p { font-size: 14.5px; color: var(--c-text-soft); line-height: 1.75; }
+
+/* SECTION 02: 두 환자 풀 */
+.pools { background: var(--c-cream-warm); }
+.pools-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+.pool-card {
+    background: white;
+    padding: 44px 36px;
+    border-radius: 18px;
+    box-shadow: var(--shadow-2);
+    border-top: 5px solid var(--c-wine);
+    position: relative;
+    transition: all .3s;
+}
+.pool-card.degenerative { border-top-color: var(--c-gold); }
+.pool-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-3); }
+.pool-num {
+    position: absolute;
+    top: -22px; left: 36px;
+    width: 44px; height: 44px;
+    background: var(--c-wine);
+    color: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 18px; font-weight: 700;
+    box-shadow: var(--shadow-2);
+}
+.pool-card.degenerative .pool-num { background: var(--c-gold); }
+.pool-card h3 {
+    font-family: var(--serif);
+    font-size: 24px;
+    color: var(--c-wine-deep);
+    margin-bottom: 8px;
+    margin-top: 14px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.pool-card.degenerative h3 { color: #6B4D00; }
+.pool-tag {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--c-text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+.pool-list { list-style: none; }
+.pool-list li {
+    padding: 12px 0 12px 24px;
+    position: relative;
+    border-bottom: 1px dashed var(--c-border);
+    font-size: 14.5px;
+    color: var(--c-text);
+    line-height: 1.7;
+}
+.pool-list li:last-child { border-bottom: none; }
+.pool-list li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 22px;
+    width: 14px; height: 2px;
+    background: var(--c-wine);
+}
+.pool-card.degenerative .pool-list li::before { background: var(--c-gold); }
+.pool-list li strong { color: var(--c-wine-deep); font-weight: 700; }
+.pool-card.degenerative .pool-list li strong { color: #6B4D00; }
+@media (max-width: 768px) { .pools-grid { grid-template-columns: 1fr; } }
+
+/* SECTION 03: 증상 */
+.symptoms { background: white; }
+.symptoms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+.symptom-card {
+    background: white;
+    padding: 30px 26px;
+    border-radius: 14px;
+    border-top: 3px solid var(--c-navy);
+    box-shadow: var(--shadow-1);
+    transition: all .25s;
+}
+.symptom-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); }
+.symptom-icon {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--c-navy) 0%, #15294A 100%);
+    color: white;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 18px; font-weight: 700;
+    margin-bottom: 16px;
+}
+.symptom-card h5 {
+    font-family: var(--serif);
+    font-size: 16.5px;
+    color: var(--c-wine-deep);
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.symptom-card p { font-size: 14px; color: var(--c-text-soft); line-height: 1.7; }
+.symptom-card p strong { color: var(--c-navy); font-weight: 700; }
+
+/* SECTION 04: Meyerding 단계 (★ 핵심) */
+.meyerding { background: var(--c-dark); color: var(--c-cream); }
+.meyerding .section-tag { color: var(--c-gold-light); }
+.meyerding .section-tag::before { background: var(--c-gold-light); }
+.meyerding .section-title { color: white; }
+.meyerding .section-lead { color: rgba(250,246,242,0.85); }
+
+.meyerding-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 40px;
+}
+.meyerding-stage {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(184,148,31,0.20);
+    border-radius: 14px;
+    padding: 24px 16px;
+    text-align: center;
+    transition: all .3s;
+}
+.meyerding-stage:hover {
+    background: rgba(255,255,255,0.10);
+    border-color: var(--c-gold-light);
+    transform: translateY(-4px);
+}
+.meyerding-stage.severe {
+    background: rgba(155,44,44,0.20);
+    border-color: var(--c-wine-light);
+}
+.stage-num {
+    font-family: var(--serif);
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--c-gold-light);
+    line-height: 1;
+    margin-bottom: 10px;
+    letter-spacing: -0.03em;
+}
+.meyerding-stage.severe .stage-num { color: var(--c-wine-light); }
+.stage-label {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: rgba(250,246,242,0.85);
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.stage-percent {
+    font-size: 14.5px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.stage-treat { font-size: 12px; color: rgba(250,246,242,0.75); line-height: 1.5; }
+@media (max-width: 968px) {
+    .meyerding-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.meyerding-note {
+    background: rgba(184,148,31,0.12);
+    padding: 28px 32px;
+    border-left: 4px solid var(--c-gold);
+    border-radius: 4px;
+    color: var(--c-cream);
+    font-size: 16px;
+    line-height: 1.8;
+}
+.meyerding-note strong { color: var(--c-gold-light); font-weight: 700; }
+
+/* SECTION 05: 조기 수술 (★ 진행 경고) */
+.early {
+    background:
+        radial-gradient(ellipse at top right, rgba(155,44,44,0.10), transparent 60%),
+        var(--c-cream);
+}
+.early-banner {
+    background: white;
+    border-radius: 20px;
+    padding: 48px 44px;
+    box-shadow: var(--shadow-2);
+    border: 2px solid var(--c-wine-light);
+    margin-bottom: 40px;
+}
+.early-banner h3 {
+    font-family: var(--serif);
+    font-size: 28px;
+    color: var(--c-wine-deep);
+    margin-bottom: 16px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.early-banner h3 .em { color: var(--c-wine); }
+.early-banner p {
+    color: var(--c-text);
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 14px;
+}
+.early-banner p:last-child { margin-bottom: 0; }
+.early-banner strong { color: var(--c-wine-deep); font-weight: 700; }
+
+.early-comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 24px;
+    align-items: stretch;
+    margin-top: 40px;
+}
+.early-box {
+    background: white;
+    border-radius: 16px;
+    padding: 36px 32px;
+    box-shadow: var(--shadow-2);
+}
+.early-box.good { border-top: 4px solid var(--c-gold); }
+.early-box.bad { border-top: 4px solid var(--c-wine); }
+.early-box-label {
+    font-family: var(--serif);
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.early-box.good .early-box-label { color: var(--c-gold); }
+.early-box.bad .early-box-label { color: var(--c-wine); }
+.early-box h4 {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--c-wine-deep);
+    margin-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.early-box p { font-size: 14.5px; color: var(--c-text-soft); line-height: 1.7; margin-bottom: 10px; }
+.early-box strong { color: var(--c-wine-deep); font-weight: 700; }
+.early-arrow {
+    display: flex; align-items: center;
+    font-family: var(--serif);
+    font-size: 40px;
+    color: var(--c-wine);
+    font-weight: 300;
+}
+@media (max-width: 768px) {
+    .early-comparison { grid-template-columns: 1fr; }
+    .early-arrow { transform: rotate(90deg); justify-content: center; }
+}
+
+/* SECTION 06: 진단 흐름 */
+.flow { background: white; }
+.flow-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    position: relative;
+}
+.flow-step {
+    text-align: center;
+    padding: 32px 16px;
+    position: relative;
+}
+.flow-step::after {
+    content: '';
+    position: absolute;
+    top: 56px; right: -8px;
+    width: 16px; height: 2px;
+    background: var(--c-wine-light);
+}
+.flow-step:last-child::after { display: none; }
+.flow-num {
+    font-family: var(--serif);
+    width: 56px; height: 56px;
+    background: linear-gradient(135deg, var(--c-wine) 0%, var(--c-wine-deep) 100%);
+    color: var(--c-cream);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; font-weight: 700;
+    margin: 0 auto 22px;
+    box-shadow: var(--shadow-2);
+}
+.flow-step h5 {
+    font-family: var(--serif);
+    font-size: 15.5px;
+    color: var(--c-wine-deep);
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.flow-step p { font-size: 13px; color: var(--c-text-soft); line-height: 1.6; }
+@media (max-width: 968px) {
+    .flow-steps { grid-template-columns: repeat(2, 1fr); }
+    .flow-step::after { display: none; }
+}
+
+/* SECTION 07: 단계적 치료 */
+.treatment { background: var(--c-cream-warm); }
+.treat-table {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--c-border);
+}
+.treat-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.treat-table thead {
+    background: linear-gradient(135deg, var(--c-wine-deep) 0%, var(--c-wine) 100%);
+    color: white;
+}
+.treat-table th {
+    padding: 18px 22px;
+    text-align: left;
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+.treat-table td {
+    padding: 18px 22px;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--c-text);
+    border-bottom: 1px solid var(--c-border);
+}
+.treat-table tbody tr:last-child td { border-bottom: none; }
+.treat-table tbody tr:hover { background: var(--c-cream-warm); }
+.treat-table .col-status {
+    font-family: var(--serif);
+    font-weight: 700;
+    color: var(--c-wine-deep);
+    font-size: 15.5px;
+    letter-spacing: -0.01em;
+}
+.treat-table .highlight {
+    background: rgba(184,148,31,0.08);
+}
+.treat-table .highlight .col-status { color: var(--c-gold); }
+
+/* SECTION 08: 수술 5가지 */
+.surgery-need { background: white; }
+.surgery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-bottom: 36px;
+}
+.surgery-card {
+    background: white;
+    padding: 30px 26px;
+    border-radius: 14px;
+    border-top: 4px solid var(--c-wine);
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+}
+.surgery-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); border-top-color: var(--c-gold); }
+.surgery-num {
+    font-family: var(--serif);
+    font-size: 14px;
+    color: var(--c-gold);
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.surgery-card h4 {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--c-wine-deep);
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.surgery-card p { font-size: 14px; color: var(--c-text-soft); line-height: 1.7; }
+.surgery-quote {
+    background: linear-gradient(135deg, var(--c-wine-deep) 0%, var(--c-wine) 100%);
+    color: var(--c-cream);
+    border-radius: 14px;
+    padding: 32px 36px;
+    font-family: var(--serif);
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.65;
+    text-align: center;
+    box-shadow: var(--shadow-3);
+}
+.surgery-quote strong { color: var(--c-gold-light); font-style: normal; font-weight: 700; }
+
+/* SECTION 09: 본원 차별점 */
+.diff {
+    background: linear-gradient(135deg, var(--c-cream) 0%, var(--c-cream-warm) 100%);
+}
+.diff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+.diff-card {
+    background: white;
+    padding: 32px 28px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+    border-top: 3px solid var(--c-wine);
+}
+.diff-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-3); border-top-color: var(--c-gold); }
+.diff-icon {
+    width: 50px; height: 50px;
+    background: linear-gradient(135deg, var(--c-wine) 0%, var(--c-wine-deep) 100%);
+    color: white;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 20px; font-weight: 700;
+    margin-bottom: 18px;
+}
+.diff-card h5 {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--c-wine-deep);
+    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.diff-card p { font-size: 14.5px; color: var(--c-text-soft); line-height: 1.75; }
+.diff-card p strong { color: var(--c-text); font-weight: 700; }
+
+/* SECTION 10: FAQ */
+.faq { background: var(--c-cream-warm); }
+.faq-list { margin-top: 32px; }
+.faq-item {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: all .25s;
+    border: 1px solid var(--c-border);
+}
+.faq-item:hover { box-shadow: var(--shadow-2); border-color: var(--c-wine-light); }
+.faq-q {
+    padding: 22px 28px;
+    cursor: pointer;
+    font-family: var(--serif);
+    font-weight: 700;
+    color: var(--c-wine-deep);
+    font-size: 16.5px;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 16px;
+    line-height: 1.5;
+    user-select: none;
+    list-style: none;
+}
+.faq-q::-webkit-details-marker { display: none; }
+.faq-q::after {
+    content: '+';
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--c-gold);
+    transition: transform .25s;
+    flex-shrink: 0;
+    font-family: var(--sans);
+}
+.faq-item[open] .faq-q::after { transform: rotate(45deg); }
+.faq-a {
+    padding: 0 28px 24px;
+    color: var(--c-text);
+    font-size: 15px;
+    line-height: 1.9;
+}
+.faq-a strong { color: var(--c-wine-deep); font-weight: 700; }
+
+/* CTA FINAL */
+.cta-final {
+    background: linear-gradient(135deg, var(--c-wine) 0%, var(--c-wine-deep) 100%);
+    color: var(--c-cream);
+    text-align: center;
+    padding: 120px 24px;
+    position: relative;
+    overflow: hidden;
+}
+.cta-final::before {
+    content: '';
+    position: absolute;
+    top: -10%; left: -5%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(184,148,31,0.20), transparent 70%);
+    border-radius: 50%;
+}
+.cta-final::after {
+    content: '';
+    position: absolute;
+    bottom: -20%; right: -10%;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(197,48,48,0.15), transparent 70%);
+    border-radius: 50%;
+}
+.cta-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 2; }
+.cta-quote {
+    font-family: var(--serif);
+    font-size: clamp(26px, 3.5vw, 40px);
+    font-weight: 600;
+    line-height: 1.45;
+    color: white;
+    margin-bottom: 24px;
+    letter-spacing: -0.025em;
+}
+.cta-quote .em { color: var(--c-gold-light); }
+.cta-text {
+    font-size: 17px;
+    color: rgba(250,246,242,0.92);
+    max-width: 620px; margin: 0 auto 48px;
+    line-height: 1.8;
+}
+.cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cta-buttons .btn-primary {
+    background: var(--c-gold);
+    box-shadow: 0 12px 40px rgba(184,148,31,0.40);
+}
+.cta-buttons .btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: rgba(255,255,255,0.45);
+}
+.cta-buttons .btn-secondary:hover {
+    background: white;
+    color: var(--c-wine-deep);
+}
+
+/* FOOTER */
+.footer {
+    background: #14080A;
+    color: rgba(250,246,242,0.75);
+    padding: 56px 24px 36px;
+}
+.footer-inner {
+    max-width: 1180px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 56px;
+}
+.footer h6 {
+    font-family: var(--serif);
+    color: var(--c-gold-light);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+}
+.footer-brand .logo { color: white; margin-bottom: 14px; font-size: 21px; }
+.footer-brand .logo-mark { background: var(--c-gold); color: white; }
+.footer-brand p { font-size: 13.5px; line-height: 1.75; color: rgba(250,246,242,0.65); }
+.footer-info p { font-size: 13.5px; line-height: 1.95; }
+.footer-info p strong { color: var(--c-cream); font-weight: 500; }
+.footer-bottom {
+    max-width: 1180px;
+    margin: 48px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid rgba(250,246,242,0.10);
+    text-align: center;
+    font-size: 12px;
+    color: rgba(250,246,242,0.50);
+    line-height: 1.75;
+}
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 36px; }
+    section { padding: 70px 20px; }
+    .hero { padding: 70px 20px 56px; }
+}
+
+.placeholder {
+    background: linear-gradient(135deg, #FFF3D6, #FFE2A0);
+    color: #6B4D00;
+    padding: 1px 8px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-weight: 600;
+    font-family: var(--sans);
+    border: 1px dashed var(--c-gold);
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    척추 전방전위증 진단 받으셨나요? <strong>미루면 더 큰 수술</strong>입니다 · 신경외과 전문의 김진균 원장
+</div>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <div class="logo-mark">희</div>
+            <div>
+                <div>희망찬병원</div>
+                <div class="logo-sub">SPONDYLOLISTHESIS · 척추 전방전위증</div>
+            </div>
+        </div>
+        <a href="tel:placeholder" class="header-cta">
+            📞 진료 예약 · <span class="placeholder">전화번호</span>
+        </a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <h1>
+            척추가 앞으로 <span class="accent">밀려난 상태</span><br>
+            <span class="accent">미루면 더 큰 수술</span>입니다
+        </h1>
+        <p class="hero-sub">
+            척추전방전위증은 위쪽 척추뼈가 아래쪽보다 앞으로 미끄러져 나간 상태입니다. <strong>1분절 유합으로 끝낼 시점의 수술이 3분절을 유합해야 하는 때보다 훨씬 좋은 결과</strong>를 만듭니다.<br>
+            본원이 Meyerding 단계별로 정확히 평가하고, 협부형(청소년 분리증 진행)·퇴행성(50대+ 여성 협착증 동반) 모두 동반 평가로 정확히 진단합니다. 신경외과 전문의 김진균 원장 직접 진료.
+        </p>
+        <div class="hero-cta">
+            <a href="tel:16003415" class="btn-primary">📞 진료 예약 · 상담</a>
+            <a href="#meyerding" class="btn-secondary">Meyerding 단계 보기 →</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-num">5<span class="small">단계</span></div>
+                <div class="stat-label">Meyerding 분류<br>(전위 정도 평가)</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">15<span class="small">%</span></div>
+                <div class="stat-label">분리증에서 진행<br>(★ 13-L 자연 연결)</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">4~6<span class="small">배</span></div>
+                <div class="stat-label">퇴행성 — 여성 빈도<br>(★ 50대+ 여성)</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">80~95<span class="small">%</span></div>
+                <div class="stat-label">1-2분절 유합 만족도<br>(적기 수술 시)</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 01: 분리증이 뭔가요 -->
+<section class="what">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 01 · 정확한 의학 교육</div>
+        <h2 class="section-title">척추가 앞으로 미끄러진 상태입니다</h2>
+        <div class="what-banner">
+            <h3>"척추가 밀려났다고 들었어요" — 정확한 의미부터</h3>
+            <p>척추 전방전위증은 위쪽 척추뼈가 아래쪽 척추뼈보다 <strong>앞으로 밀려나간 상태</strong>를 말합니다. 척추체의 정상 정렬이 어긋난 것입니다.</p>
+            <p>단순한 통증이 아니라 <strong>진행성 구조 변형</strong>입니다. 한 번 미끄러진 척추는 시간이 갈수록 더 진행될 가능성이 있으며, 신경 압박이 점점 심해질 수 있습니다.</p>
+            <p>따라서 본원에서는 <strong>Meyerding 단계 정확한 평가 + 정기 추적 + 적기 수술</strong>이 핵심 진료 원칙입니다.</p>
+        </div>
+        <div class="what-pillars">
+            <div class="what-pillar">
+                <div class="what-pillar-tag">구조 01</div>
+                <h4>벽돌 일렬이 무너진 상태</h4>
+                <p>척추는 벽돌(척추체)이 일렬로 쌓인 구조입니다. <strong>위쪽 벽돌 하나가 앞으로 어긋난 상태</strong>가 전방전위증입니다.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">압박 02</div>
+                <h4>신경 압박 진행</h4>
+                <p>어긋난 위쪽 척추가 <strong>신경(척수·신경근)을 압박</strong>합니다. 다리 저림·근력 약화·보행 한계가 나타납니다.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">진행 03</div>
+                <h4>시간이 갈수록 진행</h4>
+                <p>척추가 한 번 어긋나면 <strong>시간이 갈수록 더 진행</strong>됩니다. 디스크 손상·인대 약화·근육 약화가 가속됩니다.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">평가 04</div>
+                <h4>Meyerding 단계</h4>
+                <p>전위 정도를 <strong>1~5단계로 분류</strong>합니다. 단계별로 치료 방향이 완전히 다르므로 정확한 평가가 결정적입니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 02: 두 환자 풀 -->
+<section class="pools">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 02 · 두 가지 유형</div>
+        <h2 class="section-title">협부형 / 퇴행성 — 두 가지 유형</h2>
+        <p class="section-lead">
+            전방전위증은 발생 원인과 환자 특성에 따라 두 가지 유형으로 나뉩니다. 본원은 두 유형 모두에게 맞춤 진료를 제공합니다.
+        </p>
+        <div class="pools-grid">
+            <div class="pool-card">
+                <div class="pool-num">01</div>
+                <h3>협부형 전방전위증<br>(Isthmic)</h3>
+                <div class="pool-tag">청소년·젊은 성인 · L5-S1 · ★ 13-L 시너지</div>
+                <ul class="pool-list">
+                    <li><strong>원인:</strong> 분리증(13-L)의 협부 결손에서 진행 (약 15%)</li>
+                    <li><strong>부위:</strong> 주로 L5-S1 (제5요추-천추)</li>
+                    <li><strong>연령:</strong> 청소년·젊은 성인 (체조·역도·다이빙 선수 다수)</li>
+                    <li><strong>증상:</strong> 만성 요통 / 뒤로 젖히면 아픔 / 일부에서 다리 저림</li>
+                    <li><strong>★ 본원 차별점:</strong> 13-L 분리증과 양방향 — 진행 추적 + 적기 수술 / <strong>협부 직접 수복술 가능 케이스 평가</strong> (운동 범위 보존)</li>
+                </ul>
+            </div>
+            <div class="pool-card degenerative">
+                <div class="pool-num">02</div>
+                <h3>퇴행성 전방전위증<br>(Degenerative)</h3>
+                <div class="pool-tag">50대+ 여성 · L4-L5 · ★ 가장 큰 환자 풀</div>
+                <ul class="pool-list">
+                    <li><strong>원인:</strong> 노화로 인한 인대 약화·관절 변형·디스크 약화</li>
+                    <li><strong>부위:</strong> 주로 L4-L5 (제4-5요추)</li>
+                    <li><strong>연령:</strong> 50대 이상 / ★ <strong>여성에서 4~6배 흔함</strong> (폐경 후 호르몬 영향)</li>
+                    <li><strong>증상:</strong> ★ <strong>협착증 동반이 흔함</strong> — 보행 한계·다리 저림·간헐성 파행</li>
+                    <li><strong>★ 본원 차별점:</strong> 50대+ 여성 핵심 환자 풀 / 협착증 동반 평가 / <strong>13-F 유합술 가장 큰 적응증</strong> / 가족 검색 응대 / 16번 내과 협진</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 03: 증상 -->
+<section class="symptoms">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 03 · 증상 패턴</div>
+        <h2 class="section-title">전방전위증의 증상</h2>
+        <p class="section-lead">
+            전방전위증은 단계와 동반 질환에 따라 다양한 증상을 보입니다. 다음 증상이 있으면 본원에서 정확한 검사를 받으세요.
+        </p>
+        <div class="symptoms-grid">
+            <div class="symptom-card">
+                <div class="symptom-icon">01</div>
+                <h5>만성 요통</h5>
+                <p>가장 흔한 증상. <strong>자세 변화에 따라 통증 변동</strong>. 앉으면 편하고 서면 아픈 패턴이 흔합니다.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">02</div>
+                <h5>★ 다리 저림·통증</h5>
+                <p>신경 압박 시 나타나는 핵심 증상. <strong>협착증 동반의 신호</strong>입니다. 한쪽 또는 양쪽 다리에 나타납니다.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">03</div>
+                <h5>★ 보행 한계</h5>
+                <p><strong>100미터 걷고 쉬어야 함 (간헐성 파행)</strong> — 퇴행성 전방전위증·협착증 동반의 전형적 증상.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">04</div>
+                <h5>뒤로 젖히면 아픔</h5>
+                <p><strong>협부형 전방전위증의 특징적 증상</strong>. 13-L 분리증과 동일하게 과신전 시 통증이 악화됩니다.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">05</div>
+                <h5>다리 마비·근력 약화</h5>
+                <p>진행된 경우의 신경 손상 증상. <strong>발목·발가락 힘 빠짐, 감각 저하</strong>가 나타나면 즉시 수술 평가 필요.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">06</div>
+                <h5>자세 변화 — 굽은 허리</h5>
+                <p>진행된 경우 척추 정렬이 흐트러져 <strong>허리가 굽거나 골반이 앞으로 기울어짐</strong>이 나타납니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 04: Meyerding 단계 (★ 핵심) -->
+<section class="meyerding" id="meyerding">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 04 · Meyerding 단계 — 가장 중요</div>
+        <h2 class="section-title">Meyerding 1~5단계 — 정확한 평가가 결정적</h2>
+        <p class="section-lead">
+            전방전위증의 정도는 <strong>Meyerding 분류</strong>로 1단계부터 5단계까지 나뉩니다. 단계별로 치료 방향이 완전히 다릅니다. 본원에서 굴곡·신전 X-ray + CT + MRI로 정확한 단계를 평가합니다.
+        </p>
+        <div class="meyerding-grid">
+            <div class="meyerding-stage">
+                <div class="stage-num">1</div>
+                <div class="stage-label">경미</div>
+                <div class="stage-percent">전위 25% 이하</div>
+                <div class="stage-treat">대부분 비수술 + 정기 추적</div>
+            </div>
+            <div class="meyerding-stage">
+                <div class="stage-num">2</div>
+                <div class="stage-label">중등도</div>
+                <div class="stage-percent">전위 25~50%</div>
+                <div class="stage-treat">증상·진행 따라 수술 검토</div>
+            </div>
+            <div class="meyerding-stage severe">
+                <div class="stage-num">3</div>
+                <div class="stage-label">심함</div>
+                <div class="stage-percent">전위 50~75%</div>
+                <div class="stage-treat">수술 필요한 경우 많음</div>
+            </div>
+            <div class="meyerding-stage severe">
+                <div class="stage-num">4</div>
+                <div class="stage-label">매우 심함</div>
+                <div class="stage-percent">전위 75~100%</div>
+                <div class="stage-treat">수술 필요</div>
+            </div>
+            <div class="meyerding-stage severe">
+                <div class="stage-num">5</div>
+                <div class="stage-label">척추탈구</div>
+                <div class="stage-percent">전위 100% 이상</div>
+                <div class="stage-treat">반드시 수술</div>
+            </div>
+        </div>
+        <div class="meyerding-note">
+            ★ 본원은 <strong>굴곡·신전 X-ray로 척추 불안정성</strong>까지 평가합니다. 누워서 찍은 X-ray만으로는 불충분 — 자세 변화 시 미끄러짐 정도가 달라질 수 있기 때문. <strong>모든 환자에게 같은 치료를 적용하지 않습니다.</strong>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 05: 조기 수술 (★ 진행 경고) -->
+<section class="early">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 05 · 조기 수술의 중요성</div>
+        <h2 class="section-title">"미루면 더 큰 수술"이 됩니다</h2>
+        <p class="section-lead">
+            전방전위증이 진행하면 척추가 더 미끄러지고, 신경 압박이 심해집니다. 본원에서 적기 수술을 평가합니다.
+        </p>
+        <div class="early-banner">
+            <h3>"<span class="em">1분절 유합으로 끝낼 시점</span>의 수술이 결과를 좋게 만듭니다"</h3>
+            <p>전방전위증이 진행하면 시간이 갈수록 <strong>수술 분절이 1분절 → 2분절 → 3분절로 늘어날 수 있습니다</strong>. 신경 손상이 진행되면 수술해도 완전 회복이 어려워집니다. 인접 척추까지 변형되어 더 큰 수술이 필요해집니다.</p>
+            <p>본원에서 정기 추적으로 진행 여부를 확인하고, <strong>적기에 수술을 결정</strong>합니다. 비수술 치료 6개월~1년 효과가 없을 때가 흔히 그 시점입니다.</p>
+        </div>
+        <div class="early-comparison">
+            <div class="early-box good">
+                <div class="early-box-label">적기 수술 — 좋은 결과</div>
+                <h4>1분절 유합으로 해결</h4>
+                <p><strong>분절 수:</strong> 1개 분절만 고정</p>
+                <p><strong>회복:</strong> 입원 5~7일 / 4~6주 직장 복귀</p>
+                <p><strong>신경 손상:</strong> 진행 전 — 회복 양호</p>
+                <p><strong>일상:</strong> 거의 정상 활동 가능</p>
+                <p><strong>만족도:</strong> 80~95%</p>
+            </div>
+            <div class="early-arrow">→</div>
+            <div class="early-box bad">
+                <div class="early-box-label">늦은 수술 — 결과 악화</div>
+                <h4>3분절 유합 필요</h4>
+                <p><strong>분절 수:</strong> 인접 분절까지 고정</p>
+                <p><strong>회복:</strong> 입원 길어짐 / 직장 복귀 지연</p>
+                <p><strong>신경 손상:</strong> 진행 — 완전 회복 어려움</p>
+                <p><strong>일상:</strong> 일부 활동 제한</p>
+                <p><strong>만족도:</strong> 떨어짐</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 06: 진단 흐름 -->
+<section class="flow">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 06 · 본원 진료 흐름</div>
+        <h2 class="section-title">본원 진료 흐름 5단계</h2>
+        <p class="section-lead">
+            본원은 Meyerding 단계 평가 + 협부형/퇴행성 구분 + 협착증·디스크 동반 평가를 5단계로 진행합니다.
+        </p>
+        <div class="flow-steps">
+            <div class="flow-step">
+                <div class="flow-num">01</div>
+                <h5>정밀 문진</h5>
+                <p>통증 시작 시기 · 다리 증상 · 보행 거리 · 가족력 · 동반 질환</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">02</div>
+                <h5>신체 검사</h5>
+                <p>신경 검사 · 근력 평가 · 보행 평가</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">03</div>
+                <h5>영상 검사</h5>
+                <p>★ 굴곡·신전 X-ray · CT · MRI — 본원 즉시</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">04</div>
+                <h5>★ 단계·동반 평가</h5>
+                <p>Meyerding 단계 + 협부형/퇴행성 + 협착증·디스크</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">05</div>
+                <h5>맞춤 치료</h5>
+                <p>비수술 · 보조기 · 유합술 · 협부 수복술</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 07: 단계적 치료 -->
+<section class="treatment">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 07 · 단계적 치료</div>
+        <h2 class="section-title">환자별 단계적 치료 방향</h2>
+        <p class="section-lead">
+            전방전위증 치료는 단계와 증상에 따라 단계적으로 결정됩니다. 본원에서 환자별로 평가합니다.
+        </p>
+        <div class="treat-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 28%;">환자 상태</th>
+                        <th style="width: 30%;">치료 방향</th>
+                        <th>본원 안내</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-status">1단계 무증상</td>
+                        <td>정기 추적 관찰</td>
+                        <td>6개월~1년 간격 X-ray로 진행 확인</td>
+                    </tr>
+                    <tr>
+                        <td class="col-status">1~2단계 가벼운 통증</td>
+                        <td>약물 + 일상 조정</td>
+                        <td>과신전·중량 운동 피하기 / 걷기·수영</td>
+                    </tr>
+                    <tr>
+                        <td class="col-status">청소년 협부형</td>
+                        <td>보조기 + 활동 제한</td>
+                        <td>★ 13-L과 양방향 — 골유합 가능 케이스</td>
+                    </tr>
+                    <tr>
+                        <td class="col-status">중등도 통증</td>
+                        <td>신경차단술 · 경막외 주사</td>
+                        <td>통증 조절 + 정기 추적</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 신경 증상 동반</td>
+                        <td>MRI 평가 후 수술 검토</td>
+                        <td><strong>다리 저림·근력 약화·보행 한계 시</strong></td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 비수술 6개월 효과 없음</td>
+                        <td>★ 수술 검토</td>
+                        <td><strong>본원 영업 핵심 영입 풀</strong></td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 3단계 이상</td>
+                        <td>★ 유합술 적극 검토</td>
+                        <td><strong>본원 김진균 원장 다년 경험</strong></td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 4~5단계</td>
+                        <td>유합술 필수</td>
+                        <td>즉시 본원 정밀 평가</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 08: 수술 5가지 -->
+<section class="surgery-need">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 08 · 수술 적응증</div>
+        <h2 class="section-title">수술이 필요한 5가지 경우</h2>
+        <p class="section-lead">
+            전방전위증의 수술은 비수술 한계 시 검토합니다. 본원이 적기에 평가하는 5가지 상황입니다.
+        </p>
+        <div class="surgery-grid">
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 01</div>
+                <h4>비수술 6개월 이상 효과 없음</h4>
+                <p>약·주사·물리치료 충분히 시도했는데도 통증 지속 — 일상생활 힘듦.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 02</div>
+                <h4>신경 증상 동반</h4>
+                <p>다리 저림·근력 약화·보행 장애·간헐성 파행 — 협착증 동반 평가 후 적극 검토.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 03</div>
+                <h4>★ 전방전위증 진행</h4>
+                <p>추적 검사에서 미끄러짐 진행 — <strong>13-F 유합술 가장 큰 적응증</strong>.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 04</div>
+                <h4>직업상 무거운 일</h4>
+                <p>고철·기계 가공·농사 등 무거운 물건을 항시 다루는 직업 — 노동 능력 보존 필요.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 05</div>
+                <h4>Meyerding 3단계 이상</h4>
+                <p>신경 압박 위험이 크고 진행 가능성 — 더 큰 수술이 되기 전 적기 평가.</p>
+            </div>
+        </div>
+        <div class="surgery-quote">
+            "<strong>1분절로 끝낼 수 있는 시점</strong>의 수술이 결과를 좋게 만듭니다.<br>본원에서 적기 평가 후 결정합니다."
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 09: 본원 차별점 -->
+<section class="diff">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 09 · 본원 차별점</div>
+        <h2 class="section-title">왜 희망찬병원인가</h2>
+        <p class="section-lead">
+            본원은 척추 전방전위증을 정확히 진단하고 적기에 치료하는 의료기관입니다. 본원 척추 영업 트라이앵글(13-F·13-L·13-5)의 핵심 영역입니다.
+        </p>
+        <div class="diff-grid">
+            <div class="diff-card">
+                <div class="diff-icon">01</div>
+                <h5>신경외과 전문의<br>직접 진료</h5>
+                <p>김진균 원장이 전방전위증 환자를 처음부터 끝까지 직접 진료합니다. <strong>다년간 척추 유합술 경험</strong>으로 정확한 판단을 제공합니다.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">02</div>
+                <h5>★ Meyerding 단계 평가<br>정확한 진단</h5>
+                <p><strong>굴곡·신전 X-ray + CT + MRI</strong> 정밀 측정으로 1~5단계 정확한 평가. 자세 변화 시 불안정성까지 확인합니다.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">03</div>
+                <h5>★ 협부형/퇴행성 구분<br>두 유형 모두</h5>
+                <p>두 가지 유형을 정확히 구분하여 <strong>맞춤 진료</strong>합니다. 청소년 협부형은 협부 직접 수복술도 평가합니다.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">04</div>
+                <h5>★ 동반 평가<br>전위증+협착증+디스크</h5>
+                <p>본원의 가장 큰 차별점. <strong>전방전위증 + 협착증 + 디스크 동시 평가</strong>로 복잡한 통증의 정확한 원인을 진단합니다.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">05</div>
+                <h5>★ 적기 수술 영업<br>"더 큰 수술 막기"</h5>
+                <p>1분절 유합 가능 시점의 수술 평가. <strong>3분절을 유합해야 하는 늦은 수술을 막아드립니다.</strong></p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">06</div>
+                <h5>★ 비수술 한계 영입<br>유합술 적기 평가</h5>
+                <p>다른 의료기관에서 비수술 치료 6개월~1년 받았는데 효과가 없는 환자를 적극 영입. <strong>수술 적기 정밀 평가</strong>.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">07</div>
+                <h5>★ 가족 동반 상담<br>고령자 안심</h5>
+                <p>퇴행성 환자(50대+ 여성)는 가족이 함께 결정. <strong>보호자 동반 상담 환영</strong>. 80대도 안전한 척추 유합술 경험.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">08</div>
+                <h5>★ 13-F 유합술 시너지<br>가장 큰 영업 영역</h5>
+                <p>전방전위증 = 유합술의 가장 큰 적응증. <strong>본원 김진균 원장 다년 척추 유합 경험</strong>으로 최적 수술 방법 선택.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 10: FAQ -->
+<section class="faq">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 10 · 자주 묻는 질문</div>
+        <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
+        <p class="section-lead">
+            척추 전방전위증에 대해 환자분들이 자주 묻는 15가지 질문을 정리했습니다.
+        </p>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary class="faq-q">Q1. 전방전위증은 척추가 어떻게 된 상태인가요?</summary>
+                <div class="faq-a">
+                    위쪽 척추뼈가 아래쪽 척추뼈보다 <strong>앞으로 밀려나간 상태</strong>입니다. 척추체의 정상 정렬이 어긋난 것으로, 시간이 갈수록 더 진행될 가능성이 있습니다. 단순한 통증이 아니라 <strong>진행성 구조 변형</strong>입니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q2. 전방전위증은 두 종류라고 들었는데 차이가 뭔가요?</summary>
+                <div class="faq-a">
+                    <strong>협부형</strong>(분리증에서 진행, 청소년·젊은 성인, L5-S1)과 <strong>퇴행성</strong>(노화, 50대+ 여성, L4-L5) 두 종류가 있습니다. 본원에서 정확히 구분해 맞춤 진료합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q3. Meyerding 단계가 뭔가요?</summary>
+                <div class="faq-a">
+                    전방전위증의 미끄러짐 정도를 <strong>1~5단계로 분류</strong>하는 방식입니다. 1단계는 25% 이하, 5단계는 척추탈구입니다. 단계별로 치료 방향이 완전히 다르므로 정확한 평가가 결정적입니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q4. 진단을 받았는데 꼭 수술해야 하나요?</summary>
+                <div class="faq-a">
+                    아닙니다. <strong>1~2단계는 비수술 치료</strong>로 관리 가능합니다. 3단계 이상이거나 신경 증상이 진행되거나, 비수술 6개월~1년 효과 없을 때 수술을 검토합니다. 본원에서 적기 평가 후 결정합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q5. "미루면 더 큰 수술"이라는데 정말인가요?</summary>
+                <div class="faq-a">
+                    네. 전방전위증이 진행하면 <strong>수술 분절이 1분절 → 2분절 → 3분절로 늘어날 수 있습니다</strong>. 신경 손상이 진행되면 회복도 어려워집니다. 1분절 유합으로 끝낼 시점의 수술이 결과가 좋습니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q6. 비수술 치료를 6개월 받았는데 효과가 없어요. 수술해야 하나요?</summary>
+                <div class="faq-a">
+                    비수술 치료 6개월~1년 후 효과가 없다면 <strong>수술 재평가가 필요합니다</strong>. 본원에서 정밀 영상 검사로 동반 질환 평가 후 수술 적기를 결정합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q7. 어머니(60대 여성)가 전방전위증 진단을 받았어요.</summary>
+                <div class="faq-a">
+                    50대+ 여성의 퇴행성 전방전위증은 <strong>협착증 동반이 흔합니다</strong>. 보행 한계·다리 저림이 주된 증상입니다. 본원에서 동반 평가 + 16번 내과 협진으로 안전한 수술을 결정합니다. <strong>보호자 동반 상담을 환영</strong>합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q8. 80대 부모님도 수술이 가능한가요?</summary>
+                <div class="faq-a">
+                    본원은 <strong>80대 척추 유합술 경험</strong>이 다년간 있습니다. 본원 16번 내과와 협진해 동반 질환을 평가한 후 안전 결정합니다. 단, 모든 환자가 수술 가능한 것은 아니며 의료진이 환자별로 판단합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q9. 청소년인데 분리증이 전방전위증으로 진행됐어요.</summary>
+                <div class="faq-a">
+                    협부형 전방전위증입니다. <strong>성장기 조기 진단 시 보조기 + 활동 제한 + 정기 추적</strong>이 우선입니다. 진행이 멈추지 않거나 신경 증상이 있으면 수술을 검토합니다. 청소년 환자는 <strong>협부 직접 수복술</strong>(운동 범위 보존)도 가능한 케이스가 있습니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q10. 보행이 점점 어려워져요. 협착증이 같이 있는 건가요?</summary>
+                <div class="faq-a">
+                    <strong>퇴행성 전방전위증은 협착증 동반이 흔합니다</strong>. 신경 통로가 좁아져 다리 저림·100미터 보행 한계·앉으면 편함 같은 증상이 나타납니다. 본원에서 MRI로 동반 평가합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q11. 1분절 유합으로 정말 일상이 정상인가요?</summary>
+                <div class="faq-a">
+                    <strong>1~2분절 유합은 일상에 거의 영향을 주지 않습니다</strong>. 척추는 여러 분절로 이루어져 일부가 고정되어도 나머지가 보상합니다. 수술 후 걷기·계단·등산·수영·골프 등 대부분의 활동이 가능합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q12. 골다공증이 심한데 수술이 가능한가요?</summary>
+                <div class="faq-a">
+                    가능합니다. <strong>시멘트 보강(VP augmentation)</strong>으로 나사 고정력을 보강하고 골다공증 약물 치료를 병행합니다. 본원 진료 시 골밀도 검사로 정확한 평가 후 결정합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q13. 수술 후 언제 일상 복귀할 수 있나요?</summary>
+                <div class="faq-a">
+                    입원 5~7일, <strong>사무직 직장 복귀 4~6주</strong>, 육체 노동 3~6개월 후 점진적 복귀. 환자별 차이가 있어 의료진과 상의합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q14. 전방전위증 환자가 피해야 할 것은?</summary>
+                <div class="faq-a">
+                    <strong>무거운 물건 들기·과신전(허리 뒤로 젖히기)·급격한 비틀기</strong>를 피하세요. 데드리프트·역도·체조의 브릿지 동작은 권장하지 않습니다. 걷기·수영·자전거는 괜찮습니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q15. 비용·실비 청구는 어떻게 되나요?</summary>
+                <div class="faq-a">
+                    건강보험이 적용됩니다. 본원에서 진단서·소견서·세부내역서를 발급해 실손보험 청구가 가능합니다. <strong>산재 환자는 산재 진단서 발급</strong>도 가능합니다.
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+    <div class="cta-inner">
+        <p class="cta-quote">
+            "<span class="em">미루면 더 큰 수술</span>입니다.<br>
+            1분절 유합으로 끝낼 시점에 — <span class="em">본원에서 평가</span>받으세요."
+        </p>
+        <p class="cta-text">
+            전방전위증 진단 받으셨나요? Meyerding 단계 + 협부형/퇴행성 + 협착증 동반 평가로 정확히 진단합니다.<br>
+            신경외과 전문의 김진균 원장 직접 진료 · 본원 13-F 유합술 다년 경험<br>
+            동탄·화성·평택권 희망찬병원
+        </p>
+        <div class="cta-buttons">
+            <a href="tel:16003415" class="btn-primary">📞 진료 예약 · <span class="16003415">전화번호</span></a>
+            <a href="https://map.naver.com/v5/search/희망찬병원" class="btn-secondary">📍 길찾기 · <span class="placeholder">위치</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo">
+                <div class="logo-mark">희</div>
+                <div>희망찬병원</div>
+            </div>
+            <p>척추 신경외과 · 신경외과 전문의 김진균 원장 직접 진료. 동탄·화성·평택권 종합 병원. 전방전위증 정밀 진단 (Meyerding 단계 + 협부형/퇴행성 구분 + 협착증·디스크 동반 평가) / 척추 유합술 다년 경험.</p>
+        </div>
+        <div class="footer-info">
+            <h6>진료 안내</h6>
+            <p>
+                <strong>주소:</strong> <span class="placeholder">경기도 화성시 병점중앙로 174</span><br>
+                <strong>전화:</strong> <span class="placeholder">1600-3415</span><br>
+                <strong>진료시간:</strong> <span class="placeholder">평일 09:00~18:00 / 토 09:00~13:00</span><br>
+                <strong>휴진:</strong> <span class="placeholder">일요일·공휴일</span>
+            </p>
+        </div>
+        <div class="footer-info">
+            <h6>의료진</h6>
+            <p>
+                <strong>대표원장 김진균</strong><br>
+                <span class="placeholder">신경외과 전문의 약력</span><br>
+                <strong>유튜브:</strong> 털보의사<br>
+                <strong>전문 분야:</strong> 척추 신경외과<br>
+                · 전방전위증 정밀 진단<br>
+                · Meyerding 단계 평가<br>
+                · 척추 유합술 · 협부 수복술
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        본 페이지는 의료 정보 제공 목적이며, 진료는 전문의의 직접 검사와 판단이 필요합니다.<br>
+        의료광고심의필 · 전방전위증 진단·치료는 환자별 정밀 검사 후 의료진과 충분한 상담을 거쳐 결정됩니다.<br>
+        © 희망찬병원 · 2026
+    </div>
+</footer>
+
+</body>
+</html>
