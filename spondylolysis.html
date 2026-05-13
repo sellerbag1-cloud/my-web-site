@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>척추분리증 (Spondylolysis) | 희망찬병원 — 허리 통증의 숨은 주범, 정확한 진단</title>
+<meta name="description" content="만성 요통인데 디스크는 정상이라고 들으셨나요? 척추분리증일 수 있습니다. 허리뼈 6개가 아니라 고리(협부)가 끊어진 상태입니다. 분리증+디스크+전방전위증 동반 평가 / 신경외과 전문의 김진균 원장 / 동탄·화성·평택권 희망찬병원">
+<meta name="keywords" content="척추분리증, 분리증, spondylolysis, 협부 결손, 청소년 분리증, 운동선수 분리증, 분리증 디스크, 분리증 전방전위증, 분리증 수술, 동탄 분리증, 김진균 분리증">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+/* ============================================================
+   13-L 척추분리증 — 진보라 + 골드 + 짙은 청록 (13-F·13-S와 구분)
+   Color: #6B46C1 (진보라), #553C9A (다크 보라), #B8941F (골드),
+          #00867D (청록 액센트), #FAF8F5 (크림), #1A1825 (다크)
+   Font: Noto Serif KR + Pretendard
+============================================================ */
+:root {
+    --c-purple: #6B46C1;
+    --c-purple-deep: #553C9A;
+    --c-purple-light: #9F7AEA;
+    --c-gold: #B8941F;
+    --c-gold-light: #D4AB35;
+    --c-teal: #00867D;
+    --c-teal-light: #38B2AC;
+    --c-cream: #FAF8F5;
+    --c-cream-warm: #F5EFE6;
+    --c-dark: #1A1825;
+    --c-text: #2D2A3D;
+    --c-text-soft: #4A4560;
+    --c-text-muted: #6B6680;
+    --c-border: #DDD6E8;
+
+    --serif: 'Noto Serif KR', serif;
+    --sans: 'Pretendard', -apple-system, sans-serif;
+
+    --shadow-1: 0 1px 3px rgba(107,70,193,0.08), 0 1px 2px rgba(107,70,193,0.06);
+    --shadow-2: 0 4px 16px rgba(107,70,193,0.12), 0 2px 8px rgba(107,70,193,0.08);
+    --shadow-3: 0 16px 48px rgba(107,70,193,0.20), 0 8px 24px rgba(107,70,193,0.12);
+    --shadow-gold: 0 8px 24px rgba(184,148,31,0.22);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: var(--sans);
+    color: var(--c-text);
+    background: var(--c-cream);
+    line-height: 1.75;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* ============ TOP BAR ============ */
+.topbar {
+    background: var(--c-purple-deep);
+    color: var(--c-cream);
+    padding: 9px 0;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.topbar strong { color: var(--c-gold-light); font-weight: 600; }
+
+/* ============ HEADER ============ */
+.header {
+    background: rgba(250,248,245,0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--c-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 14px 0;
+}
+.header-inner {
+    max-width: 1180px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.logo {
+    font-family: var(--serif);
+    font-size: 22px; font-weight: 700;
+    color: var(--c-purple-deep);
+    letter-spacing: -0.025em;
+    display: flex; align-items: center; gap: 11px;
+}
+.logo-mark {
+    width: 38px; height: 38px;
+    background: linear-gradient(135deg, var(--c-purple) 0%, var(--c-purple-deep) 100%);
+    color: var(--c-cream);
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 10px;
+    font-family: var(--serif);
+    font-size: 17px; font-weight: 700;
+    box-shadow: var(--shadow-1);
+}
+.logo-sub { font-size: 11px; color: var(--c-text-muted); letter-spacing: 0.05em; margin-top: 2px; font-family: var(--sans); }
+.header-cta {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--c-gold);
+    color: white;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: var(--shadow-gold);
+    transition: all .2s;
+}
+.header-cta:hover { background: #9C7E1A; transform: translateY(-1px); }
+
+/* ============ HERO ============ */
+.hero {
+    background:
+        radial-gradient(ellipse at top right, rgba(159,122,234,0.18), transparent 50%),
+        radial-gradient(ellipse at bottom left, rgba(184,148,31,0.10), transparent 60%),
+        linear-gradient(180deg, var(--c-cream) 0%, var(--c-cream-warm) 100%);
+    padding: 100px 24px 80px;
+    position: relative;
+    overflow: hidden;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -10%; right: -8%;
+    width: 480px; height: 480px;
+    background: radial-gradient(circle, rgba(107,70,193,0.12), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.hero-inner { max-width: 1180px; margin: 0 auto; position: relative; z-index: 2; }
+.hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(107,70,193,0.12);
+    color: var(--c-purple-deep);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 13px; font-weight: 600;
+    margin-bottom: 28px;
+    border: 1px solid rgba(107,70,193,0.25);
+}
+.hero-tag::before {
+    content: ''; width: 7px; height: 7px;
+    background: var(--c-gold); border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(184,148,31,0.25);
+}
+.hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(34px, 5.2vw, 60px);
+    font-weight: 800;
+    line-height: 1.18;
+    color: var(--c-purple-deep);
+    letter-spacing: -0.035em;
+    margin-bottom: 28px;
+    max-width: 920px;
+}
+.hero h1 .accent {
+    color: var(--c-gold);
+    position: relative;
+    display: inline-block;
+}
+.hero h1 .accent::after {
+    content: '';
+    position: absolute;
+    bottom: 6px; left: 0; right: 0; height: 10px;
+    background: rgba(159,122,234,0.30);
+    z-index: -1;
+}
+.hero-sub {
+    font-size: clamp(16px, 1.7vw, 19px);
+    color: var(--c-text-soft);
+    max-width: 800px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+.hero-sub strong { color: var(--c-purple-deep); font-weight: 700; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-primary {
+    background: var(--c-gold);
+    color: white;
+    padding: 17px 36px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: var(--shadow-gold);
+    transition: all .25s;
+    display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-primary:hover { background: #9C7E1A; transform: translateY(-2px); box-shadow: 0 16px 50px rgba(184,148,31,0.32); }
+.btn-secondary {
+    background: white;
+    color: var(--c-purple-deep);
+    padding: 17px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1.5px solid var(--c-purple);
+    transition: all .2s;
+    display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-secondary:hover { background: var(--c-purple); color: white; }
+
+.hero-stats {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 28px;
+    padding-top: 48px;
+    border-top: 1px solid var(--c-border);
+}
+.stat { text-align: left; }
+.stat-num {
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--c-purple-deep);
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+.stat-num .small { font-size: 22px; color: var(--c-gold); }
+.stat-label { font-size: 13px; color: var(--c-text-muted); margin-top: 10px; letter-spacing: 0.02em; line-height: 1.5; }
+
+/* ============ SECTION COMMON ============ */
+section { padding: 100px 24px; }
+.section-inner { max-width: 1180px; margin: 0 auto; }
+.section-tag {
+    font-family: var(--serif);
+    color: var(--c-gold);
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 12px;
+}
+.section-tag::before {
+    content: ''; width: 36px; height: 1px; background: var(--c-gold);
+}
+.section-title {
+    font-family: var(--serif);
+    font-size: clamp(28px, 3.6vw, 44px);
+    font-weight: 700;
+    color: var(--c-purple-deep);
+    letter-spacing: -0.03em;
+    line-height: 1.28;
+    margin-bottom: 24px;
+}
+.section-lead {
+    font-size: 17px;
+    color: var(--c-text-soft);
+    max-width: 820px;
+    margin-bottom: 56px;
+    line-height: 1.85;
+}
+
+/* ============ SECTION 01: 분리증이 뭔가요 (★ 의학 교육) ============ */
+.what { background: white; }
+.what-banner {
+    background: linear-gradient(135deg, var(--c-purple-deep) 0%, var(--c-purple) 100%);
+    border-radius: 20px;
+    padding: 48px 44px;
+    color: var(--c-cream);
+    box-shadow: var(--shadow-3);
+    margin-bottom: 56px;
+    position: relative;
+    overflow: hidden;
+}
+.what-banner::before {
+    content: '?';
+    position: absolute;
+    top: -30px; right: -10px;
+    font-family: var(--serif);
+    font-size: 280px;
+    color: rgba(255,255,255,0.05);
+    font-weight: 900;
+    line-height: 1;
+}
+.what-banner h3 {
+    font-family: var(--serif);
+    font-size: 28px;
+    color: var(--c-gold-light);
+    margin-bottom: 18px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 2;
+}
+.what-banner p {
+    font-size: 16.5px;
+    line-height: 1.85;
+    margin-bottom: 14px;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+.what-banner p:last-child { margin-bottom: 0; }
+.what-banner strong { color: white; font-weight: 700; }
+
+.what-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+.what-pillar {
+    background: white;
+    padding: 36px 30px;
+    border-radius: 16px;
+    border-left: 4px solid var(--c-purple);
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+}
+.what-pillar:hover { transform: translateX(4px); box-shadow: var(--shadow-3); border-left-color: var(--c-gold); }
+.what-pillar-tag {
+    font-family: var(--serif);
+    font-size: 12px;
+    color: var(--c-gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.what-pillar h4 {
+    font-family: var(--serif);
+    font-size: 19px;
+    color: var(--c-purple-deep);
+    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.what-pillar p { font-size: 14.5px; color: var(--c-text-soft); line-height: 1.75; }
+.what-pillar p strong { color: var(--c-text); font-weight: 700; }
+
+/* ============ SECTION 02: 두 환자 풀 ============ */
+.pools {
+    background: linear-gradient(180deg, var(--c-cream-warm) 0%, var(--c-cream) 100%);
+}
+.pools-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+.pool-card {
+    background: white;
+    padding: 44px 36px;
+    border-radius: 18px;
+    box-shadow: var(--shadow-2);
+    border-top: 5px solid var(--c-purple);
+    position: relative;
+    transition: all .3s;
+}
+.pool-card.adult { border-top-color: var(--c-gold); }
+.pool-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-3); }
+.pool-num {
+    position: absolute;
+    top: -22px; left: 36px;
+    width: 44px; height: 44px;
+    background: var(--c-purple);
+    color: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 18px; font-weight: 700;
+    box-shadow: var(--shadow-2);
+}
+.pool-card.adult .pool-num { background: var(--c-gold); }
+.pool-card h3 {
+    font-family: var(--serif);
+    font-size: 24px;
+    color: var(--c-purple-deep);
+    margin-bottom: 8px;
+    margin-top: 14px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.pool-card.adult h3 { color: #6B4D00; }
+.pool-tag {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--c-text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+.pool-list { list-style: none; }
+.pool-list li {
+    padding: 12px 0 12px 24px;
+    position: relative;
+    border-bottom: 1px dashed var(--c-border);
+    font-size: 14.5px;
+    color: var(--c-text);
+    line-height: 1.7;
+}
+.pool-list li:last-child { border-bottom: none; }
+.pool-list li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 22px;
+    width: 14px; height: 2px;
+    background: var(--c-purple);
+}
+.pool-card.adult .pool-list li::before { background: var(--c-gold); }
+.pool-list li strong { color: var(--c-purple-deep); font-weight: 700; }
+.pool-card.adult .pool-list li strong { color: #6B4D00; }
+@media (max-width: 768px) { .pools-grid { grid-template-columns: 1fr; } }
+
+/* ============ SECTION 03: 증상 패턴 ============ */
+.symptoms { background: white; }
+.symptoms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+.symptom-card {
+    background: white;
+    padding: 30px 26px;
+    border-radius: 14px;
+    border-top: 3px solid var(--c-teal);
+    box-shadow: var(--shadow-1);
+    transition: all .25s;
+}
+.symptom-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); }
+.symptom-icon {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--c-teal) 0%, #006861 100%);
+    color: white;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 18px; font-weight: 700;
+    margin-bottom: 16px;
+}
+.symptom-card h5 {
+    font-family: var(--serif);
+    font-size: 16.5px;
+    color: var(--c-purple-deep);
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.symptom-card p { font-size: 14px; color: var(--c-text-soft); line-height: 1.7; }
+.symptom-card p strong { color: var(--c-teal); font-weight: 700; }
+
+/* ============ SECTION 04: 디스크 동반 (★ 영업 차별화) ============ */
+.combo {
+    background: var(--c-dark);
+    color: var(--c-cream);
+}
+.combo .section-tag { color: var(--c-gold-light); }
+.combo .section-tag::before { background: var(--c-gold-light); }
+.combo .section-title { color: white; }
+.combo .section-lead { color: rgba(250,248,245,0.85); }
+
+.combo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 48px;
+}
+.combo-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(159,122,234,0.25);
+    border-radius: 18px;
+    padding: 36px 30px;
+    transition: all .3s;
+}
+.combo-card:hover {
+    background: rgba(255,255,255,0.10);
+    border-color: var(--c-gold-light);
+    transform: translateY(-4px);
+}
+.combo-formula {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: var(--c-gold-light);
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+    padding-bottom: 14px;
+    border-bottom: 2px solid rgba(159,122,234,0.30);
+}
+.combo-card h4 {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: white;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.combo-card p { color: rgba(250,248,245,0.85); font-size: 14.5px; line-height: 1.8; }
+.combo-note {
+    background: rgba(184,148,31,0.12);
+    padding: 28px 32px;
+    border-left: 4px solid var(--c-gold);
+    border-radius: 4px;
+    color: var(--c-cream);
+    font-size: 16px;
+    line-height: 1.8;
+}
+.combo-note strong { color: var(--c-gold-light); font-weight: 700; }
+
+/* ============ SECTION 05: 15% 진행 (★ 13-F 시너지) ============ */
+.progress {
+    background:
+        radial-gradient(ellipse at top right, rgba(184,148,31,0.10), transparent 60%),
+        var(--c-cream);
+}
+.progress-banner {
+    background: white;
+    border-radius: 20px;
+    padding: 48px 44px;
+    box-shadow: var(--shadow-2);
+    border: 2px solid var(--c-gold-light);
+    margin-bottom: 40px;
+}
+.progress-banner h3 {
+    font-family: var(--serif);
+    font-size: 28px;
+    color: var(--c-purple-deep);
+    margin-bottom: 16px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.progress-banner h3 .em { color: var(--c-gold); }
+.progress-banner p {
+    color: var(--c-text);
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 14px;
+}
+.progress-banner p:last-child { margin-bottom: 0; }
+.progress-banner strong { color: var(--c-purple-deep); font-weight: 700; }
+
+.meyerding-table {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-1);
+    border: 1px solid var(--c-border);
+}
+.meyerding-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 24px;
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--c-border);
+    align-items: center;
+}
+.meyerding-row:last-child { border-bottom: none; }
+.meyerding-row:nth-child(odd) { background: rgba(107,70,193,0.03); }
+.meyerding-stage {
+    font-family: var(--serif);
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background: var(--c-purple);
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+.meyerding-row.severe .meyerding-stage { background: var(--c-gold); }
+.meyerding-desc { font-size: 14.5px; color: var(--c-text); line-height: 1.65; }
+.meyerding-desc strong { color: var(--c-purple-deep); font-weight: 700; }
+@media (max-width: 768px) {
+    .meyerding-row { grid-template-columns: 1fr; padding: 18px 22px; }
+}
+
+/* ============ SECTION 06: 진단 흐름 5단계 ============ */
+.flow { background: white; }
+.flow-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    position: relative;
+}
+.flow-step {
+    text-align: center;
+    padding: 32px 16px;
+    position: relative;
+}
+.flow-step::after {
+    content: '';
+    position: absolute;
+    top: 56px; right: -8px;
+    width: 16px; height: 2px;
+    background: var(--c-purple-light);
+}
+.flow-step:last-child::after { display: none; }
+.flow-num {
+    font-family: var(--serif);
+    width: 56px; height: 56px;
+    background: linear-gradient(135deg, var(--c-purple) 0%, var(--c-purple-deep) 100%);
+    color: var(--c-cream);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; font-weight: 700;
+    margin: 0 auto 22px;
+    box-shadow: var(--shadow-2);
+}
+.flow-step h5 {
+    font-family: var(--serif);
+    font-size: 15.5px;
+    color: var(--c-purple-deep);
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.flow-step p { font-size: 13px; color: var(--c-text-soft); line-height: 1.6; }
+@media (max-width: 968px) {
+    .flow-steps { grid-template-columns: repeat(2, 1fr); }
+    .flow-step::after { display: none; }
+}
+
+/* ============ SECTION 07: 단계적 치료 ============ */
+.treatment { background: var(--c-cream-warm); }
+.treat-table {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--c-border);
+}
+.treat-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.treat-table thead {
+    background: linear-gradient(135deg, var(--c-purple-deep) 0%, var(--c-purple) 100%);
+    color: white;
+}
+.treat-table th {
+    padding: 18px 22px;
+    text-align: left;
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+.treat-table td {
+    padding: 18px 22px;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--c-text);
+    border-bottom: 1px solid var(--c-border);
+}
+.treat-table tbody tr:last-child td { border-bottom: none; }
+.treat-table tbody tr:hover { background: var(--c-cream-warm); }
+.treat-table .col-status {
+    font-family: var(--serif);
+    font-weight: 700;
+    color: var(--c-purple-deep);
+    font-size: 15.5px;
+    letter-spacing: -0.01em;
+}
+.treat-table .highlight {
+    background: rgba(184,148,31,0.08);
+}
+.treat-table .highlight .col-status { color: var(--c-gold); }
+
+/* ============ SECTION 08: 수술 5가지 경우 ============ */
+.surgery-need { background: white; }
+.surgery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-bottom: 36px;
+}
+.surgery-card {
+    background: white;
+    padding: 30px 26px;
+    border-radius: 14px;
+    border-top: 4px solid var(--c-purple);
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+}
+.surgery-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); border-top-color: var(--c-gold); }
+.surgery-num {
+    font-family: var(--serif);
+    font-size: 14px;
+    color: var(--c-gold);
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.surgery-card h4 {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--c-purple-deep);
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.surgery-card p { font-size: 14px; color: var(--c-text-soft); line-height: 1.7; }
+.surgery-quote {
+    background: linear-gradient(135deg, var(--c-purple-deep) 0%, var(--c-purple) 100%);
+    color: var(--c-cream);
+    border-radius: 14px;
+    padding: 32px 36px;
+    font-family: var(--serif);
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.65;
+    text-align: center;
+    box-shadow: var(--shadow-3);
+}
+.surgery-quote strong { color: var(--c-gold-light); font-style: normal; font-weight: 700; }
+
+/* ============ SECTION 09: 두 수술 방법 ============ */
+.surgery-methods { background: var(--c-cream); }
+.methods-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+.method-card {
+    background: white;
+    padding: 40px 36px;
+    border-radius: 18px;
+    box-shadow: var(--shadow-2);
+    border-top: 5px solid var(--c-purple);
+    transition: all .3s;
+}
+.method-card.preserve { border-top-color: var(--c-teal); }
+.method-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-3); }
+.method-tag {
+    font-family: var(--serif);
+    font-size: 12.5px;
+    color: var(--c-gold);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+.method-card h3 {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--c-purple-deep);
+    margin-bottom: 14px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.method-card.preserve h3 { color: #006861; }
+.method-card > p { font-size: 15px; color: var(--c-text); line-height: 1.8; margin-bottom: 14px; }
+.method-card > p strong { color: var(--c-purple-deep); font-weight: 700; }
+.method-list {
+    list-style: none;
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--c-border);
+}
+.method-list li {
+    padding: 8px 0 8px 22px;
+    position: relative;
+    font-size: 14.5px;
+    color: var(--c-text);
+    line-height: 1.65;
+}
+.method-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0; top: 8px;
+    color: var(--c-purple);
+    font-weight: 700;
+}
+.method-card.preserve .method-list li::before { color: var(--c-teal); }
+@media (max-width: 768px) { .methods-grid { grid-template-columns: 1fr; } }
+
+/* ============ SECTION 10: 회복 ============ */
+.recovery { background: white; }
+.recovery-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0;
+}
+.recovery-stage {
+    background: white;
+    padding: 28px 22px;
+    border-top: 4px solid var(--c-purple);
+    border-right: 1px solid var(--c-border);
+    transition: all .25s;
+}
+.recovery-stage:last-child { border-right: none; }
+.recovery-stage:hover { background: var(--c-cream-warm); transform: translateY(-3px); box-shadow: var(--shadow-2); }
+.recovery-time {
+    font-family: var(--serif);
+    font-size: 15.5px;
+    color: var(--c-gold);
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+}
+.recovery-content { font-size: 14px; color: var(--c-text); line-height: 1.7; }
+
+/* ============ SECTION 11: 본원 차별점 ============ */
+.diff {
+    background: linear-gradient(135deg, var(--c-cream) 0%, var(--c-cream-warm) 100%);
+}
+.diff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+.diff-card {
+    background: white;
+    padding: 32px 28px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-1);
+    transition: all .3s;
+    border-top: 3px solid var(--c-purple);
+}
+.diff-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-3); border-top-color: var(--c-gold); }
+.diff-icon {
+    width: 50px; height: 50px;
+    background: linear-gradient(135deg, var(--c-purple) 0%, var(--c-purple-deep) 100%);
+    color: white;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 20px; font-weight: 700;
+    margin-bottom: 18px;
+}
+.diff-card h5 {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--c-purple-deep);
+    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.diff-card p { font-size: 14.5px; color: var(--c-text-soft); line-height: 1.75; }
+.diff-card p strong { color: var(--c-text); font-weight: 700; }
+
+/* ============ SECTION 12: FAQ ============ */
+.faq { background: var(--c-cream-warm); }
+.faq-list { margin-top: 32px; }
+.faq-item {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: all .25s;
+    border: 1px solid var(--c-border);
+}
+.faq-item:hover { box-shadow: var(--shadow-2); border-color: var(--c-purple-light); }
+.faq-q {
+    padding: 22px 28px;
+    cursor: pointer;
+    font-family: var(--serif);
+    font-weight: 700;
+    color: var(--c-purple-deep);
+    font-size: 16.5px;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 16px;
+    line-height: 1.5;
+    user-select: none;
+    list-style: none;
+}
+.faq-q::-webkit-details-marker { display: none; }
+.faq-q::after {
+    content: '+';
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--c-gold);
+    transition: transform .25s;
+    flex-shrink: 0;
+    font-family: var(--sans);
+}
+.faq-item[open] .faq-q::after { transform: rotate(45deg); }
+.faq-a {
+    padding: 0 28px 24px;
+    color: var(--c-text);
+    font-size: 15px;
+    line-height: 1.9;
+}
+.faq-a strong { color: var(--c-purple-deep); font-weight: 700; }
+
+/* ============ CTA FINAL ============ */
+.cta-final {
+    background: linear-gradient(135deg, var(--c-purple) 0%, var(--c-purple-deep) 100%);
+    color: var(--c-cream);
+    text-align: center;
+    padding: 120px 24px;
+    position: relative;
+    overflow: hidden;
+}
+.cta-final::before {
+    content: '';
+    position: absolute;
+    top: -10%; left: -5%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(184,148,31,0.20), transparent 70%);
+    border-radius: 50%;
+}
+.cta-final::after {
+    content: '';
+    position: absolute;
+    bottom: -20%; right: -10%;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(159,122,234,0.15), transparent 70%);
+    border-radius: 50%;
+}
+.cta-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 2; }
+.cta-quote {
+    font-family: var(--serif);
+    font-size: clamp(26px, 3.5vw, 40px);
+    font-weight: 600;
+    line-height: 1.45;
+    color: white;
+    margin-bottom: 24px;
+    letter-spacing: -0.025em;
+}
+.cta-quote .em { color: var(--c-gold-light); }
+.cta-text {
+    font-size: 17px;
+    color: rgba(250,248,245,0.92);
+    max-width: 620px; margin: 0 auto 48px;
+    line-height: 1.8;
+}
+.cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cta-buttons .btn-primary {
+    background: var(--c-gold);
+    box-shadow: 0 12px 40px rgba(184,148,31,0.40);
+}
+.cta-buttons .btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: rgba(255,255,255,0.45);
+}
+.cta-buttons .btn-secondary:hover {
+    background: white;
+    color: var(--c-purple-deep);
+}
+
+/* ============ FOOTER ============ */
+.footer {
+    background: #14101E;
+    color: rgba(250,248,245,0.75);
+    padding: 56px 24px 36px;
+}
+.footer-inner {
+    max-width: 1180px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 56px;
+}
+.footer h6 {
+    font-family: var(--serif);
+    color: var(--c-gold-light);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+}
+.footer-brand .logo { color: white; margin-bottom: 14px; font-size: 21px; }
+.footer-brand .logo-mark { background: var(--c-gold); color: white; }
+.footer-brand p { font-size: 13.5px; line-height: 1.75; color: rgba(250,248,245,0.65); }
+.footer-info p { font-size: 13.5px; line-height: 1.95; }
+.footer-info p strong { color: var(--c-cream); font-weight: 500; }
+.footer-bottom {
+    max-width: 1180px;
+    margin: 48px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid rgba(250,248,245,0.10);
+    text-align: center;
+    font-size: 12px;
+    color: rgba(250,248,245,0.50);
+    line-height: 1.75;
+}
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 36px; }
+    section { padding: 70px 20px; }
+    .hero { padding: 70px 20px 56px; }
+}
+
+/* placeholder badge */
+.placeholder {
+    background: linear-gradient(135deg, #FFF3D6, #FFE2A0);
+    color: #6B4D00;
+    padding: 1px 8px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-weight: 600;
+    font-family: var(--sans);
+    border: 1px dashed var(--c-gold);
+}
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+    만성 요통인데 디스크는 정상이라고 들으셨나요? <strong>척추분리증</strong>일 수 있습니다 · 신경외과 전문의 김진균 원장
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <div class="logo-mark">희</div>
+            <div>
+                <div>희망찬병원</div>
+                <div class="logo-sub">SPONDYLOLYSIS · 척추분리증 정밀 진단</div>
+            </div>
+        </div>
+        <a href="tel:placeholder" class="header-cta">
+            📞 진료 예약 · <span class="tel:16003415">1600-3415</span>
+        </a>
+    </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+    <div class="hero-inner">
+        <h1>
+            허리 통증의 <span class="accent">숨은 주범</span><br>
+            <span class="accent">척추분리증</span>입니다
+        </h1>
+        <p class="hero-sub">
+            <strong>만성 요통인데 디스크는 정상</strong>이라고 들으셨나요? 허리뼈를 연결하는 <strong>고리(협부)가 끊어진 척추분리증</strong>일 수 있습니다. 사선 X-ray로 정확한 진단부터 받으세요.<br>
+            <strong>디스크·전방전위증과 함께 올 때 통증은 복잡해지지만, 본원이 동반 평가로 정확히 진단</strong>합니다. 신경외과 전문의 김진균 원장 직접 진료.
+        </p>
+        <div class="hero-cta">
+            <a href="tel:16003415" class="btn-primary">📞 진료 예약 · 상담</a>
+            <a href="#myth" class="btn-secondary">"허리뼈 6개?" 정확한 의미 →</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-num">3~7<span class="small">%</span></div>
+                <div class="stat-label">전체 인구의 분리증 발견율<br>(흔한 질환)</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">15<span class="small">%</span></div>
+                <div class="stat-label">전방전위증 진행 위험<br>(정기 추적 필요)</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">L5<span class="small"></span></div>
+                <div class="stat-label">가장 흔한 발생 부위<br>(L4도 발생)</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">2<span class="small">가지</span></div>
+                <div class="stat-label">수술 방법<br>유합술 · 협부 직접 수복</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 01: 분리증이 뭔가요 ============ -->
+<section class="what" id="myth">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 01 · 정확한 의학 교육</div>
+        <h2 class="section-title">"허리뼈 6개?" 아닙니다 — 고리가 끊어진 겁니다</h2>
+        <div class="what-banner">
+            <h3>척추분리증은 척추뼈의 개수와 전혀 관계없습니다</h3>
+            <p>한 라디오 건강 프로그램에서 "허리뼈가 원래 5개여야 하는데, 척추분리증은 허리뼈가 6개인 것을 말한다"라고 설명하는 것을 들은 적이 있습니다. <strong>완전히 잘못된 설명입니다.</strong></p>
+            <p>척추분리증은 <strong>척추뼈를 연결하는 고리(협부, pars interarticularis)가 피로 골절로 끊어진 상태</strong>를 말합니다. 의사·한의사조차 정확히 모르는 경우가 많을 정도로 오해가 만연한 질환입니다.</p>
+            <p>본원에서는 정확한 의학 교육부터 시작합니다. <strong>"분리증이 뭔지 정확히 모르고 진단만 받았다"</strong>고 하시는 환자분들이 매우 많습니다.</p>
+        </div>
+        <div class="what-pillars">
+            <div class="what-pillar">
+                <div class="what-pillar-tag">구조 01</div>
+                <h4>벽돌 · 고무패드 · 고리</h4>
+                <p>척추는 <strong>벽돌(척추체)</strong> + <strong>고무패드(디스크)</strong> + <strong>고리(협부)</strong> 구조입니다. 벽돌이 흔들리지 않도록 양쪽에 고리 두 개를 연결해 놓은 구조입니다.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">결손 02</div>
+                <h4>고리가 끊어진 상태</h4>
+                <p>이 <strong>고리(협부)가 끊어지는 것이 바로 척추분리증</strong>입니다. 협부는 뼈가 얇은 부분이라 반복적인 힘이 가해지면 피로 골절처럼 끊어집니다.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">진단 03</div>
+                <h4>스코티 독 사인</h4>
+                <p>사선 X-ray에서 <strong>강아지(스코티시 테리어) 모양</strong>이 보이는데, 목줄이 끊어진 강아지처럼 보여 <strong>"스코티 독 사인"</strong>이라 부릅니다. 본원에서 사선 X-ray 즉시 가능.</p>
+            </div>
+            <div class="what-pillar">
+                <div class="what-pillar-tag">빈도 04</div>
+                <h4>인구 3~7%에서 발견</h4>
+                <p>분리증은 드물지 않습니다. <strong>전체 인구의 약 3~7%에서 발견</strong>되며, 주로 제5요추(L5) 또는 제4요추(L4)에서 발생합니다. 무증상으로 모르고 지내는 경우가 많습니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 02: 두 환자 풀 ============ -->
+<section class="pools">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 02 · 두 환자 풀</div>
+        <h2 class="section-title">분리증 환자는 두 그룹입니다</h2>
+        <p class="section-lead">
+            척추분리증 환자는 발생 시기와 발견 시점에 따라 두 그룹으로 나뉩니다. 본원은 두 그룹 모두에게 맞춤 진료를 제공합니다.
+        </p>
+        <div class="pools-grid">
+            <div class="pool-card">
+                <div class="pool-num">01</div>
+                <h3>청소년 운동선수</h3>
+                <div class="pool-tag">10~18세 · 부모 검색 80%</div>
+                <ul class="pool-list">
+                    <li><strong>발생 시기:</strong> 성장기 협부의 피로 골절</li>
+                    <li><strong>원인 운동:</strong> 체조·역도·다이빙·레슬링·미식축구·접영 — 허리를 반복적으로 뒤로 젖히는 동작</li>
+                    <li><strong>증상:</strong> 운동 후 허리 통증, 쉬면 호전, 다시 운동하면 재발</li>
+                    <li><strong>특이점:</strong> 체대 입시생·운동부 학생은 운동 못 하면 큰 손해</li>
+                    <li><strong>★ 본원 차별점:</strong> 성장기 조기 진단 시 보조기 + 활동 제한으로 <strong>골유합 가능 케이스</strong></li>
+                </ul>
+            </div>
+            <div class="pool-card adult">
+                <div class="pool-num">02</div>
+                <h3>성인 우연 발견</h3>
+                <div class="pool-tag">30~60대 · 본인 검색 90%</div>
+                <ul class="pool-list">
+                    <li><strong>발견 시점:</strong> 청소년기 무증상으로 지내다 성인이 되어 우연히 발견</li>
+                    <li><strong>발견 경로:</strong> 다른 이유로 X-ray·MRI 촬영 / 건강검진</li>
+                    <li><strong>증상:</strong> 일부에서 만성 요통의 원인 / 디스크 동반 시 다리 저림</li>
+                    <li><strong>중요:</strong> 무증상이라도 약 <strong>15%는 전방전위증으로 진행</strong> — 정기 추적 필요</li>
+                    <li><strong>★ 본원 차별점:</strong> 진단 의미부터 정확히 안내 + 디스크·전방전위증 동반 평가 + 비수술 한계 시 유합술 적기 평가</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 03: 증상 패턴 ============ -->
+<section class="symptoms">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 03 · 증상 패턴</div>
+        <h2 class="section-title">분리증의 전형적인 증상</h2>
+        <p class="section-lead">
+            분리증은 특징적인 통증 패턴이 있습니다. 이 패턴에 해당하면 사선 X-ray로 정확한 검사가 필요합니다.
+        </p>
+        <div class="symptoms-grid">
+            <div class="symptom-card">
+                <div class="symptom-icon">01</div>
+                <h5>운동·일하면 아픔</h5>
+                <p>운동을 많이 하거나 일을 많이 하고 나면 허리가 아프다가 <strong>쉬면 또 괜찮아지는</strong> 반복 패턴.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">02</div>
+                <h5>★ 뒤로 젖히면 아픔</h5>
+                <p>분리증의 가장 특징적인 증상. <strong>허리를 뒤로 젖힐 때(과신전)</strong> 통증이 악화됩니다. 앞으로 굽힐 때보다 분명히 더 아픕니다.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">03</div>
+                <h5>MRI 정상인데 만성 요통</h5>
+                <p>MRI에서 <strong>디스크·협착증이 보이지 않는데도 만성 요통</strong>이 있으면 분리증을 의심해야 합니다. 본원에서 사선 X-ray로 확인.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">04</div>
+                <h5>디스크 동반 시 다리 저림</h5>
+                <p>분리증에 디스크 탈출이 동반되면 <strong>요통 + 다리 저림 + 다리 통증 + 보행 장애</strong>가 추가됩니다.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">05</div>
+                <h5>젊은데 만성 요통</h5>
+                <p>20~30대 젊은 사람의 만성 허리 통증 중 상당수가 <strong>분리증이 숨은 원인</strong>일 수 있습니다.</p>
+            </div>
+            <div class="symptom-card">
+                <div class="symptom-icon">06</div>
+                <h5>무증상으로 평생</h5>
+                <p>분리증이 있어도 <strong>평생 증상 없이 지내는 사람이 많습니다</strong>. 단, 정기 추적으로 진행 여부 확인은 필요.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 04: 디스크 동반 (★ 영업 차별화) ============ -->
+<section class="combo">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 04 · 동반 평가 — 본원 영업 차별점</div>
+        <h2 class="section-title">디스크·전방전위증과 함께 올 때 복잡합니다</h2>
+        <p class="section-lead">
+            분리증만 있다면 증상이 단순하지만, 문제는 <strong>디스크 질환·전방전위증이 동반되는 경우가 매우 흔하다는 것</strong>입니다. 본원은 분리증 + 디스크 + 전방전위증 + 협착증을 동시에 동반 평가합니다.
+        </p>
+        <div class="combo-grid">
+            <div class="combo-card">
+                <div class="combo-formula">분리증 + 디스크 탈출</div>
+                <h4>요통 + 다리 저림·통증</h4>
+                <p>고리(협부)가 끊어져 척추가 불안정해지면 디스크에 더 많은 부담이 가해져 디스크 질환이 함께 생기는 경우가 흔합니다. 신경 압박이 추가됩니다.</p>
+            </div>
+            <div class="combo-card">
+                <div class="combo-formula">분리증 + 전방전위증</div>
+                <h4>척추 미끄러짐 + 신경 압박</h4>
+                <p>약 15%에서 척추체가 앞으로 밀려나가 전방전위증으로 진행됩니다. 신경 압박이 더 심해지고, 보행 장애가 나타날 수 있습니다.</p>
+            </div>
+            <div class="combo-card">
+                <div class="combo-formula">분리증 + 척추관 협착증</div>
+                <h4>신경 통로 좁아짐</h4>
+                <p>전방전위증이 진행되면 신경 통로(척추관·추간공)가 좁아져 협착증 증상이 추가됩니다. 다리 저림·보행 한계가 나타납니다.</p>
+            </div>
+        </div>
+        <div class="combo-note">
+            ★ 본원은 <strong>분리증 단독이 아닌, 디스크·전방전위증·협착증 동반 평가</strong>를 진료의 핵심으로 합니다. 복잡한 통증의 정확한 원인을 동시에 평가하는 것이 본원 영업의 차별점입니다.
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 05: 15% 진행 (★ 13-F 시너지) ============ -->
+<section class="progress">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 05 · 전방전위증 진행</div>
+        <h2 class="section-title">약 15%는 전방전위증으로 진행됩니다</h2>
+        <p class="section-lead">
+            척추분리증 환자의 <strong>약 15%에서 척추전방전위증으로 진행</strong>됩니다. 진행하면 척추체가 앞으로 미끄러져 나가 신경을 압박하며, 진행을 막을 수 없습니다. 본원에서 정기 X-ray 추적으로 진행 환자를 조기 발견합니다.
+        </p>
+        <div class="progress-banner">
+            <h3>"미루면 더 큰 수술이 필요해질 수 있습니다"</h3>
+            <p>분리증이 전방전위증으로 진행되면 <strong>척추 유합술이 필요한 경우가 많습니다</strong>. 본원은 1분절 유합으로 해결 가능한 적기에 평가합니다 — 3분절을 유합해야 하는 시점보다 훨씬 좋은 결과를 만듭니다.</p>
+            <p>전방전위증의 정도는 <strong><span class="em">Meyerding 분류</span></strong>로 1단계부터 5단계까지 나뉩니다. 단계가 올라갈수록 수술이 필요한 경우가 많아집니다.</p>
+        </div>
+        <div class="meyerding-table">
+            <div class="meyerding-row">
+                <div class="meyerding-stage">1단계</div>
+                <div class="meyerding-desc"><strong>전위 25% 이하 (경미)</strong> — 대부분 비수술 치료로 관리 가능. 정기 추적 필수.</div>
+            </div>
+            <div class="meyerding-row">
+                <div class="meyerding-stage">2단계</div>
+                <div class="meyerding-desc"><strong>전위 25~50% (중등도)</strong> — 증상과 진행 여부에 따라 수술을 고려합니다.</div>
+            </div>
+            <div class="meyerding-row severe">
+                <div class="meyerding-stage">3단계</div>
+                <div class="meyerding-desc"><strong>전위 50~75% (심함)</strong> — 수술이 필요한 경우가 많습니다.</div>
+            </div>
+            <div class="meyerding-row severe">
+                <div class="meyerding-stage">4단계</div>
+                <div class="meyerding-desc"><strong>전위 75~100% (매우 심함)</strong> — 수술이 필요합니다.</div>
+            </div>
+            <div class="meyerding-row severe">
+                <div class="meyerding-stage">5단계</div>
+                <div class="meyerding-desc"><strong>척추탈구 — 전위 100% 이상</strong> — 척추체가 완전히 밀려나간 상태. 반드시 수술이 필요합니다.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 06: 진단 흐름 ============ -->
+<section class="flow">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 06 · 진단 흐름</div>
+        <h2 class="section-title">본원 진단 흐름 5단계</h2>
+        <p class="section-lead">
+            본원은 분리증 정밀 진단 + 디스크·전방전위증 동반 평가를 5단계로 진행합니다.
+        </p>
+        <div class="flow-steps">
+            <div class="flow-step">
+                <div class="flow-num">01</div>
+                <h5>정밀 문진</h5>
+                <p>통증 시작 시기 · 운동 이력 · 직업 · 가족력</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">02</div>
+                <h5>신체 검사</h5>
+                <p>뒤로 젖히기 통증 확인 · 신경 검사 · 근력 평가</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">03</div>
+                <h5>영상 검사</h5>
+                <p>사선·굴곡·신전 X-ray · CT · MRI — 본원 내 즉시</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">04</div>
+                <h5>★ 동반 평가</h5>
+                <p>디스크 · 전방전위증 · 협착증 동시 평가</p>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">05</div>
+                <h5>치료 결정</h5>
+                <p>비수술 · 보조기 · 유합술 · 협부 수복술</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 07: 단계적 치료 ============ -->
+<section class="treatment">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 07 · 단계적 치료</div>
+        <h2 class="section-title">환자별 단계적 치료 방향</h2>
+        <p class="section-lead">
+            분리증은 환자 상태에 따라 단계적으로 치료합니다. 대부분 비수술 치료로 관리 가능하지만, 비수술 한계 시 수술 적기에 평가합니다.
+        </p>
+        <div class="treat-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 28%;">환자 상태</th>
+                        <th style="width: 30%;">치료 방향</th>
+                        <th>본원 안내</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-status">무증상</td>
+                        <td>정기 추적 관찰</td>
+                        <td>6개월~1년 간격 X-ray로 전방전위증 진행 확인</td>
+                    </tr>
+                    <tr>
+                        <td class="col-status">가벼운 통증</td>
+                        <td>약물 + 일상 조정</td>
+                        <td>과신전·중량 운동 피하기 / 바르게 걷기 운동</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 청소년 성장기</td>
+                        <td>★ 보조기 + 활동 제한</td>
+                        <td><strong>골유합 가능 케이스</strong> — 본원에서 정밀 평가</td>
+                    </tr>
+                    <tr>
+                        <td class="col-status">중등도 통증</td>
+                        <td>신경차단술 · 경막외 주사</td>
+                        <td>통증 조절 후 일상 관리 병행</td>
+                    </tr>
+                    <tr>
+                        <td class="col-status">신경 증상 동반</td>
+                        <td>MRI 정밀 평가 후 수술 검토</td>
+                        <td>다리 저림 · 근력 약화 · 보행 장애 시</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 비수술 6개월 효과 없음</td>
+                        <td>★ 수술 검토 (★ 본원 영업 핵심)</td>
+                        <td><strong>유합술 또는 협부 직접 수복술 적기 평가</strong></td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="col-status">★ 전방전위증 진행</td>
+                        <td>★ 유합술 (★ 13-F 시너지)</td>
+                        <td>신경 압박 해소 + 척추 고정 + 본원 다년 경험</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 08: 수술이 필요한 5가지 ============ -->
+<section class="surgery-need">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 08 · 수술 적응증</div>
+        <h2 class="section-title">수술이 필요한 5가지 경우</h2>
+        <p class="section-lead">
+            분리증의 수술은 비수술 치료 한계 시 검토합니다. 본원이 적기에 평가하는 5가지 상황입니다.
+        </p>
+        <div class="surgery-grid">
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 01</div>
+                <h4>비수술 6개월 이상 효과 없음</h4>
+                <p>약·주사·물리치료 등 충분히 시도했는데도 통증이 지속되어 일상생활이 힘든 경우.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 02</div>
+                <h4>신경 증상 동반</h4>
+                <p>다리 저림·근력 약화·보행 장애 등 신경 증상이 있는 경우 — 디스크·전방전위증 동반 평가 후 적극 검토.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 03</div>
+                <h4>전방전위증 진행</h4>
+                <p>추적 검사에서 척추 미끄러짐이 진행되는 경우 — 13-F 유합술 영역과 자연 연결.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 04</div>
+                <h4>직업상 무거운 일</h4>
+                <p>고철·기계 가공·농사 등 무거운 물건을 항시 다루는 직업의 경우 — 노동 능력 보존 필요.</p>
+            </div>
+            <div class="surgery-card">
+                <div class="surgery-num">CASE 05</div>
+                <h4>디스크 탈출 동반</h4>
+                <p>분리증에 디스크 탈출이 동반되어 신경을 압박하는 경우.</p>
+            </div>
+        </div>
+        <div class="surgery-quote">
+            "수술이 과해 보이지만, <strong>고통을 겪는 본인에게는 매우 만족스러운 수술</strong>입니다.<br>본원에서 적기 평가 후 결정합니다."
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 09: 두 수술 방법 ============ -->
+<section class="surgery-methods">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 09 · 수술 방법</div>
+        <h2 class="section-title">분리증의 두 가지 수술 방법</h2>
+        <p class="section-lead">
+            본원은 환자 상태에 따라 두 가지 수술 방법 중 적합한 것을 선택합니다. 모든 환자에게 같은 방법을 적용하지 않습니다.
+        </p>
+        <div class="methods-grid">
+            <div class="method-card">
+                <div class="method-tag">★ 일반적 수술 · 13-F 시너지</div>
+                <h3>척추 유합술<br>(1~2개 분절 고정)</h3>
+                <p>가장 일반적인 분리증 수술. <strong>페디클 스크류 + 막대 + 뼈이식</strong>으로 끊어진 부위를 포함한 척추 분절을 고정합니다.</p>
+                <p><strong>1~2분절 유합은 일상 거의 정상</strong> — 걷기·계단·등산·수영·골프 등 대부분의 활동이 가능합니다.</p>
+                <ul class="method-list">
+                    <li>전방전위증 진행 환자에게 필수</li>
+                    <li>디스크 동반 환자에게 적합</li>
+                    <li>1-2분절 유합 만족도 80-95%</li>
+                    <li>★ 본원 김진균 원장 다년 척추 유합 경험</li>
+                </ul>
+            </div>
+            <div class="method-card preserve">
+                <div class="method-tag">★ 운동 범위 보존 · 청소년 차별화</div>
+                <h3>협부 직접 수복술<br>(운동 범위 보존)</h3>
+                <p>젊은 환자 + 전방전위증 없음 + 디스크 상태 양호 시 적용 가능. 끊어진 협부만 <strong>직접 수복(나사·와이어·골이식)</strong>합니다.</p>
+                <p><strong>유합술보다 운동 범위 보존</strong> — 운동선수에게 큰 가치. 단, 적용 가능한 경우가 제한적이며 본원에서 환자별로 평가합니다.</p>
+                <ul class="method-list">
+                    <li>청소년·젊은 운동선수 적합</li>
+                    <li>전방전위증·디스크 없는 경우만</li>
+                    <li>운동 복귀에 유리</li>
+                    <li>★ 본원에서 환자별 평가 후 결정</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 10: 회복 ============ -->
+<section class="recovery">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 10 · 회복</div>
+        <h2 class="section-title">수술 후 회복 과정</h2>
+        <p class="section-lead">
+            분리증 수술 후 회복은 단계적입니다. 뼈가 완전히 유합되려면 6개월~1년이 소요됩니다.
+        </p>
+        <div class="recovery-timeline">
+            <div class="recovery-stage">
+                <div class="recovery-time">당일~1일</div>
+                <div class="recovery-content">병실 안정 / 통증 조절 / 보조기 착용 후 보행 시작</div>
+            </div>
+            <div class="recovery-stage">
+                <div class="recovery-time">3~5일</div>
+                <div class="recovery-content">보행 연습 / 배액관 제거</div>
+            </div>
+            <div class="recovery-stage">
+                <div class="recovery-time">5~7일</div>
+                <div class="recovery-content">대부분 퇴원 / 일상 회복 시작</div>
+            </div>
+            <div class="recovery-stage">
+                <div class="recovery-time">4~6주</div>
+                <div class="recovery-content">사무직 직장 복귀 가능 / 운전 가능</div>
+            </div>
+            <div class="recovery-stage">
+                <div class="recovery-time">2~3개월</div>
+                <div class="recovery-content">보조기 착용 / 가벼운 운동 시작</div>
+            </div>
+            <div class="recovery-stage">
+                <div class="recovery-time">6개월~1년</div>
+                <div class="recovery-content">뼈 유합 완성 / 정상 활동 / 운동 복귀</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 11: 본원 차별점 ============ -->
+<section class="diff">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 11 · 본원 차별점</div>
+        <h2 class="section-title">왜 희망찬병원인가</h2>
+        <p class="section-lead">
+            본원은 척추분리증을 정확히 진단하고 적기에 치료하는 의료기관입니다. 6가지 차별점입니다.
+        </p>
+        <div class="diff-grid">
+            <div class="diff-card">
+                <div class="diff-icon">01</div>
+                <h5>신경외과 전문의<br>직접 진료</h5>
+                <p>김진균 원장이 분리증 환자를 처음부터 끝까지 직접 진료합니다. <strong>다년간 척추 수술 경험</strong>으로 정확한 판단을 제공합니다.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">02</div>
+                <h5>정확한 의학 교육<br>"허리뼈 6개?" 정정</h5>
+                <p>분리증의 정확한 의미부터 안내합니다. <strong>오해를 정정하고, 디스크·전방전위증과의 관계</strong>를 충분히 설명합니다.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">03</div>
+                <h5>★ 동반 평가<br>분리증+디스크+전위증</h5>
+                <p>본원의 가장 큰 차별점. <strong>분리증 단독이 아닌, 디스크·전방전위증·협착증 동시 평가</strong>로 복잡한 통증의 정확한 원인을 진단합니다.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">04</div>
+                <h5>★ 청소년 운동선수<br>골유합 평가</h5>
+                <p>성장기 조기 진단 시 보조기 + 활동 제한으로 <strong>골유합 가능 케이스</strong>를 본원에서 평가합니다. 체대 입시생도 정밀 진료.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">05</div>
+                <h5>★ 비수술 한계 영입<br>유합술 적기 평가</h5>
+                <p>다른 의료기관에서 비수술 치료 6개월~1년 받았는데 효과가 없는 환자를 적극 영입합니다. <strong>수술 적기를 본원에서 정확히 평가</strong>합니다.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon">06</div>
+                <h5>★ 유합술 다년 경험<br>13-F 시너지</h5>
+                <p>본원 김진균 원장의 <strong>다년 척추 유합술 경험</strong>으로 분리증 수술 시 협부 직접 수복 + 유합술 중 환자별 최적을 선택합니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 12: FAQ ============ -->
+<section class="faq">
+    <div class="section-inner">
+        <div class="section-tag">SECTION 12 · 자주 묻는 질문</div>
+        <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
+        <p class="section-lead">
+            척추분리증에 대해 환자분들이 자주 묻는 15가지 질문을 정리했습니다.
+        </p>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary class="faq-q">Q1. 척추분리증은 허리뼈가 6개인 건가요?</summary>
+                <div class="faq-a">
+                    아닙니다. 척추분리증은 <strong>허리뼈의 개수와 전혀 관계없습니다</strong>. 척추뼈를 연결하는 고리(협부)가 끊어진 상태를 말합니다. 의료인조차 잘못 알고 있는 경우가 있을 정도로 흔한 오해입니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q2. 분리증이 있으면 꼭 아픈가요?</summary>
+                <div class="faq-a">
+                    아닙니다. 척추분리증이 있어도 <strong>평생 증상 없이 지내는 사람이 많습니다</strong>. 우연히 발견된 경우 증상이 없다면 특별한 치료 없이 일상생활이 가능합니다. 단, 정기 추적은 권장됩니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q3. 분리증이 자세 때문에 생겼나요?</summary>
+                <div class="faq-a">
+                    아닙니다. 분리증의 주된 원인은 <strong>협부의 피로 골절</strong>입니다. 어릴 때 허리를 반복적으로 뒤로 젖히는 운동(체조·역도·다이빙)이 주된 원인이며, 일반적인 생활이나 노동 자체가 직접 원인은 아닙니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q4. 디스크와 분리증이 함께 있을 수 있나요?</summary>
+                <div class="faq-a">
+                    네. 고리(협부)가 끊어져 척추가 불안정해지면 디스크에 더 많은 부담이 가해져 <strong>디스크 질환이 함께 생기는 경우가 매우 흔합니다</strong>. 본원은 분리증 + 디스크 + 전방전위증 + 협착증 동반 평가로 정확히 진단합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q5. 분리증이 반드시 전방전위증으로 진행되나요?</summary>
+                <div class="faq-a">
+                    아닙니다. <strong>약 15%에서만 전방전위증으로 진행</strong>됩니다. 성인에서는 전위가 30%를 넘는 경우가 드뭅니다. 본원에서 정기 X-ray 추적으로 진행 여부를 확인합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q6. 수술을 꼭 해야 하나요?</summary>
+                <div class="faq-a">
+                    대부분 수술 없이 지낼 수 있습니다. <strong>비수술 치료로도 통증이 해결되지 않아 일상생활이 힘들거나, 신경 증상이 동반되거나, 직업상 무거운 물건을 항시 다루어야 하는 경우</strong>에 수술을 고려합니다. 본원에서 적기 평가 후 결정합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q7. 비수술 치료를 6개월 받았는데 효과가 없어요. 수술해야 하나요?</summary>
+                <div class="faq-a">
+                    비수술 치료 6개월~1년 후 효과가 없다면 <strong>수술 재평가가 필요합니다</strong>. 본원에서 정밀 영상 검사로 디스크·전방전위증 동반 여부를 평가한 후 수술 적기를 결정합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q8. 청소년 운동선수인데 운동을 계속할 수 있나요?</summary>
+                <div class="faq-a">
+                    성장기 조기 진단 시 보조기 착용 + 활동 제한으로 <strong>골유합이 가능한 케이스</strong>가 있습니다. 본원에서 정확한 평가 후 보조기·재활을 결정하며, 협부 직접 수복술로 운동 범위를 보존하는 수술도 가능합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q9. 끊어진 협부는 다시 붙을 수 있나요?</summary>
+                <div class="faq-a">
+                    성인은 거의 붙지 않습니다. 단, <strong>청소년 성장기 + 조기 발견 + 보조기 착용 + 활동 제한</strong> 시 골유합 가능한 케이스가 있습니다. 본원에서 환자별로 평가합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q10. 나사못을 박으면 허리가 굳나요?</summary>
+                <div class="faq-a">
+                    <strong>1~2개 분절 유합은 일상생활에 거의 영향을 주지 않습니다</strong>. 척추는 여러 분절로 이루어져 있어 일부가 고정되어도 나머지가 보상합니다. 수술 후 걷기·계단·등산·수영·골프 등 대부분의 활동이 가능합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q11. 운동선수인데 협부 수복술이 가능한가요?</summary>
+                <div class="faq-a">
+                    젊은 환자에서 <strong>전방전위증이 없고 디스크 상태가 좋으면</strong> 협부 직접 수복술(나사·와이어·골이식)이 가능합니다. 유합술보다 운동 범위 보존에 유리합니다. 단, 적용 가능한 경우가 제한적이며 본원에서 환자별로 평가합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q12. 분리증 환자가 피해야 할 운동은 무엇인가요?</summary>
+                <div class="faq-a">
+                    <strong>허리를 뒤로 젖히는 동작(과신전)이 가장 해롭습니다</strong>. 역도·데드리프트 같은 무거운 중량 운동, 체조의 브릿지 동작, 급격한 비틀기 동작을 피하세요. 바르게 걷기·수영(접영 제외)·자전거는 괜찮습니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q13. 정기 추적 X-ray는 얼마나 자주 찍나요?</summary>
+                <div class="faq-a">
+                    청소년기는 3~6개월 간격, 성인은 <strong>6개월~1년 간격으로 X-ray 추적</strong>합니다. 전방전위증 진행 위험을 조기 발견하기 위함입니다. 본원에서 정기 추적을 책임지고 안내합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q14. 분리증은 유전되나요?</summary>
+                <div class="faq-a">
+                    직접적인 유전 질환은 아니지만, 가족 중에 척추분리증이 있으면 발생 가능성이 약간 높아집니다. 협부의 뼈가 선천적으로 약한 경향이 유전될 수 있습니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Q15. 비용·실비 청구는 어떻게 되나요?</summary>
+                <div class="faq-a">
+                    건강보험이 적용됩니다. 본원에서 진단서·소견서·세부내역서를 발급해 실손보험 청구가 가능합니다. <strong>산재 환자는 산재 진단서 발급도 가능</strong>합니다.
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="cta-final">
+    <div class="cta-inner">
+        <p class="cta-quote">
+            "허리 통증의 <span class="em">숨은 주범</span>,<br>
+            <span class="em">척추분리증</span>일 수 있습니다."
+        </p>
+        <p class="cta-text">
+            만성 요통인데 디스크는 정상? 분리증·전방전위증·디스크 동반 평가로 정확히 진단합니다.<br>
+            신경외과 전문의 김진균 원장 직접 진료 · 비수술 한계 시 유합술 적기 평가<br>
+            동탄·화성·평택권 희망찬병원
+        </p>
+        <div class="cta-buttons">
+            <a href="tel:16003415" class="btn-primary">📞 진료 예약 · <span class="tel:16003415">1600-3415</span></a>
+            <a href="https://map.naver.com/v5/search/이천희망찬병원" class="btn-secondary">📍 길찾기 · <span class="placeholder">위치</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo">
+                <div class="logo-mark">희</div>
+                <div>희망찬병원</div>
+            </div>
+            <p>척추 신경외과 · 신경외과 전문의 김진균 원장 직접 진료. 동탄·화성·평택권 종합 병원. 척추분리증 · 디스크 · 전방전위증 · 협착증 통합 진단 / 척추 유합술 · 협부 직접 수복술 다년 경험.</p>
+        </div>
+        <div class="footer-info">
+            <h6>진료 안내</h6>
+            <p>
+                <strong>주소:</strong> <span class="placeholder">경기도 화성시 병점중앙로 174</span><br>
+                <strong>전화:</strong> <span class="placeholder">1600-3415</span><br>
+                <strong>진료시간:</strong> <span class="placeholder">평일 09:00~18:00 / 토 09:00~13:00</span><br>
+                <strong>휴진:</strong> <span class="placeholder">일요일·공휴일</span>
+            </p>
+        </div>
+        <div class="footer-info">
+            <h6>의료진</h6>
+            <p>
+                <strong>대표원장 김진균</strong><br>
+                <span class="placeholder">신경외과 전문의 약력</span><br>
+                <strong>유튜브:</strong> 털보의사<br>
+                <strong>전문 분야:</strong> 척추 신경외과<br>
+                · 척추분리증 정밀 진단<br>
+                · 디스크·전방전위증 동반 평가<br>
+                · 척추 유합술 · 협부 수복술
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        본 페이지는 의료 정보 제공 목적이며, 진료는 전문의의 직접 검사와 판단이 필요합니다.<br>
+        의료광고심의필 · 척추분리증 진단·치료는 환자별 정밀 검사 후 의료진과 충분한 상담을 거쳐 결정됩니다.<br>
+        © 희망찬병원 · 2026
+    </div>
+</footer>
+
+</body>
+</html>
