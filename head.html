@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 두통 클리닉 — 만성두통·편두통 진료 안내</title>
+<meta name="description" content="신경외과 전문의가 진료하는 두통 클리닉. 편두통·만성·긴장성·경추성 두통 빈도와 강도를 줄이는 환자 맞춤 약물 전략. 화성·동탄·오산·평택 지역 진료.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-bg: #fafaf8;
+  --color-bg-alt: #f3f1ec;
+  --color-bg-section: #ffffff;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --color-text-light: #8a8a8a;
+  --color-border: #e5e3de;
+  --color-primary: #1e3a5f;       /* deep clinical blue */
+  --color-primary-soft: #4a6885;
+  --color-accent: #8b2331;        /* deep clinical red — signature 강조 */
+  --color-accent-soft: #c4516a;
+  --color-gold: #a0824a;
+  --color-success: #2d5a3d;
+  --font-serif: 'Noto Serif KR', 'Times New Roman', serif;
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.04);
+  --shadow-md: 0 4px 16px rgba(0,0,0,.06);
+  --shadow-lg: 0 20px 40px rgba(0,0,0,.08);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========== Top Bar ========== */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  padding: 14px 0;
+}
+.topbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: -0.01em;
+  color: var(--color-primary);
+}
+.brand-sub {
+  font-size: 12px;
+  color: var(--color-text-light);
+  font-weight: 400;
+  margin-left: 6px;
+  letter-spacing: 0.05em;
+}
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2px;
+  letter-spacing: 0.02em;
+  transition: background .2s;
+}
+.cta-button:hover { background: #142a48; }
+
+/* ========== Hero ========== */
+.hero {
+  padding: 100px 32px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-gold);
+}
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--color-primary);
+  margin-bottom: 28px;
+  letter-spacing: -0.02em;
+}
+.hero-title em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+.hero-desc {
+  font-size: 18px;
+  line-height: 1.85;
+  color: var(--color-text-muted);
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+.hero-quote {
+  border-left: 3px solid var(--color-accent);
+  padding: 16px 24px;
+  margin: 32px 0;
+  background: rgba(139,35,49,.03);
+  font-family: var(--font-serif);
+  font-size: 20px;
+  color: var(--color-primary);
+  line-height: 1.6;
+  max-width: 760px;
+}
+
+/* ========== Section Anchors ========== */
+.section-nav {
+  background: var(--color-bg-alt);
+  padding: 32px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+.section-nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-nav-title {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 16px;
+}
+.section-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px;
+}
+.section-nav-grid a {
+  font-size: 14px;
+  padding: 8px 12px;
+  color: var(--color-text);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all .2s;
+}
+.section-nav-grid a:hover {
+  border-left-color: var(--color-accent);
+  background: rgba(255,255,255,.7);
+  color: var(--color-primary);
+}
+.section-nav-grid a.signature {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+.section-nav-grid a.signature::before {
+  content: '★ ';
+  font-size: 11px;
+}
+
+/* ========== Landing Section ========== */
+.landing-section {
+  padding: 100px 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+}
+.landing-section.signature {
+  background: linear-gradient(180deg, var(--color-bg) 0%, rgba(160,130,74,.04) 100%);
+  position: relative;
+}
+.landing-section.signature::before {
+  content: '시그니처';
+  position: absolute;
+  top: 60px;
+  right: 32px;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
+.landing-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.landing-eyebrow::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+  max-width: 60px;
+}
+
+.landing-title {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.25;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 24px;
+  letter-spacing: -0.015em;
+}
+.landing-title strong {
+  font-weight: 600;
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+.landing-lead {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.landing-section h3 {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin: 48px 0 16px;
+  letter-spacing: -0.01em;
+}
+
+.landing-section p {
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  max-width: 800px;
+}
+
+/* ========== Symptom Box (환자 구어체) ========== */
+.symptom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+.symptom-card {
+  padding: 24px;
+  background: var(--color-bg-section);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-primary);
+}
+.symptom-card-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+.symptom-card-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+/* ========== Compare Table ========== */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 32px 0;
+  background: var(--color-bg-section);
+  border: 1px solid var(--color-border);
+}
+.compare-table th,
+.compare-table td {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+.compare-table th {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.compare-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.compare-table tbody tr:hover {
+  background: var(--color-bg-alt);
+}
+.compare-table .label {
+  font-weight: 500;
+  color: var(--color-primary);
+  width: 30%;
+}
+
+/* ========== Highlight Box ========== */
+.highlight-box {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 40px;
+  margin: 40px 0;
+  position: relative;
+}
+.highlight-box::before {
+  content: '"';
+  position: absolute;
+  top: 8px;
+  left: 24px;
+  font-family: var(--font-serif);
+  font-size: 80px;
+  color: rgba(255,255,255,.2);
+  line-height: 1;
+}
+.highlight-box-content {
+  position: relative;
+  z-index: 1;
+  padding-left: 40px;
+}
+.highlight-box p {
+  color: #fff;
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: none;
+}
+.highlight-box-caption {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: rgba(255,255,255,.6);
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+/* ========== Warning Box (응급) ========== */
+.warning-box {
+  background: #fef4f4;
+  border-left: 4px solid var(--color-accent);
+  padding: 24px 28px;
+  margin: 32px 0;
+}
+.warning-box-title {
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+.warning-box-desc {
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.75;
+}
+
+/* ========== Self-Check List ========== */
+.checklist {
+  list-style: none;
+  margin: 24px 0;
+  padding: 24px 32px;
+  background: var(--color-bg-section);
+  border: 1px solid var(--color-border);
+}
+.checklist li {
+  padding: 10px 0 10px 32px;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.6;
+  border-bottom: 1px solid var(--color-border);
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '□';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ========== Step Process ========== */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0;
+  margin: 32px 0;
+  border: 1px solid var(--color-border);
+}
+.step {
+  padding: 28px 24px;
+  border-right: 1px solid var(--color-border);
+  background: var(--color-bg-section);
+  position: relative;
+}
+.step:last-child { border-right: none; }
+.step-num {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  color: var(--color-gold);
+  margin-bottom: 12px;
+}
+.step-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+.step-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+/* ========== Doctor Card ========== */
+.doctor-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  padding: 40px;
+  background: var(--color-bg-alt);
+  margin: 48px 0;
+  align-items: center;
+}
+.doctor-credentials {
+  font-family: var(--font-serif);
+}
+.doctor-name {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+.doctor-role {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+}
+.doctor-credentials ul {
+  list-style: none;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+.doctor-credentials li {
+  padding-left: 16px;
+  position: relative;
+}
+.doctor-credentials li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-gold);
+}
+
+/* ========== CTA Section ========== */
+.cta-section {
+  background: var(--color-primary);
+  padding: 80px 32px;
+  text-align: center;
+}
+.cta-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #fff;
+}
+.cta-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.cta-title {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+.cta-desc {
+  font-size: 16px;
+  color: rgba(255,255,255,.85);
+  margin-bottom: 36px;
+  line-height: 1.8;
+}
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cta-btn-primary {
+  display: inline-block;
+  padding: 16px 40px;
+  background: #fff;
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  transition: all .2s;
+}
+.cta-btn-primary:hover {
+  background: var(--color-gold);
+  color: #fff;
+}
+.cta-btn-secondary {
+  display: inline-block;
+  padding: 16px 40px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.4);
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  transition: all .2s;
+}
+.cta-btn-secondary:hover {
+  background: rgba(255,255,255,.1);
+  border-color: #fff;
+}
+
+/* ========== Footer ========== */
+footer {
+  background: #0f1f33;
+  color: rgba(255,255,255,.65);
+  padding: 60px 32px 40px;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+.footer-brand-name {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.footer-brand-desc {
+  font-size: 13px;
+  line-height: 1.8;
+  color: rgba(255,255,255,.55);
+  max-width: 400px;
+}
+.footer-section h4 {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+.footer-section ul {
+  list-style: none;
+  font-size: 13px;
+  line-height: 2;
+}
+.footer-section a {
+  color: rgba(255,255,255,.65);
+  text-decoration: none;
+  transition: color .2s;
+}
+.footer-section a:hover { color: var(--color-gold); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding-top: 24px;
+  font-size: 12px;
+  color: rgba(255,255,255,.45);
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .hero { padding: 60px 24px 40px; }
+  .landing-section { padding: 60px 24px; }
+  .topbar-inner { padding: 0 20px; }
+  .doctor-card { grid-template-columns: 1fr; gap: 24px; padding: 28px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cta-section { padding: 60px 24px; }
+  .cta-title { font-size: 28px; }
+  .hero-quote { font-size: 17px; }
+  .landing-section.signature::before { display: none; }
+}
+
+/* ========== Print ========== */
+@media print {
+  .topbar, .section-nav, .cta-section, footer { display: none; }
+  .landing-section { break-after: page; }
+}
+
+/* ========== Animations ========== */
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<!-- ========== Topbar ========== -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div>
+      <span class="brand">희망찬병원 두통 클리닉</span>
+      <span class="brand-sub">HOPECHAN HEADACHE CLINIC</span>
+    </div>
+    <a href="#예약" class="cta-button">진료 예약</a>
+  </div>
+</div>
+
+<!-- ========== Hero ========== -->
+<section class="hero fade-in">
+  <div class="hero-eyebrow">신경외과 두통 진료 · 14-1</div>
+  <h1 class="hero-title">
+    두통의 <em>빈도와 강도</em>를<br>줄이는 것이 목표입니다.
+  </h1>
+  <p class="hero-desc">
+    완치를 약속하지 않습니다. 환자가 실제로 체감하는 두통의 빈도 감소와 강도 감소를 진료의 목표로 삼습니다.
+    편두통·만성 두통·긴장성 두통·경추성 두통 — 두통의 종류와 환자의 약물 이력을 정확히 진단하여,
+    올바른 약물 사용으로 일상의 평온을 되찾도록 돕습니다.
+  </p>
+  <div class="hero-quote">
+    "특효약은 없습니다. 그러나 환자에게 맞는 약은 찾아낼 수 있습니다."<br>
+    <span style="font-size: 14px; color: var(--color-text-muted); font-family: var(--font-sans); font-style: normal;">
+      — 김진균 원장, 신경외과 전문의
+    </span>
+  </div>
+</section>
+
+<!-- ========== Section Navigation ========== -->
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <div class="section-nav-title">진료 안내 · 11개 영역</div>
+    <div class="section-nav-grid">
+      <a href="#편두통_결정">편두통 진료·약·검사</a>
+      <a href="#편두통_증상">편두통 증상·자가진단</a>
+      <a href="#편두통_감별">편두통과 위험 두통 감별</a>
+      <a href="#편두통_약물전략" class="signature">편두통 약물 전략</a>
+      <a href="#편두통_약물과용" class="signature">편두통 약물 과용성 두통</a>
+      <a href="#만성긴장성_결정">만성·긴장성 두통 진료</a>
+      <a href="#만성긴장성_증상">만성·긴장성 증상</a>
+      <a href="#만성긴장성_경추성" class="signature">경추성 두통·목에서 오는 두통</a>
+      <a href="#만성긴장성_감별">만성 두통 감별</a>
+      <a href="#만성긴장성_약물전략" class="signature">만성 두통 약물 전략</a>
+      <a href="#만성긴장성_약물과용" class="signature">만성 두통 약물 과용</a>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================================== -->
+<!-- 랜딩 1: 편두통_결정 (MIG_결정 + MIG_지역 + MIG_변형명 도착) -->
+<!-- ========================================================== -->
+<section id="편두통_결정" class="landing-section">
+  <div class="landing-eyebrow">랜딩 1 · 편두통 진료</div>
+  <h2 class="landing-title">편두통, <strong>신경외과 전문의</strong>의 진료</h2>
+  <p class="landing-lead">
+    한쪽 머리가 욱신거리며 구역·구토·빛 예민이 동반되는 두통은 단순한 두통이 아니라 편두통입니다.
+    편두통은 약물로 잘 관리할 수 있는 질환이지만, 환자마다 약 반응이 다르기 때문에
+    정확한 진단과 환자 맞춤 약물 전략이 무엇보다 중요합니다.
+  </p>
+
+  <h3>본원 편두통 진료 범위</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">정확한 진단</div>
+      <div class="symptom-card-desc">편두통 진단 기준에 맞춘 문진·신경학적 검사·MRI/MRA 등을 통해 진단합니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">급성기 약물</div>
+      <div class="symptom-card-desc">트립탄·진통제 등 발작 시 사용하는 약물을 환자에게 맞춰 처방합니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">예방 약물</div>
+      <div class="symptom-card-desc">월 빈도가 잦은 경우 예방약·CGRP 등으로 빈도를 줄이는 진료를 합니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">시술 진료</div>
+      <div class="symptom-card-desc">필요 시 보톡스·신경차단술 등 시술 진료를 병행합니다.</div>
+    </div>
+  </div>
+
+  <h3>본원 영상 검사 범위</h3>
+  <p>
+    뇌 MRI·MRA·CT를 본원에서 직접 시행하며, 당일 결과 확인이 가능합니다.
+    편두통과 헷갈리는 뇌혈관 질환을 감별하기 위해 영상 검사가 필요한 경우,
+    별도 의뢰 없이 본원에서 진단·약물 처방까지 한 번에 진료받으실 수 있습니다.
+  </p>
+
+  <h3>편두통 진료가 필요한 분</h3>
+  <ul class="checklist">
+    <li>한 달에 두통이 4회 이상 반복되는 분</li>
+    <li>진통제를 매주·매일 복용하고 계신 분</li>
+    <li>약을 먹어도 효과가 점점 떨어지는 느낌이 드는 분</li>
+    <li>보톡스 시술을 받았지만 효과가 부족했던 분</li>
+    <li>편두통 진단 자체를 정확히 받고 싶은 분</li>
+    <li>일상생활(직장·학업·가사)에 지장을 받고 계신 분</li>
+  </ul>
+</section>
+
+<!-- ========================================================== -->
+<!-- 랜딩 2: 편두통_증상 -->
+<!-- ========================================================== -->
+<section id="편두통_증상" class="landing-section">
+  <div class="landing-eyebrow">랜딩 2 · 편두통 증상</div>
+  <h2 class="landing-title">한쪽 머리가 욱신거리신다면, <strong>편두통</strong>입니다</h2>
+  <p class="landing-lead">
+    편두통은 두통의 일반적인 의미가 아니라, 특정한 양상을 가진 의학적 진단입니다.
+    아래 증상 중 여러 개가 함께 나타난다면 단순 두통이 아닌 편두통일 가능성이 매우 높습니다.
+  </p>
+
+  <h3>편두통의 대표 증상</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">한쪽 머리 욱신</div>
+      <div class="symptom-card-desc">관자놀이·눈 뒤·이마 한쪽이 박동성(맥박처럼 뛰는)으로 욱신거립니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">구역·구토</div>
+      <div class="symptom-card-desc">두통과 함께 속이 메스껍거나 구토 증상이 동반됩니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">빛·소리 예민</div>
+      <div class="symptom-card-desc">평소 같으면 괜찮을 빛·소리·냄새가 견디기 힘들어집니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">활동 시 악화</div>
+      <div class="symptom-card-desc">계단 오르기·고개 숙이기 등으로 두통이 더 심해집니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">전조 증상</div>
+      <div class="symptom-card-desc">두통 시작 전 시야 깜빡임·지그재그 형상 등 시각 전조가 나타나기도 합니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">월경 관련성</div>
+      <div class="symptom-card-desc">여성의 경우 월경 전후로 반복되는 한쪽 두통은 호르몬 편두통입니다.</div>
+    </div>
+  </div>
+
+  <h3>편두통 자가진단 체크리스트</h3>
+  <p>아래 항목 중 2개 이상 해당되면 편두통 가능성이 높습니다.</p>
+  <ul class="checklist">
+    <li>4시간 이상 지속되는 두통이 한 달에 1회 이상 발생한다</li>
+    <li>두통이 머리 한쪽에 집중된다</li>
+    <li>두통이 박동성(맥박처럼 뛰는 느낌)이다</li>
+    <li>두통이 시작되면 일상생활이 어렵다</li>
+    <li>두통과 함께 구역·메스꺼움이 동반된다</li>
+    <li>두통이 있을 때 빛·소리가 평소보다 견디기 어렵다</li>
+  </ul>
+
+  <div class="warning-box">
+    <div class="warning-box-title">단, 다음 증상이 동반된다면 즉시 응급 진료</div>
+    <div class="warning-box-desc">
+      ① 평생 처음 겪는 극심한 두통(벼락 두통) ② 한쪽 팔다리 힘 빠짐·말 어눌함·시야 결손 같은 신경학적 증상
+      ③ 발열·목 뻣뻣함 ④ 머리를 다친 후 시작된 두통 — 이 경우 편두통 진료가 아닌 응급실로 가셔야 합니다.
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== -->
+<!-- 랜딩 3: 편두통_감별 -->
+<!-- ========================================================== -->
+<section id="편두통_감별" class="landing-section">
+  <div class="landing-eyebrow">랜딩 3 · 편두통 감별</div>
+  <h2 class="landing-title">편두통과 <strong>위험한 두통</strong>은 다릅니다</h2>
+  <p class="landing-lead">
+    환자분이 가장 두려워하시는 것은 단순한 두통이 아니라 뒤에 숨어 있을지 모를 뇌혈관 질환입니다.
+    실제로 편두통은 양성 질환이지만, 일부 두통은 뇌출혈·뇌졸중·뇌종양 등 생명을 위협하는 질환의 신호일 수 있습니다.
+    아래 표로 차이를 정리했습니다.
+  </p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>구분</th>
+        <th>편두통 (양성)</th>
+        <th>위험한 두통 (응급)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">시작</td>
+        <td>서서히 30분~몇 시간에 걸쳐 시작</td>
+        <td>몇 초 만에 갑작스럽게 시작 (벼락 두통)</td>
+      </tr>
+      <tr>
+        <td class="label">강도</td>
+        <td>일상에 지장 있지만 견딜 만함</td>
+        <td>평생 겪은 적 없는 극심한 통증</td>
+      </tr>
+      <tr>
+        <td class="label">동반 증상</td>
+        <td>구역·빛 예민 등 편두통 양상</td>
+        <td>마비·언어장애·의식 저하·발열·목 뻣뻣함</td>
+      </tr>
+      <tr>
+        <td class="label">발생 시점</td>
+        <td>젊은 나이부터 반복</td>
+        <td>50세 이후 처음 발생한 새 두통</td>
+      </tr>
+      <tr>
+        <td class="label">머리 외상</td>
+        <td>외상과 무관</td>
+        <td>최근 머리 부딪힌 적 있음 (2~3주 후 발현 가능)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>본원의 감별 진료 방식</h3>
+  <p>
+    환자분이 위험한 두통일 가능성이 있는 경우, 본원에서 직접 뇌 MRI·MRA·CT를 시행하여 당일 결과를 확인합니다.
+    뇌혈관 이상이 발견되면 본원에서 직접 진료를 이어가거나 필요시 상급 기관으로 신속히 연계합니다.
+    중환자실이 필요하지 않은 수준의 뇌혈관 질환은 본원에서 입원 관리도 가능합니다.
+  </p>
+  <p>
+    뇌혈관 영역의 자세한 안내는 별도 페이지(14-2 뇌혈관 진료)에서 다룹니다.
+    편두통 진단을 받으신 후에도 50세 이후 새로운 두통 양상이 나타나면 다시 진료받으시는 것이 좋습니다.
+  </p>
+</section>
+
+<!-- ========================================================== -->
+<!-- 랜딩 4: 편두통_약물전략 ★ 시그니처 -->
+<!-- ========================================================== -->
+<section id="편두통_약물전략" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 4 · 편두통 약물 전략</div>
+  <h2 class="landing-title"><strong>특효약은 없습니다.</strong> 그러나 환자에게 맞는 약은 있습니다.</h2>
+  <p class="landing-lead">
+    "편두통 특효약 있나요"라고 검색하시는 환자분이 많습니다. 정직하게 말씀드리면 모든 편두통 환자에게 통하는 단 하나의 특효약은 없습니다.
+    그러나 환자의 두통 양상·빈도·강도·반응을 정확히 파악하면, <strong>그 환자에게 맞는 약</strong>은 찾아낼 수 있습니다.
+    이것이 편두통 약물 전략의 핵심입니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"약 한 알을 처방하는 것이 진료가 아닙니다. 환자의 두통 일기를 함께 읽고, 약을 조정해 나가며, 빈도와 강도를 줄여 가는 과정이 진료입니다."</p>
+      <div class="highlight-box-caption">— 본원 편두통 약물 전략 원칙</div>
+    </div>
+  </div>
+
+  <h3>편두통 약물의 두 갈래</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>구분</th>
+        <th>급성기 약물</th>
+        <th>예방 약물</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">목적</td>
+        <td>편두통 발작 시 통증을 끝내기</td>
+        <td>두통이 오기 전에 빈도를 줄이기</td>
+      </tr>
+      <tr>
+        <td class="label">사용 시점</td>
+        <td>두통이 시작될 때 (조기 복용이 효과적)</td>
+        <td>매일 또는 정기 (발작 유무와 무관)</td>
+      </tr>
+      <tr>
+        <td class="label">대표 약물</td>
+        <td>트립탄·NSAIDs·복합 진통제</td>
+        <td>베타차단제·항우울제·항경련제·CGRP 항체</td>
+      </tr>
+      <tr>
+        <td class="label">적용 기준</td>
+        <td>모든 편두통 환자</td>
+        <td>월 4회 이상 또는 일상 지장 큰 환자</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>약이 잘 듣지 않을 때 본원이 하는 일</h3>
+  <p>
+    환자분이 약을 드셨는데 효과가 부족하다면, 본원은 다음 단계로 진료를 이어갑니다.
+  </p>
+  <ul class="checklist">
+    <li>두통 일기 작성 — 어떤 약을, 언제, 얼마나, 어떤 상황에서 드셨는지 정리</li>
+    <li>약물 종류 전환 — 같은 계열 다른 약 / 다른 계열 약으로 변경</li>
+    <li>복용 시점 조정 — 두통 시작 직후 즉시 복용하도록 교육</li>
+    <li>예방 약물 추가 — 발작 빈도 자체를 줄이는 방향으로 전환</li>
+    <li>CGRP·보톡스 등 시술 진료 도입 검토</li>
+    <li>약물 과용 여부 점검 — 진통제 자체가 두통을 만드는지 확인</li>
+  </ul>
+
+  <p>
+    중요한 것은 "한 번의 처방으로 끝나는 진료"가 아니라 "환자와 함께 약을 조정해 나가는 진료"입니다.
+    본원 두통 클리닉은 이러한 단계적 약물 전략에 충실한 진료를 지향합니다.
+  </p>
+</section>
+
+<!-- ========================================================== -->
+<!-- 랜딩 5: 편두통_약물과용 ★ 시그니처 (본원 최강 차별화) -->
+<!-- ========================================================== -->
+<section id="편두통_약물과용" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 5 · 약물 과용성 두통 (본원 시그니처)</div>
+  <h2 class="landing-title"><strong>진통제를 줄여야</strong> 두통이 줄어듭니다.</h2>
+  <p class="landing-lead">
+    매일 진통제를 드시는 분, 두통약을 가방에 늘 챙겨 다니시는 분, "약 떨어지면 머리가 아플까 봐" 미리 약을 드시는 분 —
+    이런 분들이 흔히 모르고 계신 사실이 있습니다. <strong>진통제 그 자체가 두통을 만들고 있을 수 있습니다.</strong>
+    이를 의학적으로 "약물 과용성 두통(Medication Overuse Headache, MOH)"이라고 부릅니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"매일 진통제를 드시는데 두통이 오히려 더 심해진다면, 약을 줄이는 것이 치료입니다. 약을 더 강하게 쓰는 것이 아니라."</p>
+      <div class="highlight-box-caption">— 본원 약물 과용성 두통 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>약물 과용성 두통의 진단 기준</h3>
+  <p>다음 중 하나에 해당되면 약물 과용성 두통일 가능성이 매우 높습니다.</p>
+  <ul class="checklist">
+    <li>한 달에 15일 이상 두통이 있다</li>
+    <li>한 달에 10일 이상 복합 진통제·트립탄·아편유사제·복합 약물을 복용한다</li>
+    <li>한 달에 15일 이상 단일 성분 진통제(타이레놀·아스피린 등)를 복용한다</li>
+    <li>이 약물 복용이 3개월 이상 지속되고 있다</li>
+  </ul>
+
+  <h3>약이 두통을 만드는 이유</h3>
+  <p>
+    진통제를 매일 드시면 우리 뇌는 그 진통제 농도에 적응합니다. 약효가 떨어지는 시점에 뇌는 통증 감각을 더 예민하게 받아들이게 되고,
+    이것이 다시 두통을 일으킵니다. 환자분은 두통이 와서 약을 드시지만, 사실은 약이 떨어져서 두통이 온 것입니다.
+    이 악순환이 약물 과용성 두통입니다.
+  </p>
+
+  <h3>본원의 단계적 진료</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">진단</div>
+      <div class="step-desc">약물 복용 패턴 정리·두통 일기 작성으로 약물 과용 여부 진단</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">약물 감량 계획</div>
+      <div class="step-desc">환자 상태에 따라 단계적 감량 또는 일시 중단 계획 수립</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">예방 약물 도입</div>
+      <div class="step-desc">진통제 줄이는 기간 동안 발작을 예방하는 예방 약물 시작</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">금단기 관리</div>
+      <div class="step-desc">진통제 끊는 초기 2~4주 두통 악화 시기를 함께 견뎌낼 진료</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">유지·재발 방지</div>
+      <div class="step-desc">진통제 사용량 모니터링·재발 방지 교육 진료</div>
+    </div>
+  </div>
+
+  <div class="warning-box">
+    <div class="warning-box-title">반드시 의료진과 함께 진행해야 합니다</div>
+    <div class="warning-box-desc">
+      진통제 중에는 갑작스럽게 끊으면 위험한 약물(아편유사제·일부 복합 진통제 등)이 있습니다.
+      "약을 줄이라고 들었으니 혼자 끊겠다"는 시도는 위험합니다. 반드시 신경외과 또는 신경과 전문의 진료를 받으며 진행하셔야 합니다.
+    </div>
+  </div>
+
+  <p>
+    본원은 약물 과용성 두통 환자분이 "약을 줄이는 진료"를 함께 견뎌낼 수 있도록 단계별로 동행합니다.
+    매일 진통제를 드시며 살아오신 환자분께 "그 약이 두통을 만들고 있다"는 사실을 알려드리는 일은
+    본원이 두통 클리닉으로서 가장 중요하게 여기는 진료입니다.
+  </p>
+</section>
+
+<!-- ========================================================== -->
+<!-- 랜딩 6: 만성긴장성_결정 -->
+<!-- ========================================================== -->
+<section id="만성긴장성_결정" class="landing-section">
+  <div class="landing-eyebrow">랜딩 6 · 만성·긴장성 두통 진료</div>
+  <h2 class="landing-title">매일 머리가 무겁고 짓누른다면, <strong>긴장성·만성 두통</strong></h2>
+  <p class="landing-lead">
+    뒷머리가 띠 두른 듯 무겁고, 정수리·관자놀이가 짓누르듯 아프고, 하루 종일 머리가 개운하지 않다면 긴장성 두통입니다.
+    이런 두통이 한 달에 15일 이상 반복되면 만성 두통으로 분류됩니다. 본원은 만성·긴장성 두통을 진료하는 신경외과 두통 클리닉입니다.
+  </p>
+
+  <h3>만성·긴장성 두통의 특징</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">짓누르는 통증</div>
+      <div class="symptom-card-desc">편두통의 욱신거림과 달리 둔하게 짓누르거나 띠 두른 듯한 느낌입니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">양쪽 통증</div>
+      <div class="symptom-card-desc">한쪽이 아닌 머리 전체 또는 양쪽이 함께 아픕니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">활동 무관</div>
+      <div class="symptom-card-desc">걷거나 움직여도 더 심해지지 않습니다. 편두통과 다른 점입니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">동반 증상 적음</div>
+      <div class="symptom-card-desc">구역·구토가 없거나 경미합니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">매일 반복</div>
+      <div class="symptom-card-desc">월 15일 이상 반복되면 만성 두통입니다.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">목·어깨 동반</div>
+      <div class="symptom-card-desc">뒷목 결림·어깨 뭉침과 함께 나타나는 경우가 많습니다.</div>
+    </div>
+  </div>
+
+  <h3>본원 진료 방식</h3>
+  <ul class="checklist">
+    <li>두통 양상·빈도·강도·약물 복용력 문진</li>
+    <li>경추 진단 — 만성 두통은 목 문제와 연결된 경우가 많습니다</li>
+    <li>필요시 뇌 MRI·경추 MRI 검사 (당일 결과)</li>
+    <li>환자 맞춤 약물 처방 — 진통제·예방약·항우울제 등</li>
+    <li>약물 과용 여부 점검</li>
+    <li>신경차단술 등 시술 진료 필요시 병행</li>
+  </ul>
+</section>
+
+<!-- ========================================================== -->
+<!-- 랜딩 7: 만성긴장성_증상 -->
+<!-- ========================================================== -->
+<section id="만성긴장성_증상" class="landing-section">
+  <div class="landing-eyebrow">랜딩 7 · 만성·긴장성 증상</div>
+  <h2 class="landing-title">컴퓨터 후·회의 후·하루 종일 <strong>머리가 무겁다</strong></h2>
+  <p class="landing-lead">
+    직장인·학생·주부 — 특정 활동 후 반복되는 둔한 두통과 매일 이어지는 머리 무거움은 긴장성 두통의 전형입니다.
+    이런 두통은 진통제로 일시적으로 가라앉지만, 매일 약을 드시다 보면 만성화되고 약물 과용으로 이어지기 쉽습니다.
+  </p>
+
+  <h3>당신의 두통, 이런 경우인가요?</h3>
+  <ul class="checklist">
+    <li>오후가 되면 머리가 무거워진다</li>
+    <li>회의·발표·집중 작업 후 머리가 띵하다</li>
+    <li>컴퓨터·모니터를 오래 보면 두통이 시작된다</li>
+    <li>아침에 일어났을 때 이미 머리가 무겁다</li>
+    <li>스트레스 받으면 즉시 머리가 아파진다</li>
+    <li>주말이나 휴가 첫날 두통이 더 심하다</li>
+    <li>뒷목·어깨가 결리면서 머리가 함께 아프다</li>
+    <li>두통약을 일주일에 3회 이상 드신다</li>
+  </ul>
+
+  <h3>본원이 살피는 것들</h3>
+  <p>
+    긴장성 두통은 단순히 "스트레스 때문"으로 넘어가서는 안 됩니다. 본원은 다음을 함께 살핍니다.
+  </p>
+  <table class="compare-table">
+    <tbody>
+      <tr>
+        <td class="label">자세·경추</td>
+        <td>거북목·일자목이 두통을 일으키는 경우가 많아 경추 진단을 함께 진행합니다.</td>
+      </tr>
+      <tr>
+        <td class="label">약물 복용</td>
+        <td>두통약을 얼마나 자주 드시는지 점검 — 약물 과용 여부 판단</td>
+      </tr>
+      <tr>
+        <td class="label">수면</td>
+        <td>수면 부족·수면 과다 모두 만성 두통을 악화시킵니다.</td>
+      </tr>
+      <tr>
+        <td class="label">스트레스 패턴</td>
+        <td>직장·학업 스트레스가 어떤 시점에 두통을 유발하는지 정리</td>
+      </tr>
+      <tr>
+        <td class="label">기존 약물</td>
+        <td>다른 약(혈압약·우울증약 등)이 두통을 일으키는지 점검</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ========================================================== -->
+<!-- 랜딩 8: 만성긴장성_경추성 ★ 시그니처 -->
+<!-- ========================================================== -->
+<section id="만성긴장성_경추성" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 8 · 경추성 두통 (본원 시그니처)</div>
+  <h2 class="landing-title">목에서 시작되는 두통, <strong>경추 진단</strong>이 먼저입니다</h2>
+  <p class="landing-lead">
+    뒷목이 뻐근하면서 머리까지 이어지는 두통, 고개를 돌릴 때 두통이 더 심해지는 두통 — 이런 두통은 단순한 긴장성 두통이 아니라
+    경추(목뼈)에서 시작되는 경추성 두통일 가능성이 큽니다. 본원이 신경외과 두통 클리닉으로서 가장 강점을 가지는 영역입니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"목 디스크·거북목·일자목 환자분의 두통은 두통약만 드신다고 해결되지 않습니다. 경추를 정확히 진단해야 두통도 해결됩니다."</p>
+      <div class="highlight-box-caption">— 본원 경추성 두통 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>경추성 두통의 특징</h3>
+  <ul class="checklist">
+    <li>두통이 뒷목·뒷머리에서 시작해 위로 올라온다</li>
+    <li>고개를 돌리거나 숙일 때 두통이 더 심해진다</li>
+    <li>주로 한쪽 머리(목이 아픈 쪽)에 두통이 온다</li>
+    <li>뒷목·어깨 근육이 뭉쳐 있고 누르면 아프다</li>
+    <li>편두통 양상(구역·빛 예민)은 약하다</li>
+    <li>두통약(진통제) 효과가 약하다</li>
+  </ul>
+
+  <h3>본원 경추성 두통 진료</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">경추 영상 검사</div>
+      <div class="step-desc">경추 X선·MRI로 디스크·후관절·신경 상태를 확인합니다 (당일 결과)</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">두통 양상 진단</div>
+      <div class="step-desc">경추 문제와 두통의 인과 관계를 정리합니다</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">약물 진료</div>
+      <div class="step-desc">근육이완제·소염진통제 등 환자 맞춤 약물 처방</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">신경차단술</div>
+      <div class="step-desc">약물로 호전 없으면 후두신경·경추 신경차단술 시술 진료</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">자세·생활 교육</div>
+      <div class="step-desc">거북목·일자목 교정·작업 자세 교정 안내</div>
+    </div>
+  </div>
+
+  <p>
+    본원은 신경외과 전문의가 진료하는 두통 클리닉입니다. 경추 진단·약물 진료·신경차단술이 한 병원에서 이어진다는 것이
+    경추성 두통 환자분께 가장 큰 장점입니다. 두통과 목 문제를 별개의 의원에서 따로 진료받으실 필요가 없습니다.
+  </p>
+</section>
+
+<!-- ========================================================== -->
+<!-- 랜딩 9: 만성긴장성_감별 -->
+<!-- ========================================================== -->
+<section id="만성긴장성_감별" class="landing-section">
+  <div class="landing-eyebrow">랜딩 9 · 만성 두통 감별</div>
+  <h2 class="landing-title">만성 두통의 종류, <strong>치료가 다릅니다</strong></h2>
+  <p class="landing-lead">
+    "만성 두통"이라는 한 단어 안에는 여러 종류의 두통이 섞여 있습니다. 정확한 감별 진단이 없으면 약을 아무리 써도 잘 듣지 않습니다.
+    본원은 만성 두통 환자분의 두통이 어느 종류에 해당하는지를 우선 진단합니다.
+  </p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>구분</th>
+        <th>특징</th>
+        <th>치료 방향</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">만성 편두통</td>
+        <td>월 15일 이상, 그중 8일 이상이 편두통 양상</td>
+        <td>예방약·CGRP·보톡스 등 예방 중심</td>
+      </tr>
+      <tr>
+        <td class="label">만성 긴장성 두통</td>
+        <td>월 15일 이상, 짓누름·띠 두름 양상</td>
+        <td>예방약·항우울제·자세 교정</td>
+      </tr>
+      <tr>
+        <td class="label">경추성 두통</td>
+        <td>목 자세·움직임과 연결, 뒷목에서 시작</td>
+        <td>경추 진단·신경차단술·근육이완제</td>
+      </tr>
+      <tr>
+        <td class="label">약물 과용성 두통</td>
+        <td>월 10~15일 이상 진통제 복용 중인 만성 두통</td>
+        <td>약물 감량·예방약 도입</td>
+      </tr>
+      <tr>
+        <td class="label">이차성 두통</td>
+        <td>뇌혈관·뇌종양·부비동염 등 다른 질환으로 인한 두통</td>
+        <td>원인 질환 치료가 우선</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>본원 감별 진단 절차</h3>
+  <p>
+    만성 두통 환자분이 처음 방문하시면, 본원은 두통의 양상·빈도·약물 복용·경추 상태·뇌 영상을 종합하여
+    환자분의 두통이 위 표 중 어디에 해당하는지 진단합니다. 이 진단이 정확해야 치료 방향이 흔들리지 않습니다.
+  </p>
+
+  <div class="warning-box">
+    <div class="warning-box-title">만성 두통이 갑자기 양상이 바뀌면 응급 진료</div>
+    <div class="warning-box-desc">
+      평소 두통이 있던 분이라도 두통의 양상·강도·빈도가 갑자기 변했다면 새 진단이 필요합니다.
+      특히 갑작스러운 강한 두통·신경학적 증상이 동반되면 즉시 응급실로 가시거나 본원으로 내원하셔서 영상 검사를 받으셔야 합니다.
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== -->
+<!-- 랜딩 10: 만성긴장성_약물전략 ★ 시그니처 -->
+<!-- ========================================================== -->
+<section id="만성긴장성_약물전략" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 10 · 만성 두통 약물 전략</div>
+  <h2 class="landing-title">만성 두통, <strong>빈도와 강도</strong>를 줄이는 약물 전략</h2>
+  <p class="landing-lead">
+    만성 두통 환자분이 가장 많이 하시는 말씀이 "약을 먹어도 안 들어요"입니다. 그 이유는 대부분 두 가지입니다.
+    하나는 두통 종류에 맞지 않는 약을 드시고 계셔서, 다른 하나는 약을 너무 자주 드셔서 약효가 떨어지고 있어서입니다.
+    본원은 이 두 가지를 동시에 살핍니다.
+  </p>
+
+  <h3>본원 만성 두통 약물 전략</h3>
+  <ul class="checklist">
+    <li>두통 일기 — 두통 양상·강도·약 복용량을 2~4주 기록하여 약물 반응을 객관적으로 확인</li>
+    <li>예방 약물 도입 — 빈도가 잦은 환자에게는 매일 복용하는 예방약을 시작</li>
+    <li>약물 종류 전환 — 진통제 의존을 줄이고 만성 두통에 효과가 검증된 약물로 변경</li>
+    <li>항우울제 활용 — 만성 통증·만성 두통에 유효성이 알려진 약물을 저용량 도입</li>
+    <li>경추 동반 시 근육이완제 — 경추성 요소가 있을 경우 근육이완제 병행</li>
+    <li>주기적 약물 평가 — 4~8주마다 약물 효과와 부작용을 점검</li>
+  </ul>
+
+  <h3>약물 외 진료</h3>
+  <p>
+    약물만으로 호전이 부족한 경우 본원은 신경차단술·근육 주사 등의 시술 진료를 병행합니다.
+    또한 자세·수면·스트레스 관리 등 약물 외 요인도 함께 정리하여 환자분의 두통 빈도를 장기적으로 줄여 나갑니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"만성 두통의 목표는 완치가 아니라 빈도와 강도의 감소입니다. 한 달에 20일 아프던 분이 5~10일로 줄어들면, 일상이 달라집니다."</p>
+      <div class="highlight-box-caption">— 본원 만성 두통 진료 원칙</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== -->
+<!-- 랜딩 11: 만성긴장성_약물과용 ★ 시그니처 -->
+<!-- ========================================================== -->
+<section id="만성긴장성_약물과용" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 11 · 만성 두통 약물 과용 (본원 시그니처)</div>
+  <h2 class="landing-title">매일 두통약을 드시면, <strong>두통이 더 심해집니다</strong></h2>
+  <p class="landing-lead">
+    만성 두통 환자분 중 진통제·두통약을 매일 드시는 분이 많습니다.
+    게보린·펜잘·타이레놀·낙센·부루펜 — 이름이 익숙한 약들입니다. 그러나 이런 약을 매일 드시면 약이 두통을 만드는 악순환에 빠집니다.
+    이를 약물 과용성 두통(MOH)이라고 합니다.
+  </p>
+
+  <h3>만성 두통 환자에게 흔한 약물 과용 패턴</h3>
+  <ul class="checklist">
+    <li>가방에 늘 두통약을 챙겨 다닌다</li>
+    <li>두통이 올 것 같으면 미리 약을 먹는다</li>
+    <li>한 달에 두통약 10일 이상 복용한다</li>
+    <li>같은 약을 여러 종류 함께 드신다 (예: 카페인 함유 복합 진통제)</li>
+    <li>약을 안 먹으면 머리가 더 아플 것 같다</li>
+    <li>약을 줄이려 했지만 두통이 심해져 다시 늘렸다</li>
+  </ul>
+
+  <h3>본원의 단계적 진료</h3>
+  <p>
+    약을 갑자기 끊으시면 일시적으로 두통이 더 심해지는 시기(금단기)가 옵니다. 이 시기를 환자분 혼자 견디기 어렵습니다.
+    본원은 이 과정을 함께 동행합니다.
+  </p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">약물 복용 정리</div>
+      <div class="step-desc">현재 드시는 모든 약을 정리하고 과용 여부 진단</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">예방약 시작</div>
+      <div class="step-desc">진통제 끊는 기간 동안 두통을 줄여줄 예방약 도입</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">진통제 감량</div>
+      <div class="step-desc">단계적 감량 또는 일시 중단 (환자 상태 따라)</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">금단기 동행</div>
+      <div class="step-desc">2~4주 두통 악화 시기를 함께 견딜 진료</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">재발 방지</div>
+      <div class="step-desc">약물 복용량 모니터링·재발 방지 교육</div>
+    </div>
+  </div>
+
+  <p>
+    "진통제를 줄이는 진료"는 본원이 만성 두통 환자분께 드리는 가장 정직한 메시지입니다.
+    약을 늘리는 것이 아니라 줄이는 것이 치료라는 사실을, 환자분과 함께 한 단계씩 확인해 나갑니다.
+  </p>
+</section>
+
+<!-- ========== Doctor Card ========== -->
+<section style="padding: 80px 32px; max-width: 1100px; margin: 0 auto;">
+  <div class="doctor-card">
+    <div>
+      <div style="font-family: var(--font-serif); font-size: 13px; color: var(--color-gold); letter-spacing: 0.2em; margin-bottom: 12px;">DIRECTOR</div>
+      <div class="doctor-name">김진균 원장</div>
+      <div class="doctor-role">희망찬병원 두통 클리닉</div>
+    </div>
+    <div class="doctor-credentials">
+      <ul>
+        <li>신경외과 전문의</li>
+        <li>희망찬병원 원장</li>
+        <li>유튜브 채널 "털보의사" 운영 — 신경외과 환자 교육</li>
+        <li>두통·뇌혈관 영역 환자 교육 단행본 집필</li>
+        <li>화성·동탄·오산·평택 지역 두통 진료 거점</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section id="예약" class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">진료 예약</div>
+    <h2 class="cta-title">매일 진통제로 버티지 않으셔도 됩니다</h2>
+    <p class="cta-desc">
+      신경외과 전문의 김진균 원장이 진료합니다. 편두통·만성 두통·긴장성 두통·경추성 두통 — 환자에게 맞는 약물 전략으로
+      두통의 빈도와 강도를 줄이는 진료를 받아보세요. MRI·MRA·CT 당일 결과 확인 가능.
+    </p>
+    <div class="cta-buttons">
+      <a href="tel:031-0000-0000" class="cta-btn-primary">전화 예약 — 031-XXXX-XXXX</a>
+      <a href="#" class="cta-btn-secondary">온라인 예약 문의</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Footer ========== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">희망찬병원 두통 클리닉</div>
+        <div class="footer-brand-desc">
+          신경외과 전문의가 진료하는 두통 클리닉입니다. 화성·동탄·오산·평택·수원·용인·병점 지역 환자분을 진료합니다.
+          편두통·만성 두통·긴장성 두통·경추성 두통 — 환자 맞춤 약물 전략으로 두통의 빈도와 강도를 줄이는 진료를 합니다.
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>진료 영역</h4>
+        <ul>
+          <li><a href="#편두통_결정">편두통 진료</a></li>
+          <li><a href="#편두통_약물전략">편두통 약물 전략</a></li>
+          <li><a href="#편두통_약물과용">약물 과용성 두통</a></li>
+          <li><a href="#만성긴장성_경추성">경추성 두통</a></li>
+          <li><a href="#만성긴장성_약물전략">만성 두통</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>오시는 길</h4>
+        <ul>
+          <li>[주소 — 경기도 화성시 병점구 병점중앙로 174]</li>
+          <li>전화 — 1600-3415</li>
+          <li>진료 시간 — 09:00~18:00</li>
+          <li>토요일 진료 — 09:00~13:00 [점심시간 없음]</li>
+          <li>점심 시간 — 12:30~13:30</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      ⓒ 희망찬병원 · 사업자등록번호 730-95-00733<br>
+      본 페이지는 의료법 56조에 따른 의료광고이며, 진료의 결과는 환자 개별 상태에 따라 다를 수 있습니다.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
