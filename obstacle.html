@@ -12,6 +12,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
+  /* 그리드 영역에서 숫자를 세기 시작함 */
+.selfcheck-grid {
+  counter-reset: selfcheck-counter; 
+}
+
+/* 각 아이템 앞에 자동으로 숫자를 붙임 */
+.selfcheck-item__text::before {
+  counter-increment: selfcheck-counter; /* 숫자 1씩 증가 */
+  content: counter(selfcheck-counter) ". "; /* '숫자. ' 형태로 표시 */
+  font-weight: bold; /* 숫자 강조 (선택사항) */
+  margin-right: 5px; /* 숫자와 텍스트 사이 간격 */
+}
+  
 :root {
   /* 14-4-2 언어장애 색상 시스템 — 14-4-1 계승 + 언어장애 특화 4색 */
   --hc-deep: #0E4A6E;
@@ -1452,22 +1466,22 @@ footer strong { color: var(--hc-gold-light); }
       </p>
     </div>
     
-    <div class="selfcheck-grid">
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ F: 미소 지을 때 한쪽 입꼬리가 처진다</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ A: 두 팔을 들었을 때 한쪽이 툭 떨어진다</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ S: 발음이 어눌하거나 단어가 안 떠오른다</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ T: 위 셋 중 하나라도 해당 → 즉시 119</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ 잠깐 말 안 나왔다가 다시 풀린 경험 (TIA 가능)</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">★ 잠깐 마비 후 풀린 경험 (TIA 가능)</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">응급실 다녀왔는데 "이상 없음" 받았지만 불안하다</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">뇌졸중 입원·퇴원 후 추적 진료가 필요하다</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">부모님·형제자매 중 뇌졸중 환자가 있다 (가족력)</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">고혈압·당뇨·고지혈증·심방세동이 있다</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">흡연자이거나 과음한다</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">40세 이상, 한 번도 뇌혈관 검사(MRA)를 받지 않았다</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">두통 + 말 어눌함이 함께 온다 (편두통 전조 vs 뇌졸중)</div></div>
-      <div class="selfcheck-item"><div class="selfcheck-item__box"></div><div class="selfcheck-item__text">어지럼 + 말 어눌함이 함께 온다 (14-4-1 응급 6신호 ①)</div></div>
-    </div>
+<div class="selfcheck-grid">
+  <div class="selfcheck-item"><div class="selfcheck-item__text">F: 미소 지을 때 한쪽 입꼬리가 처진다</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">A: 두 팔을 들었을 때 한쪽이 툭 떨어진다</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">S: 발음이 어눌하거나 단어가 안 떠오른다</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">T: 위 셋 중 하나라도 해당 → 즉시 119</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">잠깐 말 안 나왔다가 다시 풀린 경험 (TIA 가능)</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">잠깐 마비 후 풀린 경험 (TIA 가능)</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">응급실 다녀왔는데 "이상 없음" 받았지만 불안하다</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">뇌졸중 입원·퇴원 후 추적 진료가 필요하다</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">부모님·형제자매 중 뇌졸중 환자가 있다 (가족력)</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">고혈압·당뇨·고지혈증·심방세동이 있다</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">흡연자이거나 과음한다</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">40세 이상, 한 번도 뇌혈관 검사(MRA)를 받지 않았다</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">두통 + 말 어눌함이 함께 온다 (편두통 전조 vs 뇌졸중)</div></div>
+  <div class="selfcheck-item"><div class="selfcheck-item__text">어지럼 + 말 어눌함이 함께 온다 (14-4-1 응급 6신호 ①)</div></div>
+</div>
     
     <div class="selfcheck__alert">
       <strong>★ ★ 표시 항목 1-4번(FAST)은 응급 신호이므로 즉시 119</strong>에 신고하시고, <strong>5-6번(TIA 의심)은 본원 외래에 즉시 권장</strong>합니다. 나머지 항목 3개 이상 해당 시 본원 정기 외래 진료를 권장합니다.
