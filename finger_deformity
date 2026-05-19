@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>손가락 변형 진료 | 희망찬병원 — 류마티스인지 퇴행성인지 먼저 감별</title>
+<meta name="description" content="손가락이 휘고 마디가 튀어나오면 류마티스인지 퇴행성인지 먼저 구분해야 합니다. 손가락 변형, 마디 돌출, 방아쇠수지, 망치수지, 듀피트렌 구축 감별 진료. 동탄·화성권 희망찬병원.">
+<meta name="keywords" content="손가락 변형, 손가락 휘어짐, 손가락 마디 튀어나옴, 손가락 관절염, 헤베르덴 결절, 부샤르 결절, 류마티스 손가락, 방아쇠수지, 망치수지, 백조목 변형, 단추구멍 변형, 듀피트렌 구축, 동탄 손가락 변형">
+<style>
+:root{
+  --deep:#163A5F;--mid:#2D6A8E;--gold:#C89B2F;--cream:#FCF8F1;--warm:#F4E9D8;
+  --text:#2A3340;--muted:#647181;--line:#E5DDC8;--white:#fff;--red:#A93B2F;
+  --serif: Georgia,'Noto Serif KR',serif;--sans:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--text);background:var(--cream);line-height:1.75;letter-spacing:-.01em}
+a{text-decoration:none}
+.header{position:sticky;top:0;z-index:10;background:rgba(252,248,241,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-inner{max-width:1120px;margin:auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.brand{font-family:var(--serif);font-weight:800;color:var(--deep);font-size:22px}
+.brand small{font-family:var(--sans);font-size:12px;color:var(--gold);margin-left:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:8px;font-weight:800}
+.btn-primary{background:var(--deep);color:var(--white)}
+.btn-gold{background:var(--gold);color:var(--white)}
+.btn-outline{border:1.5px solid var(--deep);color:var(--deep)}
+.hero{padding:82px 22px 70px;background:radial-gradient(circle at 85% 0,rgba(200,155,47,.16),transparent 40%),linear-gradient(135deg,var(--warm),var(--cream))}
+.inner{max-width:1120px;margin:auto}
+.eyebrow{display:inline-block;color:var(--gold);font-weight:900;letter-spacing:.18em;font-size:12px;border-bottom:2px solid var(--gold);padding-bottom:6px;margin-bottom:26px}
+h1{font-family:var(--serif);font-size:clamp(34px,5vw,58px);line-height:1.2;color:var(--deep);letter-spacing:-.04em;max-width:940px;margin-bottom:24px}
+h1 em{font-style:normal;color:var(--gold)}
+.lede{font-size:19px;color:var(--muted);max-width:820px;margin-bottom:34px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.signal{margin-top:28px;display:inline-block;background:var(--white);border:1px solid var(--line);padding:11px 16px;border-radius:8px;color:var(--muted);font-weight:700}
+section{padding:78px 22px}
+.white{background:var(--white)}
+.warm{background:var(--warm)}
+.dark{background:linear-gradient(135deg,var(--deep),#22303D);color:var(--white)}
+.section-head{margin-bottom:36px}
+.tag{color:var(--gold);font-weight:900;letter-spacing:.18em;font-size:12px;margin-bottom:12px}
+h2{font-family:var(--serif);font-size:clamp(26px,3.5vw,40px);line-height:1.3;color:var(--deep);letter-spacing:-.03em}
+.dark h2{color:var(--white)}
+.sec-lede{font-size:17px;color:var(--muted);max-width:800px;margin-top:14px}
+.dark .sec-lede{color:rgba(255,255,255,.75)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:0 8px 24px rgba(22,58,95,.06)}
+.card h3{font-family:var(--serif);font-size:20px;color:var(--deep);margin-bottom:10px}
+.card p{color:var(--muted);font-size:15px}
+.check{border-left:5px solid var(--gold)}
+.compare{overflow:hidden;border-radius:16px;border:1px solid var(--line);background:var(--white)}
+.row{display:grid;grid-template-columns:1fr 1.6fr 1.6fr;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:none}
+.cell{padding:16px 18px}
+.head{background:var(--deep);color:var(--white);font-weight:900}
+.label{font-weight:900;color:var(--deep);background:#F8F3E8}
+.highlight{background:rgba(200,155,47,.08)}
+.alert{background:rgba(169,59,47,.08);border-left:5px solid var(--red);padding:22px;border-radius:10px;margin-top:24px}
+.alert strong{color:var(--red)}
+.steps{counter-reset:step;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.step{background:var(--white);border-radius:14px;padding:24px;border-top:4px solid var(--gold)}
+.step:before{counter-increment:step;content:"0" counter(step);font-family:var(--serif);font-weight:900;color:var(--gold);font-size:28px}
+.step h3{font-family:var(--serif);color:var(--deep);font-size:18px;margin:8px 0}
+.faq details{background:var(--white);border:1px solid var(--line);border-radius:10px;margin-bottom:12px;padding:18px}
+.faq summary{font-family:var(--serif);font-weight:800;color:var(--deep);cursor:pointer}
+.faq p{margin-top:12px;color:var(--muted)}
+.footer{background:#17202A;color:rgba(255,255,255,.7);text-align:center;padding:36px 22px;font-size:14px}
+@media(max-width:700px){.row{grid-template-columns:1fr}.head{display:none}.cell.label:before{content:"항목: ";color:var(--gold)}.header-inner{align-items:flex-start;flex-direction:column}.brand small{display:block;margin-left:0}.hero{padding-top:54px}}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="brand">희망찬병원 <small>손가락 변형 · 관절/힘줄 감별 진료</small></div>
+    <div><a href="tel:16003415" class="btn btn-primary">📞 진료 상담</a></div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="inner">
+    <div class="eyebrow">FINGER DEFORMITY · 손가락 변형</div>
+    <h1>손가락이 휘고 마디가 튀어나오면<br><em>류마티스인지 퇴행성인지</em><br>먼저 구분해야 합니다</h1>
+    <p class="lede">손가락 변형은 하나의 병명이 아닙니다. 퇴행성 관절염, 류마티스 관절염, 방아쇠수지, 힘줄 손상, 듀피트렌 구축 등 원인이 다르기 때문에 치료도 달라집니다.</p>
+    <div class="ctas">
+      <a href="#check" class="btn btn-gold">내 증상 확인하기</a>
+      <a href="#compare" class="btn btn-outline">류마티스·퇴행성 감별</a>
+      <a href="tel:16003415" class="btn btn-primary">진료 예약</a>
+    </div>
+    <div class="signal">동탄·화성·수원·오산·평택권 / 손·손가락 통증·변형 진료</div>
+  </div>
+</section>
+
+<section class="white" id="check">
+  <div class="inner">
+    <div class="section-head">
+      <div class="tag">내 이야기 체크</div>
+      <h2>이런 증상이 있으면 원인 감별이 필요합니다</h2>
+      <p class="sec-lede">환자분들은 “손가락이 휘어요”, “마디가 튀어나와요”라고 표현하지만 실제 원인은 관절, 힘줄, 신경, 류마티스 질환까지 다양합니다.</p>
+    </div>
+    <div class="grid">
+      <div class="card check"><h3>마디가 단단히 튀어나옴</h3><p>끝마디·중간마디가 굵어지고 단단하게 튀어나오면 손가락 퇴행성 관절염을 의심합니다.</p></div>
+      <div class="card check"><h3>아침에 뻣뻣하고 붓기</h3><p>양손 여러 마디가 붓고 아침에 뻣뻣하면 류마티스 관절염 감별이 필요합니다.</p></div>
+      <div class="card check"><h3>딸깍·잠김·굽었다 펴짐</h3><p>손가락이 걸리거나 딸깍거리면 관절 변형보다 방아쇠수지처럼 힘줄 통로 문제일 수 있습니다.</p></div>
+      <div class="card check"><h3>다친 뒤 끝마디 처짐</h3><p>공에 맞거나 부딪힌 뒤 끝마디가 처지면 망치수지 등 힘줄 손상 평가가 필요합니다.</p></div>
+      <div class="card check"><h3>손가락이 안 펴짐</h3><p>손바닥이 당기고 손가락이 구부러진 채 안 펴지면 듀피트렌 구축 등 구축 질환을 감별합니다.</p></div>
+      <div class="card check"><h3>엄지 뿌리 통증과 변형</h3><p>엄지 뿌리 쪽 통증과 변형은 엄지 CMC 관절염과 연관될 수 있습니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="warm" id="compare">
+  <div class="inner">
+    <div class="section-head">
+      <div class="tag">핵심 감별</div>
+      <h2>퇴행성 관절염 vs 류마티스 관절염 vs 힘줄 문제</h2>
+      <p class="sec-lede">손가락 변형은 위치와 패턴을 보면 방향이 보입니다. 단, 정확한 진단은 진료와 검사로 확인해야 합니다.</p>
+    </div>
+    <div class="compare">
+      <div class="row head"><div class="cell">구분</div><div class="cell">주로 보이는 모습</div><div class="cell">랜딩 메시지</div></div>
+      <div class="row"><div class="cell label">퇴행성 관절염</div><div class="cell">끝마디(DIP)·중간마디(PIP)가 단단하게 튀어나오고 뻣뻣함</div><div class="cell">헤베르덴·부샤르 결절 가능. 통증 조절과 기능 보존 중심.</div></div>
+      <div class="row"><div class="cell label">류마티스 관절염</div><div class="cell">손가락 기저부 마디와 손목이 붓고, 아침 뻣뻣함·대칭 증상</div><div class="cell">혈액검사와 류마티스 진료 연계가 필요할 수 있음.</div></div>
+      <div class="row"><div class="cell label">방아쇠수지</div><div class="cell">손가락이 딸깍거리거나 굽은 채 걸렸다 펴짐</div><div class="cell">관절 변형보다 힘줄이 지나가는 통로 문제.</div></div>
+      <div class="row"><div class="cell label">외상성 변형</div><div class="cell">다친 뒤 끝마디 처짐, S자 휨, 단추구멍 모양 변형</div><div class="cell">힘줄 손상은 초기 고정·평가가 중요.</div></div>
+      <div class="row"><div class="cell label">구축</div><div class="cell">손가락이 굽어서 완전히 펴지지 않음</div><div class="cell">듀피트렌 구축 등 손바닥 섬유화 감별.</div></div>
+    </div>
+    <div class="alert"><strong>주의:</strong> 손가락 마디가 튀어나왔다고 모두 류마티스는 아닙니다. 반대로 통증이 가볍다고 류마티스 가능성을 배제할 수도 없습니다. 증상 패턴과 검사로 감별해야 합니다.</div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="inner">
+    <div class="section-head">
+      <div class="tag">진료 흐름</div>
+      <h2>손가락 변형은 단계별로 확인합니다</h2>
+      <p class="sec-lede">본원은 모양만 보고 판단하지 않고, 관절·힘줄·신경·류마티스 가능성을 함께 확인합니다.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>증상 문진</h3><p>언제부터 휘었는지, 통증·붓기·잠김·아침 뻣뻣함 확인</p></div>
+      <div class="step"><h3>신체 검사</h3><p>어느 마디인지, 움직임 제한·힘줄 걸림·압통 확인</p></div>
+      <div class="step"><h3>영상 검사</h3><p>X-ray로 관절 간격·뼈 돌출·외상 변형 확인</p></div>
+      <div class="step"><h3>추가 감별</h3><p>류마티스 의심 시 혈액검사·전문 진료 연계 고려</p></div>
+      <div class="step"><h3>맞춤 치료</h3><p>약물·보조기·주사·재활·수술적 치료를 환자별 결정</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="white">
+  <div class="inner faq">
+    <div class="section-head">
+      <div class="tag">FAQ</div>
+      <h2>자주 묻는 질문</h2>
+    </div>
+    <details open><summary>손가락 마디가 튀어나오면 류마티스인가요?</summary><p>아닙니다. 끝마디·중간마디의 단단한 돌출은 퇴행성 관절염에서 흔합니다. 다만 손가락 기저부 마디와 손목이 붓고 아침에 뻣뻣하면 류마티스 감별이 필요합니다.</p></details>
+    <details><summary>손가락이 딸깍거리며 걸리면 변형인가요?</summary><p>관절 자체 변형보다 방아쇠수지처럼 힘줄이 지나가는 통로 문제일 수 있습니다. 심하면 손가락이 굽은 채 잠길 수 있습니다.</p></details>
+    <details><summary>다친 뒤 손가락 끝마디가 처졌어요.</summary><p>망치수지 같은 힘줄 손상이 있을 수 있습니다. 방치하면 변형이 고착될 수 있어 초기에 평가를 권장합니다.</p></details>
+    <details><summary>손가락 변형은 교정되나요?</summary><p>원인과 진행 정도에 따라 다릅니다. 모든 변형을 100% 교정한다고 말할 수 없으며, 통증 조절·기능 보존·진행 억제·필요 시 수술적 치료를 환자별로 결정합니다.</p></details>
+  </div>
+</section>
+
+<section class="warm" id="contact">
+  <div class="inner">
+    <div class="section-head">
+      <div class="tag">상담 안내</div>
+      <h2>손가락 변형이 진행된다면 원인 감별부터 받으세요</h2>
+      <p class="sec-lede">마디가 튀어나오거나 손가락이 휘고, 통증·붓기·잠김·안 펴짐이 반복된다면 진료를 권장합니다.</p>
+    </div>
+    <div class="ctas">
+      <a href="tel:16003415" class="btn btn-primary">📞 전화 상담</a>
+      <a href="https://map.naver.com/v5/search/희망찬병원" class="btn btn-gold">📍 위치 확인</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <strong>희망찬병원</strong><br>
+  본 페이지는 일반적인 의학 정보와 진료 안내이며, 정확한 진단과 치료는 의료진의 진료 후 결정됩니다. 환자별 치료 결과는 다를 수 있습니다.
+</footer>
+</body>
+</html>
