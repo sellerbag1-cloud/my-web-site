@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>손목터널증후군 — 손목주름 분절감압술 | 희망찬병원</title>
+<meta name="description" content="손목터널증후군 수술. 손목주름 분절감압술 — 손목 주름선 따라 작은 절개 / 김진균 원장 직접 진료 / 단행본 『손저림의 흔한 원인』 저자 / 동탄·화성·평택권">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --c-bg: #fafaf7;
+    --c-bg-soft: #f4f1ea;
+    --c-ink: #1a1a1a;
+    --c-ink-soft: #4a4a4a;
+    --c-muted: #8a8580;
+    --c-line: #e8e2d6;
+    --c-accent: #1f4e78;
+    --c-accent-deep: #163a59;
+    --c-accent-soft: #d5e3ee;
+    --c-warm: #c8a96a;
+    --c-warm-soft: #f3ead4;
+    --c-alert: #b03a3a;
+    --c-alert-soft: #f5e0e0;
+    --f-display: "Noto Serif KR", "Nanum Myeongjo", serif;
+    --f-body: "Pretendard", -apple-system, sans-serif;
+    --r-md: 8px;
+    --r-lg: 16px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--f-body);
+    background: var(--c-bg);
+    color: var(--c-ink);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  .container-wide { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+  /* Top Bar */
+  .topbar { background: var(--c-ink); color: #fff; padding: 10px 0; font-size: 13px; letter-spacing: 0.02em; }
+  .topbar .row { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .topbar .left { opacity: 0.85; }
+  .topbar .phone { color: var(--c-warm); font-weight: 600; text-decoration: none; }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    padding: 72px 0 88px;
+    background:
+      radial-gradient(ellipse 700px 500px at 15% 30%, rgba(31,78,120,0.07), transparent 60%),
+      radial-gradient(ellipse 600px 400px at 85% 70%, rgba(200,169,106,0.05), transparent 60%),
+      var(--c-bg);
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ""; position: absolute; top: 40px; right: -80px;
+    width: 380px; height: 380px;
+    background:
+      linear-gradient(90deg, var(--c-line) 1px, transparent 1px),
+      linear-gradient(0deg, var(--c-line) 1px, transparent 1px);
+    background-size: 20px 20px; opacity: 0.3; transform: rotate(8deg);
+    pointer-events: none; mask-image: radial-gradient(ellipse, black 30%, transparent 70%);
+  }
+  .hero .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px; background: var(--c-warm-soft); color: #6b5018;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+    border-radius: 100px; margin-bottom: 24px; text-transform: uppercase;
+  }
+  .hero .badge::before { content: "★"; color: var(--c-warm); }
+  .hero h1 {
+    font-family: var(--f-display);
+    font-size: clamp(30px, 4.8vw, 46px);
+    font-weight: 600; line-height: 1.3; letter-spacing: -0.02em;
+    color: var(--c-ink); margin-bottom: 22px;
+  }
+  .hero h1 .highlight {
+    color: var(--c-accent); font-weight: 700;
+    position: relative; display: inline-block;
+  }
+  .hero h1 .highlight::after {
+    content: ""; position: absolute; bottom: 4px; left: 0; right: 0;
+    height: 8px; background: var(--c-warm-soft); z-index: -1;
+  }
+  .hero .lead { font-size: 17px; color: var(--c-ink-soft); line-height: 1.8; margin-bottom: 28px; max-width: 640px; }
+
+  /* Book strip */
+  .book-strip {
+    display: flex; align-items: center; gap: 16px;
+    padding: 18px 22px;
+    background: rgba(255,255,255,0.7);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-md);
+    margin-bottom: 32px;
+    backdrop-filter: blur(4px);
+  }
+  .book-strip .book-mark {
+    width: 44px; height: 56px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--c-accent) 0%, var(--c-accent-deep) 100%);
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+  }
+  .book-strip .book-mark::after {
+    content: ""; position: absolute; left: 2px; top: 0; bottom: 0; width: 2px;
+    background: rgba(0,0,0,0.3);
+  }
+  .book-strip .book-text { flex: 1; }
+  .book-strip .book-title {
+    font-family: var(--f-display); font-size: 14px; font-weight: 600;
+    color: var(--c-ink); margin-bottom: 2px;
+  }
+  .book-strip .book-meta { font-size: 12px; color: var(--c-muted); }
+  .book-strip .book-meta strong { color: var(--c-accent); }
+
+  .hero-stats {
+    display: flex; gap: 28px; padding: 22px 0;
+    border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);
+    margin-bottom: 32px; flex-wrap: wrap;
+  }
+  .hero-stat { display: flex; flex-direction: column; gap: 4px; }
+  .hero-stat .num { font-family: var(--f-display); font-size: 22px; font-weight: 600; color: var(--c-accent); line-height: 1.3; }
+  .hero-stat .label { font-size: 12px; color: var(--c-muted); letter-spacing: 0.03em; }
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 16px 28px; background: var(--c-accent); color: #fff;
+    font-weight: 600; font-size: 15px; text-decoration: none;
+    border-radius: var(--r-md); transition: all 0.2s; box-shadow: var(--shadow);
+  }
+  .btn-primary:hover { background: var(--c-accent-deep); transform: translateY(-1px); }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 16px 28px; background: #fff; color: var(--c-ink);
+    font-weight: 500; font-size: 15px; text-decoration: none;
+    border-radius: var(--r-md); border: 1px solid var(--c-line); transition: all 0.2s;
+  }
+  .btn-secondary:hover { background: var(--c-bg-soft); border-color: var(--c-muted); }
+
+  /* Sections */
+  section { padding: 76px 0; }
+  .section-head { text-align: center; margin-bottom: 48px; }
+  .section-tag {
+    display: inline-block; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.12em; color: var(--c-warm); text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-head h2 {
+    font-family: var(--f-display);
+    font-size: clamp(26px, 4vw, 34px);
+    font-weight: 600; letter-spacing: -0.01em; line-height: 1.3;
+    margin-bottom: 14px;
+  }
+  .section-head .sub { font-size: 16px; color: var(--c-ink-soft); max-width: 580px; margin: 0 auto; }
+
+  /* The Message (책 핵심) */
+  .message {
+    background: var(--c-bg-soft);
+    border-top: 1px solid var(--c-line);
+    border-bottom: 1px solid var(--c-line);
+  }
+  .message-card {
+    background: #fff;
+    padding: 48px 40px;
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow);
+    text-align: center;
+    position: relative;
+  }
+  .message-card::before {
+    content: """;
+    position: absolute; top: -10px; left: 30px;
+    font-family: var(--f-display); font-size: 96px;
+    color: var(--c-warm); opacity: 0.4; line-height: 1;
+  }
+  .message-card .lead-quote {
+    font-family: var(--f-display);
+    font-size: clamp(22px, 3vw, 30px); font-weight: 600;
+    color: var(--c-accent); margin-bottom: 20px; line-height: 1.5;
+  }
+  .message-card .author {
+    font-size: 14px; color: var(--c-muted);
+    letter-spacing: 0.04em;
+  }
+  .message-card .body-text {
+    margin-top: 24px; padding-top: 24px;
+    border-top: 1px solid var(--c-line);
+    text-align: left; font-size: 15px; color: var(--c-ink-soft); line-height: 1.85;
+  }
+  .message-card .body-text strong { color: var(--c-ink); }
+
+  /* Self Check */
+  .self-check { background: var(--c-bg); }
+  .check-intro {
+    background: var(--c-warm-soft);
+    border-left: 4px solid var(--c-warm);
+    padding: 16px 22px; border-radius: 0 var(--r-md) var(--r-md) 0;
+    font-size: 14px; color: #6b5018; line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .check-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 12px; margin-bottom: 28px;
+  }
+  .check-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 16px 18px; background: #fff;
+    border-radius: var(--r-md); border: 1px solid var(--c-line);
+    cursor: pointer; transition: all 0.2s; user-select: none;
+  }
+  .check-item:hover { border-color: var(--c-accent); transform: translateY(-1px); }
+  .check-item.checked { background: var(--c-accent-soft); border-color: var(--c-accent); }
+  .check-item[data-urgent="true"].checked { background: var(--c-alert-soft); border-color: var(--c-alert); }
+  .check-box {
+    width: 20px; height: 20px; border: 2px solid var(--c-muted);
+    border-radius: 4px; flex-shrink: 0; display: flex;
+    align-items: center; justify-content: center; margin-top: 2px;
+    transition: all 0.2s;
+  }
+  .check-item.checked .check-box { background: var(--c-accent); border-color: var(--c-accent); }
+  .check-item[data-urgent="true"].checked .check-box { background: var(--c-alert); border-color: var(--c-alert); }
+  .check-item.checked .check-box::after { content: "✓"; color: #fff; font-size: 14px; font-weight: 700; }
+  .check-text { font-size: 14.5px; color: var(--c-ink); line-height: 1.5; }
+  .check-text small { display: block; color: var(--c-muted); font-size: 12px; margin-top: 2px; }
+  .check-item[data-urgent="true"] .check-text small { color: var(--c-alert); font-weight: 500; }
+  .check-result {
+    text-align: center; padding: 24px; background: #fff;
+    border-radius: var(--r-md); border: 2px dashed var(--c-line);
+    transition: all 0.3s;
+  }
+  .check-result.active { background: var(--c-warm-soft); border-color: var(--c-warm); border-style: solid; }
+  .check-result.urgent { background: var(--c-alert-soft); border-color: var(--c-alert); border-style: solid; }
+  .check-count {
+    font-family: var(--f-display); font-size: 32px; font-weight: 600;
+    color: var(--c-accent); margin-bottom: 4px;
+  }
+  .check-result.urgent .check-count { color: var(--c-alert); }
+  .check-msg { font-size: 15px; color: var(--c-ink-soft); }
+  .check-msg strong { color: var(--c-ink); }
+
+  /* Comparison */
+  .compare-section { background: linear-gradient(180deg, var(--c-bg) 0%, var(--c-bg-soft) 100%); }
+  .compare-table {
+    background: #fff; border-radius: var(--r-md);
+    overflow: hidden; box-shadow: var(--shadow); margin-bottom: 24px;
+  }
+  .compare-row {
+    display: grid; grid-template-columns: 130px repeat(3, 1fr);
+    border-bottom: 1px solid var(--c-line);
+  }
+  .compare-row:last-child { border-bottom: none; }
+  .compare-row.header { background: var(--c-ink); color: #fff; }
+  .compare-row.header > div { padding: 16px 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.02em; text-align: center; }
+  .compare-row.header > div:first-child { text-align: left; }
+  .compare-row > div:first-child { background: var(--c-bg-soft); padding: 16px 18px; font-weight: 600; font-size: 14px; color: var(--c-ink); display: flex; align-items: center; }
+  .compare-row > div { padding: 16px 12px; font-size: 13.5px; color: var(--c-ink-soft); text-align: center; display: flex; align-items: center; justify-content: center; line-height: 1.5; }
+  .compare-row .ours { background: var(--c-warm-soft); color: var(--c-ink); font-weight: 500; }
+  .compare-row.header .ours { background: var(--c-warm); color: var(--c-ink); }
+  .compare-row.header .ours::before { content: "★ "; color: #fff; }
+  .compare-note {
+    padding: 18px 22px; background: #fff;
+    border-left: 3px solid var(--c-warm);
+    font-size: 14px; color: var(--c-ink-soft); line-height: 1.7;
+    border-radius: 0 var(--r-md) var(--r-md) 0;
+  }
+
+  /* Process */
+  .process-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .process-card {
+    background: #fff; padding: 28px;
+    border-radius: var(--r-md); border-top: 3px solid var(--c-accent);
+  }
+  .process-card .step {
+    font-family: var(--f-display); font-size: 14px; font-weight: 600;
+    color: var(--c-warm); letter-spacing: 0.06em; margin-bottom: 8px;
+  }
+  .process-card h3 { font-family: var(--f-display); font-size: 19px; font-weight: 600; color: var(--c-ink); margin-bottom: 8px; line-height: 1.4; }
+  .process-card p { font-size: 14px; color: var(--c-ink-soft); line-height: 1.7; }
+
+  /* Doctor */
+  .doctor { background: var(--c-ink); color: #fff; position: relative; overflow: hidden; }
+  .doctor::before { content: ""; position: absolute; top: -50%; right: -10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(200,169,106,0.08), transparent 60%); pointer-events: none; }
+  .doctor .section-tag { color: var(--c-warm); }
+  .doctor .section-head h2 { color: #fff; }
+  .doctor .section-head .sub { color: rgba(255,255,255,0.7); }
+  .doctor-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--r-md); padding: 36px; position: relative; z-index: 1;
+  }
+  .doctor-name { font-family: var(--f-display); font-size: 28px; font-weight: 600; margin-bottom: 4px; }
+  .doctor-title { color: var(--c-warm); font-size: 14px; margin-bottom: 24px; letter-spacing: 0.04em; }
+  .doctor-quote { font-family: var(--f-display); font-size: 18px; line-height: 1.8; color: rgba(255,255,255,0.92); padding: 24px 0; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px; }
+  .doctor-credentials { list-style: none; display: grid; gap: 10px; }
+  .doctor-credentials li { padding-left: 20px; position: relative; color: rgba(255,255,255,0.8); font-size: 14px; line-height: 1.6; }
+  .doctor-credentials li::before { content: "—"; position: absolute; left: 0; color: var(--c-warm); }
+
+  /* FAQ */
+  .faq-list { display: grid; gap: 12px; }
+  details.faq { background: #fff; border: 1px solid var(--c-line); border-radius: var(--r-md); overflow: hidden; transition: all 0.2s; }
+  details.faq[open] { border-color: var(--c-accent); box-shadow: var(--shadow); }
+  details.faq summary {
+    padding: 20px 24px; cursor: pointer; font-weight: 600; font-size: 15px;
+    color: var(--c-ink); list-style: none;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary::after {
+    content: "+"; font-size: 24px; font-weight: 300; color: var(--c-accent);
+    transition: transform 0.2s; flex-shrink: 0;
+  }
+  details.faq[open] summary::after { content: "−"; }
+  details.faq .answer {
+    padding: 0 24px 24px; font-size: 14px; color: var(--c-ink-soft);
+    line-height: 1.85; border-top: 1px solid var(--c-line); padding-top: 18px;
+  }
+
+  /* CTA Block */
+  .cta-block {
+    background: linear-gradient(135deg, var(--c-accent) 0%, var(--c-accent-deep) 100%);
+    padding: 64px 0; color: #fff; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .cta-block::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(circle at 20% 30%, rgba(200,169,106,0.15), transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(255,255,255,0.05), transparent 50%);
+  }
+  .cta-block > * { position: relative; z-index: 1; }
+  .cta-block h2 { font-family: var(--f-display); font-size: clamp(24px, 4vw, 32px); font-weight: 600; margin-bottom: 16px; line-height: 1.4; }
+  .cta-block p { font-size: 16px; color: rgba(255,255,255,0.85); margin-bottom: 32px; max-width: 540px; margin-left: auto; margin-right: auto; }
+  .cta-block .btn-primary { background: var(--c-warm); color: var(--c-ink); }
+  .cta-block .btn-primary:hover { background: #d6b87a; }
+  .cta-block .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,0.4); }
+  .cta-block .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+
+  /* Info */
+  .info { background: var(--c-bg); }
+  .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  .info-card { padding: 28px; background: #fff; border-radius: var(--r-md); border: 1px solid var(--c-line); }
+  .info-card h3 { font-family: var(--f-display); font-size: 17px; font-weight: 600; color: var(--c-accent); margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--c-line); }
+  .info-card .row { display: flex; justify-content: space-between; padding: 8px 0; font-size: 14px; }
+  .info-card .row .label { color: var(--c-muted); }
+  .info-card .row .val { color: var(--c-ink); font-weight: 500; }
+
+  /* Footer */
+  footer { background: var(--c-ink); color: rgba(255,255,255,0.6); padding: 40px 0; font-size: 13px; line-height: 1.8; }
+  footer .row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+  footer strong { color: var(--c-warm); font-weight: 600; }
+  footer .small { font-size: 11px; color: rgba(255,255,255,0.4); margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); }
+
+  /* Floating */
+  .floating-cta {
+    position: fixed; bottom: 16px; left: 16px; right: 16px;
+    background: var(--c-accent); color: #fff;
+    padding: 14px 20px; border-radius: var(--r-md);
+    display: none; justify-content: space-between; align-items: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2); z-index: 100;
+    text-decoration: none; font-weight: 600; font-size: 15px;
+  }
+  .floating-cta .phone-icon {
+    background: var(--c-warm); color: var(--c-ink);
+    width: 32px; height: 32px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-weight: 700;
+  }
+
+  /* Disclaimer */
+  .disclaimer {
+    background: var(--c-warm-soft); border: 1px solid var(--c-warm);
+    padding: 18px 22px; border-radius: var(--r-md);
+    font-size: 13px; color: #6b5018; line-height: 1.8; margin: 24px 0;
+  }
+  .disclaimer strong { color: var(--c-ink); }
+
+  /* Responsive */
+  @media (max-width: 720px) {
+    .check-grid { grid-template-columns: 1fr; }
+    .process-grid { grid-template-columns: 1fr; }
+    .info-grid { grid-template-columns: 1fr; }
+    .compare-row { grid-template-columns: 100px repeat(3, 1fr); }
+    .compare-row > div { padding: 12px 6px; font-size: 11.5px; }
+    .compare-row.header > div { font-size: 10.5px; padding: 12px 6px; }
+    .compare-row > div:first-child { padding: 12px; font-size: 12.5px; }
+    .floating-cta { display: flex; }
+    section { padding: 56px 0; }
+    .hero { padding: 56px 0 68px; }
+    .doctor-card { padding: 24px; }
+    .doctor-quote { font-size: 16px; }
+    .message-card { padding: 36px 24px; }
+    .book-strip { padding: 14px 16px; gap: 12px; }
+    .book-strip .book-mark { width: 36px; height: 46px; }
+  }
+
+  /* Animation */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero h1, .hero .lead, .book-strip, .hero-stats, .cta-row { animation: fadeUp 0.8s ease forwards; }
+  .hero .lead { animation-delay: 0.1s; opacity: 0; }
+  .book-strip { animation-delay: 0.2s; opacity: 0; }
+  .hero-stats { animation-delay: 0.3s; opacity: 0; }
+  .cta-row { animation-delay: 0.45s; opacity: 0; }
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container-wide row">
+    <span class="left">희망찬병원 · 김진균 원장 직접 진료</span>
+    <a href="tel:16003415" class="phone">📞 1600-3415</a>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <span class="badge">본원 시그니처 — 손목주름 분절감압술</span>
+    <h1>
+      손목터널 수술,<br>
+      <span class="highlight">손목주름 따라 작은 절개로</span>
+    </h1>
+    <p class="lead">
+      손목 자연 주름선을 따라 작은 절개로 정중신경을 단계적으로 감압하는 시술입니다.
+      본원에서는 이 기법을 "손목주름 분절감압술"로 명명합니다.
+      통증 적고 회복 빠른 시술 기법으로, 양손 동시 수술이 가능한 케이스도 있습니다.
+    </p>
+
+    <div class="book-strip">
+      <div class="book-mark"></div>
+      <div class="book-text">
+        <div class="book-title">『손저림의 흔한 원인 손목터널증후군』 (2026.4)</div>
+        <div class="book-meta">저자 <strong>김진균</strong> · 신경외과 전문의 · 본원에서 직접 진료</div>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="num">손목 주름선</span>
+        <span class="label">작은 절개 (환자별 다름)</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">국소·부분마취</span>
+        <span class="label">짧은 수술 가능 케이스</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">양손 동시</span>
+        <span class="label">가능 케이스 안내</span>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <a href="tel:16003415" class="btn-primary">📞 진료 예약·상담</a>
+      <a href="#self-check" class="btn-secondary">📋 1분 자가진단</a>
+    </div>
+  </div>
+</section>
+
+<!-- The Message (책 핵심) -->
+<section class="message">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">책에서 가장 강조한 한마디</span>
+      <h2>치료는 늦기 전에</h2>
+    </div>
+
+    <div class="message-card">
+      <div class="lead-quote">
+        "어떤 수술법을 선택하느냐보다,<br>
+        적절한 시기에 치료를 받느냐가 결과를 결정합니다."
+      </div>
+      <div class="author">— 김진균 원장 (저자 인터뷰 中)</div>
+
+      <div class="body-text">
+        손목터널증후군은 <strong>참아도 되는 병이 아닙니다</strong>. 신경이 눌린 상태에서 시간이 지나면
+        감각 신호가 약해지면서 마치 "저림이 줄어든 것"처럼 느껴질 수 있습니다.
+        그러나 이것은 호전이 아니라 <strong>감각신경이 마비되어 가는 신호</strong>일 수 있습니다.
+        손끝이 무뎌졌거나 물건을 자주 떨어뜨리신다면, 신경 손상이 진행되고 있다는 뜻입니다.
+        가장 위험한 순간은 "괜찮아진 것 같다"고 느낄 때입니다.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Self Check -->
+<section class="self-check" id="self-check">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">1분 자가진단</span>
+      <h2>혹시 이런 증상이 있으신가요?</h2>
+      <p class="sub">단행본 1장(증상 알기) 기반 8개 항목입니다. 의학적 진단을 대신하지 않으며 진료 시 참고용입니다.</p>
+    </div>
+
+    <div class="check-intro">
+      <strong>★ 응급 신호</strong> — 엄지 아래쪽 근육이 빠진 듯 꺼져 보인다면, 신경 손상이 상당히 진행된
+      단계일 수 있습니다. 이 항목에 해당하시면 가능한 빠른 진료를 권합니다.
+    </div>
+
+    <div class="check-grid" id="check-grid">
+      <div class="check-item" data-id="1"><div class="check-box"></div>
+        <div class="check-text">자다가 손이 저려서 잠을 깬다<small>야간 손저림 — 가장 전형적 패턴</small></div></div>
+      <div class="check-item" data-id="2"><div class="check-box"></div>
+        <div class="check-text">손을 털면 저림이 잠시 가라앉는다<small>플릭 징후 (Flick sign)</small></div></div>
+      <div class="check-item" data-id="3"><div class="check-box"></div>
+        <div class="check-text">엄지·검지·중지가 주로 저리다<small>정중신경 분포 부위</small></div></div>
+      <div class="check-item" data-id="4"><div class="check-box"></div>
+        <div class="check-text">새끼손가락은 저리지 않는다<small>척골신경과의 차이 — 손목터널 특징</small></div></div>
+      <div class="check-item" data-id="5"><div class="check-box"></div>
+        <div class="check-text">물건을 자주 떨어뜨린다<small>운동신경 손상 진행 단계</small></div></div>
+      <div class="check-item" data-id="6"><div class="check-box"></div>
+        <div class="check-text">단추 끼우기·동전 집기가 어려워졌다<small>손 미세동작 어려움</small></div></div>
+      <div class="check-item" data-id="7"><div class="check-box"></div>
+        <div class="check-text">운전·휴대폰·키보드 사용 시 손이 저리다<small>손목 굴곡 자세에서 압력 증가</small></div></div>
+      <div class="check-item" data-id="8" data-urgent="true"><div class="check-box"></div>
+        <div class="check-text">엄지 아래쪽 근육이 빠진 것 같다<small>★ 응급 신호 — 즉시 진료 권장</small></div></div>
+    </div>
+
+    <div class="check-result" id="check-result">
+      <div class="check-count" id="check-count">0개</div>
+      <div class="check-msg" id="check-msg">항목을 선택해 주세요</div>
+    </div>
+  </div>
+</section>
+
+<!-- Comparison -->
+<section class="compare-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">3종 수술법 비교</span>
+      <h2>어떤 수술이 좋은가요?</h2>
+      <p class="sub">단행본 5-4장 기반. 환자별 적합한 수술법이 다르며, 진료 후 의료진이 결정합니다.</p>
+    </div>
+
+    <div class="compare-table">
+      <div class="compare-row header">
+        <div>항목</div>
+        <div>전통 손바닥 절개</div>
+        <div>내시경 (ECTR)</div>
+        <div class="ours">손목주름 분절감압술</div>
+      </div>
+      <div class="compare-row">
+        <div>절개 위치</div>
+        <div>손바닥 중앙</div>
+        <div>손목+손바닥 2곳</div>
+        <div class="ours">손목 자연 주름선</div>
+      </div>
+      <div class="compare-row">
+        <div>절개 길이</div>
+        <div>약 5cm</div>
+        <div>작은 절개 2곳</div>
+        <div class="ours">약 1~2cm<br>(환자별 다름)</div>
+      </div>
+      <div class="compare-row">
+        <div>흉터 위치</div>
+        <div>손바닥 노출</div>
+        <div>손목·손바닥</div>
+        <div class="ours">손목 주름에 가려짐</div>
+      </div>
+      <div class="compare-row">
+        <div>회복</div>
+        <div>환자별 — 길어질 수<br>있음</div>
+        <div>환자별</div>
+        <div class="ours">조기 손 사용 가능<br>케이스 — 환자별</div>
+      </div>
+      <div class="compare-row">
+        <div>기둥통</div>
+        <div>발생 케이스 있음</div>
+        <div>줄어듦</div>
+        <div class="ours">적은 시술 기법</div>
+      </div>
+      <div class="compare-row">
+        <div>양손 동시</div>
+        <div>어려움</div>
+        <div>어려움</div>
+        <div class="ours">가능 케이스 안내</div>
+      </div>
+    </div>
+
+    <div class="compare-note">
+      <strong>★ 안내사항</strong> — 모든 환자에게 분절감압술이 가능한 것은 아닙니다.
+      손목터널 안 종양·해부학적 변이·심한 류마티스 관절염 등의 경우 전통 절개술이 더 적합할 수 있습니다.
+      진료 후 환자의 영상 소견·임상 증상을 종합해 적합한 수술법을 결정합니다.
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">진료 흐름</span>
+      <h2>본원 진료·시술 과정</h2>
+      <p class="sub">정확한 진단 → 환자별 시술 가능 케이스 평가 → 적합한 치료법 결정. 모든 단계를 김진균 원장이 직접 진행합니다.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card">
+        <div class="step">STEP 01</div>
+        <h3>정밀 문진</h3>
+        <p>저림 부위·시간대·생활 패턴·직업·동반 질환을 확인합니다.</p>
+      </div>
+      <div class="process-card">
+        <div class="step">STEP 02</div>
+        <h3>신체검사</h3>
+        <p>팔렌 검사·티넬 징후·엄지 근력 평가로 정중신경 압박을 확인합니다.</p>
+      </div>
+      <div class="process-card">
+        <div class="step">STEP 03</div>
+        <h3>신경전도검사·근전도</h3>
+        <p>신경 압박 정도를 객관적으로 정량 평가합니다. 당일 검사 가능 케이스 안내.</p>
+      </div>
+      <div class="process-card">
+        <div class="step">STEP 04</div>
+        <h3>영상검사 (필요 시)</h3>
+        <p>초음파·MRI로 손목터널 내부 구조를 확인합니다. 모든 환자에게 필요하지는 않습니다.</p>
+      </div>
+      <div class="process-card">
+        <div class="step">STEP 05</div>
+        <h3>치료법 결정</h3>
+        <p>보존 치료(부목·약물·주사) ↔ 수술 — 단계적 적용. 환자별 적합한 시술법 평가.</p>
+      </div>
+      <div class="process-card">
+        <div class="step">STEP 06</div>
+        <h3>시술·회복 관리</h3>
+        <p>부분마취 / 손목 주름선 작은 절개 / 신경 감압 / 봉합. 약 2주 후 봉합사 제거.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Doctor -->
+<section class="doctor">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">집도의</span>
+      <h2>김진균 원장 직접 진료</h2>
+      <p class="sub">진단부터 시술·회복까지 모든 과정을 원장이 직접 책임집니다.</p>
+    </div>
+
+    <div class="doctor-card">
+      <div class="doctor-name">김진균 원장</div>
+      <div class="doctor-title">희망찬병원 원장 · 신경외과 전문의</div>
+
+      <div class="doctor-quote">
+        "진료실에서 늦게 찾아오신 환자분들이 가장 많이 하는 말이
+        '왜 진작 안 했을까'입니다. 그 후회를 줄여드리고 싶었습니다."
+      </div>
+
+      <ul class="doctor-credentials">
+        <li>희망찬병원 원장</li>
+        <li>신경외과 전문의 — 수부 진료 다년간 경험</li>
+        <li>저서 『손저림의 흔한 원인 손목터널증후군』 (2026.4 출간)</li>
+        <li>유튜브 채널 "털보의사" 운영 — 환자 교육 콘텐츠 다수</li>
+        <li>손목터널증후군·듀피트렌병·방아쇠손가락 등 손 질환 진료</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">자주 묻는 질문</span>
+      <h2>환자분들이 가장 궁금해하시는 것</h2>
+      <p class="sub">단행본 본문에서 직접 추출한 12가지. 진료 시 상세 안내드립니다.</p>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq" open>
+        <summary>Q1. 손목이 안 아픈데 손목터널증후군일 수 있나요?</summary>
+        <div class="answer">네, 가능합니다. 손목터널증후군의 주증상은 손가락 저림이지 손목 통증이 아닙니다. 손목 통증이 주증상이라면 힘줄염·관절염 같은 다른 질환을 먼저 의심해야 합니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q2. 손저림이 줄어들면 좋아진 건가요? <strong style="color:var(--c-alert)">(★ 가장 위험한 오해)</strong></summary>
+        <div class="answer">아닙니다. 감각신경이 손상되어 마비되면 저림이 줄어든 것처럼 느껴질 수 있습니다. 손끝이 무뎌졌거나 물건을 자꾸 놓치신다면, 호전이 아니라 악화 신호일 수 있습니다. 이 부분은 책에서 거듭 강조하고 있습니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q3. 손을 안 쓰면 좋아지나요?</summary>
+        <div class="answer">초기에 일시적인 호전은 가능하지만, 신경 압박 자체가 풀리는 것은 아닙니다. 임신·갑상선 질환이 원인인 경우는 원인 해결로 좋아지기도 합니다. 그 외에는 진료가 필요합니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q4. 손목터널증후군은 자연치유되나요?</summary>
+        <div class="answer">대부분 시간이 지나면서 진행됩니다. 증상이 잠시 좋아져도 신경 손상은 조용히 진행될 수 있어 정기 평가가 필요합니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q5. "손목주름 분절감압술"이 무엇인가요?</summary>
+        <div class="answer">손목 자연 주름선을 따라 작은 절개로 정중신경을 단계적으로 감압하는 시술 기법입니다. 손바닥을 절개하지 않아 기둥통이 적고, 통증·재발이 낮은 시술 기법으로 알려져 있습니다. 시술 가능 여부는 진료 후 의료진이 결정합니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q6. 양손이 모두 저린데 한 번에 수술할 수 있나요?</summary>
+        <div class="answer">분절감압술은 통증이 적어 양손 동시 수술이 가능한 케이스가 있습니다. 다음 날부터 양손을 가볍게 사용할 수 있어 회복 기간이 짧아집니다. 환자 상태에 따라 진료 시 결정합니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q7. 항혈전제를 복용 중인데 수술 가능한가요?</summary>
+        <div class="answer">분절감압술은 출혈이 적어 약을 유지한 채 수술 가능한 케이스가 있습니다. 단, 임의 중단은 위험하므로 처방 주치의와 수술 의사가 함께 평가해 결정해야 합니다. 와파린 등 강한 항응고제는 혈액검사 후 진행합니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q8. 마취는 어떻게 하나요?</summary>
+        <div class="answer">분절감압술은 국소마취만으로도 가능하지만, 팔 지혈대로 인한 불편감을 줄이기 위해 가벼운 수면마취를 함께 하는 경우가 많습니다. 고령자·심폐 질환자는 국소마취만으로 안전하게 시술 가능합니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q9. 수술 후 언제부터 일상에 복귀할 수 있나요?</summary>
+        <div class="answer">환자별로 다릅니다. 분절감압술은 통증이 적어 다음 날부터 가벼운 손 사용이 가능한 케이스가 있고, 본격적인 복귀는 봉합사 제거(약 2주) 이후를 권합니다. 직업·손 사용 빈도에 따라 다릅니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q10. 흉터가 정말 안 보이나요?</summary>
+        <div class="answer">"안 남는 것"이 아니라 "손목 주름선에 가려져 잘 보이지 않게 되는 것"입니다. 3~6개월에 걸쳐 옅어지지만, 가시성은 피부 타입에 따라 환자별로 다릅니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q11. 수술 비용은 얼마나 되나요?</summary>
+        <div class="answer">기본 진료·X-ray·신경전도검사·수술은 건강보험 적용 대상입니다. 정확한 비용은 진료 시 환자 상태에 따라 안내드립니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q12. 책 『손저림의 흔한 원인 손목터널증후군』은 어디서 살 수 있나요?</summary>
+        <div class="answer">교보문고·예스24 등 주요 서점과 온라인 서점에서 구매하실 수 있습니다. 본원 진료 시 추가 안내드립니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-block">
+  <div class="container">
+    <h2>손저림, 늦기 전에 진료받으세요</h2>
+    <p>김진균 원장이 직접 진료합니다. 신경전도검사 당일 가능 케이스 안내. 환자별 적합한 치료법 결정.</p>
+    <div class="cta-row" style="justify-content: center;">
+      <a href="tel:16003415" class="btn-primary">📞 031-1234-5678</a>
+      <a href="https://map.naver.com/v5/search/희망찬병원" class="btn-secondary">📍 위치·길찾기</a>
+    </div>
+  </div>
+</section>
+
+<!-- Info -->
+<section class="info">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">병원 안내</span>
+      <h2>희망찬병원</h2>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>진료 시간</h3>
+        <div class="row"><span class="label">평일</span><span class="val">09:00 ~ 18:00</span></div>
+        <div class="row"><span class="label">토요일</span><span class="val">09:00 ~ 13:00</span></div>
+        <div class="row"><span class="label">일요일·공휴일</span><span class="val">휴진</span></div>
+        <div class="row"><span class="label">점심시간</span><span class="val">12:30 ~ 13:30</span></div>
+      </div>
+
+      <div class="info-card">
+        <h3>오시는 길</h3>
+        <div class="row"><span class="label">주소</span><span class="val">경기 화성시 병점중앙로 174</span></div>
+        <div class="row"><span class="label">지하철</span><span class="val">병점역 1번출구 5분거리</span></div>
+        <div class="row"><span class="label">주차</span><span class="val">병원 주차장 무료</span></div>
+        <div class="row"><span class="label">진료 권역</span><span class="val">동탄·화성·수원·평택·오산·용인</span></div>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <strong>의료광고 안내</strong> — 본 페이지의 모든 치료 결과는 환자 개인의 상태·신경 손상 정도·동반 질환에 따라 다를 수 있습니다.
+      모든 시술 가능 여부와 적합한 치료법은 진료 후 의료진이 결정합니다.
+      "손목주름 분절감압술"은 본원이 시행하는 손목터널 최소절개 수술 기법의 명칭입니다.
+      본 페이지는 의료법 및 의료광고 사전심의 기준을 준수하여 작성되었습니다.
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container-wide">
+    <div class="row">
+      <div>
+        <strong>희망찬병원</strong><br>
+        경기 화성시 병점중앙로 174<br>
+        대표원장 김진균</div>
+      <div style="text-align: right;">
+        진료 문의 <strong>1600-3415</strong><br>
+        평일 09:00 ~ 18:00 / 토 09:00 ~ 13:00<br>
+        유튜브 채널 "털보의사"
+      </div>
+    </div>
+    <div class="small">
+      © 2026 희망찬병원. All rights reserved.<br>
+      본 사이트의 의료 정보는 일반적인 안내 목적이며, 개별 환자의 진단·치료를 대신할 수 없습니다.
+      진료 시 의료진과 상담하시기 바랍니다.
+    </div>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<a href="tel:16003415" class="floating-cta">
+  <span>지금 전화로 상담받기</span>
+  <span class="phone-icon">📞</span>
+</a>
+
+<script>
+  const items = document.querySelectorAll('.check-item');
+  const countEl = document.getElementById('check-count');
+  const msgEl = document.getElementById('check-msg');
+  const resultEl = document.getElementById('check-result');
+
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('checked');
+      updateCount();
+    });
+  });
+
+  function updateCount() {
+    const checked = document.querySelectorAll('.check-item.checked');
+    const n = checked.length;
+    const hasUrgent = Array.from(checked).some(i => i.dataset.urgent === 'true');
+
+    countEl.textContent = `${n}개`;
+    resultEl.classList.remove('active', 'urgent');
+
+    if (n === 0) {
+      msgEl.textContent = '항목을 선택해 주세요';
+      return;
+    }
+
+    if (hasUrgent) {
+      msgEl.innerHTML = '<strong>응급 신호 항목이 포함되어 있습니다 — 가능한 빠른 진료를 권합니다</strong>';
+      resultEl.classList.add('urgent');
+    } else if (n <= 2) {
+      msgEl.innerHTML = '경미한 신호 — <strong>진료 시 의료진과 상의 권장</strong>';
+      resultEl.classList.add('active');
+    } else if (n <= 4) {
+      msgEl.innerHTML = '손목터널증후군 가능성 — <strong>가까운 시일 내 진료를 권합니다</strong>';
+      resultEl.classList.add('active');
+    } else {
+      msgEl.innerHTML = '손목터널증후군 가능성이 높습니다 — <strong>정밀 진료를 권합니다</strong>';
+      resultEl.classList.add('active');
+    }
+  }
+</script>
+
+</body>
+</html>
