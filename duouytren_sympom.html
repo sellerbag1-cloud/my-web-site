@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="format-detection" content="telephone=yes">
+<title>손바닥 줄·손가락 굽음 | 듀피트렌 진행 단계 자가진단·시술 | 희망찬병원</title>
+<meta name="description" content="손바닥 딱딱한 줄, 약지·새끼손가락 굽음 — 듀피트렌 진행 단계와 시술 시기. 동탄 손전문 진료.">
+<link rel="canonical" href="/dupuytren-symptoms">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1A1612;
+    --ink-soft: #2D2620;
+    --muted: #6B5F52;
+    --line: #E5DDD3;
+    --paper: #FCFAF6;
+    --warm: #F5EBDE;
+    --warm-deep: #E8D5BC;
+    --rust: #B8552E;
+    --rust-deep: #8E3D1F;
+    --olive: #5C6B3A;
+    --bg-soft: #F0E5D5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    font-family: 'Pretendard', -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.75;
+    letter-spacing: -0.01em;
+    overflow-x: hidden;
+  }
+
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  /* ───── 상단 바 ───── */
+  .topbar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(252, 250, 246, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    padding: 12px 0;
+  }
+  .topbar-inner {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .brand {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 700; font-size: 16px;
+    color: var(--ink); letter-spacing: -0.02em;
+  }
+  .brand .small {
+    font-size: 11px; color: var(--muted);
+    font-weight: 400; margin-left: 6px;
+  }
+  .topbar-cta {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--rust); color: #fff;
+    padding: 9px 16px; border-radius: 100px;
+    font-size: 13px; font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .topbar-cta:hover { background: var(--rust-deep); }
+  .topbar-cta svg { width: 14px; height: 14px; }
+
+  /* ───── 히어로 ───── */
+  .hero {
+    background:
+      radial-gradient(ellipse at top right, rgba(184, 85, 46, 0.06), transparent 50%),
+      linear-gradient(180deg, var(--paper) 0%, var(--warm) 100%);
+    padding: 60px 0 72px;
+    position: relative;
+  }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 12px; letter-spacing: 0.18em;
+    color: var(--rust-deep); font-weight: 700;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+  .hero-eyebrow::before {
+    content: ''; display: block;
+    width: 28px; height: 2px; background: var(--rust);
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(28px, 6.5vw, 38px);
+    font-weight: 700; line-height: 1.3;
+    color: var(--ink); letter-spacing: -0.025em;
+    margin-bottom: 20px;
+  }
+  .hero h1 .red {
+    color: var(--rust-deep);
+    position: relative;
+    display: inline-block;
+  }
+  .hero h1 .red::after {
+    content: '';
+    position: absolute;
+    bottom: 4px; left: 0; right: 0;
+    height: 8px;
+    background: rgba(184, 85, 46, 0.18);
+    z-index: -1;
+  }
+  .hero-sub {
+    font-size: 16.5px; color: var(--ink-soft);
+    line-height: 1.7; margin-bottom: 28px;
+    max-width: 600px;
+  }
+  .trust-row {
+    display: flex; flex-direction: column; gap: 10px;
+    margin-bottom: 28px;
+    padding: 22px 24px;
+    background: #fff;
+    border: 1px solid var(--warm-deep);
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(46, 30, 18, 0.05);
+  }
+  .trust-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    font-size: 14.5px; color: var(--ink-soft);
+    font-weight: 500;
+  }
+  .trust-item .check {
+    flex-shrink: 0;
+    width: 20px; height: 20px;
+    background: var(--rust);
+    color: #fff; font-size: 12px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 1px;
+  }
+
+  /* CTA */
+  .cta-row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cta-primary {
+    flex: 1; min-width: 220px;
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    background: var(--rust); color: #fff;
+    padding: 16px 24px;
+    font-size: 15px; font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  .cta-primary:hover { background: var(--rust-deep); transform: translateY(-1px); }
+  .cta-secondary {
+    flex: 1; min-width: 220px;
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    background: #fff; color: var(--ink);
+    padding: 16px 24px;
+    font-size: 15px; font-weight: 700;
+    text-decoration: none;
+    border: 1.5px solid var(--ink);
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  .cta-secondary:hover { background: var(--ink); color: #fff; }
+
+  section { padding: 64px 0; }
+  section.bg-warm { background: var(--warm); }
+  section.bg-soft { background: var(--bg-soft); }
+
+  .section-num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 12px; letter-spacing: 0.2em;
+    color: var(--rust-deep); font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .section-num::before {
+    content: ''; display: inline-block;
+    width: 32px; height: 2px; background: var(--rust);
+    vertical-align: middle; margin-right: 12px;
+  }
+  h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(24px, 5vw, 30px);
+    font-weight: 700; line-height: 1.35;
+    color: var(--ink); letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+  h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 19px; font-weight: 600;
+    color: var(--ink); line-height: 1.45;
+    margin-top: 36px; margin-bottom: 12px;
+  }
+  p { color: var(--ink-soft); line-height: 1.85; margin-bottom: 14px; font-size: 15.5px; }
+  p.lead { font-size: 17px; line-height: 1.75; margin-bottom: 24px; }
+
+  /* ───── 환자 인용구 ───── */
+  .quotes-wrap {
+    display: grid; gap: 14px;
+    margin: 28px 0;
+  }
+  .quote-card {
+    background: #fff;
+    border-left: 4px solid var(--rust);
+    padding: 20px 22px 20px 22px;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 1px 4px rgba(46, 30, 18, 0.05);
+    position: relative;
+    transition: transform 0.2s;
+  }
+  .quote-card:hover { transform: translateX(4px); }
+  .quote-card .qmark {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 36px;
+    color: var(--rust);
+    line-height: 1;
+    margin-bottom: 6px;
+    opacity: 0.5;
+  }
+  .quote-card p {
+    margin: 0;
+    color: var(--ink);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  /* ───── 단계 ───── */
+  .stage-grid { display: grid; gap: 14px; margin-top: 24px; }
+  .stage-card {
+    background: #fff; padding: 22px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--warm-deep);
+    position: relative;
+    transition: all 0.25s;
+  }
+  .stage-card.critical {
+    border-color: var(--rust);
+    background: linear-gradient(to right, #FFF8F1, #fff);
+    box-shadow: 0 4px 20px rgba(184, 85, 46, 0.1);
+  }
+  .stage-card.critical::before {
+    content: '시술 적기';
+    position: absolute;
+    top: -10px; right: 14px;
+    background: var(--rust);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 2px;
+    letter-spacing: 0.05em;
+  }
+  .stage-label {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px; letter-spacing: 0.05em;
+    color: var(--rust-deep); font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .stage-title { font-size: 17px; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+  .stage-desc { font-size: 14.5px; color: var(--muted); line-height: 1.65; }
+
+  /* ───── 자가진단 ───── */
+  .test-box {
+    background: linear-gradient(135deg, var(--ink) 0%, #2D2620 100%);
+    color: #fff;
+    padding: 36px 28px;
+    border-radius: 6px;
+    margin-top: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .test-box::after {
+    content: 'TABLE TOP TEST';
+    position: absolute;
+    top: 20px; right: 24px;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.25);
+    font-weight: 700;
+  }
+  .test-box h3 { color: #fff; margin-top: 0; }
+  .test-box p { color: rgba(255, 255, 255, 0.85); }
+  .test-steps {
+    margin-top: 18px;
+    counter-reset: step;
+    list-style: none;
+  }
+  .test-steps li {
+    counter-increment: step;
+    padding: 12px 0 12px 44px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    line-height: 1.6;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .test-steps li:last-child { border-bottom: none; }
+  .test-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0; top: 12px;
+    width: 28px; height: 28px;
+    background: var(--rust);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Serif KR', serif;
+  }
+  .test-result {
+    margin-top: 22px;
+    padding: 16px 18px;
+    background: rgba(184, 85, 46, 0.15);
+    border-left: 3px solid var(--rust);
+    border-radius: 0 4px 4px 0;
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.6;
+  }
+  .test-result strong { color: #fff; }
+
+  /* ───── 일상 영향 ───── */
+  .impact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 24px;
+  }
+  .impact-card {
+    background: #fff;
+    padding: 20px 22px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(46, 30, 18, 0.05);
+    border-top: 3px solid var(--olive);
+  }
+  .impact-icon {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: var(--olive);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .impact-title { font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+  .impact-desc { font-size: 14.5px; color: var(--muted); line-height: 1.65; }
+
+  /* ───── 시술 ───── */
+  .treatment-card {
+    background: #fff;
+    padding: 28px 26px;
+    border-radius: 4px;
+    margin-top: 16px;
+    border: 1px solid var(--warm-deep);
+  }
+  .treatment-card.feature {
+    background: linear-gradient(135deg, var(--rust) 0%, var(--rust-deep) 100%);
+    color: #fff;
+    border: none;
+    position: relative;
+    overflow: hidden;
+  }
+  .treatment-card.feature::before {
+    content: '';
+    position: absolute;
+    top: -50px; right: -50px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%);
+  }
+  .treatment-card.feature h3, .treatment-card.feature h4 {
+    color: #fff;
+    margin-top: 0;
+    position: relative;
+  }
+  .treatment-card.feature p { color: rgba(255, 255, 255, 0.9); position: relative; }
+  .treatment-card h4 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+  .treatment-card .badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    padding: 4px 10px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .feature-list {
+    margin-top: 16px;
+    list-style: none;
+    position: relative;
+  }
+  .feature-list li {
+    padding: 8px 0 8px 20px;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 14.5px;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .feature-list li:last-child { border-bottom: none; }
+  .feature-list li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 8px;
+    top: 14px;
+  }
+
+  /* ───── CTA 배너 ───── */
+  .cta-banner {
+    background: var(--ink);
+    color: #fff;
+    padding: 48px 28px;
+    border-radius: 6px;
+    text-align: center;
+    margin: 40px 0;
+  }
+  .cta-banner h3 { color: #fff; margin-top: 0; font-size: 24px; }
+  .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 24px; }
+  .cta-banner .cta-row { justify-content: center; }
+
+  /* ───── 정보 ───── */
+  .info-table {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(46, 30, 18, 0.04);
+  }
+  .info-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    border-bottom: 1px solid var(--line);
+  }
+  .info-row:last-child { border-bottom: none; }
+  .info-key {
+    background: var(--warm);
+    padding: 14px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .info-val { padding: 14px 16px; font-size: 14px; color: var(--ink-soft); }
+
+  /* ───── 노트 ───── */
+  .note-box {
+    background: var(--warm);
+    border-left: 3px solid var(--rust);
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+  .note-box strong {
+    display: block;
+    color: var(--rust-deep);
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ───── FAQ ───── */
+  .faq-list { margin-top: 24px; }
+  .faq-item { border-bottom: 1px solid var(--line); padding: 4px 0; }
+  .faq-q {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 18px 4px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .faq-q-mark {
+    flex-shrink: 0;
+    font-family: 'Noto Serif KR', serif;
+    color: var(--rust-deep);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .faq-q-text { flex: 1; font-size: 15.5px; font-weight: 600; color: var(--ink); line-height: 1.55; }
+  .faq-arrow { flex-shrink: 0; width: 22px; height: 22px; color: var(--muted); transition: transform 0.3s; }
+  .faq-item[open] .faq-arrow { transform: rotate(180deg); }
+  .faq-a {
+    padding: 0 4px 20px 32px;
+    color: var(--ink-soft);
+    font-size: 14.5px;
+    line-height: 1.75;
+  }
+
+  /* ───── 푸터 ───── */
+  footer {
+    background: var(--ink);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 40px 0 32px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  footer .brand-foot {
+    font-family: 'Noto Serif KR', serif;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  footer p { color: rgba(255, 255, 255, 0.65); font-size: 13px; margin-bottom: 4px; }
+  footer .disclaimer {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* 모바일 고정 바 */
+  .mobile-bar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: #fff;
+    border-top: 1px solid var(--line);
+    padding: 10px 16px;
+    display: flex; gap: 8px;
+    z-index: 90;
+    box-shadow: 0 -4px 20px rgba(46, 30, 18, 0.08);
+  }
+  .mobile-bar a {
+    flex: 1;
+    display: flex; align-items: center; justify-content: center;
+    gap: 6px;
+    padding: 13px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+  }
+  .mobile-bar .m-call { background: var(--rust); color: #fff; }
+  .mobile-bar .m-kakao { background: #FEE500; color: #181600; }
+  .mobile-bar .m-reserve { background: var(--ink); color: #fff; }
+  .mobile-bar svg { width: 16px; height: 16px; }
+  .footer-spacer { height: 80px; }
+  @media (min-width: 768px) {
+    .mobile-bar { display: none; }
+    .footer-spacer { height: 0; }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero h1, .hero-sub, .trust-row, .cta-row {
+    animation: fadeUp 0.7s ease-out backwards;
+  }
+  .hero h1 { animation-delay: 0.05s; }
+  .hero-sub { animation-delay: 0.2s; }
+  .trust-row { animation-delay: 0.35s; }
+  .hero .cta-row { animation-delay: 0.5s; }
+
+  @media (max-width: 480px) {
+    .container { padding: 0 20px; }
+    .hero { padding: 44px 0 52px; }
+    section { padding: 48px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <div class="brand">희망찬병원<span class="small">손·척추 전문</span></div>
+    <a href="tel:16003415" class="topbar-cta">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+      진료 문의
+    </a>
+  </div>
+</header>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">Symptoms · 증상이 보내는 신호</div>
+    <h1>손바닥 딱딱한 줄, 손가락 굽음 —<br><span class="red">듀피트렌 진행 신호</span>입니다</h1>
+    <p class="hero-sub">단순한 굳은살이 아닙니다. 진행 단계에 따라 시술 방법과 시기가 달라지며, 굽음이 시작되기 전이 비절개 시술 적기 케이스가 많습니다.</p>
+
+    <div class="trust-row">
+      <div class="trust-item"><span class="check">✓</span><span>손·척추 전문의 직접 진료 — 정확한 단계 판정</span></div>
+      <div class="trust-item"><span class="check">✓</span><span>비절개 하키나이프 시술 가능 케이스 안내</span></div>
+      <div class="trust-item"><span class="check">✓</span><span>30초 자가진단으로 위험 신호 1차 확인</span></div>
+    </div>
+
+    <div class="cta-row">
+      <a href="tel:16003415" class="cta-primary">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+        전화로 진료 상담
+      </a>
+      <a href="#self-test" class="cta-secondary">자가진단 30초</a>
+    </div>
+  </div>
+</section>
+
+<!-- 환자 인용 -->
+<section>
+  <div class="container">
+    <div class="section-num">01 · VOICES</div>
+    <h2>환자분들이 자주 하시는 말씀</h2>
+    <p class="lead">많은 듀피트렌 환자분들이 처음 병원을 찾을 때 이런 말씀을 하십니다. 자신의 경우와 비슷한 표현이 있다면, 듀피트렌 진행 신호일 수 있습니다.</p>
+
+    <div class="quotes-wrap">
+      <div class="quote-card">
+        <div class="qmark">"</div>
+        <p>손바닥에 굳은살 같은 게 잡혀요. 그런데 안 깎여요.</p>
+      </div>
+      <div class="quote-card">
+        <div class="qmark">"</div>
+        <p>손바닥에 딱딱한 줄이 잡혀요. 마치 힘줄 같은데 점점 또렷해져요.</p>
+      </div>
+      <div class="quote-card">
+        <div class="qmark">"</div>
+        <p>약지·새끼손가락이 안 펴져요. 테이블에 손바닥이 안 붙어요.</p>
+      </div>
+      <div class="quote-card">
+        <div class="qmark">"</div>
+        <p>악수할 때 손가락이 잘 안 펴져서 부끄러워요.</p>
+      </div>
+      <div class="quote-card">
+        <div class="qmark">"</div>
+        <p>주머니에 손이 잘 안 들어가요. 장갑이 안 끼워져요.</p>
+      </div>
+    </div>
+
+    <p>이런 증상들은 듀피트렌병의 전형적인 진행 신호일 수 있습니다. 환자분이 자가진단으로 확신하기는 어렵기 때문에, 손전문 의료진의 정밀 감별이 필요합니다.</p>
+  </div>
+</section>
+
+<!-- 단계 -->
+<section class="bg-warm">
+  <div class="container">
+    <div class="section-num">02 · STAGES</div>
+    <h2>진행 단계 — 어디까지 왔을까?</h2>
+    <p>듀피트렌은 시간이 지나며 단계적으로 진행됩니다. 단계마다 시술 방법과 회복 결과가 다르므로 본인의 단계를 정확히 아는 것이 중요합니다.</p>
+
+    <div class="stage-grid">
+      <div class="stage-card">
+        <div class="stage-label">1단계</div>
+        <div class="stage-title">결절기</div>
+        <div class="stage-desc">손바닥에 콩알·쌀알 크기 결절. 통증 없음. 굽음 없음.</div>
+      </div>
+      <div class="stage-card critical">
+        <div class="stage-label">2단계</div>
+        <div class="stage-title">진행기 — 줄·띠</div>
+        <div class="stage-desc">결절이 줄·밧줄로 이어짐. 손가락이 약간 굽기 시작. 비절개 시술 케이스 다수.</div>
+      </div>
+      <div class="stage-card critical">
+        <div class="stage-label">3단계</div>
+        <div class="stage-title">구축기</div>
+        <div class="stage-desc">약지·새끼손가락 안 펴짐. 갈퀴손. 테이블탑 양성. 즉시 진료 권장.</div>
+      </div>
+      <div class="stage-card">
+        <div class="stage-label">4단계</div>
+        <div class="stage-title">말기</div>
+        <div class="stage-desc">관절까지 강직. 손가락 완전히 굽음. 복합 수술 가능성.</div>
+      </div>
+    </div>
+
+    <!-- 자가진단 -->
+    <div id="self-test" class="test-box">
+      <h3>자가진단 — 테이블탑 테스트 (30초)</h3>
+      <p>가장 잘 알려진 듀피트렌 자가진단입니다. 지금 바로 해보실 수 있습니다.</p>
+      <ol class="test-steps">
+        <li>평평한 테이블에 손바닥을 펴서 올려놓습니다.</li>
+        <li>손바닥과 손가락 전체가 테이블에 완전히 닿는지 확인합니다.</li>
+        <li>약지·새끼손가락이 안 닿거나, 손바닥이 들떠 있는지 봅니다.</li>
+      </ol>
+      <div class="test-result">
+        <strong>양성 = 듀피트렌 의심</strong><br>
+        테이블탑 양성이라고 해서 모두 듀피트렌은 아닙니다. 다른 손 질환과의 감별이 필요하므로 손전문 진료를 권장합니다.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 일상 영향 -->
+<section>
+  <div class="container">
+    <div class="section-num">03 · IMPACT</div>
+    <h2>진행되면 일상이 이렇게 달라집니다</h2>
+    <p class="lead">단순한 손 변형이 아닙니다. 듀피트렌의 진행은 일상생활·직업·사회활동·심리에 모두 영향을 줍니다.</p>
+
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="impact-icon">DAILY LIFE</div>
+        <div class="impact-title">일상생활</div>
+        <div class="impact-desc">단추 채우기·지퍼 올리기·세수·악수·옷 갈아입기 등에서 불편이 생깁니다.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-icon">WORK</div>
+        <div class="impact-title">직업</div>
+        <div class="impact-desc">타이핑·악기 연주·운전·요리·간호·미용 등 손을 쓰는 모든 직종에서 능률 저하.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-icon">SOCIAL</div>
+        <div class="impact-title">사회활동</div>
+        <div class="impact-desc">악수·박수·물건 잡기 등 외부 활동 시 위축감.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-icon">MIND</div>
+        <div class="impact-title">심리</div>
+        <div class="impact-desc">"손이 늙어 보인다", "이상하게 보일까 봐 손을 숨긴다" — 자신감 저하.</div>
+      </div>
+    </div>
+
+    <div class="note-box">
+      <strong>핵심 메시지</strong>
+      진행을 멈추는 가장 좋은 방법은 적절한 시기에 정확한 진단을 받고, 단계에 맞는 시술을 받는 것입니다. 굽음이 심해지기 전이 시술 적기 케이스가 많습니다.
+    </div>
+  </div>
+</section>
+
+<!-- 시술 -->
+<section class="bg-soft">
+  <div class="container">
+    <div class="section-num">04 · TREATMENT</div>
+    <h2>진행 단계별 시술 옵션</h2>
+
+    <div class="treatment-card feature">
+      <span class="badge">SIGNATURE</span>
+      <h3>비절개 하키나이프 시술</h3>
+      <p>진행기·구축 초기 단계에서 가장 자주 사용되는 시술입니다. 피부에 작은 구멍만 내고 손바닥 안쪽의 두꺼워진 결삭을 끊어 손가락이 펴지도록 합니다. 큰 절개·봉합이 없어 회복이 빠른 것이 특징이지만, 모든 단계에서 가능한 것은 아닙니다.</p>
+      <ul class="feature-list">
+        <li>국소마취 · 입원 없이 당일 시술 가능 케이스 다수</li>
+        <li>피부 절개 최소 — 흉터 부담 감소</li>
+        <li>손가락 움직임이 시술 직후 회복되는 경우 많음 (개인차 있음)</li>
+      </ul>
+    </div>
+
+    <div class="treatment-card">
+      <h4>광범위 결삭 절제술</h4>
+      <p>구축이 심하거나 재발인 경우 고려되는 방법입니다. 두꺼워진 결삭 조직을 광범위하게 제거합니다. 회복기간은 비절개에 비해 길지만, 진행이 많이 된 경우 더 적합한 케이스가 있습니다.</p>
+    </div>
+
+    <div class="treatment-card">
+      <h4>어떤 시술이 적합한지는 진료 후 결정</h4>
+      <p>단계·관절 상태·재발 여부·환자의 직업과 일상 조건을 모두 고려해 결정합니다. 본원에서는 진료 시 단계별 옵션과 회복 예측을 함께 안내해 드립니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta-reserve">
+  <div class="container">
+    <div class="cta-banner">
+      <h3>지금이 시술 적기일 수 있습니다</h3>
+      <p>굽음이 심해지기 전 단계 확인 — 손·척추 전문의<br>직접 진료로 시술 시기를 함께 결정합니다.</p>
+      <div class="cta-row">
+        <a href="tel:16003415" class="cta-primary">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+          전화 예약
+        </a>
+        <a href="[카카오톡 채널 URL]" class="cta-secondary">카카오톡 1:1 문의</a>
+      </div>
+    </div>
+
+    <h3>본원 정보</h3>
+    <div class="info-table">
+      <div class="info-row"><div class="info-key">병원명</div><div class="info-val">희망찬병원 (손·척추 전문)</div></div>
+      <div class="info-row"><div class="info-key">주소</div><div class="info-val">경기도 화성시 동탄 [주소 입력]</div></div>
+      <div class="info-row"><div class="info-key">대표번호</div><div class="info-val">[전화번호 입력]</div></div>
+      <div class="info-row"><div class="info-key">진료시간</div><div class="info-val">[진료시간 입력]</div></div>
+      <div class="info-row"><div class="info-key">주차</div><div class="info-val">본원 주차장 운영</div></div>
+      <div class="info-row"><div class="info-key">교통</div><div class="info-val">동탄·화성·오산·수원·평택·병점·용인</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-warm">
+  <div class="container">
+    <div class="section-num">05 · FAQ</div>
+    <h2>자주 묻는 질문</h2>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">손바닥에 줄이 잡혀요. 그냥 힘줄 아닌가요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">실제 힘줄은 손가락을 굽혔다 폈다 할 때 움직입니다. 듀피트렌의 줄(결삭)은 가만히 있어도 잡히고, 손가락 움직임과 다르게 따로 움직이지 않습니다. 정확한 구분은 의료진의 촉진과 초음파로 가능합니다.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">손가락이 굽었는데 안 아파요. 그래도 진료가 필요한가요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">듀피트렌의 특징은 통증이 거의 없다는 점입니다. 통증이 없어도 진행은 계속될 수 있으므로, 굽음이 시작된 시점에 정확한 단계를 확인하는 것이 시술 시기와 회복 결과에 결정적입니다.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">굽음이 심하지 않은데 지금 시술해야 할까요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">진행기·구축 초기는 비절개 시술이 가능한 케이스가 많은 적기입니다. 그러나 모든 분이 즉시 시술해야 하는 것은 아니고, 진행 속도·일상 불편 정도·환자 위험 인자를 종합해 결정합니다. 진료에서 함께 판단해 드립니다.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">펴려고 손을 잡아당기면 도움이 되나요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">단순 스트레칭으로 진행을 막거나 결삭을 풀 수는 없습니다. 다만 시술 후 회복 단계에서는 스트레칭이 굳음 방지에 도움이 될 수 있습니다. 시술 전 무리한 자가 견인은 권장하지 않습니다.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">양손이 다 그런데 한쪽씩 시술해야 하나요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">직업·일상 손 사용·회복 기간 관리 등을 고려해 양손 동시 시술 또는 단계적 시술을 결정합니다. 진료 시 함께 상의 드립니다.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">시술 직후에 손가락이 펴지나요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">결삭에 의한 굽음은 시술 직후 펴지는 경우가 많습니다(개인차 있음). 다만 관절 자체가 굳어 있는 경우는 완전한 회복까지 시간이 필요할 수 있습니다.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">시술 후 흉터가 남나요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">하키나이프 시술은 피부 절개가 최소화되므로 큰 흉터 부담이 작습니다. 광범위 절제술의 경우는 시술 범위에 따라 흉터가 남을 수 있으며, 본원에서 봉합·관리 후 흉터 관리도 안내해 드립니다.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">시술 후 통증이 심한가요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">하키나이프 시술은 통상 가벼운 통증 수준으로 보고되며, 진통제로 관리 가능한 경우가 많습니다. 광범위 절제술의 경우 며칠간 통증이 더 있을 수 있습니다. 개인차가 있으므로 정확한 예측은 진료 후 안내드립니다.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">재발하면 다시 시술할 수 있나요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">듀피트렌은 만성 질환이라 재발 가능성이 있고, 재발한 경우에도 단계와 상태에 따라 다시 시술이 가능한 케이스가 많습니다. 다만 재발 시술은 첫 시술보다 더 신중한 평가가 필요합니다.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">직업 때문에 손을 많이 쓰는데 시술 후 일이 가능한가요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">직업 종류에 따라 회복 기간이 다릅니다. 사무직은 며칠, 손을 많이 쓰는 직업(요리·운전·악기·간호·미용 등)은 1–2주 정도 회복 기간이 일반적입니다. 진료 시 환자의 직업을 알려주시면 회복 일정 함께 안내드립니다.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">자가진단으로 확실히 구분이 되나요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">테이블탑 테스트는 1차 자가 확인용입니다. 양성이 나와도 결절종·관절염·방아쇠수지 등 다른 손 질환과 감별이 필요하므로, 양성이면 손전문 진료를 권장합니다.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q"><span class="faq-q-mark">Q.</span><span class="faq-q-text">듀피트렌이 손바닥 외에도 생기나요?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="faq-a">드물게 발바닥(레더호젠병)·음경(페로니병) 등 다른 부위에 비슷한 결합조직 변화가 동반되는 경우가 있습니다. 손에 듀피트렌이 있는 분이 이런 동반 증상이 있다면 진료 시 함께 말씀해 주시는 것이 좋습니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="brand-foot">희망찬병원</div>
+    <p>경기도 화성시 병점중앙로 174</p>
+    <p>대표번호 16003415 · 평일:08:00~18:00 토요일:09:00~13:00 일.공휴일 휴무</p>
+    <p>대표자 김진균</p>
+    <div class="disclaimer">
+      ※ 본 페이지는 의료광고로, 모든 치료 결과는 환자의 상태에 따라 다를 수 있습니다. 시술 가능 여부와 방법은 진료 후 의료진과 상의하여 결정됩니다.<br>
+      © 희망찬병원. 본 페이지의 무단 복제·전재를 금합니다.
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:16003415" class="m-call">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+    전화
+  </a>
+  <a href="[카카오톡 채널]" class="m-kakao">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.48 3 2 6.58 2 11c0 2.83 1.85 5.31 4.6 6.74-.2.71-.74 2.7-.85 3.12-.14.52.19.51.4.37.16-.11 2.55-1.74 3.58-2.45.74.1 1.5.15 2.27.15 5.52 0 10-3.58 10-8s-4.48-7.93-10-7.93z"/></svg>
+    카톡
+  </a>
+  <a href="#cta-reserve" class="m-reserve">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+    예약
+  </a>
+</div>
+
+<div class="footer-spacer"></div>
+
+</body>
+</html>
