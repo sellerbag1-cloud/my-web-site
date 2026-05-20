@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>척골관증후군 — 희망찬병원</title>
+<meta name="description" content="새끼손가락이 저린다면 손목터널증후군이 아닐 수 있습니다. 척골관증후군 정확한 검사와 단계적 치료. 병점 희망찬병원.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --c-bg: #fbfaf7;
+    --c-ink: #1a2332;
+    --c-ink-soft: #4a5568;
+    --c-mute: #8a8f99;
+    --c-line: #e3ddd0;
+    --c-card: #ffffff;
+    --c-accent: #2c5066;          /* 신경 — 차분한 블루그레이 */
+    --c-accent-deep: #1c3645;
+    --c-warm: #c47434;
+    --c-pinky: #b7568c;           /* 척골신경 분포 표시 */
+    --c-median: #4a90a4;          /* 정중신경 분포 표시 */
+    --f-serif: 'Nanum Myeongjo', 'Noto Serif KR', serif;
+    --f-sans: 'Noto Sans KR', system-ui, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--f-sans);
+    color: var(--c-ink);
+    background: var(--c-bg);
+    line-height: 1.7;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 880px; margin: 0 auto; padding: 0 28px; }
+
+  /* HEADER */
+  header {
+    border-bottom: 1px solid var(--c-line);
+    background: rgba(251, 250, 247, 0.95);
+    backdrop-filter: blur(8px);
+    position: sticky; top: 0; z-index: 100;
+  }
+  .header-inner {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 28px; max-width: 880px; margin: 0 auto;
+  }
+  .logo { font-family: var(--f-serif); font-weight: 800; font-size: 19px; letter-spacing: -0.02em; }
+  .logo .accent { color: var(--c-accent); }
+  .header-cta {
+    font-size: 14px; color: var(--c-accent); text-decoration: none;
+    border-bottom: 1px solid var(--c-accent); padding-bottom: 2px;
+  }
+
+  /* HERO */
+  .hero { padding: 80px 0 60px; }
+  .hero-tag {
+    display: inline-block; font-size: 13px; color: var(--c-warm);
+    letter-spacing: 0.15em; margin-bottom: 24px; font-weight: 500; text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: var(--f-serif); font-weight: 800;
+    font-size: 44px; line-height: 1.3; letter-spacing: -0.02em;
+    margin-bottom: 28px; color: var(--c-ink);
+  }
+  .hero h1 .em {
+    color: var(--c-accent-deep); border-bottom: 2px solid var(--c-warm); padding-bottom: 2px;
+  }
+  .hero-lead { font-size: 18px; line-height: 1.85; color: var(--c-ink-soft); margin-bottom: 40px; max-width: 640px; }
+  .hero-meta {
+    display: flex; gap: 32px; flex-wrap: wrap;
+    padding: 24px 0; border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);
+    margin-bottom: 36px;
+  }
+  .hero-meta-item { display: flex; flex-direction: column; gap: 4px; }
+  .hero-meta-label { font-size: 12px; color: var(--c-mute); letter-spacing: 0.08em; }
+  .hero-meta-value { font-family: var(--f-serif); font-weight: 700; font-size: 17px; color: var(--c-ink); }
+  .btn {
+    display: inline-block; padding: 16px 36px; background: var(--c-accent); color: white;
+    text-decoration: none; font-size: 16px; font-weight: 500; border-radius: 2px;
+    transition: background 0.25s ease; letter-spacing: 0.02em;
+  }
+  .btn:hover { background: var(--c-accent-deep); }
+  .btn-secondary { background: transparent; color: var(--c-accent); border: 1px solid var(--c-accent); margin-left: 12px; }
+  .btn-secondary:hover { background: var(--c-accent); color: white; }
+
+  /* SECTION */
+  section { padding: 60px 0; }
+  .section-num {
+    font-family: var(--f-serif); font-style: italic;
+    font-size: 14px; color: var(--c-warm); letter-spacing: 0.1em; margin-bottom: 12px;
+  }
+  h2 {
+    font-family: var(--f-serif); font-weight: 800; font-size: 32px;
+    line-height: 1.4; letter-spacing: -0.015em; margin-bottom: 36px; color: var(--c-ink);
+  }
+  h3 {
+    font-family: var(--f-serif); font-weight: 700; font-size: 22px;
+    margin-bottom: 16px; color: var(--c-ink); letter-spacing: -0.01em;
+  }
+  p { margin-bottom: 18px; color: var(--c-ink-soft); }
+  p.lead { font-size: 17px; color: var(--c-ink); line-height: 1.85; }
+
+  /* HAND DIAGRAM (감별 인포그래픽) */
+  .hand-compare {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+    margin: 40px 0;
+  }
+  .hand-card {
+    background: var(--c-card); border: 1px solid var(--c-line);
+    padding: 32px 28px; border-radius: 4px;
+  }
+  .hand-card h4 {
+    font-family: var(--f-serif); font-size: 19px; font-weight: 700;
+    margin-bottom: 6px; color: var(--c-ink);
+  }
+  .hand-card .sub {
+    font-size: 13px; color: var(--c-mute); margin-bottom: 24px; letter-spacing: 0.05em;
+  }
+  .hand-svg {
+    width: 100%; max-width: 180px; height: auto; display: block; margin: 0 auto 20px;
+  }
+  .hand-card ul { list-style: none; padding: 0; }
+  .hand-card li {
+    font-size: 14px; padding: 6px 0; color: var(--c-ink-soft);
+    border-bottom: 1px dashed #f0ebe0; line-height: 1.5;
+  }
+  .hand-card li:last-child { border-bottom: none; }
+  .hand-card .legend-dot {
+    display: inline-block; width: 10px; height: 10px; border-radius: 50%;
+    margin-right: 8px; vertical-align: middle;
+  }
+  .hand-card.median .legend-dot { background: var(--c-median); }
+  .hand-card.ulnar .legend-dot { background: var(--c-pinky); }
+
+  /* INDICATIONS */
+  .indications {
+    background: var(--c-card); border: 1px solid var(--c-line);
+    padding: 44px; border-radius: 4px;
+  }
+  .indications h3 {
+    font-size: 19px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--c-line);
+  }
+  .indication-list { list-style: none; }
+  .indication-list li {
+    padding: 14px 0 14px 32px; border-bottom: 1px solid #f0ebe0;
+    position: relative; color: var(--c-ink); font-size: 16px; line-height: 1.6;
+  }
+  .indication-list li:last-child { border-bottom: none; }
+  .indication-list li::before {
+    content: "—"; position: absolute; left: 0; top: 14px;
+    color: var(--c-warm); font-weight: 700;
+  }
+
+  /* CAUSE GRID */
+  .cause-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  }
+  .cause-card {
+    background: var(--c-card); border: 1px solid var(--c-line);
+    padding: 28px; border-radius: 4px;
+  }
+  .cause-card .label {
+    font-family: var(--f-serif); font-style: italic;
+    font-size: 13px; color: var(--c-warm); letter-spacing: 0.08em; margin-bottom: 12px;
+  }
+  .cause-card h4 {
+    font-family: var(--f-serif); font-size: 19px; font-weight: 700;
+    margin-bottom: 16px; color: var(--c-ink);
+  }
+  .cause-card ul { list-style: none; padding-left: 0; }
+  .cause-card li {
+    padding: 8px 0 8px 20px; position: relative; font-size: 14px;
+    color: var(--c-ink-soft); line-height: 1.5;
+  }
+  .cause-card li::before {
+    content: "·"; position: absolute; left: 6px; top: 4px;
+    color: var(--c-accent); font-weight: 700; font-size: 18px;
+  }
+
+  /* PROCESS */
+  .process-grid { display: grid; gap: 24px; }
+  .process-step {
+    display: grid; grid-template-columns: 80px 1fr; gap: 28px;
+    padding: 28px 0; border-bottom: 1px solid var(--c-line);
+  }
+  .process-step:last-child { border-bottom: none; }
+  .process-step-num {
+    font-family: var(--f-serif); font-weight: 800; font-size: 40px;
+    color: var(--c-accent); line-height: 1;
+  }
+  .process-step-content h4 {
+    font-family: var(--f-serif); font-size: 19px; font-weight: 700;
+    margin-bottom: 8px; color: var(--c-ink);
+  }
+  .process-step-content .time {
+    font-size: 13px; color: var(--c-warm); letter-spacing: 0.05em;
+    margin-bottom: 12px; display: block;
+  }
+  .process-step-content p { margin-bottom: 0; font-size: 15px; }
+  .process-total {
+    background: #f4f0e6; padding: 20px 28px; border-radius: 4px;
+    margin-top: 16px; font-family: var(--f-serif); font-size: 16px;
+    color: var(--c-ink); text-align: center;
+  }
+
+  /* TREATMENT STAGES */
+  .stages {
+    display: grid; gap: 16px;
+  }
+  .stage {
+    background: var(--c-card); border: 1px solid var(--c-line);
+    border-left: 4px solid var(--c-accent); padding: 24px 28px; border-radius: 2px;
+  }
+  .stage h4 {
+    font-family: var(--f-serif); font-size: 18px; font-weight: 700;
+    margin-bottom: 12px; color: var(--c-ink);
+  }
+  .stage .stage-num {
+    color: var(--c-warm); font-family: var(--f-serif); font-style: italic;
+    font-size: 13px; letter-spacing: 0.08em; margin-right: 12px;
+  }
+  .stage ul { list-style: none; padding: 0; margin-top: 8px; }
+  .stage li {
+    font-size: 14px; padding: 5px 0 5px 16px; color: var(--c-ink-soft);
+    position: relative; line-height: 1.6;
+  }
+  .stage li::before {
+    content: "·"; position: absolute; left: 0; color: var(--c-accent);
+    font-weight: 700; font-size: 18px; top: -2px;
+  }
+
+  /* FAQ */
+  .faq-item { border-bottom: 1px solid var(--c-line); padding: 24px 0; }
+  .faq-item:first-child { border-top: 1px solid var(--c-line); }
+  .faq-q {
+    font-family: var(--f-serif); font-weight: 700; font-size: 18px;
+    color: var(--c-accent-deep); margin-bottom: 12px;
+    padding-left: 24px; position: relative;
+  }
+  .faq-q::before {
+    content: "Q"; position: absolute; left: 0; top: 0;
+    color: var(--c-warm); font-family: var(--f-serif); font-weight: 800;
+  }
+  .faq-a {
+    padding-left: 24px; position: relative;
+    color: var(--c-ink-soft); font-size: 15px; line-height: 1.75;
+  }
+  .faq-a::before {
+    content: "A"; position: absolute; left: 0; top: 0;
+    color: var(--c-mute); font-family: var(--f-serif); font-weight: 800;
+  }
+
+  /* CTA BLOCK */
+  .cta-block {
+    background: var(--c-accent-deep); color: white;
+    padding: 60px 44px; border-radius: 4px; text-align: center; margin: 40px 0;
+  }
+  .cta-block h2 { color: white; margin-bottom: 16px; font-size: 28px; }
+  .cta-block p { color: rgba(255, 255, 255, 0.85); font-size: 17px; margin-bottom: 32px; }
+  .cta-block .btn { background: var(--c-warm); font-size: 17px; padding: 18px 44px; }
+  .cta-block .btn:hover { background: #a55f25; }
+
+  /* FOOTER */
+  footer {
+    background: #1a2332; color: rgba(255, 255, 255, 0.7);
+    padding: 50px 0 30px; font-size: 13px; line-height: 1.8;
+  }
+  footer .container { padding: 0 28px; }
+  .footer-brand {
+    font-family: var(--f-serif); font-weight: 800; font-size: 18px;
+    color: white; margin-bottom: 16px;
+  }
+  .footer-info { margin-bottom: 24px; }
+  .disclaimer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 20px;
+    font-size: 12px; color: rgba(255, 255, 255, 0.45);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 640px) {
+    .hero { padding: 50px 0 40px; }
+    .hero h1 { font-size: 32px; }
+    .hero-lead { font-size: 16px; }
+    h2 { font-size: 26px; }
+    section { padding: 40px 0; }
+    .indications { padding: 28px; }
+    .hand-compare { grid-template-columns: 1fr; gap: 20px; }
+    .cause-grid { grid-template-columns: 1fr; }
+    .process-step { grid-template-columns: 60px 1fr; gap: 16px; }
+    .process-step-num { font-size: 32px; }
+    .cta-block { padding: 40px 24px; }
+    .btn-secondary { margin-left: 0; margin-top: 12px; display: block; text-align: center; }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero > .container > * { animation: fadeUp 0.7s ease-out both; }
+  .hero-tag { animation-delay: 0.05s; }
+  .hero h1 { animation-delay: 0.15s; }
+  .hero-lead { animation-delay: 0.3s; }
+  .hero-meta { animation-delay: 0.45s; }
+  .hero-buttons { animation-delay: 0.6s; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">희망찬<span class="accent">병원</span></div>
+    <a href="tel:16003415" class="header-cta">1600-3415</a>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="container">
+    <div class="hero-tag">GUYON'S TUNNEL SYNDROME · 척골관증후군</div>
+    <h1>새끼손가락이 저린다면,<br><span class="em">손목터널증후군이 아닐 수 있습니다.</span></h1>
+    <p class="hero-lead">
+      새끼손가락과 약지 반쪽이 저리고 힘이 빠진다면, 척골관증후군일 가능성이 높습니다.
+      손목터널증후군과는 눌리는 신경이 다른 별개의 질환입니다.
+      동탄 희망찬병원에서는 근전도·초음파 검사로 신경 압박 위치를 정확히 확인하고, 보존 치료부터 단계적으로 접근합니다.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">정밀 검사</span>
+        <span class="hero-meta-value">근전도 + 초음파</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">결과 설명</span>
+        <span class="hero-meta-value">검사 당일</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">치료 단계</span>
+        <span class="hero-meta-value">보존부터 시작</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">진료 의료진</span>
+        <span class="hero-meta-value">수부외과 전문의</span>
+      </div>
+    </div>
+    <div class="hero-buttons">
+      <a href="[예약링크]" class="btn">진료 예약하기</a>
+      <a href="tel:16003415" class="btn btn-secondary">전화로 문의</a>
+    </div>
+  </div>
+</main>
+
+<section>
+  <div class="container">
+    <div class="section-num">I. NERVE DISTRIBUTION</div>
+    <h2>저린 손가락이 다릅니다</h2>
+    <p class="lead">
+      손저림이 어느 손가락에 나타나는지에 따라 눌리는 신경이 다릅니다.
+      이것이 손목터널증후군과 척골관증후군을 구분하는 가장 분명한 단서입니다.
+    </p>
+
+    <div class="hand-compare">
+      <!-- 정중신경 / CTS -->
+      <div class="hand-card median">
+        <h4><span class="legend-dot"></span>손목터널증후군</h4>
+        <div class="sub">정중신경 압박 · Median Nerve</div>
+        <svg class="hand-svg" viewBox="0 0 180 220" xmlns="http://www.w3.org/2000/svg">
+          <!-- 손바닥 -->
+          <rect x="40" y="100" width="100" height="80" rx="14" fill="#f5efe0" stroke="#cfc5ad" stroke-width="1.5"/>
+          <!-- 손가락 5개 (왼쪽부터: 엄지·검지·중지·약지·새끼) -->
+          <!-- 엄지 -->
+          <rect x="20" y="120" width="20" height="50" rx="10" fill="#4a90a4" stroke="#3a7081" stroke-width="1.2"/>
+          <!-- 검지 -->
+          <rect x="48" y="40" width="20" height="65" rx="10" fill="#4a90a4" stroke="#3a7081" stroke-width="1.2"/>
+          <!-- 중지 -->
+          <rect x="72" y="30" width="20" height="75" rx="10" fill="#4a90a4" stroke="#3a7081" stroke-width="1.2"/>
+          <!-- 약지 (반쪽 - 엄지 쪽만 정중신경) -->
+          <rect x="96" y="40" width="20" height="65" rx="10" fill="#f5efe0" stroke="#cfc5ad" stroke-width="1.2"/>
+          <rect x="96" y="40" width="10" height="65" rx="0" fill="#4a90a4" stroke="none"/>
+          <rect x="96" y="40" width="20" height="65" rx="10" fill="none" stroke="#3a7081" stroke-width="1.2"/>
+          <!-- 새끼 -->
+          <rect x="120" y="55" width="20" height="50" rx="10" fill="#f5efe0" stroke="#cfc5ad" stroke-width="1.2"/>
+          <!-- 손목 -->
+          <rect x="60" y="180" width="60" height="30" rx="6" fill="#e8dfc8" stroke="#cfc5ad" stroke-width="1.5"/>
+          <!-- 압박 지점 (수근관) -->
+          <circle cx="90" cy="180" r="6" fill="#c47434" stroke="#8a4f1c" stroke-width="1.5"/>
+        </svg>
+        <ul>
+          <li>엄지 · 검지 · 중지가 저림</li>
+          <li>약지의 엄지 쪽 절반만 저림</li>
+          <li>새끼손가락은 저리지 않음</li>
+          <li>밤에 손이 저려 깨는 경우 많음</li>
+          <li>수근관(손목터널)에서 압박</li>
+        </ul>
+      </div>
+
+      <!-- 척골신경 / 척골관 -->
+      <div class="hand-card ulnar">
+        <h4><span class="legend-dot"></span>척골관증후군</h4>
+        <div class="sub">척골신경 압박 · Ulnar Nerve</div>
+        <svg class="hand-svg" viewBox="0 0 180 220" xmlns="http://www.w3.org/2000/svg">
+          <rect x="40" y="100" width="100" height="80" rx="14" fill="#f5efe0" stroke="#cfc5ad" stroke-width="1.5"/>
+          <!-- 손바닥 새끼 쪽 음영 (척골신경 분포) -->
+          <path d="M 100 100 L 140 100 L 140 180 L 100 180 Z" fill="#b7568c" opacity="0.18"/>
+          <!-- 엄지 -->
+          <rect x="20" y="120" width="20" height="50" rx="10" fill="#f5efe0" stroke="#cfc5ad" stroke-width="1.2"/>
+          <!-- 검지 -->
+          <rect x="48" y="40" width="20" height="65" rx="10" fill="#f5efe0" stroke="#cfc5ad" stroke-width="1.2"/>
+          <!-- 중지 -->
+          <rect x="72" y="30" width="20" height="75" rx="10" fill="#f5efe0" stroke="#cfc5ad" stroke-width="1.2"/>
+          <!-- 약지 (반쪽 - 새끼 쪽만 척골신경) -->
+          <rect x="96" y="40" width="20" height="65" rx="10" fill="#f5efe0" stroke="#cfc5ad" stroke-width="1.2"/>
+          <rect x="106" y="40" width="10" height="65" rx="0" fill="#b7568c" stroke="none"/>
+          <rect x="96" y="40" width="20" height="65" rx="10" fill="none" stroke="#3a7081" stroke-width="1.2"/>
+          <!-- 새끼 -->
+          <rect x="120" y="55" width="20" height="50" rx="10" fill="#b7568c" stroke="#893f6b" stroke-width="1.2"/>
+          <!-- 손목 -->
+          <rect x="60" y="180" width="60" height="30" rx="6" fill="#e8dfc8" stroke="#cfc5ad" stroke-width="1.5"/>
+          <!-- 압박 지점 (척골관) -->
+          <circle cx="118" cy="180" r="6" fill="#c47434" stroke="#8a4f1c" stroke-width="1.5"/>
+        </svg>
+        <ul>
+          <li>새끼손가락이 저림</li>
+          <li>약지의 새끼손가락 쪽 절반만 저림</li>
+          <li>손바닥의 새끼손가락 쪽 가장자리 저림</li>
+          <li>활동 중에 저림이 더 심해짐</li>
+          <li>척골관(기용관)에서 압박</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="font-size: 14px; color: var(--c-mute); text-align: center; margin-top: 24px;">
+      약지를 둘로 나눠 어느 쪽이 저리는지 직접 확인해보시면, 어느 신경이 눌리고 있는지 가늠할 수 있습니다.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-num">II. INDICATIONS</div>
+    <h2>이런 분들께 권장합니다</h2>
+    <div class="indications">
+      <h3>다음 중 하나에 해당하시면 한 번 확인이 필요합니다</h3>
+      <ul class="indication-list">
+        <li>새끼손가락과 약지 반쪽이 저리는 분</li>
+        <li>새끼손가락에 힘이 안 들어가 단추 채우기·동전 집기가 어려운 분</li>
+        <li>자전거·바이크 라이딩·기타 연주·휠체어 사용 후 손저림이 시작된 분</li>
+        <li>손목 새끼손가락 쪽에 만져지는 혹이나 결절이 있는 분</li>
+        <li>손목터널증후군으로 알고 있었으나 저린 손가락이 다르다고 느끼시는 분</li>
+        <li>손목 골절 후 새끼손가락 저림이 시작된 분</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-num">III. CAUSES</div>
+    <h2>주요 원인</h2>
+    <p>척골관증후군은 신경이 왜 눌리고 있는지에 따라 크게 두 가지로 나뉩니다. 원인이 다르면 치료 접근도 달라집니다.</p>
+
+    <div class="cause-grid">
+      <div class="cause-card">
+        <div class="label">EXTERNAL · 외부 압박형</div>
+        <h4>핸들·그립이 신경을 누르는 경우</h4>
+        <ul>
+          <li>자전거 · 로드 사이클 (Cyclist's palsy)</li>
+          <li>바이크 그립 진동과 압박</li>
+          <li>기타 연주 시 손목 굽힘 자세</li>
+          <li>휠체어 추진 시 손목 반복 압박</li>
+          <li>망치질 · 드라이버 · 반복 작업</li>
+        </ul>
+      </div>
+      <div class="cause-card">
+        <div class="label">INTERNAL · 내부 압박형</div>
+        <h4>척골관 안쪽에서 신경을 누르는 경우</h4>
+        <ul>
+          <li>손목 결절종(ganglion) — 가장 흔한 내부 원인</li>
+          <li>손목 골절 후 변형 (특히 갈고리뼈 골절)</li>
+          <li>류마티스 관절염 등 전신 질환</li>
+          <li>지방종 · 종양 등 드문 원인</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-num">IV. EXAMINATION</div>
+    <h2>검사는 이렇게 진행됩니다</h2>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-step-num">01</div>
+        <div class="process-step-content">
+          <h4>진찰</h4>
+          <span class="time">약 10분</span>
+          <p>저린 손가락 분포, 힘 빠짐 정도, 손목 압박 검사(Tinel 검사)로 척골관 부위를 확인합니다.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">02</div>
+        <div class="process-step-content">
+          <h4>근전도 · 신경전도 검사</h4>
+          <span class="time">약 30분</span>
+          <p>척골신경의 압박 위치를 전기 신호로 확인합니다. 정중신경(손목터널증후군) 동반 압박 여부도 함께 평가합니다.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">03</div>
+        <div class="process-step-content">
+          <h4>초음파 검사</h4>
+          <span class="time">약 10분</span>
+          <p>척골관 내부의 결절종·낭종·종양 유무를 확인합니다. 외부 압박형과 내부 압박형을 구분하는 핵심 검사입니다.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">04</div>
+        <div class="process-step-content">
+          <h4>결과 설명</h4>
+          <span class="time">약 10분</span>
+          <p>[원장명]이 직접 영상과 검사 결과를 통합 설명. 압박 위치, 원인, 단계별 치료 옵션을 안내합니다.</p>
+        </div>
+      </div>
+    </div>
+    <div class="process-total">총 소요 시간 약 60분 · 당일 결과 · 일상 활동 제한 없음</div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-num">V. TREATMENT</div>
+    <h2>치료는 단계적으로 접근합니다</h2>
+    <p>대부분의 척골관증후군은 활동 조정과 보존 치료로 호전됩니다. 수술은 보존 치료에 반응하지 않거나 근위축이 진행된 경우에 고려합니다.</p>
+
+    <div class="stages">
+      <div class="stage">
+        <h4><span class="stage-num">STAGE 01</span>압박 원인 제거 · 활동 조정</h4>
+        <ul>
+          <li>자전거 핸들바 패드 강화 · 라이딩 자세 교정</li>
+          <li>바이크 그립 변경 · 휠체어 장갑 사용</li>
+          <li>반복 작업 휴식 빈도 조정</li>
+          <li>외부 압박형은 활동 조정만으로 호전되는 경우가 많습니다</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <h4><span class="stage-num">STAGE 02</span>보존 치료</h4>
+        <ul>
+          <li>부목 · 보조기 착용으로 손목 새끼손가락 쪽 압박 차단</li>
+          <li>소염진통제 · 신경 영양제</li>
+          <li>물리치료 · 재활 운동</li>
+          <li>결절종에 의한 압박이면 초음파 유도 흡인술 고려 가능</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <h4><span class="stage-num">STAGE 03</span>시술 · 수술</h4>
+        <ul>
+          <li>보존 치료에 반응이 없거나 근위축이 진행되면 척골관 감압술 고려</li>
+          <li>결절종 동반 시 결절종 제거 + 감압술</li>
+          <li>수술 결정은 근전도 진행도, 근위축 정도, 보존 치료 반응을 종합 판단</li>
+          <li>수술 후 일상 복귀까지 약 2~4주, 완전한 신경 회복은 수개월 소요될 수 있음</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-num">VI. FAQ</div>
+    <h2>자주 묻는 질문</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">손목터널증후군과 어떻게 구분하나요?</div>
+      <div class="faq-a">저린 손가락이 다릅니다. 엄지·검지·중지가 저리면 손목터널증후군, 새끼손가락과 약지 반쪽이 저리면 척골관증후군일 가능성이 높습니다. 근전도 검사로 정확히 구분할 수 있습니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">자전거를 그만 타야 하나요?</div>
+      <div class="faq-a">초기 단계라면 핸들바 패드 보강과 라이딩 자세 교정, 일정 기간 휴식으로 호전되는 경우가 많습니다. 다만 근위축이 시작된 단계라면 라이딩 중단이 필요할 수 있어, 검사 결과에 따라 안내드립니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">결절종이 있다고 들었는데 꼭 수술해야 하나요?</div>
+      <div class="faq-a">결절종 자체보다는 그것이 신경을 누르고 있는지가 중요합니다. 초음파로 결절종과 신경의 위치 관계를 확인하고, 신경 압박이 명확하면 흡인 또는 제거를 고려합니다. 압박 없이 우연히 발견된 결절종은 추적 관찰만으로 충분한 경우도 있습니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">약지 반쪽만 저린데 이게 정말 척골관증후군인가요?</div>
+      <div class="faq-a">약지의 새끼손가락 쪽 절반만 저리는 것은 척골신경 분포의 전형적 특징입니다. 정중신경(CTS)은 약지의 엄지 쪽 절반에만 분포하기 때문에, 약지를 둘로 나눠 어느 쪽이 저린지 환자분이 직접 확인해보시면 도움이 됩니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">근전도 검사는 아픈가요?</div>
+      <div class="faq-a">작은 바늘을 근육에 삽입하는 단계가 있어 가벼운 통증이 있을 수 있지만, 시술 수준의 통증은 아닙니다. 검사 직후 일상 활동에 제한이 없습니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">수술까지 가야 하는 경우는 얼마나 되나요?</div>
+      <div class="faq-a">대부분은 활동 조정과 보존 치료로 호전됩니다. 보존 치료 6주~3개월 후에도 호전이 없거나, 근위축이 진행된 경우에 수술을 고려합니다. 진료 시 [원장명]이 환자분의 단계에 맞춰 안내드립니다.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-block">
+      <h2>새끼손가락 저림, 미루지 마십시오</h2>
+      <p>척골관증후군 정밀 검사 · 병점 희망찬병원</p>
+      <a href="[예약링크]" class="btn">진료 예약하기</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-brand">희망찬병원</div>
+    <div class="footer-info">
+      경기 화성시 병점중앙로 174 / 1600-3415<br>
+      대표원장 김진균 · 진료시간 평일:09:00~18:00 토:09:00~13:00 일.공휴일 휴무    </div>
+    <div class="disclaimer">
+      본 페이지는 진료 안내 목적이며, 진단·치료 방침은 환자 개별 상태에 따라 다를 수 있습니다.
+      검사 권장 여부 및 결과 해석은 진료 후 의료진과 상의하시기 바랍니다.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
