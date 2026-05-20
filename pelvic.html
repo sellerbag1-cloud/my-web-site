@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 골반 외상 클리닉 — 응급 후 회복 외래·천골/미골·골다공증 통합</title>
+<meta name="description" content="골반 외상은 응급 수술이 상급에서, 회복 외래·천골·미골 골절·골다공증은 본원에서. 정형외과 전문의가 진료. 자보·산재 정직 진료. 화성·동탄·오산·평택.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-bg: #fafaf8;
+  --color-bg-alt: #f3f1ec;
+  --color-bg-section: #ffffff;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --color-text-light: #8a8a8a;
+  --color-border: #e5e3de;
+  --color-primary: #1e3a5f;
+  --color-primary-soft: #4a6885;
+  --color-accent: #8b2331;
+  --color-gold: #a0824a;
+  --color-success: #2d5a3d;
+  --color-urgent: #b91c1c;
+  --color-urgent-bg: #fef2f2;
+  --font-serif: 'Noto Serif KR', 'Times New Roman', serif;
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans); font-weight: 400; font-size: 16px;
+  line-height: 1.75; color: var(--color-text); background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.96); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border); padding: 14px 0;
+}
+.topbar-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.brand {
+  font-family: var(--font-serif); font-weight: 600; font-size: 19px;
+  letter-spacing: -0.01em; color: var(--color-primary);
+}
+.brand-sub {
+  font-size: 12px; color: var(--color-text-light); font-weight: 400;
+  margin-left: 6px; letter-spacing: 0.05em;
+}
+.cta-button {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 22px; background: var(--color-primary); color: #fff;
+  font-size: 14px; font-weight: 500; text-decoration: none;
+  border-radius: 2px; letter-spacing: 0.02em; transition: background .2s;
+}
+.cta-button:hover { background: #142a48; }
+.hero { padding: 100px 32px 80px; max-width: 1200px; margin: 0 auto; }
+.hero-eyebrow {
+  display: inline-block; font-size: 12px; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--color-gold); margin-bottom: 24px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--color-gold);
+}
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.2; font-weight: 400; color: var(--color-primary);
+  margin-bottom: 28px; letter-spacing: -0.02em;
+}
+.hero-title em { font-style: italic; color: var(--color-accent); }
+.hero-desc {
+  font-size: 18px; line-height: 1.85; color: var(--color-text-muted);
+  max-width: 760px; margin-bottom: 40px;
+}
+.hero-quote {
+  border-left: 3px solid var(--color-accent); padding: 16px 24px;
+  margin: 32px 0; background: rgba(139,35,49,.03);
+  font-family: var(--font-serif); font-size: 20px;
+  color: var(--color-primary); line-height: 1.6; max-width: 760px;
+}
+.signature-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2d4f7a 100%);
+  color: #fff; padding: 32px 40px; margin: 40px 0;
+  position: relative; overflow: hidden;
+}
+.signature-banner::before {
+  content: '★'; position: absolute; top: -20px; right: 24px;
+  font-size: 120px; color: rgba(160,130,74,.2); line-height: 1;
+}
+.signature-banner-eyebrow {
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 12px; text-transform: uppercase; font-weight: 600;
+}
+.signature-banner-title {
+  font-family: var(--font-serif); font-size: 28px; font-weight: 500;
+  line-height: 1.4; margin-bottom: 12px; position: relative;
+}
+.signature-banner-desc {
+  font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.85); position: relative;
+}
+.section-nav {
+  background: var(--color-bg-alt); padding: 32px;
+  border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);
+}
+.section-nav-inner { max-width: 1200px; margin: 0 auto; }
+.section-nav-title {
+  font-family: var(--font-serif); font-size: 14px; color: var(--color-text-light);
+  text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 16px;
+}
+.section-nav-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px;
+}
+.section-nav-grid a {
+  font-size: 14px; padding: 8px 12px; color: var(--color-text);
+  text-decoration: none; border-left: 2px solid transparent; transition: all .2s;
+}
+.section-nav-grid a:hover {
+  border-left-color: var(--color-accent); background: rgba(255,255,255,.7);
+  color: var(--color-primary);
+}
+.section-nav-grid a.signature { color: var(--color-accent); font-weight: 500; }
+.section-nav-grid a.signature::before { content: '★ '; font-size: 11px; }
+.landing-section {
+  padding: 100px 32px; max-width: 1100px; margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+}
+.landing-section.signature {
+  background: linear-gradient(180deg, var(--color-bg) 0%, rgba(160,130,74,.04) 100%);
+  position: relative;
+}
+.landing-section.signature::before {
+  content: '시그니처'; position: absolute; top: 60px; right: 32px;
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold); font-weight: 500;
+}
+.landing-eyebrow {
+  font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--color-gold); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.landing-eyebrow::after {
+  content: ''; flex: 1; height: 1px; background: var(--color-border); max-width: 60px;
+}
+.landing-title {
+  font-family: var(--font-serif); font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.25; font-weight: 500; color: var(--color-primary);
+  margin-bottom: 24px; letter-spacing: -0.015em;
+}
+.landing-title strong { font-weight: 600; color: var(--color-accent); font-style: italic; }
+.landing-lead {
+  font-size: 17px; line-height: 1.85; color: var(--color-text-muted);
+  margin-bottom: 40px; max-width: 800px;
+}
+.landing-section h3 {
+  font-family: var(--font-serif); font-size: 22px; font-weight: 500;
+  color: var(--color-primary); margin: 48px 0 16px; letter-spacing: -0.01em;
+}
+.landing-section p {
+  font-size: 16px; line-height: 1.85; color: var(--color-text);
+  margin-bottom: 16px; max-width: 800px;
+}
+.symptom-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px; margin: 32px 0;
+}
+.symptom-card {
+  padding: 24px; background: var(--color-bg-section);
+  border: 1px solid var(--color-border); border-left: 3px solid var(--color-primary);
+}
+.symptom-card.gold { border-left-color: var(--color-gold); }
+.symptom-card.urgent { border-left-color: var(--color-urgent); }
+.symptom-card-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.symptom-card-desc { font-size: 14px; line-height: 1.7; color: var(--color-text-muted); }
+.compare-table {
+  width: 100%; border-collapse: collapse; margin: 32px 0;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.compare-table th, .compare-table td {
+  padding: 14px 20px; text-align: left; font-size: 14px;
+  border-bottom: 1px solid var(--color-border); vertical-align: top;
+}
+.compare-table th {
+  background: var(--color-primary); color: #fff;
+  font-weight: 500; letter-spacing: 0.02em;
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table tbody tr:hover { background: var(--color-bg-alt); }
+.compare-table .label { font-weight: 500; color: var(--color-primary); width: 28%; }
+.highlight-box {
+  background: var(--color-primary); color: #fff; padding: 40px;
+  margin: 40px 0; position: relative;
+}
+.highlight-box::before {
+  content: '"'; position: absolute; top: 8px; left: 24px;
+  font-family: var(--font-serif); font-size: 80px;
+  color: rgba(255,255,255,.2); line-height: 1;
+}
+.highlight-box-content { position: relative; z-index: 1; padding-left: 40px; }
+.highlight-box p {
+  color: #fff; font-family: var(--font-serif); font-size: 19px;
+  line-height: 1.7; margin: 0; max-width: none;
+}
+.highlight-box-caption {
+  font-size: 12px; letter-spacing: 0.2em; color: rgba(255,255,255,.6);
+  text-transform: uppercase; margin-top: 16px;
+}
+.warning-box {
+  background: #fef4f4; border-left: 4px solid var(--color-accent);
+  padding: 24px 28px; margin: 32px 0;
+}
+.warning-box-title {
+  font-weight: 600; color: var(--color-accent); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.warning-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.info-box {
+  background: #f0f4fa; border-left: 4px solid var(--color-primary);
+  padding: 24px 28px; margin: 32px 0;
+}
+.info-box-title {
+  font-weight: 600; color: var(--color-primary); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.info-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.checklist {
+  list-style: none; margin: 24px 0; padding: 24px 32px;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.checklist li {
+  padding: 10px 0 10px 32px; position: relative;
+  font-size: 15px; line-height: 1.6; border-bottom: 1px solid var(--color-border);
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '□'; position: absolute; left: 0; top: 10px;
+  color: var(--color-primary); font-size: 18px; font-weight: 500;
+}
+.steps {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0; margin: 32px 0; border: 1px solid var(--color-border);
+}
+.step {
+  padding: 28px 24px; border-right: 1px solid var(--color-border);
+  background: var(--color-bg-section); position: relative;
+}
+.step:last-child { border-right: none; }
+.step-num {
+  font-family: var(--font-serif); font-size: 13px; letter-spacing: 0.3em;
+  color: var(--color-gold); margin-bottom: 12px;
+}
+.step-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.step-desc { font-size: 13px; line-height: 1.6; color: var(--color-text-muted); }
+.doctor-card {
+  display: grid; grid-template-columns: 1fr 2fr; gap: 40px;
+  padding: 40px; background: var(--color-bg-alt);
+  margin: 48px 0; align-items: center;
+}
+.doctor-credentials { font-family: var(--font-serif); }
+.doctor-name {
+  font-size: 28px; font-weight: 500; color: var(--color-primary); margin-bottom: 4px;
+}
+.doctor-role {
+  font-size: 14px; color: var(--color-text-muted);
+  letter-spacing: 0.05em; margin-bottom: 24px;
+}
+.doctor-credentials ul {
+  list-style: none; font-family: var(--font-sans);
+  font-size: 14px; line-height: 1.9; color: var(--color-text);
+}
+.doctor-credentials li { padding-left: 16px; position: relative; }
+.doctor-credentials li::before {
+  content: '—'; position: absolute; left: 0; color: var(--color-gold);
+}
+.cta-section { background: var(--color-primary); padding: 80px 32px; text-align: center; }
+.cta-inner { max-width: 800px; margin: 0 auto; color: #fff; }
+.cta-eyebrow {
+  font-size: 12px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 16px; text-transform: uppercase;
+}
+.cta-title {
+  font-family: var(--font-serif); font-size: 36px; font-weight: 400;
+  margin-bottom: 16px; line-height: 1.3;
+}
+.cta-desc {
+  font-size: 16px; color: rgba(255,255,255,.85);
+  margin-bottom: 36px; line-height: 1.8;
+}
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-btn-primary {
+  display: inline-block; padding: 16px 40px; background: #fff;
+  color: var(--color-primary); font-weight: 500; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-primary:hover { background: var(--color-gold); color: #fff; }
+.cta-btn-secondary {
+  display: inline-block; padding: 16px 40px; background: transparent;
+  color: #fff; border: 1px solid rgba(255,255,255,.4);
+  font-weight: 400; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-secondary:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+footer { background: #0f1f33; color: rgba(255,255,255,.65); padding: 60px 32px 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+.footer-brand-name {
+  font-family: var(--font-serif); font-size: 22px;
+  font-weight: 500; color: #fff; margin-bottom: 12px;
+}
+.footer-brand-desc {
+  font-size: 13px; line-height: 1.8;
+  color: rgba(255,255,255,.55); max-width: 400px;
+}
+.footer-section h4 {
+  font-family: var(--font-serif); font-size: 14px; color: #fff;
+  margin-bottom: 16px; letter-spacing: 0.05em;
+}
+.footer-section ul { list-style: none; font-size: 13px; line-height: 2; }
+.footer-section a { color: rgba(255,255,255,.65); text-decoration: none; transition: color .2s; }
+.footer-section a:hover { color: var(--color-gold); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px;
+  font-size: 12px; color: rgba(255,255,255,.45); text-align: center; line-height: 1.8;
+}
+@media (max-width: 768px) {
+  .hero { padding: 60px 24px 40px; }
+  .landing-section { padding: 60px 24px; }
+  .topbar-inner { padding: 0 20px; }
+  .doctor-card { grid-template-columns: 1fr; gap: 24px; padding: 28px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cta-section { padding: 60px 24px; }
+  .cta-title { font-size: 28px; }
+  .hero-quote { font-size: 17px; }
+  .landing-section.signature::before { display: none; }
+  .signature-banner-title { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div>
+      <span class="brand">희망찬병원 골반 외상 클리닉</span>
+      <span class="brand-sub">HOPE PELVIC TRAUMA CLINIC</span>
+    </div>
+    <a href="#예약" class="cta-button">진료 예약</a>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-eyebrow">정형외과 골반 회복·천골·미골·골다공증 통합 ·</div>
+  <h1 class="hero-title">
+    골반 응급은 큰 병원, <em>회복·꼬리뼈는</em><br>본원이 함께합니다.
+  </h1>
+  <p class="hero-desc">
+    골반 외상은 영역에 따라 진료 방향이 크게 다릅니다. 골반환 응급 골절은 상급 종합병원에서 응급
+    수술이 이루어지지만, 그 이후의 정기 외래·재활·골다공증 진료는 가까운 본원이 거점입니다. 또한
+    천골·미골(꼬리뼈)의 안정 골절은 응급 수술이 필요하지 않은 본원 직접 진료 영역입니다.
+    노인 환자분은 클리닉과 연계해 DEXA·골다공증 약물 진료까지 통합 진료합니다.
+  </p>
+  <div class="hero-quote">
+    "골반 외상은 부위에 따라 진료가 완전히 다릅니다. 어디를 다치셨는지 정확히 진단하는 것부터 시작입니다."<br>
+    <span style="font-size: 14px; color: var(--color-text-muted); font-family: var(--font-sans); font-style: normal;">
+      — 김진균 원장, 정형외과 전문의
+    </span>
+  </div>
+
+  <div class="signature-banner">
+    <div class="signature-banner-eyebrow">본원 회복 외래 + 천골/미골 본원 진료 + 골다공증 통합</div>
+    <div class="signature-banner-title">큰 병원 수술 후 본원에서 회복·재활·골다공증까지</div>
+    <div class="signature-banner-desc">
+      대학병원에서 받으신 골반 응급 수술 이후의 정기 외래·재활·DEXA 골밀도 검사·골다공증 약물
+      진료까지 본원이 가까운 거리에서 한 자리에 진료해 드립니다. 또한 천골·미골 단순 골절은 본원에서
+      직접 진료합니다. 부모님을 모시고 큰 병원을 매번 가시지 않아도 됩니다.
+    </div>
+  </div>
+</section>
+
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <div class="section-nav-title">진료 안내 · 4개 영역</div>
+    <div class="section-nav-grid">
+      <a href="#골반_결정">골반 외상 진료 안내</a>
+      <a href="#골반_증상">낙상 후 증상·응급실 판단</a>
+      <a href="#골반_본원회복" class="signature">본원 회복 외래·천골/미골</a>
+      <a href="#골반_골다공증" class="signature">골다공증 통합 진료</a>
+    </div>
+  </div>
+</div>
+
+<section id="골반_결정" class="landing-section">
+  <div class="landing-eyebrow">랜딩 1 · 골반 외상 진료 안내</div>
+  <h2 class="landing-title">골반은 <strong>부위별로</strong> 진료가 다릅니다</h2>
+  <p class="landing-lead">
+    골반 외상은 한 가지가 아닙니다. 골반환·치골·천골·미골 등 다친 부위에 따라 응급도와 진료 방향이
+    완전히 다릅니다. 본원은 응급 수술이 필요한 골반환 골절은 상급 종합병원으로 안내드리고, 천골·미골
+    안정 골절·수술 후 회복 외래·골다공증 진료는 본원이 직접 담당합니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"낙상 후 못 일어나시면 응급실로. 꼬리뼈 부딪힘은 본원으로. 영역에 맞는 진료가 시작입니다."</p>
+      <div class="highlight-box-caption">— 본원 골반 외상 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 진료 영역 vs 상급 종합병원 영역</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>골반 영역·단계</th><th>본원</th><th>상급 종합병원</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="label">응급 X-ray·진단 (의식 저하 동반)</td>
+        <td>—</td><td>응급실에서 진행</td></tr>
+      <tr><td class="label">골반환 응급 수술 (open book·전위)</td>
+        <td>—</td><td>상급 종합병원 정형외과</td></tr>
+      <tr><td class="label">골반 외고정 수술</td>
+        <td>—</td><td>상급 종합병원 정형외과</td></tr>
+      <tr><td class="label">광범위 다발성 골반 외상</td>
+        <td>—</td><td>상급 종합병원 응급</td></tr>
+      <tr><td class="label">비뇨생식기·복부 동반 손상</td>
+        <td>—</td><td>상급 종합병원</td></tr>
+      <tr><td class="label">치골지 안정 골절</td>
+        <td>본원 정기 외래·보존</td><td>—</td></tr>
+      <tr><td class="label">천골 단순 골절 (안정)</td>
+        <td>본원 직접 진료</td><td>—</td></tr>
+      <tr><td class="label">미골(꼬리뼈) 골절</td>
+        <td>본원 직접 진료 ★</td><td>—</td></tr>
+      <tr><td class="label">골반 수술 후 정기 외래</td>
+        <td>본원 진료 ★</td><td>—</td></tr>
+      <tr><td class="label">재활·물리치료</td>
+        <td>본원 진료</td><td>—</td></tr>
+      <tr><td class="label">DEXA 골밀도 검사</td>
+        <td>본원 클리닉 ★</td><td>—</td></tr>
+      <tr><td class="label">골다공증 약물 진료</td>
+        <td>본원 클리닉 ★</td><td>—</td></tr>
+    </tbody>
+  </table>
+
+  <div class="info-box">
+    <div class="info-box-title">골반 응급 단계 — 본원이 아닌 응급실로</div>
+    <div class="info-box-desc">
+      부모님이 낙상 후 못 일어나시거나, 골반 변형·심한 통증·다리 길이 차이가 있으시면 본원이 아닌
+      가까운 응급실로 가십시오. 본원은 응급 수술 시설이 없으며, 골반환 골절은 즉각적인 응급 진료가
+      필요합니다. 응급실에서 수술이 끝난 후 가까운 거리의 본원에서 회복 외래를 받으실 수 있습니다.
+    </div>
+  </div>
+
+  <h3>꼬리뼈(미골) 골절은 본원 직접 진료</h3>
+  <p>
+    꼬리뼈 골절은 환자분께서 가장 흔히 검색하시는 골반 외상입니다. 엉덩방아·욕실 미끄러짐 등으로 발생
+    하며, 응급 수술이 필요하지 않은 안정 골절이 대부분입니다. 본원은 정형외과 전문의가 직접 X-ray·신체
+    진찰로 정확히 진단하고 보존 진료(도넛 방석·자세 진료·만성 통증 진료)까지 한 자리에서 담당합니다.
+  </p>
+
+  <h3>본원 진료가 적합한 환자</h3>
+  <ul class="checklist">
+    <li>대학병원이나 큰 병원에서 골반 수술을 받으신 환자분</li>
+    <li>응급실 처치 후 가까운 거리의 정기 외래가 필요한 환자분</li>
+    <li>골반 수술 후 재활·물리치료가 필요한 환자분</li>
+    <li>꼬리뼈를 부딪쳤거나 엉덩방아 후 통증이 있으신 환자분</li>
+    <li>천골 부위 통증·만성 좌위 통증이 있으신 환자분</li>
+    <li>골반 골절 후 골다공증 평가가 필요한 노인 환자분</li>
+    <li>부모님을 모시고 매번 큰 병원에 가시기 어려운 보호자</li>
+    <li>교통사고로 골반 외상 후 자보 회복 외래가 필요한 환자분</li>
+    <li>치매·파킨슨 환자분의 골반 골절 후 통합 관리가 필요한 보호자</li>
+  </ul>
+</section>
+
+<section id="골반_증상" class="landing-section">
+  <div class="landing-eyebrow" 낙상 후 증상·응급실 판단</div>
+  <h2 class="landing-title">못 일어나시면 응급실, <strong>꼬리뼈 통증은 본원</strong></h2>
+  <p class="landing-lead">
+    골반 외상의 진료 방향은 증상에 따라 갈립니다. 다음 증상을 보이시면 본원이 아닌 가까운 응급실로
+    즉시 모시고 가셔야 합니다. 반대로 꼬리뼈·엉덩방아 후 앉을 때 통증은 본원에서 받으실 수 있습니다.
+  </p>
+
+  <h3>골반환 골절 의심 신호 — 즉시 응급실</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">못 일어남·못 걷음</div>
+      <div class="symptom-card-desc">낙상 후 일어나지 못하거나 걷지 못함. 즉시 응급실.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">다리 길이 차이</div>
+      <div class="symptom-card-desc">한쪽 다리가 짧아 보이거나 바깥쪽 돌아감. 응급실.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">골반 변형·비대칭</div>
+      <div class="symptom-card-desc">골반 모양이 평소와 달라 보임. 즉시 응급실.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">강한 통증·움직임 불가</div>
+      <div class="symptom-card-desc">움직일 때 극심한 통증. 응급실 즉시.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">소변·대변 어려움</div>
+      <div class="symptom-card-desc">비뇨생식기 동반 손상 가능. 즉시 응급실.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">의식 변화·복부 통증</div>
+      <div class="symptom-card-desc">내장 손상 가능. 즉시 119·응급실.</div>
+    </div>
+  </div>
+
+  <h3>본원 진료가 적합한 증상</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">꼬리뼈 부딪힘 후 통증</div>
+      <div class="symptom-card-desc">엉덩방아 후 꼬리뼈 통증. 본원 X-ray.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">앉으면 꼬리뼈 통증</div>
+      <div class="symptom-card-desc">의자에 앉을 때마다 통증. 본원 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">엉치 부위 통증</div>
+      <div class="symptom-card-desc">천골 부위 만성 통증. 본원 평가.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">큰 병원 수술 후 외래</div>
+      <div class="symptom-card-desc">응급 수술 후 정기 외래 가까운 본원.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">치골 부위 통증</div>
+      <div class="symptom-card-desc">치골지 안정 골절 본원 보존 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">교통사고 골반 외래</div>
+      <div class="symptom-card-desc">자보 골반·꼬리뼈 본원 정직 진료.</div>
+    </div>
+  </div>
+
+  <h3>흔한 낙상 양상별 위험도</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>낙상 양상</th><th>의심 진단</th><th>본원 안내</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="label">엉덩방아 (의자·계단 아래)</td>
+        <td>꼬리뼈·천골 골절</td><td>본원 X-ray·진료</td></tr>
+      <tr><td class="label">욕실·화장실 미끄러짐</td>
+        <td>골반·꼬리뼈 골절</td><td>증상별 본원 or 응급실</td></tr>
+      <tr><td class="label">빙판·계단 낙상 (노인)</td>
+        <td>골반환·고관절 골절</td><td>못 일어남 시 응급실</td></tr>
+      <tr><td class="label">교통사고 (운전자/보행자)</td>
+        <td>골반환 복합 골절</td><td>즉시 응급실</td></tr>
+      <tr><td class="label">자전거·오토바이 사고</td>
+        <td>골반·꼬리뼈 손상</td><td>즉시 응급실</td></tr>
+      <tr><td class="label">높은 곳 추락 (건설 현장)</td>
+        <td>광범위 다발성 가능</td><td>즉시 응급실</td></tr>
+      <tr><td class="label">치매·파킨슨 환자 낙상</td>
+        <td>골반·고관절 골절</td><td>즉시 응급실</td></tr>
+      <tr><td class="label">운동 중 부딪힘</td>
+        <td>꼬리뼈·천골 손상</td><td>본원 X-ray</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"꼬리뼈 골절은 그냥 두면 된다"는 오해</div>
+    <div class="warning-box-desc">
+      꼬리뼈 골절은 응급 수술은 필요하지 않지만 정확한 진단과 진료가 필요합니다. 방치하시면 만성 좌위
+      통증으로 평생 의자에 앉기 어려우실 수 있습니다. 또한 단순 꼬리뼈 골절로 보여도 천골 골절이나
+      골반환 골절이 동반된 경우도 있으니, 본원에서 X-ray로 정확히 진단받으십시오.
+    </div>
+  </div>
+
+  <h3>응급실 진료 후 본원으로 — 가져오실 것</h3>
+  <p>
+    응급실에서 X-ray·CT로 골반환 골절이 확인되면 입원·수술이 진행됩니다. 수술 후 안정되시면 그 이후의
+    정기 외래·재활·골다공증 진료는 가까운 거리의 본원에서 받으실 수 있습니다. 응급실의 진료 기록과
+    영상을 가져오시면 본원에서 진료가 빠릅니다.
+  </p>
+
+  <ul class="checklist">
+    <li>응급실에서 받으신 X-ray·CT 영상 CD</li>
+    <li>수술 기록·소견서</li>
+    <li>퇴원 시 처방받은 약 목록</li>
+    <li>현재 복용 중인 약 목록 (치매·파킨슨·고혈압 등)</li>
+    <li>골다공증 약 복용 여부</li>
+    <li>이전 골절 이력</li>
+  </ul>
+</section>
+
+<section id="골반_본원회복" class="landing-section signature">
+  <div class="landing-eyebrow">본원 회복 외래·천골/미골 (시그니처)</div>
+  <h2 class="landing-title">큰 병원 후 회복은 <strong>본원이 가까이</strong>, 꼬리뼈도 <strong>본원에서</strong></h2>
+  <p class="landing-lead">
+    본원의 핵심 차별화는 두 가지입니다. 첫째, 대학병원/응급실에서 골반 응급 수술을 받으신 후의 정기
+    외래·재활을 가까운 거리에서 받으실 수 있습니다. 둘째, 천골·미골(꼬리뼈) 단순 골절은 응급 수술이
+    필요하지 않은 본원 직접 진료 영역입니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"수술이 끝난 후가 진짜 회복의 시작입니다. 꼬리뼈 외상도 그냥 두면 안 됩니다. 정확한 진단이 회복의 시작입니다."</p>
+      <div class="highlight-box-caption">— 본원 골반 외상 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 회복 외래의 강점</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정형외과 전문의</div>
+      <div class="symptom-card-desc">전문의가 직접 환자분 회복 진행 상태를 평가.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">가까운 거리</div>
+      <div class="symptom-card-desc">화성·동탄·오산·평택 거점. 부모님 모시기 편함.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">대기 없는 외래</div>
+      <div class="symptom-card-desc">대학병원 긴 대기 없이 본원에서 빠르게.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">통합 진료</div>
+      <div class="symptom-card-desc">외래 + 물리치료 + 골다공증 한 자리에서.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">천골/미골 직접</div>
+      <div class="symptom-card-desc">꼬리뼈·천골 단순 골절 본원 정밀 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정직 진료</div>
+      <div class="symptom-card-desc">과잉 진료·과잉 검사 없음. 필요한 만큼만.</div>
+    </div>
+  </div>
+
+  <h3>본원 회복 외래 일정 (일반적 흐름)</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>시기</th><th>진료 항목</th><th>본원 진료</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">퇴원 직후 (1~2주)</td>
+        <td>회복 상태 평가·통증 진료·물리치료 시작</td>
+        <td>외래 + 골다공증 평가</td>
+      </tr>
+      <tr>
+        <td class="label">4~6주 후</td>
+        <td>X-ray 추적·체중 부하 단계 평가</td>
+        <td>외래 + 보행 진료</td>
+      </tr>
+      <tr>
+        <td class="label">3개월 후</td>
+        <td>일상 복귀 평가·근력 회복</td>
+        <td>외래 + 재활 강화</td>
+      </tr>
+      <tr>
+        <td class="label">6개월 후</td>
+        <td>최종 회복 평가·재낙상 예방</td>
+        <td>외래 + 골다공증 추적</td>
+      </tr>
+      <tr>
+        <td class="label">1년 이후</td>
+        <td>정기 외래·반대쪽 골절 예방</td>
+        <td>외래 + 골다공증 약물 진료</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>천골·미골(꼬리뼈) 골절 — 본원 직접 진료</h3>
+  <p>
+    꼬리뼈 골절은 환자분이 가장 흔히 검색하시는 골반 외상 중 하나입니다. 엉덩방아·미끄러짐·운동 부딪힘
+    등으로 발생하며, 대부분 응급 수술이 필요하지 않은 안정 골절입니다. 본원은 정형외과 전문의가 직접
+    X-ray·신체 진찰로 정확히 진단하고 보존 진료를 안내드립니다.
+  </p>
+
+  <ul class="checklist">
+    <li>본원 정확한 X-ray 진단 — 꼬리뼈는 일반 X-ray로 잘 안 보일 수 있어 정밀 평가 필요</li>
+    <li>천골 골절 동반 여부 평가 — 단순 미골 vs 천골 침범 감별</li>
+    <li>골반환 동반 골절 배제 — 신체 진찰로 정확히 평가</li>
+    <li>도넛 방석·자세 진료 안내 — 좌위 통증 줄이기</li>
+    <li>만성 좌위 통증 진료 — 외상 후 만성으로 진행 시 본원 외래</li>
+    <li>회복 기간 정직 안내 — 일반적으로 6~12주 보존 진료</li>
+  </ul>
+
+  <h3>합병증 신호 — 본원으로 즉시</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">수술 부위 빨개짐·열·진물</div>
+      <div class="symptom-card-desc">감염 가능. 본원·필요시 큰 병원으로.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">갑작스런 다리 저림·약화</div>
+      <div class="symptom-card-desc">신경 손상 가능. 즉시 본원.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">한쪽 종아리 부음·통증</div>
+      <div class="symptom-card-desc">혈전 가능. 즉시 본원·응급실로.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">갑작스런 가슴 통증·호흡 곤란</div>
+      <div class="symptom-card-desc">폐색전 가능. 즉시 119·응급실.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">소변·대변 변화</div>
+      <div class="symptom-card-desc">천골 신경 손상 가능. 즉시 본원.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">다리 굳음·일상 복귀 어려움</div>
+      <div class="symptom-card-desc">재활 강화 필요. 본원 외래.</div>
+    </div>
+  </div>
+
+  <h3>자보·산재 회복 외래</h3>
+  <p>
+    교통사고로 골반 외상을 입으신 환자분, 작업 중 추락으로 골반을 다치신 환자분, 엉덩방아로 꼬리뼈를
+    다치신 환자분 모두 본원에서 자보·산재 회복 외래를 받으실 수 있습니다. 응급 수술은 상급에서, 그
+    이후의 회복은 본원에서 정직 진료로 진료합니다. 입원 일수 부풀리기·과잉 진료는 본원에서 하지 않습니다.
+  </p>
+  <ul class="checklist">
+    <li>교통사고 — 경찰 사고 접수·자보사 접수·신분증</li>
+    <li>산재 — 산재 요양 신청서·사업장 정보·신분증</li>
+    <li>진료비 — 보험사·근로복지공단 직접 정산</li>
+    <li>진단서·소견서 — 본원 정직 발급</li>
+  </ul>
+</section>
+
+<section id="골반_골다공증" class="landing-section signature">
+  <div class="landing-eyebrow">골다공증 통합 진료 (시그니처)</div>
+  <h2 class="landing-title">노인 골반 골절은 <strong>골다공증의 강한 경고</strong></h2>
+  <p class="landing-lead">
+    노인 환자분의 골반 골절은 단순한 외상이 아닙니다. 가벼운 낙상에도 골반이 부러진다는 것은 골다공증이
+    심하게 진행되어 있다는 신호이며, 진료하지 않으면 다음에는 척추·고관절·반대쪽 골반이 부러질 위험이
+    매우 높아집니다. 본원은 골다공증 클리닉과 연계해 DEXA 골밀도 검사·골다공증 약물 진료까지
+    통합으로 진료합니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"골반 골절을 겪으신 후 1년 이내 다른 부위 골절 위험이 크게 올라갑니다. 진료받지 않으시면 막을 수 없습니다."</p>
+      <div class="highlight-box-caption">— 본원 노인 골다공증 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>골다공증성 골절 진행 양상</h3>
+  <p>
+    골다공증성 골절은 일반적으로 손목 → 척추 → 고관절·골반 순으로 진행됩니다. 한 번 골절을 겪으셨다면
+    다른 부위 골절 위험이 일반인보다 훨씬 높아집니다.
+  </p>
+
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">1단계 — 손목 골절</div>
+      <div class="symptom-card-desc">손 짚고 넘어졌을 때. 첫 경고 신호.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">2단계 — 척추 압박 골절</div>
+      <div class="symptom-card-desc">잡거나 들 때 등 통증·키 줄어듦.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">3단계 — 골반·고관절 골절</div>
+      <div class="symptom-card-desc">생활 능력·생명에 큰 영향. 즉시 진료 필요.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">4단계 — 반대쪽·다른 부위</div>
+      <div class="symptom-card-desc">한쪽 골절 후 1년 내 위험 매우 높음.</div>
+    </div>
+  </div>
+
+  <h3>본원 골반 + 골다공증 통합 진료 흐름</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">회복 외래</div>
+      <div class="step-desc">골반 수술 후 정기 외래</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">DEXA 검사</div>
+      <div class="step-desc">본원 클리닉 골밀도 검사</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">진단·진료</div>
+      <div class="step-desc">골다공증 진단·약물 진료 시작</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">낙상 예방</div>
+      <div class="step-desc">집안 환경·균형 운동 안내</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">정기 추적</div>
+      <div class="step-desc">골다공증 약물 진료 + 정기 외래</div>
+    </div>
+  </div>
+
+  <h3>16-3 골다공증 클리닉과의 시너지</h3>
+  <p>
+    본원 16-3 골다공증 클리닉과 연계해 골반 골절 환자분께 DEXA 골밀도 검사·골다공증 약물 진료·재낙상
+    예방 진료까지 한 자리에서 진료해 드립니다. 매번 다른 병원에 가실 필요 없이 본원에서 통합 진료가
+    가능합니다. 약물 진료는 비스포스포네이트·졸레드론산·데노수맙 등 환자분 상태에 맞춰 정직하게
+    안내드립니다.
+  </p>
+
+  <h3>위험군별 본원 진료 접근</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>위험군</th><th>특별 고려</th><th>본원 진료 방향</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">폐경 후 여성</td>
+        <td>여성 호르몬·골 손실 가속</td>
+        <td>외래 + DEXA + 약물 진료</td>
+      </tr>
+      <tr>
+        <td class="label">90세 이상 고령</td>
+        <td>다른 부위 골절 위험 매우 높음</td>
+        <td>적극적 약물 진료 + 낙상 예방</td>
+      </tr>
+      <tr>
+        <td class="label">치매·파킨슨 환자</td>
+        <td>인지 저하·균형 저하</td>
+        <td>본원 통합 진료 + 14번 연계</td>
+      </tr>
+      <tr>
+        <td class="label">스테로이드 복용</td>
+        <td>2차 골다공증 가속</td>
+        <td>약물 점검·진료 변경 검토</td>
+      </tr>
+      <tr>
+        <td class="label">저체중·근감소증</td>
+        <td>낙상 위험 증가</td>
+        <td>영양·근력 진료 안내</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"수술 잘 끝났으니 끝났다"는 위험한 생각</div>
+    <div class="warning-box-desc">
+      골반 수술이 성공적으로 끝났다고 골절 위험이 사라진 게 아닙니다. 골다공증 진료를 시작하지 않으시면
+      반대쪽 골반·척추·고관절 골절 위험이 1년 이내에 크게 올라갑니다. 수술 후 본원 회복 외래와 함께
+      골다공증 진료를 시작하시기 바랍니다.
+    </div>
+  </div>
+
+  <h3>14번 신경과 시너지 — 치매·파킨슨 환자 통합 평가</h3>
+  <p>
+    부모님이 치매나 파킨슨을 앓고 계시다면 낙상 위험이 일반 노인보다 훨씬 높습니다. 본원은 14번
+    신경과와 연계해 치매·파킨슨 환자분의 골반 골절 후 인지 저하·균형 저하까지 통합 평가합니다.
+    낙상 원인을 종합적으로 진료해 재낙상·재골절을 줄이는 것이 목표입니다.
+  </p>
+</section>
+
+<section style="padding: 80px 32px; max-width: 1100px; margin: 0 auto;">
+  <div class="doctor-card">
+    <div>
+      <div style="font-family: var(--font-serif); font-size: 13px; color: var(--color-gold); letter-spacing: 0.2em; margin-bottom: 12px;">DIRECTOR</div>
+      <div class="doctor-name">김진균 원장</div>
+      <div class="doctor-role">희망찬병원 골반 외상 클리닉</div>
+    </div>
+    <div class="doctor-credentials">
+      <ul>
+        <li>정형외과 전문의</li>
+        <li>희망찬병원 원장</li>
+        <li>유튜브 채널 "털보의사" 운영 — 정형외과 환자 교육</li>
+        <li>노인 외상·골다공증·낙상 예방 환자 교육 콘텐츠 다수</li>
+        <li>화성·동탄·오산·평택 지역 정형외과 진료 거점</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="예약" class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">진료 예약</div>
+    <h2 class="cta-title">골반 회복 외래·꼬리뼈·골다공증 진료</h2>
+    <p class="cta-desc">
+      정형외과 전문의 김진균 원장이 진료합니다. 대학병원/응급실 골반 수술 후 본원 가까운 정기 외래·
+      재활·DEXA 골밀도 검사·골다공증 약물 진료까지 한 자리에서. 꼬리뼈·천골 단순 골절은 본원 직접
+      진료. 부모님 모시고 가까운 거리에서 진료받으십시오. 자보·산재 정직 회복 외래. 골반환 응급 수술이
+      필요하신 경우 상급 종합병원 응급실로 가십시오.
+    </p>
+    <div class="cta-buttons">
+      <a href="tel:16003415" class="cta-btn-primary">전화 예약 — 1600-3415</a>
+      <a href="#" class="cta-btn-secondary">온라인 예약 문의</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">희망찬병원 골반 외상 클리닉</div>
+        <div class="footer-brand-desc">
+          정형외과 전문의가 진료하는 골반 외상 클리닉입니다. 화성·동탄·오산·평택·수원·용인·병점 지역
+          환자분을 진료합니다. 대학병원/응급실에서 받으신 골반 응급 수술 이후의 정기 외래·재활·물리치료·
+          DEXA 골밀도 검사·골다공증 약물 진료까지 한 자리에서 제공합니다. 또한 천골·미골(꼬리뼈) 단순
+          골절은 본원이 직접 진료합니다. 본원은 골반환 응급 수술·외고정·광범위 다발성 골반 외상은
+          시행하지 않으며, 응급 시에는 상급 종합병원으로 안내드립니다. 고관절·골다공증 클리닉과
+          통합 진료가 가능한 본원만의 강점입니다.
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>진료 영역</h4>
+        <ul>
+          <li><a href="#골반_결정">골반 외상 안내</a></li>
+          <li><a href="#골반_증상">낙상 후 응급실 판단</a></li>
+          <li><a href="#골반_본원회복">본원 회복·천골/미골</a></li>
+          <li><a href="#골반_골다공증">골다공증 통합 진료</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>오시는 길</h4>
+        <ul>
+          <li>[주소 — 경기도 화성시 병점중앙로174]</li>
+          <li>전화 — 1600-3415</li>
+          <li>진료 시간 — [09:00~18:00]</li>
+          <li>토요일 진료 — [09:00~13:00]</li>
+          <li>점심 시간 — [12:30~13:30]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      ⓒ 희망찬병원<br>
+      진료의 결과는 환자 개별 상태에 따라 다를 수 있습니다.<br>
+      골반환 응급 수술·외고정·광범위 다발성 골반 외상은 본원에서 시행하지 않으며, 응급 시 상급 종합병원으로 안내드립니다.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
