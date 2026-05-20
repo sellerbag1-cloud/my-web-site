@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>드퀘르뱅병(엄마손병) — 산모·수유맘 손목 통증 | 희망찬병원</title>
+<meta name="description" content="아기 들 때 손목이 아프시다면 드퀘르뱅병 가능성. 산모·수유맘에게 흔한 손목 건초염. 본원 단계별 진료 — 보존·주사·수술. 김진균 원장 직접 진료. 동탄·화성·평택권.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --c-bg: #fafaf7;
+    --c-bg-soft: #f4f1ea;
+    --c-ink: #1a1a1a;
+    --c-ink-soft: #4a4a4a;
+    --c-muted: #8a8580;
+    --c-line: #e8e2d6;
+    --c-accent: #1f4e78;
+    --c-accent-deep: #163a59;
+    --c-accent-soft: #d5e3ee;
+    --c-warm: #c8a96a;
+    --c-warm-soft: #f3ead4;
+    --c-alert: #b03a3a;
+    --c-alert-soft: #f5e0e0;
+    /* 산모·수유맘 톤 — 부드러운 핑크 액센트 추가 */
+    --c-soft: #d4a5a5;
+    --c-soft-bg: #faf2f0;
+    --f-display: "Noto Serif KR", "Nanum Myeongjo", serif;
+    --f-body: "Pretendard", -apple-system, sans-serif;
+    --r-md: 8px;
+    --r-lg: 16px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--f-body);
+    background: var(--c-bg);
+    color: var(--c-ink);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  .container-wide { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+  /* Top Bar */
+  .topbar { background: var(--c-ink); color: #fff; padding: 10px 0; font-size: 13px; letter-spacing: 0.02em; }
+  .topbar .row { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .topbar .phone { color: var(--c-warm); font-weight: 600; text-decoration: none; }
+
+  /* Hero — 부드러운 톤 */
+  .hero {
+    position: relative;
+    padding: 72px 0 88px;
+    background:
+      radial-gradient(ellipse 700px 500px at 15% 30%, rgba(212,165,165,0.10), transparent 60%),
+      radial-gradient(ellipse 600px 400px at 85% 70%, rgba(200,169,106,0.05), transparent 60%),
+      var(--c-bg);
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ""; position: absolute; top: 40px; right: -80px;
+    width: 380px; height: 380px;
+    background:
+      linear-gradient(90deg, var(--c-line) 1px, transparent 1px),
+      linear-gradient(0deg, var(--c-line) 1px, transparent 1px);
+    background-size: 20px 20px; opacity: 0.3; transform: rotate(8deg);
+    pointer-events: none; mask-image: radial-gradient(ellipse, black 30%, transparent 70%);
+  }
+  .hero .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px; background: var(--c-soft-bg); color: #8a4848;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+    border-radius: 100px; margin-bottom: 24px; text-transform: uppercase;
+  }
+  .hero .badge::before { content: "★"; color: var(--c-soft); }
+  .hero h1 {
+    font-family: var(--f-display);
+    font-size: clamp(30px, 4.8vw, 46px);
+    font-weight: 600; line-height: 1.3; letter-spacing: -0.02em;
+    color: var(--c-ink); margin-bottom: 22px;
+  }
+  .hero h1 .highlight {
+    color: var(--c-accent); font-weight: 700;
+    position: relative; display: inline-block;
+  }
+  .hero h1 .highlight::after {
+    content: ""; position: absolute; bottom: 4px; left: 0; right: 0;
+    height: 8px; background: var(--c-soft-bg); z-index: -1;
+  }
+  .hero .lead { font-size: 17px; color: var(--c-ink-soft); line-height: 1.8; margin-bottom: 28px; max-width: 640px; }
+
+  /* Empathy strip — 산모·수유맘 공감 */
+  .empathy-strip {
+    background: rgba(255,255,255,0.7);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-md);
+    padding: 18px 22px;
+    margin-bottom: 32px;
+    backdrop-filter: blur(4px);
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+  .empathy-strip .icon-circle {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--c-soft-bg); color: var(--c-soft);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; flex-shrink: 0;
+  }
+  .empathy-strip .text {
+    font-family: var(--f-display); font-size: 15px;
+    color: var(--c-ink); line-height: 1.7;
+  }
+  .empathy-strip .text strong { color: var(--c-accent); }
+
+  .hero-stats {
+    display: flex; gap: 28px; padding: 22px 0;
+    border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);
+    margin-bottom: 32px; flex-wrap: wrap;
+  }
+  .hero-stat { display: flex; flex-direction: column; gap: 4px; }
+  .hero-stat .num { font-family: var(--f-display); font-size: 22px; font-weight: 600; color: var(--c-accent); line-height: 1.3; }
+  .hero-stat .label { font-size: 12px; color: var(--c-muted); letter-spacing: 0.03em; }
+
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 16px 28px; background: var(--c-accent); color: #fff;
+    font-weight: 600; font-size: 15px; text-decoration: none;
+    border-radius: var(--r-md); transition: all 0.2s; box-shadow: var(--shadow);
+  }
+  .btn-primary:hover { background: var(--c-accent-deep); transform: translateY(-1px); }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 16px 28px; background: #fff; color: var(--c-ink);
+    font-weight: 500; font-size: 15px; text-decoration: none;
+    border-radius: var(--r-md); border: 1px solid var(--c-line); transition: all 0.2s;
+  }
+  .btn-secondary:hover { background: var(--c-bg-soft); border-color: var(--c-muted); }
+
+  /* Sections */
+  section { padding: 76px 0; }
+  .section-head { text-align: center; margin-bottom: 48px; }
+  .section-tag {
+    display: inline-block; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.12em; color: var(--c-warm); text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-head h2 {
+    font-family: var(--f-display);
+    font-size: clamp(26px, 4vw, 34px);
+    font-weight: 600; letter-spacing: -0.01em; line-height: 1.3;
+    margin-bottom: 14px;
+  }
+  .section-head .sub { font-size: 16px; color: var(--c-ink-soft); max-width: 580px; margin: 0 auto; }
+
+  /* 드퀘르뱅이 뭔가요 */
+  .about {
+    background: var(--c-bg-soft);
+    border-top: 1px solid var(--c-line);
+    border-bottom: 1px solid var(--c-line);
+  }
+  .about-card {
+    background: #fff;
+    padding: 48px 40px;
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow);
+  }
+  .about-card h3 {
+    font-family: var(--f-display); font-size: 24px; font-weight: 600;
+    color: var(--c-accent); margin-bottom: 18px; line-height: 1.4;
+  }
+  .about-card .intro {
+    font-size: 16px; color: var(--c-ink-soft);
+    line-height: 1.9; margin-bottom: 28px;
+  }
+  .about-card .intro strong { color: var(--c-ink); }
+  .about-list { list-style: none; display: grid; gap: 14px; }
+  .about-list li {
+    padding: 14px 18px; background: var(--c-bg-soft);
+    border-radius: var(--r-md);
+    font-size: 14.5px; color: var(--c-ink-soft); line-height: 1.7;
+    display: flex; gap: 12px;
+  }
+  .about-list li .key {
+    font-weight: 700; color: var(--c-accent);
+    flex-shrink: 0; min-width: 70px;
+  }
+  .about-list li.test {
+    background: var(--c-warm-soft);
+    border-left: 3px solid var(--c-warm);
+  }
+  .about-list li.test .key { color: #6b5018; }
+
+  /* 진료 권장 환자 */
+  .candidates { background: var(--c-bg); }
+  .candidate-intro {
+    background: var(--c-soft-bg);
+    border-left: 4px solid var(--c-soft);
+    padding: 16px 22px; border-radius: 0 var(--r-md) var(--r-md) 0;
+    font-size: 14px; color: #6a3a3a; line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .candidate-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .candidate-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 16px 18px; background: #fff;
+    border-radius: var(--r-md); border: 1px solid var(--c-line);
+    transition: all 0.2s;
+  }
+  .candidate-item:hover { border-color: var(--c-accent); transform: translateY(-1px); }
+  .candidate-item .check {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--c-accent-soft); color: var(--c-accent);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; flex-shrink: 0; margin-top: 2px;
+  }
+  .candidate-text { font-size: 14.5px; color: var(--c-ink); line-height: 1.55; }
+
+  /* 자가진단 (핀켈스타인) */
+  .test-section {
+    background: linear-gradient(180deg, var(--c-bg) 0%, var(--c-warm-soft) 100%);
+  }
+  .test-card {
+    background: #fff;
+    padding: 36px 32px;
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow);
+    border-top: 3px solid var(--c-warm);
+  }
+  .test-card h3 {
+    font-family: var(--f-display); font-size: 22px; font-weight: 600;
+    color: var(--c-ink); margin-bottom: 18px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .test-card h3 .pill {
+    background: var(--c-warm); color: #fff;
+    padding: 4px 12px; border-radius: 100px;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+  }
+  .test-steps {
+    counter-reset: step;
+    list-style: none; display: grid; gap: 14px;
+    margin-bottom: 24px;
+  }
+  .test-steps li {
+    counter-increment: step;
+    padding: 16px 20px 16px 56px;
+    background: var(--c-bg-soft);
+    border-radius: var(--r-md);
+    position: relative;
+    font-size: 14.5px; color: var(--c-ink); line-height: 1.7;
+  }
+  .test-steps li::before {
+    content: counter(step);
+    position: absolute; left: 16px; top: 14px;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--c-accent); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 13px;
+    font-family: var(--f-display);
+  }
+  .test-result {
+    padding: 18px 22px; background: var(--c-soft-bg);
+    border-radius: var(--r-md);
+    font-size: 14.5px; color: var(--c-ink); line-height: 1.7;
+  }
+  .test-result strong { color: var(--c-alert); }
+
+  /* 진료 흐름 5단계 */
+  .process-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  @media (max-width: 600px) { .process-grid { grid-template-columns: 1fr; } }
+  .process-card {
+    background: #fff; padding: 28px;
+    border-radius: var(--r-md); border-top: 3px solid var(--c-accent);
+  }
+  .process-card .step {
+    font-family: var(--f-display); font-size: 14px; font-weight: 600;
+    color: var(--c-warm); letter-spacing: 0.06em; margin-bottom: 8px;
+  }
+  .process-card h3 {
+    font-family: var(--f-display); font-size: 19px; font-weight: 600;
+    color: var(--c-ink); margin-bottom: 8px; line-height: 1.4;
+  }
+  .process-card p { font-size: 14px; color: var(--c-ink-soft); line-height: 1.7; }
+
+  /* 단계별 치료 (보존·주사·수술) */
+  .tx-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 720px) { .tx-grid { grid-template-columns: 1fr; } }
+  .tx-card {
+    background: #fff; padding: 30px 26px;
+    border-radius: var(--r-md);
+    border: 1px solid var(--c-line);
+    position: relative;
+  }
+  .tx-card .stage-num {
+    position: absolute; top: -14px; left: 24px;
+    background: var(--c-accent); color: #fff;
+    padding: 4px 14px; border-radius: 100px;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+    font-family: var(--f-display);
+  }
+  .tx-card h3 {
+    font-family: var(--f-display); font-size: 19px; font-weight: 600;
+    color: var(--c-ink); margin-bottom: 12px; line-height: 1.4;
+    padding-top: 6px;
+  }
+  .tx-card .when {
+    font-size: 13px; color: var(--c-warm); margin-bottom: 14px;
+    font-weight: 600;
+  }
+  .tx-card ul { list-style: none; }
+  .tx-card li {
+    padding-left: 18px; position: relative;
+    font-size: 13.5px; color: var(--c-ink-soft);
+    line-height: 1.7; margin-bottom: 6px;
+  }
+  .tx-card li::before { content: "—"; position: absolute; left: 0; color: var(--c-warm); }
+
+  /* Doctor */
+  .doctor { background: var(--c-ink); color: #fff; position: relative; overflow: hidden; }
+  .doctor::before { content: ""; position: absolute; top: -50%; right: -10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(200,169,106,0.08), transparent 60%); pointer-events: none; }
+  .doctor .section-tag { color: var(--c-warm); }
+  .doctor .section-head h2 { color: #fff; }
+  .doctor .section-head .sub { color: rgba(255,255,255,0.7); }
+  .doctor-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--r-md); padding: 36px; position: relative; z-index: 1;
+  }
+  .doctor-name { font-family: var(--f-display); font-size: 28px; font-weight: 600; margin-bottom: 4px; }
+  .doctor-title { color: var(--c-warm); font-size: 14px; margin-bottom: 24px; letter-spacing: 0.04em; }
+  .doctor-quote {
+    font-family: var(--f-display); font-size: 18px; line-height: 1.8;
+    color: rgba(255,255,255,0.92); padding: 24px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px;
+  }
+  .doctor-credentials { list-style: none; display: grid; gap: 10px; }
+  .doctor-credentials li {
+    padding-left: 20px; position: relative;
+    color: rgba(255,255,255,0.8); font-size: 14px; line-height: 1.6;
+  }
+  .doctor-credentials li::before { content: "—"; position: absolute; left: 0; color: var(--c-warm); }
+
+  /* FAQ */
+  .faq-list { display: grid; gap: 12px; }
+  details.faq { background: #fff; border: 1px solid var(--c-line); border-radius: var(--r-md); overflow: hidden; transition: all 0.2s; }
+  details.faq[open] { border-color: var(--c-accent); box-shadow: var(--shadow); }
+  details.faq summary {
+    padding: 20px 24px; cursor: pointer; font-weight: 600; font-size: 15px;
+    color: var(--c-ink); list-style: none;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary::after {
+    content: "+"; font-size: 24px; font-weight: 300; color: var(--c-accent);
+    transition: transform 0.2s; flex-shrink: 0;
+  }
+  details.faq[open] summary::after { content: "−"; }
+  details.faq .answer {
+    padding: 0 24px 24px; font-size: 14px; color: var(--c-ink-soft);
+    line-height: 1.85; border-top: 1px solid var(--c-line); padding-top: 18px;
+  }
+  details.faq .answer strong { color: var(--c-ink); }
+
+  /* CTA Block */
+  .cta-block {
+    background: linear-gradient(135deg, var(--c-accent) 0%, var(--c-accent-deep) 100%);
+    padding: 64px 0; color: #fff; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .cta-block::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(circle at 20% 30%, rgba(200,169,106,0.15), transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(212,165,165,0.10), transparent 50%);
+  }
+  .cta-block > * { position: relative; z-index: 1; }
+  .cta-block h2 { font-family: var(--f-display); font-size: clamp(24px, 4vw, 32px); font-weight: 600; margin-bottom: 16px; line-height: 1.4; }
+  .cta-block p { font-size: 16px; color: rgba(255,255,255,0.85); margin-bottom: 32px; max-width: 540px; margin-left: auto; margin-right: auto; }
+  .cta-block .btn-primary { background: var(--c-warm); color: var(--c-ink); }
+  .cta-block .btn-primary:hover { background: #d6b87a; }
+  .cta-block .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,0.4); }
+  .cta-block .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+
+  /* Info */
+  .info { background: var(--c-bg); }
+  .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  @media (max-width: 600px) { .info-grid { grid-template-columns: 1fr; } }
+  .info-card { padding: 28px; background: #fff; border-radius: var(--r-md); border: 1px solid var(--c-line); }
+  .info-card h3 { font-family: var(--f-display); font-size: 17px; font-weight: 600; color: var(--c-accent); margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--c-line); }
+  .info-card .row { display: flex; justify-content: space-between; padding: 8px 0; font-size: 14px; }
+  .info-card .row .label { color: var(--c-muted); }
+  .info-card .row .val { color: var(--c-ink); font-weight: 500; }
+
+  /* Footer */
+  footer { background: var(--c-ink); color: rgba(255,255,255,0.6); padding: 40px 0; font-size: 13px; line-height: 1.8; }
+  footer .row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+  footer strong { color: var(--c-warm); font-weight: 600; }
+  footer .small { font-size: 11px; color: rgba(255,255,255,0.4); margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); }
+
+  /* Floating CTA */
+  .floating-cta {
+    position: fixed; bottom: 16px; left: 16px; right: 16px;
+    background: var(--c-accent); color: #fff;
+    padding: 14px 20px; border-radius: var(--r-md);
+    display: none; justify-content: space-between; align-items: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2); z-index: 100;
+    text-decoration: none; font-weight: 600; font-size: 15px;
+  }
+  .floating-cta .phone-icon {
+    background: var(--c-warm); color: var(--c-ink);
+    width: 32px; height: 32px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-weight: 700;
+  }
+
+  /* Disclaimer */
+  .disclaimer {
+    background: var(--c-warm-soft); border: 1px solid var(--c-warm);
+    padding: 18px 22px; border-radius: var(--r-md);
+    font-size: 13px; color: #6b5018; line-height: 1.8; margin: 24px 0;
+  }
+  .disclaimer strong { color: var(--c-ink); }
+
+  /* Responsive */
+  @media (max-width: 720px) {
+    .candidate-grid { grid-template-columns: 1fr; }
+    .floating-cta { display: flex; }
+    section { padding: 56px 0; }
+    .hero { padding: 56px 0 68px; }
+    .doctor-card { padding: 24px; }
+    .doctor-quote { font-size: 16px; }
+    .about-card { padding: 36px 24px; }
+    .empathy-strip { padding: 14px 16px; gap: 12px; }
+  }
+
+  /* Animation */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero h1, .hero .lead, .empathy-strip, .hero-stats, .cta-row { animation: fadeUp 0.8s ease forwards; }
+  .hero .lead { animation-delay: 0.1s; opacity: 0; }
+  .empathy-strip { animation-delay: 0.2s; opacity: 0; }
+  .hero-stats { animation-delay: 0.3s; opacity: 0; }
+  .cta-row { animation-delay: 0.45s; opacity: 0; }
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container-wide row">
+    <span>희망찬병원 · 김진균 원장 직접 진료</span>
+    <a href="tel:16003415" class="phone">📞 1600-3415</a>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <span class="badge">엄마손병 — 드퀘르뱅병</span>
+    <h1>
+      아기 들 때<br>
+      <span class="highlight">손목이 아프신가요?</span>
+    </h1>
+    <p class="lead">
+      "엄마손병"이라 불리는 드퀘르뱅병은 산모·수유맘에게 자주 발생하는 손목 건초염입니다.
+      엄지 안쪽 손목의 두 힘줄에 염증이 생겨, 아기를 안거나 들 때 손목 통증이 심해집니다.
+      본원에서는 보존·주사·수술 단계별 진료가 가능합니다.
+    </p>
+
+    <div class="empathy-strip">
+      <div class="icon-circle">♡</div>
+      <div class="text">
+        진료실에서 가장 자주 듣는 말은 <strong>"아기를 못 안겠어요"</strong>입니다.
+        통증을 참으며 육아하지 마세요. 산모·수유 중에도 안전한 진료 옵션이 있습니다.
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="num">단계별 진료</span>
+        <span class="label">보존 → 주사 → 수술</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">수유 안전 평가</span>
+        <span class="label">임신·수유 상태 고려 결정</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">핀켈스타인 검사</span>
+        <span class="label">진료 시 즉시 평가</span>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <a href="tel:16003415" class="btn-primary">📞 진료 예약·상담</a>
+      <a href="#self-test" class="btn-secondary">🔍 자가진단 — 핀켈스타인 검사</a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">드퀘르뱅이 뭔가요</span>
+      <h2>엄지 안쪽 손목의 건초염</h2>
+    </div>
+
+    <div class="about-card">
+      <h3>드퀘르뱅병 (De Quervain's tenosynovitis)</h3>
+      <p class="intro">
+        엄지손가락 안쪽 손목 부위의 "제1신전구획"에 위치한 두 힘줄
+        <strong>(APL·EPB)</strong>에 염증이 생기는 건초염입니다.
+        산모·수유맘에게 자주 발생해 <strong>"엄마손병"</strong>이라고도 불립니다.
+      </p>
+
+      <ul class="about-list">
+        <li>
+          <span class="key">증상</span>
+          <span>엄지 안쪽 손목 통증 / 엄지 움직일 때 아픔 / 손목 부어오름·압통</span>
+        </li>
+        <li>
+          <span class="key">원인</span>
+          <span>엄지·손목 반복 사용 — 산모·수유맘(아기 안기), 스마트폰 과사용("폰엄지"), 미용사·요리사·키보드 작업, 골프·테니스 그립</span>
+        </li>
+        <li class="test">
+          <span class="key">자가진단</span>
+          <span><strong>핀켈스타인 검사</strong> — 엄지를 주먹 안에 넣고 손목을 새끼손가락 쪽으로 꺾으면 심한 통증이 발생합니다 (아래 자세히 설명)</span>
+        </li>
+        <li>
+          <span class="key">자연 호전</span>
+          <span>산모·수유맘은 수유 종료 후 자연 호전되는 케이스도 있습니다 — 그러나 통증이 심하거나 일상생활에 지장이 있다면 진료를 권합니다</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Candidates -->
+<section class="candidates">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">진료 권장</span>
+      <h2>이런 분들이 진료받으시면 좋습니다</h2>
+      <p class="sub">아래 항목에 해당하신다면 드퀘르뱅병 가능성이 있습니다. 진료 시 정확한 평가를 받으실 수 있습니다.</p>
+    </div>
+
+    <div class="candidate-intro">
+      ★ 산모·수유 중이시라면 — 진료 시 임신·수유 상태를 알려주세요.
+      안전한 치료 옵션을 우선 고려해 결정합니다.
+    </div>
+
+    <div class="candidate-grid">
+      <div class="candidate-item"><div class="check">✓</div>
+        <div class="candidate-text">아기를 들거나 안을 때 손목 통증</div></div>
+      <div class="candidate-item"><div class="check">✓</div>
+        <div class="candidate-text">엄지를 펴거나 움직일 때 손목 통증</div></div>
+      <div class="candidate-item"><div class="check">✓</div>
+        <div class="candidate-text">스마트폰 과사용 후 엄지·손목 통증</div></div>
+      <div class="candidate-item"><div class="check">✓</div>
+        <div class="candidate-text">미용사·요리사·키보드 사용 후 손목 통증</div></div>
+      <div class="candidate-item"><div class="check">✓</div>
+        <div class="candidate-text">골프·테니스 후 손목 통증</div></div>
+      <div class="candidate-item"><div class="check">✓</div>
+        <div class="candidate-text">핀켈스타인 검사 양성 (자가진단)</div></div>
+      <div class="candidate-item"><div class="check">✓</div>
+        <div class="candidate-text">스플린트·약물 사용했지만 호전 없음</div></div>
+      <div class="candidate-item"><div class="check">✓</div>
+        <div class="candidate-text">주사를 맞아도 반복 재발</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Self test (핀켈스타인) -->
+<section class="test-section" id="self-test">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">자가진단</span>
+      <h2>핀켈스타인 검사</h2>
+      <p class="sub">집에서 1분이면 확인할 수 있는 드퀘르뱅 자가진단법입니다. 의학적 진단을 대신하지 않으며 진료 시 참고용입니다.</p>
+    </div>
+
+    <div class="test-card">
+      <h3>
+        Finkelstein's Test
+        <span class="pill">1분 자가검사</span>
+      </h3>
+
+      <ol class="test-steps">
+        <li>아픈 쪽 손의 <strong>엄지손가락을 손바닥 안쪽으로 접어 넣습니다</strong>.</li>
+        <li>나머지 네 손가락으로 엄지를 감싸 <strong>주먹을 쥡니다</strong>.</li>
+        <li>주먹 쥔 손목을 <strong>새끼손가락 쪽으로 천천히 꺾어 내립니다</strong>.</li>
+        <li>이때 엄지 안쪽 손목 부위에 통증이 있는지 확인합니다.</li>
+      </ol>
+
+      <div class="test-result">
+        <strong>★ 검사 결과 양성</strong> — 엄지 안쪽 손목(요골 측)에 심한 통증이 발생하면
+        드퀘르뱅병 가능성이 있습니다. 통증이 심하거나 일상생활에 지장이 있다면 진료를 권합니다.
+        무리해서 반복 시도하지 마세요.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">본원 진료 흐름</span>
+      <h2>5단계 진료 과정</h2>
+      <p class="sub">정확한 진단 → 환자별 상태 평가 → 적합한 치료법 결정. 모든 단계를 김진균 원장이 직접 진행합니다.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card">
+        <div class="step">STEP 01</div>
+        <h3>정밀 문진</h3>
+        <p>증상·생활 패턴·수유 여부·직업·통증 시점을 확인합니다. 산모·수유 중이시라면 진료 시 알려주세요.</p>
+      </div>
+      <div class="process-card">
+        <div class="step">STEP 02</div>
+        <h3>신체 검사</h3>
+        <p>핀켈스타인 검사 + 압통 확인으로 드퀘르뱅 가능성을 평가합니다.</p>
+      </div>
+      <div class="process-card">
+        <div class="step">STEP 03</div>
+        <h3>영상검사 (필요 시)</h3>
+        <p>초음파로 두 힘줄(APL·EPB)의 염증·붓기를 직접 확인할 수 있습니다. 모든 환자에게 필요하지는 않습니다.</p>
+      </div>
+      <div class="process-card">
+        <div class="step">STEP 04</div>
+        <h3>단계 평가</h3>
+        <p>보존·주사·수술 중 환자별 적합한 단계를 평가합니다. 임신·수유 상태도 함께 고려합니다.</p>
+      </div>
+      <div class="process-card" style="grid-column: 1 / -1;">
+        <div class="step">STEP 05</div>
+        <h3>치료 — 환자별 맞춤</h3>
+        <p>아래 "단계별 치료" 섹션에서 본원이 제공하는 보존·주사·수술 옵션을 자세히 설명드립니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 단계별 치료 -->
+<section style="background: var(--c-bg-soft);">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">단계별 치료</span>
+      <h2>보존 → 주사 → 수술</h2>
+      <p class="sub">대부분의 환자는 보존·주사 치료로 호전됩니다. 모든 치료 적용 여부는 진료 후 의료진이 결정합니다.</p>
+    </div>
+
+    <div class="tx-grid">
+      <div class="tx-card">
+        <div class="stage-num">STAGE 1</div>
+        <h3>보존 치료</h3>
+        <div class="when">초기·경증·산모 우선</div>
+        <ul>
+          <li>활동 조절·휴식</li>
+          <li>스플린트(엄지 고정 보조기)</li>
+          <li>소염진통제 (수유 안전 약물 고려)</li>
+          <li>물리치료·찜질</li>
+          <li>생활 자세 교정 — 아기 안는 자세</li>
+          <li>수유 종료 후 자연 호전 케이스 있음</li>
+        </ul>
+      </div>
+
+      <div class="tx-card" style="border-top: 3px solid var(--c-warm); padding-top: 28px;">
+        <div class="stage-num" style="background: var(--c-warm);">STAGE 2</div>
+        <h3>주사 치료</h3>
+        <div class="when">보존 효과 부족 시</div>
+        <ul>
+          <li>스테로이드 국소 주사</li>
+          <li>초음파 유도로 정확한 부위 주입</li>
+          <li>장기 호전 케이스 / 단기 효과 케이스 모두 있음</li>
+          <li>같은 부위 3~4회 이상 반복 권장하지 않음</li>
+          <li>임신·수유 상태 고려 결정</li>
+          <li>주사 후 활동 조절 권장</li>
+        </ul>
+      </div>
+
+      <div class="tx-card" style="border-top: 3px solid var(--c-accent); padding-top: 28px;">
+        <div class="stage-num" style="background: var(--c-accent-deep);">STAGE 3</div>
+        <h3>수술</h3>
+        <div class="when">보존·주사 효과 부족, 만성 재발</div>
+        <ul>
+          <li>제1신전구획 절개술</li>
+          <li>부분마취·국소마취</li>
+          <li>두 힘줄(APL·EPB) 통과 공간 확장</li>
+          <li>외래·짧은 수술 가능 케이스</li>
+          <li>회복 기간 환자별 다름</li>
+          <li>모든 환자에게 필요한 것은 아님</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Doctor -->
+<section class="doctor">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">진료의</span>
+      <h2>김진균 원장 직접 진료</h2>
+      <p class="sub">진단부터 보존·주사·수술까지 모든 과정을 원장이 직접 책임집니다.</p>
+    </div>
+
+    <div class="doctor-card">
+      <div class="doctor-name">김진균 원장</div>
+      <div class="doctor-title">희망찬병원 원장 · 신경외과 전문의</div>
+
+      <div class="doctor-quote">
+        "산모·수유맘이 진료실에서 가장 자주 하시는 말씀이
+        '아기 안고 오느라 오는 길도 힘들었다'입니다.
+        통증을 참으며 육아하지 않으셔도 됩니다."
+      </div>
+
+      <ul class="doctor-credentials">
+        <li>희망찬병원 원장 (동탄)</li>
+        <li>신경외과 전문의 — 수부 진료 다년간 경험</li>
+        <li>손목터널증후군·방아쇠손가락·듀피트렌병 단행본 저자</li>
+        <li>유튜브 채널 "털보의사" 운영 — 환자 교육 콘텐츠 다수</li>
+        <li>드퀘르뱅병·산모 손목 통증·수부 외상 진료</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">자주 묻는 질문</span>
+      <h2>환자분들이 가장 궁금해하시는 것</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq" open>
+        <summary>Q1. 산모인데 진료·시술이 안전한가요? <strong style="color:var(--c-soft)">(★ 가장 많이 묻는 질문)</strong></summary>
+        <div class="answer">부분마취·국소 주사·수술은 모유 수유에 미치는 영향이 매우 제한적입니다. 그러나 임신·수유 초기는 호르몬 변화로 자연 호전 가능성도 있어, 보존 치료를 우선 시도하는 경우가 많습니다. 진료 시 임신·수유 상태를 알려주시면 안전한 결정을 안내해 드립니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q2. 주사 한 번이면 끝나나요?</summary>
+        <div class="answer">주사 효과는 환자마다 다릅니다. 한 번 주사로 장기 호전되는 경우도 있고, 효과가 단기적이거나 재발하는 경우도 있습니다. 일반적으로 같은 부위에 스테로이드 주사를 3~4회 이상 반복하지 않는 것이 권장됩니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q3. 수술이 꼭 필요한가요?</summary>
+        <div class="answer">아닙니다. 대부분의 환자는 보존 치료·주사 치료로 호전됩니다. 보존·주사 효과가 부족하거나 만성 재발하는 환자에게 수술을 권장합니다. 진료 후 의료진이 결정합니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q4. 방아쇠손가락과 어떻게 다른가요?</summary>
+        <div class="answer">두 병 모두 힘줄 건초염이지만 부위가 다릅니다. 방아쇠손가락은 손가락 굴곡건의 A1 도르래에 발생하고, 드퀘르뱅은 엄지 안쪽 손목의 제1신전구획에 발생합니다. 증상도 다릅니다 — 방아쇠는 "손가락 딸깍·걸림", 드퀘르뱅은 "엄지 손목 통증".</div>
+      </details>
+      <details class="faq">
+        <summary>Q5. 스마트폰 때문에 생긴 "폰엄지"도 같은 병인가요?</summary>
+        <div class="answer">네, 같은 드퀘르뱅병 범주입니다. 스마트폰을 한 손으로 쥐고 엄지로 화면을 반복 조작하면 엄지 안쪽 손목 부위에 같은 두 힘줄(APL·EPB) 부담이 가해집니다. 스마트폰 사용 시간 조절과 양손 교대 사용이 도움이 될 수 있습니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q6. 손목터널증후군과 헷갈리는데 다른 병인가요?</summary>
+        <div class="answer">네, 다른 병입니다. 손목터널증후군은 손목 중앙의 정중신경 압박으로 엄지·검지·중지 저림이 주증상입니다. 드퀘르뱅은 엄지 안쪽 손목의 힘줄 염증으로 통증이 주증상이고 저림은 거의 없습니다. 진료 시 정확한 감별이 필요합니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q7. 스플린트(보조기)는 얼마나 차야 하나요?</summary>
+        <div class="answer">환자별로 다릅니다. 통상 2~4주 정도 엄지·손목을 고정해 힘줄에 휴식을 줍니다. 산모는 아기를 안을 때만 착용하는 식으로 조절하기도 합니다. 진료 시 환자 생활에 맞게 안내해 드립니다.</div>
+      </details>
+      <details class="faq">
+        <summary>Q8. 비용은 얼마나 되나요?</summary>
+        <div class="answer">기본 진료·신체 검사는 건강보험 적용입니다. 주사·수술 비용은 환자 상태에 따라 다르므로 진료 시 안내해 드립니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-block">
+  <div class="container">
+    <h2>통증을 참으며 육아하지 마세요</h2>
+    <p>김진균 원장이 직접 진료합니다. 산모·수유맘 안전 치료 옵션 우선 고려. 환자별 보존·주사·수술 단계별 결정.</p>
+    <div class="cta-row" style="justify-content: center;">
+      <a href="tel:16003415" class="btn-primary">📞 1600-3415</a>
+      <a href="https://map.naver.com/v5/search/희망찬병원" class="btn-secondary">📍 위치·길찾기</a>
+    </div>
+  </div>
+</section>
+
+<!-- Info -->
+<section class="info">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">병원 안내</span>
+      <h2>희망찬병원</h2>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>진료 시간</h3>
+        <div class="row"><span class="label">평일</span><span class="val">09:00 ~ 18:00</span></div>
+        <div class="row"><span class="label">토요일</span><span class="val">09:00 ~ 13:00</span></div>
+        <div class="row"><span class="label">일요일·공휴일</span><span class="val">휴진</span></div>
+        <div class="row"><span class="label">점심시간</span><span class="val">12:30 ~ 13:30</span></div>
+      </div>
+
+      <div class="info-card">
+        <h3>오시는 길</h3>
+        <div class="row"><span class="label">주소</span><span class="val">경기 화성시 병점중앙로 174</span></div>
+        <div class="row"><span class="label">지하철</span><span class="val">병점역 1번출구 5분거리</span></div>
+        <div class="row"><span class="label">주차</span><span class="val">병원 주차장 무료</span></div>
+        <div class="row"><span class="label">진료 권역</span><span class="val">동탄·화성·수원·평택·오산·용인</span></div>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <strong>의료광고 안내</strong> — 본 페이지의 모든 치료 결과는 환자 개인의 상태·증상 정도·임신·수유 여부·동반 질환에 따라 다를 수 있습니다.
+      모든 치료법 적용 여부는 진료 후 의료진이 결정합니다. 핀켈스타인 검사 자가진단은 진단을 대신하지 않습니다.
+      본 페이지는 의료법 및 의료광고 사전심의 기준을 준수하여 작성되었습니다.
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container-wide">
+    <div class="row">
+      <div>
+        <strong>희망찬병원</strong><br>
+        경기 화성시 병점중앙로174<br>
+        대표원장 김진균</div>
+      <div style="text-align: right;">
+        진료 문의 <strong>1600-3415</strong><br>
+        평일 09:00 ~ 18:00 / 토 09:00 ~ 13:00<br>
+        유튜브 채널 "털보의사"
+      </div>
+    </div>
+    <div class="small">
+      © 2026 희망찬병원. All rights reserved.<br>
+      본 사이트의 의료 정보는 일반적인 안내 목적이며, 개별 환자의 진단·치료를 대신할 수 없습니다.
+      진료 시 의료진과 상담하시기 바랍니다.
+    </div>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<a href="tel:16003415" class="floating-cta">
+  <span>지금 전화로 상담받기</span>
+  <span class="phone-icon">📞</span>
+</a>
+
+</body>
+</html>
