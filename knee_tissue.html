@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 무릎 외상 클리닉 — 본원 직접 진료 · 인대·반월상 정밀 평가</title>
+<meta name="description" content="정형외과 전문의가 직접 진료하는 무릎 외상 클리닉. 인대 손상·반월상 연골 손상·슬개골 골절 본원 정밀 평가·보존 진료·정기 외래·재활까지 한 자리. 화성·동탄·오산·평택.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-bg: #fafaf8;
+  --color-bg-alt: #f3f1ec;
+  --color-bg-section: #ffffff;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --color-text-light: #8a8a8a;
+  --color-border: #e5e3de;
+  --color-primary: #1e3a5f;
+  --color-primary-soft: #4a6885;
+  --color-accent: #8b2331;
+  --color-gold: #a0824a;
+  --color-success: #2d5a3d;
+  --color-urgent: #b91c1c;
+  --color-urgent-bg: #fef2f2;
+  --font-serif: 'Noto Serif KR', 'Times New Roman', serif;
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans); font-weight: 400; font-size: 16px;
+  line-height: 1.75; color: var(--color-text); background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.96); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border); padding: 14px 0;
+}
+.topbar-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.brand {
+  font-family: var(--font-serif); font-weight: 600; font-size: 19px;
+  letter-spacing: -0.01em; color: var(--color-primary);
+}
+.brand-sub {
+  font-size: 12px; color: var(--color-text-light); font-weight: 400;
+  margin-left: 6px; letter-spacing: 0.05em;
+}
+.cta-button {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 22px; background: var(--color-primary); color: #fff;
+  font-size: 14px; font-weight: 500; text-decoration: none;
+  border-radius: 2px; letter-spacing: 0.02em; transition: background .2s;
+}
+.cta-button:hover { background: #142a48; }
+.hero { padding: 100px 32px 80px; max-width: 1200px; margin: 0 auto; }
+.hero-eyebrow {
+  display: inline-block; font-size: 12px; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--color-gold); margin-bottom: 24px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--color-gold);
+}
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.2; font-weight: 400; color: var(--color-primary);
+  margin-bottom: 28px; letter-spacing: -0.02em;
+}
+.hero-title em { font-style: italic; color: var(--color-accent); }
+.hero-desc {
+  font-size: 18px; line-height: 1.85; color: var(--color-text-muted);
+  max-width: 760px; margin-bottom: 40px;
+}
+.hero-quote {
+  border-left: 3px solid var(--color-accent); padding: 16px 24px;
+  margin: 32px 0; background: rgba(139,35,49,.03);
+  font-family: var(--font-serif); font-size: 20px;
+  color: var(--color-primary); line-height: 1.6; max-width: 760px;
+}
+.signature-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2d4f7a 100%);
+  color: #fff; padding: 32px 40px; margin: 40px 0;
+  position: relative; overflow: hidden;
+}
+.signature-banner::before {
+  content: '★'; position: absolute; top: -20px; right: 24px;
+  font-size: 120px; color: rgba(160,130,74,.2); line-height: 1;
+}
+.signature-banner-eyebrow {
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 12px; text-transform: uppercase; font-weight: 600;
+}
+.signature-banner-title {
+  font-family: var(--font-serif); font-size: 28px; font-weight: 500;
+  line-height: 1.4; margin-bottom: 12px; position: relative;
+}
+.signature-banner-desc {
+  font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.85); position: relative;
+}
+.section-nav {
+  background: var(--color-bg-alt); padding: 32px;
+  border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);
+}
+.section-nav-inner { max-width: 1200px; margin: 0 auto; }
+.section-nav-title {
+  font-family: var(--font-serif); font-size: 14px; color: var(--color-text-light);
+  text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 16px;
+}
+.section-nav-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px;
+}
+.section-nav-grid a {
+  font-size: 14px; padding: 8px 12px; color: var(--color-text);
+  text-decoration: none; border-left: 2px solid transparent; transition: all .2s;
+}
+.section-nav-grid a:hover {
+  border-left-color: var(--color-accent); background: rgba(255,255,255,.7);
+  color: var(--color-primary);
+}
+.section-nav-grid a.signature { color: var(--color-accent); font-weight: 500; }
+.section-nav-grid a.signature::before { content: '★ '; font-size: 11px; }
+.landing-section {
+  padding: 100px 32px; max-width: 1100px; margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+}
+.landing-section.signature {
+  background: linear-gradient(180deg, var(--color-bg) 0%, rgba(160,130,74,.04) 100%);
+  position: relative;
+}
+.landing-section.signature::before {
+  content: '시그니처'; position: absolute; top: 60px; right: 32px;
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold); font-weight: 500;
+}
+.landing-eyebrow {
+  font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--color-gold); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.landing-eyebrow::after {
+  content: ''; flex: 1; height: 1px; background: var(--color-border); max-width: 60px;
+}
+.landing-title {
+  font-family: var(--font-serif); font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.25; font-weight: 500; color: var(--color-primary);
+  margin-bottom: 24px; letter-spacing: -0.015em;
+}
+.landing-title strong { font-weight: 600; color: var(--color-accent); font-style: italic; }
+.landing-lead {
+  font-size: 17px; line-height: 1.85; color: var(--color-text-muted);
+  margin-bottom: 40px; max-width: 800px;
+}
+.landing-section h3 {
+  font-family: var(--font-serif); font-size: 22px; font-weight: 500;
+  color: var(--color-primary); margin: 48px 0 16px; letter-spacing: -0.01em;
+}
+.landing-section p {
+  font-size: 16px; line-height: 1.85; color: var(--color-text);
+  margin-bottom: 16px; max-width: 800px;
+}
+.symptom-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px; margin: 32px 0;
+}
+.symptom-card {
+  padding: 24px; background: var(--color-bg-section);
+  border: 1px solid var(--color-border); border-left: 3px solid var(--color-primary);
+}
+.symptom-card.gold { border-left-color: var(--color-gold); }
+.symptom-card.urgent { border-left-color: var(--color-urgent); }
+.symptom-card-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.symptom-card-desc { font-size: 14px; line-height: 1.7; color: var(--color-text-muted); }
+.compare-table {
+  width: 100%; border-collapse: collapse; margin: 32px 0;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.compare-table th, .compare-table td {
+  padding: 14px 20px; text-align: left; font-size: 14px;
+  border-bottom: 1px solid var(--color-border); vertical-align: top;
+}
+.compare-table th {
+  background: var(--color-primary); color: #fff;
+  font-weight: 500; letter-spacing: 0.02em;
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table tbody tr:hover { background: var(--color-bg-alt); }
+.compare-table .label { font-weight: 500; color: var(--color-primary); width: 28%; }
+.highlight-box {
+  background: var(--color-primary); color: #fff; padding: 40px;
+  margin: 40px 0; position: relative;
+}
+.highlight-box::before {
+  content: '"'; position: absolute; top: 8px; left: 24px;
+  font-family: var(--font-serif); font-size: 80px;
+  color: rgba(255,255,255,.2); line-height: 1;
+}
+.highlight-box-content { position: relative; z-index: 1; padding-left: 40px; }
+.highlight-box p {
+  color: #fff; font-family: var(--font-serif); font-size: 19px;
+  line-height: 1.7; margin: 0; max-width: none;
+}
+.highlight-box-caption {
+  font-size: 12px; letter-spacing: 0.2em; color: rgba(255,255,255,.6);
+  text-transform: uppercase; margin-top: 16px;
+}
+.warning-box {
+  background: #fef4f4; border-left: 4px solid var(--color-accent);
+  padding: 24px 28px; margin: 32px 0;
+}
+.warning-box-title {
+  font-weight: 600; color: var(--color-accent); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.warning-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.info-box {
+  background: #f0f4fa; border-left: 4px solid var(--color-primary);
+  padding: 24px 28px; margin: 32px 0;
+}
+.info-box-title {
+  font-weight: 600; color: var(--color-primary); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.info-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.checklist {
+  list-style: none; margin: 24px 0; padding: 24px 32px;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.checklist li {
+  padding: 10px 0 10px 32px; position: relative;
+  font-size: 15px; line-height: 1.6; border-bottom: 1px solid var(--color-border);
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '□'; position: absolute; left: 0; top: 10px;
+  color: var(--color-primary); font-size: 18px; font-weight: 500;
+}
+.steps {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0; margin: 32px 0; border: 1px solid var(--color-border);
+}
+.step {
+  padding: 28px 24px; border-right: 1px solid var(--color-border);
+  background: var(--color-bg-section); position: relative;
+}
+.step:last-child { border-right: none; }
+.step-num {
+  font-family: var(--font-serif); font-size: 13px; letter-spacing: 0.3em;
+  color: var(--color-gold); margin-bottom: 12px;
+}
+.step-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.step-desc { font-size: 13px; line-height: 1.6; color: var(--color-text-muted); }
+.doctor-card {
+  display: grid; grid-template-columns: 1fr 2fr; gap: 40px;
+  padding: 40px; background: var(--color-bg-alt);
+  margin: 48px 0; align-items: center;
+}
+.doctor-credentials { font-family: var(--font-serif); }
+.doctor-name {
+  font-size: 28px; font-weight: 500; color: var(--color-primary); margin-bottom: 4px;
+}
+.doctor-role {
+  font-size: 14px; color: var(--color-text-muted);
+  letter-spacing: 0.05em; margin-bottom: 24px;
+}
+.doctor-credentials ul {
+  list-style: none; font-family: var(--font-sans);
+  font-size: 14px; line-height: 1.9; color: var(--color-text);
+}
+.doctor-credentials li { padding-left: 16px; position: relative; }
+.doctor-credentials li::before {
+  content: '—'; position: absolute; left: 0; color: var(--color-gold);
+}
+.cta-section { background: var(--color-primary); padding: 80px 32px; text-align: center; }
+.cta-inner { max-width: 800px; margin: 0 auto; color: #fff; }
+.cta-eyebrow {
+  font-size: 12px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 16px; text-transform: uppercase;
+}
+.cta-title {
+  font-family: var(--font-serif); font-size: 36px; font-weight: 400;
+  margin-bottom: 16px; line-height: 1.3;
+}
+.cta-desc {
+  font-size: 16px; color: rgba(255,255,255,.85);
+  margin-bottom: 36px; line-height: 1.8;
+}
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-btn-primary {
+  display: inline-block; padding: 16px 40px; background: #fff;
+  color: var(--color-primary); font-weight: 500; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-primary:hover { background: var(--color-gold); color: #fff; }
+.cta-btn-secondary {
+  display: inline-block; padding: 16px 40px; background: transparent;
+  color: #fff; border: 1px solid rgba(255,255,255,.4);
+  font-weight: 400; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-secondary:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+footer { background: #0f1f33; color: rgba(255,255,255,.65); padding: 60px 32px 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+.footer-brand-name {
+  font-family: var(--font-serif); font-size: 22px;
+  font-weight: 500; color: #fff; margin-bottom: 12px;
+}
+.footer-brand-desc {
+  font-size: 13px; line-height: 1.8;
+  color: rgba(255,255,255,.55); max-width: 400px;
+}
+.footer-section h4 {
+  font-family: var(--font-serif); font-size: 14px; color: #fff;
+  margin-bottom: 16px; letter-spacing: 0.05em;
+}
+.footer-section ul { list-style: none; font-size: 13px; line-height: 2; }
+.footer-section a { color: rgba(255,255,255,.65); text-decoration: none; transition: color .2s; }
+.footer-section a:hover { color: var(--color-gold); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px;
+  font-size: 12px; color: rgba(255,255,255,.45); text-align: center; line-height: 1.8;
+}
+@media (max-width: 768px) {
+  .hero { padding: 60px 24px 40px; }
+  .landing-section { padding: 60px 24px; }
+  .topbar-inner { padding: 0 20px; }
+  .doctor-card { grid-template-columns: 1fr; gap: 24px; padding: 28px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cta-section { padding: 60px 24px; }
+  .cta-title { font-size: 28px; }
+  .hero-quote { font-size: 17px; }
+  .landing-section.signature::before { display: none; }
+  .signature-banner-title { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div>
+      <span class="brand">희망찬병원 무릎 외상 클리닉</span>
+      <span class="brand-sub">HOPE KNEE TRAUMA CLINIC</span>
+    </div>
+    <a href="#예약" class="cta-button">진료 예약</a>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-eyebrow">정형외과 무릎 외상 진료</div>
+  <h1 class="hero-title">
+    무릎 외상, <em>본원이 직접</em><br>정밀 평가합니다.
+  </h1>
+  <p class="hero-desc">
+    무릎 외상(전방·후방·내·외측 인대 손상·반월상 연골 손상·슬개골 골절)은 본원이 직접 진료하는 영역입니다.
+    정형외과 전문의가 X-ray·신체 진찰·필요시 MRI 영상 검토까지 통합 평가하여 환자분께 적합한 진료
+    방향(보존 vs 수술)을 정직하게 안내합니다. 단, 광범위 십자인대 재건·인공관절은 상급 종합병원으로
+    연계해 드립니다.
+  </p>
+  <div class="hero-quote">
+    "무릎 외상의 진료 방향은 정확한 진단에서 시작됩니다. 영상만으로도, 진찰만으로도 부족합니다."<br>
+    <span style="font-size: 14px; color: var(--color-text-muted); font-family: var(--font-sans); font-style: normal;">
+      — 김진균 원장, 정형외과 전문의
+    </span>
+  </div>
+
+  <div class="signature-banner">
+    <div class="signature-banner-eyebrow">본원 직접 진료 + 인대·반월상 정밀 평가</div>
+    <div class="signature-banner-title">인대·반월상·슬개골 — 한 자리에서</div>
+    <div class="signature-banner-desc">
+      당일 X-ray·신체 진찰·정밀 평가 + 필요시 MRI 영상 검토까지 본원에서. 보존 vs 수술 환자별 정직 안내·
+      보존 진료·정기 외래·재활까지 한 자리. 단, 광범위 십자인대 재건·인공관절은 상급 종합병원으로
+      신속 연계해 드립니다.
+    </div>
+  </div>
+</section>
+
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <div class="section-nav-title">진료 안내 · 5개 영역</div>
+    <div class="section-nav-grid">
+      <a href="#무릎외상_결정">무릎 외상 진료·진단</a>
+      <a href="#무릎외상_증상">증상 자가확인·외상 양상</a>
+      <a href="#무릎외상_본원진료" class="signature">본원 직접 진료·환자별 안내</a>
+      <a href="#무릎외상_정밀평가" class="signature">인대·반월상 정밀 평가</a>
+      <a href="#무릎외상_재활">회복기 외래·재활</a>
+    </div>
+  </div>
+</div>
+
+<section id="무릎외상_결정" class="landing-section">
+  <div class="landing-eyebrow">랜딩 1 · 무릎 외상 진료</div>
+  <h2 class="landing-title">무릎 외상, <strong>본원 정형외과</strong>가 진료합니다</h2>
+  <p class="landing-lead">
+    무릎 외상은 본원이 직접 진료하는 핵심 영역입니다. 환자분이 무릎을 다치셨을 때 어떤 진단이 가능하고
+    본원이 어디까지 진료하는지 정직하게 안내드립니다. 정형외과 전문의가 환자분께 적합한 진료 방향을
+    함께 정해갑니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"무릎 외상은 정확한 진단이 첫걸음입니다. 영상만으로도, 진찰만으로도 부족합니다."</p>
+      <div class="highlight-box-caption">— 본원 무릎 외상 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 진료 영역 — 직접 시행 가능</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">인대 손상 평가</div>
+      <div class="symptom-card-desc">전방·후방·내·외측 인대 본원 정밀 평가·진료 방향.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">반월상 연골 손상</div>
+      <div class="symptom-card-desc">반월상 연골 본원 MRI 영상 검토·환자별 안내.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">슬개골 골절</div>
+      <div class="symptom-card-desc">슬개골 골절 본원 X-ray·정복·고정 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">슬개골 탈구</div>
+      <div class="symptom-card-desc">습관성·외상성 슬개골 탈구 본원 정복 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정밀 평가</div>
+      <div class="symptom-card-desc">X-ray + 신체 진찰 + MRI 영상 통합.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">15-2 통합</div>
+      <div class="symptom-card-desc">정강이·발목 외상과 함께 본원 하지 외상 거점.</div>
+    </div>
+  </div>
+
+  <h3>본원이 시행하지 않는 영역</h3>
+  <ul class="checklist">
+    <li>광범위 십자인대 재건 수술(ACL/PCL 재건) — 상급 종합병원 영역</li>
+    <li>무릎 인공관절 수술 — 상급 종합병원 영역</li>
+    <li>관절경 광범위 수술 — 상급 종합병원 영역</li>
+    <li>광범위 다발성 무릎 외상 응급 수술 — 상급 종합병원 영역</li>
+  </ul>
+
+  <div class="info-box">
+    <div class="info-box-title">"본원과 큰 병원, 어떻게 나뉘나요?"</div>
+    <div class="info-box-desc">
+      광범위 십자인대 재건·인공관절·관절경 광범위 수술은 상급 종합병원에서 받으셔야 합니다. 본원은 인대
+      손상 정밀 평가·반월상 연골 평가·슬개골 골절 진료·보존 진료·정기 외래·재활 진료의 거점 역할입니다.
+    </div>
+  </div>
+
+  <h3>본원 진료가 적합한 환자</h3>
+  <ul class="checklist">
+    <li>무릎 외상 후 X-ray와 정확한 진단이 필요한 환자</li>
+    <li>인대 손상·반월상 연골 손상이 의심되어 정밀 평가가 필요한 환자</li>
+    <li>응급실에서 처치 후 가까운 정기 외래가 필요한 환자</li>
+    <li>큰 병원에서 무릎 수술 후 가까운 거리에서 추적이 필요한 환자</li>
+    <li>운동선수가 정확한 진단과 복귀 시점 결정이 필요한 경우</li>
+    <li>교통사고·작업 중 무릎 외상으로 자보·산재 진료가 필요한 환자</li>
+    <li>무릎이 무너지거나 꺾이는 느낌이 있는 환자</li>
+    <li>슬개골 탈구를 반복적으로 경험하시는 환자</li>
+  </ul>
+</section>
+
+<section id="무릎외상_증상" class="landing-section">
+  <div class="landing-eyebrow">랜딩 2 · 무릎 외상 증상</div>
+  <h2 class="landing-title">무릎 외상 후 <strong>진료가 필요한 신호</strong></h2>
+  <p class="landing-lead">
+    무릎을 다치셨을 때 단순 타박상인지 인대·반월상 손상인지 환자분이 직접 판단하기는 어렵습니다. 인대
+    손상이나 반월상 연골 손상은 처음에는 통증이 가라앉는 것처럼 보여도 시간이 지나면서 기능 저하가
+    드러나기 때문에 정밀 평가가 필요합니다.
+  </p>
+
+  <h3>무릎 외상 신호 — 본원 진료 권장</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">강한 통증·부음</div>
+      <div class="symptom-card-desc">진통제로도 잘 안 가라앉는 통증·심한 부음.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">무릎 무너지는 느낌</div>
+      <div class="symptom-card-desc">걸을 때 무릎이 꺾이는 느낌. 인대 손상 가능.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">무릎 잠김</div>
+      <div class="symptom-card-desc">무릎이 갑자기 안 펴짐. 반월상 연골 손상 가능.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">계단 오르내림 어려움</div>
+      <div class="symptom-card-desc">계단에서 통증·기능 저하. 다양한 손상 가능.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">다칠 때 소리</div>
+      <div class="symptom-card-desc">"뚝" 소리 들렸음. 인대 파열 가능성.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">무릎 변형·튀어나옴</div>
+      <div class="symptom-card-desc">슬개골 탈구 또는 골절 가능. 즉시 본원.</div>
+    </div>
+  </div>
+
+  <h3>외상 양상별 위험도</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>외상 양상</th><th>의심 진단</th><th>본원 안내</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="label">방향 전환 중 무릎 꺾임 (운동)</td>
+        <td>ACL 손상 (가장 흔함)</td><td>본원 정밀 평가</td></tr>
+      <tr><td class="label">옆에서 충돌 (외측)</td>
+        <td>내측 인대(MCL) 손상</td><td>본원 정밀 평가</td></tr>
+      <tr><td class="label">앞쪽에서 충돌 (대시보드)</td>
+        <td>PCL 손상</td><td>본원 정밀 평가</td></tr>
+      <tr><td class="label">쪼그려 앉다 뒤틀림</td>
+        <td>반월상 연골 손상</td><td>본원 MRI 검토</td></tr>
+      <tr><td class="label">무릎 직접 부딪힘</td>
+        <td>슬개골 골절·타박</td><td>본원 X-ray</td></tr>
+      <tr><td class="label">무릎 비틀린 후 빠짐</td>
+        <td>슬개골 탈구</td><td>본원 정복·평가</td></tr>
+      <tr><td class="label">스키 낙상 (앞쪽으로 넘어짐)</td>
+        <td>ACL + 반월상 동반 가능</td><td>본원 정밀 평가</td></tr>
+      <tr><td class="label">교통사고 무릎 부딪힘</td>
+        <td>복합 손상 가능</td><td>본원 평가·자보</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"통증이 가라앉으면 괜찮다"는 오해</div>
+    <div class="warning-box-desc">
+      인대 손상은 처음 며칠 통증이 가라앉아도 시간이 지나면서 무릎 불안정·반복 손상이 드러납니다. 반월상
+      연골 손상은 가만히 두면 관절면이 손상되어 평생 무릎 기능에 영향을 줄 수 있습니다. 통증이 가라앉아도
+      "무너지는 느낌"이 있으시면 본원 정밀 평가를 받으십시오.
+    </div>
+  </div>
+
+  <h3>본원 자가 체크 — 방문 전 확인</h3>
+  <ul class="checklist">
+    <li>다친 후 무릎이 빠르게 부었나요 (수 시간 내)</li>
+    <li>걸을 때 무릎이 꺾이거나 무너지는 느낌이 있나요</li>
+    <li>무릎이 갑자기 안 펴지는 잠김 현상이 있나요</li>
+    <li>계단을 오르내릴 때 통증이 심한가요</li>
+    <li>쭈그려 앉을 수 있나요</li>
+    <li>다친 부위를 만지면 강한 통증이 있나요</li>
+    <li>다친 후 운동·일상 활동이 어려우신가요</li>
+  </ul>
+
+  <div class="info-box">
+    <div class="info-box-title">위 중 셋 이상이면 본원 정밀 평가 권장</div>
+    <div class="info-box-desc">
+      본원에서는 환자분의 신체 진찰(Lachman test·McMurray test·Anterior drawer 등)과 X-ray·필요시 MRI
+      영상 검토를 통합해 정확한 진단을 내립니다. 환자분의 나이·활동 수준·요구 사항에 따라 진료 방향을
+      함께 정해갑니다.
+    </div>
+  </div>
+</section>
+
+<section id="무릎외상_본원진료" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 3 · 본원 직접 진료·환자별 안내 (시그니처)</div>
+  <h2 class="landing-title">무릎 외상의 모든 진료를 <strong>한 자리에서</strong></h2>
+  <p class="landing-lead">
+    본원의 핵심 차별화는 무릎 외상의 진단·평가·진료 방향 결정·보존 진료·정기 외래·재활까지 한 자리에서
+    받으실 수 있다는 점입니다. 정형외과 전문의가 직접 신체 진찰·X-ray 판독·MRI 영상 검토까지 진행하며,
+    환자분께 적합한 진료 방향을 정직하게 안내합니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"무릎 외상은 환자분의 나이·활동·요구 수준에 따라 진료 방향이 달라집니다. 정직한 안내가 본원의 원칙입니다."</p>
+      <div class="highlight-box-caption">— 본원 무릎 외상 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 진료 흐름 — 외상 직후</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">초진 상담</div>
+      <div class="step-desc">외상 양상·통증·기능 종합 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">신체 진찰</div>
+      <div class="step-desc">Lachman·McMurray·Anterior drawer 등</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">당일 X-ray</div>
+      <div class="step-desc">본원 X-ray·골절·정렬 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">MRI 영상 검토</div>
+      <div class="step-desc">필요시 MRI로 인대·반월상 정밀 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">진료 방향 결정</div>
+      <div class="step-desc">환자별 보존 vs 수술 정직 안내</div>
+    </div>
+  </div>
+
+  <h3>본원 무릎 외상 진료의 강점</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정형외과 전문의</div>
+      <div class="symptom-card-desc">전문의가 X-ray 판독·신체 진찰·진료 직접.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">당일 진료</div>
+      <div class="symptom-card-desc">예약 없이 외상 직후 진료 가능.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정밀 평가</div>
+      <div class="symptom-card-desc">신체 진찰 + X-ray + MRI 통합.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">한 자리 진료</div>
+      <div class="symptom-card-desc">진단·진료 방향·재활까지 한 곳.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정직 안내</div>
+      <div class="symptom-card-desc">보존 vs 수술 환자별 정직 결정.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">15-2 통합</div>
+      <div class="symptom-card-desc">정강이·발목 외상과 통합 진료.</div>
+    </div>
+  </div>
+
+  <h3>환자별 진료 방향 — 본원 정직 안내</h3>
+  <p>
+    무릎 외상은 환자분의 상황에 따라 진료 방향이 크게 달라집니다. 본원은 "무조건 보존" 또는 "무조건
+    수술"로 안내하지 않고 환자분께 적합한 방향을 함께 정해갑니다.
+  </p>
+
+  <table class="compare-table">
+    <thead>
+      <tr><th>환자 상황</th><th>본원 진료 방향</th><th>상급 의뢰 고려</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">젊은 활동력 높은 환자 + ACL 완전 파열</td>
+        <td>정밀 진단·보존 외래</td>
+        <td>ACL 재건 상급 종합병원</td>
+      </tr>
+      <tr>
+        <td class="label">중장년·활동 적은 환자 + ACL 부분 파열</td>
+        <td>보존 진료·재활·정기 외래</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="label">반월상 연골 단순 손상</td>
+        <td>보존 진료·정기 외래</td>
+        <td>광범위 손상 시 상급</td>
+      </tr>
+      <tr>
+        <td class="label">슬개골 골절·정복 가능</td>
+        <td>본원 정복·고정·외래</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="label">슬개골 골절·수술 필요</td>
+        <td>본원 평가 후 의뢰</td>
+        <td>상급 종합병원</td>
+      </tr>
+      <tr>
+        <td class="label">노인 + 만성 관절염 + 외상</td>
+        <td>외래·보존 진료</td>
+        <td>인공관절 시 상급</td>
+      </tr>
+      <tr>
+        <td class="label">광범위 다발성 외상</td>
+        <td>본원 평가 후 의뢰</td>
+        <td>즉시 상급 응급실</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>응급실·큰 병원 후 본원 외래</h3>
+  <p>
+    교통사고로 응급실에서 X-ray·정복 처치를 받으셨거나, 큰 병원에서 무릎 수술(인대 재건·인공관절 등)을
+    받으셨다면 그 이후의 정기 외래는 가까운 거리의 본원에서 받으시는 것이 효율적입니다. 본원은 환자분의
+    영상·수술 기록을 이어받아 진료를 계속합니다.
+  </p>
+
+  <h3>자보·산재 정직 진료</h3>
+  <p>
+    교통사고로 무릎 외상을 입으신 환자분, 작업 중 무릎을 다치신 환자분 모두 본원에서 자보·산재 정직
+    진료를 받으실 수 있습니다. 입원 일수 부풀리기·과잉 검사는 본원에서 하지 않습니다.
+  </p>
+  <ul class="checklist">
+    <li>교통사고 — 경찰 사고 접수·자보사 접수·신분증</li>
+    <li>산재 — 산재 요양 신청서·사업장 정보·신분증</li>
+    <li>진료비 — 보험사·근로복지공단 직접 정산</li>
+    <li>진단서·소견서 — 본원 정직 발급</li>
+  </ul>
+</section>
+
+<section id="무릎외상_정밀평가" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 4 · 인대·반월상 정밀 평가 (시그니처)</div>
+  <h2 class="landing-title">무릎 외상은 <strong>정밀 진단</strong>이 첫걸음</h2>
+  <p class="landing-lead">
+    무릎 외상에서 잘못된 진단은 진료 방향을 크게 바꿉니다. 인대 손상 정도, 반월상 연골 손상 양상,
+    동반 손상 여부가 환자분의 진료 결과를 결정합니다. 본원은 신체 진찰(전문 검사법)·X-ray·필요시 MRI
+    영상 검토를 통합해 정확한 진단을 내립니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"영상만 보고 진단하지 않습니다. 신체 진찰만 보고도 진단하지 않습니다. 둘 다 통합해야 정확합니다."</p>
+      <div class="highlight-box-caption">— 본원 무릎 정밀 평가 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 신체 진찰 — 정형외과 전문의 직접</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">Lachman test</div>
+      <div class="symptom-card-desc">전방 십자인대(ACL) 손상 평가 표준 검사.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">Anterior drawer</div>
+      <div class="symptom-card-desc">전방 인대 불안정 평가.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">Posterior drawer</div>
+      <div class="symptom-card-desc">후방 십자인대(PCL) 손상 평가.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">McMurray test</div>
+      <div class="symptom-card-desc">반월상 연골 손상 평가.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">Apley test</div>
+      <div class="symptom-card-desc">반월상 연골·인대 감별 평가.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">Valgus/Varus stress</div>
+      <div class="symptom-card-desc">내·외측 인대(MCL/LCL) 손상 평가.</div>
+    </div>
+  </div>
+
+  <h3>본원 영상 평가 흐름</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>검사</th><th>역할</th><th>본원 워크플로우</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">X-ray</td>
+        <td>골절·정렬·관절 간격 평가</td>
+        <td>본원 당일 즉시 시행</td>
+      </tr>
+      <tr>
+        <td class="label">스트레스 X-ray</td>
+        <td>인대 불안정 객관적 평가</td>
+        <td>본원 필요시 시행</td>
+      </tr>
+      <tr>
+        <td class="label">초음파</td>
+        <td>표재성 인대·연부 조직 평가</td>
+        <td>본원 시행 가능</td>
+      </tr>
+      <tr>
+        <td class="label">MRI</td>
+        <td>인대·반월상·연골 정밀 평가</td>
+        <td>필요시 외부 영상 검토 또는 의뢰</td>
+      </tr>
+      <tr>
+        <td class="label">CT</td>
+        <td>복잡 골절 정밀 평가</td>
+        <td>광범위 외상 시 상급 의뢰</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>주요 진단별 본원 정밀 평가</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>진단</th><th>주요 진찰·영상</th><th>본원 진료</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">ACL 손상</td>
+        <td>Lachman + Anterior drawer + MRI</td>
+        <td>평가·환자별 진료 방향 (재건은 상급)</td>
+      </tr>
+      <tr>
+        <td class="label">PCL 손상</td>
+        <td>Posterior drawer + MRI</td>
+        <td>평가·보존 진료 가능 (광범위 시 상급)</td>
+      </tr>
+      <tr>
+        <td class="label">MCL 손상</td>
+        <td>Valgus stress + 신체 진찰</td>
+        <td>보존 진료·정기 외래 (대부분 본원)</td>
+      </tr>
+      <tr>
+        <td class="label">LCL 손상</td>
+        <td>Varus stress + MRI</td>
+        <td>평가·보존 진료 (광범위 시 상급)</td>
+      </tr>
+      <tr>
+        <td class="label">반월상 연골 손상</td>
+        <td>McMurray + Apley + MRI</td>
+        <td>보존 진료·정기 외래 (광범위 시 상급)</td>
+      </tr>
+      <tr>
+        <td class="label">슬개골 탈구·골절</td>
+        <td>신체 진찰 + X-ray</td>
+        <td>정복·고정·정기 외래 (수술 시 상급)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>운동선수 진료 — 정밀 진단이 복귀를 결정</h3>
+  <p>
+    운동선수의 무릎 외상은 단순 진단으로 끝나지 않습니다. 종목·포지션·복귀 시점에 따라 진료 방향이
+    달라지며, 정확한 진단이 복귀 시점을 결정합니다. 본원은 운동선수 환자분께 진료 방향과 복귀 일정을
+    정직하게 안내드립니다.
+  </p>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"통증이 가라앉으면 운동 복귀해도 되겠지" — 위험한 생각</div>
+    <div class="warning-box-desc">
+      ACL 부분 파열이나 반월상 연골 손상은 통증이 가라앉아도 무릎 불안정이 남아 있는 경우가 많습니다.
+      그 상태로 운동에 복귀하시면 재손상이나 광범위 손상으로 이어질 수 있습니다. 본원에서 정확한 진단과
+      복귀 시점 안내를 받으십시오.
+    </div>
+  </div>
+</section>
+
+<section id="무릎외상_재활" class="landing-section">
+  <div class="landing-eyebrow">랜딩 5 · 회복기 외래·재활</div>
+  <h2 class="landing-title">무릎 외상 회복은 <strong>재활이 결정</strong>합니다</h2>
+  <p class="landing-lead">
+    무릎 외상에서 가장 흔한 후유증이 "무릎 굳음"과 "재손상"입니다. 깁스나 보조기를 한 동안 무릎을 거의
+    안 움직이기 때문에 자연스러운 현상이지만, 적절한 재활 없이 방치하면 평생 무릎 기능에 영향이 남을
+    수 있습니다. 본원은 회복기 정기 외래·운동 진료·기능 회복까지 한 자리에서 안내합니다.
+  </p>
+
+  <h3>회복기에 흔한 문제</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">무릎 굳음·강직</div>
+      <div class="symptom-card-desc">깁스 후 무릎이 다 안 굽혀짐. 재활 진료 필요.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">근력 약화</div>
+      <div class="symptom-card-desc">대퇴사두근 약화로 무릎 불안정. 단계적 진료.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">만성 무릎 불안정</div>
+      <div class="symptom-card-desc">인대 손상 후 무릎 무너지는 느낌 지속.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">반복 슬개골 탈구</div>
+      <div class="symptom-card-desc">한 번 탈구 후 재발 가능. 본원 진료.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">관절면 손상 진행</div>
+      <div class="symptom-card-desc">반월상 손상 후 관절염 진행. 정기 외래.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">외상 후 관절염</div>
+      <div class="symptom-card-desc">시간 지나 무릎 통증·운동 제한. 본원 진료.</div>
+    </div>
+  </div>
+
+  <h3>회복기 정기 외래 일정 (일반적 흐름)</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>시기</th><th>진료 항목</th><th>본원 워크플로우</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">1~2주 후</td>
+        <td>추적·통증 평가·붓기 점검</td>
+        <td>외래 진료·붕대/보조기 점검</td>
+      </tr>
+      <tr>
+        <td class="label">3~4주 후</td>
+        <td>제한된 운동 시작·관절 운동</td>
+        <td>외래 진료·운동 진료 안내</td>
+      </tr>
+      <tr>
+        <td class="label">6~8주 후</td>
+        <td>근력 회복·체중 부하 진료</td>
+        <td>외래 진료·물리치료</td>
+      </tr>
+      <tr>
+        <td class="label">3개월 후</td>
+        <td>스포츠 동작 진료·기능 평가</td>
+        <td>외래 진료·복귀 평가</td>
+      </tr>
+      <tr>
+        <td class="label">6개월 후</td>
+        <td>완전 회복 평가 / 합병증 지속</td>
+        <td>증상 환자별 외래</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>재활 단계별 운동 안내</h3>
+  <p>
+    무릎 외상 후 재활은 단계적으로 진행되어야 합니다. 너무 빨리 무리하면 재손상이 되고, 너무 안 움직이면
+    영구 굳음이 됩니다. 본원에서 환자분 상태에 맞춰 안내받으십시오.
+  </p>
+
+  <ul class="checklist">
+    <li>1주차 — 정적 대퇴사두근 운동·발목 운동</li>
+    <li>2~3주차 — 능동 관절 운동·통증 없는 범위에서</li>
+    <li>4주차 이후 — 단계적 근력 운동·균형 운동</li>
+    <li>6주차 이후 — 점진적 체중 부하·기능 운동</li>
+    <li>3개월 이후 — 스포츠 동작 진료 (의사 평가 후)</li>
+    <li>운동 중 통증·부음·무너지는 느낌 재발 시 즉시 본원 외래</li>
+    <li>운동선수·전문 직업은 본원 별도 안내</li>
+  </ul>
+
+  <div class="warning-box">
+    <div class="warning-box-title">자가 운동만으로는 부족합니다</div>
+    <div class="warning-box-desc">
+      유튜브 영상만 보고 따라하시면 잘못된 방향의 운동으로 오히려 굳음이 심해지거나 재손상될 수 있습니다.
+      본원에서 무릎 상태를 정확히 평가한 후 환자분께 맞는 운동을 안내받으시기 바랍니다.
+    </div>
+  </div>
+</section>
+
+<section style="padding: 80px 32px; max-width: 1100px; margin: 0 auto;">
+  <div class="doctor-card">
+    <div>
+      <div style="font-family: var(--font-serif); font-size: 13px; color: var(--color-gold); letter-spacing: 0.2em; margin-bottom: 12px;">DIRECTOR</div>
+      <div class="doctor-name">김진균 원장</div>
+      <div class="doctor-role">희망찬병원 무릎 외상 클리닉</div>
+    </div>
+    <div class="doctor-credentials">
+      <ul>
+        <li>정형외과 전문의</li>
+        <li>희망찬병원 원장</li>
+        <li>유튜브 채널 "털보의사" 운영 — 정형외과 환자 교육</li>
+        <li>무릎·상지·하지 외상 환자 교육 콘텐츠 다수</li>
+        <li>화성·동탄·오산·평택 지역 정형외과 진료 거점</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="예약" class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">진료 예약</div>
+    <h2 class="cta-title">무릎 외상, 본원이 직접 진료합니다</h2>
+    <p class="cta-desc">
+      정형외과 전문의 김진균 원장이 진료합니다. 당일 X-ray·신체 진찰·정밀 평가·MRI 영상 검토·보존 진료·
+      정기 외래·재활까지 한 자리에서. 자보·산재 정직 진료, 응급실 후 가까운 외래. 광범위 십자인대 재건이나
+      인공관절 수술이 필요한 경우 상급 종합병원으로 신속 연계해 드립니다.
+    </p>
+    <div class="cta-buttons">
+      <a href="tel:1600-3415" class="cta-btn-primary">전화 예약 — 1600-3415</a>
+      <a href="https://map.naver.com/v5/search/희망찬병원" class="cta-btn-secondary">온라인 예약 문의</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">희망찬병원 무릎 외상 클리닉</div>
+        <div class="footer-brand-desc">
+          정형외과 전문의가 직접 진료하는 무릎 외상 클리닉입니다. 화성·동탄·오산·평택·수원·용인·병점 지역
+          환자분을 진료합니다. 인대 손상(ACL/PCL/MCL/LCL)·반월상 연골 손상·슬개골 골절·슬개골 탈구 본원
+          직접 진료, 당일 X-ray·신체 진찰·정밀 평가·MRI 영상 검토·보존 진료·정기 외래·재활·자보/산재 정직
+          진료까지 한 자리에서 제공합니다. 15-2-1 고관절·15-2-3 정강이·15-2-4 발목 외상과 통합 진료가
+          가능한 본원 하지 외상 거점입니다.
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>진료 영역</h4>
+        <ul>
+          <li><a href="#무릎외상_결정">무릎 외상 진료</a></li>
+          <li><a href="#무릎외상_증상">증상 자가확인</a></li>
+          <li><a href="#무릎외상_본원진료">본원 직접 진료</a></li>
+          <li><a href="#무릎외상_정밀평가">인대·반월상 정밀 평가</a></li>
+          <li><a href="#무릎외상_재활">회복기 외래</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>오시는 길</h4>
+        <ul>
+          <li>주소 — 경기도 화성시 병점중앙로 174</li>
+          <li>전화 —1600-3415</li>
+          <li>진료 시간 — 09:00~18:00</li>
+          <li>토요일 진료 — 09:00:13:00</li>
+          <li>점심 시간 — 12:30~13:30</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      ⓒ 희망찬병원<br>
+      진료의 결과는 환자 개별 상태에 따라 다를 수 있습니다.<br>
+      광범위 십자인대 재건·무릎 인공관절·관절경 광범위 수술은 본원에서 시행하지 않으며, 상급 종합병원으로
+      신속 연계해 드립니다.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
