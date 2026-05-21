@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 손가락 건 손상 클리닉 — 본원 미세 수술 + 재활까지 한 자리</title>
+<meta name="description" content="수부외과 전문의가 직접 진료하는 손가락 건(힘줄) 손상 클리닉. 신전건·굴곡건 미세 봉합·mallet finger·jersey finger·수술 후 재활까지 한 자리. 화성·동탄·오산·평택.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-bg: #fafaf8;
+  --color-bg-alt: #f3f1ec;
+  --color-bg-section: #ffffff;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --color-text-light: #8a8a8a;
+  --color-border: #e5e3de;
+  --color-primary: #1e3a5f;
+  --color-primary-soft: #4a6885;
+  --color-accent: #8b2331;
+  --color-gold: #a0824a;
+  --color-success: #2d5a3d;
+  --color-urgent: #b91c1c;
+  --color-urgent-bg: #fef2f2;
+  --font-serif: 'Noto Serif KR', 'Times New Roman', serif;
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans); font-weight: 400; font-size: 16px;
+  line-height: 1.75; color: var(--color-text); background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.96); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border); padding: 14px 0;
+}
+.topbar-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.brand {
+  font-family: var(--font-serif); font-weight: 600; font-size: 19px;
+  letter-spacing: -0.01em; color: var(--color-primary);
+}
+.brand-sub {
+  font-size: 12px; color: var(--color-text-light); font-weight: 400;
+  margin-left: 6px; letter-spacing: 0.05em;
+}
+.cta-button {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 22px; background: var(--color-primary); color: #fff;
+  font-size: 14px; font-weight: 500; text-decoration: none;
+  border-radius: 2px; letter-spacing: 0.02em; transition: background .2s;
+}
+.cta-button:hover { background: #142a48; }
+.hero { padding: 100px 32px 80px; max-width: 1200px; margin: 0 auto; }
+.hero-eyebrow {
+  display: inline-block; font-size: 12px; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--color-gold); margin-bottom: 24px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--color-gold);
+}
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.2; font-weight: 400; color: var(--color-primary);
+  margin-bottom: 28px; letter-spacing: -0.02em;
+}
+.hero-title em { font-style: italic; color: var(--color-accent); }
+.hero-desc {
+  font-size: 18px; line-height: 1.85; color: var(--color-text-muted);
+  max-width: 760px; margin-bottom: 40px;
+}
+.hero-quote {
+  border-left: 3px solid var(--color-accent); padding: 16px 24px;
+  margin: 32px 0; background: rgba(139,35,49,.03);
+  font-family: var(--font-serif); font-size: 20px;
+  color: var(--color-primary); line-height: 1.6; max-width: 760px;
+}
+.signature-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2d4f7a 100%);
+  color: #fff; padding: 32px 40px; margin: 40px 0;
+  position: relative; overflow: hidden;
+}
+.signature-banner::before {
+  content: '★'; position: absolute; top: -20px; right: 24px;
+  font-size: 120px; color: rgba(160,130,74,.2); line-height: 1;
+}
+.signature-banner-eyebrow {
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 12px; text-transform: uppercase; font-weight: 600;
+}
+.signature-banner-title {
+  font-family: var(--font-serif); font-size: 28px; font-weight: 500;
+  line-height: 1.4; margin-bottom: 12px; position: relative;
+}
+.signature-banner-desc {
+  font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.85); position: relative;
+}
+.section-nav {
+  background: var(--color-bg-alt); padding: 32px;
+  border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);
+}
+.section-nav-inner { max-width: 1200px; margin: 0 auto; }
+.section-nav-title {
+  font-family: var(--font-serif); font-size: 14px; color: var(--color-text-light);
+  text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 16px;
+}
+.section-nav-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px;
+}
+.section-nav-grid a {
+  font-size: 14px; padding: 8px 12px; color: var(--color-text);
+  text-decoration: none; border-left: 2px solid transparent; transition: all .2s;
+}
+.section-nav-grid a:hover {
+  border-left-color: var(--color-accent); background: rgba(255,255,255,.7);
+  color: var(--color-primary);
+}
+.section-nav-grid a.signature { color: var(--color-accent); font-weight: 500; }
+.section-nav-grid a.signature::before { content: '★ '; font-size: 11px; }
+.landing-section {
+  padding: 100px 32px; max-width: 1100px; margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+}
+.landing-section.signature {
+  background: linear-gradient(180deg, var(--color-bg) 0%, rgba(160,130,74,.04) 100%);
+  position: relative;
+}
+.landing-section.signature::before {
+  content: '시그니처'; position: absolute; top: 60px; right: 32px;
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold); font-weight: 500;
+}
+.landing-eyebrow {
+  font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--color-gold); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.landing-eyebrow::after {
+  content: ''; flex: 1; height: 1px; background: var(--color-border); max-width: 60px;
+}
+.landing-title {
+  font-family: var(--font-serif); font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.25; font-weight: 500; color: var(--color-primary);
+  margin-bottom: 24px; letter-spacing: -0.015em;
+}
+.landing-title strong { font-weight: 600; color: var(--color-accent); font-style: italic; }
+.landing-lead {
+  font-size: 17px; line-height: 1.85; color: var(--color-text-muted);
+  margin-bottom: 40px; max-width: 800px;
+}
+.landing-section h3 {
+  font-family: var(--font-serif); font-size: 22px; font-weight: 500;
+  color: var(--color-primary); margin: 48px 0 16px; letter-spacing: -0.01em;
+}
+.landing-section p {
+  font-size: 16px; line-height: 1.85; color: var(--color-text);
+  margin-bottom: 16px; max-width: 800px;
+}
+.symptom-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px; margin: 32px 0;
+}
+.symptom-card {
+  padding: 24px; background: var(--color-bg-section);
+  border: 1px solid var(--color-border); border-left: 3px solid var(--color-primary);
+}
+.symptom-card.gold { border-left-color: var(--color-gold); }
+.symptom-card.urgent { border-left-color: var(--color-urgent); }
+.symptom-card-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.symptom-card-desc { font-size: 14px; line-height: 1.7; color: var(--color-text-muted); }
+.compare-table {
+  width: 100%; border-collapse: collapse; margin: 32px 0;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.compare-table th, .compare-table td {
+  padding: 14px 20px; text-align: left; font-size: 14px;
+  border-bottom: 1px solid var(--color-border); vertical-align: top;
+}
+.compare-table th {
+  background: var(--color-primary); color: #fff;
+  font-weight: 500; letter-spacing: 0.02em;
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table tbody tr:hover { background: var(--color-bg-alt); }
+.compare-table .label { font-weight: 500; color: var(--color-primary); width: 28%; }
+.highlight-box {
+  background: var(--color-primary); color: #fff; padding: 40px;
+  margin: 40px 0; position: relative;
+}
+.highlight-box::before {
+  content: '"'; position: absolute; top: 8px; left: 24px;
+  font-family: var(--font-serif); font-size: 80px;
+  color: rgba(255,255,255,.2); line-height: 1;
+}
+.highlight-box-content { position: relative; z-index: 1; padding-left: 40px; }
+.highlight-box p {
+  color: #fff; font-family: var(--font-serif); font-size: 19px;
+  line-height: 1.7; margin: 0; max-width: none;
+}
+.highlight-box-caption {
+  font-size: 12px; letter-spacing: 0.2em; color: rgba(255,255,255,.6);
+  text-transform: uppercase; margin-top: 16px;
+}
+.warning-box {
+  background: #fef4f4; border-left: 4px solid var(--color-accent);
+  padding: 24px 28px; margin: 32px 0;
+}
+.warning-box-title {
+  font-weight: 600; color: var(--color-accent); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.warning-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.info-box {
+  background: #f0f4fa; border-left: 4px solid var(--color-primary);
+  padding: 24px 28px; margin: 32px 0;
+}
+.info-box-title {
+  font-weight: 600; color: var(--color-primary); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.info-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.checklist {
+  list-style: none; margin: 24px 0; padding: 24px 32px;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.checklist li {
+  padding: 10px 0 10px 32px; position: relative;
+  font-size: 15px; line-height: 1.6; border-bottom: 1px solid var(--color-border);
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '□'; position: absolute; left: 0; top: 10px;
+  color: var(--color-primary); font-size: 18px; font-weight: 500;
+}
+.steps {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0; margin: 32px 0; border: 1px solid var(--color-border);
+}
+.step {
+  padding: 28px 24px; border-right: 1px solid var(--color-border);
+  background: var(--color-bg-section); position: relative;
+}
+.step:last-child { border-right: none; }
+.step-num {
+  font-family: var(--font-serif); font-size: 13px; letter-spacing: 0.3em;
+  color: var(--color-gold); margin-bottom: 12px;
+}
+.step-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.step-desc { font-size: 13px; line-height: 1.6; color: var(--color-text-muted); }
+.doctor-card {
+  display: grid; grid-template-columns: 1fr 2fr; gap: 40px;
+  padding: 40px; background: var(--color-bg-alt);
+  margin: 48px 0; align-items: center;
+}
+.doctor-credentials { font-family: var(--font-serif); }
+.doctor-name {
+  font-size: 28px; font-weight: 500; color: var(--color-primary); margin-bottom: 4px;
+}
+.doctor-role {
+  font-size: 14px; color: var(--color-text-muted);
+  letter-spacing: 0.05em; margin-bottom: 24px;
+}
+.doctor-credentials ul {
+  list-style: none; font-family: var(--font-sans);
+  font-size: 14px; line-height: 1.9; color: var(--color-text);
+}
+.doctor-credentials li { padding-left: 16px; position: relative; }
+.doctor-credentials li::before {
+  content: '—'; position: absolute; left: 0; color: var(--color-gold);
+}
+.cta-section { background: var(--color-primary); padding: 80px 32px; text-align: center; }
+.cta-inner { max-width: 800px; margin: 0 auto; color: #fff; }
+.cta-eyebrow {
+  font-size: 12px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 16px; text-transform: uppercase;
+}
+.cta-title {
+  font-family: var(--font-serif); font-size: 36px; font-weight: 400;
+  margin-bottom: 16px; line-height: 1.3;
+}
+.cta-desc {
+  font-size: 16px; color: rgba(255,255,255,.85);
+  margin-bottom: 36px; line-height: 1.8;
+}
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-btn-primary {
+  display: inline-block; padding: 16px 40px; background: #fff;
+  color: var(--color-primary); font-weight: 500; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-primary:hover { background: var(--color-gold); color: #fff; }
+.cta-btn-secondary {
+  display: inline-block; padding: 16px 40px; background: transparent;
+  color: #fff; border: 1px solid rgba(255,255,255,.4);
+  font-weight: 400; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-secondary:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+footer { background: #0f1f33; color: rgba(255,255,255,.65); padding: 60px 32px 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+.footer-brand-name {
+  font-family: var(--font-serif); font-size: 22px;
+  font-weight: 500; color: #fff; margin-bottom: 12px;
+}
+.footer-brand-desc {
+  font-size: 13px; line-height: 1.8;
+  color: rgba(255,255,255,.55); max-width: 400px;
+}
+.footer-section h4 {
+  font-family: var(--font-serif); font-size: 14px; color: #fff;
+  margin-bottom: 16px; letter-spacing: 0.05em;
+}
+.footer-section ul { list-style: none; font-size: 13px; line-height: 2; }
+.footer-section a { color: rgba(255,255,255,.65); text-decoration: none; transition: color .2s; }
+.footer-section a:hover { color: var(--color-gold); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px;
+  font-size: 12px; color: rgba(255,255,255,.45); text-align: center; line-height: 1.8;
+}
+@media (max-width: 768px) {
+  .hero { padding: 60px 24px 40px; }
+  .landing-section { padding: 60px 24px; }
+  .topbar-inner { padding: 0 20px; }
+  .doctor-card { grid-template-columns: 1fr; gap: 24px; padding: 28px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cta-section { padding: 60px 24px; }
+  .cta-title { font-size: 28px; }
+  .hero-quote { font-size: 17px; }
+  .landing-section.signature::before { display: none; }
+  .signature-banner-title { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div>
+      <span class="brand">희망찬병원 손가락 건 손상 클리닉</span>
+      <span class="brand-sub">HOPECHAN TENDON INJURY CLINIC</span>
+    </div>
+    <a href="#예약" class="cta-button">진료 예약</a>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-eyebrow">수부외과 손가락 건 손상 진료 · 15-4-3</div>
+  <h1 class="hero-title">
+    손가락 건 손상, <em>본원 미세 수술 영역</em><br>수술만큼 중요한 재활까지.
+  </h1>
+  <p class="hero-desc">
+    손가락 건(힘줄) 손상은 단순한 외상이 아닙니다. 정밀 미세 수술과 체계적 재활이 결과를 좌우하는
+    영역이며, 본원이 직접 진료합니다. 신전건·굴곡건 미세 봉합, mallet finger·jersey finger 등 특수
+    진단명 진료, 수술 후 재활까지 한 자리에서. 손가락이 안 펴지거나 안 굽혀지신다면 본원에서 정밀
+    진료받으시기 바랍니다.
+  </p>
+  <div class="hero-quote">
+    "건 손상은 단순 봉합이 아닙니다. 정밀 수술과 체계적 재활이 손가락의 평생 기능을 결정합니다."<br>
+    <span style="font-size: 14px; color: var(--color-text-muted); font-family: var(--font-sans); font-style: normal;">
+      — 김진균 원장, 수부외과 전문의
+    </span>
+  </div>
+
+  <div class="signature-banner">
+    <div class="signature-banner-eyebrow">본원 미세 수술 + 재활 영역</div>
+    <div class="signature-banner-title">본원 미세 수술 직접 진료 + 수술만큼 중요한 재활 한 자리</div>
+    <div class="signature-banner-desc">
+      신전건·굴곡건 미세 봉합, mallet finger·jersey finger 등 특수 손상 정밀 진료. 환자별 수술 vs 부목
+      결정, 본원 직접 미세 수술, 수술 후 정기 외래·재활까지 통합 진료. 단, 광범위 다발성 건 손상·신경·
+      혈관 동반 광범위 손상은 상급 종합병원 미세수술 영역으로 신속 연계합니다.
+    </div>
+  </div>
+</section>
+
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <div class="section-nav-title">진료 안내 · 5개 영역</div>
+    <div class="section-nav-grid">
+      <a href="#손가락건_결정">손가락 건 손상 진료</a>
+      <a href="#손가락건_증상">증상 — 안 펴짐 vs 안 굽혀짐</a>
+      <a href="#손가락건_본원수술" class="signature">본원 미세 수술 진료</a>
+      <a href="#손가락건_재활" class="signature">수술 후 재활·기능 회복</a>
+      <a href="#손가락건_자보회복">자보·산재·복귀 진료</a>
+    </div>
+  </div>
+</div>
+
+<section id="손가락건_결정" class="landing-section">
+  <div class="landing-eyebrow">랜딩 1 · 손가락 건 손상 진료</div>
+  <h2 class="landing-title">손가락 건(힘줄) 손상, <strong>본원 수부외과</strong>가 진료합니다</h2>
+  <p class="landing-lead">
+    손가락 건 손상은 본원이 직접 진료하는 핵심 외상 영역입니다. 환자분이 손가락 건을 다치셨을 때 어디로
+    가셔야 하는지, 본원이 어떤 진료를 제공하는지 정직하게 안내드립니다. 수부외과 전문의가 정밀 미세
+    수술·재활까지 한 자리에서 진료합니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"건 손상은 손가락의 미세 구조가 손상된 것입니다. 정확한 진단·정밀 수술·체계적 재활이 결과를 결정합니다."</p>
+      <div class="highlight-box-caption">— 본원 손가락 건 손상 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>손가락 건 손상이란</h3>
+  <p>
+    손가락에는 손가락을 굽히는 굴곡건(flexor tendon)과 펴는 신전건(extensor tendon)이 지나갑니다.
+    이 건들이 외상으로 끊어지거나 늘어나면 손가락이 안 펴지거나 안 굽혀지는 기능 저하가 생깁니다.
+    가벼운 부분 손상부터 완전 파열까지 양상이 다양하며, 진료 방향도 환자별로 다릅니다.
+  </p>
+
+  <h3>본원 진료 영역 — 직접 시행 가능</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">신전건 미세 봉합</div>
+      <div class="symptom-card-desc">손가락을 펴는 건의 봉합 수술. 본원 수부외과 직접 시행.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">굴곡건 미세 봉합</div>
+      <div class="symptom-card-desc">손가락을 굽히는 건의 봉합 수술. 정밀 미세 수술.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">mallet finger 진료</div>
+      <div class="symptom-card-desc">추지 손상 — 환자별 수술 vs 6주 부목 정직 결정.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">jersey finger 진료</div>
+      <div class="symptom-card-desc">저지 손가락 — 굴곡건 견열성 손상 정밀 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정밀 영상 평가</div>
+      <div class="symptom-card-desc">초음파·MRI 평가, 부분 vs 완전 손상 정확한 진단.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">재활·정기 외래</div>
+      <div class="symptom-card-desc">수술 후 부목·운동·작업치료 본원에서 통합 진료.</div>
+    </div>
+  </div>
+
+  <h3>본원이 시행하지 않는 영역</h3>
+  <ul class="checklist">
+    <li>광범위 다발성 건 손상 응급 수술 — 상급 종합병원 미세수술 영역</li>
+    <li>신경·혈관 동반 광범위 손상 — 상급 종합병원 영역</li>
+    <li>손가락 절단 손상의 미세 재접합 — 상급 종합병원 영역</li>
+  </ul>
+
+  <div class="info-box">
+    <div class="info-box-title">"본원과 큰 병원, 어떻게 나뉘나요?"</div>
+    <div class="info-box-desc">
+      손가락 절단·다발성 광범위 건 손상·신경·혈관 광범위 손상은 24시간 응급실과 미세수술팀이 있는 상급
+      종합병원으로 가셔야 합니다. 그 외 단일 부위 건 손상·mallet finger·jersey finger·수술 후 외래는
+      본원에서 직접 진료합니다.
+    </div>
+  </div>
+
+  <h3>본원 진료가 적합한 환자</h3>
+  <ul class="checklist">
+    <li>손가락이 안 펴지거나 안 굽혀지는 환자 (신전건·굴곡건 손상 의심)</li>
+    <li>운동 후 손가락 끝이 처지는 환자 (mallet finger 의심)</li>
+    <li>운동 중 손가락이 안 굽혀지는 환자 (jersey finger 의심)</li>
+    <li>외상 후 손가락이 굳어 잘 안 움직이는 환자</li>
+    <li>응급실에서 봉합 후 가까운 거리에서 정기 외래가 필요한 환자</li>
+    <li>큰 병원에서 건 봉합 수술 후 본원 재활이 필요한 환자</li>
+    <li>운동선수·연주자·정밀 직업으로 정확한 손가락 기능이 필요한 환자</li>
+    <li>아이가 손가락을 다친 후 안 펴진다고 보호자가 진료 원하시는 경우</li>
+  </ul>
+</section>
+
+<section id="손가락건_증상" class="landing-section">
+  <div class="landing-eyebrow">랜딩 2 · 증상 — 안 펴짐 vs 안 굽혀짐</div>
+  <h2 class="landing-title">손가락 증상으로 <strong>건 손상의 종류</strong>를 압니다</h2>
+  <p class="landing-lead">
+    손가락 건 손상은 환자분의 증상만 봐도 어느 건이 손상되었는지 짐작할 수 있습니다. "안 펴진다" =
+    신전건, "안 굽혀진다" = 굴곡건. 본원은 환자분의 호소·외상 양상·신체 진찰·필요시 영상 검사로
+    정확한 진단을 내립니다.
+  </p>
+
+  <h3>안 펴짐 = 신전건 손상 의심</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">손가락 끝 안 펴짐</div>
+      <div class="symptom-card-desc">손가락 끝 마디만 처져 있음. mallet finger 가능.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">손가락 전체 안 펴짐</div>
+      <div class="symptom-card-desc">손가락이 굽은 채로 펴지지 않음. 신전건 손상.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">중간 마디 안 펴짐</div>
+      <div class="symptom-card-desc">중간 마디만 굽힌 상태. boutonniere deformity 가능.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">손가락 처짐</div>
+      <div class="symptom-card-desc">힘 빼면 손가락 끝이 자연스럽게 처짐.</div>
+    </div>
+  </div>
+
+  <h3>안 굽혀짐 = 굴곡건 손상 의심</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">손가락 끝 안 굽혀짐</div>
+      <div class="symptom-card-desc">끝 마디만 안 굽혀짐. 심부 굴곡건 손상 가능.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">손가락 전체 안 굽혀짐</div>
+      <div class="symptom-card-desc">주먹을 못 쥠. 굴곡건 완전 손상.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">물건 잡기 어려움</div>
+      <div class="symptom-card-desc">힘없이 잡힘. 건 부분 손상 가능.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">손가락 약함</div>
+      <div class="symptom-card-desc">움직이는데 힘이 안 들어감. 부분 손상 의심.</div>
+    </div>
+  </div>
+
+  <h3>외상 양상별 건 손상 위험도</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>외상 양상</th><th>의심 진단</th><th>본원 안내</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">공·물건에 손가락 끝이 맞음</td>
+        <td>Mallet finger (신전건)</td>
+        <td>본원 즉시 정밀 진료</td>
+      </tr>
+      <tr>
+        <td class="label">유니폼 잡다 손가락이 늘어남</td>
+        <td>Jersey finger (굴곡건)</td>
+        <td>본원 즉시 정밀 진료</td>
+      </tr>
+      <tr>
+        <td class="label">손등이나 손가락 등쪽 베임</td>
+        <td>신전건 손상 가능</td>
+        <td>본원 평가·15-4-2 연계</td>
+      </tr>
+      <tr>
+        <td class="label">손바닥이나 손가락 안쪽 베임</td>
+        <td>굴곡건 손상 가능</td>
+        <td>본원 평가·15-4-2 연계</td>
+      </tr>
+      <tr>
+        <td class="label">손가락이 갑자기 뒤로 꺾임</td>
+        <td>신전건·인대 손상 가능</td>
+        <td>본원 정밀 진료</td>
+      </tr>
+      <tr>
+        <td class="label">베인 후 손가락 못 굽힘</td>
+        <td>굴곡건 + 신경 손상 가능</td>
+        <td>본원 정밀 진료</td>
+      </tr>
+      <tr>
+        <td class="label">외상 없이 갑자기 안 펴짐</td>
+        <td>류마티스 등 자발성 파열 가능</td>
+        <td>본원 평가·필요시 내과 연계</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"베인 상처가 아물면 괜찮다"는 오해</div>
+    <div class="warning-box-desc">
+      손가락을 베인 후 피부 상처는 잘 아물어도 그 안의 건이 끊어진 채로 있으면 손가락 기능이 평생 회복되지
+      않을 수 있습니다. 베인 후 손가락이 안 움직이거나 약하다면 본원에서 정밀 평가를 받아 보십시오.
+      늦게 발견할수록 봉합이 어려워집니다.
+    </div>
+  </div>
+
+  <h3>자가 체크 — 본원 방문 전 확인</h3>
+  <ul class="checklist">
+    <li>다친 손가락이 양손가락 모두 정상 손가락만큼 펴지나요</li>
+    <li>다친 손가락이 양손가락 모두 정상 손가락만큼 굽혀지나요</li>
+    <li>손가락 끝이 처져 있지는 않으신가요</li>
+    <li>주먹을 끝까지 쥘 수 있으신가요</li>
+    <li>손가락을 한 마디씩 따로 굽힐 수 있으신가요</li>
+    <li>다친 손가락에 힘을 줄 때 통증이 있으신가요</li>
+    <li>다친 후 며칠 이상 증상이 지속되고 있나요</li>
+  </ul>
+
+  <div class="info-box">
+    <div class="info-box-title">위 중 셋 이상 해당되시면 본원 정밀 진료 권장</div>
+    <div class="info-box-desc">
+      본원에서는 환자분의 신체 진찰로 어느 건이 손상되었는지 어느 정도까지 정확히 파악합니다. 필요시
+      초음파·MRI 등 정밀 영상 검사로 확인하고, 환자분께 맞는 진료 방향(수술 vs 보존)을 함께 정해갑니다.
+    </div>
+  </div>
+</section>
+
+<section id="손가락건_본원수술" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 3 · 본원 미세 수술 진료 (시그니처)</div>
+  <h2 class="landing-title">신전건·굴곡건 미세 봉합, <strong>본원이 직접</strong> 합니다</h2>
+  <p class="landing-lead">
+    손가락 건 손상은 단순 봉합이 아닌 정밀 미세 수술이 필요한 영역입니다. 본원 수부외과 전문의가 신전건
+    봉합·굴곡건 봉합·mallet finger·jersey finger 등 특수 손상까지 정확하게 진단하고 직접 시술합니다.
+    환자분께 적합한 진료 방향(수술 vs 보존)을 정직하게 안내드리는 것이 본원의 원칙입니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"건 손상에서 환자분께 가장 중요한 것은 정확한 진단입니다. 환자별로 수술이 맞는지, 부목이 맞는지 정직하게 안내드립니다."</p>
+      <div class="highlight-box-caption">— 본원 건 손상 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>신전건 vs 굴곡건 — 본원 진료 차이</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>구분</th><th>신전건 (펴는 건)</th><th>굴곡건 (굽히는 건)</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">위치</td>
+        <td>손등·손가락 등쪽</td>
+        <td>손바닥·손가락 안쪽</td>
+      </tr>
+      <tr>
+        <td class="label">구조</td>
+        <td>비교적 단순·표재성</td>
+        <td>복잡·심부·도르래 구조</td>
+      </tr>
+      <tr>
+        <td class="label">대표 진단</td>
+        <td>Mallet finger·Boutonniere</td>
+        <td>Jersey finger</td>
+      </tr>
+      <tr>
+        <td class="label">수술 난이도</td>
+        <td>비교적 단순</td>
+        <td>정밀·고난도</td>
+      </tr>
+      <tr>
+        <td class="label">진료 옵션</td>
+        <td>수술 또는 부목 (환자별)</td>
+        <td>대부분 수술 필요</td>
+      </tr>
+      <tr>
+        <td class="label">회복 기간</td>
+        <td>6~8주 부목 + 재활</td>
+        <td>8~12주 + 단계적 재활</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Mallet finger — 환자별 결정</h3>
+  <p>
+    Mallet finger(추지 손상)는 신전건 끝 부위가 떨어져 손가락 끝이 처지는 손상입니다. 흔히 농구·배구·
+    야구 등 운동 중에 발생하며, 흔한 만큼 진료 방향이 환자별로 다릅니다. 본원은 일률적으로 수술 또는
+    일률적으로 부목으로 안내하지 않고 환자분 개별 상황에 따라 정직하게 안내드립니다.
+  </p>
+
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">부목 진료 적합</div>
+      <div class="symptom-card-desc">건만 떨어진 경우·발견이 빠른 경우. 6~8주 부목 + 정기 외래.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">수술 진료 적합</div>
+      <div class="symptom-card-desc">골편 동반·관절 침범·환자가 빠른 회복 원하는 경우.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">늦게 발견한 경우</div>
+      <div class="symptom-card-desc">4주 이상 경과·기능 저하 — 본원 정밀 평가 후 결정.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">직업 고려</div>
+      <div class="symptom-card-desc">운동선수·연주자·정밀 직업은 환자별 정밀 결정.</div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <div class="info-box-title">"수술하면 다 낫나요?" — 본원의 정직한 대답</div>
+    <div class="info-box-desc">
+      Mallet finger는 수술해도 손가락 끝이 약간 처진 상태로 남는 경우가 있습니다. 부목 진료해도 100%
+      정상으로 회복되지 않을 수 있습니다. 본원은 환자분께 결과의 일반적인 양상을 정직하게 안내드리고
+      함께 결정해 갑니다.
+    </div>
+  </div>
+
+  <h3>Jersey finger — 본원 즉시 진료</h3>
+  <p>
+    Jersey finger(저지 손가락)는 굴곡건이 손가락 끝 마디 뼈에서 떨어지는 손상입니다. 럭비·미식축구 등
+    옷을 잡는 동작에서 흔히 발생하며, 손가락이 안 굽혀집니다. 굴곡건은 빨리 봉합하지 않으면 위쪽으로
+    말려 올라가 봉합이 어려워질 수 있어, 빠른 진단과 수술 결정이 중요합니다.
+  </p>
+
+  <h3>본원 미세 수술 진료 흐름</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">초진·진찰</div>
+      <div class="step-desc">증상·외상 양상·기능 정밀 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">정밀 영상</div>
+      <div class="step-desc">초음파·MRI·X-ray 통합 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">진료 방향</div>
+      <div class="step-desc">수술 vs 보존 환자별 함께 결정</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">미세 수술</div>
+      <div class="step-desc">수부외과 전문의 직접 미세 봉합</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">재활 시작</div>
+      <div class="step-desc">단계적 부목·운동·외래 (랜딩 4 참조)</div>
+    </div>
+  </div>
+
+  <h3>본원 진료의 강점</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">수부외과 전문의</div>
+      <div class="symptom-card-desc">손 해부와 기능에 정통한 전문의가 직접 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정밀 미세 봉합</div>
+      <div class="symptom-card-desc">건의 양 끝을 정확히 연결하는 미세 봉합 기법.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">한 자리 진료</div>
+      <div class="symptom-card-desc">수술·재활·정기 외래 본원에서 끊김 없이.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">시너지</div>
+      <div class="symptom-card-desc">CTS·방아쇠손가락·듀피트렌과 통합 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">15-4-1·2 통합</div>
+      <div class="symptom-card-desc">골절·열상·건 손상 복합 외상 통합 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정직 진료</div>
+      <div class="symptom-card-desc">수술 vs 부목 환자별 정직 안내. 일률적 권유 없이.</div>
+    </div>
+  </div>
+
+  <h3>위험군별 본원 진료 접근</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>위험군</th><th>특별 고려</th><th>본원 진료 방향</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">운동선수</td>
+        <td>복귀 시점·기능 보존</td>
+        <td>정밀 수술·단계적 재활·복귀 진료</td>
+      </tr>
+      <tr>
+        <td class="label">음악가·연주자</td>
+        <td>정밀 손가락 기능</td>
+        <td>미세 봉합·정밀 재활·점진 복귀</td>
+      </tr>
+      <tr>
+        <td class="label">소아·어린이</td>
+        <td>성장판·세심한 진료</td>
+        <td>세심한 진찰·보호자 관리 안내</td>
+      </tr>
+      <tr>
+        <td class="label">노인</td>
+        <td>피부·건 약화</td>
+        <td>환자별 수술·보존 결정</td>
+      </tr>
+      <tr>
+        <td class="label">류마티스 환자</td>
+        <td>자발성 파열 가능</td>
+        <td>본원 평가·필요시 내과 연계</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="손가락건_재활" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 4 · 수술 후 재활·기능 회복 (시그니처)</div>
+  <h2 class="landing-title">건 손상은 <strong>수술만큼 재활</strong>이 중요합니다</h2>
+  <p class="landing-lead">
+    손가락 건 수술의 결과는 수술 그 자체만큼이나 수술 후 재활이 결정합니다. 봉합한 건이 잘 이어지려면
+    정확한 시점에 부목·운동·작업치료가 단계적으로 진행되어야 하며, 너무 빨리 움직이면 봉합이 끊어지고
+    너무 안 움직이면 굳어서 평생 손가락이 안 움직일 수 있습니다. 본원은 수술과 재활을 한 자리에서
+    체계적으로 진료합니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"수술이 끝났다고 진료가 끝난 게 아닙니다. 건 손상의 진짜 진료는 수술 후부터 시작됩니다."</p>
+      <div class="highlight-box-caption">— 본원 건 손상 재활 원칙</div>
+    </div>
+  </div>
+
+  <h3>왜 재활이 수술만큼 중요한가요</h3>
+  <p>
+    건은 한 번 끊어지면 자연 치유가 어렵고, 봉합 후에도 부드러운 결합 조직이 시간이 지나며 단단해지는
+    과정이 필요합니다. 이 기간에 너무 빨리 강하게 움직이면 봉합이 끊어지고, 너무 안 움직이면 주변
+    조직과 유착되어 굳음·기능 저하가 생깁니다. 정확한 시점에 정확한 운동이 핵심입니다.
+  </p>
+
+  <h3>본원 재활 단계 (일반적 흐름)</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>시기</th><th>진료 항목</th><th>주의 사항</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">수술 후 0~2주</td>
+        <td>부목 고정·통증 관리·소독</td>
+        <td>강한 움직임 절대 금지</td>
+      </tr>
+      <tr>
+        <td class="label">수술 후 2~4주</td>
+        <td>제한적 수동 운동 시작</td>
+        <td>의사 지시에 따라 단계적</td>
+      </tr>
+      <tr>
+        <td class="label">수술 후 4~6주</td>
+        <td>능동 운동 시작·물리치료</td>
+        <td>아직 강한 힘 사용 금지</td>
+      </tr>
+      <tr>
+        <td class="label">수술 후 6~8주</td>
+        <td>점진적 일상 복귀·작업치료</td>
+        <td>의사 평가 후 단계적</td>
+      </tr>
+      <tr>
+        <td class="label">수술 후 8~12주</td>
+        <td>일상 활동 거의 복귀</td>
+        <td>강한 운동·작업은 의사 평가 후</td>
+      </tr>
+      <tr>
+        <td class="label">수술 후 3~6개월</td>
+        <td>완전 회복 평가·정기 외래</td>
+        <td>운동선수·연주자는 별도 안내</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>본원 재활 진료의 강점</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">수술 의사가 재활도</div>
+      <div class="symptom-card-desc">수술한 의사가 직접 재활 지도. 일관된 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">단계적 운동 안내</div>
+      <div class="symptom-card-desc">시기별 적합한 운동을 정확히 안내.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">물리치료·작업치료</div>
+      <div class="symptom-card-desc">본원에서 물리치료·작업치료 한 자리 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">합병증 조기 발견</div>
+      <div class="symptom-card-desc">재파열·굳음·유착 등 정기 외래로 조기 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">기능 회복 평가</div>
+      <div class="symptom-card-desc">재활 단계마다 환자별 기능 평가·진료 조정.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">큰 병원 수술 후 재활</div>
+      <div class="symptom-card-desc">대학병원 수술 후 본원에서 정기 재활 외래.</div>
+    </div>
+  </div>
+
+  <h3>Mallet finger 부목 진료 — 본원 통합 진료</h3>
+  <p>
+    Mallet finger는 수술 없이 6~8주 부목 진료로 회복되는 경우가 많습니다. 본원은 정확한 부목 적용·
+    정기 외래·기능 회복 평가까지 직접 진료합니다. 부목 진료는 단순한 외래에서 끝나는 게 아니라,
+    매주 정기 외래로 부목 상태 확인·진행 평가가 필요합니다.
+  </p>
+
+  <ul class="checklist">
+    <li>부목은 6주~8주 동안 24시간 착용 (씻을 때도 임시 부목 유지)</li>
+    <li>임의로 풀어 손가락 한 번이라도 굽히면 처음부터 다시</li>
+    <li>매주 본원 외래에서 부목 상태·피부 점검</li>
+    <li>6~8주 후 부목 풀고 단계적 운동 시작</li>
+    <li>운동 시작 후에도 야간에는 부목 착용 (몇 주간)</li>
+    <li>정기 외래로 호전 평가·필요시 진료 방향 조정</li>
+  </ul>
+
+  <h3>합병증 신호 — 즉시 본원 외래</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">봉합 부위 갑자기 풀림</div>
+      <div class="symptom-card-desc">갑자기 손가락 다시 안 움직임. 재파열 의심.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">심한 통증·부음</div>
+      <div class="symptom-card-desc">감염·재손상 가능. 즉시 본원으로.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">손가락 굳어 안 움직임</div>
+      <div class="symptom-card-desc">유착·강직 가능. 재활 진료 강화 필요.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">손가락 끝 저림 지속</div>
+      <div class="symptom-card-desc">신경 동반 손상 가능. 본원 정밀 평가.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">부목 풀린 후 처짐</div>
+      <div class="symptom-card-desc">Mallet finger 재발 가능. 본원 재평가.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">발열·전신 증상</div>
+      <div class="symptom-card-desc">전신 감염 가능. 본원·필요시 응급실.</div>
+    </div>
+  </div>
+
+  <div class="warning-box">
+    <div class="warning-box-title">자가 운동만으로는 위험합니다</div>
+    <div class="warning-box-desc">
+      인터넷 영상만 보고 따라하시면 너무 빨리·강하게 움직여 봉합이 끊어질 수 있고, 반대로 너무 안 움직여
+      굳어 평생 손가락이 안 움직일 수 있습니다. 건 손상의 재활은 반드시 의료진의 단계적 안내에 따라
+      진행되어야 합니다. 본원에서 끊김 없이 진료받으시기 바랍니다.
+    </div>
+  </div>
+</section>
+
+<section id="손가락건_자보회복" class="landing-section">
+  <div class="landing-eyebrow">랜딩 5 · 자보·산재·복귀 진료</div>
+  <h2 class="landing-title">정직 진료·정확한 복귀 시점 <strong>함께 결정</strong></h2>
+  <p class="landing-lead">
+    교통사고나 작업 중 손가락 건 손상으로 자보·산재 진료가 필요하신 환자분, 운동선수·연주자로 정확한
+    복귀 시점이 중요한 환자분, 일반 직장 복귀 시점이 궁금한 환자분 모두 본원에서 정직 진료로 안내드립니다.
+    입원 일수 부풀리기·과잉 진료는 본원에서 하지 않습니다.
+  </p>
+
+  <h3>자보·산재 진료 안내</h3>
+  <table class="compare-table">
+    <tbody>
+      <tr>
+        <td class="label">진료 대상</td>
+        <td>교통사고·작업 중 손가락 건 손상 환자</td>
+      </tr>
+      <tr>
+        <td class="label">진료 항목</td>
+        <td>외래 진료·정밀 영상·미세 봉합 수술·정기 외래·재활·물리치료·작업치료</td>
+      </tr>
+      <tr>
+        <td class="label">필요 서류</td>
+        <td>자보 — 경찰 사고 접수·보험사 접수 / 산재 — 사업장·근로복지공단 접수</td>
+      </tr>
+      <tr>
+        <td class="label">진료비</td>
+        <td>보험사·근로복지공단 직접 정산. 본인 부담 일반적으로 없음</td>
+      </tr>
+      <tr>
+        <td class="label">진단서·소견서</td>
+        <td>본원 정직한 진단·진료 내역으로 발급</td>
+      </tr>
+      <tr>
+        <td class="label">휴업 진단서</td>
+        <td>의학적으로 필요한 기간만큼 정직 발급</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <div class="warning-box-title">본원이 하지 않는 것 — 자보·산재 진료 원칙</div>
+    <div class="warning-box-desc">
+      본원은 다음을 절대 하지 않습니다 — 입원 일수 부풀리기, 의학적으로 불필요한 입원·과잉 검사·과잉 진료,
+      허위 진단서 발급, 의학적으로 불필요한 휴업 기간 연장. 환자분이 정직하게 진료받으시는 것이 길게 보면
+      가장 안전합니다.
+    </div>
+  </div>
+
+  <h3>운동선수·연주자 복귀 진료</h3>
+  <p>
+    운동선수나 음악가·연주자는 정확한 복귀 시점이 본인의 직업·경력에 결정적인 영향을 미칩니다. 본원은
+    환자분의 직업과 요구하는 손가락 기능에 맞춰 단계적 복귀 진료를 안내합니다.
+  </p>
+
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">운동선수</div>
+      <div class="symptom-card-desc">종목·포지션별 손가락 기능 요구 평가. 단계적 복귀 안내.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">음악가·연주자</div>
+      <div class="symptom-card-desc">악기·연주 양식별 정밀 손가락 기능 평가. 점진 복귀.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">정밀 직업</div>
+      <div class="symptom-card-desc">외과의·치과의·미용사 등 정밀 작업 복귀 평가.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">일반 직장</div>
+      <div class="symptom-card-desc">업무 강도에 맞춘 복귀 안내. 출근·운전·키보드.</div>
+    </div>
+  </div>
+
+  <h3>복귀 단계 일반 안내</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>시기</th><th>복귀 가능 활동</th><th>피해야 할 것</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">수술 후 2~4주</td>
+        <td>가벼운 사무 (지시에 따라)</td>
+        <td>손 사용·물건 잡기·강한 압력</td>
+      </tr>
+      <tr>
+        <td class="label">수술 후 4~6주</td>
+        <td>일상 활동 일부·운전 (의사 평가 후)</td>
+        <td>강한 움직임·접촉 운동</td>
+      </tr>
+      <tr>
+        <td class="label">수술 후 6~8주</td>
+        <td>점진적 일상·키보드 작업</td>
+        <td>중량물·강한 운동</td>
+      </tr>
+      <tr>
+        <td class="label">수술 후 8~12주</td>
+        <td>대부분 일상 가능</td>
+        <td>전문 운동·강한 작업은 평가 후</td>
+      </tr>
+      <tr>
+        <td class="label">수술 후 3~6개월</td>
+        <td>운동선수·연주자도 평가 후 복귀</td>
+        <td>의사 허가 없이 강한 복귀 X</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>응급실·큰 병원에서 봉합 후 본원 외래</h3>
+  <p>
+    교통사고로 응급실에서 건 봉합을 받으셨거나, 큰 병원에서 미세 수술을 받으신 환자분도 그 이후의 정기
+    외래·재활·실밥 제거·복귀 진료는 가까운 본원에서 받으실 수 있습니다. 본원은 환자분의 영상·진료
+    기록을 큰 병원으로부터 이어받아 진료를 계속합니다.
+  </p>
+
+  <div class="info-box">
+    <div class="info-box-title">"수술은 큰 병원에서, 재활은 본원에서"</div>
+    <div class="info-box-desc">
+      광범위 외상으로 큰 병원에서 수술받으신 환자분이 매번 큰 병원 외래를 다니시기는 부담입니다. 본원은
+      가까운 거리에서 환자분의 재활·외래·실밥 제거·복귀 진료까지 진료받을 수 있습니다. 큰 병원 진료
+      기록과 영상을 가져오시면 본원에서 종합적으로 검토해 드립니다.
+    </div>
+  </div>
+</section>
+
+<section style="padding: 80px 32px; max-width: 1100px; margin: 0 auto;">
+  <div class="doctor-card">
+    <div>
+      <div style="font-family: var(--font-serif); font-size: 13px; color: var(--color-gold); letter-spacing: 0.2em; margin-bottom: 12px;">DIRECTOR</div>
+      <div class="doctor-name">김진균 원장</div>
+      <div class="doctor-role">희망찬병원 손가락 건 손상 클리닉</div>
+    </div>
+    <div class="doctor-credentials">
+      <ul>
+        <li>수부외과 전문의</li>
+        <li>희망찬병원 원장</li>
+        <li>유튜브 채널 "털보의사" 운영 — 손 질환 환자 교육</li>
+        <li>손가락 건 손상·mallet finger·CTS·방아쇠손가락·듀피트렌 환자 교육 콘텐츠 다수</li>
+        <li>화성·동탄·오산·평택 지역 수부외과 진료 거점</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="예약" class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">진료 예약</div>
+    <h2 class="cta-title">손가락 건 손상, 본원 미세 수술 + 재활 한 자리</h2>
+    <p class="cta-desc">
+      수부외과 전문의 김진균 원장이 진료합니다. 신전건·굴곡건 미세 봉합·mallet finger·jersey finger
+      정밀 진료·수술 후 재활·정기 외래·자보/산재 정직 진료까지 한 자리에서. 광범위 다발성 건 손상이나
+      절단 손상은 상급 종합병원 미세수술 영역으로 신속 연계해 드립니다.
+    </p>
+    <div class="cta-buttons">
+      <a href="tel:1600-3415" class="cta-btn-primary">전화 예약 — 1600-3415</a>
+      <a href="#" class="cta-btn-secondary">온라인 예약 문의</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">희망찬병원 손가락 건 손상 클리닉</div>
+        <div class="footer-brand-desc">
+          수부외과 전문의가 직접 진료하는 손가락 건(힘줄) 손상 클리닉입니다. 화성·동탄·오산·평택·수원·용인·
+          병점 지역 환자분을 진료합니다. 손가락 건 손상은 본원이 직접 진료하는 핵심 영역으로, 신전건·굴곡건
+          미세 봉합·mallet finger·jersey finger 등 특수 손상 정밀 진료·수술 후 단계적 재활·정기 외래까지
+          한 자리에서 제공합니다. 손 질환(CTS·방아쇠손가락·듀피트렌) 및 손가락 골절·손가락 열상과 통합 진료가 가능한 본원만의 강점입니다.
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>진료 영역</h4>
+        <ul>
+          <li><a href="#손가락건_결정">손가락 건 손상 진료</a></li>
+          <li><a href="#손가락건_증상">증상 자가확인</a></li>
+          <li><a href="#손가락건_본원수술">본원 미세 수술</a></li>
+          <li><a href="#손가락건_재활">수술 후 재활</a></li>
+          <li><a href="#손가락건_자보회복">자보·복귀 진료</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>오시는 길</h4>
+        <ul>
+          <li>주소 — 경기도 화성시 병점중앙로 174</li>
+          <li>전화 —1600-3415</li>
+          <li>진료 시간 — 09:00~18:00</li>
+          <li>토요일 진료 — 09:00:13:00</li>
+          <li>점심 시간 — 12:30~13:30</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      ⓒ 희망찬병원 <br>
+     진료의 결과는 환자 개별 상태에 따라 다를 수 있습니다.<br>
+      광범위 다발성 건 손상·신경·혈관 동반 광범위 손상·손가락 절단 손상은 본원에서 시행하지 않으며,
+      상급 종합병원으로 신속 연계해 드립니다.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
