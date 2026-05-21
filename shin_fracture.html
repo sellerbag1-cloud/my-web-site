@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 정강이 골절 클리닉 — 본원 직접 진료 · 스트레스 골절 정밀 진단</title>
+<meta name="description" content="정형외과 전문의가 직접 진료하는 정강이 골절 클리닉. 경골·비골 골절 X-ray·도수 정복·깁스. 운동선수 스트레스 골절 정밀 진단. 자보·산재 정직 진료. 화성·동탄·오산·평택.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-bg: #fafaf8;
+  --color-bg-alt: #f3f1ec;
+  --color-bg-section: #ffffff;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --color-text-light: #8a8a8a;
+  --color-border: #e5e3de;
+  --color-primary: #1e3a5f;
+  --color-primary-soft: #4a6885;
+  --color-accent: #8b2331;
+  --color-gold: #a0824a;
+  --color-success: #2d5a3d;
+  --color-urgent: #b91c1c;
+  --color-urgent-bg: #fef2f2;
+  --font-serif: 'Noto Serif KR', 'Times New Roman', serif;
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans); font-weight: 400; font-size: 16px;
+  line-height: 1.75; color: var(--color-text); background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.96); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border); padding: 14px 0;
+}
+.topbar-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.brand {
+  font-family: var(--font-serif); font-weight: 600; font-size: 19px;
+  letter-spacing: -0.01em; color: var(--color-primary);
+}
+.brand-sub {
+  font-size: 12px; color: var(--color-text-light); font-weight: 400;
+  margin-left: 6px; letter-spacing: 0.05em;
+}
+.cta-button {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 22px; background: var(--color-primary); color: #fff;
+  font-size: 14px; font-weight: 500; text-decoration: none;
+  border-radius: 2px; letter-spacing: 0.02em; transition: background .2s;
+}
+.cta-button:hover { background: #142a48; }
+.hero { padding: 100px 32px 80px; max-width: 1200px; margin: 0 auto; }
+.hero-eyebrow {
+  display: inline-block; font-size: 12px; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--color-gold); margin-bottom: 24px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--color-gold);
+}
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.2; font-weight: 400; color: var(--color-primary);
+  margin-bottom: 28px; letter-spacing: -0.02em;
+}
+.hero-title em { font-style: italic; color: var(--color-accent); }
+.hero-desc {
+  font-size: 18px; line-height: 1.85; color: var(--color-text-muted);
+  max-width: 760px; margin-bottom: 40px;
+}
+.hero-quote {
+  border-left: 3px solid var(--color-accent); padding: 16px 24px;
+  margin: 32px 0; background: rgba(139,35,49,.03);
+  font-family: var(--font-serif); font-size: 20px;
+  color: var(--color-primary); line-height: 1.6; max-width: 760px;
+}
+.signature-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2d4f7a 100%);
+  color: #fff; padding: 32px 40px; margin: 40px 0;
+  position: relative; overflow: hidden;
+}
+.signature-banner::before {
+  content: '★'; position: absolute; top: -20px; right: 24px;
+  font-size: 120px; color: rgba(160,130,74,.2); line-height: 1;
+}
+.signature-banner-eyebrow {
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 12px; text-transform: uppercase; font-weight: 600;
+}
+.signature-banner-title {
+  font-family: var(--font-serif); font-size: 28px; font-weight: 500;
+  line-height: 1.4; margin-bottom: 12px; position: relative;
+}
+.signature-banner-desc {
+  font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.85); position: relative;
+}
+.section-nav {
+  background: var(--color-bg-alt); padding: 32px;
+  border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);
+}
+.section-nav-inner { max-width: 1200px; margin: 0 auto; }
+.section-nav-title {
+  font-family: var(--font-serif); font-size: 14px; color: var(--color-text-light);
+  text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 16px;
+}
+.section-nav-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px;
+}
+.section-nav-grid a {
+  font-size: 14px; padding: 8px 12px; color: var(--color-text);
+  text-decoration: none; border-left: 2px solid transparent; transition: all .2s;
+}
+.section-nav-grid a:hover {
+  border-left-color: var(--color-accent); background: rgba(255,255,255,.7);
+  color: var(--color-primary);
+}
+.section-nav-grid a.signature { color: var(--color-accent); font-weight: 500; }
+.section-nav-grid a.signature::before { content: '★ '; font-size: 11px; }
+.landing-section {
+  padding: 100px 32px; max-width: 1100px; margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+}
+.landing-section.signature {
+  background: linear-gradient(180deg, var(--color-bg) 0%, rgba(160,130,74,.04) 100%);
+  position: relative;
+}
+.landing-section.signature::before {
+  content: '시그니처'; position: absolute; top: 60px; right: 32px;
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold); font-weight: 500;
+}
+.landing-eyebrow {
+  font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--color-gold); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.landing-eyebrow::after {
+  content: ''; flex: 1; height: 1px; background: var(--color-border); max-width: 60px;
+}
+.landing-title {
+  font-family: var(--font-serif); font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.25; font-weight: 500; color: var(--color-primary);
+  margin-bottom: 24px; letter-spacing: -0.015em;
+}
+.landing-title strong { font-weight: 600; color: var(--color-accent); font-style: italic; }
+.landing-lead {
+  font-size: 17px; line-height: 1.85; color: var(--color-text-muted);
+  margin-bottom: 40px; max-width: 800px;
+}
+.landing-section h3 {
+  font-family: var(--font-serif); font-size: 22px; font-weight: 500;
+  color: var(--color-primary); margin: 48px 0 16px; letter-spacing: -0.01em;
+}
+.landing-section p {
+  font-size: 16px; line-height: 1.85; color: var(--color-text);
+  margin-bottom: 16px; max-width: 800px;
+}
+.symptom-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px; margin: 32px 0;
+}
+.symptom-card {
+  padding: 24px; background: var(--color-bg-section);
+  border: 1px solid var(--color-border); border-left: 3px solid var(--color-primary);
+}
+.symptom-card.gold { border-left-color: var(--color-gold); }
+.symptom-card.urgent { border-left-color: var(--color-urgent); }
+.symptom-card-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.symptom-card-desc { font-size: 14px; line-height: 1.7; color: var(--color-text-muted); }
+.compare-table {
+  width: 100%; border-collapse: collapse; margin: 32px 0;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.compare-table th, .compare-table td {
+  padding: 14px 20px; text-align: left; font-size: 14px;
+  border-bottom: 1px solid var(--color-border); vertical-align: top;
+}
+.compare-table th {
+  background: var(--color-primary); color: #fff;
+  font-weight: 500; letter-spacing: 0.02em;
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table tbody tr:hover { background: var(--color-bg-alt); }
+.compare-table .label { font-weight: 500; color: var(--color-primary); width: 28%; }
+.highlight-box {
+  background: var(--color-primary); color: #fff; padding: 40px;
+  margin: 40px 0; position: relative;
+}
+.highlight-box::before {
+  content: '"'; position: absolute; top: 8px; left: 24px;
+  font-family: var(--font-serif); font-size: 80px;
+  color: rgba(255,255,255,.2); line-height: 1;
+}
+.highlight-box-content { position: relative; z-index: 1; padding-left: 40px; }
+.highlight-box p {
+  color: #fff; font-family: var(--font-serif); font-size: 19px;
+  line-height: 1.7; margin: 0; max-width: none;
+}
+.highlight-box-caption {
+  font-size: 12px; letter-spacing: 0.2em; color: rgba(255,255,255,.6);
+  text-transform: uppercase; margin-top: 16px;
+}
+.warning-box {
+  background: #fef4f4; border-left: 4px solid var(--color-accent);
+  padding: 24px 28px; margin: 32px 0;
+}
+.warning-box-title {
+  font-weight: 600; color: var(--color-accent); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.warning-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.info-box {
+  background: #f0f4fa; border-left: 4px solid var(--color-primary);
+  padding: 24px 28px; margin: 32px 0;
+}
+.info-box-title {
+  font-weight: 600; color: var(--color-primary); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.info-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.checklist {
+  list-style: none; margin: 24px 0; padding: 24px 32px;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.checklist li {
+  padding: 10px 0 10px 32px; position: relative;
+  font-size: 15px; line-height: 1.6; border-bottom: 1px solid var(--color-border);
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '□'; position: absolute; left: 0; top: 10px;
+  color: var(--color-primary); font-size: 18px; font-weight: 500;
+}
+.steps {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0; margin: 32px 0; border: 1px solid var(--color-border);
+}
+.step {
+  padding: 28px 24px; border-right: 1px solid var(--color-border);
+  background: var(--color-bg-section); position: relative;
+}
+.step:last-child { border-right: none; }
+.step-num {
+  font-family: var(--font-serif); font-size: 13px; letter-spacing: 0.3em;
+  color: var(--color-gold); margin-bottom: 12px;
+}
+.step-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.step-desc { font-size: 13px; line-height: 1.6; color: var(--color-text-muted); }
+.doctor-card {
+  display: grid; grid-template-columns: 1fr 2fr; gap: 40px;
+  padding: 40px; background: var(--color-bg-alt);
+  margin: 48px 0; align-items: center;
+}
+.doctor-credentials { font-family: var(--font-serif); }
+.doctor-name {
+  font-size: 28px; font-weight: 500; color: var(--color-primary); margin-bottom: 4px;
+}
+.doctor-role {
+  font-size: 14px; color: var(--color-text-muted);
+  letter-spacing: 0.05em; margin-bottom: 24px;
+}
+.doctor-credentials ul {
+  list-style: none; font-family: var(--font-sans);
+  font-size: 14px; line-height: 1.9; color: var(--color-text);
+}
+.doctor-credentials li { padding-left: 16px; position: relative; }
+.doctor-credentials li::before {
+  content: '—'; position: absolute; left: 0; color: var(--color-gold);
+}
+.cta-section { background: var(--color-primary); padding: 80px 32px; text-align: center; }
+.cta-inner { max-width: 800px; margin: 0 auto; color: #fff; }
+.cta-eyebrow {
+  font-size: 12px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 16px; text-transform: uppercase;
+}
+.cta-title {
+  font-family: var(--font-serif); font-size: 36px; font-weight: 400;
+  margin-bottom: 16px; line-height: 1.3;
+}
+.cta-desc {
+  font-size: 16px; color: rgba(255,255,255,.85);
+  margin-bottom: 36px; line-height: 1.8;
+}
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-btn-primary {
+  display: inline-block; padding: 16px 40px; background: #fff;
+  color: var(--color-primary); font-weight: 500; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-primary:hover { background: var(--color-gold); color: #fff; }
+.cta-btn-secondary {
+  display: inline-block; padding: 16px 40px; background: transparent;
+  color: #fff; border: 1px solid rgba(255,255,255,.4);
+  font-weight: 400; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-secondary:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+footer { background: #0f1f33; color: rgba(255,255,255,.65); padding: 60px 32px 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+.footer-brand-name {
+  font-family: var(--font-serif); font-size: 22px;
+  font-weight: 500; color: #fff; margin-bottom: 12px;
+}
+.footer-brand-desc {
+  font-size: 13px; line-height: 1.8;
+  color: rgba(255,255,255,.55); max-width: 400px;
+}
+.footer-section h4 {
+  font-family: var(--font-serif); font-size: 14px; color: #fff;
+  margin-bottom: 16px; letter-spacing: 0.05em;
+}
+.footer-section ul { list-style: none; font-size: 13px; line-height: 2; }
+.footer-section a { color: rgba(255,255,255,.65); text-decoration: none; transition: color .2s; }
+.footer-section a:hover { color: var(--color-gold); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px;
+  font-size: 12px; color: rgba(255,255,255,.45); text-align: center; line-height: 1.8;
+}
+@media (max-width: 768px) {
+  .hero { padding: 60px 24px 40px; }
+  .landing-section { padding: 60px 24px; }
+  .topbar-inner { padding: 0 20px; }
+  .doctor-card { grid-template-columns: 1fr; gap: 24px; padding: 28px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cta-section { padding: 60px 24px; }
+  .cta-title { font-size: 28px; }
+  .hero-quote { font-size: 17px; }
+  .landing-section.signature::before { display: none; }
+  .signature-banner-title { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div>
+      <span class="brand">희망찬병원 정강이 골절 클리닉</span>
+      <span class="brand-sub">HOPECHAN TIBIA FRACTURE CLINIC</span>
+    </div>
+    <a href="#예약" class="cta-button">진료 예약</a>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-eyebrow">정형외과 정강이 골절 진료 · 15-2-3</div>
+  <h1 class="hero-title">
+    정강이 골절, <em>본원이 직접</em><br>진료합니다.
+  </h1>
+  <p class="hero-desc">
+    정강이 골절(경골·비골)은 본원이 직접 진료하는 영역입니다. 정형외과 전문의가 당일 X-ray·도수 정복·
+    깁스/부목·정기 외래·재활까지 한 자리에서 시행합니다. 특히 달리기·마라톤·운동선수의 정강이
+    스트레스 골절은 본원이 정밀 진단하는 시그니처 영역입니다. 단, 광범위 다발성·관절면 침범·외고정은
+    상급 종합병원으로 연계해 드립니다.
+  </p>
+  <div class="hero-quote">
+    "정강이 골절은 단순 깁스가 끝이 아닙니다. 정확한 정복과 재활이 평생 걷기를 좌우합니다."<br>
+    <span style="font-size: 14px; color: var(--color-text-muted); font-family: var(--font-sans); font-style: normal;">
+      — 김진균 원장, 정형외과 전문의
+    </span>
+  </div>
+
+  <div class="signature-banner">
+    <div class="signature-banner-eyebrow">본원 직접 진료 + 스트레스 골절 정밀 진단</div>
+    <div class="signature-banner-title">경골·비골 골절 — 한 자리, 스트레스 골절 — 정밀 진단</div>
+    <div class="signature-banner-desc">
+      당일 X-ray·도수 정복·깁스/부목·정기 외래·재활까지 본원 정형외과 전문의가 직접 진료합니다.
+      러닝·마라톤 후 정강이 만성 통증은 스트레스 골절일 수 있으며, 본원이 정밀 진단합니다. 단,
+      광범위 다발성·관절면 침범·외고정은 상급 종합병원으로 신속 연계해 드립니다.
+    </div>
+  </div>
+</section>
+
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <div class="section-nav-title">진료 안내 · 5개 영역</div>
+    <div class="section-nav-grid">
+      <a href="#정강이골절_결정">정강이 골절 진료·진단</a>
+      <a href="#정강이골절_증상">증상 자가확인·외상 양상</a>
+      <a href="#정강이골절_본원진료" class="signature">본원 직접 진료·정복·깁스</a>
+      <a href="#정강이골절_스트레스" class="signature">스트레스 골절 정밀 진단</a>
+      <a href="#정강이골절_재활">회복기 외래·재활</a>
+    </div>
+  </div>
+</div>
+
+<section id="정강이골절_결정" class="landing-section">
+  <div class="landing-eyebrow">랜딩 1 · 정강이 골절 진료</div>
+  <h2 class="landing-title">정강이 골절, <strong>본원 정형외과</strong>가 진료합니다</h2>
+  <p class="landing-lead">
+    정강이 골절은 본원이 직접 진료하는 영역입니다. 환자분이 정강이를 다치셨을 때 어떤 진단이 가능하고
+    본원이 어디까지 진료하는지 정직하게 안내드립니다. 정형외과 전문의가 환자분께 적합한 진료 방향을
+    함께 정해갑니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"정강이 골절은 단순해 보여도 정복의 정확도가 평생 걷기를 결정합니다. 본원에서 정확하게 진료받으십시오."</p>
+      <div class="highlight-box-caption">— 본원 정강이 골절 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 진료 영역 — 직접 시행 가능</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">경골 골절</div>
+      <div class="symptom-card-desc">정강이 큰 뼈 골절. 본원 X-ray·도수 정복·깁스.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">비골 골절</div>
+      <div class="symptom-card-desc">정강이 옆 뼈 골절. 보존 진료·깁스로 회복.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">경비골 동시 골절</div>
+      <div class="symptom-card-desc">두 뼈 동시 골절. 본원 정밀 평가·진료 방향.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">스트레스 골절</div>
+      <div class="symptom-card-desc">운동선수 만성 통증의 원인. 본원 정밀 진단 (★).</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">소아 정강이 골절</div>
+      <div class="symptom-card-desc">아이 정강이 골절 본원 세심 진료·정기 외래.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">15-2 통합 진료</div>
+      <div class="symptom-card-desc">무릎·발목·발 외상과 함께 본원 하지 외상 거점.</div>
+    </div>
+  </div>
+
+  <h3>본원이 시행하지 않는 영역</h3>
+  <ul class="checklist">
+    <li>광범위 다발성 정강이 골절 응급 수술 — 상급 종합병원 영역</li>
+    <li>경골 외고정·골수강내 정(IM nail)·plate 수술 — 상급 종합병원 영역</li>
+    <li>관절면 침범 골절(plateau·pilon) 수술 — 상급 종합병원 영역</li>
+    <li>광범위 신경·혈관 동반 손상 — 상급 종합병원 영역</li>
+    <li>개방성 골절 — 상급 종합병원 응급실</li>
+  </ul>
+
+  <div class="info-box">
+    <div class="info-box-title">"본원과 큰 병원, 어떻게 나뉘나요?"</div>
+    <div class="info-box-desc">
+      광범위 다발성·관절면 침범·외고정·개방성 골절은 상급 종합병원에서 받으셔야 합니다. 본원은 단순 경골·
+      비골 골절·스트레스 골절 진단·정복·깁스·정기 외래·재활 진료의 거점 역할입니다. 수술이 끝난 후의
+      정기 외래는 가까운 본원에서 받으실 수 있습니다.
+    </div>
+  </div>
+
+  <h3>본원 진료가 적합한 환자</h3>
+  <ul class="checklist">
+    <li>정강이 외상 후 X-ray와 정확한 진단이 필요한 환자</li>
+    <li>응급실에서 처치 후 가까운 정기 외래가 필요한 환자</li>
+    <li>큰 병원에서 정강이 수술(plate·nail) 후 가까운 추적이 필요한 환자</li>
+    <li>달리기·마라톤 후 정강이 만성 통증으로 스트레스 골절이 의심되는 환자</li>
+    <li>운동선수·신병이 훈련 중 정강이 통증을 호소하는 경우</li>
+    <li>아이가 정강이 골절로 진료가 필요한 보호자</li>
+    <li>교통사고·작업 중 정강이 외상으로 자보·산재 진료가 필요한 환자</li>
+    <li>정강이 깁스 풀고 재활·운동 복귀 진료가 필요한 환자</li>
+  </ul>
+</section>
+
+<section id="정강이골절_증상" class="landing-section">
+  <div class="landing-eyebrow">랜딩 2 · 정강이 외상 증상</div>
+  <h2 class="landing-title">정강이 외상 후 <strong>진료가 필요한 신호</strong></h2>
+  <p class="landing-lead">
+    정강이를 다치셨을 때 단순 멍인지 골절인지 환자분이 직접 판단하기는 어렵습니다. 특히 비골(옆 뼈) 골절은
+    체중을 짚을 수 있어서 골절이 아니라고 오해되기 쉽습니다. 다음 신호가 하나라도 있으시면 본원에서 X-ray
+    검사를 받으시기 바랍니다.
+  </p>
+
+  <h3>정강이 외상 신호 — X-ray 권장</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">못 디딤·못 짚음</div>
+      <div class="symptom-card-desc">다친 다리에 체중을 못 실음. 골절 가능.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">강한 통증·심한 부음</div>
+      <div class="symptom-card-desc">진통제로도 잘 안 가라앉는 통증·부음.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">정강이 변형·휨</div>
+      <div class="symptom-card-desc">정강이 모양이 평소와 달라 보임. 골절 의심.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">큰 멍·검정 부위</div>
+      <div class="symptom-card-desc">큰 멍이 빠르게 번지면 골절 가능.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">발 차가움·저림</div>
+      <div class="symptom-card-desc">신경·혈관 동반 손상 가능. 본원 즉시 진료.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">다칠 때 소리</div>
+      <div class="symptom-card-desc">"뚝", "딱" 소리 들렸음. 골절 가능성.</div>
+    </div>
+  </div>
+
+  <h3>외상 양상별 위험도</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>외상 양상</th><th>의심 진단</th><th>본원 안내</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="label">자전거·오토바이 사고</td>
+        <td>경골 골절 (가장 흔함)</td><td>본원 X-ray</td></tr>
+      <tr><td class="label">계단 낙상·추락</td>
+        <td>경비골 동시 골절 가능</td><td>본원 정밀 평가</td></tr>
+      <tr><td class="label">교통사고 보행자</td>
+        <td>경골 골절·동반 손상</td><td>본원 평가·자보</td></tr>
+      <tr><td class="label">축구·농구 부딪힘</td>
+        <td>경골·비골 골절</td><td>본원 X-ray</td></tr>
+      <tr><td class="label">달리기 후 만성 통증</td>
+        <td>스트레스 골절 의심</td><td>본원 정밀 진단</td></tr>
+      <tr><td class="label">훈련 중 정강이 통증</td>
+        <td>스트레스 골절 (군 훈련)</td><td>본원 정밀 진단</td></tr>
+      <tr><td class="label">아이 추락·낙상</td>
+        <td>소아 경골 골절</td><td>본원 세심 진료</td></tr>
+      <tr><td class="label">작업 중 무거운 것 떨어뜨림</td>
+        <td>경골 골절·산재</td><td>본원 X-ray·산재</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"체중 짚을 수 있으니 골절 아니다"는 오해</div>
+    <div class="warning-box-desc">
+      비골(정강이 옆 뼈) 골절은 체중을 짚을 수 있는 경우가 많습니다. "걸을 수 있으니 골절 아니겠지" 하고
+      방치하시면 부정 유합으로 평생 발목·무릎 통증이 남을 수 있습니다. 통증·부음이 있으시면 본원 X-ray
+      검사를 받으십시오.
+    </div>
+  </div>
+
+  <h3>스트레스 골절 의심 신호 — 본원 정밀 진단</h3>
+  <p>
+    외상 없이 운동 후 정강이가 욱신거리거나, 처음에는 운동 중에만 아프다가 점차 평소에도 아프다면
+    스트레스 골절이 의심됩니다. 단순 "정강이 부목(shin splint)"으로 오해하기 쉽지만, 진단을 늦추면
+    완전 골절로 진행될 수 있습니다.
+  </p>
+
+  <ul class="checklist">
+    <li>달리기·마라톤 등 반복 운동 후 정강이 만성 통증</li>
+    <li>운동 줄여도 통증이 가라앉지 않음</li>
+    <li>정강이 특정 부위를 누르면 강한 통증</li>
+    <li>운동 강도가 갑자기 늘어난 후 발생</li>
+    <li>훈련소·신병 훈련 중 발생</li>
+    <li>여성 운동선수·저체중 운동선수</li>
+    <li>위 신호가 있으시면 본원 정밀 진단 권장</li>
+  </ul>
+
+  <h3>보호자 시점 — 아이 정강이 외상</h3>
+  <p>
+    아이는 본인이 정확히 표현하기 어렵습니다. 정강이는 아이가 흔히 다치는 부위이며, 골절이라도 통증을
+    참고 걷는 경우가 많습니다. 다음 변화가 있으시면 본원 진료를 받아 보십시오.
+  </p>
+  <ul class="checklist">
+    <li>아이가 다친 다리를 절뚝거리거나 안 디뎌요</li>
+    <li>다친 부위를 만지면 심하게 아파해요</li>
+    <li>정강이 부위가 부어 있거나 모양이 달라 보여요</li>
+    <li>큰 멍이 정강이에 보여요</li>
+    <li>다친 후 잘 움직이지 않으려고 해요</li>
+    <li>몇 시간 지나도 통증이 가라앉지 않아요</li>
+  </ul>
+</section>
+
+<section id="정강이골절_본원진료" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 3 · 본원 직접 진료·정복·깁스 (시그니처)</div>
+  <h2 class="landing-title">X-ray·도수 정복·깁스·외래까지 <strong>한 자리에서</strong></h2>
+  <p class="landing-lead">
+    본원의 핵심 차별화는 정강이 골절의 모든 진료 과정을 한 자리에서 받으실 수 있다는 점입니다. 정형외과
+    전문의가 직접 X-ray 판독·도수 정복·깁스/부목·정기 외래·재활까지 진료합니다. 큰 병원을 매번 가지
+    않으셔도 됩니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"정강이 골절은 정확한 정복이 평생 걷기를 결정합니다. 본원에서 정확하게 진료받으십시오."</p>
+      <div class="highlight-box-caption">— 본원 정강이 골절 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 진료 흐름 — 외상 직후</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">초진 상담</div>
+      <div class="step-desc">외상 양상·통증·신경 증상 종합 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">당일 X-ray</div>
+      <div class="step-desc">본원 X-ray 즉시 시행·정형외과 판독</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">진료 방향</div>
+      <div class="step-desc">보존 vs 수술 환자별 정직 안내</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">정복·고정</div>
+      <div class="step-desc">도수 정복 + 깁스(short/long leg cast) 적용</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">정기 외래</div>
+      <div class="step-desc">2~4주 간격 추적 X-ray·재활 진료</div>
+    </div>
+  </div>
+
+  <h3>경골 vs 비골 — 본원 진료 차이</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>구분</th><th>경골 (큰 뼈)</th><th>비골 (옆 뼈)</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">위치</td>
+        <td>정강이 앞·내측</td>
+        <td>정강이 옆·외측</td>
+      </tr>
+      <tr>
+        <td class="label">체중 부하 역할</td>
+        <td>거의 100% 담당</td>
+        <td>거의 담당하지 않음</td>
+      </tr>
+      <tr>
+        <td class="label">증상 양상</td>
+        <td>강한 통증·못 디딤</td>
+        <td>덜 심한 통증·체중 가능</td>
+      </tr>
+      <tr>
+        <td class="label">본원 진료</td>
+        <td>도수 정복 + 깁스 (단순 골절)</td>
+        <td>깁스 보존 진료가 대부분</td>
+      </tr>
+      <tr>
+        <td class="label">수술 필요</td>
+        <td>전위 심한 경우·상급 의뢰</td>
+        <td>대부분 보존 진료</td>
+      </tr>
+      <tr>
+        <td class="label">회복 기간</td>
+        <td>3~6개월</td>
+        <td>6~8주</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>본원 정강이 골절 진료의 강점</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정형외과 전문의</div>
+      <div class="symptom-card-desc">전문의가 X-ray 판독·정복·진료 직접 시행.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">당일 진료</div>
+      <div class="symptom-card-desc">예약 없이 외상 직후 진료 가능.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">도수 정복</div>
+      <div class="symptom-card-desc">본원에서 정확한 도수 정복 + 즉시 고정.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">한 자리 진료</div>
+      <div class="symptom-card-desc">X-ray·정복·깁스·외래·재활 한 곳에서.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정직 안내</div>
+      <div class="symptom-card-desc">보존 vs 수술 환자별 정직 결정.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">15-2 통합</div>
+      <div class="symptom-card-desc">무릎·발목·발 외상과 통합 진료 가능.</div>
+    </div>
+  </div>
+
+  <h3>환자별 진료 방향 — 본원 정직 안내</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>환자 상태</th><th>본원 진료 방향</th><th>상급 의뢰 고려</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">단순 경골 골절·전위 적음</td>
+        <td>도수 정복 + 깁스 본원</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="label">경골 골절·전위 심함</td>
+        <td>본원 평가</td>
+        <td>plate·IM nail 상급 의뢰</td>
+      </tr>
+      <tr>
+        <td class="label">비골 단독 골절</td>
+        <td>보존 진료·정기 외래</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="label">경비골 동시 골절</td>
+        <td>본원 정밀 평가</td>
+        <td>광범위 시 상급 의뢰</td>
+      </tr>
+      <tr>
+        <td class="label">관절면 침범 (plateau·pilon)</td>
+        <td>본원 평가</td>
+        <td>관절면 수술 상급 의뢰</td>
+      </tr>
+      <tr>
+        <td class="label">개방성 골절</td>
+        <td>응급실 직행</td>
+        <td>상급 종합병원 응급</td>
+      </tr>
+      <tr>
+        <td class="label">광범위 다발성 외상</td>
+        <td>본원 평가 후 의뢰</td>
+        <td>상급 응급실</td>
+      </tr>
+      <tr>
+        <td class="label">소아 정강이 골절</td>
+        <td>본원 세심 진료</td>
+        <td>성장판 침범 시 상급</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>응급실·큰 병원 후 본원 외래</h3>
+  <p>
+    교통사고로 응급실에서 X-ray·정복·깁스 처치를 받으셨거나, 큰 병원에서 정강이 수술(plate·IM nail)을
+    받으셨다면 그 이후의 정기 외래는 가까운 거리의 본원에서 받으시는 것이 효율적입니다. 본원은 환자분의
+    응급실 영상·수술 기록을 이어받아 진료를 계속합니다.
+  </p>
+
+  <h3>자보·산재 정직 진료</h3>
+  <p>
+    교통사고로 정강이 외상을 입으신 환자분, 작업 중 정강이를 다치신 환자분 모두 본원에서 자보·산재 정직
+    진료를 받으실 수 있습니다. 입원 일수 부풀리기·과잉 검사는 본원에서 하지 않습니다.
+  </p>
+  <ul class="checklist">
+    <li>교통사고 — 경찰 사고 접수·자보사 접수·신분증</li>
+    <li>산재 — 산재 요양 신청서·사업장 정보·신분증</li>
+    <li>진료비 — 보험사·근로복지공단 직접 정산</li>
+    <li>진단서·소견서 — 본원 정직 발급</li>
+  </ul>
+</section>
+
+<section id="정강이골절_스트레스" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 4 · 스트레스 골절 정밀 진단 (시그니처)</div>
+  <h2 class="landing-title">달리기 후 정강이 통증, <strong>스트레스 골절</strong>일 수 있습니다</h2>
+  <p class="landing-lead">
+    외상 없이 정강이가 욱신거리는 만성 통증은 스트레스 골절일 수 있습니다. 반복적인 충격(달리기·점프·
+    행군)이 누적되어 뼈에 미세 균열이 생기는 것으로, 단순 근육통이나 "shin splint"으로 오해하기 쉽습니다.
+    본원은 신체 진찰·X-ray·필요시 MRI까지 통합해 정확하게 진단합니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"스트레스 골절은 늦게 진단하면 완전 골절로 진행될 수 있습니다. 의심되시면 본원 정밀 진단을 받으십시오."</p>
+      <div class="highlight-box-caption">— 본원 스트레스 골절 진단 원칙</div>
+    </div>
+  </div>
+
+  <h3>스트레스 골절 vs Shin splint — 본원 정밀 감별</h3>
+  <p>
+    달리기 후 정강이 통증은 크게 두 가지로 나뉩니다. 단순 근육·골막 자극인 shin splint(경골 부목 증후군)
+    또는 미세 골절인 스트레스 골절입니다. 두 진단은 진료 방향이 크게 다르므로 정확한 감별이 필요합니다.
+  </p>
+
+  <table class="compare-table">
+    <thead>
+      <tr><th>구분</th><th>Shin splint (경골 부목 증후군)</th><th>스트레스 골절</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">통증 위치</td>
+        <td>정강이 안쪽·넓은 부위</td>
+        <td>한 지점·국소적</td>
+      </tr>
+      <tr>
+        <td class="label">눌렀을 때</td>
+        <td>넓은 부위 통증</td>
+        <td>한 지점만 강한 통증</td>
+      </tr>
+      <tr>
+        <td class="label">운동 중</td>
+        <td>운동 시작 시 통증·중간에 나아짐</td>
+        <td>운동 중 점점 심해짐</td>
+      </tr>
+      <tr>
+        <td class="label">운동 후</td>
+        <td>휴식하면 가라앉음</td>
+        <td>휴식해도 통증 지속</td>
+      </tr>
+      <tr>
+        <td class="label">X-ray</td>
+        <td>정상</td>
+        <td>초기 정상·후기 골 변화</td>
+      </tr>
+      <tr>
+        <td class="label">MRI</td>
+        <td>골막 부종</td>
+        <td>골 부종·미세 균열 확인</td>
+      </tr>
+      <tr>
+        <td class="label">진료</td>
+        <td>운동 줄임·물리치료</td>
+        <td>6~8주 운동 중단·체중 부하 제한</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>스트레스 골절 위험군</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">러너·마라톤</div>
+      <div class="symptom-card-desc">갑자기 거리 늘린 경우 가장 흔함.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">신병·훈련소</div>
+      <div class="symptom-card-desc">행군·반복 훈련. 신병에서 흔함.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">여성 운동선수</div>
+      <div class="symptom-card-desc">생리 불순·저체중 동반 시 위험 ↑.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">청소년 운동선수</div>
+      <div class="symptom-card-desc">성장기 갑작스런 훈련량 증가.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">체조·발레·무용</div>
+      <div class="symptom-card-desc">반복 점프·동작 환자.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">주말 러너</div>
+      <div class="symptom-card-desc">평소 안 뛰다 주말만 무리하는 환자.</div>
+    </div>
+  </div>
+
+  <h3>본원 스트레스 골절 진단 흐름</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">병력 청취</div>
+      <div class="step-desc">운동 양상·통증 변화·여성 환자는 생리력</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">신체 진찰</div>
+      <div class="step-desc">국소 압통·진동음(tuning fork) 검사</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">X-ray</div>
+      <div class="step-desc">초기 정상일 수 있음·2~3주 후 재검</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">정밀 영상</div>
+      <div class="step-desc">필요시 MRI 의뢰 — 조기 정확 진단</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">진료·복귀</div>
+      <div class="step-desc">단계적 운동 중단·복귀 시점 정직 안내</div>
+    </div>
+  </div>
+
+  <h3>스트레스 골절 진료·복귀</h3>
+  <p>
+    스트레스 골절은 완전 골절과 달리 깁스가 필요한 경우가 적지만, 6~8주의 운동 중단이 핵심입니다.
+    "쉬어도 운동 강도만 줄이면 되겠지" 하고 무리하시면 완전 골절로 진행될 수 있습니다. 본원은 환자분의
+    상태·요구에 맞춰 단계적 복귀를 정직하게 안내드립니다.
+  </p>
+
+  <table class="compare-table">
+    <thead>
+      <tr><th>시기</th><th>진료·운동</th><th>본원 안내</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">0~2주</td>
+        <td>운동 완전 중단·체중 부하 제한</td>
+        <td>외래 진료·통증 평가</td>
+      </tr>
+      <tr>
+        <td class="label">2~6주</td>
+        <td>일상 보행 시작·운동 금지</td>
+        <td>외래 진료·점진적 부하</td>
+      </tr>
+      <tr>
+        <td class="label">6~8주</td>
+        <td>가벼운 수영·자전거 (저충격)</td>
+        <td>외래 평가·통증 확인</td>
+      </tr>
+      <tr>
+        <td class="label">8~12주</td>
+        <td>가벼운 조깅 시작 (통증 없을 시)</td>
+        <td>외래 진료·점진적 증가</td>
+      </tr>
+      <tr>
+        <td class="label">3~6개월</td>
+        <td>점진적 운동 강도 회복</td>
+        <td>완전 복귀 평가</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"진통제 먹고 그냥 뛰면 된다"는 위험한 생각</div>
+    <div class="warning-box-desc">
+      스트레스 골절을 무시하고 진통제로 통증만 가린 채 운동을 계속하시면 완전 골절(transverse complete
+      fracture)로 진행될 수 있습니다. 완전 골절이 되면 깁스나 수술이 필요하고 회복 기간이 훨씬 길어집니다.
+      의심 증상이 있으시면 본원에서 정밀 진단을 받으십시오.
+    </div>
+  </div>
+</section>
+
+<section id="정강이골절_재활" class="landing-section">
+  <div class="landing-eyebrow">랜딩 5 · 회복기 외래·재활</div>
+  <h2 class="landing-title">정강이는 <strong>체중 부하 단계</strong>가 핵심입니다</h2>
+  <p class="landing-lead">
+    정강이 골절 회복에서 가장 중요한 것은 적절한 시점의 체중 부하입니다. 너무 일찍 체중을 실으면 정복된
+    뼈가 다시 어긋날 수 있고, 너무 늦게 시작하면 근육·관절이 굳어 회복이 늦어집니다. 본원은 단계적 체중
+    부하 진료를 정기 외래로 안내합니다.
+  </p>
+
+  <h3>회복기에 흔한 문제</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">발목·무릎 굳음</div>
+      <div class="symptom-card-desc">깁스 동안 발목·무릎 굳음. 운동 진료 필요.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">종아리 근육 약화</div>
+      <div class="symptom-card-desc">깁스 후 종아리 근위축. 단계적 진료.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">부정 유합</div>
+      <div class="symptom-card-desc">뼈가 비뚤어진 채로 붙음. 본원 평가.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">불유합</div>
+      <div class="symptom-card-desc">뼈가 잘 안 붙음. 본원 평가·상급 의뢰 검토.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">절뚝 보행</div>
+      <div class="symptom-card-desc">회복기 절뚝거림 만성화 예방.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">발목·무릎 관절염</div>
+      <div class="symptom-card-desc">부정 유합 후 인접 관절 부담 증가.</div>
+    </div>
+  </div>
+
+  <h3>회복기 정기 외래 일정 (일반적 흐름)</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>시기</th><th>진료 항목</th><th>본원 워크플로우</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">1~2주 후</td>
+        <td>추적 X-ray·정복 상태 확인·깁스 점검</td>
+        <td>외래 진료·깁스 교체 필요시</td>
+      </tr>
+      <tr>
+        <td class="label">4~6주 후</td>
+        <td>골 유합 시작 확인·체중 부하 단계 결정</td>
+        <td>외래 진료·부분 체중 부하 안내</td>
+      </tr>
+      <tr>
+        <td class="label">8~12주 후</td>
+        <td>완전 체중 부하·깁스 풀기·재활 시작</td>
+        <td>외래 진료·물리치료 안내</td>
+      </tr>
+      <tr>
+        <td class="label">3~6개월 후</td>
+        <td>일상 활동 복귀·기능 회복 평가</td>
+        <td>외래 진료·운동 복귀 안내</td>
+      </tr>
+      <tr>
+        <td class="label">6개월 후</td>
+        <td>완전 회복 평가 / 합병증 지속</td>
+        <td>증상 환자별 외래</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>단계적 체중 부하 — 본원 안내</h3>
+  <p>
+    정강이 골절은 회복 시기에 따라 발에 실을 수 있는 체중이 달라집니다. 환자분께 맞는 시점에 적절한
+    체중 부하를 시작해야 회복이 빠르고 합병증을 줄일 수 있습니다.
+  </p>
+
+  <ul class="checklist">
+    <li>0~2주 — 체중 부하 완전 금지 (목발 사용)</li>
+    <li>3~6주 — 발 대기 정도(touch-down) — 발끝만 살짝</li>
+    <li>6~10주 — 부분 체중 부하(50%) — 의사 평가 후</li>
+    <li>10주 이후 — 점진적 완전 체중 부하 (의사 평가 후)</li>
+    <li>12주 이후 — 깁스 풀고 재활 운동 시작</li>
+    <li>3~6개월 — 일상 활동 점진적 복귀</li>
+    <li>6개월 이후 — 운동·작업 복귀 평가</li>
+  </ul>
+
+  <h3>깁스 풀고 나서 — 발목·무릎 운동</h3>
+  <p>
+    정강이 깁스를 풀고 나면 위·아래 관절(무릎·발목)이 굳어 있고 종아리 근육이 약해진 상태입니다.
+    이 시기의 운동 진료가 평생 걷기를 좌우합니다. 본원은 단계적 운동·물리치료를 안내합니다.
+  </p>
+
+  <ul class="checklist">
+    <li>1주차 — 발목 굽힘·펴기·발가락 운동 (앉아서)</li>
+    <li>2~3주차 — 무릎 굽힘·펴기·발목 회전 운동</li>
+    <li>4주차 이후 — 단계적 체중 부하·서기 진료</li>
+    <li>6주차 이후 — 부분 체중 보행·균형 진료</li>
+    <li>2~3개월 — 평지 보행·계단 진료</li>
+    <li>3개월 이후 — 가벼운 운동·점진적 활동 복귀</li>
+  </ul>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"내가 알아서 체중 실어도 되겠지" — 위험한 생각</div>
+    <div class="warning-box-desc">
+      정강이 골절은 시기를 잘못 잡으면 정복이 어긋나거나 부정 유합으로 평생 걷기에 영향이 남을 수
+      있습니다. 환자분 마음대로 체중 부하를 늘리지 마시고 본원 외래에서 X-ray 확인 후 단계적으로
+      안내받으십시오.
+    </div>
+  </div>
+</section>
+
+<section style="padding: 80px 32px; max-width: 1100px; margin: 0 auto;">
+  <div class="doctor-card">
+    <div>
+      <div style="font-family: var(--font-serif); font-size: 13px; color: var(--color-gold); letter-spacing: 0.2em; margin-bottom: 12px;">DIRECTOR</div>
+      <div class="doctor-name">김진균 원장</div>
+      <div class="doctor-role">희망찬병원 정강이 골절 클리닉</div>
+    </div>
+    <div class="doctor-credentials">
+      <ul>
+        <li>정형외과 전문의</li>
+        <li>희망찬병원 원장</li>
+        <li>유튜브 채널 "털보의사" 운영 — 정형외과 환자 교육</li>
+        <li>하지 외상·스트레스 골절·운동 진료 환자 교육 콘텐츠 다수</li>
+        <li>화성·동탄·오산·평택 지역 정형외과 진료 거점</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="예약" class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">진료 예약</div>
+    <h2 class="cta-title">정강이 골절, 본원이 직접 진료합니다</h2>
+    <p class="cta-desc">
+      정형외과 전문의 김진균 원장이 진료합니다. 당일 X-ray·도수 정복·깁스/부목·정기 외래·재활까지 한
+      자리에서. 달리기·운동선수·신병 스트레스 골절 정밀 진단까지 본원 시그니처 영역. 자보·산재 정직
+      진료, 응급실 후 가까운 외래. 광범위 다발성·관절면 침범·외고정·개방성 골절은 상급 종합병원으로
+      신속 연계해 드립니다.
+    </p>
+    <div class="cta-buttons">
+      <a href="tel:1600-3415" class="cta-btn-primary">전화 예약 — 1600-3415</a>
+      <a href="#" class="cta-btn-secondary">온라인 예약 문의</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">희망찬병원 정강이 골절 클리닉</div>
+        <div class="footer-brand-desc">
+          정형외과 전문의가 직접 진료하는 정강이 골절 클리닉입니다. 화성·동탄·오산·평택·수원·용인·병점
+          지역 환자분을 진료합니다. 경골·비골·스트레스 골절 본원 직접 진료, 당일 X-ray·도수 정복·깁스/
+          부목·정기 외래·재활까지 한 자리에서 제공합니다. 특히 달리기·마라톤·운동선수·신병의 정강이
+          스트레스 골절은 본원 정밀 진단 시그니처 영역입니다. 15-2-2 무릎·15-2-4 발목·15-2-5 발 외상과
+          통합 진료가 가능한 본원 하지 외상 거점입니다.
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>진료 영역</h4>
+        <ul>
+          <li><a href="#정강이골절_결정">정강이 골절 진료</a></li>
+          <li><a href="#정강이골절_증상">증상 자가확인</a></li>
+          <li><a href="#정강이골절_본원진료">본원 직접 진료</a></li>
+          <li><a href="#정강이골절_스트레스">스트레스 골절 정밀 진단</a></li>
+          <li><a href="#정강이골절_재활">회복기 외래</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>오시는 길</h4>
+        <ul>
+          <li>주소 — 경기도 화성시 병점중앙로 174</li>
+          <li>전화 —1600-3415</li>
+          <li>진료 시간 — 09:00~18:00</li>
+          <li>토요일 진료 — 09:00:13:00</li>
+          <li>점심 시간 — 12:30~13:30</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      ⓒ 희망찬병원<br>
+      진료의 결과는 환자 개별 상태에 따라 다를 수 있습니다.<br>
+      광범위 다발성·관절면 침범·외고정·개방성 골절은 본원에서 시행하지 않으며, 상급 종합병원으로 신속
+      연계해 드립니다.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
