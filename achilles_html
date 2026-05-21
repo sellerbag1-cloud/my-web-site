@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 아킬레스건 클리닉 — 본원 정밀 진단 · 수술 vs 보존 정직 안내</title>
+<meta name="description" content="정형외과 전문의가 진료하는 아킬레스건 파열 클리닉. Thompson test·초음파·MRI 통합 진단. 환자별 수술 vs 보존 정직 안내. 자보·산재 정직 진료. 화성·동탄·오산·평택.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-bg: #fafaf8;
+  --color-bg-alt: #f3f1ec;
+  --color-bg-section: #ffffff;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --color-text-light: #8a8a8a;
+  --color-border: #e5e3de;
+  --color-primary: #1e3a5f;
+  --color-primary-soft: #4a6885;
+  --color-accent: #8b2331;
+  --color-gold: #a0824a;
+  --color-success: #2d5a3d;
+  --color-urgent: #b91c1c;
+  --color-urgent-bg: #fef2f2;
+  --font-serif: 'Noto Serif KR', 'Times New Roman', serif;
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans); font-weight: 400; font-size: 16px;
+  line-height: 1.75; color: var(--color-text); background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.96); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border); padding: 14px 0;
+}
+.topbar-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.brand {
+  font-family: var(--font-serif); font-weight: 600; font-size: 19px;
+  letter-spacing: -0.01em; color: var(--color-primary);
+}
+.brand-sub {
+  font-size: 12px; color: var(--color-text-light); font-weight: 400;
+  margin-left: 6px; letter-spacing: 0.05em;
+}
+.cta-button {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 22px; background: var(--color-primary); color: #fff;
+  font-size: 14px; font-weight: 500; text-decoration: none;
+  border-radius: 2px; letter-spacing: 0.02em; transition: background .2s;
+}
+.cta-button:hover { background: #142a48; }
+.hero { padding: 100px 32px 80px; max-width: 1200px; margin: 0 auto; }
+.hero-eyebrow {
+  display: inline-block; font-size: 12px; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--color-gold); margin-bottom: 24px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--color-gold);
+}
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.2; font-weight: 400; color: var(--color-primary);
+  margin-bottom: 28px; letter-spacing: -0.02em;
+}
+.hero-title em { font-style: italic; color: var(--color-accent); }
+.hero-desc {
+  font-size: 18px; line-height: 1.85; color: var(--color-text-muted);
+  max-width: 760px; margin-bottom: 40px;
+}
+.hero-quote {
+  border-left: 3px solid var(--color-accent); padding: 16px 24px;
+  margin: 32px 0; background: rgba(139,35,49,.03);
+  font-family: var(--font-serif); font-size: 20px;
+  color: var(--color-primary); line-height: 1.6; max-width: 760px;
+}
+.signature-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2d4f7a 100%);
+  color: #fff; padding: 32px 40px; margin: 40px 0;
+  position: relative; overflow: hidden;
+}
+.signature-banner::before {
+  content: '★'; position: absolute; top: -20px; right: 24px;
+  font-size: 120px; color: rgba(160,130,74,.2); line-height: 1;
+}
+.signature-banner-eyebrow {
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 12px; text-transform: uppercase; font-weight: 600;
+}
+.signature-banner-title {
+  font-family: var(--font-serif); font-size: 28px; font-weight: 500;
+  line-height: 1.4; margin-bottom: 12px; position: relative;
+}
+.signature-banner-desc {
+  font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.85); position: relative;
+}
+.section-nav {
+  background: var(--color-bg-alt); padding: 32px;
+  border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);
+}
+.section-nav-inner { max-width: 1200px; margin: 0 auto; }
+.section-nav-title {
+  font-family: var(--font-serif); font-size: 14px; color: var(--color-text-light);
+  text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 16px;
+}
+.section-nav-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px;
+}
+.section-nav-grid a {
+  font-size: 14px; padding: 8px 12px; color: var(--color-text);
+  text-decoration: none; border-left: 2px solid transparent; transition: all .2s;
+}
+.section-nav-grid a:hover {
+  border-left-color: var(--color-accent); background: rgba(255,255,255,.7);
+  color: var(--color-primary);
+}
+.section-nav-grid a.signature { color: var(--color-accent); font-weight: 500; }
+.section-nav-grid a.signature::before { content: '★ '; font-size: 11px; }
+.landing-section {
+  padding: 100px 32px; max-width: 1100px; margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+}
+.landing-section.signature {
+  background: linear-gradient(180deg, var(--color-bg) 0%, rgba(160,130,74,.04) 100%);
+  position: relative;
+}
+.landing-section.signature::before {
+  content: '시그니처'; position: absolute; top: 60px; right: 32px;
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold); font-weight: 500;
+}
+.landing-eyebrow {
+  font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--color-gold); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.landing-eyebrow::after {
+  content: ''; flex: 1; height: 1px; background: var(--color-border); max-width: 60px;
+}
+.landing-title {
+  font-family: var(--font-serif); font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.25; font-weight: 500; color: var(--color-primary);
+  margin-bottom: 24px; letter-spacing: -0.015em;
+}
+.landing-title strong { font-weight: 600; color: var(--color-accent); font-style: italic; }
+.landing-lead {
+  font-size: 17px; line-height: 1.85; color: var(--color-text-muted);
+  margin-bottom: 40px; max-width: 800px;
+}
+.landing-section h3 {
+  font-family: var(--font-serif); font-size: 22px; font-weight: 500;
+  color: var(--color-primary); margin: 48px 0 16px; letter-spacing: -0.01em;
+}
+.landing-section p {
+  font-size: 16px; line-height: 1.85; color: var(--color-text);
+  margin-bottom: 16px; max-width: 800px;
+}
+.symptom-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px; margin: 32px 0;
+}
+.symptom-card {
+  padding: 24px; background: var(--color-bg-section);
+  border: 1px solid var(--color-border); border-left: 3px solid var(--color-primary);
+}
+.symptom-card.gold { border-left-color: var(--color-gold); }
+.symptom-card.urgent { border-left-color: var(--color-urgent); }
+.symptom-card-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.symptom-card-desc { font-size: 14px; line-height: 1.7; color: var(--color-text-muted); }
+.compare-table {
+  width: 100%; border-collapse: collapse; margin: 32px 0;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.compare-table th, .compare-table td {
+  padding: 14px 20px; text-align: left; font-size: 14px;
+  border-bottom: 1px solid var(--color-border); vertical-align: top;
+}
+.compare-table th {
+  background: var(--color-primary); color: #fff;
+  font-weight: 500; letter-spacing: 0.02em;
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table tbody tr:hover { background: var(--color-bg-alt); }
+.compare-table .label { font-weight: 500; color: var(--color-primary); width: 28%; }
+.highlight-box {
+  background: var(--color-primary); color: #fff; padding: 40px;
+  margin: 40px 0; position: relative;
+}
+.highlight-box::before {
+  content: '"'; position: absolute; top: 8px; left: 24px;
+  font-family: var(--font-serif); font-size: 80px;
+  color: rgba(255,255,255,.2); line-height: 1;
+}
+.highlight-box-content { position: relative; z-index: 1; padding-left: 40px; }
+.highlight-box p {
+  color: #fff; font-family: var(--font-serif); font-size: 19px;
+  line-height: 1.7; margin: 0; max-width: none;
+}
+.highlight-box-caption {
+  font-size: 12px; letter-spacing: 0.2em; color: rgba(255,255,255,.6);
+  text-transform: uppercase; margin-top: 16px;
+}
+.warning-box {
+  background: #fef4f4; border-left: 4px solid var(--color-accent);
+  padding: 24px 28px; margin: 32px 0;
+}
+.warning-box-title {
+  font-weight: 600; color: var(--color-accent); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.warning-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.info-box {
+  background: #f0f4fa; border-left: 4px solid var(--color-primary);
+  padding: 24px 28px; margin: 32px 0;
+}
+.info-box-title {
+  font-weight: 600; color: var(--color-primary); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.info-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.checklist {
+  list-style: none; margin: 24px 0; padding: 24px 32px;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.checklist li {
+  padding: 10px 0 10px 32px; position: relative;
+  font-size: 15px; line-height: 1.6; border-bottom: 1px solid var(--color-border);
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '□'; position: absolute; left: 0; top: 10px;
+  color: var(--color-primary); font-size: 18px; font-weight: 500;
+}
+.steps {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0; margin: 32px 0; border: 1px solid var(--color-border);
+}
+.step {
+  padding: 28px 24px; border-right: 1px solid var(--color-border);
+  background: var(--color-bg-section); position: relative;
+}
+.step:last-child { border-right: none; }
+.step-num {
+  font-family: var(--font-serif); font-size: 13px; letter-spacing: 0.3em;
+  color: var(--color-gold); margin-bottom: 12px;
+}
+.step-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.step-desc { font-size: 13px; line-height: 1.6; color: var(--color-text-muted); }
+.doctor-card {
+  display: grid; grid-template-columns: 1fr 2fr; gap: 40px;
+  padding: 40px; background: var(--color-bg-alt);
+  margin: 48px 0; align-items: center;
+}
+.doctor-credentials { font-family: var(--font-serif); }
+.doctor-name {
+  font-size: 28px; font-weight: 500; color: var(--color-primary); margin-bottom: 4px;
+}
+.doctor-role {
+  font-size: 14px; color: var(--color-text-muted);
+  letter-spacing: 0.05em; margin-bottom: 24px;
+}
+.doctor-credentials ul {
+  list-style: none; font-family: var(--font-sans);
+  font-size: 14px; line-height: 1.9; color: var(--color-text);
+}
+.doctor-credentials li { padding-left: 16px; position: relative; }
+.doctor-credentials li::before {
+  content: '—'; position: absolute; left: 0; color: var(--color-gold);
+}
+.cta-section { background: var(--color-primary); padding: 80px 32px; text-align: center; }
+.cta-inner { max-width: 800px; margin: 0 auto; color: #fff; }
+.cta-eyebrow {
+  font-size: 12px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 16px; text-transform: uppercase;
+}
+.cta-title {
+  font-family: var(--font-serif); font-size: 36px; font-weight: 400;
+  margin-bottom: 16px; line-height: 1.3;
+}
+.cta-desc {
+  font-size: 16px; color: rgba(255,255,255,.85);
+  margin-bottom: 36px; line-height: 1.8;
+}
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-btn-primary {
+  display: inline-block; padding: 16px 40px; background: #fff;
+  color: var(--color-primary); font-weight: 500; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-primary:hover { background: var(--color-gold); color: #fff; }
+.cta-btn-secondary {
+  display: inline-block; padding: 16px 40px; background: transparent;
+  color: #fff; border: 1px solid rgba(255,255,255,.4);
+  font-weight: 400; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-secondary:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+footer { background: #0f1f33; color: rgba(255,255,255,.65); padding: 60px 32px 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+.footer-brand-name {
+  font-family: var(--font-serif); font-size: 22px;
+  font-weight: 500; color: #fff; margin-bottom: 12px;
+}
+.footer-brand-desc {
+  font-size: 13px; line-height: 1.8;
+  color: rgba(255,255,255,.55); max-width: 400px;
+}
+.footer-section h4 {
+  font-family: var(--font-serif); font-size: 14px; color: #fff;
+  margin-bottom: 16px; letter-spacing: 0.05em;
+}
+.footer-section ul { list-style: none; font-size: 13px; line-height: 2; }
+.footer-section a { color: rgba(255,255,255,.65); text-decoration: none; transition: color .2s; }
+.footer-section a:hover { color: var(--color-gold); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px;
+  font-size: 12px; color: rgba(255,255,255,.45); text-align: center; line-height: 1.8;
+}
+@media (max-width: 768px) {
+  .hero { padding: 60px 24px 40px; }
+  .landing-section { padding: 60px 24px; }
+  .topbar-inner { padding: 0 20px; }
+  .doctor-card { grid-template-columns: 1fr; gap: 24px; padding: 28px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cta-section { padding: 60px 24px; }
+  .cta-title { font-size: 28px; }
+  .hero-quote { font-size: 17px; }
+  .landing-section.signature::before { display: none; }
+  .signature-banner-title { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div>
+      <span class="brand">희망찬병원 아킬레스건 클리닉</span>
+      <span class="brand-sub">HOPECHAN ACHILLES TENDON CLINIC</span>
+    </div>
+    <a href="#예약" class="cta-button">진료 예약</a>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-eyebrow">정형외과 아킬레스건 파열 진료 · 15-2-6</div>
+  <h1 class="hero-title">
+    아킬레스건 파열, <em>수술 vs 보존</em><br>환자별 정직 안내.
+  </h1>
+  <p class="hero-desc">
+    아킬레스건 파열은 본원이 정밀 진단하고 환자별 진료 방향을 결정하는 영역입니다. 정형외과 전문의가
+    Thompson test·초음파·MRI 영상 검토로 파열 양상을 평가하고, 환자분의 나이·활동·요구 수준에 따라
+    보존 진료(부목·기능 부츠) 또는 수술 의뢰를 정직하게 안내드립니다. 본원이 직접 시행하지 않는 광범위
+    봉합 수술은 상급 종합병원으로 연계합니다.
+  </p>
+  <div class="hero-quote">
+    "아킬레스건 파열에서 가장 중요한 것은 환자분께 적합한 진료 방향을 정직하게 안내드리는 것입니다."<br>
+    <span style="font-size: 14px; color: var(--color-text-muted); font-family: var(--font-sans); font-style: normal;">
+      — 김진균 원장, 정형외과 전문의
+    </span>
+  </div>
+
+  <div class="signature-banner">
+    <div class="signature-banner-eyebrow">본원 정밀 진단 + 수술 vs 보존 정직 안내</div>
+    <div class="signature-banner-title">Thompson test·초음파·MRI 통합 진단 + 환자별 진료 방향</div>
+    <div class="signature-banner-desc">
+      본원이 환자분의 파열 양상·나이·활동을 평가해 보존 vs 수술 진료 방향을 정직하게 안내드립니다.
+      부분 파열·보존 진료는 본원 직접 진료. 광범위 봉합 수술이 필요한 경우 상급 종합병원으로 신속
+      연계해 드립니다. 수술 후 재활 외래도 본원에서 받으실 수 있습니다.
+    </div>
+  </div>
+</section>
+
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <div class="section-nav-title">진료 안내 · 5개 영역</div>
+    <div class="section-nav-grid">
+      <a href="#아킬레스건_결정">아킬레스건 파열 진료 안내</a>
+      <a href="#아킬레스건_증상">증상 자가확인·Thompson sign</a>
+      <a href="#아킬레스건_본원진료" class="signature">본원 정밀 진단 (Thompson·초음파)</a>
+      <a href="#아킬레스건_수술vs보존" class="signature">수술 vs 보존 정직 안내</a>
+      <a href="#아킬레스건_재활">회복기 외래·재활</a>
+    </div>
+  </div>
+</div>
+
+<section id="아킬레스건_결정" class="landing-section">
+  <div class="landing-eyebrow">랜딩 1 · 아킬레스건 파열 진료</div>
+  <h2 class="landing-title">아킬레스건 파열, <strong>본원이 진료 방향</strong>을 함께 결정</h2>
+  <p class="landing-lead">
+    아킬레스건 파열은 본원이 정밀 진단하고 환자별 진료 방향을 함께 결정하는 영역입니다. 환자분이
+    아킬레스건을 다치셨을 때 어떤 진단이 가능하고 본원이 어디까지 진료하는지 정직하게 안내드립니다.
+    "수술이 좋다", "보존이 좋다"는 일률적인 안내가 아닌, 환자분의 상황에 맞춘 진료 방향을 함께
+    정해갑니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"아킬레스건 파열에는 정해진 답이 없습니다. 환자분의 나이·활동·요구에 따라 최선의 진료가 달라집니다."</p>
+      <div class="highlight-box-caption">— 본원 아킬레스건 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 진료 영역 — 직접 시행 가능</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정밀 진단</div>
+      <div class="symptom-card-desc">Thompson test·초음파·MRI 통합 평가 (★).</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">수술 vs 보존 안내</div>
+      <div class="symptom-card-desc">환자별 진료 방향 정직 결정 (★).</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">보존 진료 직접</div>
+      <div class="symptom-card-desc">부목·기능 부츠·깁스 본원 직접 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정기 외래</div>
+      <div class="symptom-card-desc">보존·수술 후 회복 외래 본원에서.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">재활</div>
+      <div class="symptom-card-desc">단계적 점진 부하·운동 복귀 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">15-2 통합 진료</div>
+      <div class="symptom-card-desc">발목·발 외상과 함께 본원 하지 외상 거점.</div>
+    </div>
+  </div>
+
+  <h3>본원이 시행하지 않는 영역</h3>
+  <ul class="checklist">
+    <li>아킬레스건 광범위 봉합 수술 — 상급 종합병원 영역</li>
+    <li>재파열 후 광범위 재수술 — 상급 종합병원 영역</li>
+    <li>아킬레스건 만성 결손 재건 수술 — 상급 종합병원 영역</li>
+    <li>광범위 동반 손상(혈관·신경) — 상급 종합병원 영역</li>
+  </ul>
+
+  <div class="info-box">
+    <div class="info-box-title">"본원과 큰 병원, 어떻게 나뉘나요?"</div>
+    <div class="info-box-desc">
+      광범위 봉합 수술·재파열 재수술·만성 결손 재건은 상급 종합병원에서 받으셔야 합니다. 본원은 정밀
+      진단·환자별 진료 방향 결정·보존 진료·정기 외래·재활까지의 거점 역할입니다. 큰 병원에서 수술을
+      받으신 후의 정기 외래도 본원에서 가까운 거리에서 받으실 수 있습니다.
+    </div>
+  </div>
+
+  <h3>본원 진료가 적합한 환자</h3>
+  <ul class="checklist">
+    <li>운동 중 갑자기 뒤꿈치에 통증이 생긴 환자</li>
+    <li>아킬레스건 파열 의심으로 정밀 진단이 필요한 환자</li>
+    <li>수술 vs 보존 진료 방향 결정이 필요한 환자</li>
+    <li>큰 병원에서 아킬레스건 봉합 수술 후 가까운 거리 외래가 필요한 환자</li>
+    <li>응급실 처치 후 가까운 거리에서 정기 진료가 필요한 환자</li>
+    <li>운동선수·중년·주말 러너로 정직한 진료 방향 안내가 필요한 환자</li>
+    <li>교통사고·작업 중 아킬레스건 외상으로 자보·산재 진료가 필요한 환자</li>
+    <li>만성 아킬레스건염으로 정확한 평가가 필요한 환자</li>
+  </ul>
+</section>
+
+<section id="아킬레스건_증상" class="landing-section">
+  <div class="landing-eyebrow">랜딩 2 · 아킬레스건 파열 증상</div>
+  <h2 class="landing-title">아킬레스건 파열의 <strong>특징적 신호</strong></h2>
+  <p class="landing-lead">
+    아킬레스건이 파열되는 순간 환자분들이 흔히 표현하시는 말은 "뒤에서 누가 친 느낌"입니다. 통증이
+    심하지 않을 수 있어 처음에는 단순 염좌나 종아리 근육 손상으로 오해하기 쉽지만, 정확한 진단을
+    놓치면 영구적인 기능 저하로 이어질 수 있습니다.
+  </p>
+
+  <h3>아킬레스건 파열 의심 신호</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">"뒤에서 누가 친 느낌"</div>
+      <div class="symptom-card-desc">운동 중 갑자기 발 뒤에 무엇이 부딪힌 느낌.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">발끝 못 들기</div>
+      <div class="symptom-card-desc">까치발 서기·발끝으로 서기 어려움. 핵심 신호.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">아킬레스건 부위 패임</div>
+      <div class="symptom-card-desc">발 뒤꿈치 위 부위를 만지면 움푹 패인 느낌.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">다칠 때 소리</div>
+      <div class="symptom-card-desc">"뚝", "딱" 큰 소리 — 아킬레스건 끊어짐 신호.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">계단 못 오름</div>
+      <div class="symptom-card-desc">평지는 절뚝거리며 걸어도 계단·내리막 어려움.</div>
+    </div>
+    <div class="symptom-card urgent">
+      <div class="symptom-card-title">Thompson sign 양성</div>
+      <div class="symptom-card-desc">엎드린 자세에서 종아리 눌러도 발이 안 움직임.</div>
+    </div>
+  </div>
+
+  <h3>흔한 발생 양상</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>발생 양상</th><th>위험도</th><th>본원 안내</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="label">농구·배구 점프 후 착지</td>
+        <td>가장 흔함 (40~50대 호발)</td><td>본원 정밀 진단</td></tr>
+      <tr><td class="label">갑작스러운 달리기·스프린트</td>
+        <td>주말 운동·중년 호발</td><td>본원 즉시 평가</td></tr>
+      <tr><td class="label">테니스·배드민턴 갑작스런 움직임</td>
+        <td>중년 호발</td><td>본원 정밀 진단</td></tr>
+      <tr><td class="label">계단·턱에서 헛디딤</td>
+        <td>고령 호발</td><td>본원 즉시 평가</td></tr>
+      <tr><td class="label">축구 갑작스런 정지</td>
+        <td>운동선수 호발</td><td>본원 정밀 진단</td></tr>
+      <tr><td class="label">오랜만에 운동·준비 없이</td>
+        <td>중년·직장인 호발</td><td>본원 평가</td></tr>
+      <tr><td class="label">교통사고·추락 외상</td>
+        <td>동반 손상 가능</td><td>본원 평가·자보</td></tr>
+      <tr><td class="label">서서히 진행되는 통증</td>
+        <td>만성 아킬레스건염 가능</td><td>본원 정밀 진단</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"걸을 수 있으니 파열은 아니다"는 오해</div>
+    <div class="warning-box-desc">
+      아킬레스건이 완전 파열되어도 환자분은 절뚝거리며 걸을 수 있는 경우가 많습니다. 통증도 처음 며칠
+      후에는 가라앉을 수 있어 "괜찮아진 것 같다"고 생각하기 쉽습니다. 하지만 발끝으로 서기가 어렵거나
+      계단을 잘 못 오르신다면 파열이 진행되어 있는 것으로 정밀 진단이 필요합니다.
+    </div>
+  </div>
+
+  <h3>Thompson sign — 본원 핵심 진찰</h3>
+  <p>
+    Thompson test는 아킬레스건 파열 진단의 표준 신체 진찰입니다. 환자분이 엎드린 자세에서 종아리를
+    눌렀을 때, 정상이면 발이 움직이고 파열이 있으면 발이 거의 움직이지 않습니다. 본원에서 이 검사를
+    통해 즉시 정확하게 평가합니다.
+  </p>
+
+  <ul class="checklist">
+    <li>발끝 서기가 갑자기 어려워졌습니다</li>
+    <li>운동 중 발 뒤꿈치 위에 강한 통증이 발생했습니다</li>
+    <li>"뒤에서 누가 친 느낌"이 있었습니다</li>
+    <li>아킬레스건 부위가 움푹 패여 있습니다</li>
+    <li>걷을 때 절뚝거리고 발끝으로 박차기가 어렵습니다</li>
+    <li>계단을 오르내리기 어렵습니다</li>
+    <li>위 신호가 있으시면 본원 정밀 진단 권장</li>
+  </ul>
+
+  <h3>만성 vs 급성 — 본원 정밀 감별</h3>
+  <p>
+    아킬레스건 문제는 급성 파열뿐 아니라 만성 아킬레스건염·건병증(tendinopathy)일 수도 있습니다.
+    오랫동안 운동 후 통증이 있으셨다가 갑자기 파열되는 경우도 많습니다. 본원은 만성 vs 급성·완전 vs
+    부분 파열을 정확히 평가합니다.
+  </p>
+</section>
+
+<section id="아킬레스건_본원진료" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 3 · 본원 정밀 진단 — Thompson test·초음파·MRI (시그니처)</div>
+  <h2 class="landing-title">정확한 진단부터 진료 방향까지 <strong>한 자리에서</strong></h2>
+  <p class="landing-lead">
+    본원의 핵심 차별화는 아킬레스건 파열의 정밀 진단부터 진료 방향 결정까지 한 자리에서 받으실 수 있다는
+    점입니다. 정형외과 전문의가 직접 Thompson test 신체 진찰·초음파 검사·필요시 MRI 영상 검토까지
+    통합 평가합니다. "X-ray만 봤다", "MRI만 봤다"가 아닌, 환자분 상태를 종합 평가한 정확한 진단으로
+    시작합니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"아킬레스건 파열에서 잘못된 진단은 잘못된 진료로 이어집니다. 신체 진찰·초음파·MRI를 통합해야 정확합니다."</p>
+      <div class="highlight-box-caption">— 본원 아킬레스건 정밀 진단 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 정밀 진단 흐름</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">초진 상담</div>
+      <div class="step-desc">외상 양상·통증·기능 종합 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">Thompson test</div>
+      <div class="step-desc">엎드린 자세 종아리 압박 검사 (표준)</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">초음파 검사</div>
+      <div class="step-desc">본원 즉시 시행·파열 부위 시각 확인</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">MRI 영상 검토</div>
+      <div class="step-desc">필요시 의뢰·완전/부분 파열 정확 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">진료 방향 결정</div>
+      <div class="step-desc">환자별 보존 vs 수술 정직 안내</div>
+    </div>
+  </div>
+
+  <h3>본원 정밀 진단 강점</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정형외과 전문의</div>
+      <div class="symptom-card-desc">전문의가 직접 신체 진찰·초음파·진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">Thompson test 정확</div>
+      <div class="symptom-card-desc">표준 검사로 즉시 평가.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">초음파 즉시</div>
+      <div class="symptom-card-desc">본원 초음파로 파열 부위 시각 확인.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">MRI 영상 검토</div>
+      <div class="symptom-card-desc">필요시 정밀 영상 검사 의뢰·판독.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">한 자리 평가</div>
+      <div class="symptom-card-desc">신체 진찰 + 영상 + 진료 방향 결정.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정직 안내</div>
+      <div class="symptom-card-desc">환자별 진료 방향 함께 결정.</div>
+    </div>
+  </div>
+
+  <h3>본원 정밀 진단 — 평가 흐름표</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>평가 항목</th><th>본원 시행</th><th>의미</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">Thompson test</td>
+        <td>본원 즉시 시행</td>
+        <td>파열 표준 검사. 양성 시 파열 의심</td>
+      </tr>
+      <tr>
+        <td class="label">발끝 서기 검사</td>
+        <td>본원 시행</td>
+        <td>아킬레스건 기능 평가</td>
+      </tr>
+      <tr>
+        <td class="label">국소 압통 평가</td>
+        <td>본원 시행</td>
+        <td>파열 부위·만성염 감별</td>
+      </tr>
+      <tr>
+        <td class="label">아킬레스건 패임 확인</td>
+        <td>본원 시행</td>
+        <td>완전 파열 시각 확인</td>
+      </tr>
+      <tr>
+        <td class="label">초음파 검사</td>
+        <td>본원 즉시 시행</td>
+        <td>파열 부위·범위·부분/완전 평가</td>
+      </tr>
+      <tr>
+        <td class="label">X-ray</td>
+        <td>본원 즉시 시행</td>
+        <td>종골 견열 골절·동반 손상 평가</td>
+      </tr>
+      <tr>
+        <td class="label">MRI</td>
+        <td>필요시 의뢰</td>
+        <td>정밀 영상·만성 결손 평가</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>본원 영역 외 — 정직 명시</h3>
+  <p>
+    본원은 아킬레스건 광범위 봉합 수술·재파열 후 재수술·만성 결손 재건 수술은 시행하지 않습니다. 정밀
+    진단 후 수술이 필요하다고 판단되면 상급 종합병원으로 신속 연계해 드립니다. 수술 후 정기 외래·재활은
+    본원에서 가까운 거리에서 받으실 수 있습니다.
+  </p>
+
+  <h3>응급실·큰 병원 후 본원 외래</h3>
+  <p>
+    응급실에서 진단·부목 처치를 받으셨거나, 큰 병원에서 아킬레스건 봉합 수술을 받으셨다면 그 이후의
+    정기 외래·재활은 가까운 거리의 본원에서 받으시는 것이 효율적입니다. 본원은 환자분의 영상·수술
+    기록을 이어받아 진료를 계속합니다.
+  </p>
+
+  <h3>자보·산재 정직 진료</h3>
+  <p>
+    교통사고로 아킬레스건 파열을 입으신 환자분, 작업 중 아킬레스건을 다치신 환자분 모두 본원에서
+    자보·산재 정직 진료를 받으실 수 있습니다. 입원 일수 부풀리기·과잉 검사는 본원에서 하지 않습니다.
+  </p>
+  <ul class="checklist">
+    <li>교통사고 — 경찰 사고 접수·자보사 접수·신분증</li>
+    <li>산재 — 산재 요양 신청서·사업장 정보·신분증</li>
+    <li>진료비 — 보험사·근로복지공단 직접 정산</li>
+    <li>진단서·소견서 — 본원 정직 발급</li>
+  </ul>
+</section>
+
+<section id="아킬레스건_수술vs보존" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 4 · 수술 vs 보존 정직 안내 (시그니처)</div>
+  <h2 class="landing-title">"수술이 좋다", "보존이 좋다" — <strong>정해진 답은 없습니다</strong></h2>
+  <p class="landing-lead">
+    아킬레스건 파열의 진료 방향(수술 vs 보존)은 환자분 개별 상황에 따라 크게 달라집니다. 같은 파열이라도
+    20대 운동선수와 60대 일반 환자의 최선의 진료가 다릅니다. 본원은 일률적으로 권하지 않고, 환자분의
+    나이·활동·요구·기존 질환을 종합 평가해 함께 결정합니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"본원은 환자분께 '이 진료를 받으셔야 합니다'라고 강요하지 않습니다. 장단점을 정직하게 설명드리고 함께 결정합니다."</p>
+      <div class="highlight-box-caption">— 본원 정직 안내 원칙</div>
+    </div>
+  </div>
+
+  <h3>환자별 진료 방향 결정 요인</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>환자 특성</th><th>일반적 진료 방향</th><th>본원 안내</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">20~30대·고강도 운동선수</td>
+        <td>수술 의뢰 검토 (빠른 복귀)</td>
+        <td>상급 종합병원 의뢰·재활 본원</td>
+      </tr>
+      <tr>
+        <td class="label">30~40대·중간 활동</td>
+        <td>환자 선호·재파열 위험 균형</td>
+        <td>환자별 함께 결정</td>
+      </tr>
+      <tr>
+        <td class="label">40~50대·중년 운동</td>
+        <td>보존 또는 수술 (균형)</td>
+        <td>환자별 정직 안내</td>
+      </tr>
+      <tr>
+        <td class="label">50~60대·일반 활동</td>
+        <td>보존 진료 권장 경향</td>
+        <td>본원 보존 진료 가능</td>
+      </tr>
+      <tr>
+        <td class="label">60대 이상·고령</td>
+        <td>보존 진료 일반적</td>
+        <td>본원 보존 진료 + 재활</td>
+      </tr>
+      <tr>
+        <td class="label">당뇨·혈관 질환 동반</td>
+        <td>수술 위험 ↑·보존 검토</td>
+        <td>본원 정직 안내</td>
+      </tr>
+      <tr>
+        <td class="label">진단 늦은 만성 파열</td>
+        <td>재건 수술 의뢰</td>
+        <td>상급 종합병원 의뢰</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>본원 보존 진료 흐름 (단계적)</h3>
+  <p>
+    환자분이 보존 진료를 선택하시면 본원이 직접 진료합니다. functional bracing·발끝 굽힘 보조기·점진적
+    부하 진료를 단계적으로 진행합니다. 무조건 깁스 4~6주가 아니라 회복 단계에 맞춰 조정합니다.
+  </p>
+
+  <ul class="checklist">
+    <li>0~2주 — 발끝 굽힘 위치 깁스/부목, 체중 부하 금지</li>
+    <li>2~4주 — functional brace 시작, 발끝 굽힘 유지</li>
+    <li>4~6주 — 점진적 발 각도 변화·부분 체중 부하</li>
+    <li>6~8주 — 보조기 + 완전 체중 부하 시작</li>
+    <li>8~12주 — 보조기 점진적 제거·재활 운동</li>
+    <li>3~6개월 — 단계적 운동 복귀</li>
+    <li>6~12개월 — 완전 운동 복귀 (의사 평가 후)</li>
+  </ul>
+
+  <h3>수술 vs 보존 — 정직 비교 (장단점)</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>구분</th><th>수술 진료</th><th>보존 진료</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">시행 장소</td>
+        <td>상급 종합병원 의뢰</td>
+        <td>본원 직접 진료</td>
+      </tr>
+      <tr>
+        <td class="label">재파열 위험</td>
+        <td>비교적 낮음</td>
+        <td>비교적 높음 (지속 안내)</td>
+      </tr>
+      <tr>
+        <td class="label">수술 위험</td>
+        <td>감염·신경 손상·반흔 (낮은 빈도)</td>
+        <td>없음</td>
+      </tr>
+      <tr>
+        <td class="label">운동 복귀 시점</td>
+        <td>비교적 빠름</td>
+        <td>비교적 늦음</td>
+      </tr>
+      <tr>
+        <td class="label">근력 회복</td>
+        <td>일반적으로 비슷</td>
+        <td>일반적으로 비슷</td>
+      </tr>
+      <tr>
+        <td class="label">비용 부담</td>
+        <td>수술비·입원비</td>
+        <td>외래·재활 비용</td>
+      </tr>
+      <tr>
+        <td class="label">회복 기간</td>
+        <td>6~12개월</td>
+        <td>6~12개월</td>
+      </tr>
+      <tr>
+        <td class="label">선택 적합</td>
+        <td>활동력 높은 환자·운동선수</td>
+        <td>중년 이상·고령·일반 활동</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="info-box">
+    <div class="info-box-title">최근 의학적 근거 — 본원 정직 안내</div>
+    <div class="info-box-desc">
+      최근 연구에 따르면 functional bracing을 이용한 보존 진료의 재파열률이 과거보다 낮아지면서, 수술과
+      보존의 결과가 환자분에 따라 비슷할 수 있다는 보고가 늘고 있습니다. 본원은 일률적으로 권하지 않고
+      환자분 상황에 맞춰 정직하게 안내합니다.
+    </div>
+  </div>
+
+  <h3>본원이 환자분께 함께 결정하는 항목</h3>
+  <ul class="checklist">
+    <li>환자분의 평소 활동 수준 (직업·운동)</li>
+    <li>환자분의 복귀 목표 (일상·운동·경기)</li>
+    <li>환자분의 나이와 동반 질환 (당뇨·혈관 질환)</li>
+    <li>환자분의 회복 기간 부담 (시간·비용)</li>
+    <li>환자분의 수술 vs 보존 선호도</li>
+    <li>위 요인을 종합해 함께 진료 방향 결정</li>
+  </ul>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"일률적 수술", "일률적 보존" — 위험한 안내</div>
+    <div class="warning-box-desc">
+      환자분께 진료 방향을 일률적으로 권하는 것은 위험합니다. 60대 일반 환자에게 무리한 수술을 권하는
+      것도, 20대 운동선수에게 보존만 권하는 것도 환자분에게 적합하지 않을 수 있습니다. 본원은 정직한
+      안내를 원칙으로 합니다.
+    </div>
+  </div>
+</section>
+
+<section id="아킬레스건_재활" class="landing-section">
+  <div class="landing-eyebrow">랜딩 5 · 회복기 외래·재활</div>
+  <h2 class="landing-title">아킬레스건 회복은 <strong>재활이 가장 중요</strong></h2>
+  <p class="landing-lead">
+    아킬레스건은 수술이든 보존이든 회복 결과의 절반 이상이 재활에 달려 있습니다. 너무 일찍 무리하면
+    재파열, 너무 늦게 시작하면 굳음·근력 저하로 일상 복귀가 어려워집니다. 본원은 회복기 정기 외래·
+    단계적 부하 진료·점진적 운동 복귀까지 한 자리에서 안내합니다.
+  </p>
+
+  <h3>회복기에 흔한 문제</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">재파열 위험</div>
+      <div class="symptom-card-desc">너무 빨리 부하 시 재파열. 본원 단계적 진료.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">아킬레스건 굳음</div>
+      <div class="symptom-card-desc">움직임 제한·발목 굳음. 본원 재활.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">종아리 근력 약화</div>
+      <div class="symptom-card-desc">대퇴·종아리 근위축. 단계적 운동.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">까치발 안 됨</div>
+      <div class="symptom-card-desc">발끝 서기 어려움. 본원 정밀 평가.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">절뚝거림 지속</div>
+      <div class="symptom-card-desc">보행 패턴 이상. 본원 진료.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">만성 통증·건병증</div>
+      <div class="symptom-card-desc">회복 후에도 만성 통증. 본원 평가.</div>
+    </div>
+  </div>
+
+  <h3>회복기 정기 외래 일정 (일반적 흐름)</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>시기</th><th>진료 항목</th><th>본원 워크플로우</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">1~2주 후</td>
+        <td>깁스/보조기 점검·통증 평가</td>
+        <td>외래 진료·고정 점검</td>
+      </tr>
+      <tr>
+        <td class="label">4주 후</td>
+        <td>발 각도 조정·부분 체중 부하 시작</td>
+        <td>외래 진료·보조기 단계 조정</td>
+      </tr>
+      <tr>
+        <td class="label">6~8주 후</td>
+        <td>완전 체중 부하·재활 운동 시작</td>
+        <td>외래 진료·운동 진료 안내</td>
+      </tr>
+      <tr>
+        <td class="label">3개월 후</td>
+        <td>일상 활동 복귀·점진적 운동</td>
+        <td>외래 진료·복귀 평가</td>
+      </tr>
+      <tr>
+        <td class="label">6개월 후</td>
+        <td>스포츠 동작 진료·재파열 위험 평가</td>
+        <td>외래 진료·운동 복귀 안내</td>
+      </tr>
+      <tr>
+        <td class="label">12개월 후</td>
+        <td>완전 운동 복귀 평가</td>
+        <td>최종 평가·일상 진료</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>수술 후 재활 vs 보존 후 재활 — 본원 안내</h3>
+  <p>
+    수술과 보존 진료 후의 재활 과정에는 차이가 있습니다. 본원은 환자분이 어떤 진료를 받으셨든 그에 맞는
+    재활 진료를 안내드립니다.
+  </p>
+
+  <table class="compare-table">
+    <thead>
+      <tr><th>시기</th><th>수술 후 재활</th><th>보존 후 재활</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">0~2주</td>
+        <td>발끝 굽힘 깁스, 부하 금지</td>
+        <td>발끝 굽힘 깁스, 부하 금지</td>
+      </tr>
+      <tr>
+        <td class="label">2~6주</td>
+        <td>보조기·점진적 부하</td>
+        <td>functional brace·점진적 부하</td>
+      </tr>
+      <tr>
+        <td class="label">6~12주</td>
+        <td>완전 부하·재활 운동</td>
+        <td>완전 부하·재활 운동</td>
+      </tr>
+      <tr>
+        <td class="label">3~6개월</td>
+        <td>스포츠 운동 시작 (의사 평가)</td>
+        <td>스포츠 운동 시작 (의사 평가)</td>
+      </tr>
+      <tr>
+        <td class="label">6~12개월</td>
+        <td>완전 운동 복귀</td>
+        <td>완전 운동 복귀</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>단계적 재활 운동 — 본원 안내</h3>
+  <p>
+    아킬레스건은 단계적 부하·운동이 핵심입니다. 본원은 환자분 상태에 맞춰 안내합니다.
+  </p>
+
+  <ul class="checklist">
+    <li>0~2주 — 발가락 운동·근위 근육 운동 (앉아서)</li>
+    <li>2~4주 — 발목 굽힘·펴기 가벼운 운동</li>
+    <li>4~6주 — 점진적 체중 부하·평지 보행</li>
+    <li>6~8주 — 양발 까치발 들기 (조심스럽게)</li>
+    <li>8~12주 — 한 발 까치발 들기 (의사 평가 후)</li>
+    <li>3~6개월 — 가벼운 조깅 (의사 평가 후)</li>
+    <li>6~12개월 — 스포츠 운동 복귀 (의사 평가 후)</li>
+    <li>운동 중 통증·뒤꿈치 위 통증 재발 시 즉시 본원</li>
+  </ul>
+
+  <div class="warning-box">
+    <div class="warning-box-title">재파열 위험 — 정직한 안내</div>
+    <div class="warning-box-desc">
+      아킬레스건은 회복 후에도 재파열 위험이 있습니다. 6개월 이내가 가장 위험하지만 1년 이상 지나도
+      위험은 완전히 없어지지 않습니다. 본원은 환자분께 재파열 위험을 정직하게 안내하고, 단계적 부하·운동
+      복귀를 강조합니다. "빨리 회복했으니 운동해도 된다"는 무리한 결정을 피해 주십시오.
+    </div>
+  </div>
+
+  <h3>운동 복귀 — 본원 정직 안내</h3>
+  <p>
+    운동 복귀는 환자분의 운동 종류·강도·연령에 따라 다릅니다. 본원은 일률적으로 "X개월 후 복귀"라고
+    안내하지 않습니다. 환자분의 회복 상태·근력·기능을 외래마다 평가하고, 운동 복귀가 안전한 시점을
+    함께 결정합니다.
+  </p>
+
+  <ul class="checklist">
+    <li>일상 활동 복귀 — 일반적으로 3~6개월</li>
+    <li>가벼운 조깅 — 일반적으로 6개월 이후</li>
+    <li>구기 운동 (농구·배구) — 일반적으로 9~12개월</li>
+    <li>고강도 스프린트 — 일반적으로 12개월 이후</li>
+    <li>완전 경기 복귀 — 환자별·종목별 다름</li>
+    <li>본원에서 외래마다 평가·정직 안내</li>
+  </ul>
+</section>
+
+<section style="padding: 80px 32px; max-width: 1100px; margin: 0 auto;">
+  <div class="doctor-card">
+    <div>
+      <div style="font-family: var(--font-serif); font-size: 13px; color: var(--color-gold); letter-spacing: 0.2em; margin-bottom: 12px;">DIRECTOR</div>
+      <div class="doctor-name">김진균 원장</div>
+      <div class="doctor-role">희망찬병원 아킬레스건 클리닉</div>
+    </div>
+    <div class="doctor-credentials">
+      <ul>
+        <li>정형외과 전문의</li>
+        <li>희망찬병원 원장</li>
+        <li>유튜브 채널 "털보의사" 운영 — 정형외과 환자 교육</li>
+        <li>하지 외상·아킬레스건·스포츠 외상 환자 교육 콘텐츠 다수</li>
+        <li>화성·동탄·오산·평택 지역 정형외과 진료 거점</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="예약" class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">진료 예약</div>
+    <h2 class="cta-title">아킬레스건 파열, 본원이 정밀하게 진단합니다</h2>
+    <p class="cta-desc">
+      정형외과 전문의 김진균 원장이 진료합니다. Thompson test·초음파·MRI 영상 검토 통합 정밀 진단·환자별
+      수술 vs 보존 정직 안내·보존 진료·정기 외래·재활까지 한 자리에서. 자보·산재 정직 진료. 광범위 봉합
+      수술이 필요한 경우 상급 종합병원으로 신속 연계해 드립니다. 수술 후 재활 외래도 본원에서 가까운
+      거리에서 받으실 수 있습니다.
+    </p>
+    <div class="cta-buttons">
+      <a href="tel:1600-3415" class="cta-btn-primary">전화 예약 — 1600-3415</a>
+      <a href="#" class="cta-btn-secondary">온라인 예약 문의</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">희망찬병원 아킬레스건 클리닉</div>
+        <div class="footer-brand-desc">
+          정형외과 전문의가 진료하는 아킬레스건 파열 클리닉입니다. 화성·동탄·오산·평택·수원·용인·병점
+          지역 환자분을 진료합니다. 정밀 진단(Thompson test·초음파·MRI)·환자별 수술 vs 보존 정직 안내·
+          부목/기능 부츠 보존 진료·정기 외래·재활까지 한 자리에서 제공합니다. 광범위 봉합 수술이 필요한
+          경우 상급 종합병원으로 신속 연계해 드립니다. 본원은 일률적으로 진료를 권하지 않고 환자분과 함께
+          진료 방향을 정직하게 결정하는 시그니처 영역입니다. 15-2-4 발목·15-2-5 발 외상과 통합 진료가
+          가능한 본원 하지 외상 거점입니다.
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>진료 영역</h4>
+        <ul>
+          <li><a href="#아킬레스건_결정">아킬레스건 파열 진료</a></li>
+          <li><a href="#아킬레스건_증상">증상 자가확인</a></li>
+          <li><a href="#아킬레스건_본원진료">본원 정밀 진단</a></li>
+          <li><a href="#아킬레스건_수술vs보존">수술 vs 보존 안내</a></li>
+          <li><a href="#아킬레스건_재활">회복기 외래·재활</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>오시는 길</h4>
+        <ul>
+          <li>주소 — 경기도 화성시 병점중앙로 174</li>
+          <li>전화 —1600-3415</li>
+          <li>진료 시간 — 09:00~18:00</li>
+          <li>토요일 진료 — 09:00:13:00</li>
+          <li>점심 시간 — 12:30~13:30</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      ⓒ 희망찬병원<br>
+      본 페이지는 의료법 56조에 따른 의료광고이며, 진료의 결과는 환자 개별 상태에 따라 다를 수 있습니다.<br>
+      아킬레스건 광범위 봉합 수술·재파열 후 재수술·만성 결손 재건 수술은 본원에서 시행하지 않으며,
+      상급 종합병원으로 신속 연계해 드립니다.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
