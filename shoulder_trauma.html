@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 어깨 외상 클리닉 — 본원 직접 진료 · 쇄골 골절·어깨 탈구 즉시 정복</title>
+<meta name="description" content="정형외과 전문의가 직접 진료하는 어깨 외상 클리닉. 쇄골 골절·견봉 골절·어깨 탈구 즉시 정복·정기 외래까지 한 자리. 자보·산재 정직 진료. 화성·동탄·오산·평택.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-bg: #fafaf8;
+  --color-bg-alt: #f3f1ec;
+  --color-bg-section: #ffffff;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --color-text-light: #8a8a8a;
+  --color-border: #e5e3de;
+  --color-primary: #1e3a5f;
+  --color-primary-soft: #4a6885;
+  --color-accent: #8b2331;
+  --color-gold: #a0824a;
+  --color-success: #2d5a3d;
+  --color-urgent: #b91c1c;
+  --color-urgent-bg: #fef2f2;
+  --font-serif: 'Noto Serif KR', 'Times New Roman', serif;
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans); font-weight: 400; font-size: 16px;
+  line-height: 1.75; color: var(--color-text); background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.96); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border); padding: 14px 0;
+}
+.topbar-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.brand {
+  font-family: var(--font-serif); font-weight: 600; font-size: 19px;
+  letter-spacing: -0.01em; color: var(--color-primary);
+}
+.brand-sub {
+  font-size: 12px; color: var(--color-text-light); font-weight: 400;
+  margin-left: 6px; letter-spacing: 0.05em;
+}
+.cta-button {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 22px; background: var(--color-primary); color: #fff;
+  font-size: 14px; font-weight: 500; text-decoration: none;
+  border-radius: 2px; letter-spacing: 0.02em; transition: background .2s;
+}
+.cta-button:hover { background: #142a48; }
+.hero { padding: 100px 32px 80px; max-width: 1200px; margin: 0 auto; }
+.hero-eyebrow {
+  display: inline-block; font-size: 12px; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--color-gold); margin-bottom: 24px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--color-gold);
+}
+.hero-title {
+  font-family: var(--font-serif); font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.2; font-weight: 400; color: var(--color-primary);
+  margin-bottom: 28px; letter-spacing: -0.02em;
+}
+.hero-title em { font-style: italic; color: var(--color-accent); }
+.hero-desc {
+  font-size: 18px; line-height: 1.85; color: var(--color-text-muted);
+  max-width: 760px; margin-bottom: 40px;
+}
+.hero-quote {
+  border-left: 3px solid var(--color-accent); padding: 16px 24px;
+  margin: 32px 0; background: rgba(139,35,49,.03);
+  font-family: var(--font-serif); font-size: 20px;
+  color: var(--color-primary); line-height: 1.6; max-width: 760px;
+}
+.signature-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2d4f7a 100%);
+  color: #fff; padding: 32px 40px; margin: 40px 0;
+  position: relative; overflow: hidden;
+}
+.signature-banner::before {
+  content: '★'; position: absolute; top: -20px; right: 24px;
+  font-size: 120px; color: rgba(160,130,74,.2); line-height: 1;
+}
+.signature-banner-eyebrow {
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 12px; text-transform: uppercase; font-weight: 600;
+}
+.signature-banner-title {
+  font-family: var(--font-serif); font-size: 28px; font-weight: 500;
+  line-height: 1.4; margin-bottom: 12px; position: relative;
+}
+.signature-banner-desc {
+  font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.85); position: relative;
+}
+.section-nav {
+  background: var(--color-bg-alt); padding: 32px;
+  border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);
+}
+.section-nav-inner { max-width: 1200px; margin: 0 auto; }
+.section-nav-title {
+  font-family: var(--font-serif); font-size: 14px; color: var(--color-text-light);
+  text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 16px;
+}
+.section-nav-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px;
+}
+.section-nav-grid a {
+  font-size: 14px; padding: 8px 12px; color: var(--color-text);
+  text-decoration: none; border-left: 2px solid transparent; transition: all .2s;
+}
+.section-nav-grid a:hover {
+  border-left-color: var(--color-accent); background: rgba(255,255,255,.7);
+  color: var(--color-primary);
+}
+.section-nav-grid a.signature { color: var(--color-accent); font-weight: 500; }
+.section-nav-grid a.signature::before { content: '★ '; font-size: 11px; }
+.landing-section {
+  padding: 100px 32px; max-width: 1100px; margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+}
+.landing-section.signature {
+  background: linear-gradient(180deg, var(--color-bg) 0%, rgba(160,130,74,.04) 100%);
+  position: relative;
+}
+.landing-section.signature::before {
+  content: '시그니처'; position: absolute; top: 60px; right: 32px;
+  font-size: 11px; letter-spacing: 0.3em; color: var(--color-gold); font-weight: 500;
+}
+.landing-eyebrow {
+  font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--color-gold); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.landing-eyebrow::after {
+  content: ''; flex: 1; height: 1px; background: var(--color-border); max-width: 60px;
+}
+.landing-title {
+  font-family: var(--font-serif); font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.25; font-weight: 500; color: var(--color-primary);
+  margin-bottom: 24px; letter-spacing: -0.015em;
+}
+.landing-title strong { font-weight: 600; color: var(--color-accent); font-style: italic; }
+.landing-lead {
+  font-size: 17px; line-height: 1.85; color: var(--color-text-muted);
+  margin-bottom: 40px; max-width: 800px;
+}
+.landing-section h3 {
+  font-family: var(--font-serif); font-size: 22px; font-weight: 500;
+  color: var(--color-primary); margin: 48px 0 16px; letter-spacing: -0.01em;
+}
+.landing-section p {
+  font-size: 16px; line-height: 1.85; color: var(--color-text);
+  margin-bottom: 16px; max-width: 800px;
+}
+.symptom-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px; margin: 32px 0;
+}
+.symptom-card {
+  padding: 24px; background: var(--color-bg-section);
+  border: 1px solid var(--color-border); border-left: 3px solid var(--color-primary);
+}
+.symptom-card.gold { border-left-color: var(--color-gold); }
+.symptom-card.urgent { border-left-color: var(--color-urgent); }
+.symptom-card-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.symptom-card-desc { font-size: 14px; line-height: 1.7; color: var(--color-text-muted); }
+.compare-table {
+  width: 100%; border-collapse: collapse; margin: 32px 0;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.compare-table th, .compare-table td {
+  padding: 14px 20px; text-align: left; font-size: 14px;
+  border-bottom: 1px solid var(--color-border); vertical-align: top;
+}
+.compare-table th {
+  background: var(--color-primary); color: #fff;
+  font-weight: 500; letter-spacing: 0.02em;
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table tbody tr:hover { background: var(--color-bg-alt); }
+.compare-table .label { font-weight: 500; color: var(--color-primary); width: 28%; }
+.highlight-box {
+  background: var(--color-primary); color: #fff; padding: 40px;
+  margin: 40px 0; position: relative;
+}
+.highlight-box::before {
+  content: '"'; position: absolute; top: 8px; left: 24px;
+  font-family: var(--font-serif); font-size: 80px;
+  color: rgba(255,255,255,.2); line-height: 1;
+}
+.highlight-box-content { position: relative; z-index: 1; padding-left: 40px; }
+.highlight-box p {
+  color: #fff; font-family: var(--font-serif); font-size: 19px;
+  line-height: 1.7; margin: 0; max-width: none;
+}
+.highlight-box-caption {
+  font-size: 12px; letter-spacing: 0.2em; color: rgba(255,255,255,.6);
+  text-transform: uppercase; margin-top: 16px;
+}
+.warning-box {
+  background: #fef4f4; border-left: 4px solid var(--color-accent);
+  padding: 24px 28px; margin: 32px 0;
+}
+.warning-box-title {
+  font-weight: 600; color: var(--color-accent); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.warning-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.info-box {
+  background: #f0f4fa; border-left: 4px solid var(--color-primary);
+  padding: 24px 28px; margin: 32px 0;
+}
+.info-box-title {
+  font-weight: 600; color: var(--color-primary); margin-bottom: 8px;
+  font-size: 15px; letter-spacing: 0.02em;
+}
+.info-box-desc { font-size: 14px; color: var(--color-text); line-height: 1.75; }
+.checklist {
+  list-style: none; margin: 24px 0; padding: 24px 32px;
+  background: var(--color-bg-section); border: 1px solid var(--color-border);
+}
+.checklist li {
+  padding: 10px 0 10px 32px; position: relative;
+  font-size: 15px; line-height: 1.6; border-bottom: 1px solid var(--color-border);
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '□'; position: absolute; left: 0; top: 10px;
+  color: var(--color-primary); font-size: 18px; font-weight: 500;
+}
+.steps {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0; margin: 32px 0; border: 1px solid var(--color-border);
+}
+.step {
+  padding: 28px 24px; border-right: 1px solid var(--color-border);
+  background: var(--color-bg-section); position: relative;
+}
+.step:last-child { border-right: none; }
+.step-num {
+  font-family: var(--font-serif); font-size: 13px; letter-spacing: 0.3em;
+  color: var(--color-gold); margin-bottom: 12px;
+}
+.step-title {
+  font-weight: 600; font-size: 15px; color: var(--color-primary); margin-bottom: 8px;
+}
+.step-desc { font-size: 13px; line-height: 1.6; color: var(--color-text-muted); }
+.doctor-card {
+  display: grid; grid-template-columns: 1fr 2fr; gap: 40px;
+  padding: 40px; background: var(--color-bg-alt);
+  margin: 48px 0; align-items: center;
+}
+.doctor-credentials { font-family: var(--font-serif); }
+.doctor-name {
+  font-size: 28px; font-weight: 500; color: var(--color-primary); margin-bottom: 4px;
+}
+.doctor-role {
+  font-size: 14px; color: var(--color-text-muted);
+  letter-spacing: 0.05em; margin-bottom: 24px;
+}
+.doctor-credentials ul {
+  list-style: none; font-family: var(--font-sans);
+  font-size: 14px; line-height: 1.9; color: var(--color-text);
+}
+.doctor-credentials li { padding-left: 16px; position: relative; }
+.doctor-credentials li::before {
+  content: '—'; position: absolute; left: 0; color: var(--color-gold);
+}
+.cta-section { background: var(--color-primary); padding: 80px 32px; text-align: center; }
+.cta-inner { max-width: 800px; margin: 0 auto; color: #fff; }
+.cta-eyebrow {
+  font-size: 12px; letter-spacing: 0.3em; color: var(--color-gold);
+  margin-bottom: 16px; text-transform: uppercase;
+}
+.cta-title {
+  font-family: var(--font-serif); font-size: 36px; font-weight: 400;
+  margin-bottom: 16px; line-height: 1.3;
+}
+.cta-desc {
+  font-size: 16px; color: rgba(255,255,255,.85);
+  margin-bottom: 36px; line-height: 1.8;
+}
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-btn-primary {
+  display: inline-block; padding: 16px 40px; background: #fff;
+  color: var(--color-primary); font-weight: 500; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-primary:hover { background: var(--color-gold); color: #fff; }
+.cta-btn-secondary {
+  display: inline-block; padding: 16px 40px; background: transparent;
+  color: #fff; border: 1px solid rgba(255,255,255,.4);
+  font-weight: 400; text-decoration: none;
+  font-size: 15px; letter-spacing: 0.02em; transition: all .2s;
+}
+.cta-btn-secondary:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+footer { background: #0f1f33; color: rgba(255,255,255,.65); padding: 60px 32px 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+.footer-brand-name {
+  font-family: var(--font-serif); font-size: 22px;
+  font-weight: 500; color: #fff; margin-bottom: 12px;
+}
+.footer-brand-desc {
+  font-size: 13px; line-height: 1.8;
+  color: rgba(255,255,255,.55); max-width: 400px;
+}
+.footer-section h4 {
+  font-family: var(--font-serif); font-size: 14px; color: #fff;
+  margin-bottom: 16px; letter-spacing: 0.05em;
+}
+.footer-section ul { list-style: none; font-size: 13px; line-height: 2; }
+.footer-section a { color: rgba(255,255,255,.65); text-decoration: none; transition: color .2s; }
+.footer-section a:hover { color: var(--color-gold); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px;
+  font-size: 12px; color: rgba(255,255,255,.45); text-align: center; line-height: 1.8;
+}
+@media (max-width: 768px) {
+  .hero { padding: 60px 24px 40px; }
+  .landing-section { padding: 60px 24px; }
+  .topbar-inner { padding: 0 20px; }
+  .doctor-card { grid-template-columns: 1fr; gap: 24px; padding: 28px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cta-section { padding: 60px 24px; }
+  .cta-title { font-size: 28px; }
+  .hero-quote { font-size: 17px; }
+  .landing-section.signature::before { display: none; }
+  .signature-banner-title { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div>
+      <span class="brand">희망찬병원 어깨 외상 클리닉</span>
+      <span class="brand-sub">HOPE SHOULDER TRAUMA CLINIC</span>
+    </div>
+    <a href="#예약" class="cta-button">진료 예약</a>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-eyebrow">정형외과 어깨 외상 진료</div>
+  <h1 class="hero-title">
+    어깨 외상, <em>본원이 직접</em><br>진료합니다.
+  </h1>
+  <p class="hero-desc">
+    어깨 외상(쇄골 골절·견봉 골절·어깨 탈구·상완골 근위부 골절)은 본원이 직접 진료하는 영역입니다.
+    정형외과 전문의가 당일 X-ray·도수 정복·깁스/보조기·정기 외래까지 한 자리에서 시행합니다.
+    응급실 후 가까운 외래·자보/산재 정직 진료·노인 낙상 환자 진료 거점입니다.
+  </p>
+  <div class="hero-quote">
+    "어깨 외상의 진료 결과는 첫 진료의 정확도가 결정합니다. 가까운 거리에서 정확하게."<br>
+    <span style="font-size: 14px; color: var(--color-text-muted); font-family: var(--font-sans); font-style: normal;">
+      — 김진균 원장, 정형외과 전문의
+    </span>
+  </div>
+
+  <div class="signature-banner">
+    <div class="signature-banner-eyebrow">본원 직접 진료 + 탈구 즉시 정복</div>
+    <div class="signature-banner-title">쇄골·견봉·어깨 탈구·상완골 근위부 — 한 자리에서</div>
+    <div class="signature-banner-desc">
+      당일 X-ray·도수 정복·깁스/8자 붕대/보조기·필요시 미세 수술·정기 외래까지 본원 정형외과 전문의가
+      직접 진료합니다. 어깨 탈구는 응급실 대기 없이 본원 즉시 정복 가능. 단, 회전근개 광범위 파열·
+      인공관절은 상급 종합병원으로 신속 연계해 드립니다.
+    </div>
+  </div>
+</section>
+
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <div class="section-nav-title">진료 안내 · 5개 영역</div>
+    <div class="section-nav-grid">
+      <a href="#어깨외상_결정">어깨 외상 진료·진단</a>
+      <a href="#어깨외상_증상">증상 자가확인·외상 양상</a>
+      <a href="#어깨외상_본원진료" class="signature">본원 직접 진료·정밀 평가</a>
+      <a href="#어깨외상_탈구" class="signature">어깨 탈구 즉시 정복</a>
+      <a href="#어깨외상_재활">회복기 외래·재활</a>
+    </div>
+  </div>
+</div>
+
+<section id="어깨외상_결정" class="landing-section">
+  <div class="landing-eyebrow">랜딩 1 · 어깨 외상 진료</div>
+  <h2 class="landing-title">어깨 외상, <strong>본원 정형외과</strong>가 진료합니다</h2>
+  <p class="landing-lead">
+    어깨 외상은 본원이 직접 진료하는 핵심 영역입니다. 환자분이 어깨를 다치셨을 때 어떤 진단이 가능하고
+    본원이 어디까지 진료하는지 정직하게 안내드립니다. 정형외과 전문의가 환자분께 적합한 진료 방향을
+    함께 정해갑니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"어깨는 가장 움직임이 많은 관절이며, 외상 후 정확한 진단이 평생 손 사용에 영향을 줍니다."</p>
+      <div class="highlight-box-caption">— 본원 어깨 외상 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 진료 영역 — 직접 시행 가능</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">쇄골 골절</div>
+      <div class="symptom-card-desc">X-ray·8자 붕대·보조기·정기 외래. 환자별 수술 vs 보존 결정.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">견봉·견갑골 골절</div>
+      <div class="symptom-card-desc">정밀 진단·보존 진료·정기 외래. 본원 진료.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">어깨 탈구 정복</div>
+      <div class="symptom-card-desc">본원 즉시 정복 가능. 응급실 대기 없이 빠르게.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">상완골 근위부 골절</div>
+      <div class="symptom-card-desc">노인 낙상 흔한 골절. 본원 정밀 평가·진료 방향 결정.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정기 외래·재활</div>
+      <div class="symptom-card-desc">깁스·보조기 풀러·어깨 굳음 풀기·기능 회복.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">통합 진료</div>
+      <div class="symptom-card-desc">팔꿈치·손목과 함께 본원 상지 외상 거점.</div>
+    </div>
+  </div>
+
+  <h3>본원이 시행하지 않는 영역</h3>
+  <ul class="checklist">
+    <li>어깨 회전근개 광범위 파열 봉합 — 상급 종합병원 어깨 전문 영역</li>
+    <li>어깨 인공관절 수술 — 상급 종합병원 영역</li>
+    <li>관절경 안정화 수술(Bankart 등) — 상급 종합병원 영역</li>
+    <li>광범위 다발성 외상 응급 수술 — 상급 종합병원 영역</li>
+  </ul>
+
+  <div class="info-box">
+    <div class="info-box-title">"본원과 큰 병원, 어떻게 나뉘나요?"</div>
+    <div class="info-box-desc">
+      회전근개 광범위 파열·인공관절·관절경 안정화 수술은 어깨 전문 의료진과 수술 장비가 있는 상급
+      종합병원에서 받으셔야 합니다. 본원은 쇄골 골절·견봉 골절·어깨 탈구 정복·상완골 근위부 골절·
+      정기 외래·자보/산재 진료의 거점 역할을 합니다.
+    </div>
+  </div>
+
+  <h3>본원 진료가 적합한 환자</h3>
+  <ul class="checklist">
+    <li>어깨 외상 후 X-ray와 정확한 진단이 필요한 환자</li>
+    <li>응급실에서 처치 후 가까운 정기 외래가 필요한 환자</li>
+    <li>큰 병원에서 어깨 수술 후 가까운 거리에서 추적이 필요한 환자</li>
+    <li>교통사고·작업 중 어깨 외상으로 자보·산재 진료가 필요한 환자</li>
+    <li>아이가 쇄골 골절로 진료가 필요한 보호자</li>
+    <li>노인 낙상 후 어깨 통증·못 들어 올림으로 정밀 진단이 필요한 경우</li>
+    <li>어깨가 빠진 후 본원 즉시 정복이 필요한 환자</li>
+    <li>운동 중 어깨를 다쳐 정확한 진단을 원하시는 환자</li>
+  </ul>
+</section>
+
+<section id="어깨외상_증상" class="landing-section">
+  <div class="landing-eyebrow">랜딩 2 · 어깨 외상 증상</div>
+  <h2 class="landing-title">어깨 외상 후 <strong>진료가 필요한 신호</strong></h2>
+  <p class="landing-lead">
+    어깨를 다치셨을 때 단순 타박상인지 골절·탈구인지 환자분이 직접 판단하기는 어렵습니다. 다음 신호가
+    하나라도 있으시면 본원에서 X-ray 검사를 받으시는 것이 안전합니다. 작은 골절을 놓치면 평생 어깨
+    기능에 영향을 줄 수 있습니다.
+  </p>
+
+  <h3>어깨 외상 신호 — X-ray 권장</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">팔 못 들어 올림</div>
+      <div class="symptom-card-desc">팔을 위로 들 수 없거나 옆으로 못 듦. 골절·탈구 가능.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">어깨 변형</div>
+      <div class="symptom-card-desc">어깨 모양이 평소와 달라 보임. 쇄골 튀어나옴·탈구.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">강한 통증·부음</div>
+      <div class="symptom-card-desc">진통제로도 잘 안 가라앉는 통증·심한 부음.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">팔 자가 지지</div>
+      <div class="symptom-card-desc">다친 팔을 다른 손으로 받쳐야 통증 줄어듦.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">손가락 저림·차가움</div>
+      <div class="symptom-card-desc">신경·혈관 손상 가능. 본원 정밀 진료 필수.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">다칠 때 소리</div>
+      <div class="symptom-card-desc">"뚝", "딱" 소리 들렸음. 골절·탈구 가능성.</div>
+    </div>
+  </div>
+
+  <h3>외상 양상별 위험도</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>외상 양상</th><th>의심 진단</th><th>본원 안내</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="label">앞으로 넘어져 어깨 부딪힘</td>
+        <td>쇄골 골절·견봉 손상</td><td>본원 X-ray</td></tr>
+      <tr><td class="label">옆으로 넘어져 어깨 짓눌림</td>
+        <td>상완골 근위부·견갑골</td><td>본원 X-ray</td></tr>
+      <tr><td class="label">팔 짚고 넘어짐 (FOOSH)</td>
+        <td>광범위 어깨 외상 가능</td><td>본원 정밀 평가</td></tr>
+      <tr><td class="label">운동 중 어깨 빠진 느낌</td>
+        <td>어깨 탈구</td><td>본원 즉시 정복</td></tr>
+      <tr><td class="label">기지개·옷 입다 어깨 빠짐</td>
+        <td>습관성 어깨 탈구</td><td>본원 정복·정밀 평가</td></tr>
+      <tr><td class="label">자전거·오토바이 사고</td>
+        <td>쇄골·상완골 골절 흔함</td><td>본원 정밀 진료</td></tr>
+      <tr><td class="label">교통사고 안전벨트</td>
+        <td>쇄골 골절 (전형적)</td><td>본원 X-ray·자보</td></tr>
+      <tr><td class="label">노인 낙상</td>
+        <td>상완골 근위부 골절 흔함</td><td>본원 진료·골다공증 평가</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"움직여지면 골절 아니다"는 오해</div>
+    <div class="warning-box-desc">
+      쇄골 골절이나 상완골 근위부 골절이 있어도 통증을 참으며 팔을 움직일 수 있는 경우가 많습니다.
+      통증·부음·변형 중 하나라도 있으시면 X-ray 검사를 받으시는 것이 안전합니다.
+    </div>
+  </div>
+
+  <h3>보호자 시점 — 아이 어깨 외상</h3>
+  <p>
+    아이는 본인이 정확히 표현하기 어려우므로 보호자의 관찰이 핵심입니다. 다음 변화가 있으시면 본원에서
+    X-ray 검사를 받아 보시기 바랍니다.
+  </p>
+  <ul class="checklist">
+    <li>다친 후 팔을 못 들어 올려요</li>
+    <li>다친 어깨 쪽 팔을 다른 손으로 받쳐 들고 있어요</li>
+    <li>옷 입히려 할 때 심하게 아파해요</li>
+    <li>쇄골 부위가 부어 있거나 모양이 달라 보여요</li>
+    <li>다친 후 팔을 잘 안 쓰려고 해요</li>
+    <li>몇 시간 지나도 부음이 안 가라앉아요</li>
+  </ul>
+</section>
+
+<section id="어깨외상_본원진료" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 3 · 본원 직접 진료·정밀 평가 (시그니처)</div>
+  <h2 class="landing-title">X-ray·정복·깁스·외래까지 <strong>한 자리에서</strong></h2>
+  <p class="landing-lead">
+    본원의 핵심 차별화는 어깨 외상의 모든 진료 과정을 한 자리에서 받으실 수 있다는 점입니다. 정형외과
+    전문의가 직접 X-ray 판독·정복·깁스/보조기·정기 외래·재활까지 진료합니다. 큰 병원을 매번 가지
+    않으셔도 됩니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"어깨 외상은 첫 진료의 정확도가 평생 어깨 기능을 결정합니다. 본원에서 정확하게 진료받으십시오."</p>
+      <div class="highlight-box-caption">— 본원 어깨 외상 진료 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 진료 흐름 — 외상 직후</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">초진 상담</div>
+      <div class="step-desc">외상 양상·통증·기능 종합 평가</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">당일 X-ray</div>
+      <div class="step-desc">본원 X-ray 즉시 시행·정형외과 판독</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">진료 방향</div>
+      <div class="step-desc">보존 vs 수술 환자별 정직 안내</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">정복·고정</div>
+      <div class="step-desc">필요시 도수 정복·깁스/8자 붕대/보조기</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">정기 외래</div>
+      <div class="step-desc">2~4주 간격 추적 X-ray·재활 진료</div>
+    </div>
+  </div>
+
+  <h3>본원 어깨 외상 진료의 강점</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정형외과 전문의 직접</div>
+      <div class="symptom-card-desc">전문의가 X-ray 판독·정복·진료 직접 시행.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">당일 진료</div>
+      <div class="symptom-card-desc">예약 없이 외상 직후 진료 가능. 신속 처치.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정밀 평가</div>
+      <div class="symptom-card-desc">신경·혈관 평가·동반 손상 정확한 진단.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">한 자리 진료</div>
+      <div class="symptom-card-desc">X-ray·정복·고정·외래·재활 한 곳에서.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">정직 안내</div>
+      <div class="symptom-card-desc">보존 vs 수술 환자별 정직 결정. 강요 없이.</div>
+    </div>
+    <div class="symptom-card gold">
+      <div class="symptom-card-title">통합</div>
+      <div class="symptom-card-desc">팔꿈치·손목 외상과 통합 진료 가능.</div>
+    </div>
+  </div>
+
+  <h3>응급실·큰 병원 후 본원 외래</h3>
+  <p>
+    교통사고나 큰 사고로 응급실에서 X-ray·정복·깁스 처치를 받으셨거나, 큰 병원에서 수술을 받으셨다면
+    그 이후의 정기 외래는 가까운 거리의 본원에서 받으시는 것이 효율적입니다. 본원은 환자분의 응급실
+    영상·수술 기록을 이어받아 진료를 계속합니다.
+  </p>
+
+  <h3>위험군별 본원 진료 접근</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>위험군</th><th>특별 고려</th><th>본원 진료 방향</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">노인</td>
+        <td>골다공증·낙상 반복</td>
+        <td>골다공증 평가 동반·낙상 예방 안내</td>
+      </tr>
+      <tr>
+        <td class="label">소아·어린이</td>
+        <td>성장판·뼈가 부드러움</td>
+        <td>세심한 진찰·보호자 관리 안내</td>
+      </tr>
+      <tr>
+        <td class="label">운동선수</td>
+        <td>복귀 시점·기능 보존</td>
+        <td>단계적 재활·복귀 진료</td>
+      </tr>
+      <tr>
+        <td class="label">반복 낙상 환자</td>
+        <td>균형·기저 질환</td>
+        <td>본원 평가·필요시 신경외과 연계</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>자보·산재 진료 안내</h3>
+  <p>
+    교통사고로 어깨 외상을 입으신 환자분, 작업 중 어깨를 다치신 환자분 모두 본원에서 자보·산재 정직
+    진료를 받으실 수 있습니다. 입원 일수 부풀리기·과잉 검사는 본원에서 하지 않습니다.
+  </p>
+  <ul class="checklist">
+    <li>교통사고 — 경찰 사고 접수·자보사 접수·신분증 가져오시면 됩니다</li>
+    <li>산재 — 산재 요양 신청서·사업장 정보·신분증</li>
+    <li>진료비 — 보험사·근로복지공단 직접 정산. 본인 부담 일반적으로 없음</li>
+    <li>진단서·소견서 — 본원 정직 발급</li>
+    <li>휴업 진단서 — 의학적으로 필요한 기간만큼 정직 발급</li>
+  </ul>
+</section>
+
+<section id="어깨외상_탈구" class="landing-section signature">
+  <div class="landing-eyebrow">랜딩 4 · 어깨 탈구 즉시 정복 (시그니처)</div>
+  <h2 class="landing-title">어깨 빠지셨다면, <strong>본원 즉시 정복</strong>입니다</h2>
+  <p class="landing-lead">
+    어깨 탈구는 시간이 갈수록 정복이 어려워집니다. 응급실은 거리가 멀고 대기가 길어 그 사이 어깨 주위
+    근육이 굳어 정복에 더 큰 힘과 마취가 필요해질 수 있습니다. 본원은 응급실 대기 없이 빠르게 정복
+    가능하므로, 어깨가 빠지셨다면 즉시 본원으로 오시면 됩니다.
+  </p>
+
+  <div class="highlight-box">
+    <div class="highlight-box-content">
+      <p>"어깨 탈구는 빨리 정복할수록 환자분의 통증이 적고 정복이 정확합니다."</p>
+      <div class="highlight-box-caption">— 본원 어깨 탈구 정복 원칙</div>
+    </div>
+  </div>
+
+  <h3>본원 어깨 탈구 정복 흐름</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">STEP 01</div>
+      <div class="step-title">즉시 접수</div>
+      <div class="step-desc">대기 없이 도착 즉시 접수</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 02</div>
+      <div class="step-title">X-ray</div>
+      <div class="step-desc">정복 전 X-ray로 탈구 방향·골절 동반 확인</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 03</div>
+      <div class="step-title">통증 관리</div>
+      <div class="step-desc">진통제·필요시 진정으로 환자분 편안하게</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 04</div>
+      <div class="step-title">도수 정복</div>
+      <div class="step-desc">정형외과 전문의 정확한 정복술</div>
+    </div>
+    <div class="step">
+      <div class="step-num">STEP 05</div>
+      <div class="step-title">고정·외래</div>
+      <div class="step-desc">정복 후 슬링·정기 외래 진료</div>
+    </div>
+  </div>
+
+  <h3>어깨 탈구 후 본원 정밀 평가</h3>
+  <p>
+    정복 후에도 진료가 끝난 게 아닙니다. 정복 전후의 X-ray로 동반 골절을 확인하고, 필요시 MRI·CT로
+    인대·신경·혈관 손상을 평가합니다. 본원은 정복 후 적절한 부동화 기간·재활 시점·재발 방지 진료까지
+    함께 안내드립니다.
+  </p>
+
+  <div class="warning-box">
+    <div class="warning-box-title">"빠진 어깨 직접 끼우지 마세요"</div>
+    <div class="warning-box-desc">
+      어깨 탈구를 환자분이나 비의료인이 직접 정복하시면 신경·혈관 손상·골절 동반·정복 실패의 위험이
+      있습니다. 인터넷·유튜브 영상만 보고 따라하시면 평생 어깨 기능에 영향이 갈 수 있습니다. 본원에서
+      안전하게 정복받으십시오.
+    </div>
+  </div>
+
+  <h3>습관성·재발성 어깨 탈구</h3>
+  <p>
+    한 번 어깨가 빠지셨다면 두 번째·세 번째 빠질 위험이 높아집니다. 특히 젊은 환자·운동선수에서 재발이
+    흔합니다. 본원은 습관성 어깨 탈구 환자분의 평가·정복·재발 방지 진료를 진료합니다. 단, 관절경 안정화
+    수술(Bankart 등 수술)이 필요한 환자는 상급 종합병원 어깨 전문 영역으로 연계해 드립니다.
+  </p>
+
+  <h3>습관성 탈구 환자별 진료 방향</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>환자 상태</th><th>본원 진료</th><th>상급 의뢰</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">첫 탈구·통증 강함</td>
+        <td>정복·고정·외래·재활</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="label">2~3번 재발</td>
+        <td>정복·평가·재발 방지 진료</td>
+        <td>관절경 수술 환자에 한해 연계</td>
+      </tr>
+      <tr>
+        <td class="label">반복 재발 (4번 이상)</td>
+        <td>정복·MRI 평가</td>
+        <td>관절경 안정화 수술 연계 가능</td>
+      </tr>
+      <tr>
+        <td class="label">정복 후 굳음</td>
+        <td>재활 진료</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="label">동반 골절</td>
+        <td>X-ray·정복·고정</td>
+        <td>광범위 골절은 연계</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="info-box">
+    <div class="info-box-title">"어깨가 또 빠져요" — 본원에서 함께 결정</div>
+    <div class="info-box-desc">
+      반복 탈구는 평생 어깨 기능에 영향을 줄 수 있습니다. 본원은 환자분의 나이·활동 수준·탈구 빈도를
+      종합 평가해 보존 진료가 좋을지 수술 의뢰가 좋을지 정직하게 안내드립니다. "본원 수술 가능"이라고
+      잘못 안내드리지 않습니다.
+    </div>
+  </div>
+</section>
+
+<section id="어깨외상_재활" class="landing-section">
+  <div class="landing-eyebrow">랜딩 5 · 회복기 외래·재활</div>
+  <h2 class="landing-title">깁스를 풀어도 진료가 <strong>끝나지 않습니다</strong></h2>
+  <p class="landing-lead">
+    어깨 외상에서 가장 흔한 후유증이 "어깨가 굳어 안 올라간다"는 것입니다. 깁스나 슬링을 한 동안 어깨를
+    안 움직였기 때문에 자연스러운 현상이지만, 적절한 재활 없이 방치하면 평생 어깨 기능에 영향이 남을
+    수 있습니다. 본원은 회복기 정기 외래·운동 진료·기능 회복까지 한 자리에서 안내합니다.
+  </p>
+
+  <h3>회복기에 흔한 문제</h3>
+  <div class="symptom-grid">
+    <div class="symptom-card">
+      <div class="symptom-card-title">어깨 굳음·강직</div>
+      <div class="symptom-card-desc">팔이 위로 안 올라가거나 옆으로 못 듦. 운동 진료 필요.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">부정 유합</div>
+      <div class="symptom-card-desc">쇄골이 비뚤어진 채로 붙음. 본원 평가·재진료 검토.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">불유합</div>
+      <div class="symptom-card-desc">뼈가 잘 안 붙음. 본원 평가·필요시 수술 의뢰.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">외상 후 오십견</div>
+      <div class="symptom-card-desc">외상 후 어깨 굳음 만성. 본원 진료.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">신경 손상 후유증</div>
+      <div class="symptom-card-desc">팔 저림·약함. 본원 정밀 평가.</div>
+    </div>
+    <div class="symptom-card">
+      <div class="symptom-card-title">재탈구 위험</div>
+      <div class="symptom-card-desc">탈구 후 재발 위험 증가. 본원 추적 진료.</div>
+    </div>
+  </div>
+
+  <h3>회복기 정기 외래 일정 (일반적 흐름)</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>시기</th><th>진료 항목</th><th>본원 워크플로우</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">1~2주 후</td>
+        <td>추적 X-ray·통증 평가</td>
+        <td>외래 진료·붕대/슬링 점검</td>
+      </tr>
+      <tr>
+        <td class="label">3~4주 후</td>
+        <td>골 유합 확인·고정 풀기 검토</td>
+        <td>외래 진료·붕대 풀러</td>
+      </tr>
+      <tr>
+        <td class="label">6~8주 후</td>
+        <td>운동 시작·기능 회복 평가</td>
+        <td>외래 진료·운동 진료 안내</td>
+      </tr>
+      <tr>
+        <td class="label">3개월 후</td>
+        <td>최종 회복 평가</td>
+        <td>외래 진료·X-ray 추적</td>
+      </tr>
+      <tr>
+        <td class="label">6개월 후</td>
+        <td>완전 회복 종료 / 합병증 환자 지속</td>
+        <td>증상 환자별 외래</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>붕대/슬링 풀고 나서 — 운동 진료가 핵심</h3>
+  <p>
+    붕대나 슬링을 풀고 나면 어깨가 잘 안 올라가는 것이 일반적입니다. 적절한 운동 진료 없이 방치하면
+    평생 어깨 기능에 영향이 남을 수 있습니다. 본원은 단계적 운동·물리치료·작업치료까지 안내합니다.
+  </p>
+
+  <ul class="checklist">
+    <li>1주차 — 가벼운 어깨 흔들기 운동 (통증 없는 범위)</li>
+    <li>2~3주차 — 점차 범위 늘리며 어깨 모든 방향 운동</li>
+    <li>4주차 이후 — 가벼운 물건 들기 연습</li>
+    <li>6주차 이후 — 일상 활동 점진적 복귀</li>
+    <li>운동 중 통증·부음 재발 시 즉시 본원 외래</li>
+    <li>운동선수·연주자는 본원 별도 안내</li>
+  </ul>
+
+  <div class="warning-box">
+    <div class="warning-box-title">자가 운동만으로는 부족합니다</div>
+    <div class="warning-box-desc">
+      유튜브 영상만 보고 따라하시면 잘못된 방향의 운동으로 오히려 굳음이 심해지거나 재골절될 수 있습니다.
+      본원에서 어깨 상태를 정확히 평가한 후 환자분께 맞는 운동을 안내받으시기 바랍니다.
+    </div>
+  </div>
+</section>
+
+<section style="padding: 80px 32px; max-width: 1100px; margin: 0 auto;">
+  <div class="doctor-card">
+    <div>
+      <div style="font-family: var(--font-serif); font-size: 13px; color: var(--color-gold); letter-spacing: 0.2em; margin-bottom: 12px;">DIRECTOR</div>
+      <div class="doctor-name">김진균 원장</div>
+      <div class="doctor-role">희망찬병원 어깨 외상 클리닉</div>
+    </div>
+    <div class="doctor-credentials">
+      <ul>
+        <li>정형외과 전문의</li>
+        <li>희망찬병원 원장</li>
+        <li>유튜브 채널 "털보의사" 운영 — 정형외과 환자 교육</li>
+        <li>어깨·손·척추 외상 환자 교육 콘텐츠 다수</li>
+        <li>화성·동탄·오산·평택 지역 정형외과 진료 거점</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="예약" class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">진료 예약</div>
+    <h2 class="cta-title">어깨 외상, 본원이 직접 진료합니다</h2>
+    <p class="cta-desc">
+      정형외과 전문의 김진균 원장이 진료합니다. 당일 X-ray·도수 정복·깁스/슬링/보조기·정기 외래까지
+      한 자리에서. 자보·산재 정직 진료, 응급실 후 가까운 외래, 노인 낙상 진료. 회전근개 광범위 파열이나
+      인공관절 수술이 필요한 경우 상급 종합병원으로 신속 연계해 드립니다.
+    </p>
+    <div class="cta-buttons">
+      <a href="tel:1600-3415" class="cta-btn-primary">전화 예약 — 1600-3415</a>
+      <a href="#" class="cta-btn-secondary">온라인 예약 문의</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">희망찬병원 어깨 외상 클리닉</div>
+        <div class="footer-brand-desc">
+          정형외과 전문의가 직접 진료하는 어깨 외상 클리닉입니다. 화성·동탄·오산·평택·수원·용인·병점
+          지역 환자분을 진료합니다. 쇄골 골절·견봉 골절·어깨 탈구·상완골 근위부 골절 본원 직접 진료,
+          당일 X-ray·도수 정복·깁스/슬링·정기 외래·자보/산재 정직 진료까지 한 자리에서 제공합니다.
+          팔꿈치·손목 외상과 통합 진료가 가능한 본원 상지 외상 거점입니다.
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>진료 영역</h4>
+        <ul>
+          <li><a href="#어깨외상_결정">어깨 외상 진료</a></li>
+          <li><a href="#어깨외상_증상">증상 자가확인</a></li>
+          <li><a href="#어깨외상_본원진료">본원 직접 진료</a></li>
+          <li><a href="#어깨외상_탈구">어깨 탈구 정복</a></li>
+          <li><a href="#어깨외상_재활">회복기 외래</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>오시는 길</h4>
+        <ul>
+          <li>주소 — 경기도 화성시 병점중앙로 174</li>
+          <li>전화 —1600-3415</li>
+          <li>진료 시간 — 09:00~18:00</li>
+          <li>토요일 진료 — 09:00:13:00</li>
+          <li>점심 시간 — 12:30~13:30</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      ⓒ 희망찬병원<br>
+      진료의 결과는 환자 개별 상태에 따라 다를 수 있습니다.<br>
+      회전근개 광범위 파열·어깨 인공관절·관절경 안정화 수술은 본원에서 시행하지 않으며, 상급 종합병원으로
+      신속 연계해 드립니다.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
