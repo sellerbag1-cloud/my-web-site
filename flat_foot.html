@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>평발·요족 — 양방향 통합 + 23번 발 영역 근본 · 희망찬병원</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+  :root {
+    --main: #3F7050;
+    --main-dark: #2A4F37;
+    --main-soft: #D9E6DE;
+    --gold: #B7791F;
+    --gold-light: #D4AB35;
+    --gold-soft: #FFF4D6;
+    --bg: #F5F8F6;
+    --text: #0F1F15;
+    --text-soft: #34503F;
+    --text-mute: #888;
+    --white: #fff;
+    --border: #BCCDC2;
+    --danger: #C53030;
+    --success: #2C7A7B;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 15px; line-height: 1.65;
+    color: var(--text); background: var(--bg);
+    word-break: keep-all;
+  }
+  h1, h2, h3, .serif { font-family: 'Noto Serif KR', serif; line-height: 1.3; }
+
+  .placeholder {
+    background: #FFFAEB; color: #B7791F;
+    padding: 2px 8px; border: 1px dashed #D69E2E;
+    border-radius: 4px; font-size: 0.92em; font-weight: 500;
+  }
+
+  .header {
+    background: linear-gradient(135deg, var(--main-dark) 0%, var(--main) 60%, var(--main-dark) 100%);
+    color: var(--white);
+    padding: 80px 24px 100px;
+    text-align: center; position: relative; overflow: hidden;
+  }
+  .header::before {
+    content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(212,171,53,.18) 0%, transparent 70%);
+  }
+  .header-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
+  .eyebrow { color: var(--gold-light); font-size: 12px; font-weight: 700; letter-spacing: 4px; margin-bottom: 20px; }
+  .header h1 { font-size: 42px; font-weight: 900; margin-bottom: 20px; line-height: 1.2; }
+  .header h1 .accent { color: var(--gold-light); }
+  .header .sub { font-size: 17px; color: rgba(255,255,255,.85); margin-bottom: 36px; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .cta-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary { background: var(--gold); color: var(--main-dark); padding: 16px 32px; border-radius: 6px; font-size: 16px; font-weight: 800; border: none; cursor: pointer; transition: all .2s; }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-ghost { background: transparent; color: var(--white); padding: 16px 32px; border-radius: 6px; font-size: 16px; font-weight: 700; border: 2px solid var(--white); cursor: pointer; transition: all .2s; }
+  .btn-ghost:hover { background: var(--white); color: var(--main-dark); }
+
+  .core-message {
+    background: var(--white);
+    border: 3px solid var(--main);
+    border-radius: 16px;
+    padding: 44px 36px;
+    margin: 50px auto;
+    max-width: 1020px;
+    position: relative;
+  }
+  .core-message::before {
+    content: '★';
+    position: absolute;
+    top: -22px; left: 50%; transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--main-dark);
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; font-weight: 900;
+  }
+  .core-message h2 { text-align: center; font-size: 26px; color: var(--main-dark); margin-bottom: 8px; }
+  .core-message .subtitle { text-align: center; color: var(--text-soft); font-size: 14px; margin-bottom: 30px; }
+  .message-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+  .message-card {
+    background: var(--main-soft); border-radius: 10px; padding: 22px 14px;
+    text-align: center; border-bottom: 4px solid var(--gold);
+  }
+  .message-card .num { font-size: 10px; color: var(--gold); font-weight: 900; letter-spacing: 2px; margin-bottom: 8px; }
+  .message-card h3 { font-size: 14px; color: var(--main-dark); margin-bottom: 8px; }
+  .message-card p { font-size: 11px; color: var(--text); line-height: 1.55; }
+
+  section { padding: 70px 24px; }
+  section.alt { background: var(--white); }
+  .inner { max-width: 1080px; margin: 0 auto; }
+  .section-eyebrow { color: var(--gold); font-size: 12px; font-weight: 700; letter-spacing: 3px; margin-bottom: 10px; text-align: center; }
+  .section-title { font-size: 32px; font-weight: 900; color: var(--main); text-align: center; margin-bottom: 14px; }
+  .section-lead { font-size: 16px; color: var(--text-soft); text-align: center; max-width: 740px; margin: 0 auto 50px; }
+
+  .self-check {
+    background: var(--white); border-radius: 14px; padding: 40px 32px;
+    box-shadow: 0 4px 20px rgba(63,112,80,.08); border-left: 6px solid var(--main);
+  }
+  .self-check h3 { font-size: 22px; color: var(--main); margin-bottom: 20px; }
+  .check-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .check-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 14px 16px; background: var(--main-soft);
+    border-radius: 8px; font-size: 14px;
+  }
+  .check-item .icon { color: var(--main); font-weight: 700; flex-shrink: 0; }
+
+  /* ★ 평발 vs 요족 양방향 */
+  .vs-box {
+    background: linear-gradient(135deg, var(--gold-soft) 0%, var(--main-soft) 100%);
+    border-radius: 16px;
+    padding: 48px 40px;
+    border: 3px solid var(--gold);
+    position: relative;
+  }
+  .vs-box::before {
+    content: '★ HOPECHAN BIDIRECTIONAL';
+    position: absolute;
+    top: -14px; left: 50%; transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--main-dark);
+    padding: 4px 16px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border-radius: 4px;
+  }
+  .vs-box h3 { text-align: center; font-size: 26px; color: var(--main-dark); margin-bottom: 8px; margin-top: 8px; }
+  .vs-box .subtitle { text-align: center; color: var(--gold); font-size: 13px; font-weight: 700; margin-bottom: 30px; letter-spacing: 2px; }
+  .vs-grid {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    gap: 0;
+    align-items: stretch;
+  }
+  .vs-col {
+    background: var(--white);
+    padding: 28px 24px;
+    border-radius: 10px;
+  }
+  .vs-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--gold);
+    font-weight: 900;
+  }
+  .vs-col .label { font-size: 11px; color: var(--gold); font-weight: 900; letter-spacing: 2px; margin-bottom: 8px; }
+  .vs-col h4 { font-size: 18px; color: var(--main-dark); margin-bottom: 12px; }
+  .vs-col ul { list-style: none; padding: 0; }
+  .vs-col li { padding: 8px 0; font-size: 13px; color: var(--text); border-bottom: 1px solid var(--main-soft); line-height: 1.5; }
+  .vs-col li:last-child { border-bottom: none; }
+  .vs-col li strong { color: var(--main-dark); }
+
+  /* ★발 영역 시너지 (★ 본원 차별) */
+  .integration-23 {
+    background: linear-gradient(135deg, var(--main-soft) 0%, var(--white) 100%);
+    border-radius: 16px;
+    padding: 48px 40px;
+    border: 2px solid var(--main);
+  }
+  .integration-23 .title { text-align: center; font-size: 26px; color: var(--main-dark); margin-bottom: 8px; }
+  .integration-23 .subtitle { text-align: center; color: var(--gold); font-size: 13px; font-weight: 700; margin-bottom: 30px; letter-spacing: 2px; }
+  .integ-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .integ-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 22px 16px;
+    text-align: center;
+    border-top: 4px solid var(--main);
+    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  }
+  .integ-card.center {
+    border-color: var(--gold);
+    background: var(--gold-soft);
+    transform: scale(1.04);
+  }
+  .integ-card .label { font-size: 10px; color: var(--gold); font-weight: 900; letter-spacing: 1px; margin-bottom: 6px; }
+  .integ-card h4 { font-size: 14px; color: var(--main-dark); margin-bottom: 6px; line-height: 1.3; }
+  .integ-card p { font-size: 11px; color: var(--text-soft); line-height: 1.5; }
+
+  /* ★ 신경외과 요족 */
+  .neuro-cavus {
+    background: linear-gradient(135deg, var(--main) 0%, var(--main-dark) 100%);
+    color: var(--white);
+    border-radius: 16px;
+    padding: 48px 40px;
+    text-align: center;
+  }
+  .neuro-cavus .icon-big { font-size: 50px; margin-bottom: 12px; }
+  .neuro-cavus h3 { font-size: 26px; color: var(--white); margin-bottom: 14px; }
+  .neuro-cavus .quote { color: var(--gold-light); font-size: 16px; font-style: italic; margin-bottom: 30px; font-weight: 700; }
+  .neuro-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .stat-card {
+    background: rgba(255,255,255,.1);
+    padding: 22px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.2);
+  }
+  .stat-card .value { font-size: 28px; color: var(--gold-light); font-weight: 900; margin-bottom: 4px; }
+  .stat-card .label { font-size: 12px; color: rgba(255,255,255,.85); }
+
+  /* 유연성 vs 강직성 */
+  .flex-rigid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .flex-card {
+    background: var(--white);
+    padding: 28px 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    border-top: 5px solid var(--success);
+  }
+  .flex-card.rigid {
+    border-color: var(--danger);
+  }
+  .flex-card .label { font-size: 11px; color: var(--success); font-weight: 900; letter-spacing: 2px; margin-bottom: 6px; }
+  .flex-card.rigid .label { color: var(--danger); }
+  .flex-card h4 { font-size: 18px; color: var(--main-dark); margin-bottom: 12px; }
+  .flex-card ul { list-style: none; padding: 0; }
+  .flex-card li { padding: 6px 0; font-size: 13px; color: var(--text); line-height: 1.5; }
+  .flex-card li::before { content: '✓'; color: var(--success); font-weight: 900; margin-right: 6px; }
+  .flex-card.rigid li::before { content: '⚠'; color: var(--danger); }
+
+  /* 단계적 치료 5단계 */
+  .stage-flow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  .stage-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 22px 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    border-top: 4px solid var(--main);
+  }
+  .stage-card.last { border-color: var(--danger); background: #FEF5F5; }
+  .stage-card .num {
+    background: var(--main);
+    color: var(--white);
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-weight: 900;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .stage-card.last .num { background: var(--danger); }
+  .stage-card h4 { font-size: 13px; color: var(--main-dark); margin-bottom: 6px; }
+  .stage-card p { font-size: 11px; color: var(--text-soft); line-height: 1.5; }
+
+  /* FAQ */
+  .faq { max-width: 820px; margin: 0 auto; }
+  .faq-item { background: var(--white); border-radius: 8px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,.04); overflow: hidden; }
+  .faq-q { padding: 18px 24px; cursor: pointer; font-weight: 700; font-size: 15px; color: var(--main); display: flex; justify-content: space-between; align-items: center; transition: background .2s; }
+  .faq-q:hover { background: var(--bg); }
+  .faq-q::after { content: '+'; color: var(--gold); font-size: 22px; font-weight: 700; transition: transform .2s; }
+  .faq-item.open .faq-q::after { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; padding: 0 24px; color: var(--text-soft); font-size: 14px; line-height: 1.65; transition: all .3s ease; }
+  .faq-item.open .faq-a { max-height: 500px; padding: 0 24px 22px; }
+
+  .cta-final { background: linear-gradient(135deg, var(--main) 0%, var(--main-dark) 100%); color: var(--white); padding: 70px 24px; text-align: center; }
+  .cta-final h2 { font-size: 30px; color: var(--white); margin-bottom: 14px; }
+  .cta-final p { font-size: 16px; color: rgba(255,255,255,.85); margin-bottom: 32px; max-width: 640px; margin-left: auto; margin-right: auto; }
+
+  .emergency-box {
+    background: #FED7D7;
+    border-left: 4px solid var(--danger);
+    padding: 16px 20px;
+    margin: 30px auto;
+    max-width: 820px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .emergency-box strong { color: var(--danger); }
+
+  footer { background: var(--main-dark); color: rgba(255,255,255,.7); padding: 40px 24px; text-align: center; font-size: 13px; line-height: 1.8; }
+  footer strong { color: var(--gold-light); }
+  footer .small { font-size: 11px; opacity: .6; margin-top: 8px; }
+
+  .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; background: var(--main-dark); padding: 12px 16px; z-index: 99; display: flex; gap: 8px; box-shadow: 0 -4px 16px rgba(0,0,0,.15); }
+  .sticky-cta button { flex: 1; padding: 14px 0; border: none; border-radius: 6px; font-size: 15px; font-weight: 800; cursor: pointer; }
+  .sticky-tel { background: var(--gold); color: var(--main-dark); }
+  .sticky-book { background: var(--white); color: var(--main-dark); }
+
+  @media (max-width: 900px) {
+    .header h1 { font-size: 28px; }
+    .section-title { font-size: 24px; }
+    .core-message { padding: 30px 20px; margin: 30px 20px; }
+    .message-grid { grid-template-columns: 1fr 1fr; }
+    .check-list { grid-template-columns: 1fr; }
+    .vs-grid { grid-template-columns: 1fr; }
+    .vs-arrow { transform: rotate(90deg); padding: 10px 0; }
+    .integ-grid { grid-template-columns: 1fr 1fr; }
+    .integ-card.center { transform: scale(1); }
+    .neuro-stats { grid-template-columns: 1fr; }
+    .flex-rigid { grid-template-columns: 1fr; }
+    .stage-flow { grid-template-columns: 1fr 1fr; }
+    section { padding: 50px 20px; }
+    body { padding-bottom: 70px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="eyebrow">FLAT FOOT · CAVUS FOOT · 평발·요족</div>
+    <h1>평발·요족<br/><span class="accent">★ 양방향 통합 + 발 영역 근본</span></h1>
+    <p class="sub">
+      평발과 요족 양쪽 모두 본원에서 정확한 감별 + 단계 진료.<br/>
+      ★발 영역 통합의 근본 진단 — 김진균 원장 직접 진료.
+    </p>
+    <div class="cta-group">
+      <button class="btn-primary" onclick="window.location.href='tel:1600-3415<span class=&quot;placeholder&quot;>대표 전화번호</span>'">전화 상담</button>
+      <button class="btn-ghost" onclick="window.location.href='<span class=&quot;placeholder&quot;>온라인 예약 링크</span>'">본원 진료 예약</button>
+    </div>
+  </div>
+</header>
+
+<div class="core-message">
+  <h2>본원의 5대 영업 메시지</h2>
+  <p class="subtitle">평발·요족 영역에서 본원이 환자에게 전달하는 핵심</p>
+
+  <div class="message-grid">
+    <div class="message-card">
+      <div class="num">MSG 01 ★</div>
+      <h3>평발·요족 양방향</h3>
+      <p>양쪽 모두 정확한 감별</p>
+    </div>
+    <div class="message-card">
+      <div class="num">MSG 02 ★</div>
+      <h3>23번 시너지</h3>
+      <p>23-5·23-3 원인 진단</p>
+    </div>
+    <div class="message-card">
+      <div class="num">MSG 03 ★</div>
+      <h3>신경외과 요족</h3>
+      <p>요족 80% 신경근육성</p>
+    </div>
+    <div class="message-card">
+      <div class="num">MSG 04</div>
+      <h3>유연성·강직성</h3>
+      <p>대부분 무증상 안심</p>
+    </div>
+    <div class="message-card">
+      <div class="num">MSG 05</div>
+      <h3>단계적 치료</h3>
+      <p>환자별 결정</p>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="inner">
+    <div class="section-eyebrow">SELF CHECK</div>
+    <h2 class="section-title">평발·요족 자가 체크</h2>
+    <p class="section-lead">아래 증상이 있으시다면 본원 진료를 권장합니다</p>
+
+    <div class="self-check">
+      <h3>다음 중 1가지라도 해당되시나요?</h3>
+      <div class="check-list">
+        <div class="check-item"><span class="icon">✓</span><span>발 아치가 없거나 너무 낮음 (평발)</span></div>
+        <div class="check-item"><span class="icon">✓</span><span>발 아치가 너무 높음 (요족)</span></div>
+        <div class="check-item"><span class="icon">✓</span><span>발자국이 통째로 찍힘 / 매우 좁음</span></div>
+        <div class="check-item"><span class="icon">✓</span><span>오래 서거나 걸으면 발 통증·피로</span></div>
+        <div class="check-item"><span class="icon">✓</span><span>발이 자주 삐고 발목 불안정</span></div>
+        <div class="check-item"><span class="icon">✓</span><span>족저근막염·무지외반 동반</span></div>
+        <div class="check-item"><span class="icon">✓</span><span>요족 + 발 저림·약화·신경 증상</span></div>
+        <div class="check-item"><span class="icon">✓</span><span>아이 평발 걱정되는 부모</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ★ 평발 vs 요족 양방향 -->
+<section class="alt">
+  <div class="inner">
+    <div class="section-eyebrow">★ 본원 시그니처</div>
+    <h2 class="section-title">평발 vs 요족 — 양방향 통합 진료</h2>
+    <p class="section-lead">일반 의료기관은 한쪽만 진료 - 본원은 양쪽 정확한 감별</p>
+
+    <div class="vs-box">
+      <h3>평발 vs 요족 양방향</h3>
+      <p class="subtitle">★ BIDIRECTIONAL INTEGRATED CARE</p>
+
+      <div class="vs-grid">
+        <div class="vs-col">
+          <div class="label">FLAT FOOT</div>
+          <h4>평발 (편평족)</h4>
+          <ul>
+            <li><strong>아치:</strong> 비정상적으로 낮거나 없음</li>
+            <li><strong>발자국:</strong> 통째로 찍힘</li>
+            <li><strong>발뒤꿈치:</strong> 바깥쪽으로 향함</li>
+            <li><strong>동반:</strong> 무지외반·발 안쪽 통증</li>
+          </ul>
+        </div>
+        <div class="vs-arrow">⇄</div>
+        <div class="vs-col">
+          <div class="label">CAVUS FOOT</div>
+          <h4>요족 (오목발)</h4>
+          <ul>
+            <li><strong>아치:</strong> 비정상적으로 높음</li>
+            <li><strong>발자국:</strong> 매우 좁게 찍힘</li>
+            <li><strong>발뒤꿈치:</strong> 안쪽으로 모임</li>
+            <li><strong>동반:</strong> 발 자주 삠·신경 질환 80%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ★ 23번 발 영역 시너지 -->
+<section>
+  <div class="inner">
+    <div class="section-eyebrow">★ 본원 차별 — 23번 통합 근본</div>
+    <h2 class="section-title">발 통증의 근본 — 발 구조 진단</h2>
+    <p class="section-lead">평발/요족은 23-5 족저근막염·23-3 무지외반증의 원인 - 본원 통합 영업</p>
+
+    <div class="integration-23">
+      <h3 class="title">23번 발 영역 통합 시너지</h3>
+      <p class="subtitle">★ FOUNDATION OF 23 SERIES</p>
+
+      <div class="integ-grid">
+        <div class="integ-card center">
+          <div class="label">★ 근본</div>
+          <h4>23-6 평발·요족</h4>
+          <p>발 구조 진단의 근본</p>
+        </div>
+        <div class="integ-card">
+          <div class="label">동반 진료</div>
+          <h4>23-5 족저근막염</h4>
+          <p>평발·요족이 원인</p>
+        </div>
+        <div class="integ-card">
+          <div class="label">동반 진료</div>
+          <h4>23-3 무지외반증</h4>
+          <p>평발이 위험 요인</p>
+        </div>
+        <div class="integ-card">
+          <div class="label">동반 진료</div>
+          <h4>23-2 당뇨발</h4>
+          <p>당뇨 + 발 구조</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ★ 신경외과 요족 (★ 본원 신경외과 차별) -->
+<section class="alt">
+  <div class="inner">
+    <div class="section-eyebrow">★ 본원 신경외과 차별</div>
+    <h2 class="section-title">요족 — 80% 신경근육성 원인</h2>
+    <p class="section-lead">요족은 단순 발 모양이 아닐 수 있습니다 - 신경 평가 필수</p>
+
+    <div class="neuro-cavus">
+      <div class="icon-big">🧠</div>
+      <h3>요족 신경 원인 통합 진단</h3>
+      <p class="quote">"요족 + 발 저림·약화 시 본원 신경외과 + 족부 통합"</p>
+
+      <div class="neuro-stats">
+        <div class="stat-card">
+          <div class="value">80%</div>
+          <div class="label">신경근육성 원인 비율</div>
+        </div>
+        <div class="stat-card">
+          <div class="value">CMT</div>
+          <div class="label">샤코마리투스 등 감별</div>
+        </div>
+        <div class="stat-card">
+          <div class="value">EMG</div>
+          <div class="label">신경전도 정밀 검사</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 유연성 vs 강직성 (★ 환자 안심) -->
+<section>
+  <div class="inner">
+    <div class="section-eyebrow">PARENT REASSURANCE</div>
+    <h2 class="section-title">유연성 vs 강직성 — 평발 자녀 부모 안심</h2>
+    <p class="section-lead">소아 유연성 평발은 대부분 무증상 - 너무 걱정하지 마세요</p>
+
+    <div class="flex-rigid">
+      <div class="flex-card">
+        <div class="label">유연성 평발</div>
+        <h4>대부분 안심 ✓</h4>
+        <ul>
+          <li>발 들어올렸을 때 아치 나타남</li>
+          <li>대부분 무증상</li>
+          <li>소아 유연성 = 성장하며 호전</li>
+          <li>치료 없이 편한 신발만으로 충분</li>
+          <li>본원에서 정확한 평가 권장</li>
+        </ul>
+      </div>
+      <div class="flex-card rigid">
+        <div class="label">강직성 평발</div>
+        <h4>본원 진료 필요 ⚠</h4>
+        <ul>
+          <li>아치가 소실된 상태</li>
+          <li>지속적 통증·기능 장애</li>
+          <li>후방 경골근 기능장애 가능</li>
+          <li>본원 단계 평가 + 치료</li>
+          <li>심한 경우 수술 적응증</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 단계적 치료 5단계 -->
+<section class="alt">
+  <div class="inner">
+    <div class="section-eyebrow">TREATMENT FLOW</div>
+    <h2 class="section-title">단계적 치료 — 환자별 결정</h2>
+    <p class="section-lead">본원에서 환자 상태·증상·동반 질환에 따라 단계별 결정</p>
+
+    <div class="stage-flow">
+      <div class="stage-card">
+        <div class="num">1</div>
+        <h4>관찰·신발</h4>
+        <p>유연성·무증상</p>
+      </div>
+      <div class="stage-card">
+        <div class="num">2</div>
+        <h4>깔창·교정 안창</h4>
+        <p>경증·증상 동반</p>
+      </div>
+      <div class="stage-card">
+        <div class="num">3</div>
+        <h4>보조기·물리치료</h4>
+        <p>중등도·증상 심함</p>
+      </div>
+      <div class="stage-card">
+        <div class="num">4</div>
+        <h4>동반 질환 치료</h4>
+        <p>23-5·23-3 동반</p>
+      </div>
+      <div class="stage-card last">
+        <div class="num">5</div>
+        <h4>수술</h4>
+        <p>강직성·심한 통증</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="inner">
+    <div class="section-eyebrow">FAQ</div>
+    <h2 class="section-title">자주 묻는 질문</h2>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">★ 본원의 양방향 통합 진료가 뭔가요?</div>
+        <div class="faq-a">★ 본원의 시그니처입니다. 일반 의료기관은 평발만 또는 요족만 진료하지만, 본원은 양쪽 모두 정확한 감별 + 단계 진료. 신경외과 + 족부 통합으로 발 구조의 근본 진단.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">내 발이 평발인지 요족인지 어떻게 알 수 있나요?</div>
+        <div class="faq-a">① 발자국 검사 (젖은 발로 종이에 찍기) ② 바닥과 발 사이 공간 확인 ③ 발자국이 통째로 찍히면 평발·매우 좁으면 요족. 정확한 진단은 본원에서 X-ray + 발 운동 범위 + 족저압 측정 통합.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">★ 평발 자녀를 둔 부모인데 걱정됩니다</div>
+        <div class="faq-a">★ 안심하셔도 됩니다. 소아 유연성 편평족은 대부분 문제가 되지 않으며 성장하면서 증상이 없어집니다. 통증·기능 장애가 있을 때만 본원 진료 필요. 본원에서 정확한 평가 후 결정.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">★ 깔창으로 평발을 100% 교정할 수 있나요?</div>
+        <div class="faq-a">★ 의학적 근거가 없습니다. 보조기·특수 신발·아치 지지대 깔창을 조기에 착용하는 것이 평발 변형을 교정한다는 주장은 의학적 근거 없습니다. 다만 증상 완화·악화 방지 효과는 있어 환자별 본원 안내.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">★ 요족과 신경 질환은 어떤 관계인가요?</div>
+        <div class="faq-a">★ 요족의 80% 이상이 신경근육성 원인입니다. 샤코마리투스(CMT)·소아마비 후유증·척수 손상·뇌성마비 등. 본원 신경외과 + 족부 통합으로 신경 원인 정밀 감별. EMG·신경전도 + 영상 검사.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">평발/요족이 족저근막염과 관련 있나요?</div>
+        <div class="faq-a">★ 네, 직접 관계입니다. 평발은 족저근막이 과도하게 늘어남 / 요족은 족저근막이 짧음 → 모두 족저근막염 위험 요인. 본원에서 23-5 족저근막염 + 23-6 발 구조 통합 진료.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">평발과 무지외반증도 관련 있나요?</div>
+        <div class="faq-a">★ 네, 평발은 무지외반증의 위험 요인입니다. 발 아치 무너짐 → 엄지발가락 부담 증가 → 무지외반증 진행. 본원에서 23-3 + 23-6 동시 평가 + 통합 치료.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">평발 수술은 언제 받나요?</div>
+        <div class="faq-a">★ 강직성·심한 통증·일상 어려움·동반 질환 진행 시 수술 적응증. 청소년의 경우 10대 후반 권장 가능 (정설은 없음). 본원에서 환자별 신중 결정. 수술 (절골술·유합술·건이전술).</div>
+      </div>
+    </div>
+
+    <div class="emergency-box">
+      <strong>⚠ 본원은 응급실이 아닙니다.</strong> 평발·요족 자체는 응급 상황 아님.
+      급성 외상·심한 부종·갑작스러운 발 마비 등 응급은 큰 병원 응급실 또는 119로 가셔야 합니다.
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="inner">
+    <h2>발 구조 — 발 통증의 근본 진단</h2>
+    <p>평발·요족 양방향 + 발 영역 통합 + 신경외과 차별.<br/>★ 본원의 발 구조 시그니처 — 김진균 원장 직접 진료.</p>
+    <div class="cta-group">
+      <button class="btn-primary" onclick="window.location.href='tel:1600-3415<span class=&quot;placeholder&quot;>대표 전화번호</span>'">전화 상담</button>
+      <button class="btn-ghost" onclick="window.location.href='<span class=&quot;placeholder&quot;>온라인 예약 링크</span>'">본원 진료 예약</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div><strong><span class="placeholder">정확한 병원 정식 명칭</span></strong> · 신경외과 <span class="placeholder">원장명</span></div>
+  <div><span class="placeholder">경기도 화성시 병점중앙로 174</span> · <span class="placeholder">1600-3415</span></div>
+  <div><span class="placeholder">평일:09:00~18:00 / 토요일:09:00~13:00 / 공휴일.일요일 휴무 </span></div>
+  <div><span class="placeholder">주차 안내</span> · <span class="placeholder">대중교통 안내</span></div>
+  <div class="small">
+    유튜브: <span class="https://youtube.com/tulbodoctor">유튜브 : 털보의사 김진균</span>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <button class="sticky-tel" onclick="window.location.href='tel:1600-3415<span class=&quot;placeholder&quot;>대표 전화번호</span>'">📞 전화 상담</button>
+  <button class="sticky-book" onclick="window.location.href='<span class=&quot;placeholder&quot;>온라인 예약 링크</span>'">본원 진료 예약</button>
+</div>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+  });
+</script>
+
+</body>
+</html>
