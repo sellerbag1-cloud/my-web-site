@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sellerbag1-cloud.github.io/my-web-site/sitemap.xml
