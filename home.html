@@ -7,463 +7,608 @@
   <meta name="keywords" content="희망찬병원, 병점정형외과, 병점신경외과, 손목터널증후군, 척추내시경, 오십견, 족저근막염, 화성병원, 방아쇠손가락, 듀피트" />
   <meta name="description" content="화성 병점 희망찬병원 질환센터. 손목터널증후군, 척추내시경, 오십견, 족저근막염 등 주요 질환 정보 및 치료법 안내." />
   
-  <!-- OG 태그 -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="화성 병점 척추·관절 질환센터 | 희망찬병원" />
   <meta property="og:description" content="환자들이 자주 찾는 척추·관절 질환과 증상 정보를 한눈에 확인하세요." />
   <meta property="og:url" content="https://sellerbag1-cloud.github.io/my-web-site/home.html" />
-<meta name="google-site-verification" content="GdilJBy2rY5RLXG_yF_Ok2bn4fUwcxB2eKLecROI9MU" />
-<meta name="naver-site-verification" content="a74b704393a3428d46be768be0e8713b71dff5a0" />
+  <meta name="google-site-verification" content="GdilJBy2rY5RLXG_yF_Ok2bn4fUwcxB2eKLecROI9MU" />
+  <meta name="naver-site-verification" content="a74b704393a3428d46be768be0e8713b71dff5a0" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "희망찬병원 질환센터",
-  "alternateName": "희망찬병원",
-  "url": "https://sellerbag1-cloud.github.io/my-web-site/home.html"
-}
-</script>
-<title>희망찬병원 질환센터</title>
-<style>
-body{
-font-family:Arial,sans-serif;
-background:#f6f3ee;
-margin:0;
-padding:0;
-color:#1f2937;
-}
-header{
-background:#0f2742;
-color:white;
-padding:60px 30px;
-}
-header h1{
-font-size:48px;
-margin:0 0 20px;
-}
-header p{
-font-size:18px;
-line-height:1.8;
-max-width:900px;
-}
-.container{
-max-width:1200px;
-margin:0 auto;
-padding:50px 24px;
-}
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
-.card{
-background:white;
-border-radius:18px;
-padding:28px;
-box-shadow:0 4px 20px rgba(0,0,0,0.08);
-border:1px solid #ddd;
-}
-.card h2{
-margin-top:0;
-font-size:24px;
-}
-.card a{
-display:inline-block;
-margin-top:16px;
-padding:12px 18px;
-background:#0f2742;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-}
-footer{
-padding:40px;
-text-align:center;
-color:#666;
-}
-</style>
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "희망찬병원 질환센터",
+    "alternateName": "희망찬병원",
+    "url": "https://sellerbag1-cloud.github.io/my-web-site/home.html"
+  }
+  </script>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-navy: #1b4965;
+      --accent-blue: #2b6cb0;
+      --bg-light: #f8fafc;
+      --card-bg: #ffffff;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Navigation Header */
+    nav.top-nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--primary-navy);
+      text-decoration: none;
+    }
+
+    .brand-logo i {
+      color: #319795;
+      font-size: 24px;
+    }
+
+    .hamburger-btn {
+      background: none;
+      border: none;
+      font-size: 22px;
+      color: var(--text-dark);
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #1b4965 0%, #2c5282 100%);
+      color: white;
+      text-align: center;
+      padding: 40px 20px 45px;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      box-shadow: 0 4px 15px rgba(27, 73, 101, 0.15);
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+
+    .hero-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 0;
+      letter-spacing: -0.5px;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+    }
+
+    /* Category Body Icons */
+    .body-parts-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      margin-top: -30px;
+      background: #ffffff;
+      padding: 20px 12px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+      margin-bottom: 24px;
+    }
+
+    .part-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--text-dark);
+      transition: transform 0.2s ease;
+    }
+
+    .part-item:hover {
+      transform: translateY(-3px);
+    }
+
+    .icon-circle {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #edf2f7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-navy);
+      font-size: 20px;
+      transition: all 0.2s ease;
+    }
+
+    .part-item.active .icon-circle,
+    .part-item:hover .icon-circle {
+      background: var(--primary-navy);
+      color: #ffffff;
+    }
+
+    .part-item span {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* Tab Buttons */
+    .tab-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 13px 10px;
+      border-radius: 12px;
+      border: 1px solid var(--primary-navy);
+      background: #ffffff;
+      color: var(--primary-navy);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn.active {
+      background: var(--primary-navy);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(27, 73, 101, 0.2);
+    }
+
+    /* Search Bar */
+    .search-box {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 14px 50px 14px 20px;
+      border-radius: 30px;
+      border: 1.5px solid #cbd5e1;
+      font-size: 15px;
+      outline: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      transition: border-color 0.2s ease;
+      font-family: inherit;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent-blue);
+    }
+
+    .search-btn {
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--primary-navy);
+      color: white;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    /* List Grid Section */
+    .section-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 16px;
+      background-color: var(--accent-blue);
+      border-radius: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 18px 20px;
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      color: var(--text-dark);
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    }
+
+    .card:hover {
+      border-color: var(--accent-blue);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+      font-size: 15px;
+      font-weight: 600;
+      margin: 0;
+      color: #334155;
+    }
+
+    .card .arrow-icon {
+      font-size: 13px;
+      color: #94a3b8;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .card:hover .arrow-icon {
+      color: var(--accent-blue);
+      transform: translateX(3px);
+    }
+
+    /* Footer */
+    footer {
+      background: #f1f5f9;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      border-top: 1px solid var(--border-color);
+    }
+
+    footer strong {
+      color: var(--text-dark);
+    }
+
+    @media (max-width: 600px) {
+      .body-parts-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 6px;
+        padding: 14px 6px;
+      }
+      .icon-circle {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+      }
+      .part-item span {
+        font-size: 11px;
+      }
+      .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+      }
+      .card {
+        padding: 14px 16px;
+      }
+      .card h2 {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-<h1>희망찬병원 질환센터</h1>
-<p>
-환자분들이 실제로 검색하는 질환과 증상을 찾을 수 있는 페이지 입니다.<br>
-각 질환페이지를 눌러 상세 내용을 확인할 수 있습니다.
-</p>
-</header>
 
-<div class="container">
-<div class="grid">
+  <!-- 상단 네비게이션 -->
+  <nav class="top-nav">
+    <a href="#" class="brand-logo">
+      <i class="fa-solid fa-hospital"></i> 희망찬병원
+    </a>
+    <button class="hamburger-btn" aria-label="메뉴 열기">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
 
-<div class="card">
-  <h2>미골 골절</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/COCCYX FRACTURE.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>손목터널증후군</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/CTS_Landing.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>양방향 척추내시경</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/Endoscopy.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>섬유근육통</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/FIBROMYALGIA.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>길랭-바레증후군</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/Guillain-Barre.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>고주파 수핵성형술</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/Nucleoplasty.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>후종인대골화증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/OSLL.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>사두증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/PLAGIOCEPHALY.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>삼각섬유연골복합체</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/TFCC.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>횡단척수염</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/TRANSVERSE MYELITIS.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>아킬레스</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/achilles_html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>루게릭병</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/als_lougeric.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>발목</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/ankle.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>허리 통증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/back_pain.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>뇌질환</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/brain.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>뇌동맥류</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/brain_aneurysm.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>뇌종양</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/brain_tumor.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>석회성 건염</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/calcific_shoulder.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>경추 디스크</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/cervical_disc.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>드케르뱅</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/dequervain.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>당뇨성 발</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/diabeticfoot.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>어지럼증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/dizziness.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>듀피트렌 치료</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/dupuytren_treatment.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>팔꿈치 외상</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/elbow_trauma.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>손가락 관절염</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/Rename finger_arthritis to finger_arthritis.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>손가락 기형</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/Rename finger_deformity to finger_deformity.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>손가락 골절</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/finger_fracture.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>손가락 열상</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/finger_scatch.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>손가락_힘줄</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/finger_tendon.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>평평한 발</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/flat_foot.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>발통합</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/foot_home.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>골절통합</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/fracturehub.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>오십견</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/frozen.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>유합술</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/fusion.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>손목 결절종</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/ganglion.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>골프_엘보우</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/golf_elbow.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>척골관증후군</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/guyon.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>무지외반증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/halluxvalgus.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>손통증 통합페이지</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/hand_home.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>손 저림</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/hand_numbness.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>머리질환</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/head.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>헤르페스병</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/herpes.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>고관절</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/hip_joint.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>내성팔톱</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/ingrowntoetail.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>무릎관절경검사</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/knee_arthroscopy.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>무릎외상</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/knee_tissue.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>무릎인대</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/kneeligament.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>척추성형술</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/kypoplasty.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>인대증후군</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/ligament_syndrom.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>요추 디스크 수술</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/lumbar_disc_surgery.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>모야모야병</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/moyamoya.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>다발성 경화증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/multifle_sclerosis.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>손톱발톱</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/nail.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>신경차단술</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/nerve_block.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>언어장애</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/obstacle.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>파킨슨병</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/parkinson.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>골반외상</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/pelvic.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>(PEN)신경성형술</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/pen.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>베개.매트리스선택법</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/pillow.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>족저근막염</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/plantar_fasciitis.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>류마티스 관절염</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/rheumatoid_arthritis.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>회전근개</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/rotator-cuff.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>근감소증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/sarcopenia.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>척추측만증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/scoliosis.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>정강이 골절</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/shin_fracture.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>정강이 통증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/shin_splint.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>어깨충돌증후군</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/shoulder.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>어깨관절경검사</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/shoulder_arthroscopy.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>어깨 탈구</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/shoulder_dislocation.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>어깨통합</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/shoulder_hub.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>어깨 외상</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/shoulder_trauma.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>슬랩병변</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/slap.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>척추내시경</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/spine_endoscope.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>척추압박골절</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/spine_press.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>척추 수술</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/spine_surgery.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>척추분리증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/spondylolysis.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>척추증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/spondylosis.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>협착증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/stenosis.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>미세현미경감압술(협착증)</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/stenosis_olm.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>일자목</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/straightneck.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>테니스_엘보우</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/tennis_elbow.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>건초염</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/tenosynovitis.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>흉곽출구증후군</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/thoracic_outlet_syndrome.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>발가락 골절</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/toe_fracture.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>횡골절</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/transverse_fracture.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>트라우마(외상)</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/trauma.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>방아쇠손가락</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/trigger.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>척추성형술</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/vertebroplasty.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>주관절골절</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/wirst_facture.html">페이지 열기</a>
-</div>
-<div class="card">
-  <h2>손목 통증</h2>
-  <a href="https://sellerbag1-cloud.github.io/my-web-site/wrist_pain.html">페이지 열기</a>
-</div>
-</div>
+  <!-- 히어로 헤더 -->
+  <header class="hero">
+    <p class="hero-subtitle">환자 증상으로 찾는</p>
+    <h1 class="hero-title">희망찬병원 질환센터</h1>
+  </header>
 
-<footer>
-  희망찬병원<br>
-  주소 : 경기도 화성시 병점구 병점중앙로 174<br>
-  진료.예약문의 : 1600-3415<br>
-  사업자등록번호: 730-95-00733
-  대표원장 : 김진균
-</footer>
+  <div class="container">
+    <!-- 부위별 빠른 검색 아이콘 (data-category 사용) -->
+    <div class="body-parts-grid">
+      <div class="part-item active" data-category="all">
+        <div class="icon-circle"><i class="fa-solid fa-list"></i></div>
+        <span>전체</span>
+      </div>
+      <div class="part-item" data-category="neck">
+        <div class="icon-circle"><i class="fa-solid fa-user-ninja"></i></div>
+        <span>목</span>
+      </div>
+      <div class="part-item" data-category="back">
+        <div class="icon-circle"><i class="fa-solid fa-child"></i></div>
+        <span>허리</span>
+      </div>
+      <div class="part-item" data-category="wrist">
+        <div class="icon-circle"><i class="fa-solid fa-hand"></i></div>
+        <span>손목</span>
+      </div>
+      <div class="part-item" data-category="shoulder">
+        <div class="icon-circle"><i class="fa-solid fa-person-rays"></i></div>
+        <span>어깨</span>
+      </div>
+      <div class="part-item" data-category="knee">
+        <div class="icon-circle"><i class="fa-solid fa-bone"></i></div>
+        <span>무릎</span>
+      </div>
+    </div>
+
+    <!-- 탭 버튼 -->
+    <div class="tab-group">
+      <button class="tab-btn active">시술·수술 정보</button>
+      <button class="tab-btn">통증 부위별 정보</button>
+    </div>
+
+    <!-- 검색창 -->
+    <div class="search-box">
+      <input type="text" id="searchInput" class="search-input" placeholder="질환 및 증상을 검색하세요" onkeyup="filterCards()">
+      <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <!-- 질환 목록 Section -->
+    <div class="section-title" id="sectionTitle">전체 질환 안내</div>
+    <div class="grid" id="cardGrid">
+
+      <!-- 각 카드에 data-category 속성을 추가하여 해당 부위 카테고리를 분류했습니다 -->
+      <a class="card" data-category="back" href="https://sellerbag1-cloud.github.io/my-web-site/COCCYX FRACTURE.html">
+        <h2>미골 골절</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="wrist" href="https://sellerbag1-cloud.github.io/my-web-site/CTS_Landing.html">
+        <h2>손목터널증후군</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="back" href="https://sellerbag1-cloud.github.io/my-web-site/Endoscopy.html">
+        <h2>양방향 척추내시경</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="etc" href="https://sellerbag1-cloud.github.io/my-web-site/FIBROMYALGIA.html">
+        <h2>섬유근육통</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="etc" href="https://sellerbag1-cloud.github.io/my-web-site/Guillain-Barre.html">
+        <h2>길랭-바레증후군</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="back" href="https://sellerbag1-cloud.github.io/my-web-site/Nucleoplasty.html">
+        <h2>고주파 수핵성형술</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="neck" href="https://sellerbag1-cloud.github.io/my-web-site/OSLL.html">
+        <h2>후종인대골화증</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="head" href="https://sellerbag1-cloud.github.io/my-web-site/PLAGIOCEPHALY.html">
+        <h2>사두증</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="wrist" href="https://sellerbag1-cloud.github.io/my-web-site/TFCC.html">
+        <h2>삼각섬유연골복합체</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="back" href="https://sellerbag1-cloud.github.io/my-web-site/TRANSVERSE MYELITIS.html">
+        <h2>횡단척수염</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="foot" href="https://sellerbag1-cloud.github.io/my-web-site/achilles_html">
+        <h2>아킬레스</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="etc" href="https://sellerbag1-cloud.github.io/my-web-site/als_lougeric.html">
+        <h2>루게릭병</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="foot" href="https://sellerbag1-cloud.github.io/my-web-site/ankle.html">
+        <h2>발목</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="back" href="https://sellerbag1-cloud.github.io/my-web-site/back_pain.html">
+        <h2>허리 통증</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="head" href="https://sellerbag1-cloud.github.io/my-web-site/brain.html">
+        <h2>뇌질환</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="shoulder" href="https://sellerbag1-cloud.github.io/my-web-site/calcific_shoulder.html">
+        <h2>석회성 건염</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="neck" href="https://sellerbag1-cloud.github.io/my-web-site/cervical_disc.html">
+        <h2>경추 디스크</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="wrist" href="https://sellerbag1-cloud.github.io/my-web-site/dequervain.html">
+        <h2>드케르뱅</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="wrist" href="https://sellerbag1-cloud.github.io/my-web-site/finger_fracture.html">
+        <h2>손가락 골절</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="shoulder" href="https://sellerbag1-cloud.github.io/my-web-site/frozen.html">
+        <h2>오십견</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="wrist" href="https://sellerbag1-cloud.github.io/my-web-site/ganglion.html">
+        <h2>손목 결절종</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="wrist" href="https://sellerbag1-cloud.github.io/my-web-site/hand_numbness.html">
+        <h2>손 저림</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="knee" href="https://sellerbag1-cloud.github.io/my-web-site/knee_arthroscopy.html">
+        <h2>무릎관절경검사</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="knee" href="https://sellerbag1-cloud.github.io/my-web-site/kneeligament.html">
+        <h2>무릎인대</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="back" href="https://sellerbag1-cloud.github.io/my-web-site/lumbar_disc_surgery.html">
+        <h2>요추 디스크 수술</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="foot" href="https://sellerbag1-cloud.github.io/my-web-site/plantar_fasciitis.html">
+        <h2>족저근막염</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="shoulder" href="https://sellerbag1-cloud.github.io/my-web-site/rotator-cuff.html">
+        <h2>회전근개</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="back" href="https://sellerbag1-cloud.github.io/my-web-site/scoliosis.html">
+        <h2>척추측만증</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="shoulder" href="https://sellerbag1-cloud.github.io/my-web-site/shoulder.html">
+        <h2>어깨충돌증후군</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="back" href="https://sellerbag1-cloud.github.io/my-web-site/spine_endoscope.html">
+        <h2>척추내시경</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="back" href="https://sellerbag1-cloud.github.io/my-web-site/stenosis.html">
+        <h2>협착증</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="neck" href="https://sellerbag1-cloud.github.io/my-web-site/straightneck.html">
+        <h2>일자목</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="wrist" href="https://sellerbag1-cloud.github.io/my-web-site/trigger.html">
+        <h2>방아쇠손가락</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+      <a class="card" data-category="wrist" href="https://sellerbag1-cloud.github.io/my-web-site/wrist_pain.html">
+        <h2>손목 통증</h2>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>
+    <strong>희망찬병원</strong><br>
+    주소 : 경기도 화성시 병점구 병점중앙로 174 | 대표원장 : 김진균<br>
+    진료·예약문의 : 1600-3415 | 사업자등록번호 : 730-95-00733
+  </footer>
+
+  <script>
+    let currentCategory = 'all';
+
+    // 부위별 아이콘 클릭 이벤트 처리
+    const partItems = document.querySelectorAll('.part-item');
+    const sectionTitle = document.getElementById('sectionTitle');
+
+    partItems.forEach(item => {
+      item.addEventListener('click', () => {
+        // 활성화 스타일(active) 전환
+        partItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+
+        // 카테고리 추출 및 필터 실행
+        currentCategory = item.getAttribute('data-category');
+        
+        // 섹션 타이틀 변경
+        const categoryName = item.querySelector('span').innerText;
+        sectionTitle.innerText = categoryName === '전체' ? '전체 질환 안내' : `${categoryName} 관련 질환`;
+
+        filterCards();
+      });
+    });
+
+    // 필터링 함수 (검색어 + 부위 카테고리 동시 연동)
+    function filterCards() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+
+      cards.forEach(card => {
+        const title = card.querySelector('h2').innerText.toLowerCase();
+        const cardCategory = card.getAttribute('data-category');
+
+        const matchesSearch = title.includes(query);
+        const matchesCategory = (currentCategory === 'all' || cardCategory === currentCategory);
+
+        if (matchesSearch && matchesCategory) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // 탭 클릭 효과
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
