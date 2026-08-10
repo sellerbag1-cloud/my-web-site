@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>손톱·발톱 다치셨다면 — 응급 외상 진료 | 희망찬병원</title>
+<meta name="description" content="손톱 피멍·빠짐·부러짐 응급 외상 진료. 자가처치보다 진료가 안전합니다. 김진균 원장 직접 진료. 동탄·화성·평택권.">
+<meta name="keywords" content="손톱피멍, 발톱피멍, 손톱빠짐, 발톱빠짐, 손톱천공술, 손톱부러짐, 수부외상, 희망찬병원, 김진균">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600&family=Noto+Serif+KR:wght@400;600;700;800;900&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* 하이테크 메디컬 팔레트 */
+  --bg-primary: #F2F6F9;
+  --bg-secondary: #E8EFF4;
+  --bg-card: #FFFFFF;
+  --bg-accent: #E1FAF6;
+  --bg-warn: #FFF6E6;
+  
+  --primary-deep: #0D3B3E;
+  --primary-mid: #12635D;
+  --primary-mint: #199D93;
+  --accent-cyan: #22D3EE;
+  
+  --warn: #E05656;
+  --warn-bg: #FDF2F2;
+  --warn-orange: #ED7D31;
+  
+  --text-primary: #111D23;
+  --text-secondary: #48606A;
+  --text-muted: #839B97;
+  
+  --border-subtle: #D8E4EC;
+  --border-highlight: #A4D9D4;
+  
+  --shadow-soft: 0 4px 20px rgba(13, 59, 62, 0.05);
+  --shadow-glass: 0 16px 40px rgba(18, 99, 93, 0.12);
+  --shadow-hover: 0 20px 48px rgba(18, 99, 93, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.75;
+  overflow-x: hidden;
+  font-size: 16px;
+  padding-bottom: 76px; /* Floating CTA 여백 */
+}
+
+/* 기술적 백그라운드 오버레이 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(25, 157, 147, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(34, 211, 238, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* 키프레임 애니메이션 */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(28px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(224, 86, 86, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(224, 86, 86, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(224, 86, 86, 0); }
+}
+
+.anim-fade-up {
+  opacity: 0;
+  animation: fadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
+
+/* Top Emergency Strip */
+.emergency-strip {
+  background: var(--warn);
+  color: #fff;
+  padding: 11px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.emergency-strip a { color: #FFF0F0; text-decoration: underline; font-weight: 700; }
+
+/* Header */
+.mini-header {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-soft);
+}
+
+.mini-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-deep);
+}
+
+.brand .accent { color: var(--primary-mint); font-weight: 600; }
+.brand .small { font-size: 13px; color: var(--text-muted); font-weight: 400; margin-left: 6px; }
+
+.header-cta { display: flex; gap: 10px; align-items: center; }
+.header-cta a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.header-cta .ghost {
+  color: var(--primary-mid);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-highlight);
+}
+
+.header-cta .filled {
+  background: var(--warn);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(224, 86, 86, 0.3);
+}
+
+/* Hero Section */
+.hero {
+  padding: 70px 24px 50px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eyebrow {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--warn);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+  padding: 6px 18px;
+  background: var(--warn-bg);
+  border: 1px solid rgba(224, 86, 86, 0.3);
+  border-radius: 30px;
+  width: fit-content;
+  animation: pulseGlow 2.5s infinite;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 800;
+  font-size: clamp(28px, 4.5vw, 44px);
+  line-height: 1.35;
+  margin-bottom: 20px;
+  color: var(--primary-deep);
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .accent {
+  color: var(--primary-mint);
+  background: linear-gradient(120deg, var(--primary-mid), var(--primary-mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--text-secondary);
+  max-width: 840px;
+  margin: 0 auto 32px;
+  line-height: 1.85;
+}
+
+/* Hours Status Strip */
+.hours-strip {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 16px 24px;
+  margin: 0 auto 32px;
+  max-width: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.hours-strip .indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #22C55E;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+.hours-strip.closed .indicator {
+  background: var(--warn);
+  box-shadow: 0 0 0 3px rgba(224, 86, 86, 0.2);
+}
+
+.hours-strip .text { font-size: 14.5px; text-align: left; }
+.hours-strip .text strong { color: var(--primary-deep); }
+.hours-strip .text small { color: var(--text-muted); display: block; margin-top: 2px; }
+
+.cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.25);
+}
+
+.btn-ghost {
+  background: #FFFFFF;
+  color: var(--primary-deep);
+  padding: 16px 28px;
+  border: 1.5px solid var(--border-highlight);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-warn {
+  background: var(--warn);
+  color: #ffffff;
+  padding: 16px 28px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(224, 86, 86, 0.3);
+}
+
+/* Section Common */
+section { padding: 70px 24px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: clamp(24px, 3.8vw, 36px);
+  color: var(--primary-deep);
+  line-height: 1.35;
+}
+
+.section-desc {
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Emergency Card Box */
+.emergency-card-box {
+  background: var(--warn-bg);
+  border: 2px solid var(--warn);
+  border-radius: 20px;
+  padding: 36px 32px;
+  box-shadow: var(--shadow-glass);
+}
+
+.emergency-card-box h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 24px;
+  color: var(--warn);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emergency-list {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.emergency-list li {
+  padding: 12px 16px;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: var(--text-primary);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left: 4px solid var(--warn);
+}
+
+/* Card & Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px 26px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-mint), var(--accent-cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+}
+
+.card:hover::before { transform: scaleX(1); }
+
+.card-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: var(--bg-accent);
+  color: var(--primary-mid);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.type-symptom-box {
+  background: var(--bg-accent);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  color: var(--primary-deep);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.card-ul {
+  list-style: none;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.card-ul li {
+  margin-bottom: 6px;
+  padding-left: 14px;
+  position: relative;
+}
+
+.card-ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-mint);
+}
+
+.card-ul li.warn {
+  color: var(--warn);
+  font-weight: 700;
+}
+
+.card-ul li.warn::before {
+  content: "★";
+  color: var(--warn);
+}
+
+/* Service Grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.service-item {
+  background: #fff;
+  padding: 18px 20px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  box-shadow: var(--shadow-soft);
+}
+
+.service-item .num {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--primary-mint);
+}
+
+/* Doctor Profile */
+.doctor { background: #fff; }
+
+.doctor-card {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  border-radius: 24px;
+  padding: 44px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.doctor-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.2);
+  outline: 2px solid var(--border-highlight);
+  flex-shrink: 0;
+}
+
+.doctor-info { flex-grow: 1; }
+
+.doctor-info h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 6px;
+}
+
+.doctor-info .title {
+  font-size: 14.5px;
+  color: var(--primary-mint);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq { background: var(--bg-primary); }
+.faq-list { max-width: 840px; margin: 0 auto; }
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding: 20px 26px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  color: var(--primary-mint);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 26px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.85; }
+
+/* Floating CTA (하단 고정) */
+.floating-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--primary-deep);
+  color: #fff;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.18);
+  z-index: 100;
+  text-decoration: none;
+}
+
+.floating-cta .text strong {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.floating-cta .text small {
+  font-size: 12px;
+  color: var(--accent-cyan);
+}
+
+.floating-cta .btn-call {
+  background: var(--warn);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-deep);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 70px 24px 40px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.footer-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.footer-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.footer-info-box {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-box h4 {
+  font-family: 'Noto Serif KR', serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-info-box p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14.5px;
+}
+
+.footer-info-box .highlight {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.disclaimer {
+  max-width: 780px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .doctor-card { flex-direction: column; text-align: center; padding: 36px 24px; }
+  .doctor-profile-img { width: 150px; height: 150px; }
+  .footer-grid-layout { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .footer-info-box { text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- 최상단 응급 알림 스크립트 바 -->
+<div class="emergency-strip">
+  ⚠️ 변형·감각 둔화·지속 출혈·절단 — <a href="tel:119">즉시 119 또는 응급실로 이동하세요</a>
+</div>
+
+<!-- 헤더 -->
+<div class="mini-header">
+  <div class="container">
+    <div class="mini-header-inner">
+      <div class="brand">희망찬병원 <span class="accent">·</span> 손발톱 외상 클리닉<span class="small">신경외과 전문의 김진균 원장</span></div>
+      <div class="header-cta">
+        <a href="#types" class="ghost">손상 유형</a>
+        <a href="tel:1600-3415" class="filled">📞 1600-3415</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 히어로 섹션 (★ 텍스트 애니메이션 구역) -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow anim-fade-up">NAIL TRAUMA EMERGENCY CLINIC</div>
+    <h1 class="anim-fade-up delay-1">
+      손톱·발톱 다치셨다면<br>
+      <span class="accent">자가처치보다 진료가 안전합니다</span>
+    </h1>
+    <p class="hero-sub anim-fade-up delay-2">
+      피멍·빠짐·부러짐 등 손톱·발톱 외상은 적절한 처치 시기와 방법이 결과를 결정합니다.<br>
+      소독되지 않은 바늘·라이터·접착제 자가처치는 감염 및 영구 변형을 초래합니다. 본원 진료 시간 내라면 즉시 내원을 권합니다.
+    </p>
+
+    <!-- 실시간 진료시간 상태 확인 박스 -->
+    <div class="hours-strip anim-fade-up delay-3" id="hours-strip">
+      <span class="indicator"></span>
+      <div class="text">
+        <strong id="hours-status">진료 시간 확인 중</strong>
+        <small id="hours-detail">평일 09:00~18:00 · 토 09:00~13:00 · 일·공휴일 휴진</small>
+      </div>
+    </div>
+
+    <div class="cta-group anim-fade-up delay-3">
+      <a href="tel:1600-3415" class="btn-primary">📞 1600-3415 즉시 상담</a>
+      <a href="#emergency" class="btn-warn">🚨 응급실 내원 기준 확인</a>
+      <a href="#types" class="btn-ghost">손상 유형별 안내</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: 즉시 응급실 내원 기준 -->
+<section id="emergency" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="emergency-card-box">
+      <h3>🚨 이런 경우는 본원이 아닌 즉시 응급실로!</h3>
+      <p style="font-size: 15px; color: var(--text-secondary); margin-bottom: 14px;">
+        다음 중 <strong>하나라도 해당</strong>되시면 본원 외래 진료를 기다리지 마시고 가까운 <strong>응급실 또는 119</strong>로 즉시 이동하셔야 합니다.
+      </p>
+      <ul class="emergency-list">
+        <li>손가락·발가락이 변형되어 있다 (골절 의심)</li>
+        <li>감각이 둔하거나 손가락 색깔이 하얗게/새파랗게 변했다 (혈류 장애 의심)</li>
+        <li>깊은 절상이나 지혈되지 않는 지속 출혈이 있다</li>
+        <li>손가락·발가락 끝이 절단되었거나 살점이 완전히 떨어졌다</li>
+        <li>광범위한 감염 및 고열이 동반된다</li>
+      </ul>
+      <div class="cta-group" style="justify-content: flex-start; margin-top: 20px;">
+        <a href="tel:119" class="btn-warn">📞 119 즉시 신고</a>
+        <a href="tel:1600-3415" class="btn-ghost">📞 본원 진료 상담 (1600-3415)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: 3가지 손상 유형별 처치 가이드 -->
+<section id="types">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">3 INJURY TYPES</span>
+      <h2 class="section-title">어떤 손상이신가요?</h2>
+      <p class="section-desc">손상 유형에 따라 의료진의 처치 원칙이 달라집니다. 정확한 진단 후 최적의 처치를 시행합니다.</p>
+    </div>
+
+    <div class="grid">
+      <!-- 유형 1 -->
+      <div class="card">
+        <span class="card-badge">유형 01</span>
+        <h3>피멍 (손톱 밑 검정보라색)</h3>
+        <div class="type-symptom-box">손톱 아래 혈관 손상으로 피가 고여 압박·박동성 통증 발생</div>
+        <ul class="card-ul">
+          <li>시간 경과 시 내부 압력 증가로 극심한 통증 유발</li>
+          <li>피멍 면적이 50% 이상이면 손톱 박리 위험 급증</li>
+          <li>본원에서 무균 천공술로 고인 혈액 압력 해소</li>
+          <li class="warn">자가 바늘·라이터 처치는 심각한 2차 감염 위험</li>
+        </ul>
+      </div>
+
+      <!-- 유형 2 -->
+      <div class="card">
+        <span class="card-badge">유형 02</span>
+        <h3>빠짐·덜렁거림 (들뜸·박리)</h3>
+        <div class="type-symptom-box">손톱이 손톱바닥(nail bed)에서 부분/완전 분리된 상태</div>
+        <ul class="card-ul">
+          <li class="warn">억지로 떼어내지 마세요 (손톱바닥 자연 보호막 역할)</li>
+          <li>완전히 떨어지기 전까지 제자리 보존이 원칙</li>
+          <li>깨끗한 거즈로 부드럽게 감싸 고정 (혈류 차단 방지)</li>
+          <li>본원에서 정밀 소독 및 보존·고정 처치 시행</li>
+        </ul>
+      </div>
+
+      <!-- 유형 3 -->
+      <div class="card">
+        <span class="card-badge">유형 03</span>
+        <h3>부러짐·갈라짐 (찢어짐·깨짐)</h3>
+        <div class="type-symptom-box">손톱 일부가 부러지거나 찢어져 내부 살이 노출된 상태</div>
+        <ul class="card-ul">
+          <li>가벼운 끝부분 갈라짐은 정돈 및 임시 보호 가능</li>
+          <li class="warn">깊은 상처·출혈·감염 부위에 접착제 사용 절대 금지</li>
+          <li>24시간 내 본원 내원하여 손톱바닥 노출 처치 권장</li>
+          <li>열상 동반 시 수부 정밀 봉합술 시행</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: 본원 가능 진료 항목 -->
+<section style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">MEDICAL SERVICES</span>
+      <h2 class="section-title">본원 외상 진료 가능 항목</h2>
+      <p class="section-desc">본원 진료 시간 내 내원하시면 수부 진료 경험이 풍부한 전문의의 종합적인 외상 처치를 받으실 수 있습니다.</p>
+    </div>
+
+    <div class="service-grid">
+      <div class="service-item"><span class="num">01</span> 손톱 무균 천공술 (피멍 압력 해소)</div>
+      <div class="service-item"><span class="num">02</span> 손톱 빠짐 보존 및 국소 고정 처치</div>
+      <div class="service-item"><span class="num">03</span> 손톱 찢어짐 및 박리 정밀 처치</div>
+      <div class="service-item"><span class="num">04</span> 손가락·발가락 열상 국소 봉합술</div>
+      <div class="service-item"><span class="num">05</span> X선(X-ray) 촬영으로 골절 여부 평가</div>
+      <div class="service-item"><span class="num">06</span> 2차 감염 예방 및 항생제 처방</div>
+      <div class="service-item"><span class="num">07</span> 손톱바닥(Nail Bed) 변형 예방 관리</div>
+      <div class="service-item"><span class="num">08</span> 실비보험 청구용 진료 증빙 서류 발급</div>
+    </div>
+  </div>
+</section>
+
+<!-- 의료진 소개 -->
+<section class="doctor">
+  <div class="container">
+    <div class="doctor-card">
+      <img src="https://sellerbag1-cloud.github.io/KakaoTalk_20260310_175824020.jpg" alt="김진균 대표원장" class="doctor-profile-img">
+      <div class="doctor-info">
+        <h3>김진균 대표원장</h3>
+        <div class="title">희망찬병원 대표원장 · 신경외과 전문의</div>
+        <p style="font-weight: 600; color: var(--primary-deep); margin-bottom: 12px;">
+          "손톱은 자가처치보다 진료가 안전합니다. 손톱은 다시 자라나지만, 손톱바닥(nail bed)이 손상되면 평생 영구적인 변형이 남을 수 있기 때문입니다."
+        </p>
+        <p>• 수부 질환 단행본 저자 (손목터널증후군·방아쇠손가락 등)</p>
+        <p>• 유튜브 채널 <strong>"털보의사"</strong> 운영</p>
+        <p>• 손가락·발가락 외상 및 정밀 천공·봉합 직접 집도</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Q1. 손톱이 다쳐서 검게 변했어요. 그냥 두면 되나요?</summary>
+        <div class="faq-answer">손톱 아래 혈관이 손상되어 피가 고인 손톱밑 혈종 상태입니다. 면적이 적으면 자연 흡수되지만, 통증이 심하거나 면적의 50% 이상이 피멍이라면 천공술로 피를 빼주어야 손톱 박리 및 변형을 막을 수 있습니다. 24시간 내 진료를 권합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q2. 집에서 바늘을 불로 소독해서 뚫어도 되나요?</summary>
+        <div class="faq-answer">권장하지 않습니다. 가정 내 자가 처치는 세균 감염 위험이 매우 높고, 실수로 깊이 찌르면 손톱바닥을 손상시켜 손톱이 비틀려 자라게 됩니다. 병원에서 무균 기구로 천공하는 것이 안전합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q3. 손톱이 덜렁거리는데 그냥 잘라내야 하나요?</summary>
+        <div class="faq-answer">절대 강제로 떼거나 잘라내지 마세요. 덜렁거리는 손톱은 아래 민감한 손톱바닥을 보호하는 천연 거즈 역할을 합니다. 소독된 거즈로 감싼 뒤 내원하시면 제자리에 고정하는 처치를 받으실 수 있습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q4. 손톱 부러진 데에 순간접착제를 써도 되나요?</summary>
+        <div class="faq-answer">상처가 없는 가벼운 끝부분 갈라짐 외에, 피가 나거나 출혈·상처가 노출된 부위에 순간접착제를 바르면 화학적 자극과 감염을 유발합니다. 출혈 시 접착제 사용을 금하고 즉시 진료를 받으세요.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q5. 빠진 손톱은 다시 제대로 자라나요?</summary>
+        <div class="faq-answer">네, 손톱은 약 6개월, 발톱은 약 9~12개월에 걸쳐 재성장합니다. 다만 손톱이 자라나는 손톱바닥(matrix) 조직이 손상된 경우 기형적으로 자랄 수 있으므로 초기에 바닥 조직을 잘 보호해 주어야 합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q6. 손가락이 문에 꽉 끼였습니다. 응급실을 가야 하나요?</summary>
+        <div class="faq-answer">손가락이 구부러진 채 펴지지 않거나 변형된 경우, 감각이 없거나 하얗게 변한 경우, 깊은 상처가 있는 경우는 응급실로 가셔야 합니다. 변형 없이 피멍만 든 상태라면 본원 외래 내원으로 X선 검사 및 천공 처치가 가능합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q7. 어떤 진료과로 내원해야 하나요?</summary>
+        <div class="faq-answer">본원 신경외과(수부 외상 진료)로 내원하시면 됩니다. 김진균 원장이 직접 X선 골절 평가, 무균 천공술, 봉합술을 종합 진료합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q8. 등산·마라톤 후 발톱이 검게 변했습니다.</summary>
+        <div class="faq-answer">장시간 마찰과 압박으로 발생하는 '러너 발톱(Runner's nail)' 현상입니다. 내부 압력으로 찌릿하게 아프다면 발톱 천공술로 피를 빼내어 통증을 즉시 완화시킬 수 있습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q9. 손톱 주위가 붉게 붓고 고름이 나옵니다.</summary>
+        <div class="faq-answer">조갑주위염(생손앓이)입니다. 세균 감염이 진행된 상태이므로 그냥 두면 손톱 전체로 번질 수 있습니다. 항생제 처방 및 필요 시 배농 처치가 필요합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q10. 다친 지 한 달이 지났는데 새 손톱이 안 자라요.</summary>
+        <div class="faq-answer">다친 후 2~3주간은 손톱 성장이 멈추는 휴지기를 가집니다. 그러나 한 달 이상 지나도 변화가 없거나 손톱바닥이 울퉁불퉁하다면 손톱바닥 손상 여부를 확인해 보아야 합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q11. 병원 외래 비용과 응급실 비용 차이가 크나요?</summary>
+        <div class="faq-answer">응급실은 응급의료관리료 등이 추가되어 비용이 높습니다. 본원 진료 시간 내에 오시면 일반 외래 비용으로 진료받으실 수 있습니다. (단, 응급 신호 시에는 비용보다 응급실 방문이 우선입니다.)</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q12. 어린아이 손톱 다침도 본원에서 진료 가능한가요?</summary>
+        <div class="faq-answer">본원은 성인 진료 중심입니다. 소아의 경우 성장판 및 손톱바닥 영구 변형 위험성이 높으므로 소아 전문 응급 진료가 가능한 병원이나 응급실 내원을 권장합니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 하이테크 푸터 -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid-layout">
+      
+      <!-- 지도 연동 영역 -->
+      <div class="footer-map-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(255, 255, 255, 0.08); text-align: center; padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15);">
+        <div style="font-size: 36px; margin-bottom: 10px;">📍</div>
+        <h5 style="color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">희망찬병원 위치 안내</h5>
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 13px; margin-bottom: 16px;">경기도 화성시 병점중앙로 174</p>
+        
+        <a href="https://m.map.naver.com/search2/search.naver?query=%ED%9D%AC%EB%A7%9F%EC%B0%AC%EB%B3%91%EC%9B%90" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #03C75A; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; transition: all 0.2s ease;">
+           <span>N</span> 네이버 지도로 길찾기 →
+        </a>
+      </div>
+
+      <!-- 우측 병원 필수정보 -->
+      <div class="footer-info-box">
+        <h4>희망찬병원</h4>
+        <p><strong>주소 :</strong> 경기도 화성시 병점중앙로 174</p>
+        <p><strong>상담문의 :</strong> 1600-3415</p>
+        <p><strong>진료시간 :</strong> 평일 09:00 ~ 18:00 | 토요일 09:00 ~ 13:00 (일·공휴일 휴무)</p>
+        <p><strong>진료과목 :</strong> 신경외과 · 정형외과 · 내과 · 영상의학과</p>
+        <p class="highlight">김진균 대표원장 직접 진료</p>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      본 웹사이트에 수록된 내용은 일반적인 의료 정보 제공을 목적으로 작성되었으며 개별 환자의 진단 및 치료를 대신할 수 없습니다. 응급 신호가 있는 경우 즉시 119 또는 응급실로 이동하시기 바랍니다.<br>
+      © 희망찬병원. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- Floating CTA (하단 고정 바) -->
+<a href="tel:1600-3415" class="floating-cta">
+  <div class="text">
+    <strong>지금 전화 상담 연결</strong>
+    <small>1600-3415 · 외상 진료 내원 안내</small>
+  </div>
+  <div class="btn-call">📞 전화 걸기</div>
+</a>
+
+<!-- 진료 시간 계산 JS Script -->
+<script>
+  function updateHours() {
+    const now = new Date();
+    const day = now.getDay(); // 0=일, 6=토
+    const h = now.getHours();
+    const m = now.getMinutes();
+    const cur = h * 60 + m;
+
+    const status = document.getElementById('hours-status');
+    const detail = document.getElementById('hours-detail');
+    const strip = document.getElementById('hours-strip');
+
+    if (!status || !detail || !strip) return;
+
+    let isOpen = false;
+    let nextMsg = '';
+
+    if (day === 0) {
+      nextMsg = '일요일 휴진 — 응급 신호 시 응급실 내원 권장';
+    } else if (day === 6) {
+      if (cur >= 9 * 60 && cur < 13 * 60) {
+        isOpen = true;
+        nextMsg = '토요일 진료 중 (13:00 마감) — 즉시 내원 가능';
+      } else {
+        nextMsg = '토요일 진료 마감 — 평일 09:00 진료 재개';
+      }
+    } else {
+      if (cur >= 9 * 60 && cur < 18 * 60) {
+        if (cur >= 12.5 * 60 && cur < 13.5 * 60) {
+          nextMsg = '점심시간 (12:30~13:30) — 13:30 진료 재개';
+        } else {
+          isOpen = true;
+          nextMsg = '평일 진료 중 (18:00 마감) — 즉시 내원 가능';
+        }
+      } else {
+        nextMsg = '평일 진료 마감 — 평일 09:00 진료 재개';
+      }
+    }
+
+    if (isOpen) {
+      strip.classList.remove('closed');
+      status.textContent = '🟢 현재 본원 진료 가능 시간입니다';
+    } else {
+      strip.classList.add('closed');
+      status.textContent = '🔴 현재 본원 진료 시간 외입니다';
+    }
+    detail.textContent = nextMsg;
+  }
+
+  updateHours();
+  setInterval(updateHours, 60000);
+</script>
+
+</body>
+</html>

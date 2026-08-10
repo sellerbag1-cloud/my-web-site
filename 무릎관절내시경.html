@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>무릎 관절내시경 수술 | 희망찬병원 — 반월상연골파열·십자인대손상·무릎물참 정밀 진료</title>
+<meta name="description" content="무릎이 잠기고 걸린다면 관절내시경이 필요한 상태인지 먼저 확인하세요. 반월상연골파열, 십자인대손상, 무릎 물참, 활액막염, 연골손상 정밀 진료. 희망찬병원 김진균 원장 직접 진료.">
+<meta name="keywords" content="무릎관절내시경, 관절경수술, 반월상연골파열, 십자인대손상, 무릎물참, 활액막염, 희망찬병원, 김진균원장, 털보의사">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;800;900&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* 하이테크 메디컬 팔레트 */
+  --bg-primary: #F2F6F9;
+  --bg-secondary: #E8EFF4;
+  --bg-card: #FFFFFF;
+  --bg-accent: #E1FAF6;
+  
+  --primary-deep: #0D3B3E;
+  --primary-mid: #12635D;
+  --primary-mint: #199D93;
+  --accent-cyan: #22D3EE;
+  --warn: #E05656;
+  --warn-bg: #FDF2F2;
+  
+  --text-primary: #111D23;
+  --text-secondary: #48606A;
+  --text-muted: #839B97;
+  
+  --border-subtle: #D8E4EC;
+  --border-highlight: #A4D9D4;
+  
+  --shadow-soft: 0 4px 20px rgba(13, 59, 62, 0.05);
+  --shadow-glass: 0 16px 40px rgba(18, 99, 93, 0.12);
+  --shadow-hover: 0 20px 48px rgba(18, 99, 93, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* 회로/테크니컬 라인 패턴 배경 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(25, 157, 147, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(34, 211, 238, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.serif { font-family: 'Noto Serif KR', serif; }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Top Notice Bar */
+.top-notice {
+  background: var(--primary-deep);
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.top-notice span { color: var(--accent-cyan); }
+
+/* Header */
+.mini-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-soft);
+}
+
+.mini-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-deep);
+}
+
+.brand .accent { color: var(--primary-mint); font-weight: 600; }
+.brand .small { font-size: 13px; color: var(--text-muted); font-weight: 400; margin-left: 6px; }
+
+.header-cta { display: flex; gap: 10px; align-items: center; }
+.header-cta a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.header-cta .ghost {
+  color: var(--primary-mid);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-highlight);
+}
+
+.header-cta .ghost:hover {
+  background: var(--bg-accent);
+  color: var(--primary-deep);
+}
+
+.header-cta .filled {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(25, 157, 147, 0.3);
+}
+
+.header-cta .filled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 157, 147, 0.4);
+}
+
+/* Hero Section */
+.hero {
+  padding: 90px 24px 70px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 6px 16px;
+  background: rgba(25, 157, 147, 0.08);
+  border: 1px solid var(--border-highlight);
+  border-radius: 30px;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 800;
+  font-size: clamp(30px, 4.8vw, 46px);
+  line-height: 1.35;
+  margin-bottom: 24px;
+  color: var(--primary-deep);
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .accent {
+  color: var(--primary-mint);
+  background: linear-gradient(120deg, var(--primary-mid), var(--primary-mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-stat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--primary-deep);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-glass);
+}
+
+.hero-stat-badge .num {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--accent-cyan);
+}
+
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--text-secondary);
+  max-width: 820px;
+  margin: 0 auto 36px;
+  line-height: 1.85;
+}
+
+/* CTA 버튼 중앙 정렬 */
+.cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(18, 99, 93, 0.35);
+}
+
+.btn-ghost {
+  background: #FFFFFF;
+  color: var(--primary-deep);
+  padding: 16px 32px;
+  border: 1.5px solid var(--border-highlight);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-ghost:hover {
+  background: var(--bg-accent);
+  border-color: var(--primary-mint);
+  transform: translateY(-2px);
+}
+
+.btn-warn {
+  background: var(--warn);
+  color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(224, 86, 86, 0.3);
+}
+
+.btn-warn:hover {
+  background: #c84343;
+  transform: translateY(-2px);
+}
+
+/* Section Common */
+section { padding: 80px 24px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: clamp(26px, 3.8vw, 36px);
+  color: var(--primary-deep);
+  line-height: 1.35;
+}
+
+.section-desc {
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Card & Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px 26px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-mint), var(--accent-cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+}
+
+.card:hover::before { transform: scaleX(1); }
+
+.card-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: var(--bg-accent);
+  color: var(--primary-mid);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Step Grid */
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.step-card {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  border-color: var(--primary-mint);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glass);
+}
+
+.step-number {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--primary-mint);
+  margin-bottom: 8px;
+}
+
+.step-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 8px;
+}
+
+.step-card p {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Comparison Table */
+.compare-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-glass);
+  border: 1px solid var(--border-subtle);
+  background: #fff;
+}
+
+table.compare {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14.5px;
+}
+
+table.compare th, table.compare td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table.compare thead th {
+  background: var(--primary-deep);
+  color: #fff;
+  font-weight: 600;
+}
+
+table.compare tbody th {
+  background: var(--bg-secondary);
+  color: var(--primary-deep);
+  font-weight: 700;
+  width: 25%;
+}
+
+table.compare td.highlight {
+  background: var(--bg-accent);
+  color: var(--primary-deep);
+  font-weight: 700;
+}
+
+/* Doctor Profile */
+.doctor { background: #fff; }
+
+.doctor-card {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  border-radius: 24px;
+  padding: 44px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.doctor-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.2);
+  outline: 2px solid var(--border-highlight);
+  flex-shrink: 0;
+}
+
+.doctor-info { flex-grow: 1; }
+
+.doctor-info h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 6px;
+}
+
+.doctor-info .title {
+  font-size: 14.5px;
+  color: var(--primary-mint);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq { background: var(--bg-primary); }
+.faq-list { max-width: 840px; margin: 0 auto; }
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding: 20px 26px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  color: var(--primary-mint);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 26px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.85; }
+
+/* Safety Notice */
+.safety { padding: 40px 24px; background: #fff; }
+.safety-box {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-accent);
+  border-left: 4px solid var(--primary-mint);
+  padding: 24px 28px;
+  border-radius: 8px;
+}
+
+.safety-box.warn-style {
+  background: var(--warn-bg);
+  border-left-color: var(--warn);
+}
+
+.safety-box h4 { font-size: 15.5px; font-weight: 700; color: var(--primary-deep); margin-bottom: 6px; }
+.safety-box.warn-style h4 { color: var(--warn); }
+.safety-box p { font-size: 14px; color: var(--text-secondary); line-height: 1.75; }
+
+/* Footer & Hospital Map Grid Layout */
+footer {
+  background: var(--primary-deep);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 70px 24px 40px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.footer-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.footer-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.footer-info-box {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-box h4 {
+  font-family: 'Noto Serif KR', serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-info-box p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14.5px;
+}
+
+.footer-info-box .highlight {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.disclaimer {
+  max-width: 780px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.75;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+
+@media (max-width: 768px) {
+  .doctor-card { flex-direction: column; text-align: center; padding: 36px 24px; }
+  .doctor-profile-img { width: 150px; height: 150px; }
+  .footer-grid-layout { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .footer-info-box { text-align: center; }
+  .step-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- 상단 안내 -->
+<div class="top-notice">
+  🦵 무릎 관절내시경 클리닉 — <span>작은 절개로 진단과 치료를 동시에, 정확한 MRI 검사 후 수술 적합성을 판단합니다</span> (상담문의: 1600-3415)
+</div>
+
+<!-- 헤더 -->
+<div class="mini-header">
+  <div class="container">
+    <div class="mini-header-inner">
+      <div class="brand">희망찬병원 <span class="accent">·</span> 무릎 관절내시경 클리닉<span class="small">신경외과·정형외과</span></div>
+      <div class="header-cta">
+        <a href="tel:1600-3415" class="ghost">📞 전화</a>
+        <a href="tel:1600-3415" class="filled">예약·상담</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow fade-in">KNEE ARTHROSCOPY CLINIC</div>
+    
+    <div class="hero-stat-badge fade-in delay-1">
+      ★ 최소 침습 절개: 정밀 진단 및 절제·봉합·재건 맞춤 수술
+    </div>
+
+    <h1 class="fade-in delay-1">
+      무릎이 <span class="accent">잠기고 딸깍 걸린다면?</span><br>
+      관절내시경 적합성을 먼저 확인하세요
+    </h1>
+    <p class="hero-sub fade-in delay-2">
+      무릎 관절내시경은 4~5mm의 최소 절개창으로 관절 내부를 직접 확인하며 진단과 수술을 동시 진행하는 정밀 치료입니다.<br>
+      모든 무릎 통증에 수술이 필요한 것은 아니므로, 정형외과 전문의 김진균 대표원장의 진찰과 MRI 검사로 정확한 수술 적합성을 판단합니다.
+    </p>
+    <div class="cta-group fade-in delay-3">
+      <a href="tel:1600-3415" class="btn-primary">📋 관절내시경 상담 신청 →</a>
+      <a href="#diseases" class="btn-ghost">적용 대표 질환 보기</a>
+      <a href="#selfcheck" class="btn-warn">자가 진단 체크리스트</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: 의심 증상 4가지 -->
+<section style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">WARNING SYMPTOMS</span>
+      <h2 class="section-title">이런 증상이 반복되면 정밀 검사가 필요합니다</h2>
+      <p class="section-desc">무릎 내부 구조물의 물리적 손상은 보존 치료만으로 한계가 있을 수 있습니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-badge">01. 무릎 잠김 (Locking)</span>
+        <h3>갑자기 무릎이 펴지지 않음</h3>
+        <p>걸을 때 무릎 안에서 무언가 걸리거나 펴지지 않는 증상은 찢어진 반월상연골판 조각이 관절 사이에 끼여 발생합니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">02. 특정 동작 통증</span>
+        <h3>계단 및 쪼그려 앉기 통증</h3>
+        <p>계단을 내려갈 때, 쪼그려 앉았다 일어날 때 무릎 관절 틈새로 찌르는 듯한 극심한 통증이 느껴집니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">03. 관절 불안정성</span>
+        <h3>무릎이 빠질 듯한 느낌</h3>
+        <p>방향 전환을 하거나 내리막길을 걸을 때 무릎이 힘없이 뒤틀리거나 빠지는 느낌은 십자인대 손상을 의심합니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">04. 만성 삼출액</span>
+        <h3>반복적인 무릎 물참·붓기</h3>
+        <p>주사로 물을 빼도 반복해서 무릎이 부풀어 오르는 증상은 활액막염 및 관절 연골 손상의 대표적 신호입니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: 주요 적용 질환 -->
+<section id="diseases">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">TARGET INDICATIONS</span>
+      <h2 class="section-title">관절내시경으로 치료하는 주요 무릎 질환</h2>
+      <p class="section-desc">손상 양상에 따라 절제술, 봉합술, 재건술 등 최적의 수술법을 결정합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-badge">연골판 손상</span>
+        <h3>반월상연골파열</h3>
+        <p>파열된 연골판의 위치와 형태를 초고화질 내시경으로 확인하여, 살릴 수 있는 부분은 봉합하고 복구 불가능한 부분은 매끄럽게 다듬어줍니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">인대 손상</span>
+        <h3>전·후방 십자인대 파열</h3>
+        <p>관절의 안정성을 담당하는 십자인대가 파열된 경우, 자가건 또는 동종건을 이용해 새로운 인대를 이어주는 재건술을 시행합니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">염증 질환</span>
+        <h3>만성 활액막염 &amp; 관절 유리체</h3>
+        <p>관절 내 비후된 염증성 활액막을 제거하거나, 관절 안을 돌아다니며 통증을 유발하는 뼈·연골 조각(유리체)을 깔끔하게 제거합니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">연골 손상</span>
+        <h3>박리성 골연골염 &amp; 미세골절술</h3>
+        <p>손상된 국소 관절 연골 부위에 미세한 구멍을 내어 줄기세포 및 연골 재생을 유도하는 미세골절술(Microfracture)을 병행합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: 진단 및 수술 4단계 프로세스 -->
+<section style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">SURGICAL WORKFLOW</span>
+      <h2 class="section-title">희망찬병원 관절내시경 4단계 시스템</h2>
+      <p class="section-desc">정밀 검증부터 수술 후 체계적인 재활 관리까지 일대일 맞춤 케어를 제공합니다.</p>
+    </div>
+
+    <div class="step-grid">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <h4>MRI 정밀 진단</h4>
+        <p>X-ray로 보이지 않는 연골판, 십자인대, 관절 연골 손상 범위를 정밀 판독</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <h4>맞춤 수술 계획</h4>
+        <p>환자의 연령, 활동도, 파열 양상에 맞춰 봉합/절제/재건 수술 방향 결정</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">03</div>
+        <h4>최소침습 관절경</h4>
+        <p>4~5mm 절개창으로 초고화질 내시경과 미세 기구를 삽입하여 정밀 수술 시행</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">04</div>
+        <h4>단계별 재활 케어</h4>
+        <p>수술 후 부종 관리, 관절 가동 범위(ROM) 운동 및 단계적 체중 부하 재활</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: 자가 체크리스트 -->
+<section id="selfcheck">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">SELF CHECKLIST</span>
+      <h2 class="section-title">무릎 관절내시경 자가 진단</h2>
+      <p class="section-desc">다음 중 2가지 이상에 해당하면 전문의 정밀 진찰이 필요합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <p><strong>□ Check 1.</strong> 걷다가 갑자기 무릎이 안 펴지거나 딸깍 걸리는 느낌이 있다.</p>
+      </div>
+      <div class="card">
+        <p><strong>□ Check 2.</strong> 계단을 내려가거나 쪼그려 앉을 때 무릎 틈새가 아프다.</p>
+      </div>
+      <div class="card">
+        <p><strong>□ Check 3.</strong> 무릎에 물이 자주 차서 주사로 빼낸 적이 반복된다.</p>
+      </div>
+      <div class="card">
+        <p><strong>□ Check 4.</strong> 방향을 틀 때 무릎이 힘없이 꺾이거나 빠지는 듯하다.</p>
+      </div>
+      <div class="card">
+        <p><strong>□ Check 5.</strong> 약물이나 주사 치료를 한 달 이상 받아도 통증이 계속된다.</p>
+      </div>
+      <div class="card">
+        <p><strong>□ Check 6.</strong> 타 병원 MRI 검사에서 연골판 또는 인대 파열 진단을 받았다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 의료진 소개 -->
+<section class="doctor">
+  <div class="container">
+    <div class="doctor-card">
+      <img src="https://sellerbag1-cloud.github.io/KakaoTalk_20260310_175824020.jpg" alt="김진균 대표원장" class="doctor-profile-img">
+      <div class="doctor-info">
+        <h3>김진균 대표원장</h3>
+        <div class="title">희망찬병원 대표원장 · 정형외과 전문의</div>
+        <p>무릎 반월상연골파열, 십자인대 재건술, 활액막염 및 관절 연골 손상의 관절내시경 수술을 정밀하게 전담합니다.</p>
+        <p>유튜브 채널 <strong>"털보의사"</strong>를 통해 "과잉 수술 없는 관절내시경의 정확한 적응증"과 안전한 무릎 재활 정보를 제공하고 있습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Q1. 무릎 관절내시경 수술 후 입원 기간은 얼마나 되나요?</summary>
+        <div class="faq-answer">수술 범위에 따라 차이가 있습니다. 단순 연골판 다듬기(절제술)나 유리체 제거는 보통 2~3일 내외, 연골판 봉합술이나 십자인대 재건술의 경우 5~7일 정도의 입원 및 집중 재활 기간이 필요합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q2. 퇴행성 관절염 심한 경우도 내시경으로 치료 가능한가요?</summary>
+        <div class="faq-answer">관절염 말기(3~4단계)로 연골이 거의 닳아 뼈가 부딪히는 상태라면 관절내시경만으로는 한계가 있습니다. 이 경우 인공관절 치환술이나 휜다리 교정술(절골술) 등 다른 수술적 대안을 검토해야 합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q3. 수술 후 일상생활 및 운동 복귀는 언제 가능한가요?</summary>
+        <div class="faq-answer">단순 절제술은 1~2주 후 가벼운 보행이 가능하며, 봉합술 및 인대 재건술은 보조기를 착용하고 목발을 사용하는 기간(4~6주)이 필요합니다. 스포츠 복귀는 보통 3~6개월 이후 단계적으로 진행됩니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q4. 흉터가 많이 남나요?</summary>
+        <div class="faq-answer">약 4~5mm 크기의 작은 구멍 2~3개만 내어 진행하므로 기존의 절개 수술에 비해 흉터가 매우 적고 통증과 출혈이 적어 회복이 빠릅니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 안전 안내 -->
+<section class="safety">
+  <div class="container">
+    <div class="safety-box warn-style">
+      <h4>※ 수술 적합성 안내</h4>
+      <p>관절내시경은 모든 무릎 통증의 만병통치약이 아닙니다. 진행된 관절염이나 관절 변형이 심한 경우에는 수술 효과가 제한적일 수 있으므로, 반드시 정밀 MRI 검사와 정형외과 전문의 상담 후 수술 여부를 결정하셔야 합니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 풋터 (좌측: 네이버 지도 상자 영역 / 우측: 병원 필수정보) -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid-layout">
+      
+      <!-- 좌측 지도 상자 영역 -->
+      <div class="footer-map-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(255, 255, 255, 0.08); text-align: center; padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15);">
+        <div style="font-size: 36px; margin-bottom: 10px;">📍</div>
+        <h5 style="color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">희망찬병원 위치 안내</h5>
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 13px; margin-bottom: 16px;">화성시 병점중앙로 174</p>
+        
+        <a href="https://m.map.naver.com/search2/search.naver?query=%ED%9D%88%EB%A0%9D%EC%B0%AC%EB%B3%91%EC%9B%90" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #03C75A; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; transition: all 0.2s ease;">
+           <span>N</span> 네이버 지도로 길찾기 →
+        </a>
+      </div>
+
+      <!-- 우측 병원 필수정보 -->
+      <div class="footer-info-box">
+        <h4>희망찬병원</h4>
+        <p><strong>주소 :</strong> 경기도 화성시 병점구 병점중앙로 174</p>
+        <p><strong>상담문의 :</strong> 1600-3415</p>
+        <p><strong>진료과목 :</strong> 신경외과 · 정형외과 · 내과 · 영상의학과</p>
+        <p class="highlight">털보의사 김진균 원장이 직접 진료합니다.</p>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      본 웹사이트에 수록된 내용은 의료 정보 제공을 목적으로 작성되었으며, 개별적인 의학적 진단 및 치료를 대신할 수 없습니다.<br>
+      © 희망찬병원. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

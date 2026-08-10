@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>노인성 근감소증(사르코페니아) 검사·상담 | 희망찬병원 노인성 질환 클리닉</title>
+<meta name="description" content="부모님이 자주 넘어지고 다리에 힘이 없다면 근감소증 평가가 필요할 수 있습니다. 화성 희망찬병원 근력저하·보행불안정·낙상 위험 상담.">
+<meta name="keywords" content="근감소증, 노인성 근감소증, 사르코페니아, 낙상위험, 보행불안정, 다리힘저하, 털보의사, 김진균, 희망찬병원">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600&family=Noto+Serif+KR:wght@400;600;700;800;900&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  /* 하이테크 메디컬 팔레트 */
+  --bg-primary: #F2F6F9;
+  --bg-secondary: #E8EFF4;
+  --bg-card: #FFFFFF;
+  --bg-accent: #E1FAF6;
+  --bg-warn: #FFF6E6;
+  
+  --primary-deep: #0D3B3E;
+  --primary-mid: #12635D;
+  --primary-mint: #199D93;
+  --accent-cyan: #22D3EE;
+  
+  --warn: #E05656;
+  --warn-bg: #FDF2F2;
+  --warn-orange: #ED7D31;
+  
+  --text-primary: #111D23;
+  --text-secondary: #48606A;
+  --text-muted: #839B97;
+  
+  --border-subtle: #D8E4EC;
+  --border-highlight: #A4D9D4;
+  
+  --shadow-soft: 0 4px 20px rgba(13, 59, 62, 0.05);
+  --shadow-glass: 0 16px 40px rgba(18, 99, 93, 0.12);
+  --shadow-hover: 0 20px 48px rgba(18, 99, 93, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.75;
+  overflow-x: hidden;
+  font-size: 16px;
+  padding-bottom: 76px;
+}
+
+/* 기술적 백그라운드 오버레이 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(25, 157, 147, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(34, 211, 238, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* 키프레임 애니메이션 */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(28px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(34, 211, 238, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0); }
+}
+
+.anim-fade-up {
+  opacity: 0;
+  animation: fadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
+
+/* Top Notice Bar */
+.top-notice {
+  background: var(--primary-deep);
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.top-notice span { color: var(--accent-cyan); font-weight: 700; }
+
+/* Header */
+.mini-header {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-soft);
+}
+
+.mini-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-deep);
+}
+
+.brand .accent { color: var(--primary-mint); font-weight: 600; }
+.brand .small { font-size: 13px; color: var(--text-muted); font-weight: 400; margin-left: 6px; }
+
+.header-cta { display: flex; gap: 10px; align-items: center; }
+.header-cta a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.header-cta .ghost {
+  color: var(--primary-mid);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-highlight);
+}
+
+.header-cta .filled {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(25, 157, 147, 0.3);
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 24px 60px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eyebrow {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+  padding: 6px 18px;
+  background: rgba(25, 157, 147, 0.08);
+  border: 1px solid var(--border-highlight);
+  border-radius: 30px;
+  width: fit-content;
+  animation: pulseGlow 2.5s infinite;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 800;
+  font-size: clamp(28px, 4.5vw, 44px);
+  line-height: 1.35;
+  margin-bottom: 20px;
+  color: var(--primary-deep);
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .accent {
+  color: var(--primary-mint);
+  background: linear-gradient(120deg, var(--primary-mid), var(--primary-mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--text-secondary);
+  max-width: 840px;
+  margin: 0 auto 36px;
+  line-height: 1.85;
+}
+
+.cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.25);
+}
+
+.btn-ghost {
+  background: #FFFFFF;
+  color: var(--primary-deep);
+  padding: 16px 28px;
+  border: 1.5px solid var(--border-highlight);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Section Common */
+section { padding: 80px 24px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: clamp(24px, 3.8vw, 36px);
+  color: var(--primary-deep);
+  line-height: 1.35;
+}
+
+.section-desc {
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Card & Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px 26px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-mint), var(--accent-cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+}
+
+.card:hover::before { transform: scaleX(1); }
+
+.card-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: var(--bg-accent);
+  color: var(--primary-mid);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Checklist Grid */
+.checklist {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.checklist li {
+  background: #fff;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  font-size: 14.5px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checklist li::before {
+  content: "✓";
+  color: var(--primary-mint);
+  font-weight: 800;
+  font-size: 16px;
+}
+
+/* Workflow Step Grid */
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.step-card {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  border-top: 4px solid var(--primary-mint);
+}
+
+.step-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  margin-bottom: 4px;
+}
+
+.step-title {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Notice Box */
+.notice-box {
+  padding: 22px 28px;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 24px auto;
+  max-width: 960px;
+}
+
+.notice-blue {
+  background: #EAF1F8;
+  border-left: 4px solid var(--primary-mid);
+  color: var(--text-primary);
+}
+
+.notice-warn {
+  background: var(--bg-warn);
+  border-left: 4px solid var(--warn-orange);
+  color: var(--text-primary);
+}
+
+/* Doctor Profile */
+.doctor { background: #fff; }
+
+.doctor-card {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  border-radius: 24px;
+  padding: 44px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.doctor-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.2);
+  outline: 2px solid var(--border-highlight);
+  flex-shrink: 0;
+}
+
+.doctor-info { flex-grow: 1; }
+
+.doctor-info h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 6px;
+}
+
+.doctor-info .title {
+  font-size: 14.5px;
+  color: var(--primary-mint);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq { background: var(--bg-primary); }
+.faq-list { max-width: 840px; margin: 0 auto; }
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding: 20px 26px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  color: var(--primary-mint);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 26px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.85; }
+
+/* Floating CTA */
+.floating-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--primary-deep);
+  color: #fff;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.18);
+  z-index: 100;
+  text-decoration: none;
+}
+
+.floating-cta .text strong {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.floating-cta .text small {
+  font-size: 12px;
+  color: var(--accent-cyan);
+}
+
+.floating-cta .btn-call {
+  background: var(--primary-mint);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-deep);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 70px 24px 40px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.footer-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.footer-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.footer-info-box {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-box h4 {
+  font-family: 'Noto Serif KR', serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-info-box p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14.5px;
+}
+
+.footer-info-box .highlight {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.disclaimer {
+  max-width: 780px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .doctor-card { flex-direction: column; text-align: center; padding: 36px 24px; }
+  .doctor-profile-img { width: 150px; height: 150px; }
+  .footer-grid-layout { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .footer-info-box { text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- 상단 안내 -->
+<div class="top-notice">
+  희망찬병원 노인성 질환 클리닉 · 사르코페니아 정밀 평가 <span>김진균 대표원장 직접 진료</span>
+</div>
+
+<!-- 헤더 -->
+<div class="mini-header">
+  <div class="container">
+    <div class="mini-header-inner">
+      <div class="brand">희망찬병원 <span class="accent">·</span> 노인성 근감소증 클리닉<span class="small">대표원장 김진균</span></div>
+      <div class="header-cta">
+        <a href="#process" class="ghost">4단계 정밀 평가</a>
+        <a href="tel:1600-3415" class="filled">📞 1600-3415</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 히어로 섹션 (★ 텍스트 애니메이션 구역) -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow anim-fade-up">SARCOPENIA CLINIC</div>
+    <h1 class="anim-fade-up delay-1">
+      부모님이 자주 넘어지고 다리에 힘이 없다면<br>
+      <span class="accent">노인성 근감소증 및 낙상 위험 평가가 필요합니다</span>
+    </h1>
+    <p class="hero-sub anim-fade-up delay-2">
+      단순한 연세 탓으로 무심코 넘기기 전에 근력 저하, 보행 불안정, 낙상 위험을 함께 확인해야 합니다.<br>
+      근감소증은 단순한 노화 현상이 아니라 관리와 재활이 필요한 노년기 근골격계 건강 신호입니다.
+    </p>
+
+    <div class="cta-group anim-fade-up delay-3">
+      <a href="tel:1600-3415" class="btn-primary">📞 부모님 근력 검사 예약</a>
+      <a href="#check" class="btn-ghost">📋 근감소증 자가 체크</a>
+    </div>
+
+    <div class="notice-box notice-blue anim-fade-up delay-3" style="margin-top: 32px;">
+      <strong>📍 희망찬병원 근감소증 평가 기준:</strong><br>
+      근육량 감소뿐만 아니라 실제 근력, 보행 속도, 관절·척추 이상 유무를 종합 감별하여 1:1 맞춤 운동 및 영양 가이드를 제시합니다.
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: 이런 경우 상담을 권합니다 -->
+<section style="background: var(--bg-secondary);" id="check">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">CHECKLIST</span>
+      <h2 class="section-title">이런 경우 전문 상담 및 진찰을 권합니다</h2>
+      <p class="section-desc">일상생활 중 부모님의 행동에서 아래 증상이 관찰된다면 진료를 받아보시는 것이 좋습니다.</p>
+    </div>
+
+    <ul class="checklist">
+      <li>앉았다가 의자에서 일어날 때 손잡이를 짚지 않으면 힘겨워하십니다.</li>
+      <li>횡단보도를 건널 때나 평지를 걸을 때 걷는 속도가 예전보다 뚜렷하게 느려졌습니다.</li>
+      <li>걸을 때 중심을 잡지 못하고 자주 휘청거리거나 최근 넘어진 적이 있습니다.</li>
+      <li>허벅지나 종아리 근육이 가늘어지고 눈에 띄게 빠진 느낌이 듭니다.</li>
+      <li>최근 특별한 이유 없이 체중이 줄고 활력과 기운이 많이 떨어졌습니다.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION 2: 근감소증의 3대 핵심 문제 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">KEY ISSUES</span>
+      <h2 class="section-title">근감소증은 단순히 "근육이 줄었다"만의 문제가 아닙니다</h2>
+      <p class="section-desc">근육량 감소와 함께 근력 저하, 보행 기능 저하가 동반되어 일상 일상의 자립도를 위협합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-badge">ISSUE 01</span>
+        <h3>하지 근력 저하</h3>
+        <p>다리에 힘이 빠지면서 계단 오르내리기, 의자에서 서기 등 기본적인 상하체 이동 동작이 매우 힘들어집니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">ISSUE 02</span>
+        <h3>보행 불안정</h3>
+        <p>걸음걸이가 느려지고 중심을 잡기 어려워지며, 이로 인해 외부 활동이나 외출 기피 현상으로 이어지게 됩니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">ISSUE 03</span>
+        <h3>낙상 및 골절 위험</h3>
+        <p>순간적인 균형 감각이 떨어져 넘어지기 쉬우며, 고관절 및 척추 골절로 이어져 장기 입원 위험이 급증합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: 희망찬병원 4단계 평가 프로세스 -->
+<section style="background: var(--bg-secondary);" id="process">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">4-STEP DIAGNOSIS</span>
+      <h2 class="section-title">희망찬병원의 4단계 정밀 평가 프로세스</h2>
+      <p class="section-desc">다각도 종합 진찰을 통해 근감소증의 원인과 동반 질환을 명확히 구분합니다.</p>
+    </div>
+
+    <div class="step-grid">
+      <div class="step-card">
+        <div class="step-num">STEP 01</div>
+        <div class="step-title">증상 및 낙상 이력 확인</div>
+        <div class="step-desc">근력 저하 발생 시점, 최근 낙상 경험, 체중 변화 및 기저질환 심층 문진</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 02</div>
+        <div class="step-title">관절 · 척추 · 신경 감별</div>
+        <div class="step-desc">퇴행성 무릎 관절염, 척추관협착증, 말초신경병증 등 보행 장애 원인 종합 정밀 감별</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 03</div>
+        <div class="step-title">근력 및 보행 기능 평가</div>
+        <div class="step-desc">악력 측정, 의자 일어서기 테스트, 보행 속도 및 신체 균형 상태 계측</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 04</div>
+        <div class="step-title">맞춤 운동 · 영양 처방</div>
+        <div class="step-desc">현재 기능 단계에 맞춘 하치 근력 강화 운동, 낙상 예방 재활, 단백질 영양 상담</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: 응급 평가가 우선인 상황 (Red Flags) -->
+<section>
+  <div class="container">
+    <div class="notice-box notice-warn">
+      <h3 style="font-size: 20px; color: var(--warn-orange); margin-bottom: 12px; font-weight: 700;">🚨 이런 증상은 일반 상담보다 응급 평가가 우선입니다</h3>
+      <p style="font-size: 15px; color: var(--text-primary); line-height: 1.8;">
+        갑자기 한쪽 팔이나 다리에 힘이 빠지거나, 말이 어눌해짐, 얼굴 비대칭, 의식 저하, 극심한 흉통, 호흡곤란이 동반된 경우에는 노인성 근감소증이 아닌 뇌졸중이나 심혈관 급성 질환일 수 있으므로 즉시 상급병원 응급실 내원이 필요합니다.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 의료진 소개 -->
+<section class="doctor">
+  <div class="container">
+    <div class="doctor-card">
+      <img src="https://sellerbag1-cloud.github.io/KakaoTalk_20260310_175824020.jpg" alt="김진균 대표원장" class="doctor-profile-img">
+      <div class="doctor-info">
+        <h3>김진균 대표원장</h3>
+        <div class="title">희망찬병원 대표원장 · 신경외과 전문의</div>
+        <p style="font-weight: 600; color: var(--primary-deep); margin-bottom: 12px;">
+          "부모님의 보행 불안정과 다리 힘 빠짐, 단순 노화가 아닌 척추·신경 감별과 체계적 근력 평가가 선행되어야 합니다."
+        </p>
+        <p>• 희망찬병원 대표원장 (신경외과 전문의)</p>
+        <p>• 노인성 근감소증, 척추관협착증 및 보행 장애 정밀 감별 진료</p>
+        <p>• 유튜브 채널 <strong>"털보의사"</strong> 운영 — 노년기 척추 관절 및 근골격계 맞춤 의료정보 전달</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Q1. 근감소증은 나이가 들면 어쩔 수 없는 자연스러운 현상인가요?</summary>
+        <div class="faq-answer">나이가 들면서 자연스럽게 근육량이 일부 줄어들 수 있으나, 자주 넘어지거나 보행 속도가 눈에 띄게 떨어지는 정도라면 관리가 필요한 상태입니다. 적절한 운동과 영양, 재활 치료를 병행하면 기능 저하를 충분히 늦출 수 있습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q2. 단백질만 많이 섭취하면 근감소증이 해결되나요?</summary>
+        <div class="faq-answer">단백질 보충은 중요하지만, 알맞은 근력 운동이 병행되지 않으면 효과가 제한적입니다. 또한 신장 질환 등 기저질환이 있으신 경우 과도한 단백질 섭취가 무리를 줄 수 있으므로 의료진 상담 후 결정하시는 것이 안전합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q3. 무릎 관절염이나 허리 협착증과 어떻게 구분하나요?</summary>
+        <div class="faq-answer">무릎 관절염이나 척추관협착증도 다리 통증과 힘 빠짐을 유발하여 근감소증과 유사하게 보일 수 있습니다. 본원에서는 정밀 진찰과 영상 검사를 통해 척추·관절 문제와 단순 근력 저하를 명확히 구분합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q4. 부모님이 병원 방문을 꺼리시는데 언제 꼭 방문해야 하나요?</summary>
+        <div class="faq-answer">최근 1년 이내에 넘어진 적이 있으시거나, 의자에서 혼자 일어서기 힘들어하시고 걷는 속도가 뚜렷하게 느려졌다면 꼭 방문하셔야 합니다. 낙상으로 인한 골절이 발생하면 회복에 오랜 시간이 걸릴 수 있습니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 풋터 (네이버 지도 + 병원 정식 메타정보) -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid-layout">
+      
+      <!-- 지도 연동 영역 -->
+      <div class="footer-map-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(255, 255, 255, 0.08); text-align: center; padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15);">
+        <div style="font-size: 36px; margin-bottom: 10px;">📍</div>
+        <h5 style="color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">희망찬병원 위치 안내</h5>
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 13px; margin-bottom: 16px;">경기도 화성시 병점중앙로 174</p>
+        
+        <a href="https://m.map.naver.com/search2/search.naver?query=%ED%9D%AC%EB%A7%9F%EC%B0%AC%EB%B3%91%EC%9B%90" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #03C75A; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; transition: all 0.2s ease;">
+           <span>N</span> 네이버 지도로 길찾기 →
+        </a>
+      </div>
+
+      <!-- 우측 병원 필수정보 -->
+      <div class="footer-info-box">
+        <h4>희망찬병원</h4>
+        <p><strong>주소 :</strong> 경기도 화성시 병점중앙로 174</p>
+        <p><strong>상담문의 :</strong> 1600-3415</p>
+        <p><strong>진료시간 :</strong> 평일 09:00 ~ 18:00 | 토요일 09:00 ~ 13:00 (일·공휴일 휴무)</p>
+        <p><strong>진료과목 :</strong> 신경외과 · 정형외과 · 내과 · 영상의학과</p>
+        <p class="highlight">김진균 대표원장 직접 진료</p>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      본 웹사이트에 수록된 내용은 일반적인 의료 정보 제공을 목적으로 작성되었으며 개별 환자의 진단 및 치료를 대신할 수 없습니다.<br>
+      노인성 근감소증 진단 및 재활 방향은 전문 의료진 진찰 후 결정됩니다.<br>
+      © 희망찬병원. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- Floating CTA (하단 고정 바) -->
+<a href="tel:1600-3415" class="floating-cta">
+  <div class="text">
+    <strong>부모님 근감소증 &amp; 낙상 위험 검사 예약</strong>
+    <small>1600-3415 · 대표원장 김진균 직접 진료</small>
+  </div>
+  <div class="btn-call">📞 전화 걸기</div>
+</a>
+
+</body>
+</html>

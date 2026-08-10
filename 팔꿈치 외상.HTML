@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>희망찬병원 팔꿈치 외상 클리닉 — 본원 직접 진료 · 소아 풀린 팔꿈치 즉시 정복</title>
+<meta name="description" content="정형외과 전문의가 직접 진료하는 팔꿈치 외상 클리닉. 요골두·상완골 원위부 골절·팔꿈치 탈구·소아 풀린 팔꿈치 정복·정기 외래까지 한 자리. 자보·산재 정직 진료. 화성·동탄·오산·평택.">
+<meta name="keywords" content="팔꿈치 외상, 요골두 골절, 상완골 원위부 골절, 팔꿈치 탈구, 풀린 팔꿈치, 소아 팔꿈치, 희망찬병원, 김진균원장">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;800;900&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* 하이테크 메디컬 팔레트 */
+  --bg-primary: #F2F6F9;
+  --bg-secondary: #E8EFF4;
+  --bg-card: #FFFFFF;
+  --bg-accent: #E1FAF6;
+  
+  --primary-deep: #0D3B3E;
+  --primary-mid: #12635D;
+  --primary-mint: #199D93;
+  --accent-cyan: #22D3EE;
+  --warn: #E05656;
+  
+  --text-primary: #111D23;
+  --text-secondary: #48606A;
+  --text-muted: #839B97;
+  
+  --border-subtle: #D8E4EC;
+  --border-highlight: #A4D9D4;
+  
+  --shadow-soft: 0 4px 20px rgba(13, 59, 62, 0.05);
+  --shadow-glass: 0 16px 40px rgba(18, 99, 93, 0.12);
+  --shadow-hover: 0 20px 48px rgba(18, 99, 93, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* 회로/테크니컬 라인 패턴 배경 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(25, 157, 147, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(34, 211, 238, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.serif { font-family: 'Noto Serif KR', serif; }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Top Emergency Bar */
+.top-notice {
+  background: var(--primary-deep);
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.top-notice span { color: var(--accent-cyan); }
+
+/* Header */
+.mini-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-soft);
+}
+
+.mini-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-deep);
+}
+
+.brand .accent { color: var(--primary-mint); font-weight: 600; }
+.brand .small { font-size: 13px; color: var(--text-muted); font-weight: 400; margin-left: 6px; }
+
+.header-cta { display: flex; gap: 10px; align-items: center; }
+.header-cta a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.header-cta .ghost {
+  color: var(--primary-mid);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-highlight);
+}
+
+.header-cta .ghost:hover {
+  background: var(--bg-accent);
+  color: var(--primary-deep);
+}
+
+.header-cta .filled {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(25, 157, 147, 0.3);
+}
+
+.header-cta .filled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 157, 147, 0.4);
+}
+
+/* Hero Section */
+.hero {
+  padding: 90px 24px 70px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 6px 16px;
+  background: rgba(25, 157, 147, 0.08);
+  border: 1px solid var(--border-highlight);
+  border-radius: 30px;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 800;
+  font-size: clamp(30px, 4.8vw, 46px);
+  line-height: 1.35;
+  margin-bottom: 24px;
+  color: var(--primary-deep);
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .accent {
+  color: var(--primary-mint);
+  background: linear-gradient(120deg, var(--primary-mid), var(--primary-mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto 36px;
+  line-height: 1.85;
+}
+
+/* CTA 중앙 정렬 */
+.cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(18, 99, 93, 0.35);
+}
+
+.btn-ghost {
+  background: #FFFFFF;
+  color: var(--primary-deep);
+  padding: 16px 32px;
+  border: 1.5px solid var(--border-highlight);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-ghost:hover {
+  background: var(--bg-accent);
+  border-color: var(--primary-mint);
+  transform: translateY(-2px);
+}
+
+/* Section Common */
+section { padding: 80px 24px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: clamp(26px, 3.8vw, 36px);
+  color: var(--primary-deep);
+  line-height: 1.35;
+}
+
+.section-desc {
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Card & Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px 26px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-mint), var(--accent-cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+}
+
+.card:hover::before { transform: scaleX(1); }
+
+.card h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Comparison Table */
+.compare-wrap {
+  max-width: 840px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-glass);
+  border: 1px solid var(--border-subtle);
+  background: #fff;
+}
+
+table.compare {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14.5px;
+}
+
+table.compare th, table.compare td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table.compare thead th {
+  background: var(--primary-deep);
+  color: #fff;
+  font-weight: 600;
+}
+
+table.compare tbody th {
+  background: var(--bg-secondary);
+  color: var(--primary-deep);
+  font-weight: 700;
+  width: 22%;
+}
+
+table.compare td.highlight {
+  background: var(--bg-accent);
+  color: var(--primary-deep);
+  font-weight: 700;
+}
+
+/* Doctor Profile */
+.doctor { background: #fff; }
+
+.doctor-card {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  border-radius: 24px;
+  padding: 44px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.doctor-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.2);
+  outline: 2px solid var(--border-highlight);
+  flex-shrink: 0;
+}
+
+.doctor-info { flex-grow: 1; }
+
+.doctor-info h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 6px;
+}
+
+.doctor-info .title {
+  font-size: 14.5px;
+  color: var(--primary-mint);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq { background: var(--bg-primary); }
+.faq-list { max-width: 840px; margin: 0 auto; }
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding: 20px 26px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  color: var(--primary-mint);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 26px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.85; }
+
+/* Safety Notice */
+.safety { padding: 40px 24px; background: #fff; }
+.safety-box {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-accent);
+  border-left: 4px solid var(--primary-mint);
+  padding: 24px 28px;
+  border-radius: 8px;
+}
+
+.safety-box h4 { font-size: 15.5px; font-weight: 700; color: var(--primary-deep); margin-bottom: 6px; }
+.safety-box p { font-size: 14px; color: var(--text-secondary); line-height: 1.75; }
+
+/* Footer & Hospital Map Grid Layout */
+footer {
+  background: var(--primary-deep);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 70px 24px 40px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.footer-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.footer-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* 우측 병원 필수정보 스타일 */
+.footer-info-box {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-box h4 {
+  font-family: 'Noto Serif KR', serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-info-box p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14.5px;
+}
+
+.footer-info-box .highlight {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.disclaimer {
+  max-width: 780px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.75;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+
+@media (max-width: 768px) {
+  .doctor-card { flex-direction: column; text-align: center; padding: 36px 24px; }
+  .doctor-profile-img { width: 150px; height: 150px; }
+  .footer-grid-layout { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .footer-info-box { text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- 상단 안내 -->
+<div class="top-notice">
+  팔꿈치 외상 클리닉 — <span>본원 직접 진료 · 소아 풀린 팔꿈치 즉시 정복</span> (상담문의: 1600-3415)
+</div>
+
+<!-- 헤더 -->
+<div class="mini-header">
+  <div class="container">
+    <div class="mini-header-inner">
+      <div class="brand">희망찬병원 <span class="accent">·</span> 팔꿈치 외상 클리닉<span class="small">신경외과·정형외과</span></div>
+      <div class="header-cta">
+        <a href="tel:1600-3415" class="ghost">📞 전화</a>
+        <a href="tel:1600-3415" class="filled">예약·상담</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow fade-in">HOPE ELBOW TRAUMA CLINIC</div>
+    <h1 class="fade-in delay-1">
+      팔꿈치 외상,<br>
+      <span class="accent">본원이 직접 원스톱 진료합니다</span>
+    </h1>
+    <p class="hero-sub fade-in delay-2">
+      요골두·상완골 원위부 골절, 팔꿈치 탈구, 소아 풀린 팔꿈치(nursemaid's elbow) 정복까지!<br>
+      당일 X-ray 검사부터 정복, 깁스/부목 고정, 신경 평가, 회복기 정기 외래까지 정형외과 전문의가 직접 진료합니다.
+    </p>
+    <div class="cta-group fade-in delay-3">
+      <a href="tel:1600-3415" class="btn-primary">📋 진료 예약 &amp; 정복 상담 →</a>
+      <a href="#pediatric" class="btn-ghost">소아 풀린 팔꿈치 정복</a>
+    </div>
+  </div>
+</section>
+
+<!-- 주요 진료 영역 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">CLINICAL SCOPE</span>
+      <h2 class="section-title">희망찬병원 팔꿈치 외상 직접 진료 영역</h2>
+      <p class="section-desc">외상 직후 정확한 진단과 안전한 처치가 평생 손 기능을 좌우합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>1. 요골두 골절</h3>
+        <p>팔을 짚고 넘어졌을 때 발생하는 가장 흔한 골절로, 당일 X-ray 정밀 평가 후 보존적 고정 치료를 시행합니다.</p>
+      </div>
+      <div class="card">
+        <h3>2. 소아 풀린 팔꿈치 (빠짐)</h3>
+        <p>아이 팔을 당긴 후 갑자기 안 쓸 때, 정형외과 전문의 도수 정복으로 30초~1분 만에 즉시 해결합니다.</p>
+      </div>
+      <div class="card">
+        <h3>3. 팔꿈치 탈구 및 정복</h3>
+        <p>강한 외상으로 인한 주관절 탈구 시 당일 도수 정복 및 관절 안정성을 철저히 평가합니다.</p>
+      </div>
+      <div class="card">
+        <h3>4. 척골·정중 신경 평가</h3>
+        <p>팔꿈치 외상 시 동반되기 쉬운 새끼손가락 저림 및 신경 손상 여부를 정밀 신체 진찰로 평가합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 소아 풀린 팔꿈치 특화 안내 -->
+<section id="pediatric">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">PEDIATRIC EMERGENCY</span>
+      <h2 class="section-title">아이 팔이 갑자기 안 움직이나요? (소아 풀린 팔꿈치)</h2>
+      <p class="section-desc">만 1~5세 아이의 손을 잡고 당긴 후 갑자기 한쪽 팔을 늘어뜨린다면 요골두 아탈구일 가능성이 높습니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>특징적 양상</h3>
+        <p>외형상 붓거나 멍이 없는데도 아이가 다친 팔을 전혀 안 쓰려 하고 물건을 잡으려 하면 울며 거부합니다.</p>
+      </div>
+      <div class="card">
+        <h3>본원 30초 즉시 정복</h3>
+        <p>긴 응급실 대기 없이 내원 즉시 정형외과 전문의가 도수 정복을 시행하여 바로 팔을 쓸 수 있도록 합니다.</p>
+      </div>
+      <div class="card">
+        <h3>자가 정복 금지</h3>
+        <p>미세 골절을 놓치고 직접 맞추려다 손상이 커질 수 있으므로 반드시 의료기관에서 골절 확인 후 정복받으셔야 합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 외상 후 재활 및 굳음 예방 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">REHABILITATION</span>
+      <h2 class="section-title">팔꿈치 관절 강직(굳음) 예방 관리</h2>
+      <p class="section-desc">팔꿈치는 관절 중 가장 굳기 쉬운 부위이므로 깁스 해제 후 적절한 시기의 운동 치료가 필수적입니다.</p>
+    </div>
+
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>회복 시기</th>
+            <th class="highlight">진료 및 재활 목표</th>
+            <th>주요 처치 내용</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1~2주 차</th>
+            <td class="highlight">추적 X-ray 및 통증 관리</td>
+            <td>외래 진료, 깁스/부목 상태 점검</td>
+          </tr>
+          <tr>
+            <th>3~4주 차</th>
+            <td class="highlight">골 유합 확인 및 고정 해제</td>
+            <td>부목 전환, 관절 가동 운동 준비</td>
+          </tr>
+          <tr>
+            <th>6주 차 이후</th>
+            <td class="highlight">능동적 관절 가동 범위 회복</td>
+            <td>단계별 굴곡·신전 운동 및 근력 회복 안내</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 의료진 소개 -->
+<section class="doctor">
+  <div class="container">
+    <div class="doctor-card">
+      <img src="https://sellerbag1-cloud.github.io/KakaoTalk_20260310_175824020.jpg" alt="김진균 대표원장" class="doctor-profile-img">
+      <div class="doctor-info">
+        <h3>김진균 대표원장</h3>
+        <div class="title">희망찬병원 · 신경외과·정형외과 전문의</div>
+        <p>요골두 골절, 주관절 탈구, 소아 풀린 팔꿈치 정복 등 팔꿈치 외상 전반을 정확하게 진단하고 신속하게 처치합니다.</p>
+        <p>유튜브 채널 <strong>"털보의사"</strong>를 통해 상지 외상 및 관절 질환에 대한 검증된 의학 정보를 정직하게 전달해 드리고 있습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Q1. 아이 팔이 풀린 것 같은데 응급실로 가야 하나요?</summary>
+        <div class="faq-answer">응급실에서는 대기 시간이길어질 수 있습니다. 희망찬병원으로 오시면 정형외과 전문의가 골절 여부 확인 후 30초~1분 만에 신속히 정복해 드립니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q2. 팔꿈치를 다친 후 새끼손가락이 저린데 왜 그런가요?</summary>
+        <div class="faq-answer">팔꿈치 안쪽으로 척골신경이 지나가기 때문입니다. 외상으로 신경이 자극을 받거나 압박되면 새끼손가락에 저림이 올 수 있으므로 신경 진찰이 필수적입니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q3. 교통사고나 산재 보험 진료도 가능한가요?</summary>
+        <div class="faq-answer">네, 가능합니다. 본원은 자동차보험 및 산재보험 정직 진료 기관으로 입원 부풀리기 없이 정확한 외상 평가와 진료를 제공합니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 안전 안내 -->
+<section class="safety">
+  <div class="container">
+    <div class="safety-box">
+      <h4>※ 의료 정보 및 연계 안내</h4>
+      <p>본 원은 팔꿈치 외상 정밀 진단 및 보존/도수 정복 치료를 직접 시행하며, 광범위 다발성 복합 골절이나 인공관절 수술이 필요한 고난도 케이스는 상급 종합병원으로 신속 연계해 드립니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 풋터 (좌측: 네이버 지도 상자 영역 / 우측: 병원 필수정보) -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid-layout">
+      
+      <!-- 좌측 지도 상자 영역 -->
+      <div class="footer-map-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(255, 255, 255, 0.08); text-align: center; padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15);">
+        <div style="font-size: 36px; margin-bottom: 10px;">📍</div>
+        <h5 style="color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">희망찬병원 위치 안내</h5>
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 13px; margin-bottom: 16px;">화성시 병점중앙로 174</p>
+        
+        <a href="https://m.map.naver.com/search2/search.naver?query=%ED%9D%88%EB%A0%9D%EC%B0%AC%EB%B3%91%EC%9B%90" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #03C75A; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; transition: all 0.2s ease;">
+           <span>N</span> 네이버 지도로 길찾기 →
+        </a>
+      </div>
+
+      <!-- 우측 병원 필수정보 -->
+      <div class="footer-info-box">
+        <h4>희망찬병원</h4>
+        <p><strong>주소 :</strong> 경기도 화성시 병점구 병점중앙로 174</p>
+        <p><strong>상담문의 :</strong> 1600-3415</p>
+        <p><strong>진료과목 :</strong> 신경외과 · 정형외과 · 내과 · 영상의학과</p>
+        <p class="highlight">털보의사 김진균 원장이 직접 진료합니다.</p>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      본 웹사이트에 수록된 내용은 의료 정보 제공을 목적으로 작성되었으며, 개별적인 의학적 진단 및 치료를 대신할 수 없습니다.<br>
+      © 희망찬병원. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>양방향 척추 내시경(BESS/UBE), 정말 나에게 맞을까요? | 희망찬병원</title>
+<meta name="description" content="양방향 척추 내시경(BESS/UBE) 시술 가능 의료기관. 만능 시술 아닙니다 — 환자 상태에 따라 적합 여부 결정. 동탄·화성권 희망찬병원·김진균 원장 직접 진료.">
+<meta name="keywords" content="양방향 척추 내시경, BESS, UBE, 허리디스크 내시경, 척추관협착증 내시경, 희망찬병원, 김진균원장">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;800;900&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* 하이테크 메디컬 팔레트 */
+  --bg-primary: #F2F6F9;
+  --bg-secondary: #E8EFF4;
+  --bg-card: #FFFFFF;
+  --bg-accent: #E1FAF6;
+  
+  --primary-deep: #0D3B3E;
+  --primary-mid: #12635D;
+  --primary-mint: #199D93;
+  --accent-cyan: #22D3EE;
+  --warn: #E05656;
+  
+  --text-primary: #111D23;
+  --text-secondary: #48606A;
+  --text-muted: #839B97;
+  
+  --border-subtle: #D8E4EC;
+  --border-highlight: #A4D9D4;
+  
+  --shadow-soft: 0 4px 20px rgba(13, 59, 62, 0.05);
+  --shadow-glass: 0 16px 40px rgba(18, 99, 93, 0.12);
+  --shadow-hover: 0 20px 48px rgba(18, 99, 93, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* 회로/테크니컬 라인 패턴 배경 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(25, 157, 147, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(34, 211, 238, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.serif { font-family: 'Noto Serif KR', serif; }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Top Notice Bar */
+.top-notice {
+  background: var(--primary-deep);
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.top-notice span { color: var(--accent-cyan); }
+
+/* Header */
+.mini-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-soft);
+}
+
+.mini-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-deep);
+}
+
+.brand .accent { color: var(--primary-mint); font-weight: 600; }
+.brand .small { font-size: 13px; color: var(--text-muted); font-weight: 400; margin-left: 6px; }
+
+.header-cta { display: flex; gap: 10px; align-items: center; }
+.header-cta a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.header-cta .ghost {
+  color: var(--primary-mid);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-highlight);
+}
+
+.header-cta .ghost:hover {
+  background: var(--bg-accent);
+  color: var(--primary-deep);
+}
+
+.header-cta .filled {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(25, 157, 147, 0.3);
+}
+
+.header-cta .filled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 157, 147, 0.4);
+}
+
+/* Hero Section */
+.hero {
+  padding: 90px 24px 70px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 6px 16px;
+  background: rgba(25, 157, 147, 0.08);
+  border: 1px solid var(--border-highlight);
+  border-radius: 30px;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 800;
+  font-size: clamp(30px, 4.8vw, 46px);
+  line-height: 1.35;
+  margin-bottom: 24px;
+  color: var(--primary-deep);
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .accent {
+  color: var(--primary-mint);
+  background: linear-gradient(120deg, var(--primary-mid), var(--primary-mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto 36px;
+  line-height: 1.85;
+}
+
+/* CTA 중앙 정렬 */
+.cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(18, 99, 93, 0.35);
+}
+
+.btn-ghost {
+  background: #FFFFFF;
+  color: var(--primary-deep);
+  padding: 16px 32px;
+  border: 1.5px solid var(--border-highlight);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-ghost:hover {
+  background: var(--bg-accent);
+  border-color: var(--primary-mint);
+  transform: translateY(-2px);
+}
+
+/* Section Common */
+section { padding: 80px 24px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: clamp(26px, 3.8vw, 36px);
+  color: var(--primary-deep);
+  line-height: 1.35;
+}
+
+.section-desc {
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Card & Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px 26px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-mint), var(--accent-cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+}
+
+.card:hover::before { transform: scaleX(1); }
+
+.card h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Comparison Table */
+.compare-wrap {
+  max-width: 840px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-glass);
+  border: 1px solid var(--border-subtle);
+  background: #fff;
+}
+
+table.compare {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14.5px;
+}
+
+table.compare th, table.compare td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table.compare thead th {
+  background: var(--primary-deep);
+  color: #fff;
+  font-weight: 600;
+}
+
+table.compare tbody th {
+  background: var(--bg-secondary);
+  color: var(--primary-deep);
+  font-weight: 700;
+  width: 22%;
+}
+
+table.compare td.highlight {
+  background: var(--bg-accent);
+  color: var(--primary-deep);
+  font-weight: 700;
+}
+
+/* Doctor Profile */
+.doctor { background: #fff; }
+
+.doctor-card {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  border-radius: 24px;
+  padding: 44px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.doctor-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.2);
+  outline: 2px solid var(--border-highlight);
+  flex-shrink: 0;
+}
+
+.doctor-info { flex-grow: 1; }
+
+.doctor-info h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 6px;
+}
+
+.doctor-info .title {
+  font-size: 14.5px;
+  color: var(--primary-mint);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq { background: var(--bg-primary); }
+.faq-list { max-width: 840px; margin: 0 auto; }
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding: 20px 26px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  color: var(--primary-mint);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 26px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.85; }
+
+/* Safety Notice */
+.safety { padding: 40px 24px; background: #fff; }
+.safety-box {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-accent);
+  border-left: 4px solid var(--primary-mint);
+  padding: 24px 28px;
+  border-radius: 8px;
+}
+
+.safety-box h4 { font-size: 15.5px; font-weight: 700; color: var(--primary-deep); margin-bottom: 6px; }
+.safety-box p { font-size: 14px; color: var(--text-secondary); line-height: 1.75; }
+
+/* Footer & Hospital Map Grid Layout */
+footer {
+  background: var(--primary-deep);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 70px 24px 40px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.footer-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.footer-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* 우측 병원 필수정보 스타일 */
+.footer-info-box {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-box h4 {
+  font-family: 'Noto Serif KR', serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-info-box p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14.5px;
+}
+
+.footer-info-box .highlight {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.disclaimer {
+  max-width: 780px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.75;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+
+@media (max-width: 768px) {
+  .doctor-card { flex-direction: column; text-align: center; padding: 36px 24px; }
+  .doctor-profile-img { width: 150px; height: 150px; }
+  .footer-grid-layout { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .footer-info-box { text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- 상단 안내 -->
+<div class="top-notice">
+  양방향 척추 내시경(BESS/UBE) — <span>만능 시술이 아닙니다. 환자 상태별 맞춤 정직 진료</span> (상담문의: 1600-3415)
+</div>
+
+<!-- 헤더 -->
+<div class="mini-header">
+  <div class="container">
+    <div class="mini-header-inner">
+      <div class="brand">희망찬병원 <span class="accent">·</span> 척추 내시경 클리닉<span class="small">신경외과·정형외과</span></div>
+      <div class="header-cta">
+        <a href="tel:1600-3415" class="ghost">📞 전화</a>
+        <a href="tel:1600-3415" class="filled">예약·상담</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow fade-in">BESS / UBE SPINE CLINIC</div>
+    <h1 class="fade-in delay-1">
+      양방향 척추 내시경,<br>
+      <span class="accent">정말 나에게 적합한 수술일까요?</span>
+    </h1>
+    <p class="hero-sub fade-in delay-2">
+      약 1cm 내외의 작은 통로 2개로 진행되는 최소 침습 척추 내시경 시술.<br>
+      모든 환자에게 만능은 아닙니다. 병변의 진행 정도와 척추 불안정성에 따라 가장 안전한 맞춤 치료법을 제시합니다.
+    </p>
+    <div class="cta-group fade-in delay-3">
+      <a href="tel:1600-3415" class="btn-primary">📋 적합성 평가 &amp; 진단 상담 →</a>
+      <a href="#comparison" class="btn-ghost">수술 방식 비교</a>
+    </div>
+  </div>
+</section>
+
+<!-- 적합한 환자군 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">CANDIDATES</span>
+      <h2 class="section-title">양방향 척추 내시경이 적합한 대상</h2>
+      <p class="section-desc">무조건적인 시술 권유가 아닌, 정밀 검사 후 내시경 치료 효과가 가장 뛰어난 케이스를 엄선합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>1. 디스크·협착증 진단 환자</h3>
+        <p>MRI 검사상 요추 추간판 탈출증 또는 척추관 협착증이 명확히 확진되고 신경 압박 증상이 있는 분</p>
+      </div>
+      <div class="card">
+        <h3>2. 보존적 치료 불응 환자</h3>
+        <p>약물, 주사 치료, 물리치료를 충분히 시행했음에도 불구하고 다리 저림이나 방사통이 지속되는 분</p>
+      </div>
+      <div class="card">
+        <h3>3. 고령 및 만성질환 환자</h3>
+        <p>전신마취나 절개 수술에 부담이 큰 고혈압, 당뇨 동반 환자로 최소 침습 치료가 필요한 분</p>
+      </div>
+      <div class="card">
+        <h3>4. 재수술 및 인접분절 질환</h3>
+        <p>기존 수술 부위의 재발 또는 인접 분절 병변으로 주변 조직 손상을 최소화하며 정밀 접근해야 하는 분</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 수술 방식 비교 -->
+<section id="comparison">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">TECHNIQUE COMPARISON</span>
+      <h2 class="section-title">양방향 내시경 vs 기존 수술법 비교</h2>
+      <p class="section-desc">독립된 2개의 통로를 사용하여 넓은 시야 확보와 자유로운 기구 조작이 가능합니다.</p>
+    </div>
+
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th class="highlight">양방향 내시경 (BESS/UBE)</th>
+            <th>기존 절개 수술</th>
+            <th>단일공 내시경</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>절개 및 통로</th>
+            <td class="highlight">약 1cm 절개 2개 (시야/기구 분리)</td>
+            <td>광범위 피부 절개 (3~5cm 이상)</td>
+            <td>1개의 단일 절개 통로</td>
+          </tr>
+          <tr>
+            <th>시야 확보</th>
+            <td class="highlight">고해상도 내시경으로 넓은 시야 확보</td>
+            <td>직접 시야 또는 현미경 사용</td>
+            <td>통로 제한으로 시야가 상대적으로 제한적</td>
+          </tr>
+          <tr>
+            <th>조직 손상</th>
+            <td class="highlight">근육 및 정상 뼈 손상 최소화</td>
+            <td>근육 박리 및 정상 조직 손상 가능성</td>
+            <td>조직 손상이 적으나 기구 제한 발생</td>
+          </tr>
+          <tr>
+            <th>회복 및 입원</th>
+            <td class="highlight">통증이 적고 단기 입원 후 빠른 복귀</td>
+            <td>상대적으로 긴 입원 및 회복 기간</td>
+            <td>빠른 회복 가능 (적응증 제한)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 적합하지 않은 경우 안내 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">LIMITATIONS</span>
+      <h2 class="section-title">양방향 내시경이 적합하지 않을 수 있는 경우</h2>
+      <p class="section-desc">모든 척추 질환을 내시경으로만 해결할 수는 없습니다. 병변에 따라 최적의 수술법을 선택합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>1. 척추 불안정성이 심한 경우</h3>
+        <p>뼈가 어긋나거나 흔들리는 척추 전방전위증 등이 동반된 경우 척추 고정술(유합술)이 더 안전할 수 있습니다.</p>
+      </div>
+      <div class="card">
+        <h3>2. 심한 척추 변형 및 측만증</h3>
+        <p>척추 구조적 변형이 심하여 단순 감압만으로 신경 압박 해소가 불충분한 구조적 병변의 경우</p>
+      </div>
+      <div class="card">
+        <h3>3. 광범위 다분절 협착증</h3>
+        <p>수개의 요추 분절에 걸쳐 전반적인 고도 협착이 진행된 경우 복합 치료 전략이 필요합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 의료진 소개 -->
+<section class="doctor">
+  <div class="container">
+    <div class="doctor-card">
+      <img src="https://sellerbag1-cloud.github.io/KakaoTalk_20260310_175824020.jpg" alt="김진균 대표원장" class="doctor-profile-img">
+      <div class="doctor-info">
+        <h3>김진균 대표원장</h3>
+        <div class="title">희망찬병원 · 신경외과·정형외과 전문의</div>
+        <p>양방향 척추 내시경(BESS/UBE), 현미경 디스크 수술, 척추 유합술 등 환자의 상태에 맞는 가장 정확하고 정직한 치료법을 집도합니다.</p>
+        <p>유튜브 채널 <strong>"털보의사"</strong>를 통해 올바른 척추 수술 기준과 검증된 의학 정보를 투명하게 전해드리고 있습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Q1. 양방향 척추 내시경 시술 후 정말 흉터가 안 남나요?</summary>
+        <div class="faq-answer">약 1cm 미만의 미세한 절개 구멍 2개만 내어 진행하므로 기존 절개 수술에 비해 흉터가 매우 작으며, 시간이 지나면서 눈에 띄지 않게 옅어집니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q2. 수술 후 언제부터 일상생활 및 보행이 가능한가요?</summary>
+        <div class="faq-answer">최소 침습 방식으로 근육 손상이 적어 대부분 수술 다음 날부터 보행이 가능하며, 환자의 건강 상태에 따라 수일 내 단기 퇴원이 가능합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q3. 건강보험 및 실손보험 적용이 가능한가요?</summary>
+        <div class="faq-answer">양방향 척추 내시경은 국민건강보험 적용 항목이며, 소지하신 실손보험 약관에 따라 비급여 및 입원 치료비 청구가 가능하므로 내원 시 안내해 드립니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q4. 내시경 수술 후 재발 가능성은 없나요?</summary>
+        <div class="faq-answer">모든 척추 수술은 관리에 따라 재발 가능성이 존재합니다. 희망찬병원에서는 수술 후 체계적인 재활 및 올바른 자세 지도를 통해 재발을 예방합니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 안전 안내 -->
+<section class="safety">
+  <div class="container">
+    <div class="safety-box">
+      <h4>※ 진료 및 치료 결정 안내</h4>
+      <p>본 페이지의 시술 정보는 일반적인 의학 안내이며, 실제 내시경 시술 가능 여부 및 수술 방식은 전문의의 MRI 정밀 영상 판독과 정밀 신체 진찰 후 결정됩니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 풋터 (좌측: 네이버 지도 상자 영역 / 우측: 병원 필수정보) -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid-layout">
+      
+      <!-- 좌측 지도 상자 영역 -->
+      <div class="footer-map-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(255, 255, 255, 0.08); text-align: center; padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15);">
+        <div style="font-size: 36px; margin-bottom: 10px;">📍</div>
+        <h5 style="color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">희망찬병원 위치 안내</h5>
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 13px; margin-bottom: 16px;">화성시 병점중앙로 174</p>
+        
+        <a href="https://m.map.naver.com/search2/search.naver?query=%ED%9D%88%EB%A0%9D%EC%B0%AC%EB%B3%91%EC%9B%90" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #03C75A; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; transition: all 0.2s ease;">
+           <span>N</span> 네이버 지도로 길찾기 →
+        </a>
+      </div>
+
+      <!-- 우측 병원 필수정보 -->
+      <div class="footer-info-box">
+        <h4>희망찬병원</h4>
+        <p><strong>주소 :</strong> 경기도 화성시 병점구 병점중앙로 174</p>
+        <p><strong>상담문의 :</strong> 1600-3415</p>
+        <p><strong>진료과목 :</strong> 신경외과 · 정형외과 · 내과 · 영상의학과</p>
+        <p class="highlight">털보의사 김진균 원장이 직접 진료합니다.</p>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      본 웹사이트에 수록된 내용은 의료 정보 제공을 목적으로 작성되었으며, 개별적인 의학적 진단 및 치료를 대신할 수 없습니다.<br>
+      © 희망찬병원. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

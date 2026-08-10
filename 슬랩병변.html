@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLAP 병변·슬랩병변·관절와순 손상 | 희망찬병원 어깨 정밀 진료</title>
+<meta name="description" content="팔 올릴 때 어깨 깊숙이 아프고, 어깨가 걸리거나 덜컹거리고, MRI 정상인데도 통증이 지속된다면 SLAP 병변·관절와순 손상·어깨 불안정성 평가가 필요합니다. 희망찬병원.">
+<meta name="keywords" content="SLAP 병변, 슬랩병변, 슬렙병변, 관절와순 손상, 관절와순 파열, 어깨 관절인대 손상, 어깨 인대 찢어짐, 어깨 불안정성, 방카르트병변, 어깨 깊숙한 통증, 벤치프레스 어깨 통증, 희망찬병원, 김진균, 털보의사">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600&family=Noto+Serif+KR:wght@400;600;700;800;900&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  /* 하이테크 메디컬 팔레트 */
+  --bg-primary: #F2F6F9;
+  --bg-secondary: #E8EFF4;
+  --bg-card: #FFFFFF;
+  --bg-accent: #E1FAF6;
+  --bg-warn: #FFF6E6;
+  
+  --primary-deep: #0D3B3E;
+  --primary-mid: #12635D;
+  --primary-mint: #199D93;
+  --accent-cyan: #22D3EE;
+  
+  --warn: #E05656;
+  --warn-bg: #FDF2F2;
+  --warn-orange: #ED7D31;
+  
+  --text-primary: #111D23;
+  --text-secondary: #48606A;
+  --text-muted: #839B97;
+  
+  --border-subtle: #D8E4EC;
+  --border-highlight: #A4D9D4;
+  
+  --shadow-soft: 0 4px 20px rgba(13, 59, 62, 0.05);
+  --shadow-glass: 0 16px 40px rgba(18, 99, 93, 0.12);
+  --shadow-hover: 0 20px 48px rgba(18, 99, 93, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.75;
+  overflow-x: hidden;
+  font-size: 16px;
+  padding-bottom: 76px;
+  word-break: keep-all;
+}
+
+/* 기술적 백그라운드 오버레이 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(25, 157, 147, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(34, 211, 238, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* 키프레임 애니메이션 */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(28px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(34, 211, 238, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0); }
+}
+
+.anim-fade-up {
+  opacity: 0;
+  animation: fadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
+
+/* Top Notice Bar */
+.top-notice {
+  background: var(--primary-deep);
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.top-notice span { color: var(--accent-cyan); font-weight: 700; }
+
+/* Header */
+.mini-header {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-soft);
+}
+
+.mini-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-deep);
+}
+
+.brand .accent { color: var(--primary-mint); font-weight: 600; }
+.brand .small { font-size: 13px; color: var(--text-muted); font-weight: 400; margin-left: 6px; }
+
+.header-cta { display: flex; gap: 10px; align-items: center; }
+.header-cta a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.header-cta .ghost {
+  color: var(--primary-mid);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-highlight);
+}
+
+.header-cta .filled {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(25, 157, 147, 0.3);
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 24px 60px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eyebrow {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+  padding: 6px 18px;
+  background: rgba(25, 157, 147, 0.08);
+  border: 1px solid var(--border-highlight);
+  border-radius: 30px;
+  width: fit-content;
+  animation: pulseGlow 2.5s infinite;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 800;
+  font-size: clamp(28px, 4.5vw, 44px);
+  line-height: 1.35;
+  margin-bottom: 20px;
+  color: var(--primary-deep);
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .accent {
+  color: var(--primary-mint);
+  background: linear-gradient(120deg, var(--primary-mid), var(--primary-mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--text-secondary);
+  max-width: 840px;
+  margin: 0 auto 36px;
+  line-height: 1.85;
+}
+
+.cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.25);
+}
+
+.btn-ghost {
+  background: #FFFFFF;
+  color: var(--primary-deep);
+  padding: 16px 28px;
+  border: 1.5px solid var(--border-highlight);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Quick Symptom Pills */
+.quick-symptoms {
+  max-width: 840px;
+  margin: 32px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.quick-pill {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Section Common */
+section { padding: 80px 24px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: clamp(24px, 3.8vw, 36px);
+  color: var(--primary-deep);
+  line-height: 1.35;
+}
+
+.section-desc {
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Card & Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px 26px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-mint), var(--accent-cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+}
+
+.card:hover::before { transform: scaleX(1); }
+
+.card-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: var(--bg-accent);
+  color: var(--primary-mid);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Term Tag Box */
+.term-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.term-tag {
+  background: #FFFFFF;
+  color: var(--primary-deep);
+  border: 1px solid var(--border-subtle);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Checklist List */
+.checklist-box {
+  max-width: 840px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 36px 32px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+}
+
+.checklist-list {
+  list-style: none;
+}
+
+.checklist-list li {
+  position: relative;
+  padding: 14px 0 14px 32px;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 15.5px;
+  color: var(--text-primary);
+}
+
+.checklist-list li:last-child { border-bottom: none; }
+
+.checklist-list li::before {
+  content: "□";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  color: var(--primary-mint);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* Comparison Table */
+.compare-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-glass);
+  border: 1px solid var(--border-subtle);
+  background: #fff;
+}
+
+table.compare {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14.5px;
+}
+
+table.compare th, table.compare td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table.compare thead th {
+  background: var(--primary-deep);
+  color: #fff;
+  font-weight: 600;
+}
+
+table.compare tbody th {
+  background: var(--bg-secondary);
+  color: var(--primary-deep);
+  font-weight: 700;
+  width: 22%;
+}
+
+/* Workflow Step Grid */
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.step-card {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  border-top: 4px solid var(--primary-mint);
+}
+
+.step-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  margin-bottom: 4px;
+}
+
+.step-title {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Notice Box */
+.notice-box {
+  padding: 22px 28px;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 24px auto;
+  max-width: 960px;
+}
+
+.notice-blue {
+  background: #EAF1F8;
+  border-left: 4px solid var(--primary-mid);
+  color: var(--text-primary);
+}
+
+.notice-warn {
+  background: var(--bg-warn);
+  border-left: 4px solid var(--warn-orange);
+  color: var(--text-primary);
+}
+
+/* Doctor Profile */
+.doctor { background: #fff; }
+
+.doctor-card {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  border-radius: 24px;
+  padding: 44px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.doctor-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.2);
+  outline: 2px solid var(--border-highlight);
+  flex-shrink: 0;
+}
+
+.doctor-info { flex-grow: 1; }
+
+.doctor-info h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 6px;
+}
+
+.doctor-info .title {
+  font-size: 14.5px;
+  color: var(--primary-mint);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq { background: var(--bg-primary); }
+.faq-list { max-width: 840px; margin: 0 auto; }
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding: 20px 26px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  color: var(--primary-mint);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 26px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.85; }
+
+/* Floating CTA */
+.floating-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--primary-deep);
+  color: #fff;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.18);
+  z-index: 100;
+  text-decoration: none;
+}
+
+.floating-cta .text strong {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.floating-cta .text small {
+  font-size: 12px;
+  color: var(--accent-cyan);
+}
+
+.floating-cta .btn-call {
+  background: var(--primary-mint);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-deep);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 70px 24px 40px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.footer-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.footer-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.footer-info-box {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-box h4 {
+  font-family: 'Noto Serif KR', serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-info-box p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14.5px;
+}
+
+.footer-info-box .highlight {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.disclaimer {
+  max-width: 780px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .doctor-card { flex-direction: column; text-align: center; padding: 36px 24px; }
+  .doctor-profile-img { width: 150px; height: 150px; }
+  .footer-grid-layout { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .footer-info-box { text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- 상단 안내 -->
+<div class="top-notice">
+  SLAP 병변 · 관절와순 손상 · 어깨 불안정성 정밀 진단 <span>김진균 대표원장 직접 진료</span>
+</div>
+
+<!-- 헤더 -->
+<div class="mini-header">
+  <div class="container">
+    <div class="mini-header-inner">
+      <div class="brand">희망찬병원 <span class="accent">·</span> SLAP 관절와순 클리닉<span class="small">대표원장 김진균</span></div>
+      <div class="header-cta">
+        <a href="#whatis" class="ghost">SLAP 질환이란?</a>
+        <a href="tel:1600-3415" class="filled">📞 1600-3415</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 히어로 섹션 (★ 텍스트 애니메이션 구역) -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow anim-fade-up">SLAP &amp; LABRUM LESION CLINIC</div>
+    <h1 class="anim-fade-up delay-1">
+      팔을 올릴 때<br>
+      <span class="accent">어깨 깊숙이 걸리고 아프신가요?</span>
+    </h1>
+    <p class="hero-sub anim-fade-up delay-2">
+      헬스·야구·골프 이후 어깨 안쪽 통증이 지속되거나, MRI는 괜찮다는데 특정 각도에서 걸리고 덜컹거린다면 SLAP 병변, 관절와순 손상, 어깨 불안정성 평가가 필요할 수 있습니다.
+    </p>
+
+    <div class="cta-group anim-fade-up delay-3">
+      <a href="tel:1600-3415" class="btn-primary">📞 어깨 정밀 진료 예약</a>
+      <a href="#check" class="btn-ghost">📋 SLAP 자가 체크리스트</a>
+      <a href="#sports" class="btn-ghost">★ 스포츠 어깨 손상 가이드</a>
+    </div>
+
+    <div class="quick-symptoms anim-fade-up delay-3">
+      <div class="quick-pill">팔 올릴 때 깊은 통증</div>
+      <div class="quick-pill">어깨 안에서 걸리는 느낌</div>
+      <div class="quick-pill">덜컹거림·빠질 듯한 느낌</div>
+      <div class="quick-pill">MRI 정상인데 지속 통증</div>
+    </div>
+
+    <div class="notice-box notice-blue anim-fade-up delay-3" style="margin-top: 32px;">
+      <strong>📍 진료 안내:</strong> 동탄·화성·수원·평택 / 어깨 관절와순 정밀 이학적 검사, 이두박근 장두 평가, 정직 비수술/수술 상담
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: 환자가 검색하는 연관 키워드 -->
+<section style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">PATIENT LANGUAGE</span>
+      <h2 class="section-title">환자는 'SLAP 병변' 외에도 다양한 단어로 검색합니다</h2>
+      <p class="section-desc">같은 어깨 안쪽 통증이라도 환자분들이 느끼고 표현하는 검색어는 매우 다양하게 흩어져 있습니다.</p>
+    </div>
+
+    <div class="term-box">
+      <div class="term-tag">슬랩병변</div>
+      <div class="term-tag">슬렙병변</div>
+      <div class="term-tag">SLAP 병변</div>
+      <div class="term-tag">관절와순 손상</div>
+      <div class="term-tag">관절와순 파열</div>
+      <div class="term-tag">어깨 관절인대 손상</div>
+      <div class="term-tag">어깨 인대 찢어짐</div>
+      <div class="term-tag">어깨 불안정성</div>
+      <div class="term-tag">방카르트병변</div>
+      <div class="term-tag">어깨 탈구 느낌</div>
+      <div class="term-tag">어깨 깊숙한 통증</div>
+      <div class="term-tag">벤치프레스 어깨 통증</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: 자가 체크리스트 -->
+<section id="check">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">SELF CHECKLIST</span>
+      <h2 class="section-title">이런 증상이 있으면 SLAP 병변을 의심해볼 수 있습니다</h2>
+      <p class="section-desc">SLAP 병변은 겉으로 만져지는 통증보다 어깨 관절 안쪽 깊은 곳에서 느껴지는 걸림과 불안정성이 특징입니다.</p>
+    </div>
+
+    <div class="checklist-box">
+      <ul class="checklist-list">
+        <li>팔을 머리 위로 올릴 때 어깨 깊숙한 곳이 아프다.</li>
+        <li>운동 중 또는 운동 후 어깨 안에서 걸리는 느낌이 난다.</li>
+        <li>벤치프레스, 턱걸이, 숄더프레스, 딥스 후 통증이 계속된다.</li>
+        <li>야구, 테니스, 배드민턴, 수영처럼 팔을 위로 쓰는 운동 후 통증이 생겼다.</li>
+        <li>어깨가 빠질 것 같거나 덜컹거리는 느낌이 있다.</li>
+        <li>회전근개 파열은 아니라는데 통증이 계속된다.</li>
+        <li>MRI가 정상 또는 애매하다고 들었지만 증상이 사라지지 않는다.</li>
+        <li>물리치료와 주사치료를 반복했는데 운동할 때 다시 아프다.</li>
+      </ul>
+
+      <div class="notice-box notice-warn" style="margin-top: 24px;">
+        <strong style="color: var(--warn-orange);">💡 2개 이상 해당된다면:</strong><br>
+        단순 근육통이나 충돌증후군만으로 보기 어렵습니다. 어깨 관절 내부 구조, 관절와순, 이두박근 장두 부착부, 관절 불안정성까지 함께 정밀 평가해야 합니다.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: WHAT IS SLAP? 해부학적 이해 -->
+<section style="background: var(--bg-secondary);" id="whatis">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">WHAT IS SLAP?</span>
+      <h2 class="section-title">SLAP 병변은 어깨 안쪽 상부 관절와순의 손상입니다</h2>
+      <p class="section-desc">어깨 관절을 감싸는 연골 테두리(관절와순)의 상부 손상과 이두박근 힘줄 이상을 의미합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-badge">ANATOMY 01</span>
+        <h3>어깨 관절 테두리 (관절와순)</h3>
+        <p>팔뼈 머리가 어깨 관절오목에 안정적으로 얹혀 움직이도록 도와주는 연골 테두리 구조물입니다. 환자분들은 흔히 '어깨 관절 인대'라고 표현합니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">ANATOMY 02</span>
+        <h3>이두박근 장두 부착부</h3>
+        <p>상부 관절와순은 굵은 알통 힘줄(이두박근 장두)이 단단히 붙는 지점입니다. 강한 인장력이 가해지면 관절와순이 뼈에서 뜯어질 수 있습니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">ANATOMY 03</span>
+        <h3>어깨 관절 불안정성</h3>
+        <p>관절와순이 손상되면 팔을 올리거나 회전할 때 관절이 헐거운 느낌, 걸림, 딸깍거림, 빠질 것 같은 불안정감이 발생하게 됩니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: 스포츠 관련 어깨 손상 -->
+<section id="sports">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">SPORTS SHOULDER INJURY</span>
+      <h2 class="section-title">운동 후 시작된 어깨 통증이라면 더 세밀하게 봐야 합니다</h2>
+      <p class="section-desc">팔을 머리 위로 쓰거나 회전 부하가 걸리는 스포츠 동작에서 관절와순 손상이 빈번하게 발생합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-badge">FITNESS</span>
+        <h3>웨이트 트레이닝 (헬스)</h3>
+        <p>벤치프레스, 숄더프레스, 턱걸이(풀업), 딥스 동작 시 어깨 깊은 곳에 강한 압박과 통증이 반복됩니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">BASEBALL</span>
+        <h3>야구 및 투구 동작</h3>
+        <p>공을 던지는 코킹 동작 및 릴리즈 순간 어깨 안쪽에 찍히는 통증과 함께 순간적으로 힘이 빠질 수 있습니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">RACKET &amp; SWIMMING</span>
+        <h3>라켓 스포츠 &amp; 수영</h3>
+        <p>테니스 스매싱, 배드민턴, 수영 자유형/접영 등 머리 위 오버헤드 동작 시 클릭음과 통증이 동반됩니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">GOLF &amp; TRAUMA</span>
+        <h3>골프 스윙 &amp; 외상</h3>
+        <p>뒷땅 스윙, 넘어짐, 팔이 강하게 잡아당겨진 순간 어깨 내부 관절와순에 직접적인 견인 손상이 가해질 수 있습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: 감별 진단 비교표 -->
+<section style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">DIFFERENTIAL DIAGNOSIS</span>
+      <h2 class="section-title">어깨 통증, 원인 질환을 정확히 구분해야 합니다</h2>
+      <p class="section-desc">비슷한 어깨 통증이라도 손상 부위에 따라 치료 접근법이 완전히 달라집니다.</p>
+    </div>
+
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>질환 구분</th>
+            <th>환자가 느끼는 주요 증상</th>
+            <th>통증 유발 상황</th>
+            <th>정밀 감별 핵심 포인트</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background: var(--bg-accent);">
+            <th>SLAP 병변 (슬랩)</th>
+            <td>어깨 깊숙한 통증, 걸림, 딸깍, 힘 빠짐</td>
+            <td>헬스, 야구, 머리 위 사용 동작</td>
+            <td>상부 관절와순 &amp; 이두박근 장두 유발 검사</td>
+          </tr>
+          <tr>
+            <th>충돌증후군</th>
+            <td>팔 올릴 때 어깨 바깥쪽 마찰 통증</td>
+            <td>팔을 자주 드는 동작, 자세 불균형</td>
+            <td>견봉하 공간 압박, 회전근개 마찰 평가</td>
+          </tr>
+          <tr>
+            <th>회전근개 파열</th>
+            <td>팔 들 힘이 빠지고 밤에 야간통 심함</td>
+            <td>중년 이후, 외상, 반복 사용</td>
+            <td>힘줄 파열 여부, 근력 저하 정밀 평가</td>
+          </tr>
+          <tr>
+            <th>방카르트 병변</th>
+            <td>어깨가 빠질 것 같은 강한 불안정감</td>
+            <td>탈구 후, 반복적 어깨 빠짐</td>
+            <td>전하방 관절와순 손상 및 탈구력 확인</td>
+          </tr>
+          <tr>
+            <th>오십견 (동결견)</th>
+            <td>어깨 관절 전체가 굳어 통증 극심</td>
+            <td>중년 이후, 당뇨/갑상선 질환</td>
+            <td>능동/수동 관절 가동범위 전방위 제한</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: MRI 정상 판정 후 지속 통증 원인 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">WHY MISSED?</span>
+      <h2 class="section-title">MRI가 정상 판정을 받아도 통증이 계속될 수 있습니다</h2>
+      <p class="section-desc">정적인 영상 검사만으로는 정밀하게 파악하기 어려운 SLAP 병변의 특성 때문입니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-badge">REASON 01</span>
+        <h3>영상만으로 판독하기 어려운 구조</h3>
+        <p>관절와순 손상은 MRI 촬영 각도나 음영 차이에 의해 정상 해부학적 변이와 구분이 애매한 경우가 많습니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">REASON 02</span>
+        <h3>정밀 이학적 검사(Physical Test)의 필수성</h3>
+        <p>O'Brien 검사, Speed 검사 등 어깨 관절 내부 장력을 유발하는 정밀 진찰을 병행해야 정확한 진단이 가능합니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">REASON 03</span>
+        <h3>실제 동적 운동 패턴 재현</h3>
+        <p>벤치프레스, 투구 동작 등 통증을 유발하는 특정 자세를 다각도로 평가하여 구조적 이상을 포착합니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">REASON 04</span>
+        <h3>반복적 치료 실패 시 재평가 신호</h3>
+        <p>물리치료나 주사 치료를 받아도 운동 시 재발한다면 회전근개 외 관절와순과 불안정성을 재평가해야 합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: 5단계 치료 로드맵 -->
+<section style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">ROADMAP</span>
+      <h2 class="section-title">모든 SLAP 병변이 수술 대상은 아닙니다</h2>
+      <p class="section-desc">증상의 정도, 환자의 연령, 스포츠 복귀 목표 및 관절 불안정성에 따라 단계적으로 치료합니다.</p>
+    </div>
+
+    <div class="step-grid">
+      <div class="step-card">
+        <div class="step-num">STEP 01</div>
+        <div class="step-title">정밀 평가</div>
+        <div class="step-desc">증상 양상, 통증 각도, 운동 동작 및 기존 MRI 재검토</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 02</div>
+        <div class="step-title">활동 조절</div>
+        <div class="step-desc">통증 유발 운동 일시 중단 및 어깨 관절 부하 조절</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 03</div>
+        <div class="step-title">약물 &amp; 주사 치료</div>
+        <div class="step-desc">염증 완화 및 진단 목적의 정밀 정체 치료 반응 확인</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 04</div>
+        <div class="step-title">맞춤 재활 치료</div>
+        <div class="step-desc">견갑골 안정화, 회전근개 근력 및 코어 강화 운동</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 05</div>
+        <div class="step-title">관절경 수술 검토</div>
+        <div class="step-desc">비수술 실패, 심한 불안정성, 스포츠 복귀가 필수적인 경우</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: 수술 고려 기준 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">WHEN SURGERY?</span>
+      <h2 class="section-title">수술적 치료를 신중히 고려해야 하는 경우</h2>
+      <p class="section-desc">충분한 보존적 치료 후에도 구조적 손상으로 인한 일상 및 운동 제한이 지속될 때 시행합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-badge">CRITERIA 01</span>
+        <h3>체계적 비수술 치료에도 재발하는 통증</h3>
+        <p>충분한 기간 약물, 주사, 재활 치료를 시행했음에도 특정 동작에서 통증과 걸림이 지속되는 경우</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">CRITERIA 02</span>
+        <h3>고강도 스포츠 및 운동 복귀가 필수적인 경우</h3>
+        <p>야구, 헬스, 라켓 스포츠 등 어깨 관절의 높은 기능적 가동성이 요구되는 환자군의 경우</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">CRITERIA 03</span>
+        <h3>관절 덜컹거림 및 불안정성이 동반된 경우</h3>
+        <p>단순 통증을 넘어 어깨가 빠질 듯한 불안정감이 뚜렷하고 방카르트 병변이 동반된 경우</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">CRITERIA 04</span>
+        <h3>연령 및 병변 형태별 맞춤 수술법 적용</h3>
+        <p>젊은층의 관절경 관절와순 봉합술, 중년 이후 이두박근 장두 고정술/절단술 등 정밀 수술법 선택</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 의료진 소개 -->
+<section class="doctor">
+  <div class="container">
+    <div class="doctor-card">
+      <img src="https://sellerbag1-cloud.github.io/KakaoTalk_20260310_175824020.jpg" alt="김진균 대표원장" class="doctor-profile-img">
+      <div class="doctor-info">
+        <h3>김진균 대표원장</h3>
+        <div class="title">희망찬병원 대표원장 · 신경외과 전문의</div>
+        <p style="font-weight: 600; color: var(--primary-deep); margin-bottom: 12px;">
+          "SLAP 병변은 단순한 영상 판독을 넘어, 환자의 운동 동작과 정밀한 이학적 검사를 종합해야만 명확한 진단이 가능합니다."
+        </p>
+        <p>• 희망찬병원 대표원장 (신경외과 전문의)</p>
+        <p>• SLAP 병변, 관절와순 손상, 어깨 불안정성 및 관절경 클리닉</p>
+        <p>• 동탄·화성·수원·평택 지역 어깨 스포츠 손상 정밀 진료</p>
+        <p>• 유튜브 채널 <strong>"털보의사"</strong> 운영 — 부작용 없는 정직한 어깨 의학정보 전달</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Q1. SLAP 병변과 슬랩병변은 같은 질환인가요?</summary>
+        <div class="faq-answer">네, 동일합니다. 의학 용어인 SLAP(Superior Labrum Anterior to Posterior) 병변을 한글 발음으로 슬랩병변이라 부릅니다. 환자분들에 따라 슬렙병변, 관절와순 손상, 어깨 인대 찢어짐으로 부르기도 합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q2. MRI 결과가 정상이라는데도 SLAP 병변일 수 있나요?</summary>
+        <div class="faq-answer">가능합니다. 상부 관절와순은 해부학적 변이가 많아 정적인 MRI 상에서 명확히 포착되지 않는 경우가 있습니다. 의료진의 정밀 이학적 유발 검사(O'Brien 등)와 동적 증상을 종합하여 진단해야 합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q3. 회전근개 파열과는 어떤 차이가 있나요?</summary>
+        <div class="faq-answer">회전근개는 어깨를 움직이는 힘줄의 문제이며, SLAP 병변은 관절 내부의 연골 테두리(관절와순) 손상입니다. 회전근개는 근력 저하와 야간통이 주를 이루며, SLAP은 어깨 깊은 곳의 걸림과 딸깍거림, 불안정감이 특징입니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q4. 방카르트 병변과도 관련이 있나요?</summary>
+        <div class="faq-answer">둘 다 관절와순 손상 계열입니다. 방카르트 병변은 어깨가 전하방으로 빠질 때 발생하는 연골 손상이며, SLAP 병변은 상부 연골 및 이두박근 장두 부착부 손상입니다. 어깨 불안정성이 있다면 함께 감별합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q5. 통증이 있는데 헬스나 운동을 계속해도 되나요?</summary>
+        <div class="faq-answer">벤치프레스, 숄더프레스, 딥스, 턱걸이처럼 어깨 관절 안쪽에 높은 부하를 주는 오버헤드 운동은 일시적으로 중단하거나 중량을 대폭 줄여야 합니다. 정밀 진단 후 재활 가이드에 따라 재개하는 것이 안전합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q6. SLAP 병변 진단을 받으면 무조건 수술해야 하나요?</summary>
+        <div class="faq-answer">아닙니다. 상당수의 환자가 활동 조절, 약물 및 주사 치료, 견갑골 안정화 재활 치료 등 보존적 치료로 호전될 수 있습니다. 비수술 치료에 반응이 없거나 불안정성이 심한 경우에 한해 수술을 고려합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q7. 수술 후 정상적인 운동 복귀까지 얼마나 걸리나요?</summary>
+        <div class="faq-answer">일상생활 복귀는 비교적 빠르지만, 고강도 스포츠나 웨이트 트레이닝 복귀는 약 3~6개월 이상의 단계적 재활 기간이 필요합니다. 환자의 조직 상태 및 수술법(봉합술 vs 건고정술)에 따라 차이가 있습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q8. 어깨가 빠질 것 같은 느낌이 드는데 SLAP 병변인가요?</summary>
+        <div class="faq-answer">SLAP 병변에서도 어깨 불안정감이 생길 수 있으나, 방카르트 병변이나 다방향 불안정성(MDI) 가능성도 존재합니다. 반복적인 빠짐 느낌이 있다면 의료진의 정밀 감별 진단이 필수적입니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 풋터 (네이버 지도 + 병원 정식 메타정보) -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid-layout">
+      
+      <!-- 지도 연동 영역 -->
+      <div class="footer-map-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(255, 255, 255, 0.08); text-align: center; padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15);">
+        <div style="font-size: 36px; margin-bottom: 10px;">📍</div>
+        <h5 style="color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">희망찬병원 위치 안내</h5>
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 13px; margin-bottom: 16px;">경기도 화성시 병점중앙로 174</p>
+        
+        <a href="https://m.map.naver.com/search2/search.naver?query=%ED%9D%AC%EB%A7%9F%EC%B0%AC%EB%B3%91%EC%9B%90" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #03C75A; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; transition: all 0.2s ease;">
+           <span>N</span> 네이버 지도로 길찾기 →
+        </a>
+      </div>
+
+      <!-- 우측 병원 필수정보 -->
+      <div class="footer-info-box">
+        <h4>희망찬병원</h4>
+        <p><strong>주소 :</strong> 경기도 화성시 병점중앙로 174</p>
+        <p><strong>상담문의 :</strong> 1600-3415</p>
+        <p><strong>진료시간 :</strong> 평일 09:00 ~ 18:00 | 토요일 09:00 ~ 13:00 (일·공휴일 휴무)</p>
+        <p><strong>진료과목 :</strong> 신경외과 · 정형외과 · 내과 · 영상의학과</p>
+        <p class="highlight">김진균 대표원장 직접 진료 (동탄·화성·수원·평택)</p>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      본 웹사이트에 수록된 SLAP 병변 및 관절와순 손상 정보는 일반적인 의학 정보 제공을 목적으로 작성되었으며, 개별 환자의 진단 및 치료 결과는 정밀 검사 후 전문의 진료에 따라 달라질 수 있습니다.<br>
+      본 페이지는 의료법 제56조에 따른 의료광고 법적 기준을 준수하여 작성되었습니다.<br>
+      © 희망찬병원. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- Floating CTA (하단 고정 바) -->
+<a href="tel:1600-3415" class="floating-cta">
+  <div class="text">
+    <strong>SLAP 병변 &amp; 관절와순 정밀 진료 예약</strong>
+    <small>1600-3415 · 대표원장 김진균 직접 진료</small>
+  </div>
+  <div class="btn-call">📞 전화 걸기</div>
+</a>
+
+</body>
+</html>

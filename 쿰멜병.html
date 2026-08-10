@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>풍선 척추체 성형술 · 쿰멜병 클리닉 | 희망찬병원 — 진행성 압박골절 정밀 진단 및 높이 복원</title>
+<meta name="description" content="쿰멜병(Kummell's disease)·지연성 압박골절·척추체 높이 복원이 필요한 환자를 위한 정밀 클리닉. 일반 척추체 성형술(VP)과 풍선 척추체 성형술(KP) 모두 시행. 희망찬병원 김진균 원장 직접 진료.">
+<meta name="keywords" content="쿰멜병, 풍선척추체성형술, Kyphoplasty, 지연성압박골절, 척추골괴사, 척추체성형술, 희망찬병원, 김진균원장, 털보의사">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;800;900&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* 하이테크 메디컬 팔레트 */
+  --bg-primary: #F2F6F9;
+  --bg-secondary: #E8EFF4;
+  --bg-card: #FFFFFF;
+  --bg-accent: #E1FAF6;
+  
+  --primary-deep: #0D3B3E;
+  --primary-mid: #12635D;
+  --primary-mint: #199D93;
+  --accent-cyan: #22D3EE;
+  --warn: #E05656;
+  --warn-bg: #FDF2F2;
+  
+  --text-primary: #111D23;
+  --text-secondary: #48606A;
+  --text-muted: #839B97;
+  
+  --border-subtle: #D8E4EC;
+  --border-highlight: #A4D9D4;
+  
+  --shadow-soft: 0 4px 20px rgba(13, 59, 62, 0.05);
+  --shadow-glass: 0 16px 40px rgba(18, 99, 93, 0.12);
+  --shadow-hover: 0 20px 48px rgba(18, 99, 93, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* 회로/테크니컬 라인 패턴 배경 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(25, 157, 147, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(34, 211, 238, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.serif { font-family: 'Noto Serif KR', serif; }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Top Notice Bar */
+.top-notice {
+  background: var(--primary-deep);
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.top-notice span { color: var(--accent-cyan); }
+
+/* Header */
+.mini-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-soft);
+}
+
+.mini-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-deep);
+}
+
+.brand .accent { color: var(--primary-mint); font-weight: 600; }
+.brand .small { font-size: 13px; color: var(--text-muted); font-weight: 400; margin-left: 6px; }
+
+.header-cta { display: flex; gap: 10px; align-items: center; }
+.header-cta a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.header-cta .ghost {
+  color: var(--primary-mid);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-highlight);
+}
+
+.header-cta .ghost:hover {
+  background: var(--bg-accent);
+  color: var(--primary-deep);
+}
+
+.header-cta .filled {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(25, 157, 147, 0.3);
+}
+
+.header-cta .filled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 157, 147, 0.4);
+}
+
+/* Hero Section */
+.hero {
+  padding: 90px 24px 70px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eyebrow {
+  display: block;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+  padding: 6px 16px;
+  background: rgba(25, 157, 147, 0.08);
+  border: 1px solid var(--border-highlight);
+  border-radius: 30px;
+  width: fit-content;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 800;
+  font-size: clamp(30px, 4.8vw, 46px);
+  line-height: 1.35;
+  margin-bottom: 24px;
+  color: var(--primary-deep);
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .accent {
+  color: var(--primary-mint);
+  background: linear-gradient(120deg, var(--primary-mid), var(--primary-mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-stat-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: var(--primary-deep);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 20px;
+  margin: 0 auto 24px;
+  max-width: fit-content;
+  box-shadow: var(--shadow-glass);
+}
+
+.hero-stat-badge .num {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--accent-cyan);
+}
+
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--text-secondary);
+  max-width: 820px;
+  margin: 0 auto 36px;
+  line-height: 1.85;
+}
+
+/* CTA 버튼 중앙 정렬 */
+.cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(18, 99, 93, 0.35);
+}
+
+.btn-ghost {
+  background: #FFFFFF;
+  color: var(--primary-deep);
+  padding: 16px 32px;
+  border: 1.5px solid var(--border-highlight);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-ghost:hover {
+  background: var(--bg-accent);
+  border-color: var(--primary-mint);
+  transform: translateY(-2px);
+}
+
+.btn-warn {
+  background: var(--warn);
+  color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(224, 86, 86, 0.3);
+}
+
+.btn-warn:hover {
+  background: #c84343;
+  transform: translateY(-2px);
+}
+
+/* Section Common */
+section { padding: 80px 24px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: clamp(26px, 3.8vw, 36px);
+  color: var(--primary-deep);
+  line-height: 1.35;
+}
+
+.section-desc {
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Card & Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px 26px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-mint), var(--accent-cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+}
+
+.card:hover::before { transform: scaleX(1); }
+
+.card-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: var(--bg-accent);
+  color: var(--primary-mid);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Step Grid */
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.step-card {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  border-color: var(--primary-mint);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glass);
+}
+
+.step-number {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--primary-mint);
+  margin-bottom: 8px;
+}
+
+.step-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 8px;
+}
+
+.step-card p {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Comparison Table */
+.compare-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-glass);
+  border: 1px solid var(--border-subtle);
+  background: #fff;
+}
+
+table.compare {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14.5px;
+}
+
+table.compare th, table.compare td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table.compare thead th {
+  background: var(--primary-deep);
+  color: #fff;
+  font-weight: 600;
+}
+
+table.compare tbody th {
+  background: var(--bg-secondary);
+  color: var(--primary-deep);
+  font-weight: 700;
+  width: 25%;
+}
+
+table.compare td.highlight {
+  background: var(--bg-accent);
+  color: var(--primary-deep);
+  font-weight: 700;
+}
+
+/* Doctor Profile */
+.doctor { background: #fff; }
+
+.doctor-card {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  border-radius: 24px;
+  padding: 44px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.doctor-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.2);
+  outline: 2px solid var(--border-highlight);
+  flex-shrink: 0;
+}
+
+.doctor-info { flex-grow: 1; }
+
+.doctor-info h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 6px;
+}
+
+.doctor-info .title {
+  font-size: 14.5px;
+  color: var(--primary-mint);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq { background: var(--bg-primary); }
+.faq-list { max-width: 840px; margin: 0 auto; }
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding: 20px 26px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  color: var(--primary-mint);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 26px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.85; }
+
+/* Safety Notice */
+.safety { padding: 40px 24px; background: #fff; }
+.safety-box {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-accent);
+  border-left: 4px solid var(--primary-mint);
+  padding: 24px 28px;
+  border-radius: 8px;
+}
+
+.safety-box.warn-style {
+  background: var(--warn-bg);
+  border-left-color: var(--warn);
+}
+
+.safety-box h4 { font-size: 15.5px; font-weight: 700; color: var(--primary-deep); margin-bottom: 6px; }
+.safety-box.warn-style h4 { color: var(--warn); }
+.safety-box p { font-size: 14px; color: var(--text-secondary); line-height: 1.75; }
+
+/* Footer & Hospital Map Grid Layout */
+footer {
+  background: var(--primary-deep);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 70px 24px 40px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.footer-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.footer-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.footer-info-box {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-box h4 {
+  font-family: 'Noto Serif KR', serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-info-box p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14.5px;
+}
+
+.footer-info-box .highlight {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.disclaimer {
+  max-width: 780px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.75;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+
+@media (max-width: 768px) {
+  .doctor-card { flex-direction: column; text-align: center; padding: 36px 24px; }
+  .doctor-profile-img { width: 150px; height: 150px; }
+  .footer-grid-layout { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .footer-info-box { text-align: center; }
+  .step-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- 상단 안내 -->
+<div class="top-notice">
+  🦴 쿰멜병 &amp; 진행성 압박골절 정밀 클리닉 — <span>일반 척추체 성형술(VP)과 풍선 척추체 성형술(KP) 모두 시행, 환자별 적합한 시술을 솔직하게 제시합니다</span> (상담문의: 1600-3415)
+</div>
+
+<!-- 헤더 -->
+<div class="mini-header">
+  <div class="container">
+    <div class="mini-header-inner">
+      <div class="brand">희망찬병원 <span class="accent">·</span> 풍선 척추체 성형술 클리닉<span class="small">신경외과·정형외과</span></div>
+      <div class="header-cta">
+        <a href="tel:1600-3415" class="ghost">📞 전화</a>
+        <a href="tel:1600-3415" class="filled">예약·상담</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow fade-in">
+      BALLOON KYPHOPLASTY &amp; KUMMELL'S CLINIC
+    </div>
+    
+    <div class="hero-stat-badge fade-in delay-1">
+      <div>★ 쿰멜병(지연성 골절) 정밀 진단</div>
+      <div>MRI 기반 공기음영 확인 및 높이 복원</div>
+    </div>
+
+    <h1 class="fade-in delay-1">
+      쿰멜병이라면,<br>
+      <span class="accent">풍선 척추체 성형술이 우위입니다</span>
+    </h1>
+    <p class="hero-sub fade-in delay-2">
+      "무조건 풍선 시술이 좋다"는 광고는 올바르지 않습니다.<br>
+      본원은 일반 척추체 성형술(VP)과 풍선 척추체 성형술(KP)을 모두 자유롭게 시행하며, 쿰멜병, 진행성 골절, 척추체 높이 복원이 필수적인 케이스에 한해 풍선 시술의 진가를 발휘하도록 가이드합니다.
+    </p>
+    <div class="cta-group fade-in delay-3">
+      <a href="tel:1600-3415" class="btn-primary">📋 쿰멜병 정밀 진단 예약 →</a>
+      <a href="#kummell" class="btn-ghost">쿰멜병 4단계 진행 보기</a>
+      <a href="#compare" class="btn-warn">VP vs KP 시술 비교</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: 쿰멜병 4단계 진행과 특징 -->
+<section id="kummell" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">KUMMELL'S DISEASE STAGES</span>
+      <h2 class="section-title">무서운 지연성 압박골절, 쿰멜병의 4단계</h2>
+      <p class="section-desc">초기 X-ray상 명확하지 않아 단순 요통으로 오인되었다가 시간이 흐르며 척추체가 무너지는 골괴사 질환입니다.</p>
+    </div>
+
+    <div class="step-grid">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <h4>외상 직후 (초기)</h4>
+        <p>X-ray상 골절선이 불명확하며 심하지 않은 요통으로 무심코 지나치기 쉬움</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <h4>수주~수개월 후</h4>
+        <p>혈류 차단으로 척추체 내부 골괴사 시작, 찌르는 듯한 통증 재발 및 악화</p>
+      </div>
+      <div class="step-card" style="border-left: 4px solid var(--warn);">
+        <div class="step-number" style="color: var(--warn);">03</div>
+        <h4>MRI 공기음영 (Cleft)</h4>
+        <p>MRI 검사상 척추체 내부에 공기음영(intravertebral cleft) 또는 낭종 관찰</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">04</div>
+        <h4>후만 변형 &amp; 마비</h4>
+        <p>척추체가 더 심하게 주저앉아 등·허리가 굽고 후방 골편에 의한 신경 압박 발생</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: 풍선 척추체 성형술의 2대 우위 메커니즘 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">TWO KEY ADVANTAGES</span>
+      <h2 class="section-title">풍선 척추체 성형술(KP)이 선택되는 2가지 이유</h2>
+      <p class="section-desc">일반 척추체 성형술에 비해 확실한 구조적·안전성 우위를 제공합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-badge">우위 1. 안전성</span>
+        <h3>시멘트 누출 위험의 획기적 감소</h3>
+        <p>특수 풍선으로 척추체 내부에 안전한 전용 공간을 먼저 형성한 후 점도가 높고 덜 묽은 시멘트를 주입하므로 신경관 및 정맥류 누출 위험이 크게 낮아집니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">우위 2. 구조 복원</span>
+        <h3>주저앉은 척추체 높이 일부 복원</h3>
+        <p>풍선을 정밀하게 부풀리는 정하중 압력을 통해 찌그러진 척추체 높이를 적극적으로 밀어 올려 척추 후만 변형(허리 굽음)을 복원시킵니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: VP vs KP 비교 표 -->
+<section id="compare" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">PROCEDURE COMPARISON</span>
+      <h2 class="section-title">일반 척추체 성형술(VP) vs 풍선 척추체 성형술(KP)</h2>
+      <p class="section-desc">무조건 고가의 풍선 시술을 권하지 않습니다. 골절 상태와 환자 여건에 따라 최적의 시술 방식을 결정합니다.</p>
+    </div>
+
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>일반 척추체 성형술 (VP)</th>
+            <th class="highlight">풍선 척추체 성형술 (KP)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>시술 원리</th>
+            <td>가는 바늘을 통해 골시멘트 직접 주입</td>
+            <td class="highlight"><strong>풍선으로 공간 형성 후 골시멘트 안정 주입</strong></td>
+          </tr>
+          <tr>
+            <th>주입 시멘트 점도</th>
+            <td>상대적으로 묽은 상태 주입 (누출 유의)</td>
+            <td class="highlight"><strong>점도가 높고 덜 묽은 상태 주입 (누출 최소화)</strong></td>
+          </tr>
+          <tr>
+            <th>척추 높이 복원</th>
+            <td>높이 복원 효과 적음 (통증 완화 중심)</td>
+            <td class="highlight"><strong>주저앉은 척추체 높이 복원 및 후만 교정 시도</strong></td>
+          </tr>
+          <tr>
+            <th>주 적응증</th>
+            <td>골다공증성 단순 신선 압박골절</td>
+            <td class="highlight"><strong>쿰멜병, 진행성 골절, 높이 복원이 필요한 압박골절</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: 시술 후 골절 예방 7단계 통합 관리 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">NEXT FRACTURE PREVENTION</span>
+      <h2 class="section-title">시술은 시작일 뿐, 다음 골절 예방 7단계</h2>
+      <p class="section-desc">압박골절 환자는 인접 척추체의 재골절 위험이 높습니다. 본원만의 원스톱 통합 관리가 진행됩니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-badge">01. 정밀 DEXA</span>
+        <h3>골밀도 정밀 검사</h3>
+        <p>시술 직후 정밀 DEXA 골밀도 측정으로 현재 뼈 건강 등급을 명확히 파악합니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">02. 맞춤 약제</span>
+        <h3>골다공증 표적 치료</h3>
+        <p>골흡수억제제 또는 골형성촉진제 주사/약물 처방으로 골질을 근본적으로 개선합니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">03. 내과 협진</span>
+        <h3>만성질환 통합 관리</h3>
+        <p>당뇨, 기저질환, 칼슘 및 비타민D 수치를 수복하여 대사성 뼈 강화를 도모합니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">04. 낙상 방지</span>
+        <h3>생활 가이드 &amp; 추적</h3>
+        <p>보조기 착용 상태 점검, 낙상 예방 운동 지도 및 정기 X-ray 추적 관찰을 시행합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 의료진 소개 -->
+<section class="doctor">
+  <div class="container">
+    <div class="doctor-card">
+      <img src="https://sellerbag1-cloud.github.io/KakaoTalk_20260310_175824020.jpg" alt="김진균 대표원장" class="doctor-profile-img">
+      <div class="doctor-info">
+        <h3>김진균 대표원장</h3>
+        <div class="title">희망찬병원 대표원장 · 신경외과 전문의</div>
+        <p>쿰멜병 및 고난도 진행성 척추 압박골절의 풍선 척추체 성형술(KP)을 집도합니다.</p>
+        <p>유튜브 채널 <strong>"털보의사"</strong>를 운영하며 "과잉 시술 없는 척추 성형술의 바른 기준"과 정직한 진단 정보를 소통하고 있습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Q1. 풍선 척추체 성형술은 일반 성형술보다 무조건 좋은가요?</summary>
+        <div class="faq-answer">그렇지 않습니다. 단순 신선 압박골절의 경우 일반 척추체 성형술(VP)로도 충분한 효과를 얻을 수 있습니다. 풍선 성형술(KP)은 쿰멜병, 높이 복원이 필요한 경우, 시멘트 누출 위험이 매우 높은 골절 형태에 특화된 시술입니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q2. 쿰멜병이 무엇인가요?</summary>
+        <div class="faq-answer">쿰멜병(지연성 척추 골괴사)은 외상 직후에는 골절이 안 보이다가 수주~수개월 후 척추체 내부 혈류 장애로 뼈가 썩어 무너져 내리는 질환입니다. MRI상 공기음영(cleft)이 특징이며 풍선 성형술이 우위적인 적응증입니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q3. 시술 후 바로 걸을 수 있나요?</summary>
+        <div class="faq-answer">네, 국소/부분마취 하에 시술이 진행되며 주입된 골시멘트가 수분 내에 단단히 굳기 때문에 시술 후 1~2시간 침상 안정 후 당일 보행이 가능합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q4. 건강보험 적용이 가능한가요?</summary>
+        <div class="faq-answer">네, 2주 이상의 보존적 치료에도 불구하고 심한 통증이 지속되거나, 80세 이상 고령자, 쿰멜병 등의 특정 인정을 받는 경우 건강보험 급여 기준이 적용됩니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 안전 안내 -->
+<section class="safety">
+  <div class="container">
+    <div class="safety-box warn-style">
+      <h4>※ 시술 시 주의사항 및 한계</h4>
+      <p>풍선 척추체 성형술은 매우 안전한 최소침습 시술이지만, 심한 신경 압박이 이미 진행되었거나 후방 골편이 척수관을 막고 있는 경우에는 인공관절 및 감압 수술이 필요할 수 있으므로 MRI를 통한 신경 압박 유무를 반드시 진단받아야 합니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 풋터 (좌측: 네이버 지도 상자 영역 / 우측: 병원 필수정보) -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid-layout">
+      
+      <!-- 좌측 지도 상자 영역 -->
+      <div class="footer-map-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(255, 255, 255, 0.08); text-align: center; padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15);">
+        <div style="font-size: 36px; margin-bottom: 10px;">📍</div>
+        <h5 style="color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">희망찬병원 위치 안내</h5>
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 13px; margin-bottom: 16px;">화성시 병점중앙로 174</p>
+        
+        <a href="https://m.map.naver.com/search2/search.naver?query=%ED%9D%AC%EB%A7%9F%EC%B0%AC%EB%B3%91%EC%9B%90" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #03C75A; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; transition: all 0.2s ease;">
+           <span>N</span> 네이버 지도로 길찾기 →
+        </a>
+      </div>
+
+      <!-- 우측 병원 필수정보 -->
+      <div class="footer-info-box">
+        <h4>희망찬병원</h4>
+        <p><strong>주소 :</strong> 경기도 화성시 병점구 병점중앙로 174</p>
+        <p><strong>상담문의 :</strong> 1600-3415</p>
+        <p><strong>진료과목 :</strong> 신경외과 · 정형외과 · 내과 · 영상의학과</p>
+        <p class="highlight">털보의사 김진균 원장이 직접 진료합니다.</p>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      본 웹사이트에 수록된 내용은 의료 정보 제공을 목적으로 작성되었으며, 개별적인 의학적 진단 및 치료를 대신할 수 없습니다.<br>
+      © 희망찬병원. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

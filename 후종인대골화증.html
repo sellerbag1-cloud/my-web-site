@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPLL 후종인대골화증 — 진단부터 수술까지 | 희망찬병원</title>
+<meta name="description" content="OPLL 후종인대골화증 — 진단·정기 추적·수술 전 과정 본원에서 직접 시행. 김진균 원장 직접 진료. 척수병증 정밀 평가. 동탄·화성·평택권.">
+<meta name="keywords" content="OPLL, 후종인대골화증, 척수병증, 경추수술, 흉추수술, 목디스크감별, 털보의사, 김진균, 희망찬병원">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600&family=Noto+Serif+KR:wght@400;600;700;800;900&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* 하이테크 메디컬 팔레트 */
+  --bg-primary: #F2F6F9;
+  --bg-secondary: #E8EFF4;
+  --bg-card: #FFFFFF;
+  --bg-accent: #E1FAF6;
+  --bg-warn: #FFF6E6;
+  
+  --primary-deep: #0D3B3E;
+  --primary-mid: #12635D;
+  --primary-mint: #199D93;
+  --accent-cyan: #22D3EE;
+  
+  --warn: #E05656;
+  --warn-bg: #FDF2F2;
+  --warn-orange: #ED7D31;
+  
+  --text-primary: #111D23;
+  --text-secondary: #48606A;
+  --text-muted: #839B97;
+  
+  --border-subtle: #D8E4EC;
+  --border-highlight: #A4D9D4;
+  
+  --shadow-soft: 0 4px 20px rgba(13, 59, 62, 0.05);
+  --shadow-glass: 0 16px 40px rgba(18, 99, 93, 0.12);
+  --shadow-hover: 0 20px 48px rgba(18, 99, 93, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.75;
+  overflow-x: hidden;
+  font-size: 16px;
+  padding-bottom: 76px;
+}
+
+/* 기술적 백그라운드 오버레이 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(25, 157, 147, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(34, 211, 238, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* 키프레임 애니메이션 */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(28px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(34, 211, 238, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0); }
+}
+
+.anim-fade-up {
+  opacity: 0;
+  animation: fadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
+
+/* Top Notice Bar */
+.top-notice {
+  background: var(--primary-deep);
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.top-notice span { color: var(--accent-cyan); font-weight: 700; }
+
+/* Header */
+.mini-header {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-soft);
+}
+
+.mini-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-deep);
+}
+
+.brand .accent { color: var(--primary-mint); font-weight: 600; }
+.brand .small { font-size: 13px; color: var(--text-muted); font-weight: 400; margin-left: 6px; }
+
+.header-cta { display: flex; gap: 10px; align-items: center; }
+.header-cta a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.header-cta .ghost {
+  color: var(--primary-mid);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-highlight);
+}
+
+.header-cta .filled {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(25, 157, 147, 0.3);
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 24px 60px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eyebrow {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+  padding: 6px 18px;
+  background: rgba(25, 157, 147, 0.08);
+  border: 1px solid var(--border-highlight);
+  border-radius: 30px;
+  width: fit-content;
+  animation: pulseGlow 2.5s infinite;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 800;
+  font-size: clamp(28px, 4.5vw, 44px);
+  line-height: 1.35;
+  margin-bottom: 20px;
+  color: var(--primary-deep);
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .accent {
+  color: var(--primary-mint);
+  background: linear-gradient(120deg, var(--primary-mid), var(--primary-mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--text-secondary);
+  max-width: 840px;
+  margin: 0 auto 36px;
+  line-height: 1.85;
+}
+
+.cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.25);
+}
+
+.btn-ghost {
+  background: #FFFFFF;
+  color: var(--primary-deep);
+  padding: 16px 28px;
+  border: 1.5px solid var(--border-highlight);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Section Common */
+section { padding: 80px 24px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: clamp(24px, 3.8vw, 36px);
+  color: var(--primary-deep);
+  line-height: 1.35;
+}
+
+.section-desc {
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Definition Card */
+.definition-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px 32px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+}
+
+.definition-card h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 16px;
+}
+
+.definition-card p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.term-dl {
+  margin-top: 24px;
+  padding: 20px 24px;
+  background: var(--bg-primary);
+  border-left: 4px solid var(--primary-mint);
+  border-radius: 8px;
+}
+
+.term-dl dt {
+  font-weight: 700;
+  color: var(--primary-deep);
+  font-size: 15px;
+  margin-top: 10px;
+}
+.term-dl dt:first-child { margin-top: 0; }
+
+.term-dl dd {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+/* Card & Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px 26px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-mint), var(--accent-cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+}
+
+.card:hover::before { transform: scaleX(1); }
+
+.card-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: var(--bg-accent);
+  color: var(--primary-mid);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.card ul {
+  list-style: none;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 12px;
+}
+
+.card ul li {
+  margin-bottom: 6px;
+  padding-left: 14px;
+  position: relative;
+}
+
+.card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-mint);
+}
+
+/* Interactive Self Check */
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 14px;
+}
+
+.check-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 16px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.check-item:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-soft);
+}
+
+.check-item.checked {
+  background: var(--bg-accent);
+  border-color: var(--primary-mint);
+}
+
+.check-box-icon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--text-muted);
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.check-item.checked .check-box-icon {
+  background: var(--primary-mint);
+  border-color: var(--primary-mint);
+}
+
+.check-item.checked .check-box-icon::after {
+  content: "✓";
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.check-info { font-size: 14.5px; color: var(--text-primary); font-weight: 600; }
+.check-info small { display: block; font-size: 12.5px; color: var(--text-muted); font-weight: 400; margin-top: 2px; }
+
+.check-result-box {
+  text-align: center;
+  background: #fff;
+  border: 2px dashed var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 24px;
+  transition: all 0.3s ease;
+}
+
+.check-result-box.active {
+  background: var(--bg-accent);
+  border-color: var(--primary-mint);
+  border-style: solid;
+}
+
+.check-result-box.urgent {
+  background: var(--warn-bg);
+  border-color: var(--warn);
+  border-style: solid;
+}
+
+.check-count-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.check-result-box.urgent .check-count-num { color: var(--warn); }
+
+/* Comparison Table */
+.compare-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-glass);
+  border: 1px solid var(--border-subtle);
+  background: #fff;
+}
+
+table.compare {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14.5px;
+}
+
+table.compare th, table.compare td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table.compare thead th {
+  background: var(--primary-deep);
+  color: #fff;
+  font-weight: 600;
+}
+
+table.compare tbody th {
+  background: var(--bg-secondary);
+  color: var(--primary-deep);
+  font-weight: 700;
+  width: 25%;
+}
+
+.highlight-col {
+  background: var(--bg-accent) !important;
+  font-weight: 600;
+  color: var(--primary-deep);
+}
+
+/* Notice & Warn Box */
+.notice-box {
+  padding: 22px 28px;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 24px auto;
+  max-width: 960px;
+}
+
+.notice-blue {
+  background: #EAF1F8;
+  border-left: 4px solid var(--primary-mid);
+  color: var(--text-primary);
+}
+
+.notice-warn {
+  background: var(--bg-warn);
+  border-left: 4px solid var(--warn-orange);
+  color: var(--text-primary);
+}
+
+/* Doctor Profile */
+.doctor { background: #fff; }
+
+.doctor-card {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  border-radius: 24px;
+  padding: 44px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.doctor-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.2);
+  outline: 2px solid var(--border-highlight);
+  flex-shrink: 0;
+}
+
+.doctor-info { flex-grow: 1; }
+
+.doctor-info h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 6px;
+}
+
+.doctor-info .title {
+  font-size: 14.5px;
+  color: var(--primary-mint);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq { background: var(--bg-primary); }
+.faq-list { max-width: 840px; margin: 0 auto; }
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding: 20px 26px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  color: var(--primary-mint);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 26px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.85; }
+
+/* Floating CTA (하단 고정 바) */
+.floating-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--primary-deep);
+  color: #fff;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.18);
+  z-index: 100;
+  text-decoration: none;
+}
+
+.floating-cta .text strong {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.floating-cta .text small {
+  font-size: 12px;
+  color: var(--accent-cyan);
+}
+
+.floating-cta .btn-call {
+  background: var(--primary-mint);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-deep);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 70px 24px 40px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.footer-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.footer-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.footer-info-box {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-box h4 {
+  font-family: 'Noto Serif KR', serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-info-box p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14.5px;
+}
+
+.footer-info-box .highlight {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.disclaimer {
+  max-width: 780px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .doctor-card { flex-direction: column; text-align: center; padding: 36px 24px; }
+  .doctor-profile-img { width: 150px; height: 150px; }
+  .footer-grid-layout { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .footer-info-box { text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- 상단 안내 -->
+<div class="top-notice">
+  OPLL 진단 · 추적 · 수술 전 과정 연속 진료 <span>희망찬병원 김진균 원장 직접 진료</span>
+</div>
+
+<!-- 헤더 -->
+<div class="mini-header">
+  <div class="container">
+    <div class="mini-header-inner">
+      <div class="brand">희망찬병원 <span class="accent">·</span> 척추센터 OPLL 클리닉<span class="small">신경외과 전문의 김진균 원장</span></div>
+      <div class="header-cta">
+        <a href="#self-check" class="ghost">자가진단</a>
+        <a href="tel:1600-3415" class="filled">📞 진료 예약</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 히어로 섹션 (★ 텍스트 애니메이션 구역) -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow anim-fade-up">OSSIFICATION OF POSTERIOR LONGITUDINAL LIGAMENT</div>
+    <h1 class="anim-fade-up delay-1">
+      OPLL 후종인대골화증,<br>
+      <span class="accent">진단부터 수술까지 본원에서 직접 진행합니다</span>
+    </h1>
+    <p class="hero-sub anim-fade-up delay-2">
+      OPLL은 대학병원으로 전원되어 진료 대기가 길어지는 경우가 많습니다.<br>
+      희망찬병원은 정형/신경외과 전문의 김진균 원장이 직접 정밀 진단·정기 추적 관찰·필요 시 수술까지 전 과정을 책임집니다.<br>
+      무조건 수술을 권하지 않으며, 척수병증 진행 단계에 맞춘 가장 정직한 치료법을 제시합니다.
+    </p>
+    <div class="cta-group anim-fade-up delay-3">
+      <a href="tel:1600-3415" class="btn-primary">📞 1600-3415 진료 예약</a>
+      <a href="#self-check" class="btn-ghost">📋 척수병증 자가진단 (2분)</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: OPLL 개념 이해 -->
+<section style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">WHAT IS OPLL</span>
+      <h2 class="section-title">후종인대골화증, 정확히 알면 두렵지 않습니다</h2>
+      <p class="section-desc">진단명만 들으면 무서워지기 쉽지만, 모든 환자가 즉시 수술해야 하는 것은 아닙니다.</p>
+    </div>
+
+    <div class="definition-card">
+      <h3>OPLL (후종인대골화증)이란 무엇인가요?</h3>
+      <p>
+        척추뼈 뒤쪽을 따라 길게 이어진 후종인대가 단단한 뼈처럼 굳어지는 질환입니다. 굳어진 인대가 두꺼워지며 그 뒤를 지나가는 신경(척수)을 압박하면 손·다리의 미세 감각 및 운동 장애(척수병증)가 유발됩니다.
+      </p>
+      <p>
+        경추(목)에서 가장 흔하게 발병하며, 흉추에서도 발생할 수 있습니다. 진행 속도는 개인별로 차이가 커서, 무증상으로 평생 지내는 환자부터 척수 압박이 진행되어 적기에 수술이 필요한 케이스까지 다양합니다.
+      </p>
+
+      <dl class="term-dl">
+        <dt>후종인대 (PLL)</dt>
+        <dd>척추뼈 뒤쪽을 위아래로 연결하여 척추 안정성을 유지하는 부드러운 인대 조직</dd>
+        <dt>골화 (Ossification)</dt>
+        <dd>인대 조직에 석회화가 진행되어 뼈처럼 딱딱하게 변하는 현상</dd>
+        <dt>척수병증 (Myelopathy)</dt>
+        <dd>중추신경인 척수가 누려 손 미세 동작 둔화, 보행 장애, 감각 이상이 발생하는 질환</dd>
+        <dt>르미트 신호 (Lhermitte sign)</dt>
+        <dd>목을 앞으로 숙일 때 등이나 다리로 전기가 흐르는 듯 찌릿한 자극이 전달되는 현상</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: 척수병증 자가진단 (인터랙티브 JS) -->
+<section id="self-check">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">2-MIN SELF CHECK</span>
+      <h2 class="section-title">척수병증 초기 증상 자가확인</h2>
+      <p class="section-desc">아래 8가지 항목 중 해당하는 증상을 선택하시면 상태를 바로 판정해 드립니다.</p>
+    </div>
+
+    <div class="notice-box notice-warn" style="margin-bottom: 24px;">
+      <strong style="color: var(--warn-orange);">🚨 응급 신호 안내:</strong> 갑작스러운 양쪽 다리 마비나 대소변 조절 불가가 동반된 경우 자가진단을 미루고 즉시 신경외과 진료를 받으셔야 합니다.
+    </div>
+
+    <div class="check-grid">
+      <div class="check-item" data-urgent="false">
+        <div class="check-box-icon"></div>
+        <div class="check-info">젓가락질이 전보다 어색하고 힘들다<small>척수병증의 가장 대표적인 초기 증상</small></div>
+      </div>
+      <div class="check-item" data-urgent="false">
+        <div class="check-box-icon"></div>
+        <div class="check-info">옷 단추 채우기·동전 집기가 자꾸 힘들어진다<small>손가락 미세 운동 기능 저하</small></div>
+      </div>
+      <div class="check-item" data-urgent="false">
+        <div class="check-box-icon"></div>
+        <div class="check-info">글씨체가 삐뚤어지거나 떨려서 작아진다<small>손의 세밀한 수축 조절 저하</small></div>
+      </div>
+      <div class="check-item" data-urgent="false">
+        <div class="check-box-icon"></div>
+        <div class="check-info">양쪽 손이 동시에 저리고 무딘 느낌이 든다<small>단순 디스크와 달리 양측성 손상 유발</small></div>
+      </div>
+      <div class="check-item" data-urgent="false">
+        <div class="check-box-icon"></div>
+        <div class="check-info">걸음걸이가 술 취한 사람처럼 휘청거린다<small>하지 균형 조절 장애 (중기 신호)</small></div>
+      </div>
+      <div class="check-item" data-urgent="false">
+        <div class="check-box-icon"></div>
+        <div class="check-info">계단을 내려갈 때 다리에 힘이 빠지고 무섭다<small>하지 근력 및 위치 감각 저하</small></div>
+      </div>
+      <div class="check-item" data-urgent="true">
+        <div class="check-box-icon"></div>
+        <div class="check-info">목을 구부릴 때 등이나 다리로 전기가 감전되듯 통한다<small>★ 르미트 신호 (척수 강한 자극)</small></div>
+      </div>
+      <div class="check-item" data-urgent="true">
+        <div class="check-box-icon"></div>
+        <div class="check-info">소변이 자주 마렵거나 조절이 안 되고 참기 힘들다<small>★ 대소변 장애 (즉시 응급 진료 필요)</small></div>
+      </div>
+    </div>
+
+    <div class="check-result-box" id="resultBox">
+      <div class="check-count-num" id="resultCount">0개 선택됨</div>
+      <div class="check-msg" id="resultMsg" style="font-size: 15px; color: var(--text-secondary);">증상 항목을 클릭하여 체크해 주세요.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: 단계별 치료 결정 -->
+<section style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">STEPWISE TREATMENT</span>
+      <h2 class="section-title">모든 OPLL 환자가 수술을 받는 것은 아닙니다</h2>
+      <p class="section-desc">환자의 진행 단계와 신경 압박 도에 맞춰 4단계 치료 계획을 수립합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-badge">STAGE 01</span>
+        <h3>무증상 단계를 위한 정기 추적</h3>
+        <p>검진에서 발견되었으나 척수병증 증상이 없는 경우, 1년 단위 MRI 정기 검진으로 신경 압박 진행 여부만 면밀히 모니터링합니다.</p>
+        <ul>
+          <li>연 1회 경추 MRI 및 신경학적 검사</li>
+          <li>목 부상 예방을 위한 생활 수칙 교육</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="card-badge">STAGE 02</span>
+        <h3>경미한 증상 단계의 비수술 관리</h3>
+        <p>경미한 목 통증이나 손 저림 수준인 경우, 6개월 주기로 검사 주기를 단축하고 약물 및 보존 치료로 증상을 완화합니다.</p>
+        <ul>
+          <li>약물 치료 및 통증 케어</li>
+          <li>6개월 주기 MRI 정밀 비교 판독</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="card-badge">STAGE 03</span>
+        <h3>척수병증 진행 단계의 수술 평가</h3>
+        <p>젓가락질 불능, 보행 장애 등 척수 손상 신호가 나타나면 수술적 감압 시기를 신중하게 결정합니다.</p>
+        <ul>
+          <li>신경전도 및 근전도 정밀 검사</li>
+          <li>최적의 수술 접근법(전방/후방) 결정</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="card-badge">STAGE 04</span>
+        <h3>본원 집도 수술 및 연속 관리</h3>
+        <p>김진균 원장이 경추/흉추 OPLL 수술을 직접 집도하며, 수술 후 회복 과정까지 연속하여 케어합니다.</p>
+        <ul>
+          <li>후궁성형술(laminoplasty) / 감압유합술</li>
+          <li>수술 후 재활 및 지속적 경과 관리</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: 진료 프로세스 비교 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">ONE-STOP CLINICAL FLOW</span>
+      <h2 class="section-title">희망찬병원만의 원스톱 진료 프로세스</h2>
+      <p class="section-desc">대학병원의 긴 대기 없이 진단부터 수술, 사후 관리까지 한 곳에서 원스톱으로 이어집니다.</p>
+    </div>
+
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>진료 단계</th>
+            <th>일반적인 전원 절차</th>
+            <th class="highlight-col">★ 희망찬병원 원스톱 프로세스</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>진단 및 영상검사</th>
+            <td>의원 진단 후 영상 자료 소지하여 전원</td>
+            <td class="highlight-col">본원 당일 MRI·CT·근전도 정밀 검사 가능</td>
+          </tr>
+          <tr>
+            <th>진행 단계 평가</th>
+            <td>상급병원 재진 예약 후 수개월 대기</td>
+            <td class="highlight-col">김진균 대표원장 직접 즉시 정밀 평가</td>
+          </tr>
+          <tr>
+            <th>정기 추적 관찰</th>
+            <td>대학병원 외래 예약 및 이동의 불편함</td>
+            <td class="highlight-col">본원에서 지속적이고 편안한 정기 추적</td>
+          </tr>
+          <tr>
+            <th>수술 시행 (필요 시)</th>
+            <td>주치의 변경 및 대기 기간 길어짐</td>
+            <td class="highlight-col">김진균 원장 직접 집도로 치료 연속성 유지</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notice-box notice-blue" style="margin-top: 28px;">
+      <strong>✓ 희망찬병원의 정직한 진료 약속:</strong><br>
+      본원이 모든 OPLL 환자에게 수술을 권하지는 않습니다. 환자의 건강 상태, 동반 질환, 병변 위치에 따라 상급기관 치료가 필요한 특수 케이스는 솔직히 안내하고 적절한 병원으로 인계해 드립니다.
+    </div>
+  </div>
+</section>
+
+<!-- 의료진 소개 -->
+<section class="doctor">
+  <div class="container">
+    <div class="doctor-card">
+      <img src="https://sellerbag1-cloud.github.io/KakaoTalk_20260310_175824020.jpg" alt="김진균 대표원장" class="doctor-profile-img">
+      <div class="doctor-info">
+        <h3>김진균 대표원장</h3>
+        <div class="title">희망찬병원 대표원장 · 신경외과 전문의</div>
+        <p style="font-weight: 600; color: var(--primary-deep); margin-bottom: 12px;">
+          "OPLL은 무조건 수술해야 하는 무서운 병이 아닙니다. 정확하게 진단하고 추적 관찰하는 것이 치료의 핵심입니다."
+        </p>
+        <p>• 경추 및 흉추 OPLL 수술 직접 집도 경험 풍부</p>
+        <p>• 저서 『척추질환 바로알기』 저자</p>
+        <p>• 유튜브 채널 <strong>"털보의사"</strong>를 통해 과잉 수술 없는 척추 질환 가이드를 전하고 있습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Q1. 후종인대골화증 진단을 받으면 무조건 수술을 해야 하나요?</summary>
+        <div class="faq-answer">아닙니다. 증상이 없거나 진행 속도가 느린 경우에는 수술 없이 1년 주기로 정기 MRI 추적 관찰만 진행해도 충분합니다. 척수 손상으로 인한 손·발 운동 장애(척수병증) 소견이 나타날 때 수술을 고려합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q2. 약물 치료나 물리치료로 굳은 인대가 다시 부드러워지나요?</summary>
+        <div class="faq-answer">이미 뼈처럼 굳어버린 골화 인대 자체가 약물이나 물리치료로 사라지지는 않습니다. 다만 신경 자극으로 인한 통증이나 근육 긴장은 약물로 완화시킬 수 있습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q3. 수술을 안 받고 그냥 두면 무조건 마비가 오나요?</summary>
+        <div class="faq-answer">모든 환자에게 마비가 오는 것은 아닙니다. 수년간 변화 없이 유지되는 경우도 많습니다. 다만 진행성 척수병증이 확인되었음에도 방치하면 영구적인 신경 손상이 남을 수 있으므로 주기적인 추적 관사가 필수적입니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q4. 건강검진 X-ray나 CT에서 우연히 발견되었는데 어떻게 해야 하나요?</summary>
+        <div class="faq-answer">현재 손 동작이나 걸음걸이에 이상이 없다면 당장 위험한 상태는 아닙니다. 신경외과에 내원하셔서 경추 MRI로 신경 압박 정도를 확인하고 정기 추적 계획을 세우시면 됩니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q5. 어떤 증상이 나타나면 바로 병원에 와야 하나요?</summary>
+        <div class="faq-answer">젓가락질이나 옷 단추 채우기가 힘들어질 때, 글씨가 제대로 써지지 않을 때, 걸을 때 비틀거리는 느낌이 들 때는 척수병증 신호이므로 빠른 내원이 필요합니다. 대소변 장애는 응급 상황입니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q6. 목디스크와 OPLL은 어떤 차이가 있나요?</summary>
+        <div class="faq-answer">목디스크는 연렁이 튀어나와 한쪽 신경 가지를 누르는 경우가 많아 한쪽 팔 통증이 주 증상입니다. 반면 OPLL은 인대가 굳어 중추신경(척수)을 눌러 양쪽 손 미세 동작 이상 및 보행 장애를 유발합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q7. OPLL 수술 방법은 어떻게 결정되나요?</summary>
+        <div class="faq-answer">골화된 인대의 위치, 길이, 척추관 협착 정도에 따라 목 앞쪽으로 접근하는 전방 감압유합술이나 목 뒤쪽에서 신경관을 넓혀주는 후방 후궁성형술 중 가장 안전한 방법을 선택합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q8. 수술 후 회복 기간은 어느 정도 걸리나요?</summary>
+        <div class="faq-answer">보통 1~2주 정도 입원 치료를 시행합니다. 수술 후 눌려있던 신경이 회복되는 데는 6개월에서 1년에 걸쳐 점진적으로 이루어집니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q9. 희망찬병원에서 진단부터 수술까지 모두 가능한가요?</summary>
+        <div class="faq-answer">네, 가능합니다. 김진균 대표원장이 직접 당일 검사 판독, 정기 추적, 수술 및 사후 재활 관리까지 책임 집도합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q10. 정기 검진은 얼마나 자주 받아야 하나요?</summary>
+        <div class="faq-answer">증상이 없는 무증상 환자는 보통 1년에 1회, 경미한 증상이 있는 경우는 6개월에 1회 경추 MRI 추적 검사를 권장합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q11. 검사 및 수술 비용에 건강보험 및 실비 적용이 되나요?</summary>
+        <div class="faq-answer">네, OPLL 관련 MRI, CT, 근전도 검사 및 수술은 모두 건강보험 급여 항목에 해당하며, 실손보험 청구가 가능합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q12. OPLL은 유전이 되는 질환인가요?</summary>
+        <div class="faq-answer">유전적 요인이 일정 부분 관여한다는 연구 보고가 있습니다. 가족 중 OPLL 환자가 계시다면 증상이 없더라도 40대 이후 경추 X-ray/CT 검진을 받아보시는 것이 좋습니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 풋터 (네이버 지도 + 병원 정식 메타정보) -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid-layout">
+      
+      <!-- 지도 연동 영역 -->
+      <div class="footer-map-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(255, 255, 255, 0.08); text-align: center; padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15);">
+        <div style="font-size: 36px; margin-bottom: 10px;">📍</div>
+        <h5 style="color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">희망찬병원 위치 안내</h5>
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 13px; margin-bottom: 16px;">경기도 화성시 병점중앙로 174</p>
+        
+        <a href="https://m.map.naver.com/search2/search.naver?query=%ED%9D%AC%EB%A7%9F%EC%B0%AC%EB%B3%91%EC%9B%90" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #03C75A; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; transition: all 0.2s ease;">
+           <span>N</span> 네이버 지도로 길찾기 →
+        </a>
+      </div>
+
+      <!-- 우측 병원 필수정보 -->
+      <div class="footer-info-box">
+        <h4>희망찬병원</h4>
+        <p><strong>주소 :</strong> 경기도 화성시 병점중앙로 174</p>
+        <p><strong>상담문의 :</strong> 1600-3415</p>
+        <p><strong>진료시간 :</strong> 평일 09:00 ~ 18:00 | 토요일 09:00 ~ 13:00 (일·공휴일 휴무)</p>
+        <p><strong>진료과목 :</strong> 신경외과 · 정형외과 · 내과 · 영상의학과</p>
+        <p class="highlight">김진균 대표원장 직접 진료 및 집도</p>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      본 웹사이트에 수록된 내용은 일반적인 의료 정보 제공을 목적으로 작성되었으며 개별 환자의 진단 및 치료를 대신할 수 없습니다. OPLL 수술 여부 및 치료 방향은 신경외과 전문의 진료 후 결정됩니다.<br>
+      © 희망찬병원. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- Floating CTA (하단 고정 바) -->
+<a href="tel:1600-3415" class="floating-cta">
+  <div class="text">
+    <strong>지금 전화 상담 연결</strong>
+    <small>1600-3415 · OPLL 정밀 진단 예약</small>
+  </div>
+  <div class="btn-call">📞 전화 걸기</div>
+</a>
+
+<!-- 자가진단 인터랙티브 JS -->
+<script>
+  const checkItems = document.querySelectorAll('.check-item');
+  const resultBox = document.getElementById('resultBox');
+  const resultCount = document.getElementById('resultCount');
+  const resultMsg = document.getElementById('resultMsg');
+
+  checkItems.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('checked');
+      updateCheckStatus();
+    });
+  });
+
+  function updateCheckStatus() {
+    const checkedItems = document.querySelectorAll('.check-item.checked');
+    const count = checkedItems.length;
+    let hasUrgent = false;
+
+    checkedItems.forEach(i => {
+      if (i.getAttribute('data-urgent') === 'true') {
+        hasUrgent = true;
+      }
+    });
+
+    resultCount.textContent = `${count}개 항목 선택됨`;
+    resultBox.classList.remove('active', 'urgent');
+
+    if (count === 0) {
+      resultMsg.textContent = '증상 항목을 클릭하여 체크해 주세요.';
+      return;
+    }
+
+    if (hasUrgent) {
+      resultBox.classList.add('urgent');
+      resultMsg.innerHTML = '<strong style="color:var(--warn);">🚨 응급 신호 포함:</strong> 척수 자극 또는 대소변 장애 신호가 포함되어 있습니다. 지체 없이 진료를 받으시기 바랍니다.';
+    } else if (count >= 3) {
+      resultBox.classList.add('active');
+      resultMsg.innerHTML = '<strong style="color:var(--primary-deep);">⚠️ 척수병증 가능성 높음:</strong> 손과 하지에 복합적 신호가 있습니다. 신경외과 정밀 MRI 검진을 권장합니다.';
+    } else {
+      resultBox.classList.add('active');
+      resultMsg.innerHTML = '<strong>경미한 초기 신호:</strong> 지속적인 경과 모니터링 및 신경외과 전문의 진료 상담을 권합니다.';
+    }
+  }
+</script>
+
+</body>
+</html>

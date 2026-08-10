@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>대상포진 클리닉 | 희망찬병원 — 싱그릭스 백신·72시간 골든타임·PHN 신경통 진료</title>
+<meta name="description" content="신경외과 전문의가 진료하는 대상포진 클리닉. 싱그릭스 백신 접종, 72시간 골든타임 항바이러스제, 포진 후 신경통(PHN) 통증 진료. 안면·이성 대상포진 응급 감별. 희망찬병원 김진균 원장 직접 진료.">
+<meta name="keywords" content="대상포진, 싱그릭스, 항바이러스제, 72시간골든타임, 포진후신경통, PHN, 안면대상포진, 람세이헌트증후군, 희망찬병원, 김진균원장, 털보의사">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;800;900&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* 하이테크 메디컬 팔레트 */
+  --bg-primary: #F2F6F9;
+  --bg-secondary: #E8EFF4;
+  --bg-card: #FFFFFF;
+  --bg-accent: #E1FAF6;
+  
+  --primary-deep: #0D3B3E;
+  --primary-mid: #12635D;
+  --primary-mint: #199D93;
+  --accent-cyan: #22D3EE;
+  --warn: #E05656;
+  --warn-bg: #FDF2F2;
+  
+  --text-primary: #111D23;
+  --text-secondary: #48606A;
+  --text-muted: #839B97;
+  
+  --border-subtle: #D8E4EC;
+  --border-highlight: #A4D9D4;
+  
+  --shadow-soft: 0 4px 20px rgba(13, 59, 62, 0.05);
+  --shadow-glass: 0 16px 40px rgba(18, 99, 93, 0.12);
+  --shadow-hover: 0 20px 48px rgba(18, 99, 93, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* 회로/테크니컬 라인 패턴 배경 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(25, 157, 147, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(34, 211, 238, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.serif { font-family: 'Noto Serif KR', serif; }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Top Notice Bar */
+.top-notice {
+  background: var(--primary-deep);
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.top-notice span { color: var(--accent-cyan); }
+
+/* Header */
+.mini-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-soft);
+}
+
+.mini-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-deep);
+}
+
+.brand .accent { color: var(--primary-mint); font-weight: 600; }
+.brand .small { font-size: 13px; color: var(--text-muted); font-weight: 400; margin-left: 6px; }
+
+.header-cta { display: flex; gap: 10px; align-items: center; }
+.header-cta a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.header-cta .ghost {
+  color: var(--primary-mid);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-highlight);
+}
+
+.header-cta .ghost:hover {
+  background: var(--bg-accent);
+  color: var(--primary-deep);
+}
+
+.header-cta .filled {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(25, 157, 147, 0.3);
+}
+
+.header-cta .filled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 157, 147, 0.4);
+}
+
+/* Hero Section */
+.hero {
+  padding: 90px 24px 70px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 6px 16px;
+  background: rgba(25, 157, 147, 0.08);
+  border: 1px solid var(--border-highlight);
+  border-radius: 30px;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 800;
+  font-size: clamp(30px, 4.8vw, 46px);
+  line-height: 1.35;
+  margin-bottom: 24px;
+  color: var(--primary-deep);
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .accent {
+  color: var(--primary-mint);
+  background: linear-gradient(120deg, var(--primary-mid), var(--primary-mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-stat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--primary-deep);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-glass);
+}
+
+.hero-stat-badge .num {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--accent-cyan);
+}
+
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--text-secondary);
+  max-width: 820px;
+  margin: 0 auto 36px;
+  line-height: 1.85;
+}
+
+/* CTA 중앙 정렬 */
+.cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(18, 99, 93, 0.35);
+}
+
+.btn-ghost {
+  background: #FFFFFF;
+  color: var(--primary-deep);
+  padding: 16px 32px;
+  border: 1.5px solid var(--border-highlight);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-ghost:hover {
+  background: var(--bg-accent);
+  border-color: var(--primary-mint);
+  transform: translateY(-2px);
+}
+
+.btn-warn {
+  background: var(--warn);
+  color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(224, 86, 86, 0.3);
+}
+
+.btn-warn:hover {
+  background: #c84343;
+  transform: translateY(-2px);
+}
+
+/* Section Common */
+section { padding: 80px 24px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: clamp(26px, 3.8vw, 36px);
+  color: var(--primary-deep);
+  line-height: 1.35;
+}
+
+.section-desc {
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Card & Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px 26px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-mint), var(--accent-cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+}
+
+.card:hover::before { transform: scaleX(1); }
+
+.card-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: var(--bg-accent);
+  color: var(--primary-mid);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Step Grid */
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.step-card {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  border-color: var(--primary-mint);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glass);
+}
+
+.step-number {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--primary-mint);
+  margin-bottom: 8px;
+}
+
+.step-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 8px;
+}
+
+.step-card p {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Comparison Table */
+.compare-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-glass);
+  border: 1px solid var(--border-subtle);
+  background: #fff;
+}
+
+table.compare {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14.5px;
+}
+
+table.compare th, table.compare td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table.compare thead th {
+  background: var(--primary-deep);
+  color: #fff;
+  font-weight: 600;
+}
+
+table.compare tbody th {
+  background: var(--bg-secondary);
+  color: var(--primary-deep);
+  font-weight: 700;
+  width: 25%;
+}
+
+table.compare td.highlight {
+  background: var(--bg-accent);
+  color: var(--primary-deep);
+  font-weight: 700;
+}
+
+/* Doctor Profile */
+.doctor { background: #fff; }
+
+.doctor-card {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  border-radius: 24px;
+  padding: 44px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.doctor-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.2);
+  outline: 2px solid var(--border-highlight);
+  flex-shrink: 0;
+}
+
+.doctor-info { flex-grow: 1; }
+
+.doctor-info h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 6px;
+}
+
+.doctor-info .title {
+  font-size: 14.5px;
+  color: var(--primary-mint);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq { background: var(--bg-primary); }
+.faq-list { max-width: 840px; margin: 0 auto; }
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding: 20px 26px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  color: var(--primary-mint);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 26px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.85; }
+
+/* Safety Notice */
+.safety { padding: 40px 24px; background: #fff; }
+.safety-box {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-accent);
+  border-left: 4px solid var(--primary-mint);
+  padding: 24px 28px;
+  border-radius: 8px;
+}
+
+.safety-box.warn-style {
+  background: var(--warn-bg);
+  border-left-color: var(--warn);
+}
+
+.safety-box h4 { font-size: 15.5px; font-weight: 700; color: var(--primary-deep); margin-bottom: 6px; }
+.safety-box.warn-style h4 { color: var(--warn); }
+.safety-box p { font-size: 14px; color: var(--text-secondary); line-height: 1.75; }
+
+/* Footer & Hospital Map Grid Layout */
+footer {
+  background: var(--primary-deep);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 70px 24px 40px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.footer-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.footer-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.footer-info-box {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-box h4 {
+  font-family: 'Noto Serif KR', serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-info-box p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14.5px;
+}
+
+.footer-info-box .highlight {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.disclaimer {
+  max-width: 780px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.75;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+
+@media (max-width: 768px) {
+  .doctor-card { flex-direction: column; text-align: center; padding: 36px 24px; }
+  .doctor-profile-img { width: 150px; height: 150px; }
+  .footer-grid-layout { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .footer-info-box { text-align: center; }
+  .step-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- 상단 안내 -->
+<div class="top-notice">
+  ⏱ 대상포진 72시간 골든타임 — <span>물집 발진 후 72시간 내 항바이러스제 시작이 신경통 예방의 첫걸음입니다</span> (상담문의: 1600-3415)
+</div>
+
+<!-- 헤더 -->
+<div class="mini-header">
+  <div class="container">
+    <div class="mini-header-inner">
+      <div class="brand">희망찬병원 <span class="accent">·</span> 대상포진 클리닉<span class="small">신경외과 전문의</span></div>
+      <div class="header-cta">
+        <a href="tel:1600-3415" class="ghost">📞 전화</a>
+        <a href="tel:1600-3415" class="filled">예약·상담</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow fade-in">SHINGLES &amp; PHN CLINIC</div>
+    
+    <div class="hero-stat-badge fade-in delay-1">
+      ★ 신형 싱그릭스 백신: 임상 결과 대상포진 예방 효과 <span class="num">약 97%</span>
+    </div>
+
+    <h1 class="fade-in delay-1">
+      대상포진 고통을 막는 유일한 길,<br>
+      <span class="accent">싱그릭스 백신과 72시간 골든타임</span>입니다
+    </h1>
+    <p class="hero-sub fade-in delay-2">
+      대상포진의 진짜 무서움은 피부 물집이 아니라 옷깃만 스쳐도 극심한 통증이 지속되는 포진 후 신경통(PHN)입니다.<br>
+      신경외과 전문의 김진균 대표원장이 신형 백신 싱그릭스 사전 예방부터 72시간 골든타임 항바이러스제 치료, 안면 응급 감별, 신경통 통증 치료까지 한자리에서 전담합니다.
+    </p>
+    <div class="cta-group fade-in delay-3">
+      <a href="tel:1600-3415" class="btn-primary">📋 대상포진 정밀 진료 신청 →</a>
+      <a href="#shingrix" class="btn-ghost">싱그릭스 백신 안내</a>
+      <a href="#urgent-face" class="btn-warn">🚨 안면/이성 대상포진 응급</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3단계 케어 접근법 -->
+<section style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">3-STEP CLINICAL CARE</span>
+      <h2 class="section-title">대상포진 3단계 시기별 맞춤 치료</h2>
+      <p class="section-desc">예방부터 급성기 골든타임, 만성 포진 후 신경통 관리까지 통합 진료합니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-badge">01. 예방 단계</span>
+        <h3>싱그릭스 백신 접종</h3>
+        <p>50세 이상, 면역저하자, 과거 생백신 접종자 대상. 임상 약 97% 예방 효과 및 10년 이상 면역 지속이 보고된 비생백신입니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">02. 급성기 (72시간)</span>
+        <h3>항바이러스제 &amp; 응급감별</h3>
+        <p>발진 후 72시간 내 항바이러스제 골든타임 처방. 안면(눈)·이성(귀) 대상포진의 실명, 안면마비 위험을 즉시 정밀 감별합니다.</p>
+      </div>
+      <div class="card">
+        <span class="card-badge">03. 만성기 (PHN)</span>
+        <h3>포진 후 신경통 치료</h3>
+        <p>피부 발진 완치 후에도 계속되는 찌릿함과 이질통. 신경외과 전문의가 맞춤 신경통 약물 처방 및 신경차단술을 시행합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: 안면 및 이성 대상포진 응급 경고 -->
+<section id="urgent-face">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">EMERGENCY COMPLICATIONS</span>
+      <h2 class="section-title">얼굴, 눈, 귀 주변의 물집은 응급 신호입니다</h2>
+      <p class="section-desc">뇌신경을 침범하는 안면/이성 대상포진은 실명 및 영구적 안면마비를 유발할 수 있습니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card" style="border-left: 4px solid var(--warn);">
+        <span class="card-badge" style="background: var(--warn-bg); color: var(--warn);">삼차신경 침범</span>
+        <h3>안면(눈) 대상포진</h3>
+        <p>이마, 눈꺼풀, 코 옆에 물집이 생기며 각막염, 홍채염, 시신경염을 유발합니다. 코 끝에 물집(Hutchinson 징후)이 생기면 즉시 안과 협진이 필요합니다.</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--warn);">
+        <span class="card-badge" style="background: var(--warn-bg); color: var(--warn);">얼굴신경 침범</span>
+        <h3>이성 대상포진 (람세이헌트)</h3>
+        <p>귀 안쪽/주변 물집과 함께 한쪽 안면마비, 청력 저하, 어지럼증이 나타납니다. 초기 고용량 항바이러스제와 스테로이드 병용 투여가 필수적입니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: 싱그릭스 백신 비교 -->
+<section id="shingrix" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">SHINGRIX VACCINE</span>
+      <h2 class="section-title">신형 백신 싱그릭스 vs 기존 생백신</h2>
+      <p class="section-desc">유전자 재조합 비생백신으로 면역저하자도 안전하게 접종 가능합니다.</p>
+    </div>
+
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>기존 생백신 (조스타박스 등)</th>
+            <th class="highlight">싱그릭스 (Shingrix)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>백신 종류</th>
+            <td>약독화 생백신 (생바이러스)</td>
+            <td class="highlight"><strong>유전자 재조합 비생백신 (사백신)</strong></td>
+          </tr>
+          <tr>
+            <th>예방 효과</th>
+            <td>약 50% ~ 60% 내외</td>
+            <td class="highlight"><strong>임상 결과 약 97% (50대 이상)</strong></td>
+          </tr>
+          <tr>
+            <th>효과 지속 기간</th>
+            <td>시간 경과 시 효과 급격히 감소</td>
+            <td class="highlight"><strong>10년 이상 면역 효과 유지 보고</strong></td>
+          </tr>
+          <tr>
+            <th>접종 횟수</th>
+            <td>1회 접종</td>
+            <td class="highlight"><strong>2회 접종 (2~6개월 간격)</strong></td>
+          </tr>
+          <tr>
+            <th>면역저하자 접종</th>
+            <td>접종 불가 (금기)</td>
+            <td class="highlight"><strong>접종 가능 (암, 면역억제제 복용자 등)</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: 포진 후 신경통(PHN) 및 5단계 치료 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">PHN NEURALGIA CARE</span>
+      <h2 class="section-title">포진 후 신경통(PHN) 맞춤 신경외과 치료</h2>
+      <p class="section-desc">일반 진통제로 잘 듣지 않는 신경통, 신경외과 전문의의 체계적인 약물 및 시술 치료가 필요합니다.</p>
+    </div>
+
+    <div class="step-grid">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <h4>신경통 전문 약물</h4>
+        <p>가바펜틴, 프레가발린 등 신경 전달 물질 조절제 맞춤 처방 및 용량 미세 조절</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <h4>국소 패치 치료</h4>
+        <p>리도카인 패치 및 캡사이신 도포제를 활용하여 옷깃만 스쳐도 아픈 이질통 완화</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">03</div>
+        <h4>경막외 신경차단술</h4>
+        <p>통증 신호를 전달하는 과민해진 신경 주위에 정밀 주사 시술로 통증 차단</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">04</div>
+        <h4>재발 방지 싱그릭스</h4>
+        <p>급성 통증 회복 후 재발 및 추가 신경 손상을 막기 위한 싱그릭스 접종 안내</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 의료진 소개 -->
+<section class="doctor">
+  <div class="container">
+    <div class="doctor-card">
+      <img src="https://sellerbag1-cloud.github.io/KakaoTalk_20260310_175824020.jpg" alt="김진균 대표원장" class="doctor-profile-img">
+      <div class="doctor-info">
+        <h3>김진균 대표원장</h3>
+        <div class="title">희망찬병원 대표원장 · 신경외과 전문의</div>
+        <p>대상포진 72시간 골든타임 처방, 안면/이성 대상포진 응급 감별, 포진 후 신경통(PHN) 정밀 약물 치료 및 신경차단술을 전담합니다.</p>
+        <p>유튜브 채널 <strong>"털보의사"</strong>를 통해 싱그릭스 백신의 올바른 정보와 대상포진 골든타임의 중요성을 널리 알리고 있습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Q1. 과거에 대상포진에 걸렸던 사람도 싱그릭스 백신을 맞아야 하나요?</summary>
+        <div class="faq-answer">네, 맞으시는 것을 강력히 권장합니다. 대상포진에 한 번 걸렸더라도 재발 가능성이 있으며, 회복 후 일정 기간(보통 6개월~1년 뒤)이 지난 후 싱그릭스를 접종하면 재발 및 포진 후 신경통 예방에 매우 효과적입니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q2. 물집이 생긴 지 72시간이 지났는데 항바이러스제를 먹어도 되나요?</summary>
+        <div class="faq-answer">72시간 이내 투여가 가장 효과적이지만, 72시간이 지났더라도 새로운 물집이 계속 생기거나 통증이 심한 경우에는 바이러스 억제와 신경통 예방을 위해 항바이러스제 복용을 시작해야 합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q3. 예전에 조스타박스(생백신)를 맞았는데 싱그릭스를 또 맞춰야 하나요?</summary>
+        <div class="faq-answer">기존 생백신은 시간이 지남에 따라 예방 효과가 급격히 떨어집니다. 생백신 접종 후 5년 이상 지났다면 예방 효과가 약 97%에 달하는 싱그릭스로 추가 접종받으시는 것이 좋습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q4. 피부 물집은 다 나았는데 왜 계속 아픈가요?</summary>
+        <div class="faq-answer">피부의 물집은 완치되었더라도 바이러스에 의해 손상된 신경 회로가 계속 통증 신호를 뇌로 보내는 '포진 후 신경통(PHN)' 상태입니다. 일반 진통제 대신 신경통 전용 약물과 신경차단술 치료가 필요합니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 응급 위험 안내 -->
+<section class="safety">
+  <div class="container">
+    <div class="safety-box warn-style">
+      <h4>※ 응급 대상포진 주의 안내</h4>
+      <p>이마, 눈 주변, 코 끝에 물집이 생기거나, 귀 주변 물집과 함께 안면 마비, 어지럼증, 청력 저하가 동반되면 실명 및 안면 마비 위험이 있으므로 즉시 신경외과 전문의의 진찰을 받으셔야 합니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 풋터 (좌측: 네이버 지도 상자 영역 / 우측: 병원 필수정보) -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid-layout">
+      
+      <!-- 좌측 지도 상자 영역 -->
+      <div class="footer-map-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(255, 255, 255, 0.08); text-align: center; padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15);">
+        <div style="font-size: 36px; margin-bottom: 10px;">📍</div>
+        <h5 style="color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">희망찬병원 위치 안내</h5>
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 13px; margin-bottom: 16px;">화성시 병점중앙로 174</p>
+        
+        <a href="https://m.map.naver.com/search2/search.naver?query=%ED%9D%88%EB%A0%9D%EC%B0%AC%EB%B3%91%EC%9B%90" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #03C75A; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; transition: all 0.2s ease;">
+           <span>N</span> 네이버 지도로 길찾기 →
+        </a>
+      </div>
+
+      <!-- 우측 병원 필수정보 -->
+      <div class="footer-info-box">
+        <h4>희망찬병원</h4>
+        <p><strong>주소 :</strong> 경기도 화성시 병점구 병점중앙로 174</p>
+        <p><strong>상담문의 :</strong> 1600-3415</p>
+        <p><strong>진료과목 :</strong> 신경외과 · 정형외과 · 내과 · 영상의학과</p>
+        <p class="highlight">털보의사 김진균 원장이 직접 진료합니다.</p>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      본 웹사이트에 수록된 내용은 의료 정보 제공을 목적으로 작성되었으며, 개별적인 의학적 진단 및 치료를 대신할 수 없습니다.<br>
+      © 희망찬병원. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

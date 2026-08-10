@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>손목터널증후군 최소절개 수술 — 희망찬병원</title>
+<meta name="description" content="손목터널증후군 최소절개 수술. 손목 주름선 따라 작은 절개 / 본원 시그니처 손목주름 분절감압술 / 김진균 원장 직접 진료 / 동탄·화성·평택권">
+<meta name="keywords" content="손목터널증후군, 손목터널 수술, 손목주름 분절감압술, 손저림, 희망찬병원, 김진균원장">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;800;900&family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* 하이테크 메디컬 팔레트 */
+  --bg-primary: #F2F6F9;
+  --bg-secondary: #E8EFF4;
+  --bg-card: #FFFFFF;
+  --bg-accent: #E1FAF6;
+  
+  --primary-deep: #0D3B3E;
+  --primary-mid: #12635D;
+  --primary-mint: #199D93;
+  --accent-cyan: #22D3EE;
+  --warn: #E05656;
+  
+  --text-primary: #111D23;
+  --text-secondary: #48606A;
+  --text-muted: #839B97;
+  
+  --border-subtle: #D8E4EC;
+  --border-highlight: #A4D9D4;
+  
+  --shadow-soft: 0 4px 20px rgba(13, 59, 62, 0.05);
+  --shadow-glass: 0 16px 40px rgba(18, 99, 93, 0.12);
+  --shadow-hover: 0 20px 48px rgba(18, 99, 93, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* 회로/테크니컬 라인 패턴 배경 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(25, 157, 147, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(34, 211, 238, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.serif { font-family: 'Noto Serif KR', serif; }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Top Emergency Bar */
+.top-notice {
+  background: var(--primary-deep);
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.top-notice span { color: var(--accent-cyan); }
+
+/* Header */
+.mini-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-soft);
+}
+
+.mini-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-deep);
+}
+
+.brand .accent { color: var(--primary-mint); font-weight: 600; }
+.brand .small { font-size: 13px; color: var(--text-muted); font-weight: 400; margin-left: 6px; }
+
+.header-cta { display: flex; gap: 10px; align-items: center; }
+.header-cta a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.header-cta .ghost {
+  color: var(--primary-mid);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-highlight);
+}
+
+.header-cta .ghost:hover {
+  background: var(--bg-accent);
+  color: var(--primary-deep);
+}
+
+.header-cta .filled {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(25, 157, 147, 0.3);
+}
+
+.header-cta .filled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 157, 147, 0.4);
+}
+
+/* Hero Section */
+.hero {
+  padding: 90px 24px 70px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 6px 16px;
+  background: rgba(25, 157, 147, 0.08);
+  border: 1px solid var(--border-highlight);
+  border-radius: 30px;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 800;
+  font-size: clamp(30px, 4.8vw, 46px);
+  line-height: 1.35;
+  margin-bottom: 24px;
+  color: var(--primary-deep);
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .accent {
+  color: var(--primary-mint);
+  background: linear-gradient(120deg, var(--primary-mid), var(--primary-mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 17px);
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto 36px;
+  line-height: 1.85;
+}
+
+/* CTA 중앙 정렬 */
+.cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-mid) 0%, var(--primary-mint) 100%);
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(18, 99, 93, 0.35);
+}
+
+.btn-ghost {
+  background: #FFFFFF;
+  color: var(--primary-deep);
+  padding: 16px 32px;
+  border: 1.5px solid var(--border-highlight);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-ghost:hover {
+  background: var(--bg-accent);
+  border-color: var(--primary-mint);
+  transform: translateY(-2px);
+}
+
+/* Section Common */
+section { padding: 80px 24px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-mint);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: clamp(26px, 3.8vw, 36px);
+  color: var(--primary-deep);
+  line-height: 1.35;
+}
+
+.section-desc {
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Card & Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px 26px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-mint), var(--accent-cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+}
+
+.card:hover::before { transform: scaleX(1); }
+
+.card h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Self Check List */
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.check-item:hover {
+  border-color: var(--border-highlight);
+  box-shadow: var(--shadow-soft);
+}
+
+.check-item.checked {
+  background: var(--bg-accent);
+  border-color: var(--primary-mint);
+}
+
+.check-box {
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--text-muted);
+  border-radius: 6px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  transition: all 0.2s;
+}
+
+.check-item.checked .check-box {
+  background: var(--primary-mint);
+  border-color: var(--primary-mint);
+}
+
+.check-item.checked .check-box::after {
+  content: "✓";
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.check-text {
+  font-size: 15px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.check-result {
+  text-align: center;
+  padding: 28px;
+  background: #fff;
+  border-radius: 18px;
+  border: 2px dashed var(--border-highlight);
+  transition: all 0.3s;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.check-result.active {
+  background: var(--bg-accent);
+  border-style: solid;
+  border-color: var(--primary-mint);
+}
+
+.check-count {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary-mint);
+  margin-bottom: 4px;
+}
+
+.check-msg {
+  font-size: 15.5px;
+  color: var(--text-secondary);
+}
+
+/* Table Style */
+.table-wrapper {
+  overflow-x: auto;
+  background: var(--bg-card);
+  border-radius: 18px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+  margin-top: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+th {
+  background: var(--primary-deep);
+  color: #fff;
+  text-align: left;
+  padding: 16px 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+td {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 20px;
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+
+tr:last-child td { border-bottom: none; }
+
+.ours-column {
+  background: var(--bg-accent);
+  font-weight: 600;
+  color: var(--primary-deep);
+}
+
+/* Steps Grid */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.step-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 28px 24px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+}
+
+.step-card .num {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary-mint);
+  margin-bottom: 8px;
+}
+
+.step-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+/* Doctor Profile */
+.doctor { background: #fff; }
+
+.doctor-card {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  border-radius: 24px;
+  padding: 44px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-glass);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.doctor-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 24px rgba(18, 99, 93, 0.2);
+  outline: 2px solid var(--border-highlight);
+  flex-shrink: 0;
+}
+
+.doctor-info { flex-grow: 1; }
+
+.doctor-info h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 6px;
+}
+
+.doctor-info .title {
+  font-size: 14.5px;
+  color: var(--primary-mint);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq { background: var(--bg-primary); }
+.faq-list { max-width: 840px; margin: 0 auto; }
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding: 20px 26px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-deep);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  color: var(--primary-mint);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::after { content: '−'; }
+.faq-answer { padding: 0 26px 22px; color: var(--text-secondary); font-size: 15px; line-height: 1.85; }
+
+/* Safety Notice */
+.safety { padding: 40px 24px; background: #fff; }
+.safety-box {
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--bg-accent);
+  border-left: 4px solid var(--primary-mint);
+  padding: 24px 28px;
+  border-radius: 8px;
+}
+
+.safety-box h4 { font-size: 15.5px; font-weight: 700; color: var(--primary-deep); margin-bottom: 6px; }
+.safety-box p { font-size: 14px; color: var(--text-secondary); line-height: 1.75; }
+
+/* Footer & Hospital Map Grid Layout */
+footer {
+  background: var(--primary-deep);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 70px 24px 40px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.footer-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.footer-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* 우측 병원 필수정보 스타일 */
+.footer-info-box {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-box h4 {
+  font-family: 'Noto Serif KR', serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-info-box p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14.5px;
+}
+
+.footer-info-box .highlight {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.disclaimer {
+  max-width: 780px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.75;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+
+@media (max-width: 768px) {
+  .doctor-card { flex-direction: column; text-align: center; padding: 36px 24px; }
+  .doctor-profile-img { width: 150px; height: 150px; }
+  .footer-grid-layout { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+  .footer-info-box { text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- 상단 안내 -->
+<div class="top-notice">
+  손목터널증후군 최소절개 수술 — <span>손목주름 분절감압술 정밀 진료</span> (상담문의: 1600-3415)
+</div>
+
+<!-- 헤더 -->
+<div class="mini-header">
+  <div class="container">
+    <div class="mini-header-inner">
+      <div class="brand">희망찬병원 <span class="accent">·</span> 수부 클리닉<span class="small">신경외과·정형외과</span></div>
+      <div class="header-cta">
+        <a href="tel:1600-3415" class="ghost">📞 전화</a>
+        <a href="tel:1600-3415" class="filled">예약·상담</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow fade-in">CARPAL TUNNEL SURGERY</div>
+    <h1 class="fade-in delay-1">
+      손목터널 수술,<br>
+      <span class="accent">손바닥 가르지 않고 최소절개로</span>
+    </h1>
+    <p class="hero-sub fade-in delay-2">
+      손목 자연 주름선을 따라 최소 절개하여 정중신경을 단계적으로 감압합니다.<br>
+      본원 시그니처 <strong>"손목주름 분절감압술"</strong>로 흉터를 최소화하며 안전하게 치료합니다.
+    </p>
+    <div class="cta-group fade-in delay-3">
+      <a href="tel:1600-3415" class="btn-primary">📋 진료 &amp; 최소절개 상담 →</a>
+      <a href="#self-check" class="btn-ghost">1분 자가진단</a>
+    </div>
+  </div>
+</section>
+
+<!-- 자가진단 -->
+<section id="self-check">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">SELF CHECK</span>
+      <h2 class="section-title">혹시 이런 손저림 증상이 있으신가요?</h2>
+      <p class="section-desc">아래 항목을 체크해 보시고 손목터널증후군 의심 가능성을 확인해 보세요.</p>
+    </div>
+
+    <div class="check-grid">
+      <div class="check-item"><div class="check-box"></div><span class="check-text">자다가 손이 저려서 잠을 깬다</span></div>
+      <div class="check-item"><div class="check-box"></div><span class="check-text">손을 털면 저림 증상이 완화된다</span></div>
+      <div class="check-item"><div class="check-box"></div><span class="check-text">엄지·검지·중지가 주로 저리다</span></div>
+      <div class="check-item"><div class="check-box"></div><span class="check-text">새끼손가락은 저리지 않는다</span></div>
+      <div class="check-item"><div class="check-box"></div><span class="check-text">운전이나 휴대폰 사용 시 손이 저리다</span></div>
+      <div class="check-item"><div class="check-box"></div><span class="check-text">물건을 손에서 자주 떨어뜨린다</span></div>
+      <div class="check-item"><div class="check-box"></div><span class="check-text">단추 끼우기나 동전 집기가 어렵다</span></div>
+      <div class="check-item"><div class="check-box"></div><span class="check-text">엄지 아래쪽 근육이 빠진 듯 얇아졌다</span></div>
+    </div>
+
+    <div class="check-result" id="check-result">
+      <div class="check-count" id="check-count">0개 선택됨</div>
+      <div class="check-msg" id="check-msg">항목을 클릭하여 자가 체크를 진행해 보세요.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 수술법 비교 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">SURGERY COMPARISON</span>
+      <h2 class="section-title">수술법 비교 — 최소절개의 특징</h2>
+      <p class="section-desc">기존 개방 절개술 및 내시경 수술법과 희망찬병원의 최소절개 손목주름 분절감압술 비교입니다.</p>
+    </div>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>개방 절개술 (OCTR)</th>
+            <th>내시경 수술 (ECTR)</th>
+            <th class="ours-column">본원 최소절개 (분절감압술)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>절개 위치</strong></td>
+            <td>손바닥 중앙 절개</td>
+            <td>손목 및 손바닥 (2곳)</td>
+            <td class="ours-column">손목 자연 주름선</td>
+          </tr>
+          <tr>
+            <td><strong>절개 길이</strong></td>
+            <td>약 3~5cm</td>
+            <td>작은 절개 2곳</td>
+            <td class="ours-column">약 1~2cm (최소화)</td>
+          </tr>
+          <tr>
+            <td><strong>흉터 노출</strong></td>
+            <td>손바닥에 흉터 노출</td>
+            <td>손목·손바닥 노출</td>
+            <td class="ours-column">손목 주름선에 가려짐</td>
+          </tr>
+          <tr>
+            <td><strong>회복 및 사용</strong></td>
+            <td>손바닥 통증으로 지연</td>
+            <td>환자 상태별 다름</td>
+            <td class="ours-column">조기 손 사용 가능 케이스</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 진료 및 시술 프로세스 -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">PROCESS</span>
+      <h2 class="section-title">희망찬병원 체계적 진료 흐름</h2>
+      <p class="section-desc">정확한 원인 진단부터 환자별 적합성 평가, 안전한 최소절개 시술 및 회복까지 책임 진료합니다.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="num">STEP 01</div>
+        <h4>정밀 문진</h4>
+        <p>저림 부위, 발생 시간대, 손 사용 빈도 및 직업적 위험 요인을 종합적으로 파악합니다.</p>
+      </div>
+      <div class="step-card">
+        <div class="num">STEP 02</div>
+        <h4>신경학적 검사</h4>
+        <p>팔렌 테스트, 틴넬 검사, 엄지 근력 측정을 시행하여 정중신경 압박 정도를 유추합니다.</p>
+      </div>
+      <div class="step-card">
+        <div class="num">STEP 03</div>
+        <h4>신경전도 &amp; 근전도 검사</h4>
+        <p>정중신경 손상 정도를 객관적 수치로 정량 평가하여 비수술/수술 여부를 판정합니다.</p>
+      </div>
+      <div class="step-card">
+        <div class="num">STEP 04</div>
+        <h4>최소절개 시술</h4>
+        <p>국소 마취 후 손목 주름선 1~2cm 최소 절개로 정중신경 감압 후 정밀 봉합합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 의료진 소개 -->
+<section class="doctor">
+  <div class="container">
+    <div class="doctor-card">
+      <img src="https://sellerbag1-cloud.github.io/KakaoTalk_20260310_175824020.jpg" alt="김진균 대표원장" class="doctor-profile-img">
+      <div class="doctor-info">
+        <h3>김진균 대표원장</h3>
+        <div class="title">희망찬병원 · 신경외과·정형외과 전문의</div>
+        <p>손목터널증후군, 방아쇠수지 등 수부 신경 질환에 대해 손목주름 분절감압술 등 정밀 집도를 시행합니다.</p>
+        <p>유튜브 채널 <strong>"털보의사"</strong>를 운영하며 정확하고 검증된 의학 지식을 환자분들께 전달하고 있습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Q1. 손저림은 혈액순환이 안 되어서 나타나는 것 아닌가요?</summary>
+        <div class="faq-answer">손저림의 가장 흔한 원인은 혈액순환 장애가 아니라 손목터널에서 정중신경이 눌리는 '신경 압박' 때문입니다. 혈액순환제를 지속 복용해도 효과가 없다면 신경 검사가 필수적입니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q2. 손목터널 수술 후 흉터가 많이 남나요?</summary>
+        <div class="faq-answer">본원 최소절개 수술은 손목의 자연스러운 피부 주름선을 따라 약 1~2cm만 절개하므로 시간이 지나면서 주름에 가려져 흉터가 거의 눈에 띄지 않게 회복됩니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q3. 수술 후 당일 귀가가 가능한가요?</summary>
+        <div class="faq-answer">네, 대부분 국소 마취(부분 마취)로 진행되어 수술 시간이 짧고 통증이 적어 시술 후 충분한 안정을 취한 뒤 당일 귀가가 가능합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Q4. 수술 후 일상생활 및 손 사용은 언제부터 가능한가요?</summary>
+        <div class="faq-answer">최소절개 수술 특성상 다음 날부터 가벼운 손가락 사용이나 일상 활동이 가능하며, 봉합사 제거는 약 2주 뒤 진행됩니다. 무거운 물건 집기나 무리한 손 작업은 경과 관찰 후 안내드립니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 안전 안내 -->
+<section class="safety">
+  <div class="container">
+    <div class="safety-box">
+      <h4>※ 의료 정보 안내</h4>
+      <p>본 페이지의 진료 및 수술 안내는 일반적 이해를 돕기 위한 정보이며, 환자의 개별 해부학적 구조 및 신경 손상 정도에 따라 최적의 치료법이 달라질 수 있습니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 풋터 (좌측: 네이버 지도 상자 영역 / 우측: 병원 필수정보) -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid-layout">
+      
+      <!-- 좌측 지도 상자 영역 -->
+      <div class="footer-map-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(255, 255, 255, 0.08); text-align: center; padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15);">
+        <div style="font-size: 36px; margin-bottom: 10px;">📍</div>
+        <h5 style="color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">희망찬병원 위치 안내</h5>
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 13px; margin-bottom: 16px;">화성시 병점중앙로 174</p>
+        
+        <a href="https://m.map.naver.com/search2/search.naver?query=%ED%9D%88%EB%A0%9D%EC%B0%AC%EB%B3%91%EC%9B%90" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: #03C75A; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; transition: all 0.2s ease;">
+           <span>N</span> 네이버 지도로 길찾기 →
+        </a>
+      </div>
+
+      <!-- 우측 병원 필수정보 -->
+      <div class="footer-info-box">
+        <h4>희망찬병원</h4>
+        <p><strong>주소 :</strong> 경기도 화성시 병점구 병점중앙로 174</p>
+        <p><strong>상담문의 :</strong> 1600-3415</p>
+        <p><strong>진료과목 :</strong> 신경외과 · 정형외과 · 내과 · 영상의학과</p>
+        <p class="highlight">털보의사 김진균 원장이 직접 진료합니다.</p>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      본 웹사이트에 수록된 내용은 의료 정보 제공을 목적으로 작성되었으며, 개별적인 의학적 진단 및 치료를 대신할 수 없습니다.<br>
+      © 희망찬병원. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // 자가체크 인터랙션
+  const checkItems = document.querySelectorAll('.check-item');
+  const countEl = document.getElementById('check-count');
+  const msgEl = document.getElementById('check-msg');
+  const resultEl = document.getElementById('check-result');
+
+  checkItems.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('checked');
+      updateCheckCount();
+    });
+  });
+
+  function updateCheckCount() {
+    const checkedCount = document.querySelectorAll('.check-item.checked').length;
+    countEl.textContent = `${checkedCount}개 선택됨`;
+    
+    if (checkedCount === 0) {
+      msgEl.textContent = '항목을 클릭하여 자가 체크를 진행해 보세요.';
+      resultEl.classList.remove('active');
+    } else if (checkedCount <= 2) {
+      msgEl.textContent = '경미한 증상 소견 — 지속적 관찰 및 경과 확인이 권장됩니다.';
+      resultEl.classList.add('active');
+    } else if (checkedCount <= 4) {
+      msgEl.textContent = '손목터널증후군 의심 — 전문의 진료 및 신경학적 검사를 권장합니다.';
+      resultEl.classList.add('active');
+    } else {
+      msgEl.innerHTML = '손목터널증후군 진행 가능성 높음<br><strong>가까운 시일 내 정밀 검진을 받아보시기 바랍니다.</strong>';
+      resultEl.classList.add('active');
+    }
+  }
+</script>
+
+</body>
+</html>
